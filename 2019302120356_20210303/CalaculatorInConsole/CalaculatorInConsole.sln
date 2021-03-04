@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalaculatorInConsole", "CalaculatorInConsole\CalaculatorInConsole.csproj", "{2B09D499-5DAB-4608-88B2-373541BFEB85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B09D499-5DAB-4608-88B2-373541BFEB85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B09D499-5DAB-4608-88B2-373541BFEB85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B09D499-5DAB-4608-88B2-373541BFEB85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B09D499-5DAB-4608-88B2-373541BFEB85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D81D3F6-2998-4D2E-97CC-654ACE834CAC}
+	EndGlobalSection
+EndGlobal
