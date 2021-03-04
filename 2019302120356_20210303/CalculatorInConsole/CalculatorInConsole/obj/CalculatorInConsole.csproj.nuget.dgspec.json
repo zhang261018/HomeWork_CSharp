@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C#\\HomeWork_CSharp\\2019302120356_20210303\\CalaculatorInConsole\\CalaculatorInConsole\\CalaculatorInConsole.csproj": {}
+    "E:\\C#\\HomeWork_CSharp\\2019302120356_20210303\\CalculatorInConsole\\CalculatorInConsole\\CalculatorInConsole.csproj": {}
   },
   "projects": {
-    "E:\\C#\\HomeWork_CSharp\\2019302120356_20210303\\CalaculatorInConsole\\CalaculatorInConsole\\CalaculatorInConsole.csproj": {
+    "E:\\C#\\HomeWork_CSharp\\2019302120356_20210303\\CalculatorInConsole\\CalculatorInConsole\\CalculatorInConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\HomeWork_CSharp\\2019302120356_20210303\\CalaculatorInConsole\\CalaculatorInConsole\\CalaculatorInConsole.csproj",
-        "projectName": "CalaculatorInConsole",
-        "projectPath": "E:\\C#\\HomeWork_CSharp\\2019302120356_20210303\\CalaculatorInConsole\\CalaculatorInConsole\\CalaculatorInConsole.csproj",
+        "projectUniqueName": "E:\\C#\\HomeWork_CSharp\\2019302120356_20210303\\CalculatorInConsole\\CalculatorInConsole\\CalculatorInConsole.csproj",
+        "projectName": "CalculatorInConsole",
+        "projectPath": "E:\\C#\\HomeWork_CSharp\\2019302120356_20210303\\CalculatorInConsole\\CalculatorInConsole\\CalculatorInConsole.csproj",
         "packagesPath": "C:\\Users\\Ludwig\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\HomeWork_CSharp\\2019302120356_20210303\\CalaculatorInConsole\\CalaculatorInConsole\\obj\\",
+        "outputPath": "E:\\C#\\HomeWork_CSharp\\2019302120356_20210303\\CalculatorInConsole\\CalculatorInConsole\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ludwig\\AppData\\Roaming\\NuGet\\NuGet.Config",
