@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "OutputPrime_Sieve/1.0.0": {
+        "runtime": {
+          "OutputPrime_Sieve.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OutputPrime_Sieve/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

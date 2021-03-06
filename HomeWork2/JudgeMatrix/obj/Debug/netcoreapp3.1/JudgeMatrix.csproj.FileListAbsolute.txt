@@ -1,0 +1,13 @@
+E:\C#\HomeWork_CSharp\HomeWork2\JudgeMatrix\bin\Debug\netcoreapp3.1\JudgeMatrix.exe
+E:\C#\HomeWork_CSharp\HomeWork2\JudgeMatrix\bin\Debug\netcoreapp3.1\JudgeMatrix.deps.json
+E:\C#\HomeWork_CSharp\HomeWork2\JudgeMatrix\bin\Debug\netcoreapp3.1\JudgeMatrix.runtimeconfig.json
+E:\C#\HomeWork_CSharp\HomeWork2\JudgeMatrix\bin\Debug\netcoreapp3.1\JudgeMatrix.runtimeconfig.dev.json
+E:\C#\HomeWork_CSharp\HomeWork2\JudgeMatrix\bin\Debug\netcoreapp3.1\JudgeMatrix.dll
+E:\C#\HomeWork_CSharp\HomeWork2\JudgeMatrix\bin\Debug\netcoreapp3.1\JudgeMatrix.pdb
+E:\C#\HomeWork_CSharp\HomeWork2\JudgeMatrix\obj\Debug\netcoreapp3.1\JudgeMatrix.csprojAssemblyReference.cache
+E:\C#\HomeWork_CSharp\HomeWork2\JudgeMatrix\obj\Debug\netcoreapp3.1\JudgeMatrix.AssemblyInfoInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork2\JudgeMatrix\obj\Debug\netcoreapp3.1\JudgeMatrix.AssemblyInfo.cs
+E:\C#\HomeWork_CSharp\HomeWork2\JudgeMatrix\obj\Debug\netcoreapp3.1\JudgeMatrix.csproj.CoreCompileInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork2\JudgeMatrix\obj\Debug\netcoreapp3.1\JudgeMatrix.dll
+E:\C#\HomeWork_CSharp\HomeWork2\JudgeMatrix\obj\Debug\netcoreapp3.1\JudgeMatrix.pdb
+E:\C#\HomeWork_CSharp\HomeWork2\JudgeMatrix\obj\Debug\netcoreapp3.1\JudgeMatrix.genruntimeconfig.cache

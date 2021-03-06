@@ -1,0 +1,13 @@
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime_Sieve\bin\Debug\netcoreapp3.1\OutputPrime_Sieve.exe
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime_Sieve\bin\Debug\netcoreapp3.1\OutputPrime_Sieve.deps.json
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime_Sieve\bin\Debug\netcoreapp3.1\OutputPrime_Sieve.runtimeconfig.json
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime_Sieve\bin\Debug\netcoreapp3.1\OutputPrime_Sieve.runtimeconfig.dev.json
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime_Sieve\bin\Debug\netcoreapp3.1\OutputPrime_Sieve.dll
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime_Sieve\bin\Debug\netcoreapp3.1\OutputPrime_Sieve.pdb
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime_Sieve\obj\Debug\netcoreapp3.1\OutputPrime_Sieve.csprojAssemblyReference.cache
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime_Sieve\obj\Debug\netcoreapp3.1\OutputPrime_Sieve.AssemblyInfoInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime_Sieve\obj\Debug\netcoreapp3.1\OutputPrime_Sieve.AssemblyInfo.cs
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime_Sieve\obj\Debug\netcoreapp3.1\OutputPrime_Sieve.csproj.CoreCompileInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime_Sieve\obj\Debug\netcoreapp3.1\OutputPrime_Sieve.dll
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime_Sieve\obj\Debug\netcoreapp3.1\OutputPrime_Sieve.pdb
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime_Sieve\obj\Debug\netcoreapp3.1\OutputPrime_Sieve.genruntimeconfig.cache

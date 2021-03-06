@@ -1,0 +1,13 @@
+E:\C#\HomeWork_CSharp\HomeWork2\ArrayArgument\bin\Debug\netcoreapp3.1\ArrayArgument.exe
+E:\C#\HomeWork_CSharp\HomeWork2\ArrayArgument\bin\Debug\netcoreapp3.1\ArrayArgument.deps.json
+E:\C#\HomeWork_CSharp\HomeWork2\ArrayArgument\bin\Debug\netcoreapp3.1\ArrayArgument.runtimeconfig.json
+E:\C#\HomeWork_CSharp\HomeWork2\ArrayArgument\bin\Debug\netcoreapp3.1\ArrayArgument.runtimeconfig.dev.json
+E:\C#\HomeWork_CSharp\HomeWork2\ArrayArgument\bin\Debug\netcoreapp3.1\ArrayArgument.dll
+E:\C#\HomeWork_CSharp\HomeWork2\ArrayArgument\bin\Debug\netcoreapp3.1\ArrayArgument.pdb
+E:\C#\HomeWork_CSharp\HomeWork2\ArrayArgument\obj\Debug\netcoreapp3.1\ArrayArgument.csprojAssemblyReference.cache
+E:\C#\HomeWork_CSharp\HomeWork2\ArrayArgument\obj\Debug\netcoreapp3.1\ArrayArgument.AssemblyInfoInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork2\ArrayArgument\obj\Debug\netcoreapp3.1\ArrayArgument.AssemblyInfo.cs
+E:\C#\HomeWork_CSharp\HomeWork2\ArrayArgument\obj\Debug\netcoreapp3.1\ArrayArgument.csproj.CoreCompileInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork2\ArrayArgument\obj\Debug\netcoreapp3.1\ArrayArgument.dll
+E:\C#\HomeWork_CSharp\HomeWork2\ArrayArgument\obj\Debug\netcoreapp3.1\ArrayArgument.pdb
+E:\C#\HomeWork_CSharp\HomeWork2\ArrayArgument\obj\Debug\netcoreapp3.1\ArrayArgument.genruntimeconfig.cache

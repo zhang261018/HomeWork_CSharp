@@ -1,0 +1,13 @@
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime\bin\Debug\netcoreapp3.1\OutputPrime.exe
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime\bin\Debug\netcoreapp3.1\OutputPrime.deps.json
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime\bin\Debug\netcoreapp3.1\OutputPrime.runtimeconfig.json
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime\bin\Debug\netcoreapp3.1\OutputPrime.runtimeconfig.dev.json
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime\bin\Debug\netcoreapp3.1\OutputPrime.dll
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime\bin\Debug\netcoreapp3.1\OutputPrime.pdb
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime\obj\Debug\netcoreapp3.1\OutputPrime.csprojAssemblyReference.cache
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime\obj\Debug\netcoreapp3.1\OutputPrime.AssemblyInfoInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime\obj\Debug\netcoreapp3.1\OutputPrime.AssemblyInfo.cs
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime\obj\Debug\netcoreapp3.1\OutputPrime.csproj.CoreCompileInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime\obj\Debug\netcoreapp3.1\OutputPrime.dll
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime\obj\Debug\netcoreapp3.1\OutputPrime.pdb
+E:\C#\HomeWork_CSharp\HomeWork2\OutputPrime\obj\Debug\netcoreapp3.1\OutputPrime.genruntimeconfig.cache
