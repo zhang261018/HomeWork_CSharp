@@ -1,0 +1,13 @@
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInConsole\bin\Debug\netcoreapp3.1\CalculatorInConsole.exe
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInConsole\bin\Debug\netcoreapp3.1\CalculatorInConsole.deps.json
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInConsole\bin\Debug\netcoreapp3.1\CalculatorInConsole.runtimeconfig.json
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInConsole\bin\Debug\netcoreapp3.1\CalculatorInConsole.runtimeconfig.dev.json
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInConsole\bin\Debug\netcoreapp3.1\CalculatorInConsole.dll
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInConsole\bin\Debug\netcoreapp3.1\CalculatorInConsole.pdb
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInConsole\obj\Debug\netcoreapp3.1\CalculatorInConsole.csprojAssemblyReference.cache
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInConsole\obj\Debug\netcoreapp3.1\CalculatorInConsole.AssemblyInfoInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInConsole\obj\Debug\netcoreapp3.1\CalculatorInConsole.AssemblyInfo.cs
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInConsole\obj\Debug\netcoreapp3.1\CalculatorInConsole.csproj.CoreCompileInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInConsole\obj\Debug\netcoreapp3.1\CalculatorInConsole.dll
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInConsole\obj\Debug\netcoreapp3.1\CalculatorInConsole.pdb
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInConsole\obj\Debug\netcoreapp3.1\CalculatorInConsole.genruntimeconfig.cache

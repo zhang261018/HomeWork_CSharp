@@ -1,0 +1,10 @@
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInWindows\bin\Debug\CalculatorInWindows.exe.config
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInWindows\bin\Debug\CalculatorInWindows.exe
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInWindows\bin\Debug\CalculatorInWindows.pdb
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInWindows\obj\Debug\CalculatorInWindows.csprojAssemblyReference.cache
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInWindows\obj\Debug\CalculatorInWindows.Form1.resources
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInWindows\obj\Debug\CalculatorInWindows.Properties.Resources.resources
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInWindows\obj\Debug\CalculatorInWindows.csproj.GenerateResource.cache
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInWindows\obj\Debug\CalculatorInWindows.csproj.CoreCompileInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInWindows\obj\Debug\CalculatorInWindows.exe
+E:\C#\HomeWork_CSharp\HomeWork1\CalculatorInWindows\obj\Debug\CalculatorInWindows.pdb
