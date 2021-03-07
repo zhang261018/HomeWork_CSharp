@@ -40,15 +40,20 @@ namespace CalculatorInConsole
                             }
                             break;
                         default:
-                            throw new Exception("input a correct operator.");
+                            throw new FormatException("input a correct operator.");
                     }
 
                     Console.WriteLine($"The answer is {ans}");
                 }
-                //输入非数字检测
-                catch (Exception e)
+                //输入错误处理
+                catch (FormatException e)
                 {
-                    Console.WriteLine("Please input a correct number or operator.");
+                    Console.WriteLine(e.Message + "Please input a correct number or operator.");
+                }
+                //模零处理
+                catch (DivideByZeroException e)
+                {
+                    Console.WriteLine(e.Message);
                 }
 
                 //输入是否继续，单词输入错误默认继续

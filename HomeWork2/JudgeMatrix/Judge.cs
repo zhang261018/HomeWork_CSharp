@@ -11,7 +11,7 @@ namespace JudgeMatrix
             int row = matrix.GetLength(0);
             int col = matrix.GetLength(1);
 
-            //BP，第二行开始每一行判断与前一行对角是否相等即可
+            //第二行开始每一行判断与前一行对角是否相等即可
             for (int i = 1; i < row; i++)
             {
                 for (int j = 0; j < col; j++)
