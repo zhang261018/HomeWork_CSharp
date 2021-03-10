@@ -27,7 +27,7 @@ namespace OutputPrime
             //输出结果
             Console.WriteLine("All Prime Factor:");
             while (allPrimeFac.Count != 0)
-                Console.Write($"{allPrimeFac.Dequeue()}");
+                Console.Write($"{allPrimeFac.Dequeue()}\t");
         }
     }
 }

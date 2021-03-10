@@ -6,40 +6,26 @@ namespace OutputPrime
 {
     class Prime
     {
-        //1按非质数处理，返回一个存储结果的泛型队列
+        //可以再次改进，在for循环中不再处理已经处理过的i的倍数
         public static Queue<int> AllPrimeFactor(int num)
         {
-            int i = 2;
             Queue<int> allPrimeFac = new Queue<int>();
 
-            //每到一个因子判断是否为质数并输出
-            for (; i <= Math.Sqrt(num); i++)
-            {
-                if (num % i == 0 && JudgePrime(i))
+            //在处理了i之后一定不会出现num依旧是num倍数的情况，从而跳过了所有的非质数i的情况
+            for (int i = 2; i * i <= num;i++)
+            {   
+                while (num % i == 0)
                 {
-                    allPrimeFac.Enqueue(i);
-                    if (JudgePrime(num / i))
-                        allPrimeFac.Enqueue(num / i);
+                    if (!allPrimeFac.Contains(i))
+                        allPrimeFac.Enqueue(i);
+                    num /= i;
                 }
             }
+            //防止漏掉本身最后剩余一个质数的情况
+            if (num >= 2)
+                allPrimeFac.Enqueue(num);
 
             return allPrimeFac;
-        }
-
-        //遍历判断是否为质数
-        public static bool JudgePrime(int num)
-        {
-            if (num == 2)
-                return true;
-
-            //遍历到sqrt(num)前的数字，若可整除则不为质数
-            for (int i = 2; i <= Math.Sqrt(num); i++)
-            {
-                if (num % i == 0)
-                    return false;
-            }
-
-            return true;
         }
     }
 }

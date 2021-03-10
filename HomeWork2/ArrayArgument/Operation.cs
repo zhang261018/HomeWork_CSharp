@@ -6,7 +6,7 @@ namespace ArrayArgument
 {
     class Operation
     {
-        public static (int _max, int _min, double _average, int _sum) Operations(int[] nums)
+        public static (int, int, double, int) Operations(int[] nums)
         {
             double average = 0;
             int max = Int32.MinValue, min = Int32.MaxValue, sum = 0;
