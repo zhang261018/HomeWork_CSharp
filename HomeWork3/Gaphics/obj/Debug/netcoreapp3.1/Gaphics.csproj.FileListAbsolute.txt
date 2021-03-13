@@ -1,0 +1,4 @@
+E:\C#\HomeWork_CSharp\HomeWork3\Gaphics\obj\Debug\netcoreapp3.1\Gaphics.csprojAssemblyReference.cache
+E:\C#\HomeWork_CSharp\HomeWork3\Gaphics\obj\Debug\netcoreapp3.1\Gaphics.AssemblyInfoInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork3\Gaphics\obj\Debug\netcoreapp3.1\Gaphics.AssemblyInfo.cs
+E:\C#\HomeWork_CSharp\HomeWork3\Gaphics\obj\Debug\netcoreapp3.1\Gaphics.csproj.CoreCompileInputs.cache

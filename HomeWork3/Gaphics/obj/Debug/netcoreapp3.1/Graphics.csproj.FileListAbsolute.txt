@@ -1,0 +1,9 @@
+E:\C#\HomeWork_CSharp\HomeWork3\Gaphics\bin\Debug\netcoreapp3.1\Graphics.deps.json
+E:\C#\HomeWork_CSharp\HomeWork3\Gaphics\bin\Debug\netcoreapp3.1\Graphics.dll
+E:\C#\HomeWork_CSharp\HomeWork3\Gaphics\bin\Debug\netcoreapp3.1\Graphics.pdb
+E:\C#\HomeWork_CSharp\HomeWork3\Gaphics\obj\Debug\netcoreapp3.1\Graphics.AssemblyInfoInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork3\Gaphics\obj\Debug\netcoreapp3.1\Graphics.AssemblyInfo.cs
+E:\C#\HomeWork_CSharp\HomeWork3\Gaphics\obj\Debug\netcoreapp3.1\Graphics.csproj.CoreCompileInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork3\Gaphics\obj\Debug\netcoreapp3.1\Graphics.dll
+E:\C#\HomeWork_CSharp\HomeWork3\Gaphics\obj\Debug\netcoreapp3.1\Graphics.pdb
+E:\C#\HomeWork_CSharp\HomeWork3\Gaphics\obj\Debug\netcoreapp3.1\Graphics.csprojAssemblyReference.cache

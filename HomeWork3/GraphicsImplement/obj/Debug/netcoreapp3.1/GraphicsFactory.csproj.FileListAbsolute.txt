@@ -1,0 +1,16 @@
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\bin\Debug\netcoreapp3.1\GraphicsFactory.exe
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\bin\Debug\netcoreapp3.1\GraphicsFactory.deps.json
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\bin\Debug\netcoreapp3.1\GraphicsFactory.runtimeconfig.json
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\bin\Debug\netcoreapp3.1\GraphicsFactory.runtimeconfig.dev.json
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\bin\Debug\netcoreapp3.1\GraphicsFactory.dll
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\bin\Debug\netcoreapp3.1\GraphicsFactory.pdb
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\bin\Debug\netcoreapp3.1\Graphics.dll
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\bin\Debug\netcoreapp3.1\Graphics.pdb
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\obj\Debug\netcoreapp3.1\GraphicsFactory.csprojAssemblyReference.cache
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\obj\Debug\netcoreapp3.1\GraphicsFactory.AssemblyInfoInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\obj\Debug\netcoreapp3.1\GraphicsFactory.AssemblyInfo.cs
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\obj\Debug\netcoreapp3.1\GraphicsFactory.csproj.CoreCompileInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\obj\Debug\netcoreapp3.1\GraphicsFactory.csproj.CopyComplete
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\obj\Debug\netcoreapp3.1\GraphicsFactory.dll
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\obj\Debug\netcoreapp3.1\GraphicsFactory.pdb
+E:\C#\HomeWork_CSharp\HomeWork3\GraphicsImplement\obj\Debug\netcoreapp3.1\GraphicsFactory.genruntimeconfig.cache
