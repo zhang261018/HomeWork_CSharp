@@ -1,0 +1,13 @@
+E:\C#\HomeWork_CSharp\HomeWork4\ListArray\bin\Debug\netcoreapp3.1\ListArray.exe
+E:\C#\HomeWork_CSharp\HomeWork4\ListArray\bin\Debug\netcoreapp3.1\ListArray.deps.json
+E:\C#\HomeWork_CSharp\HomeWork4\ListArray\bin\Debug\netcoreapp3.1\ListArray.runtimeconfig.json
+E:\C#\HomeWork_CSharp\HomeWork4\ListArray\bin\Debug\netcoreapp3.1\ListArray.runtimeconfig.dev.json
+E:\C#\HomeWork_CSharp\HomeWork4\ListArray\bin\Debug\netcoreapp3.1\ListArray.dll
+E:\C#\HomeWork_CSharp\HomeWork4\ListArray\bin\Debug\netcoreapp3.1\ListArray.pdb
+E:\C#\HomeWork_CSharp\HomeWork4\ListArray\obj\Debug\netcoreapp3.1\ListArray.csprojAssemblyReference.cache
+E:\C#\HomeWork_CSharp\HomeWork4\ListArray\obj\Debug\netcoreapp3.1\ListArray.AssemblyInfoInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork4\ListArray\obj\Debug\netcoreapp3.1\ListArray.AssemblyInfo.cs
+E:\C#\HomeWork_CSharp\HomeWork4\ListArray\obj\Debug\netcoreapp3.1\ListArray.csproj.CoreCompileInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork4\ListArray\obj\Debug\netcoreapp3.1\ListArray.dll
+E:\C#\HomeWork_CSharp\HomeWork4\ListArray\obj\Debug\netcoreapp3.1\ListArray.pdb
+E:\C#\HomeWork_CSharp\HomeWork4\ListArray\obj\Debug\netcoreapp3.1\ListArray.genruntimeconfig.cache

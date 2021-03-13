@@ -1,0 +1,13 @@
+E:\C#\HomeWork_CSharp\HomeWork4\Clock\bin\Debug\netcoreapp3.1\LittleClock.exe
+E:\C#\HomeWork_CSharp\HomeWork4\Clock\bin\Debug\netcoreapp3.1\LittleClock.deps.json
+E:\C#\HomeWork_CSharp\HomeWork4\Clock\bin\Debug\netcoreapp3.1\LittleClock.runtimeconfig.json
+E:\C#\HomeWork_CSharp\HomeWork4\Clock\bin\Debug\netcoreapp3.1\LittleClock.runtimeconfig.dev.json
+E:\C#\HomeWork_CSharp\HomeWork4\Clock\bin\Debug\netcoreapp3.1\LittleClock.dll
+E:\C#\HomeWork_CSharp\HomeWork4\Clock\bin\Debug\netcoreapp3.1\LittleClock.pdb
+E:\C#\HomeWork_CSharp\HomeWork4\Clock\obj\Debug\netcoreapp3.1\LittleClock.csprojAssemblyReference.cache
+E:\C#\HomeWork_CSharp\HomeWork4\Clock\obj\Debug\netcoreapp3.1\LittleClock.AssemblyInfoInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork4\Clock\obj\Debug\netcoreapp3.1\LittleClock.AssemblyInfo.cs
+E:\C#\HomeWork_CSharp\HomeWork4\Clock\obj\Debug\netcoreapp3.1\LittleClock.csproj.CoreCompileInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork4\Clock\obj\Debug\netcoreapp3.1\LittleClock.dll
+E:\C#\HomeWork_CSharp\HomeWork4\Clock\obj\Debug\netcoreapp3.1\LittleClock.pdb
+E:\C#\HomeWork_CSharp\HomeWork4\Clock\obj\Debug\netcoreapp3.1\LittleClock.genruntimeconfig.cache
