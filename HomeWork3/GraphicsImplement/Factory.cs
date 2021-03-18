@@ -7,16 +7,35 @@ namespace GraphicsFactory
 {
     class Factory
     {
-        public static object GetProduct(String graphics, double length1 = 1, double length2 = 1, double length3 = 1)
+        public static object GetProduct(String graphics, params double[] length)
         {
-            //根据传入的类型返回不同的图形
-            switch(graphics.ToLower())
+            Delineation obj = null;
+            try
             {
-                case "square":return new Square(length1);
-                case "rectangle":return new Rectangle(length1, length2);
-                case "triangle":return new Triangle(new double[3] { length1, length2, length3 });
-                default:return null;
+                //根据传入的类型返回不同的图形
+                switch (graphics.ToLower())
+                {
+                    case "square":obj = new Square(length[0]); break;
+                    case "rectangle":obj = new Rectangle(length[0], length[1]); break;
+                    case "triangle":obj = new Triangle(new double[3] { length[0], length[1], length[2] }); break;
+                    case "circle":obj = new Circle(length[0]); break;
+                    default: break;
+                }
+                if(obj == null)
+                {
+                    throw new ArgumentException("type error!");
+                }
+                if(!obj.IsLegal)
+                {
+                    throw new ArgumentException("argument error!");
+                }
             }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            return obj;
         }
     }
 }

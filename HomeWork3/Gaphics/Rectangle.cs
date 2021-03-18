@@ -14,7 +14,7 @@ namespace Graphics
         public Rectangle(double length = 1, double width = 1)
         {
             this.length = length;
-            this.width = width;
+            this.width = width;     
         }
 
         public double Length
