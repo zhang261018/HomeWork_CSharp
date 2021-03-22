@@ -1,0 +1,13 @@
+E:\C#\HomeWork_CSharp\HomeWork5\OrderManager\bin\Debug\netcoreapp3.1\OrderManager.exe
+E:\C#\HomeWork_CSharp\HomeWork5\OrderManager\bin\Debug\netcoreapp3.1\OrderManager.deps.json
+E:\C#\HomeWork_CSharp\HomeWork5\OrderManager\bin\Debug\netcoreapp3.1\OrderManager.runtimeconfig.json
+E:\C#\HomeWork_CSharp\HomeWork5\OrderManager\bin\Debug\netcoreapp3.1\OrderManager.runtimeconfig.dev.json
+E:\C#\HomeWork_CSharp\HomeWork5\OrderManager\bin\Debug\netcoreapp3.1\OrderManager.dll
+E:\C#\HomeWork_CSharp\HomeWork5\OrderManager\bin\Debug\netcoreapp3.1\OrderManager.pdb
+E:\C#\HomeWork_CSharp\HomeWork5\OrderManager\obj\Debug\netcoreapp3.1\OrderManager.csprojAssemblyReference.cache
+E:\C#\HomeWork_CSharp\HomeWork5\OrderManager\obj\Debug\netcoreapp3.1\OrderManager.AssemblyInfoInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork5\OrderManager\obj\Debug\netcoreapp3.1\OrderManager.AssemblyInfo.cs
+E:\C#\HomeWork_CSharp\HomeWork5\OrderManager\obj\Debug\netcoreapp3.1\OrderManager.csproj.CoreCompileInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork5\OrderManager\obj\Debug\netcoreapp3.1\OrderManager.dll
+E:\C#\HomeWork_CSharp\HomeWork5\OrderManager\obj\Debug\netcoreapp3.1\OrderManager.pdb
+E:\C#\HomeWork_CSharp\HomeWork5\OrderManager\obj\Debug\netcoreapp3.1\OrderManager.genruntimeconfig.cache
