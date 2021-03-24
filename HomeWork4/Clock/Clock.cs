@@ -2,41 +2,64 @@
 using System.Collections.Generic;
 using System.Timers;
 using System.Text;
+using System.Threading;
 
 namespace LittleClock
 {
-    class Clock
+    public class Clock
     {
+        //private bool work;
+        //Thread start;
+        //Thread stop;
+
         private DateTime time;      //存储当前时间
-        private DateTime timing;    //存储目标时间
-        private Timer timers;       //计时器
+        private DateTime timing;    //存储定时时间
+
+        public delegate void AlarmHander();
+        public event AlarmHander TimeElapse;
 
         //构造函数（当前时间，目标时间）
         public Clock(DateTime time, DateTime timing)
         {
             this.time = time;
             this.timing = timing;
-            timers = new Timer(1000);            
+
+            AlarmHander alarm = this.Tick;
+            alarm += this.Alarm;
+
+            TimeElapse += alarm;
         }
+
         //启动闹钟
         public void Start()
         {
-            timers.Enabled = true;
-            timers.AutoReset = true;
-            timers.Elapsed += Tick;
-            timers.Elapsed += Alarm;
+            // this.work = true;
+            while(true)
+            {
+                TimeElapse();
+                Thread.Sleep(1000);
+            }
         }
-        public void Stop()
+
+        //public void Stop()
+        //{
+        //    this.work = false;
+        //}
+
+        //重新设置时间
+        public void ResetTiming(DateTime newTime)
         {
-            timers.Enabled = false;
+            Console.WriteLine("reset alarm time: " + newTime.ToString("yyyy-MM-dd-HH-mm-ss"));
+            timing = newTime;
         }
+
         //Tick，Alarm
-        public void Tick(object sender, ElapsedEventArgs s)
+        public void Tick()
         {
             time = time.AddSeconds(1);
-            Console.WriteLine("Tick!");
+            Console.WriteLine("Tick!\t" + time.ToString("yyyy-MM-dd-HH-mm-ss"));
         }
-        public void Alarm(object sender, ElapsedEventArgs s)
+        public void Alarm()
         {
             if (time.Hour == timing.Hour && time.Minute == timing.Minute && time.Second == timing.Second)
             {
