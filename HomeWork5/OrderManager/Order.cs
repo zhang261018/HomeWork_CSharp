@@ -6,7 +6,7 @@ namespace OrderManager
 {
     public class Order: IComparable
     {
-        public OrderDetails order;
+        public List<OrderDetails> order;
         public string orderNumber;
         public string client;
         public int orderAmount;
@@ -15,7 +15,7 @@ namespace OrderManager
 
         //
         public Order(string orderNumber, string client, string orderAmount, 
-            string orderAddress, OrderDetails order, DateTime orderTime)
+            string orderAddress, List<OrderDetails> order, DateTime orderTime)
         {
             this.orderNumber = orderNumber;
             this.client = client;
@@ -35,10 +35,13 @@ namespace OrderManager
         //ToString方法的重载
         public override string ToString()
         {
-            return string.Format("{0,-8}{1}{2,-24}{3,-8}{4,-16}{5,-16}",
-                orderNumber, order.ToString(),
+            string output =  string.Format("{0,-8}{1,-24}{2,-8}{3,-16}{4,-16}",
+                orderNumber,
                 client, orderAmount,
                 orderTime.ToString("yyyy-MM-dd"), orderAddress);
+            foreach (OrderDetails o in order)
+                output += o.ToString();
+            return output;
         }
 
         //Equals方法的重载
@@ -49,17 +52,12 @@ namespace OrderManager
             if (newOrder == null)
                 throw new Exception("无效的对象");
 
-            return order.Equals(newOrder.order) &&
-                (orderNumber == newOrder.orderNumber) &&
-                (client == newOrder.client) &&
-                (orderAmount == newOrder.orderAmount) &&
-                (orderTime.Equals(newOrder.orderTime)) &&
-                (orderAddress == newOrder.orderAddress);
+            return orderNumber == newOrder.orderNumber;
         }
 
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return Convert.ToInt32(this.orderNumber);
         }
     }
 }

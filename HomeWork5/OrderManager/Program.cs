@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 
 namespace OrderManager
 {
@@ -7,18 +9,21 @@ namespace OrderManager
         static void Main(string[] args)
         {
             OrderService newOrder = new OrderService();
+            List<OrderDetails> list = new List<OrderDetails>();
+            list.Add(new OrderDetails("snacks", "15", "100"));
+            list.Add(new OrderDetails("desktop", "1", "10000"));
 
             //添加一定数量的订单
-            newOrder.Add(new Order("001", "zhangjiarui", "1500", "武汉大学", new OrderDetails("snacks", "15", "100"), new DateTime(2021, 3, 18)));
-            newOrder.Add(new Order("005", "zhangjiarui", "10000", "武汉大学", new OrderDetails("desktop", "1", "10000"), new DateTime(2021, 2, 18)));
-            newOrder.Add(new Order("004", "zhangjiarui", "300", "武汉大学", new OrderDetails("keyboard", "1", "300"), new DateTime(2021, 3, 11)));
-            newOrder.Add(new Order("003", "zhangjiarui", "5000", "武汉大学", new OrderDetails("desktop", "1", "5000"), new DateTime(2021, 2, 27)));
-            newOrder.Add(new Order("002", "zhangjiarui_copy1", "800", "华中科技大学", new OrderDetails("shelf", "1", "800"), new DateTime(2021, 3, 1)));
-            newOrder.Add(new Order("006", "zhangjiarui_copy1", "60", "华中科技大学", new OrderDetails("snack", "15", "100"), new DateTime(2021, 3, 18)));
-            newOrder.Add(new Order("007", "zhangjiarui_copy2", "10000", "武汉大学", new OrderDetails("desktop", "1", "7000"), new DateTime(2021, 3, 18)));
-            newOrder.Add(new Order("008", "zhangjiarui_copy2", "1500", "武汉大学", new OrderDetails("snacks", "50", "30"), new DateTime(2021, 3, 11)));
-            newOrder.Add(new Order("009", "zhangjiarui_copy3", "300", "华中科技大学", new OrderDetails("mouse", "1", "300"), new DateTime(2021, 3, 1)));
-            newOrder.Add(new Order("0010", "zhangjiarui_copy3", "27", "华中科技大学", new OrderDetails("juice", "1", "27"), new DateTime(2021, 3, 18)));
+            newOrder.Add(new Order("001", "zhangjiarui", "1500", "武汉大学", list, new DateTime(2021, 3, 18)));
+            newOrder.Add(new Order("005", "zhangjiarui", "10000", "武汉大学", list, new DateTime(2021, 2, 18)));
+            newOrder.Add(new Order("004", "zhangjiarui", "300", "武汉大学", list, new DateTime(2021, 3, 11)));
+            newOrder.Add(new Order("003", "zhangjiarui", "5000", "武汉大学", list, new DateTime(2021, 2, 27)));
+            newOrder.Add(new Order("002", "zhangjiarui_copy1", "800", "华中科技大学", list, new DateTime(2021, 3, 1)));
+            newOrder.Add(new Order("006", "zhangjiarui_copy1", "60", "华中科技大学", list, new DateTime(2021, 3, 18)));
+            newOrder.Add(new Order("007", "zhangjiarui_copy2", "10000", "武汉大学", list, new DateTime(2021, 3, 18)));
+            newOrder.Add(new Order("008", "zhangjiarui_copy2", "1500", "武汉大学", list, new DateTime(2021, 3, 11)));
+            newOrder.Add(new Order("009", "zhangjiarui_copy3", "300", "华中科技大学", list, new DateTime(2021, 3, 1)));
+            newOrder.Add(new Order("0010", "zhangjiarui_copy3", "27", "华中科技大学", list, new DateTime(2021, 3, 18)));
 
             Console.WriteLine("展示所有订单");
             newOrder.Display();

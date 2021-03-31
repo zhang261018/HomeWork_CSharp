@@ -18,8 +18,8 @@ namespace OrderManager
         //展示所有订单
         public void Display()
         {
-            Console.WriteLine("{0,-5}{1,-12}{2,-6:C}{3,-6}{4,-22}{5,-5}{6,-12}{7,-12}",
-                "订单号","货物种类","数量","单价","客户","总金额","订单时间","订单地址");
+            Console.WriteLine("{0,-5}{1,-22}{2,-5}{3,-12}{4,-12}{5}",
+                "订单号","客户","总金额","订单时间","订单地址","订单");
             
             foreach(Order o in orderList)
             {
@@ -32,7 +32,7 @@ namespace OrderManager
         {
             this.orderList.Sort();
         }
-
+    
         //传递lambda表达式的排序函数
         public void Sort(Func<Order, Order, int> func)
         {
@@ -88,11 +88,6 @@ namespace OrderManager
             if (type.ToLower() == "ordernumber")
             {
                 var order = from odr in orderList where odr.orderNumber == name orderby odr.orderAmount select odr;
-                result = order.ToList();
-            }
-            else if (type.ToLower() == "tradename")
-            {
-                var order = from odr in orderList where odr.order.tradeName == name orderby odr.orderAmount select odr;
                 result = order.ToList();
             }
             else if (type.ToLower() == "client")
