@@ -37,11 +37,11 @@ namespace OrderManager
             newOrder.Display();
 
             Console.WriteLine("\n所有zhangjiarui下的订单");
-            foreach (Order o in newOrder.Search("client", "zhangjiarui"))
+            foreach (Order o in newOrder.SearchByClient("zhangjiarui"))
                 Console.WriteLine(o.ToString());
 
             Console.WriteLine("\n所有在华中科技大学下的订单");
-            foreach (Order o in newOrder.Search("orderAddress", "华中科技大学"))
+            foreach (Order o in newOrder.SearchByAddress("华中科技大学"))
                 Console.WriteLine(o.ToString());
 
             Console.WriteLine("\n删除订单号为009的订单");

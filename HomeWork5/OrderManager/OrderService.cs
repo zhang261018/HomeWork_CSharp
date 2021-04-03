@@ -53,7 +53,7 @@ namespace OrderManager
         //提供订单号进行删除，提供了错误的订单号会抛出异常
         public void Delete(string orderNum)
         {
-            List<Order> searchResult = this.Search("orderNumber", orderNum);
+            List<Order> searchResult = this.SearchByNumber(orderNum);
 
             if (searchResult.Count == 0)
             {
@@ -73,7 +73,7 @@ namespace OrderManager
             if (newOrder == null)
                 throw new Exception("请提供有效订单");
 
-            List<Order> newList = this.Search("orderNumber", orderNum);
+            List<Order> newList = this.SearchByNumber(orderNum);
             if (newList == null)
                 throw new ArgumentException("订单号不存在");
             else
@@ -81,40 +81,48 @@ namespace OrderManager
             return true;
         }
 
+
+
         //查询所需订单，当查询结果为空的时候抛出异常
-        public List<Order> Search(string type, string name)
+        public List<Order> SearchByNumber(string name)
         {
-            List<Order> result;
-            if (type.ToLower() == "ordernumber")
-            {
-                var order = from odr in orderList where odr.orderNumber == name orderby odr.orderAmount select odr;
-                result = order.ToList();
-            }
-            else if (type.ToLower() == "client")
-            {
-                var order = from odr in orderList where odr.client == name orderby odr.orderAmount select odr;
-                result = order.ToList();
-            }
-            else if (type.ToLower() == "orderaddress")
-            {
-                var order = from odr in orderList where odr.orderAddress == name orderby odr.orderAmount select odr;
-                result = order.ToList();
-            }
-            else if (type.ToLower() == "ordertime")
-            {
-                var order = from odr in orderList where odr.orderTime.ToString("yyyy-MM-dd") == name orderby odr.orderAmount select odr;
-                result = order.ToList();
-            }
-            else if (type.ToLower() == "orderamount")
-            {
-                var order = from odr in orderList where odr.orderAmount == Convert.ToInt32(name) select odr;
-                result = order.ToList();
-            }
-            else
-            {
-                result = null;
-                throw new ArgumentException("typeError");
-            }
+            var order = from odr in orderList where odr.orderNumber == name orderby odr.orderAmount select odr;
+            List<Order> result = order.ToList();
+            if(result == null)
+                throw new ArgumentException("doesn't exist.");
+            return result;
+        }
+        
+        public List<Order> SearchByClient(string name)
+        {
+            var order = from odr in orderList where odr.client == name orderby odr.orderAmount select odr;
+            List<Order> result = order.ToList();
+            if (result == null)
+                throw new ArgumentException("doesn't exist.");
+            return result;
+        }
+        public List<Order> SearchByAddress(string name)
+        {
+            var order = from odr in orderList where odr.orderAddress == name orderby odr.orderAmount select odr;
+            List<Order> result = order.ToList();
+            if (result == null)
+                throw new ArgumentException("doesn't exist.");
+            return result;
+        }
+        public List<Order> SearchByTime(string name)
+        {
+            var order = from odr in orderList where odr.orderTime.ToString("yyyy-MM-dd") == name orderby odr.orderAmount select odr;
+            List<Order> result = order.ToList();
+            if (result == null)
+                throw new ArgumentException("doesn't exist.");
+            return result;
+        }
+        public List<Order> SearchByAmount(double name)
+        {
+            var order = from odr in orderList where odr.orderAmount == name select odr;
+            List<Order> result = order.ToList();
+            if (result == null)
+                throw new ArgumentException("doesn't exist.");
             return result;
         }
     }
