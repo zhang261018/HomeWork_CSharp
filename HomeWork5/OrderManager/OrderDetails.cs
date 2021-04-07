@@ -6,10 +6,13 @@ namespace OrderManager
 {
     public class OrderDetails
     {
-        public string tradeName;
-        public string tradePrice;
-        public int tradeAmount;
+        private string tradeName;
+        private string tradePrice;
+        private int tradeAmount;
 
+        public string TradeName { get => tradeName; set => tradeName = value; }
+        public string TradePrice { get => tradePrice; set => tradeName = value; }
+        public int TradeAmount { get => tradeAmount; set => tradeAmount = value; }
         //两个水长度的构造函数...
         public OrderDetails(string tradeName, string tradePrice, string tradeAmount)
         {
@@ -35,6 +38,8 @@ namespace OrderManager
         public override bool Equals(object obj)
         {
             OrderDetails newOrder = obj as OrderDetails;
+            if (newOrder == null)
+                return false;
             return (newOrder.tradeName == this.tradeName)
                 && (newOrder.tradePrice == this.tradePrice)
                 && (newOrder.tradeAmount == this.tradeAmount);

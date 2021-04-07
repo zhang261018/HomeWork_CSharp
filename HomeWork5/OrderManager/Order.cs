@@ -6,12 +6,19 @@ namespace OrderManager
 {
     public class Order: IComparable
     {
-        public List<OrderDetails> order;
-        public string orderNumber;
-        public string client;
-        public int orderAmount;
-        public DateTime orderTime;
-        public string orderAddress;
+        private List<OrderDetails> order = new List<OrderDetails>();
+        private string orderNumber = "";
+        private string client = "";
+        private int orderAmount = 0;
+        private DateTime orderTime = new DateTime();
+        private string orderAddress = "";            
+
+        public List<OrderDetails> Orders { get => order; }
+        public string OrderNumber { get => orderNumber; }
+        public string Client { get => client; }
+        public int OrderAmount { get => orderAmount; }
+        public DateTime OrderTime { get => orderTime; }
+        public string OrderAddress { get => orderAddress; }
 
         //
         public Order(string orderNumber, string client, string orderAmount, 
@@ -29,6 +36,8 @@ namespace OrderManager
         public int CompareTo(object obj)
         {
             Order newOrder = obj as Order;
+            if (newOrder == null)
+                throw new TypeAccessException("对象类型不正确");
             return Int32.Parse(this.orderNumber) - Int32.Parse(newOrder.orderNumber);
         }
 
@@ -50,7 +59,7 @@ namespace OrderManager
             Order newOrder = obj as Order;
 
             if (newOrder == null)
-                throw new Exception("无效的对象");
+                return false;
 
             return orderNumber == newOrder.orderNumber;
         }
