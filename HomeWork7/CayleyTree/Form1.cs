@@ -22,6 +22,7 @@ namespace CayleyTree
             InitializeComponent();
         }
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
             comboBox1.Items.Add("Orange");
@@ -53,9 +54,9 @@ namespace CayleyTree
 
             if (graphics == null) graphics = this.CreateGraphics();
             graphics.Clear(Color.White);
-            CleanText();
+            // CleanText();
 
-            DrawCayleyTree(depth, 150, 350, leng, -Math.PI / 2, color);
+            DrawCayleyTree(depth, 200, 400, leng, -Math.PI / 2, color);
         }
 
         public void DrawCayleyTree(int n, double x0, double y0, double leng, double th, string color)
@@ -74,10 +75,10 @@ namespace CayleyTree
             switch (color.ToLower().Trim()) 
             {
                 case "orange": graphics.DrawLine(Pens.Orange, (int)x0, (int)y0, (int)x1, (int)y1);break;
-                case "blue": graphics.DrawLine(Pens.Blue, (int)x0, (int)y0, (int)x1, (int)y1); break;
+                case "blue": graphics.DrawLine(Pens.AliceBlue, (int)x0, (int)y0, (int)x1, (int)y1); break;
                 case "yellow": graphics.DrawLine(Pens.Yellow, (int)x0, (int)y0, (int)x1, (int)y1); break;
                 case "red": graphics.DrawLine(Pens.Red, (int)x0, (int)y0, (int)x1, (int)y1); break;
-                case "Pink": graphics.DrawLine(Pens.Pink, (int)x0, (int)y0, (int)x1, (int)y1); break;
+                case "pink": graphics.DrawLine(Pens.Pink, (int)x0, (int)y0, (int)x1, (int)y1); break;
                 case "green": graphics.DrawLine(Pens.Green, (int)x0, (int)y0, (int)x1, (int)y1); break;
                 default: graphics.DrawLine(Pens.Pink, (int)x0, (int)y0, (int)x1, (int)y1); break;
             }
@@ -91,6 +92,11 @@ namespace CayleyTree
             textBox4.Clear();
             textBox5.Clear();
             textBox6.Clear();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
