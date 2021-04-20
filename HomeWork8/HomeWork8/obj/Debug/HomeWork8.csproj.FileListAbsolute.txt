@@ -1,0 +1,15 @@
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\bin\Debug\HomeWork8.exe.config
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\bin\Debug\HomeWork8.exe
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\bin\Debug\HomeWork8.pdb
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\bin\Debug\OrderManager.dll
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\bin\Debug\OrderManager.pdb
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\obj\Debug\HomeWork8.csprojAssemblyReference.cache
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\obj\Debug\HomeWork8.Form1.resources
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\obj\Debug\HomeWork8.Properties.Resources.resources
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\obj\Debug\HomeWork8.csproj.GenerateResource.cache
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\obj\Debug\HomeWork8.csproj.CoreCompileInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\obj\Debug\HomeWork8.csproj.CopyComplete
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\obj\Debug\HomeWork8.exe
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\obj\Debug\HomeWork8.pdb
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\obj\Debug\HomeWork8.ModifyWin.resources
+E:\C#\HomeWork_CSharp\HomeWork8\HomeWork8\obj\Debug\HomeWork8.AddDetails.resources

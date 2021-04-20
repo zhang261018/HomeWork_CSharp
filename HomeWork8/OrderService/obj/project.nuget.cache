@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rh4atfWRzexPZV/M30Svly9MxOr+OpJk1pggwutirqNmIoXAPGYaQWkhc38kOjrw1c07wWU/1nRU9KMik3xPUA==",
+  "success": true,
+  "projectFilePath": "E:\\C#\\HomeWork_CSharp\\HomeWork8\\OrderService\\OrderManager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ludwig\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Ludwig\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
