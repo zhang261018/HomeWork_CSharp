@@ -120,7 +120,7 @@ namespace HomeWork8
             // 
             this.button1.Location = new System.Drawing.Point(223, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 64);
+            this.button1.Size = new System.Drawing.Size(103, 64);
             this.button1.TabIndex = 10;
             this.button1.Text = "添加";
             this.button1.UseVisualStyleBackColor = true;
@@ -136,7 +136,7 @@ namespace HomeWork8
             // 
             this.button2.Location = new System.Drawing.Point(223, 92);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 65);
+            this.button2.Size = new System.Drawing.Size(103, 65);
             this.button2.TabIndex = 12;
             this.button2.Text = "修改";
             this.button2.UseVisualStyleBackColor = true;
@@ -146,7 +146,8 @@ namespace HomeWork8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 447);
+            this.BackColor = System.Drawing.SystemColors.Menu;
+            this.ClientSize = new System.Drawing.Size(389, 428);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.button1);
@@ -160,6 +161,7 @@ namespace HomeWork8
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ModifyWin";
+            this.Opacity = 0.8D;
             this.Text = "modify";
             this.Load += new System.EventHandler(this.modify_Load);
             this.ResumeLayout(false);

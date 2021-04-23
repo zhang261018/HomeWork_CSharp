@@ -24,6 +24,7 @@ namespace HomeWork8
 
         public ModifyWin(OrderService orderService, string modify)
         {
+            InitializeComponent();
             this.orderService = orderService;
             this.modifyOrder = modify;
         }
@@ -45,7 +46,7 @@ namespace HomeWork8
             Order newOrder = new Order(newOrders, orderNumber,Client,orderAmount,orderAddress,dateTime);
             orderService.Add(newOrder);
 
-            this.Close();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -65,6 +66,8 @@ namespace HomeWork8
 
             Order newOrder = new Order(newOrders, orderNumber, Client, orderAmount, orderAddress, dateTime);
             orderService.Modify(modifyOrder, newOrder);
+
+            this.Close();
         }
     }
 }

@@ -16,6 +16,7 @@ namespace HomeWork8
         OrderService orderService;
         BindingSource orderBindingSource;
         BindingSource orderDBindingSource;
+        ModifyWin modifyWindows;
 
         public Form1()
         {
@@ -28,25 +29,28 @@ namespace HomeWork8
             orderBindingSource = new BindingSource();
             orderDBindingSource = new BindingSource();
 
-            comboBox1.Items.Add("Time");
-            comboBox1.Items.Add("Number");
-            comboBox1.Items.Add("Client");
-            comboBox1.Items.Add("Address");
-            comboBox1.Items.Add("Amount");
-            comboBox1.SelectedItem = comboBox1.Items[1];
+            selectBy.Items.Add("Time");
+            selectBy.Items.Add("Number");
+            selectBy.Items.Add("Client");
+            selectBy.Items.Add("Address");
+            selectBy.Items.Add("Amount");
+            selectBy.SelectedItem = selectBy.Items[1];
+
+            modifyWindows = new ModifyWin(this.orderService);
+            showSelect.Items.Add("当前选中");
 
             orderBindingSource.DataSource = orderService.OrderList;
 
-            dataGridView1.DataSource = orderBindingSource;
-            dataGridView2.DataSource = orderDBindingSource;
+            odrDataGridView.DataSource = orderBindingSource;
+            odrDetailsGridView.DataSource = orderDBindingSource;
         }
 
         private void 删除该订单ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int currentOrderNumber = dataGridView1.CurrentRow.Index;
-            string orderNumber = dataGridView1.Rows[currentOrderNumber].Cells[0].Value.ToString();
+            int currentOrderNumber = odrDataGridView.CurrentRow.Index;
+            string orderNumber = odrDataGridView.Rows[currentOrderNumber].Cells[0].Value.ToString();
 
-            orderBindingSource.DataSource = null;
+            // orderBindingSource.DataSource = null;
 
             try
             {
@@ -58,43 +62,8 @@ namespace HomeWork8
             }
             MessageBox.Show("删除成功");
 
-            orderBindingSource.DataSource = orderService.OrderList;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string kind = "";
-            string message = textBox1.Text.Trim();
-            try
-            {
-                kind = comboBox1.SelectedItem.ToString();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-            if(message == "")
-            {
-                orderBindingSource.DataSource = orderService.OrderList;
-                return;
-            }
-            try
-            {
-                switch (kind)
-                {
-                    case "Number": orderBindingSource.DataSource = orderService.SearchByNumber(message); break;
-                    case "Time": orderBindingSource.DataSource = orderService.SearchByTime(message); break;
-                    case "Client": orderBindingSource.DataSource = orderService.SearchByClient(message); break;
-                    case "Address": orderBindingSource.DataSource = orderService.SearchByAddress(message); break;
-                    case "Amount": orderBindingSource.DataSource = orderService.SearchByAmount(Convert.ToDouble(message)); break;
-                    default: orderBindingSource.DataSource = orderService.OrderList;break;
-                }
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            // orderBindingSource.DataSource = orderService.OrderList;
+            orderBindingSource.ResetBindings(false);
         }
 
         private void 导入数据ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -126,18 +95,19 @@ namespace HomeWork8
             orderBindingSource.DataSource = orderService.OrderList;
         }
 
-        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void OdrGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             int row = e.RowIndex;
             List<Order> odr = null;
             if (row > -1)
             {
-                odr = orderService.SearchByNumber(dataGridView1.Rows[row].Cells[0].Value.ToString());
+                showSelect.Items.Clear();
+                odr = orderService.SearchByNumber(odrDataGridView.Rows[row].Cells[0].Value.ToString());
                 orderDBindingSource.DataSource = odr[0].Orders;
-                label1.Text = "当前选中：";
+                showSelect.Items.Add("当前选中:");
                 foreach (Order o in odr)
                 {
-                    label1.Text += o.ToString();
+                    showSelect.Items.Add(odr[0].ToString());
                 }
             }
 
@@ -145,26 +115,21 @@ namespace HomeWork8
                 contextMenuStrip1.Show(MousePosition);
         }
 
-        private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
+        private void OdrGridView_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 contextMenuStrip1.Show(MousePosition);
         }
 
-        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void 修改该订单ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int currentOrderNumber = dataGridView1.CurrentRow.Index;
-            string orderNumber = dataGridView1.Rows[currentOrderNumber].Cells[0].Value.ToString();
+            int currentOrderNumber = odrDataGridView.CurrentRow.Index;
+            string orderNumber = odrDataGridView.Rows[currentOrderNumber].Cells[0].Value.ToString();
 
-            orderBindingSource.DataSource = null;
-            ModifyWin tmpForm = new ModifyWin(this.orderService, orderNumber);
-            tmpForm.Show();
-            orderBindingSource.DataSource = orderService.OrderList;
+            ModifyWin modifyWin = new ModifyWin(this.orderService, orderNumber);
+            modifyWin.Show();
+            // orderBindingSource.DataSource = orderService.OrderList;
+            orderBindingSource.ResetBindings(false);
         }
 
         private void 导出数据ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -194,13 +159,13 @@ namespace HomeWork8
 
         private void 创建新订单ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ModifyWin tempWindows = new ModifyWin(this.orderService);
-            orderBindingSource.DataSource = null;
-            tempWindows.Show();
-            orderBindingSource.DataSource = orderService.OrderList;
+            // ModifyWin tempWindows = new ModifyWin(this.orderService);
+            modifyWindows.Show();
+            // orderBindingSource.DataSource = orderService.OrderList;
+            orderBindingSource.ResetBindings(false);
         }
 
-        private void dataGridView2_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void OdrDetailsGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 contextMenuStrip2.Show(MousePosition);
@@ -208,32 +173,30 @@ namespace HomeWork8
 
         private void 添加新订单明细ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int currentOrderNumber = dataGridView1.CurrentRow.Index;
-            string orderNumber = dataGridView1.Rows[currentOrderNumber].Cells[0].Value.ToString();
+            int currentOrderNumber = odrDataGridView.CurrentRow.Index;
+            string orderNumber = odrDataGridView.Rows[currentOrderNumber].Cells[0].Value.ToString();
             Order targetOrder = orderService.OrderList.Find((Order order) => { return order.orderNumber == orderNumber; });
-
-            orderDBindingSource.DataSource = null;
 
             AddDetails newForm = new AddDetails(targetOrder);
             newForm.Show();
 
-            orderDBindingSource.DataSource = targetOrder.Orders;
+            // orderDBindingSource.DataSource = targetOrder.Orders;
+            orderDBindingSource.ResetBindings(false);
         }
 
         private void 删除该订单明细ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int currentOrderNumber = dataGridView1.CurrentRow.Index;
-            int currentDetailNumber = dataGridView2.CurrentRow.Index;
+            int currentOrderNumber = odrDataGridView.CurrentRow.Index;
+            int currentDetailNumber = odrDetailsGridView.CurrentRow.Index;
 
-            string orderNumber = dataGridView1.Rows[currentOrderNumber].Cells[0].Value.ToString();
-            string tradeName = dataGridView2.Rows[currentDetailNumber].Cells[0].Value.ToString();
-            string tradePrice = dataGridView2.Rows[currentDetailNumber].Cells[1].Value.ToString();
-            string tradeAmount = dataGridView2.Rows[currentDetailNumber].Cells[2].Value.ToString();
+            string orderNumber = odrDataGridView.Rows[currentOrderNumber].Cells[0].Value.ToString();
+            string tradeName = odrDetailsGridView.Rows[currentDetailNumber].Cells[0].Value.ToString();
+            string tradePrice = odrDetailsGridView.Rows[currentDetailNumber].Cells[1].Value.ToString();
+            string tradeAmount = odrDetailsGridView.Rows[currentDetailNumber].Cells[2].Value.ToString();
 
             Order targetOrder = null;
             OrderDetails tmp = new OrderDetails(tradeName, tradePrice, tradeAmount);
 
-            orderDBindingSource.DataSource = null;
             try
             {
                 targetOrder = orderService.OrderList.Find((Order order) => { return order.orderNumber == orderNumber; });
@@ -245,8 +208,44 @@ namespace HomeWork8
             }
             MessageBox.Show("删除成功");
 
-            orderDBindingSource.DataSource = targetOrder.Orders;
+            // orderDBindingSource.DataSource = targetOrder.Orders;
+            orderDBindingSource.ResetBindings(false);
         }
 
+        private void SearchBtn_Click(object sender, EventArgs e)
+        {
+            string kind = "";
+            string message = searchItem.Text.Trim();
+            try
+            {
+                kind = selectBy.SelectedItem.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            if (message == "")
+            {
+                orderBindingSource.DataSource = orderService.OrderList;
+                return;
+            }
+            try
+            {
+                switch (kind)
+                {
+                    case "Number": orderBindingSource.DataSource = orderService.SearchByNumber(message); break;
+                    case "Time": orderBindingSource.DataSource = orderService.SearchByTime(message); break;
+                    case "Client": orderBindingSource.DataSource = orderService.SearchByClient(message); break;
+                    case "Address": orderBindingSource.DataSource = orderService.SearchByAddress(message); break;
+                    case "Amount": orderBindingSource.DataSource = orderService.SearchByAmount(Convert.ToDouble(message)); break;
+                    default: orderBindingSource.DataSource = orderService.OrderList; break;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
