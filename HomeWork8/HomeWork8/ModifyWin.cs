@@ -15,11 +15,12 @@ namespace HomeWork8
     {
         private OrderService orderService;
         private string modifyOrder;
-        public ModifyWin(OrderService orderService)
+        private Form1 form;
+        public ModifyWin( Form1 form)
         {
             InitializeComponent();
-            this.orderService = orderService;
             modifyOrder = "";
+            this.form = form;
         }
 
         public ModifyWin(OrderService orderService, string modify)
@@ -44,7 +45,10 @@ namespace HomeWork8
             List<OrderDetails> newOrders = new List<OrderDetails>();
 
             Order newOrder = new Order(newOrders, orderNumber,Client,orderAmount,orderAddress,dateTime);
-            orderService.Add(newOrder);
+            form.orderService.Add(newOrder);
+
+            form.orderBindingSource.DataSource = orderService.OrderList;
+            form.orderBindingSource.ResetBindings(false);
 
             this.Hide();
         }

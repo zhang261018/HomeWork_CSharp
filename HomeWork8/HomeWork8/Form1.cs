@@ -13,9 +13,9 @@ namespace HomeWork8
 {
     public partial class Form1 : Form
     {
-        OrderService orderService;
-        BindingSource orderBindingSource;
-        BindingSource orderDBindingSource;
+        public OrderService orderService;
+        public BindingSource orderBindingSource;
+        public BindingSource orderDBindingSource;
         ModifyWin modifyWindows;
 
         public Form1()
@@ -36,7 +36,7 @@ namespace HomeWork8
             selectBy.Items.Add("Amount");
             selectBy.SelectedItem = selectBy.Items[1];
 
-            modifyWindows = new ModifyWin(this.orderService);
+            modifyWindows = new ModifyWin(this);
             showSelect.Items.Add("当前选中");
 
             orderBindingSource.DataSource = orderService.OrderList;
@@ -161,8 +161,7 @@ namespace HomeWork8
         {
             // ModifyWin tempWindows = new ModifyWin(this.orderService);
             modifyWindows.Show();
-            // orderBindingSource.DataSource = orderService.OrderList;
-            orderBindingSource.ResetBindings(false);
+
         }
 
         private void OdrDetailsGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
