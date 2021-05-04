@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin-when-crossorigin" />
+    
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>2005 年 3月 5 日 随笔档案 - 拓荒者 - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
+    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=9x2ZP2K8SSBJowZA6xv0D5FvOmlvd5g21u0NBEAEwfQ" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=xFiYH0_zTHqf_pk9Nf2PvR4VdQ1qJnJcRVcot-VdM-8" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/dstang2000/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/dstang2000/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/dstang2000/wlwmanifest.xml" />
+    <script>
+        var currentBlogId = 9986;
+        var currentBlogApp = 'dstang2000';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var isBlogOwner = false;
+        var skinName = 'AnotherEon001';
+        var visitorUserId = '';
+    </script>
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=yJQaJ16S00coMfzvh-NgF2zm2J87f5VfNamFdsnKHrc"></script>
+    
+    
+    
+</head>
+<body class="has-navbar has-bannerbar">
+    <a name="top"></a>
+        <a target="_blank" href="https://www.aliyun.com/minisite/goods?userCode=swh7dvlt" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-cps-blog-bannerbar-pc')">
+            <div class="bannerbar aliyun forpc" style="background-size: contain;background-image: url(https://img2020.cnblogs.com/blog/35695/202104/35695-20210428221933214-737067094.jpg)">
+            </div>
+        </a>
+        <div id="bannerbar" class="bannerbar-mobile formobile">
+            <a href="https://www.aliyun.com/minisite/goods?userCode=swh7dvlt" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-cps-blog-bannerbar-mobile')">
+                <img src="https://img2020.cnblogs.com/blog/35695/202104/35695-20210428213541700-642740375.jpg" alt="" />
+            </a>
+        </div>
+    <div id="top_nav" class="navbar forpc">
+        <nav id="nav_main" class="navbar-main">
+            <ul id="nav_left" class="navbar-list navbar-left">
+                <li class="navbar-branding"><a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a></li>
+                <li><a href="/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-sitehome')">首页</a></li>
+                <li><a href="https://news.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-news')">新闻</a></li>
+                <li><a href="https://q.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-q')">博问</a></li>
+                <li><a id="nav_brandzone" href="https://brands.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-brands')">专区</a></li>
+                <li><a href="https://ing.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-ing')">闪存</a></li>
+                <li><a href="https://edu.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-edu')">班级</a></li>
+            </ul>
+            <ul id="nav_right" class="navbar-list navbar-right">
+                <li>
+                    <form id="zzk_search" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
+                        <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="text" tabindex="3" />
+                        <button type="submit" id="zzk_search_button">
+                            <img src="/images/aggsite/search.svg" alt="搜索" />
+                        </button>
+                    </form>
+                </li>
+                <li id="navbar_login_status" class="navbar-list">
+                    <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
+                        <img id="new_post_icon" class="navbar-icon" src="/images/aggsite/newpost.svg" alt="写随笔" />
+                    </a>
+                    <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
+                        <img id="myblog_icon" class="navbar-icon" src="/images/aggsite/myblog.svg" alt="我的博客" />
+                    </a>
+                    <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
+                        <img id="msg_icon" class="navbar-icon" src="/images/aggsite/message.svg?v=J0WS2P2iPgaIVgXxcAhliw4AFZIpaTWxtdoNAv9eiCA" alt="短消息" />
+                        <span id="msg_count" style="display: none"></span>
+                    </a>
+                    <div id="user_info" class="navbar-user-info dropdown">
+                        <a class="dropdown-button" href="https://home.cnblogs.com/">
+                            <img id="user_icon" class="navbar-avatar" src="/images/aggsite/avatar-default.svg" alt="用户头像" />
+                        </a>
+                        <div class="dropdown-menu">
+                            <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
+                            <a href="https://home.cnblogs.com/">我的园子</a>
+                            <a href="https://account.cnblogs.com/settings/account">账号设置</a>
+                            <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
+    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
+</a>
+                            <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
+                        </div>
+                    </div>
+                    <a class="navbar-anonymous" href="https://account.cnblogs.com/signup/">注册</a>
+                    <a class="navbar-anonymous" href="javascript:void(0);" onclick="account.login()">登录</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <div id="wrapper">
+<div id="header">
+
+<div id="top">
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/dstang2000/">拓荒者 dstang2000 <a href="http://www.dstang.com"><font size=-1 color=red>http://www.dstang.com</font></a>
+</h1>
+<div id="subtitle">KISS：Keeping things that work，Improve systems procedures styles，Start things of value，Stop things of no value </div>
+</div>
+<div id="sub"><div id="blog_stats_place_holder"><script>loadBlogStats();</script></div></div>
+
+
+
+
+</div>
+<div id="main_container">
+<div id="main_content">
+<div id="content">
+	
+        <!--done-->
+
+<p class="date">
+	<span>		  
+	<a>2005年3月5日</a>
+	</span>
+</p>
+
+    <div class="post">
+        <h2>
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/dstang2000/archive/2005/03/05/113513.html">
+    <span>
+        分不清正数负数，是我错了，还是VS.NET错了
+    </span>
+    
+
+
+
+</a>
+
+        </h2>
+        <div class="postbody">
+            
+
+    <div class="c_b_p_desc">
+摘要：三年前做的一个ASP.NET的项目（www.SurveyStar.net），一直运行好好的， 前几天，客户打电话来说，出了问题。 反复跟踪，发现是一个正数、负数的判断与ToString()的问题。 将问题简化后，源程序可表示为只有4句的程序，如下： class&#160;Test { &#160;&#160;&#160;&#160;static&#160;void&#160;Main() &#16...        <a href="https://www.cnblogs.com/dstang2000/archive/2005/03/05/113513.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <p class="postfoot">
+            posted @ 2005-03-05 14:45
+拓荒者
+<span data-post-id="113513" class="post-view-count">阅读(2655)</span> 
+<span data-post-id="113513" class="post-comment-count">评论(5)</span> 
+<span data-post-id="113513" class="post-digg-count">推荐(1)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=113513" rel="nofollow">
+    编辑
+</a>
+
+        </p>
+    </div>
+
+
+
+
+</div>
+</div>
+<div id="leftmenu">
+
+
+<h3>导航</h3>
+<ul>
+    <li>
+        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+
+    </li>
+    <li>
+        
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/dstang2000/">
+首页</a>
+
+    </li>
+    <li>
+        
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+
+    </li>
+    <li>
+        
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%8B%93%E8%8D%92%E8%80%85">
+联系</a>
+    </li>
+    <li>
+        
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/dstang2000/rss/">
+订阅</a>
+        
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/dstang2000/rss/">
+    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
+</a>
+    </li>
+    <li>
+        
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+
+    </li>
+</ul>
+
+
+<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+<div id="sidebar_c3"></div>
+<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+
+</div>
+</div>
+<div class="clear"></div>
+<div id="footer">
+<p id="footer">
+	Powered by: 
+	<br />
+	
+	<a href="https://www.cnblogs.com/" id="footer_site_link">博客园</a>
+	<br />
+	Copyright &copy; 2021 拓荒者
+<br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
+
+</p>
+
+
+</div>
+</div>
+
+
+    
+
+    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjsgKaI_zCDveTXNVEFxCuC7yqgupr5YTlMn1vJCbe1PwJqzP2oLavpufoeTjGq83fT2qdoWlHiy7n8hXShUS76gd1S7RpXwZ4FuIGV_H7XJtc7Y6HRIHsGdh5W9jPLoRXU" />
+</body>
+</html>

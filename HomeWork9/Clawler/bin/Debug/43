@@ -1,0 +1,91 @@
+﻿@charset "gb2312";
+/* Ĭ������ */
+a{color:#009;text-decoration:none;}
+a:visited{color:#800080;text-decoration:none;}
+a:hover{color:#c00;text-decoration:none;}
+
+.VBody{background:#dce4eb url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_bg.gif) repeat-x left top;color:#000;}
+#wrap{width:950px;text-align:left;margin:0 auto;padding:10px 5px 0; background:#fff}
+#topWrap{padding:5px 0 0;width:950px;margin:0 auto;}
+.Banner{width:950px;margin:5px auto 0;}
+
+.NavMenu{background:url(http://www.sinaimg.cn/dy/2009/1207/tz_mj_001.png) no-repeat 0 0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=image, src='http://www.sinaimg.cn/dy/2009/1207/tz_mj_001.png');_background:none;height:36px;width:960px;margin:0 -5px;_position:fixed;text-align:center;color:#000;line-height:32px;font-size:14px;}
+.NavMenu a:link,.NavMenu a:visited{color:#000;text-decoration:none;margin:0 5px;_position:relative;zoom:1;}
+.NavMenu a:hover{color:#000;text-decoration:underline;}
+
+
+/* ---------- ȫ�ֹ�����ʽ begin ---------- */
+.w_title a:link,.w_title a:visited{color:#000;text-decoration:none;}
+.w_title a:hover{color:#f00;text-decoration:underline;}
+
+.sp_h10{height:10px;overflow:hidden;clear:both;}
+.c_memo{color:#494949;}
+img{border-color:#000;border-style:solid;}
+/* ---------- ȫ�ֹ�����ʽ end ---------- */
+
+/* ---------- ������ʽ begin ---------- */
+/* ���д�����ʽ */
+.w_01{background:#f2f2f2;}
+.w_01 .w_title{height:28px;border:1px solid #ccc;color:#274a78;overflow:hidden;}
+.w_01 .w_title .w_name{font-size:14px;float:left;padding-left:26px;background:url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_006.gif) no-repeat 9px 12px #f2f2f2;line-height:28px;height:28px;overflow:hidden;white-space:nowrap;}
+.w_01 .w_title .w_more{float:right;padding-right:10px;line-height:28px;font-size:12px; height:28px;font-weight:normal;}
+.w_01 .w_title .w_more a{ color:#274a78}
+.w_01 .w_cont{background:#f2f2f2;padding:0 4px;border:1px solid #ccc; border-width:0 1px}
+.w_01 .w_cont .w_cont_bg{}
+.w_01 .w_bot{border:1px solid #ccc;border-top:none;height:4px;font-size:0; overflow:hidden; clear:both;}
+.w_01 .w_bot .w_bot_bg{}
+
+
+
+/* ���д�����ʽ */
+.w_02{background:#fff;}
+.w_02 .w_title{ height:30px;color:#000;overflow:hidden;background:url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_005.gif) repeat-x 0 100%;}
+.w_02 .w_title .w_name{font-size:14px;padding-left:26px;float:left;background:url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_006.gif) no-repeat 9px 12px;line-height:29px;height:29px;overflow:hidden;white-space:nowrap;}
+.w_02 .w_title .w_more{float:right;padding-right:10px;line-height:30px;font-size:12px; height:30px;font-weight:normal;}
+.w_02 .w_title .w_more a{ color:#000}
+.w_02 .w_cont{padding:0 5px; }
+.w_02 .w_cont .w_cont_bg{}
+.w_02 .w_bot{}
+.w_02 .w_bot .w_bot_bg{}
+
+/* ����ͼ���� */
+.w_03{height:241px;width:320px;background:url(http://www.sinaimg.cn/dy/deco/2008/0414/images10/s01_mj_008.gif) no-repeat 0 0;}
+.w_03 .w_cont{}
+.w_03 .w_cont .w_cont_bg{padding:5px;text-align:center;}
+
+/* ��ǩ�б��ߴ��� */
+.w_04{}
+
+/* ���д�����ʽ */
+.w_05{background:#f2f2f2;}
+.w_05 .w_title{height:28px;border:1px solid #ccc;color:#274a78;overflow:hidden;}
+.w_05 .w_title .w_name{font-size:14px;float:left;padding-left:26px;background:url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_006.gif) no-repeat 9px 12px #f2f2f2;line-height:28px;height:28px;overflow:hidden;white-space:nowrap;}
+.w_05 .w_title .w_more{float:right;padding-right:10px;line-height:28px;font-size:12px; height:28px;font-weight:normal;}
+.w_05 .w_title .w_more a{ color:#274a78}
+.w_05 .w_cont{background:#f2f2f2;padding:0 4px;border:1px solid #ccc; border-width:0 1px}
+.w_05 .w_cont .w_cont_bg{}
+.w_05 .w_bot{border:1px solid #ccc;border-top:none;height:4px;font-size:0; overflow:hidden; clear:both;}
+.w_05 .w_bot .w_bot_bg{}
+
+/* �ޱ��ⴰ��1 */
+.w_06{background:#f3f3f5;zoom:1;}
+.w_06 .w_cont{padding:5px;}
+.w_06 .w_cont .w_cont_bg{}
+
+/* �ޱ��ⴰ��2 */
+.w_07{border:1px solid #dbdbdb;zoom:1;}
+.w_07 .w_cont{padding:4px;}
+.w_07 .w_cont .w_cont_bg{}
+.w_07 .w_bot{ }
+.w_07 .w_bot .w_bot_bg{}
+/* ---------- ������ʽ end ---------- */
+
+/* ---------- �Զ��б� begin ---------- */
+.p_r3_06{background:url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_007.gif) repeat-y 0 0;}
+.p_r3_06 .p_bottom{background:url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_007.gif) repeat-x -950px 0;}
+.p_r3_06 .sp_h10{background:#fff;}
+/* ---------- �Զ��б� end ---------- */
+
+.footer{color:#000;}
+.footer a:link,.footer a:visited{color:#000;}
+.footer a:hover{color:#000;}
