@@ -1,294 +1,164 @@
-﻿<!DOCTYPE html>
-<html lang="zh-cn">
+﻿<!doctype html>
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="referrer" content="origin-when-crossorigin" />
-    <meta name="description" content="xml与json在javascript中解析并使用，速度大约相差4倍。（在IE中测试的结果）。其中主要不在于eval,与xml parse的时间差别，主要在于属性访问上的差别：xml中使用这样的方式 " />
-    <meta property="og:description" content="xml与json在javascript中解析并使用，速度大约相差4倍。（在IE中测试的结果）。其中主要不在于eval,与xml parse的时间差别，主要在于属性访问上的差别：xml中使用这样的方式 " />
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>实测:xml与json速度约差4倍 - 拓荒者 - 博客园</title>
-    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
-    
-    <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
-    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=9x2ZP2K8SSBJowZA6xv0D5FvOmlvd5g21u0NBEAEwfQ" />
-    
-    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=xFiYH0_zTHqf_pk9Nf2PvR4VdQ1qJnJcRVcot-VdM-8" />
-    
-    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/dstang2000/rss" />
-    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/dstang2000/rsd.xml" />
-    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/dstang2000/wlwmanifest.xml" />
-    <script>
-        var currentBlogId = 9986;
-        var currentBlogApp = 'dstang2000';
-        var cb_enable_mathjax = false;
-        var isLogined = false;
-        var isBlogOwner = false;
-        var skinName = 'AnotherEon001';
-        var visitorUserId = '';
-    </script>
-        <script>
-            var currentPostDateAdded = '2010-11-02 05:43';
+<meta charset="gbk" />
+<title>
+��������-��ҳ </title>
+<meta name="description" content="�Ա���-��������ȫ�����Ͻ���ƽ̨���ṩ������Ρ����ݡ��Ҿӡ����롢����/�㿨��ֵ����2�������ؼ���Ʒ��ͬʱ�ṩ��������(���ջ��󸶿�)�������⸶����һ�����������������˻������������ά�޵Ȱ�ȫ���ױ��Ϸ�������ȫ�氲���������Ϲ�����Ȥ��" />
+<meta name="keywords" content="�Ա�,�ͱ�,���Ϲ���,C2C,���߽���,�����г�,���Ͻ���,�����г�,������,������,������վ,�Ź�,����ó��,��ȫ����,��������,������,��Ӧ,������Ϣ,����,һ�ڼ�,����,���Ͽ���,���繺��,����,��ѿ���,����,Ƶ��,����" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://a.tbcdn.cn/plugins/opensearch/provider.xml" title="�Ա�����" />
+<link rel="stylesheet" type="text/css" href="http://a.tbcdn.cn/tbsp/tbsp.css?t=20090602.css" />
+<script type="text/javascript" src="http://a.tbcdn.cn/tbra/1.0/tbra-widgets.js?t=20090619.js">
         </script>
-    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
-    <script src="/js/blog-common.min.js?v=2Mic1VLeHXarpdzASbXqFMIMVLEBiWXNO5yiTHUcmhw"></script>
-    
-    
-    
-</head>
-<body class="has-navbar">
-    <a name="top"></a>
-        <div id="bannerbar" class="bannerbar-mobile formobile">
-            <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-blog-bannerbar-mobile')">
-                <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
-            </a>
-        </div>
-    <div id="top_nav" class="navbar forpc">
-        <nav id="nav_main" class="navbar-main">
-            <ul id="nav_left" class="navbar-list navbar-left">
-                <li class="navbar-branding"><a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a></li>
-                <li><a href="/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-sitehome')">首页</a></li>
-                <li><a href="https://news.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-news')">新闻</a></li>
-                <li><a href="https://q.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-q')">博问</a></li>
-                <li><a id="nav_brandzone" href="https://brands.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-brands')">专区</a></li>
-                <li><a href="https://ing.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-ing')">闪存</a></li>
-                <li><a href="https://edu.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-edu')">班级</a></li>
-            </ul>
-            <ul id="nav_right" class="navbar-list navbar-right">
-                <li>
-                    <form id="zzk_search" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
-                        <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="text" tabindex="3" />
-                        <button type="submit" id="zzk_search_button">
-                            <img src="/images/aggsite/search.svg" alt="搜索" />
-                        </button>
-                    </form>
-                </li>
-                <li id="navbar_login_status" class="navbar-list">
-                    <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
-                        <img id="new_post_icon" class="navbar-icon" src="/images/aggsite/newpost.svg" alt="写随笔" />
-                    </a>
-                    <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
-                        <img id="myblog_icon" class="navbar-icon" src="/images/aggsite/myblog.svg" alt="我的博客" />
-                    </a>
-                    <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
-                        <img id="msg_icon" class="navbar-icon" src="/images/aggsite/message.svg?v=J0WS2P2iPgaIVgXxcAhliw4AFZIpaTWxtdoNAv9eiCA" alt="短消息" />
-                        <span id="msg_count" style="display: none"></span>
-                    </a>
-                    <div id="user_info" class="navbar-user-info dropdown">
-                        <a class="dropdown-button" href="https://home.cnblogs.com/">
-                            <img id="user_icon" class="navbar-avatar" src="/images/aggsite/avatar-default.svg" alt="用户头像" />
-                        </a>
-                        <div class="dropdown-menu">
-                            <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
-                            <a href="https://home.cnblogs.com/">我的园子</a>
-                            <a href="https://account.cnblogs.com/settings/account">账号设置</a>
-                            <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
-    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
-</a>
-                            <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
-                        </div>
-                    </div>
-                    <a class="navbar-anonymous" href="https://account.cnblogs.com/signup/">注册</a>
-                    <a class="navbar-anonymous" href="javascript:void(0);" onclick="account.login()">登录</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    
-    <div id="wrapper">
-<div id="header">
-
-<div id="top">
-<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/dstang2000/">拓荒者 dstang2000 <a href="http://www.dstang.com"><font size=-1 color=red>http://www.dstang.com</font></a>
-</h1>
-<div id="subtitle">KISS：Keeping things that work，Improve systems procedures styles，Start things of value，Stop things of no value </div>
-</div>
-<div id="sub"><div id="blog_stats_place_holder"><script>loadBlogStats();</script></div></div>
-
-
-
-
-</div>
-<div id="main_container">
-<div id="main_content">
-<div id="content">
-	<div id="post_detail">
-    <div class="post">
-        <h2>
-            
-<a id="cb_post_title_url" class="postTitle2 vertical-middle" href="https://www.cnblogs.com/dstang2000/archive/2010/11/02/1867406.html">
-    <span>实测:xml与json速度约差4倍</span>
-    
-
-
-
-</a>
-
-        </h2>
-        <div class="postbody">
-            <div id="cnblogs_post_body" class="blogpost-body blogpost-body-html">
-<p>xml与json在javascript中解析并使用，速度大约相差4倍。（在IE中测试的结果）。</p>
-<p>其中主要不在于eval,与xml parse的时间差别，主要在于属性访问上的差别：</p>
-<p>xml中使用这样的方式 markers[i].getAttribute("info") </p>
-<p>与json中使用这样的方式 var info = markers[i].info;</p>
-<p>相比， xml要慢不少。</p>
-<p>以下为测试的详情：</p>
-<p>&nbsp;</p>
-<div class="cnblogs_code"><img class="code_img_closed" id="code_img_closed_ee8d98db-5eac-4091-98e1-d524bfaeae80" src="https://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt=""><img class="code_img_opened" id="code_img_opened_ee8d98db-5eac-4091-98e1-d524bfaeae80" style="display: none" src="https://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif"><span class="cnblogs_code_collapse">代码</span>
-<div class="cnblogs_code_hide" id="cnblogs_code_open_ee8d98db-5eac-4091-98e1-d524bfaeae80">
-<div><span style="color: rgba(0, 0, 255, 1)">&lt;!</span><span style="color: rgba(255, 0, 255, 1)">DOCTYPE&nbsp;html&nbsp;PUBLIC&nbsp;"-//W3C//DTD&nbsp;XHTML&nbsp;1.0&nbsp;Strict//EN"<br>&nbsp;&nbsp;&nbsp;&nbsp;"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"</span><span style="color: rgba(0, 0, 255, 1)">&gt;</span><span style="color: rgba(0, 0, 0, 1)"><br></span><span style="color: rgba(0, 0, 255, 1)">&lt;</span><span style="color: rgba(128, 0, 0, 1)">html&nbsp;</span><span style="color: rgba(255, 0, 0, 1)">xmlns</span><span style="color: rgba(0, 0, 255, 1)">="http://www.w3.org/1999/xhtml"</span><span style="color: rgba(255, 0, 0, 1)">&nbsp;xmlns:v</span><span style="color: rgba(0, 0, 255, 1)">="urn:schemas-microsoft-com:vml"</span><span style="color: rgba(0, 0, 255, 1)">&gt;</span><span style="color: rgba(0, 0, 0, 1)"><br>&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">&lt;</span><span style="color: rgba(128, 0, 0, 1)">head</span><span style="color: rgba(0, 0, 255, 1)">&gt;</span><span style="color: rgba(0, 0, 0, 1)"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">&lt;</span><span style="color: rgba(128, 0, 0, 1)">meta&nbsp;</span><span style="color: rgba(255, 0, 0, 1)">http-equiv</span><span style="color: rgba(0, 0, 255, 1)">="content-type"</span><span style="color: rgba(255, 0, 0, 1)">&nbsp;content</span><span style="color: rgba(0, 0, 255, 1)">="text/html;&nbsp;charset=utf-8"</span><span style="color: rgba(0, 0, 255, 1)">/&gt;</span><span style="color: rgba(0, 0, 0, 1)"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">&lt;</span><span style="color: rgba(128, 0, 0, 1)">title</span><span style="color: rgba(0, 0, 255, 1)">&gt;</span><span style="color: rgba(0, 0, 0, 1)">Google&nbsp;Maps&nbsp;JavaScript&nbsp;API&nbsp;Example:&nbsp;Simple&nbsp;Map</span><span style="color: rgba(0, 0, 255, 1)">&lt;/</span><span style="color: rgba(128, 0, 0, 1)">title</span><span style="color: rgba(0, 0, 255, 1)">&gt;</span><span style="color: rgba(0, 0, 0, 1)"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">&lt;</span><span style="color: rgba(128, 0, 0, 1)">script&nbsp;</span><span style="color: rgba(255, 0, 0, 1)">src</span><span style="color: rgba(0, 0, 255, 1)">="http://maps.google.com/maps?file=api&amp;amp;v=2&amp;amp;key=ABQIAAAAzr2EBOXUKnm_jVnk0OJI7xSosDVG8KKPE1-m51RBrvYughuyMxQ-i1QfUnH94QxWIa6N4U6MouMmBA"</span><span style="color: rgba(255, 0, 0, 1)"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</span><span style="color: rgba(0, 0, 255, 1)">="text/javascript"</span><span style="color: rgba(0, 0, 255, 1)">&gt;&lt;/</span><span style="color: rgba(128, 0, 0, 1)">script</span><span style="color: rgba(0, 0, 255, 1)">&gt;</span><span style="color: rgba(0, 0, 0, 1)"><br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">&lt;</span><span style="color: rgba(128, 0, 0, 1)">script&nbsp;</span><span style="color: rgba(255, 0, 0, 1)">type</span><span style="color: rgba(0, 0, 255, 1)">="text/javascript"</span><span style="color: rgba(0, 0, 255, 1)">&gt;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)"><br><br></span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">//</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">全局变量</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)"><br></span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;map&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">null</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;<br><br></span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">function</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;initialize()&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">if</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">!</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">GBrowserIsCompatible())&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">return</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;map&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;GMap2(document.getElementById(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">map_canvas</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">));<br>&nbsp;&nbsp;&nbsp;&nbsp;map.addMapType(&nbsp;G_PHYSICAL_MAP&nbsp;);<br>&nbsp;&nbsp;&nbsp;&nbsp;map.addMapType(G_SATELLITE_3D_MAP);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;map.setCenter(</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;GLatLng(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">39.9</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">,&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">116.00</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">),&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">6</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;map.addControl(&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;GMapTypeControl()&nbsp;);<br>&nbsp;&nbsp;&nbsp;&nbsp;map.addControl(&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;GLargeMapControl()&nbsp;);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;map.enableContinuousZoom();<br><br>&nbsp;&nbsp;&nbsp;&nbsp;GEvent.addListener(map,&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">mousemove</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">,&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">function</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">(p){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">if</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">!</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">p)</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">return</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.status&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">经纬度&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">+</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;(Math.round(p.lng()</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">*</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">100000</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">)</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">/</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">100000</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">)</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">+</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">,&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">+</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;(Math.round(p.lat()</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">*</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">100000</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">)</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">/</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">100000</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">);<br>&nbsp;&nbsp;&nbsp;&nbsp;});<br><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;t0&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;Date();<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">for</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">(</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">0</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&lt;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">100</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">++</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;home_point&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;GLatLng(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">37.056136</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">+</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">/</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">1e4,114.457626+i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">/</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">1e4</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">);&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map.addOverlay(</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;GMarker(home_point));&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;t1&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;Date();<br>&nbsp;&nbsp;&nbsp;&nbsp;alert(t1</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">-</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">t0);&nbsp;</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">//</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">1000用时6.3秒</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)"><br></span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)"><br>&nbsp;&nbsp;&nbsp;&nbsp;testSpeed();<br>}<br><br></span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">function</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;testSpeed()<br>{<br><br></span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">//</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">-----------------------------------</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)"><br></span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;ary&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">[];<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">for</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">(</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">0</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&lt;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">10000</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">++</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ary.push(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">'</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&lt;marker&nbsp;msid="13615532361"&nbsp;lng="104.0447"&nbsp;lat="30.684"&nbsp;status="0"&nbsp;info="川A7G222.&nbsp;&amp;lt;br&amp;gt;&nbsp;力帆体育场店&amp;lt;br&amp;gt;&nbsp;2010-10-27&nbsp;12:54:39&nbsp;"&nbsp;/&gt;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">'</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;doc&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&lt;current&gt;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">+</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;ary.join(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">""</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">)&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">+</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&lt;/current&gt;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;t0&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;Date();<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;xmlDoc&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;GXml.parse(doc);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">if</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">(&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">!</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;xmlDoc&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">||</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">!</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;xmlDoc.documentElement)&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">return</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;xmlDoc.documentElement.getElementsByTagName(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">marker</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">for</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;(</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;i&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">0</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;&nbsp;i&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&lt;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers.length;&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">++</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;lat&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;parseFloat(markers[i].getAttribute(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">lat</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">));<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;lng&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;parseFloat(markers[i].getAttribute(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">lng</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">));<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;msid&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers[i].getAttribute(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">msid</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;status&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers[i].getAttribute(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">status</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;info&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers[i].getAttribute(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">info</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;t1&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;Date();<br>&nbsp;&nbsp;&nbsp;&nbsp;alert(t1</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">-</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">t0);&nbsp;</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">//</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">0.57秒</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)"><br></span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)"><br></span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">//</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">-----------------------------------</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)"><br></span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;ary&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">[];<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">for</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">(</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">0</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&lt;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">10000</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">++</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ary.push(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">'</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">["13615532361",104.0447,30.684,0,"川A7G222.&nbsp;&amp;lt;br&amp;gt;&nbsp;力帆体育场店&amp;lt;br&amp;gt;&nbsp;2010-10-27&nbsp;12:54:39"]</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">'</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;doc&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">[</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">+</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;ary.join(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">,</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">)&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">+</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">]</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;t0&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;Date();<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;eval(doc);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">for</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;(</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;i&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">0</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;&nbsp;i&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&lt;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers.length;&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">++</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;lat&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;parseFloat(markers[i][</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">1</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">]);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;lng&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;parseFloat(markers[i][</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">2</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">]);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;msid&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers[i][</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">0</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;status&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers[i][</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">3</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;info&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers[i][</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">4</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;t1&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;Date();<br>&nbsp;&nbsp;&nbsp;&nbsp;alert(t1</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">-</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">t0);&nbsp;</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">//</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">0.15秒</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)"><br></span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)"><br></span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">//</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">-----------------------------------</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)"><br></span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;ary&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">[];<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">for</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">(</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">0</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&lt;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">10000</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">++</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ary.push(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">'</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">{msid:"13615532361",lng:104.0447,lat:30.684,status:0,info:"川A7G222.&nbsp;&amp;lt;br&amp;gt;&nbsp;力帆体育场店&amp;lt;br&amp;gt;&nbsp;2010-10-27&nbsp;12:54:39"}</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">'</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;doc&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">[</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">+</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;ary.join(</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">,</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">)&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">+</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">]</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">"</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;t0&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;Date();<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;eval(doc);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">for</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;(</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;i&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">0</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">;&nbsp;i&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&lt;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers.length;&nbsp;i</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">++</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">//</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;obtain&nbsp;the&nbsp;attribues&nbsp;of&nbsp;each&nbsp;marker</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)"><br></span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;lat&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;parseFloat(markers[i].lat);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;lng&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;parseFloat(markers[i].lng);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;msid&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers[i].msid;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;status&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers[i].status;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;info&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;markers[i].info;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">var</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;t1&nbsp;</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">=</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1); background-color: rgba(245, 245, 245, 1)">new</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">&nbsp;Date();<br>&nbsp;&nbsp;&nbsp;&nbsp;alert(t1</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">-</span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)">t0);&nbsp;</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">//</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)">0.15秒</span><span style="color: rgba(0, 128, 0, 1); background-color: rgba(245, 245, 245, 1)"><br></span><span style="color: rgba(0, 0, 0, 1); background-color: rgba(245, 245, 245, 1)"><br>}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">&lt;/</span><span style="color: rgba(128, 0, 0, 1)">script</span><span style="color: rgba(0, 0, 255, 1)">&gt;</span><span style="color: rgba(0, 0, 0, 1)"><br>&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">&lt;/</span><span style="color: rgba(128, 0, 0, 1)">head</span><span style="color: rgba(0, 0, 255, 1)">&gt;</span><span style="color: rgba(0, 0, 0, 1)"><br>&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">&lt;</span><span style="color: rgba(128, 0, 0, 1)">body&nbsp;</span><span style="color: rgba(255, 0, 0, 1)">onload</span><span style="color: rgba(0, 0, 255, 1)">="initialize()"</span><span style="color: rgba(255, 0, 0, 1)">&nbsp;onunload</span><span style="color: rgba(0, 0, 255, 1)">="GUnload()"</span><span style="color: rgba(0, 0, 255, 1)">&gt;</span><span style="color: rgba(0, 0, 0, 1)"><br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">&lt;</span><span style="color: rgba(128, 0, 0, 1)">div&nbsp;</span><span style="color: rgba(255, 0, 0, 1)">id</span><span style="color: rgba(0, 0, 255, 1)">="map_canvas"</span><span style="color: rgba(255, 0, 0, 1)">&nbsp;style</span><span style="color: rgba(0, 0, 255, 1)">="width:&nbsp;800px;&nbsp;height:&nbsp;600px"</span><span style="color: rgba(0, 0, 255, 1)">&gt;&lt;/</span><span style="color: rgba(128, 0, 0, 1)">div</span><span style="color: rgba(0, 0, 255, 1)">&gt;</span><span style="color: rgba(0, 0, 0, 1)"><br><br><br>&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">&lt;/</span><span style="color: rgba(128, 0, 0, 1)">body</span><span style="color: rgba(0, 0, 255, 1)">&gt;</span><span style="color: rgba(0, 0, 0, 1)"><br></span><span style="color: rgba(0, 0, 255, 1)">&lt;/</span><span style="color: rgba(128, 0, 0, 1)">html</span><span style="color: rgba(0, 0, 255, 1)">&gt;</span></div></div></div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
-<div id="MySignature"></div>
-<div class="clear"></div>
-<div id="blog_post_info_block">
-    <div id="blog_post_info"></div>
-    <div class="clear"></div>
-    <div id="post_next_prev"></div>
-</div>
-        </div>
-        <p class="postfoot">
-            posted on 
-<span id="post-date">2010-11-02 17:43</span>&nbsp;
-<a href="https://www.cnblogs.com/dstang2000/">拓荒者</a>&nbsp;
-阅读(<span id="post_view_count">993</span>)&nbsp;
-评论(<span id="post_comment_count">0</span>)&nbsp;
-<a href="https://i.cnblogs.com/EditPosts.aspx?postid=1867406" rel="nofollow">编辑</a>&nbsp;
-<a href="javascript:void(0)" onclick="AddToWz(1867406);return false;">收藏</a>
-        </p>
-    </div>
-</div>
-
-<script src="https://common.cnblogs.com/highlight/10.3.1/highlight.min.js"></script>
-<script>markdown_highlight();</script>
-<script>
-    var allowComments = true, cb_blogId = 9986, cb_blogApp = 'dstang2000', cb_blogUserGuid = 'd796310b-63cf-dd11-9e4d-001cf0cd104b';
-    var cb_entryId = 1867406, cb_entryCreatedDate = '2010-11-02 17:43', cb_postType = 1;
-    updatePostStats(
-        [cb_entryId],
-        function(id, count) { $("#post_view_count").text(count) },
-        function(id, count) { $("#post_comment_count").text(count) })
-    zoomManager.apply("#cnblogs_post_body img:not(.code_img_closed):not(.code_img_opened)");
+<link rel="stylesheet" href="http://a.tbcdn.cn/??p/global/1.0/global-min.css?t=2011081120100214.css" />
+<script src="http://a.tbcdn.cn/??s/kissy/1.1.6/kissy-min.js,p/global/1.0/global-min.js,apps/hesper/list/20110808/searchsuggest.js,apps/hesper/list/20110823/base.js?t=20101130.js">
+        </script>
+<script src="http://a.tbcdn.cn/s/kissy/1.1.6/??suggest/suggest-pkg-min.js,anim/anim-pkg-min.js,switchable/switchable-pkg-min.js,datalazyload/datalazyload-pkg-min.js,ajax/ajax-pkg-min.js">
+        </script>
+<link href="http://a.tbcdn.cn/p/c2c/tms/c2c-header-min.css?t=20110524.css" rel="stylesheet" type="text/css" />
+<script src="http://a.tbcdn.cn/p/c2c/tms/c2c-header-min.js?t=20110524.js">
+        </script>
+<link rel="stylesheet" href="http://a.tbcdn.cn/p/mall/2.0/css/head-cod.css?t=20110901.css" />
+<meta http-equiv="Refresh" content="0; url=//s.taobao.com/search?ie=utf8&initiative_id=staobaoz_20150603&stats_click=search_radio_all%3A1&js=1&imgfile=&q=%E8%B4%A7%E5%88%B0%E4%BB%98%E6%AC%BE&suggest=history_1&_input_charset=utf-8&wq=%E8%B4%A7%E5%88%B0%E4%BB%98%E6%AC%BE&suggest_query=%E8%B4%A7%E5%88%B0%E4%BB%98%E6%AC%BE&source=suggest&fs=1&support_cod=1" /> </head>
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&asid=AQAAAADkhppgyj/TdAAAAAAbd252U4RzJg==&sidx=AMIE/AYiC60/Sb11DopdThlXaxT4V1Vg90k5GjZflovVD9nU/08GwiTJ3OGshRLCMDQcldm+SzVhaNPNxPxFHx6CBtFuA+RI1VZd/5QDAPAuukpB40JcasawHnvwvMxWpS6Lsq9SO1rBzet/DhQjgCcykD+gND7vZa34IQ+kq1w=",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
 </script>
-<a name="!comments"></a>
-<div id="blog-comments-placeholder"></div>
-<div id="comment_form" class="commentform">
-    <a name="commentform"></a>
-    <div id="divCommentShow"></div>
-    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
-    <div id="comment_form_container"></div>
-    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
-    <div id="ad_t2"></div>
-    <div id="opt_under_post"></div>
-    <div id="cnblogs_c1" class="under-post-card">
-        <div id='div-gpt-ad-1592365906576-0' style='width: 300px; height: 250px;'></div>
-    </div>
-    <div id="under_post_card1"></div>
-    <div id="cnblogs_c2" class="under-post-card">
-        <div id='div-gpt-ad-1592366332455-0' style='width: 468px; height: 60px;'></div>
-    </div>
-    <div id="under_post_card2"></div>
-    <div id="HistoryToday" class="under-post-card"></div>
-    <script type="text/javascript">
-       var commentManager = new blogCommentManager();
-       commentManager.renderComments(0);
-       fixPostBody();
-       deliverBigBanner();
-setTimeout(function() { incrementViewCount(cb_entryId); }, 50);       deliverT2();
-       deliverC1C2();
-       loadNewsAndKb();
-       loadBlogSignature();
-LoadPostCategoriesTags(cb_blogId, cb_entryId);       LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
-       GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
-       loadOptUnderPost();
-       GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
-    </script>
-</div>
-
-
-
-</div>
-</div>
-<div id="leftmenu">
-
-
-<h3>导航</h3>
-<ul>
-    <li>
-        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
-博客园</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/dstang2000/">
-首页</a>
-
-    </li>
-    <li>
-        
-
-<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
-新随笔</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%8B%93%E8%8D%92%E8%80%85">
-联系</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/dstang2000/rss/">
-订阅</a>
-        
-<a id="blog_nav_rss_image" href="https://www.cnblogs.com/dstang2000/rss/">
-    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
-</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
-管理</a>
-
-    </li>
-</ul>
-
-
-<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
-<div id="sidebar_news" class="newsItem">
-            <script>loadBlogNews();</script>
-</div>
-<div id="sidebar_c3"></div>
-<div id="blog-sidecolumn"></div>
-                    <script>loadBlogSideColumn();</script>
-
-</div>
-</div>
-<div class="clear"></div>
-<div id="footer">
-<p id="footer">
-	Powered by: 
-	<br />
-	
-	<a href="https://www.cnblogs.com/" id="footer_site_link">博客园</a>
-	<br />
-	Copyright &copy; 2021 拓荒者
-<br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
-
+<div id="page">
+<div id="site-nav"><div id="site-nav-bd">
+<p class="sitenav-mobile"><a href="http://www.taobao.com/m?TBG=146112.176505.4&spm=1.146112.176505.4">�ֻ���</a></p>
+<p class="login-info">
+<script>TB.Global.writeLoginInfo();</script>
 </p>
-
-
+<ul class="quick-menu">
+<li class="home"><a href="http://www.taobao.com/">�Ա�����ҳ</a></li>
+<li class="menu-item">
+<div class="menu">
+<a class="menu-hd" style="width:36px;" href="//guang.taobao.com" target="_top" rel="nofollow">��Ҫ��<b></b></a>
+<div class="menu-bd" style="width:68px;height:114px;line-height:1.7;">
+<div class="menu-bd-panel" style="padding:8px 10px;">
+<div>
+<a href="//dongtai.taobao.com/hub/new_arrival.htm?scm=1046.1.7.1" target="_top" rel="nofollow">������</a>
+<a href="//dongtai.taobao.com/hub/promotion.htm?scm=1046.1.8.1" target="_top" rel="nofollow">���Ż�</a><br />
+<a href="//yiqi.taobao.com/plus/group_square.htm" target="_top" rel="nofollow">С�ֶ�</a><br />
+<a href="//www.taobao.com/go/act/sns/taoban_download1.php?channel_id=701354&tracelog=tbshouye" target="_top" rel="nofollow">���ֻ���</a>
+<a href="//list.taobao.com/browse/cat-0.htm?taobao_from=6" target="_top" rel="nofollow">��Ʒ����</a>
 </div>
 </div>
-
-
-    
-
-    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjvg5C3sQ8VApCJ1hAPMLESufd6tZNcLOt7xEOKNqT0YqOF1Ci3piOgH_RpDbQrNYQRnL19Tb5eThMLp2yyVnrlDTotLmHsSbQDwB33hNj3cDQqsCqyUej8olf8gseASMqo" />
-</body>
-</html>
+</div>
+</div>
+</li>
+<li class="mytaobao menu-item">
+<div class="menu">
+<a class="menu-hd" href="//i.taobao.com/my_taobao.htm" target="_top" rel="nofollow">�ҵ��Ա�<b></b></a>
+<div class="menu-bd" style="height: 75px;width:100px">
+<div class="menu-bd-panel" id="myTaobaoPanel">
+<div>
+<a href="//trade.taobao.com/trade/itemlist/list_bought_items.htm" target="_top" rel="nofollow">���򵽵ı���</a>
+</div>
+<div>
+<a href="//dongtai.taobao.com/index.htm?scm=1046.1.1.1" target="_top" rel="nofollow">���̶�̬</a>
+</div>
+<div>
+<a href="//i.taobao.com/feed/friend_feed.htm?tracelog=taobaoindexrsidenewfeed" target="_top" rel="nofollow">���Ѷ�̬</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<style>
+  #site-nav .seller-center .menu-hd{ width:48px;}
+  #site-nav .seller-center .menu-bd{ width: 94px; line-height:1.7;}
+  #site-nav .seller-center .menu-bd-panel{padding: 8px 10px;}
+</style>
+<li class="seller-center menu-item">
+<div class="menu">
+<a class="menu-hd" href="//mai.taobao.com/seller_admin.htm" target="_top" rel="nofollow">�������<b></b></a>
+<div class="menu-bd">
+<div class="menu-bd-panel">
+<div>
+<a href="//trade.taobao.com/trade/itemlist/list_sold_items.htm" target="_top" rel="nofollow">������ı���</a>
+<a href="//sell.taobao.com/auction/goods/goods_on_sale.htm" target="_top" rel="nofollow">�����еı���</a>
+<a href="//fuwu.taobao.com/?tracelog=tbdd" target="_top" rel="nofollow">��ҷ����г�</a>
+<a href="//learn.taobao.com/user/xueyuanRedirect.htm?target=http://www.alibado.com" target="_top" rel="nofollow">�����ѵ����</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="service">
+<a href="//service.taobao.com/support/main/service_center.htm" target="_top" rel="nofollow">��ϵ�ͷ�</a>
+</li>
+<li class="cart">
+<a href="//cart.taobao.com/my_cart.htm" target="_top" rel="nofollow">
+<s>
+</s>���ﳵ
+</a>
+<b class="leftline"></b>
+<b class="rightline"></b>
+</li>
+<li class="favorite menu-item">
+<div class="menu">
+<a class="menu-hd" style="width:36px;" href="//favorite.taobao.com/collect_list.htm?itemtype=0" target="_top" rel="nofollow">�ղؼ�<b></b></a>
+<div class="menu-bd" style="width:82px;height:57px;line-height:1.7;">
+<div class="menu-bd-panel" style="padding:8px 10px;">
+<div>
+<a href="//favorite.taobao.com/collect_list.htm?itemtype=1" target="_top" rel="nofollow">�ղصı���</a>
+<a href="//favorite.taobao.com/collect_list.htm?itemtype=0" target="_top" rel="nofollow">�ղصĵ���</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="services menu-item last">
+<div id="J_Service" class="menu">
+<a class="menu-hd" href="//www.taobao.com/sitemap.php?id=sitemap2" target="_top">��վ����<b></b></a>
+<div id="J_ServicesContainer" class="menu-bd" style="width:202px;width:210px\9;_width:202px;height:337px;"></div>
+</div>
+</li>
+</ul>
+</div></div>
+<script>
+                TB.Global.init();               
+            </script>
+<div id="header">
+<h1 id="logo">
+<a href="//www.taobao.com/" target="_top"><img alt="�Ա��� Taobao.com - ����Ͱ�������վ" src="//assets.alicdn.com/tbsp/img/header/logo.png" width="140" height="35" /></a>
+<a href="/" class="sub-logo" target="_top"></a>
+</h1>
+<div class="wrap-box">
+<div id="J_TBSearch" class="tb-srch-may tb-srch-may-lite">
+<ul class="tb-srch-may-tab ks-clear">
+<li class="current"><a href="http://list.taobao.com/browse/cat-0.htm">����</a><b class="rc-lt"></b><b class="rc-rt"></b></li>
+<li><a href="http://shopsearch.taobao.com/browse/shop_search.htm">����</a><b class="rc-lt"></b><b class="rc-rt"></b></li>
+</ul>
+<div class="tb-srch-may-panel ks-clear">
+<form id="J_TBSearchForm" target="_top" name="search" action="http://s.taobao.com/search">
+<div class="tb-srch-may-fields focus">
+<label for="q" class=""></label>
+<input type="text" id="J_TBSearchQuery" accesskey="s" name="q" autofocus="true" autocomplete="off">
+<input type="hidden" name="keyword" value="">
+<input type="hidden" name="commend" value="all">
+<input type="hidden" name="ssid" value="s5-e" autocomplete="off">
+<input type="hidden" name="search_type" value="item">
+<b class="rc-lb"></b>
+<b class="rc-lt"></b>
+</div>
+<button type="submit" class="tb-srch-may-submit">����</button>
+</form>
+</div>
+</div> </div>
+</div>
+<div id="nav-wrap">
+<div class="cod-nav clearfix">
+<ul>
+<li><a href="//www.taobao.com/go/chn/tb_cod/index.php?spm=1.117841.144311.1"> ��ҳ </a> </li>
+<li class="hover">Ƶ��
+</li>
+</ul>
+<div class="rightNav">
+<a class="rightNav-first" href="//www.taobao.com/go/act/sale/new_only.php?spm=1.117841.144311.3&ad_id=&am_id=13010089039b4dfb06f2&cm_id=&pm_id=">����ר��</a>
+<a href="//dgcod.taobao.com/?spm=1.117841.144311.4">���񶩹�</a>
+</div>
+</div>
+</div>
+<div id="content">

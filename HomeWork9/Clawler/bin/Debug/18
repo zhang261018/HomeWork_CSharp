@@ -1,421 +1,751 @@
-﻿<!DOCTYPE html>
-<html lang="zh-cn">
+﻿<!doctype html>
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="referrer" content="never" />
-    <meta name="description" content="三年前做的一个ASP.NET的项目（www.SurveyStar.net），一直运行好好的， 前几天，客户打电话来说，出了问题。 反复跟踪，发现是一个正数、负数的判断与ToString()的问题。 将" />
-    <meta property="og:description" content="三年前做的一个ASP.NET的项目（www.SurveyStar.net），一直运行好好的， 前几天，客户打电话来说，出了问题。 反复跟踪，发现是一个正数、负数的判断与ToString()的问题。 将" />
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>分不清正数负数，是我错了，还是VS.NET错了 - 拓荒者 - 博客园</title>
-    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
-    
-    <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
-    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=9x2ZP2K8SSBJowZA6xv0D5FvOmlvd5g21u0NBEAEwfQ" />
-    
-    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=xFiYH0_zTHqf_pk9Nf2PvR4VdQ1qJnJcRVcot-VdM-8" />
-    
-    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/dstang2000/rss" />
-    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/dstang2000/rsd.xml" />
-    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/dstang2000/wlwmanifest.xml" />
-    <script>
-        var currentBlogId = 9986;
-        var currentBlogApp = 'dstang2000';
-        var cb_enable_mathjax = false;
-        var isLogined = false;
-        var isBlogOwner = false;
-        var skinName = 'AnotherEon001';
-        var visitorUserId = '';
-    </script>
-        <script>
-            var currentPostDateAdded = '2005-03-05 02:45';
-        </script>
-    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
-    <script src="/js/blog-common.min.js?v=2Mic1VLeHXarpdzASbXqFMIMVLEBiWXNO5yiTHUcmhw"></script>
-    
-    
-    
-</head>
-<body class="has-navbar">
-    <a name="top"></a>
-        <div id="bannerbar" class="bannerbar-mobile formobile">
-            <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-blog-bannerbar-mobile')">
-                <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
-            </a>
-        </div>
-    <div id="top_nav" class="navbar forpc">
-        <nav id="nav_main" class="navbar-main">
-            <ul id="nav_left" class="navbar-list navbar-left">
-                <li class="navbar-branding"><a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a></li>
-                <li><a href="/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-sitehome')">首页</a></li>
-                <li><a href="https://news.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-news')">新闻</a></li>
-                <li><a href="https://q.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-q')">博问</a></li>
-                <li><a id="nav_brandzone" href="https://brands.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-brands')">专区</a></li>
-                <li><a href="https://ing.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-ing')">闪存</a></li>
-                <li><a href="https://edu.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-edu')">班级</a></li>
-            </ul>
-            <ul id="nav_right" class="navbar-list navbar-right">
-                <li>
-                    <form id="zzk_search" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
-                        <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="text" tabindex="3" />
-                        <button type="submit" id="zzk_search_button">
-                            <img src="/images/aggsite/search.svg" alt="搜索" />
-                        </button>
-                    </form>
-                </li>
-                <li id="navbar_login_status" class="navbar-list">
-                    <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
-                        <img id="new_post_icon" class="navbar-icon" src="/images/aggsite/newpost.svg" alt="写随笔" />
-                    </a>
-                    <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
-                        <img id="myblog_icon" class="navbar-icon" src="/images/aggsite/myblog.svg" alt="我的博客" />
-                    </a>
-                    <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
-                        <img id="msg_icon" class="navbar-icon" src="/images/aggsite/message.svg?v=J0WS2P2iPgaIVgXxcAhliw4AFZIpaTWxtdoNAv9eiCA" alt="短消息" />
-                        <span id="msg_count" style="display: none"></span>
-                    </a>
-                    <div id="user_info" class="navbar-user-info dropdown">
-                        <a class="dropdown-button" href="https://home.cnblogs.com/">
-                            <img id="user_icon" class="navbar-avatar" src="/images/aggsite/avatar-default.svg" alt="用户头像" />
-                        </a>
-                        <div class="dropdown-menu">
-                            <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
-                            <a href="https://home.cnblogs.com/">我的园子</a>
-                            <a href="https://account.cnblogs.com/settings/account">账号设置</a>
-                            <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
-    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
-</a>
-                            <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
-                        </div>
-                    </div>
-                    <a class="navbar-anonymous" href="https://account.cnblogs.com/signup/">注册</a>
-                    <a class="navbar-anonymous" href="javascript:void(0);" onclick="account.login()">登录</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+<meta charset="gbk" />
+<title>�ͻ�����</title>
+<meta name="description" content=" �Ա���-��������ȫ�����Ͻ���ƽ̨���ṩ������Ρ����ݡ��Ҿӡ����롢����/�㿨��ֵ����2�������ؼ���Ʒ��ͬʱ�ṩ��������(���ջ��󸶿�)�������⸶����һ�����������������˻������������ά�޵Ȱ�ȫ���ױ��Ϸ�������ȫ�氲���������Ϲ�����Ȥ��" />
+<meta name="keywords" content=" �Ա�,�ͱ�,���Ϲ���,C2C,���߽���,�����г�,���Ͻ���,�����г�,������,������,������վ,�Ź�,����ó��,��ȫ����,��������,������,��Ӧ,������Ϣ,����,һ�ڼ�,����,���Ͽ���,���繺��,����,��ѿ���,����,Ƶ��,���� " />
+<link rel="search" type="application/opensearchdescription+xml" href="//a.tbcdn.cn/plugins/opensearch/provider.xml" title="�Ա�����" />
 
-    
-    <div id="wrapper">
-<div id="header">
+<link rel="stylesheet" type="text/css" href="//assets.alicdn.com/tbsp/tbsp.css?t=20090602.css" />
 
-<div id="top">
-<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/dstang2000/">拓荒者 dstang2000 <a href="http://www.dstang.com"><font size=-1 color=red>http://www.dstang.com</font></a>
-</h1>
-<div id="subtitle">KISS：Keeping things that work，Improve systems procedures styles，Start things of value，Stop things of no value </div>
-</div>
-<div id="sub"><div id="blog_stats_place_holder"><script>loadBlogStats();</script></div></div>
+<script type="text/javascript" src="//assets.alicdn.com/tbra/1.0/tbra-widgets.js?t=20090619.js"></script>
 
 
+<link rel="stylesheet" href="//assets.alicdn.com/??p/global/1.0/global-min.css?t=2013102420100214.css" />
 
+<script type="text/javascript" src="//assets.alicdn.com/s/kissy/1.1.6/kissy-min.js" charset="utf-8"></script>
+<script type="text/javascript" src="//assets.alicdn.com/tb/global/1.1.0/global-min.js?t=20130802" charset="utf-8"></script>
+<link href="//assets.alicdn.com/p/c2c/tms/c2c-header-min.css?t=20110524.css" rel="stylesheet" type="text/css" />
+<script src="//assets.alicdn.com/p/c2c/tms/c2c-header-min.js?t=20110524.js"></script>
 
-</div>
-<div id="main_container">
-<div id="main_content">
-<div id="content">
-	<div id="post_detail">
-    <div class="post">
-        <h2>
-            
-<a id="cb_post_title_url" class="postTitle2 vertical-middle" href="https://www.cnblogs.com/dstang2000/archive/2005/03/05/113513.html">
-    <span>分不清正数负数，是我错了，还是VS.NET错了</span>
-    
-
-
-
-</a>
-
-        </h2>
-        <div class="postbody">
-            <div id="cnblogs_post_body" class="blogpost-body blogpost-body-html">
-<p>三年前做的一个ASP.NET的项目（<a href="http://www.surveystar.net/">www.SurveyStar.net</a>），一直运行好好的， 
-<br>前几天，客户打电话来说，出了问题。 
-<br>反复跟踪，发现是一个正数、负数的判断与ToString()的问题。 
-<br>将问题简化后，源程序可表示为只有4句的程序，如下： 
-<br>
-</p>
-<div style="border: 0.5pt solid rgba(0, 0, 0, 1); padding: 4px 5.4pt; background: rgba(230, 230, 230, 1); width: 98%; word-break: break-all">
-   <div><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top"><span style="color: rgba(0, 0, 255, 1)">class</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;Test 
-<br><img id="Codehighlighter1_11_257_Open_Image" height="16" src="/Images/OutliningIndicators/ExpandedBlockStart.gif" width="11" align="top"><img id="Codehighlighter1_11_257_Closed_Image" height="16" src="/Images/OutliningIndicators/ContractedBlock.gif" width="11" align="top" style="display: none"></span><span id="Codehighlighter1_11_257_Closed_Text" style="border: 1px solid rgba(128, 128, 128, 1); display: none; background-color: rgba(255, 255, 255, 1)"><img height="20" src="/Images/dot.gif" width="15"></span><span id="Codehighlighter1_11_257_Open_Text"><span style="color: rgba(0, 0, 0, 1)">{ 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">static</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">void</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;Main() 
-<br><img id="Codehighlighter1_34_255_Open_Image" height="16" src="/Images/OutliningIndicators/ExpandedSubBlockStart.gif" width="11" align="top" style="display: inline"><img id="Codehighlighter1_34_255_Closed_Image" height="16" src="/Images/OutliningIndicators/ContractedSubBlock.gif" width="11" align="top" style="display: none">&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="Codehighlighter1_34_255_Closed_Text" style="border: 1px solid rgba(128, 128, 128, 1); display: none; background-color: rgba(255, 255, 255, 1)"><img height="20" src="/Images/dot.gif" width="15"></span><span id="Codehighlighter1_34_255_Open_Text" style="display: inline"><span style="color: rgba(0, 0, 0, 1)">{ 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">int</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;a&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">=</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">0x79de61c0</span><span style="color: rgba(0, 0, 0, 1)">;&nbsp;</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">2044617152;</span><span style="color: rgba(0, 128, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top"></span><span style="color: rgba(0, 0, 0, 1)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">+=</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">0x12345678</span><span style="color: rgba(0, 0, 0, 1)">;&nbsp;&nbsp;&nbsp;&nbsp; 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">a&nbsp;应为&nbsp;0x8c12b838;&nbsp;&nbsp;</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">-1944930248</span><span style="color: rgba(0, 128, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top"></span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">if</span><span style="color: rgba(0, 0, 0, 1)">(&nbsp;a</span><span style="color: rgba(0, 0, 0, 1)">&lt;</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;)&nbsp;a&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">=</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">-</span><span style="color: rgba(0, 0, 0, 1)">a; 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">string&nbsp;str1&nbsp;=&nbsp;a.ToString();</span><span style="color: rgba(0, 128, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top"></span><span style="color: rgba(0, 0, 0, 1)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.Console.WriteLine(&nbsp;a&nbsp;); 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">string&nbsp;str2&nbsp;=&nbsp;a.ToString();</span><span style="color: rgba(0, 128, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/ExpandedSubBlockEnd.gif" width="11" align="top"></span><span style="color: rgba(0, 0, 0, 1)">&nbsp;&nbsp;&nbsp;&nbsp;}</span></span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/ExpandedBlockEnd.gif" width="11" align="top">}</span></span> 
-   </div>
-</div>
-<br>按理说，这里的<span><span class="Highlight"><span>if(a&lt;0) a=-a</span></span> 应当将之转成了正数，但是问题来了： 
-<br>如果在前面加上了str1一句，或者后面加上了str2一句，或者前后都加上， 
-<br><span class="Highlight">显示的a居然是负数 -1944930248。</span>这真是一个奇怪的问题。 
-<br>是我错了，还是微软错了？ 
-<br>
-<br>我查看了IL代码，没有找到问题，不知有无高人能指出其中的原因。 
-<br>附：IL代码1： 
-<table cellspacing="0" cellpadding="3" border="1" style="width: 721px; border-collapse: collapse">
-   <tbody>
-       <tr>
-           <td>
-              <div style="border: 0.5pt solid rgba(0, 0, 0, 1); padding: 4px 5.4pt; background: rgba(230, 230, 230, 1); width: 98%; word-break: break-all">
-                  <div><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top"><span style="color: rgba(0, 0, 0, 1)">#regin&nbsp;不加str1及str2 
-<br><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top">.method&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">private</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;hidebysig&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">static</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">void</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;&nbsp;Main()&nbsp;cil&nbsp;managed 
-<br><img id="Codehighlighter1_77_545_Open_Image" height="16" src="/Images/OutliningIndicators/ExpandedBlockStart.gif" width="11" align="top" style="display: none"><img id="Codehighlighter1_77_545_Closed_Image" height="16" src="/Images/OutliningIndicators/ContractedBlock.gif" width="11" align="top" style="display: inline"></span><span id="Codehighlighter1_77_545_Closed_Text" style="border: 1px solid rgba(128, 128, 128, 1); display: inline; background-color: rgba(255, 255, 255, 1)"><img height="20" src="/Images/dot.gif" width="15"></span><span id="Codehighlighter1_77_545_Open_Text" style="display: none"><span style="color: rgba(0, 0, 0, 1)">{ 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;.entrypoint 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">&nbsp;Code&nbsp;size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;28&nbsp;(0x1c)</span><span style="color: rgba(0, 128, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top"></span><span style="color: rgba(0, 0, 0, 1)">&nbsp;&nbsp;.maxstack&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">2</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;.locals&nbsp;init&nbsp;(int32&nbsp;V_0) 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0000:&nbsp;&nbsp;ldc.i4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">0x79de61c0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0005:&nbsp;&nbsp;stloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0006:&nbsp;&nbsp;ldloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0007:&nbsp;&nbsp;ldc.i4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">0x12345678</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_000c:&nbsp;&nbsp;add 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_000d:&nbsp;&nbsp;stloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_000e:&nbsp;&nbsp;ldloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_000f:&nbsp;&nbsp;ldc.i4.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0010:&nbsp;&nbsp;bge.s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IL_0015 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0012:&nbsp;&nbsp;ldloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0013:&nbsp;&nbsp;neg 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0014:&nbsp;&nbsp;stloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0015:&nbsp;&nbsp;ldloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0016:&nbsp;&nbsp;call&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">void</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;[mscorlib]System.Console::WriteLine(int32) 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_001b:&nbsp;&nbsp;ret 
-<br><img height="16" src="/Images/OutliningIndicators/ExpandedBlockEnd.gif" width="11" align="top">}</span></span><span style="color: rgba(0, 0, 0, 1)">&nbsp;</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">&nbsp;end&nbsp;of&nbsp;method&nbsp;Test::Main</span><span style="color: rgba(0, 128, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top"></span><span style="color: rgba(0, 0, 255, 1)">#endregion</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top"></span> 
-                  </div>
-              </div>
-           </td>
-           <td>
-              <div style="border: 0.5pt solid rgba(0, 0, 0, 1); padding: 4px 5.4pt; background: rgba(230, 230, 230, 1); width: 98%; word-break: break-all">
-                  <div><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top"><span style="color: rgba(0, 0, 0, 1)">#regin&nbsp;加上str1 
-<br><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top">.method&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">private</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;hidebysig&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">static</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">void</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;&nbsp;Main()&nbsp;cil&nbsp;managed 
-<br><img id="Codehighlighter1_72_684_Open_Image" height="16" src="/Images/OutliningIndicators/ExpandedBlockStart.gif" width="11" align="top" style="display: none"><img id="Codehighlighter1_72_684_Closed_Image" height="16" src="/Images/OutliningIndicators/ContractedBlock.gif" width="11" align="top" style="display: inline"></span><span id="Codehighlighter1_72_684_Closed_Text" style="border: 1px solid rgba(128, 128, 128, 1); display: inline; background-color: rgba(255, 255, 255, 1)"><img height="20" src="/Images/dot.gif" width="15"></span><span id="Codehighlighter1_72_684_Open_Text" style="display: none"><span style="color: rgba(0, 0, 0, 1)">{ 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;.entrypoint 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">&nbsp;Code&nbsp;size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;36&nbsp;(0x24)</span><span style="color: rgba(0, 128, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top"></span><span style="color: rgba(0, 0, 0, 1)">&nbsp;&nbsp;.maxstack&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">2</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;.locals&nbsp;init&nbsp;(int32&nbsp;V_0, 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">string</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;V_1) 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0000:&nbsp;&nbsp;ldc.i4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">0x79de61c0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0005:&nbsp;&nbsp;stloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0006:&nbsp;&nbsp;ldloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0007:&nbsp;&nbsp;ldc.i4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">0x12345678</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_000c:&nbsp;&nbsp;add 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_000d:&nbsp;&nbsp;stloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_000e:&nbsp;&nbsp;ldloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_000f:&nbsp;&nbsp;ldc.i4.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0010:&nbsp;&nbsp;bge.s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IL_0015 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0012:&nbsp;&nbsp;ldloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0013:&nbsp;&nbsp;neg 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0014:&nbsp;&nbsp;stloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0015:&nbsp;&nbsp;ldloca.s&nbsp;&nbsp;&nbsp;V_0 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0017:&nbsp;&nbsp;call&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instance&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">string</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;[mscorlib]System.Int32::ToString() 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_001c:&nbsp;&nbsp;stloc.</span><span style="color: rgba(0, 0, 0, 1)">1</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_001d:&nbsp;&nbsp;ldloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_001e:&nbsp;&nbsp;call&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">void</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;[mscorlib]System.Console::WriteLine(int32) 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0023:&nbsp;&nbsp;ret 
-<br><img height="16" src="/Images/OutliningIndicators/ExpandedBlockEnd.gif" width="11" align="top">}</span></span><span style="color: rgba(0, 0, 0, 1)">&nbsp;</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">&nbsp;end&nbsp;of&nbsp;method&nbsp;Test::Main</span><span style="color: rgba(0, 128, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top"></span><span style="color: rgba(0, 0, 255, 1)">#endregion</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top"> 
-<br><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top"></span> 
-                  </div>
-              </div>
-           </td>
-           <td>
-              <div style="border: 0.5pt solid rgba(0, 0, 0, 1); padding: 4px 5.4pt; background: rgba(230, 230, 230, 1); width: 98%; word-break: break-all">
-                  <div><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top"><span style="color: rgba(0, 0, 0, 1)">#regin&nbsp;加上str2 
-<br><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top">.method&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">private</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;hidebysig&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">static</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">void</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;&nbsp;Main()&nbsp;cil&nbsp;managed 
-<br><img id="Codehighlighter1_72_683_Open_Image" height="16" src="/Images/OutliningIndicators/ExpandedBlockStart.gif" width="11" align="top" style="display: none"><img id="Codehighlighter1_72_683_Closed_Image" height="16" src="/Images/OutliningIndicators/ContractedBlock.gif" width="11" align="top" style="display: inline"></span><span id="Codehighlighter1_72_683_Closed_Text" style="border: 1px solid rgba(128, 128, 128, 1); display: inline; background-color: rgba(255, 255, 255, 1)"><img height="20" src="/Images/dot.gif" width="15"></span><span id="Codehighlighter1_72_683_Open_Text" style="display: none"><span style="color: rgba(0, 0, 0, 1)">{ 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;.entrypoint 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">&nbsp;Code&nbsp;size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;36&nbsp;(0x24)</span><span style="color: rgba(0, 128, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top"></span><span style="color: rgba(0, 0, 0, 1)">&nbsp;&nbsp;.maxstack&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">2</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;.locals&nbsp;init&nbsp;(int32&nbsp;V_0, 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">string</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;V_1) 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0000:&nbsp;&nbsp;ldc.i4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">0x79de61c0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0005:&nbsp;&nbsp;stloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0006:&nbsp;&nbsp;ldloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0007:&nbsp;&nbsp;ldc.i4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 0, 1)">0x12345678</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_000c:&nbsp;&nbsp;add 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_000d:&nbsp;&nbsp;stloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_000e:&nbsp;&nbsp;ldloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_000f:&nbsp;&nbsp;ldc.i4.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0010:&nbsp;&nbsp;bge.s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IL_0015 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0012:&nbsp;&nbsp;ldloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0013:&nbsp;&nbsp;neg 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0014:&nbsp;&nbsp;stloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0015:&nbsp;&nbsp;ldloc.</span><span style="color: rgba(0, 0, 0, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0016:&nbsp;&nbsp;call&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">void</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;[mscorlib]System.Console::WriteLine(int32) 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_001b:&nbsp;&nbsp;ldloca.s&nbsp;&nbsp;&nbsp;V_0 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_001d:&nbsp;&nbsp;call&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instance&nbsp;</span><span style="color: rgba(0, 0, 255, 1)">string</span><span style="color: rgba(0, 0, 0, 1)">&nbsp;[mscorlib]System.Int32::ToString() 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0022:&nbsp;&nbsp;stloc.</span><span style="color: rgba(0, 0, 0, 1)">1</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/InBlock.gif" width="11" align="top">&nbsp;&nbsp;IL_0023:&nbsp;&nbsp;ret 
-<br><img height="16" src="/Images/OutliningIndicators/ExpandedBlockEnd.gif" width="11" align="top">}</span></span><span style="color: rgba(0, 0, 0, 1)">&nbsp;</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">&nbsp;end&nbsp;of&nbsp;method&nbsp;Test::Main</span><span style="color: rgba(0, 128, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top"></span><span style="color: rgba(0, 0, 255, 1)">#endregion</span><span style="color: rgba(0, 0, 0, 1)"> 
-<br><img height="16" src="/Images/OutliningIndicators/None.gif" width="11" align="top"></span> 
-                  </div>
-              </div>
-           </td>
-       </tr>
-   </tbody>
-</table>
-<br>
-<br>
-<br></span>
-</div>
-<div id="MySignature"></div>
-<div class="clear"></div>
-<div id="blog_post_info_block">
-    <div id="blog_post_info"></div>
-    <div class="clear"></div>
-    <div id="post_next_prev"></div>
-</div>
-        </div>
-        <p class="postfoot">
-            posted on 
-<span id="post-date">2005-03-05 14:45</span>&nbsp;
-<a href="https://www.cnblogs.com/dstang2000/">拓荒者</a>&nbsp;
-阅读(<span id="post_view_count">2657</span>)&nbsp;
-评论(<span id="post_comment_count">5</span>)&nbsp;
-<a href="https://i.cnblogs.com/EditPosts.aspx?postid=113513" rel="nofollow">编辑</a>&nbsp;
-<a href="javascript:void(0)" onclick="AddToWz(113513);return false;">收藏</a>
-        </p>
-    </div>
-</div>
-
-<script src="https://common.cnblogs.com/highlight/10.3.1/highlight.min.js"></script>
-<script>markdown_highlight();</script>
-<script>
-    var allowComments = true, cb_blogId = 9986, cb_blogApp = 'dstang2000', cb_blogUserGuid = 'd796310b-63cf-dd11-9e4d-001cf0cd104b';
-    var cb_entryId = 113513, cb_entryCreatedDate = '2005-03-05 14:45', cb_postType = 1;
-    updatePostStats(
-        [cb_entryId],
-        function(id, count) { $("#post_view_count").text(count) },
-        function(id, count) { $("#post_comment_count").text(count) })
-    zoomManager.apply("#cnblogs_post_body img:not(.code_img_closed):not(.code_img_opened)");
+<link type="text/css" rel="stylesheet" href="//assets.alicdn.com/sys/modules/2.0/modules-aio.css?t=1456205400" /></head>
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&udpid=&&yunid=&&trid=3da8641a16207398129456937e&asid=AQAAAADlhppg9FWeIAAAAADQ8BNZHrWeWw==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&asid=AQAAAADlhppg8+U1dAAAAAAMmvQLRtyX+w==&sidx=MYHOhVf5inNo+N/kBMDJTHJ3FKQvHVEL8V8wZ/o2s3rg6mNPb5JHmPUWz/IciZFIUGEsNB4uLbq4jD2xC5QkUq2e4sscNunR6VU5GQ5mVdpkeKVGJufWDKvIvTVX9dgNhp8DSSBzo2ylDopxA/WztHwpRSUcMAFFYzsfOeKh4/o=",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
 </script>
-<a name="!comments"></a>
-<div id="blog-comments-placeholder"></div>
-<div id="comment_form" class="commentform">
-    <a name="commentform"></a>
-    <div id="divCommentShow"></div>
-    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
-    <div id="comment_form_container"></div>
-    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
-    <div id="ad_t2"></div>
-    <div id="opt_under_post"></div>
-    <div id="cnblogs_c1" class="under-post-card">
-        <div id='div-gpt-ad-1592365906576-0' style='width: 300px; height: 250px;'></div>
+
+<!-- global 3.1 -->
+<div id="site-nav"><div id="site-nav-bd">
+    <p class="sitenav-mobile"><a href="http://www.taobao.com/m?TBG=146112.176505.4&spm=1.146112.176505.4">�ֻ���</a></p>
+    <p class="login-info">
+        <script>TB.Global.writeLoginInfo();</script>
+    </p>
+    <ul class="quick-menu">
+        <li class="home"><a href="http://www.taobao.com/">�Ա�����ҳ</a></li>
+        <li class="menu-item">
+  <div class="menu">
+    <a class="menu-hd" style="width:36px;" href="//guang.taobao.com" target="_top" rel="nofollow">��Ҫ��<b></b></a>
+    <div class="menu-bd" style="width:68px;height:114px;line-height:1.7;">
+      <div class="menu-bd-panel" style="padding:8px 10px;">
+        <div>
+          <a href="//dongtai.taobao.com/hub/new_arrival.htm?scm=1046.1.7.1" target="_top" rel="nofollow">������</a>
+          <a href="//dongtai.taobao.com/hub/promotion.htm?scm=1046.1.8.1" target="_top" rel="nofollow">���Ż�</a><br />
+          <a href="//yiqi.taobao.com/plus/group_square.htm" target="_top" rel="nofollow">С�ֶ�</a><br />
+          <a href="//www.taobao.com/go/act/sns/taoban_download1.php?channel_id=701354&tracelog=tbshouye" target="_top" rel="nofollow">���ֻ���</a>
+          <a href="//list.taobao.com/browse/cat-0.htm?taobao_from=6" target="_top" rel="nofollow">��Ʒ����</a>
+        </div>
+      </div>
     </div>
-    <div id="under_post_card1"></div>
-    <div id="cnblogs_c2" class="under-post-card">
-        <div id='div-gpt-ad-1592366332455-0' style='width: 468px; height: 60px;'></div>
+  </div>
+</li>
+
+<li class="mytaobao menu-item">
+  <div class="menu">
+    <a class="menu-hd" href="//i.taobao.com/my_taobao.htm" target="_top" rel="nofollow">�ҵ��Ա�<b></b></a>
+    <div class="menu-bd" style="height: 75px;width:100px">
+      <div class="menu-bd-panel" id="myTaobaoPanel">
+        <div >
+          <a href="//trade.taobao.com/trade/itemlist/list_bought_items.htm" target="_top" rel="nofollow">���򵽵ı���</a>
+        </div>
+        <div >
+          <a href="//dongtai.taobao.com/index.htm?scm=1046.1.1.1" target="_top" rel="nofollow">���̶�̬</a>
+        </div>
+        <div >
+          <a href="//i.taobao.com/feed/friend_feed.htm?tracelog=taobaoindexrsidenewfeed" target="_top" rel="nofollow">���Ѷ�̬</a>
+        </div>
+        
+      </div>
     </div>
-    <div id="under_post_card2"></div>
-    <div id="HistoryToday" class="under-post-card"></div>
-    <script type="text/javascript">
-       var commentManager = new blogCommentManager();
-       commentManager.renderComments(0);
-       fixPostBody();
-       deliverBigBanner();
-setTimeout(function() { incrementViewCount(cb_entryId); }, 50);       deliverT2();
-       deliverC1C2();
-       loadNewsAndKb();
-       loadBlogSignature();
-LoadPostCategoriesTags(cb_blogId, cb_entryId);       LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
-       GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
-       loadOptUnderPost();
-       GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
-    </script>
+  </div>
+</li>
+
+<style>
+  #site-nav .seller-center .menu-hd{ width:48px;}
+  #site-nav .seller-center .menu-bd{ width: 94px; line-height:1.7;}
+  #site-nav .seller-center .menu-bd-panel{padding: 8px 10px;}
+</style>
+<li class="seller-center menu-item">
+  <div class="menu">
+    <a class="menu-hd" href="//mai.taobao.com/seller_admin.htm" target="_top" rel="nofollow">�������<b></b></a>
+    <div class="menu-bd">
+      <div class="menu-bd-panel">
+        <div>
+          <a href="//trade.taobao.com/trade/itemlist/list_sold_items.htm" target="_top" rel="nofollow">������ı���</a>
+          <a href="//sell.taobao.com/auction/goods/goods_on_sale.htm" target="_top" rel="nofollow">�����еı���</a>
+          <a href="//fuwu.taobao.com/?tracelog=tbdd" target="_top" rel="nofollow">��ҷ����г�</a>
+          <a href="//learn.taobao.com/user/xueyuanRedirect.htm?target=http://www.alibado.com" target="_top" rel="nofollow">�����ѵ����</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="service">
+  <a href="//service.taobao.com/support/main/service_center.htm" target="_top" rel="nofollow">��ϵ�ͷ�</a>
+</li>
+<li class="cart">
+  <a href="//cart.taobao.com/my_cart.htm" target="_top" rel="nofollow">
+    <s>
+    </s>���ﳵ
+  </a>
+  <b class="leftline"></b>
+  <b class="rightline"></b>
+</li>
+<li class="favorite menu-item">
+  <div class="menu">
+   <a class="menu-hd" style="width:36px;" href="//favorite.taobao.com/collect_list.htm?itemtype=0" target="_top" rel="nofollow">�ղؼ�<b></b></a>
+    <div class="menu-bd" style="width:82px;height:57px;line-height:1.7;">
+      <div class="menu-bd-panel" style="padding:8px 10px;">
+        <div>
+          <a href="//favorite.taobao.com/collect_list.htm?itemtype=1" target="_top" rel="nofollow">�ղصı���</a>
+          <a href="//favorite.taobao.com/collect_list.htm?itemtype=0" target="_top" rel="nofollow">�ղصĵ���</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+<li class="services menu-item last">
+  <div id="J_Service" class="menu">
+    <a class="menu-hd" href="//www.taobao.com/sitemap.php?id=sitemap2" target="_top">��վ����<b></b></a>
+    <div id="J_ServicesContainer" class="menu-bd" style="width:202px;width:210px\9;_width:202px;height:337px;"></div>
+  </div>
+</li>
+		    </ul>
+</div></div>
+
+<!-- --><!-- ȫ����ͨ -->
+<!-- global 3.1 --><script>TB.Global.init();</script>
+
+
+<div id="page" class="w950">
+    <div id="header">
+
+        <h1 id="logo">
+	<a href="//www.taobao.com/" target="_top"><img alt="�Ա��� Taobao.com - ����Ͱ�������վ" src="//assets.alicdn.com/tbsp/img/header/logo.png" width="140" height="35" /></a>
+	<a href="/" class="sub-logo"  target="_top"></a>
+</h1>
+                
+            </div>
+
+    <div id="content">
+<link rel="stylesheet" type="text/css" href="//assets.alicdn.com/app/about/about.css?t=20100603.css" />
+<style type="text/css">
+#ch-nav{display:none;height:0px;}
+</style>
+		<div class="left-menu">
+			<ul>
+				
+				<li class="about-taobao"><a href="//www.taobao.com/about/?spm=1.22476.122139.1"></a></li>
+                
+                
+				<li class="about-intro"><a href="//www.taobao.com/about/partners.php?spm=1.22476.122139.2"></a></li>
+				
+                
+				<li class="taobao-news"><a href="//www.taobao.com/about/news.php?spm=1.22476.122139.3"></a></li>
+                
+                
+				<li class="taobao-service-cur"><a href="//www.taobao.com/about/contact.php?spm=1.22476.122139.4"></a></li>
+                
+                
+				<li class="taobao-partner"><a href="//www.taobao.com/about/partners.php?spm=1.22476.122139.5"></a></li>
+                
+                
+				<li class="taobao-law"><a href="//www.taobao.com/about/copyright.php?spm=1.22476.122139.6"></a></li>
+                
+                
+				<li class="taobao-talent"><a href="//job.taobao.com/?spm=1.22476.122139.7"></a></li>
+                
+			</ul>
+		</div>
+		<div class="right-info">
+			
+			<img class="top-banner" img src="//img.alicdn.com/tps/i1/T1TTV8XkVjXXXXXXXX.png" />
+			
+			<div class="main">
+			  <div class="service-cs">
+			    <h3>�����ƿͷ�</h3>
+			    <table class="contact-table">
+			      <thead>
+                          <tr>
+                              <th width="72"></th>
+                              <th width="90">�������</th>
+                              <th width="90">����ʱ��</th>
+                              <th>��Ҫ˵��</th>
+                          </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>�����ƿͷ�</td>
+                <td><a href="//service.taobao.com/support/onlinecs/ocs.htm?spm=a215a.7683513.0.0.iNb1m1&source_id=520&redirect_url=&param=1&kbs_key=&out_token=&q=&queue_id=">��˽���</td>
+                <td>8:00 - 23:00</td>
+                <td>
+                 �����ƿͷ�Ϊ��Ա�ṩ����ҵ���רҵ��ѯ��<br>
+��� - �������á���Ʒ���⡢���������������ѯ<br>
+��� - ���̹�����ߡ�����װ�ޡ�Ӫ��������ѯ<br>
+��� - ��ѡ��Ʒ�����򸶿���ײ�ѯ�����ѯ<br>
+��δ���ţ��˻����⡢���ۡ��˿�Ͷ�ߡ�άȨ��ѯ
+                </td>
+              </tr>
+            </tbody>
+			    </table>
+			  </div>
+				<div class="service-tel">
+                	
+						<h3>�绰��ϵ��ʽ</h3> 
+                	
+                      
+					<table class="contact-table">
+                      <thead>
+                          <tr>
+								<th colspan="4" style="text-align:center;">��������</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+																								<tr>
+										<td width="72">��������������</td>
+										<td width="128">
+											<strong>0571-88158198</strong>
+																					</td>
+										<td width="134">7*24Сʱ</td>
+										<td>Ϊ�Ա�����ṩ����ҵ����ѯ</td>
+									</tr>
+																
+																															
+																	<tr>
+										<td>�����̼�����</td>
+										<td>
+											<strong>0571-88157858</strong>
+																					</td>
+										<td>7*24Сʱ</td>
+										<td>Ϊ����è����ṩ����ҵ����ѯ</td>
+									</tr>
+																															
+																	<tr>
+										<td>�������з�������</td>
+										<td>
+											<strong>���ڣ�400-1688-688 ���ʣ�+86-571-56888688</strong>
+																					</td>
+										<td>7*24Сʱ</td>
+										<td>�������з��������ṩ��Ʊ�����ζȼ١�������Ʊ���Ƶ��ջ�����������յ�ҵ����ѯ</td>
+									</tr>
+																															
+																	<tr>
+										<td>ũ���г���������</td>
+										<td>
+											<strong>ũ��ҵ���ṩ������ѯ����</strong>
+																					</td>
+										<td>��һ������ 9:00-18:00</td>
+										<td>�ṩ�Ա�ũ���г���פ��ҵ�������ѯ <p><a href="//nongzi.bbs.taobao.com/detail.html?spm=1.22476.122139.8&appId=7601&postId=767698">�ڴ˲鿴</td>
+									</tr>
+																															
+																	<tr>
+										<td>������������</td>
+										<td>
+											<strong>0571-88157999</strong>
+																					</td>
+										<td>��һ������ 9:00-18:00</td>
+										<td>�ṩ�Ա�ֱͨ������չ���Ա����ˡ��������ƹ����ҵ����ѯ <p><a href="//service.taobao.com/support/minerva/beta_robot_main.htm?spm=1.22476.122139.9&sourceId=1304200010">�����ϵ����</td>
+									</tr>
+																															
+																	<tr>
+										<td>�Ե������</td>
+										<td>
+											<strong>400-8267-710</strong>
+																					</td>
+										<td>��һ������ 9:00-21:00</td>
+										<td>�ṩ�Ե��ҵ����ѯ</td>
+									</tr>
+																															
+																	<tr>
+										<td>����ҵ������</td>
+										<td>
+											<strong>����ҵ���ṩ������ѯ����</strong>
+																					</td>
+										<td>��һ������ 9:00-18:00</td>
+										<td>Ϊ��Ա�ṩ���ַ���ҵ����ѯ <p><a href="//service.taobao.com/support/minerva/robot.htm?spm=1.22476.122139.10&source_id=1305095238&redirect_url=&param=&kbs_key=&out_token=&queue_id=">�����ϵ����</a></p> ��������̼���ѯ�����ƹ������ <p><a href="//www.taobao.com/go/act/sale/sjrz.php?spm=1.22476.122139.11">��˲鿴</a></p></td>
+									</tr>
+																															
+																	<tr>
+										<td>��ơ�����ҵ������</td>
+										<td>
+											<strong>95188-1</strong>
+																					</td>
+										<td>7*24Сʱ</td>
+										<td>�ṩ��ƣ�������ơ�������ơ�������ƣ������գ����ա�ƽ̨�ա�����գ�ҵ����ѯ���������˻��˷��ա�����������</td>
+									</tr>
+																															
+																	<tr>
+										<td>�Ա���Ӱҵ��</td>
+										<td>
+											<strong>����ѡ���ۺ����� 057188157838</strong>
+																					</td>
+										<td>��һ������ 9:00-21:00</td>
+										<td>�ṩѡ����Ʊ�����Ӷһ���ҵ����ѯ <p><a href="//service.taobao.com/support/minerva/robot.htm?spm=1.22476.122139.12&source_id=1305094727&redirect_url=&param=&kbs_key=&out_token=&queue_id=">�����ϵ����</a></p> �Ա���Ӱ������� <p><a href="//dianying.taobao.com/?spm=1.22476.122139.13">��˲鿴</a></p></td>
+									</tr>
+																															
+																	<tr>
+										<td>ũ���Ա���ļ����ѯ����</td>
+										<td>
+											<strong>4008260826</strong>
+																					</td>
+										<td>��һ������ 9:00-18:00</td>
+										<td>Ϊũ���Ա��ϻ����ṩר�߷���ͬʱ��������ṩũ���Ա����ҵ����ѯ��</td>
+									</tr>
+															                      </tbody>
+					  </table>
+                      
+					  
+					  
+					<table class="contact-table">
+                      <thead>
+                          <tr>
+								<th colspan="4" style="text-align:center;">��è����</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          																	<tr>
+										<td width="72">��è��������</td>
+										<td width="128">
+											<strong>4008608608</strong>
+																					</td>
+										<td width="134">��һ������ 9:00-24:00</td>
+										<td>�ṩ��è���̡����ס���Ʒ������������ѯ</td>
+									</tr>
+																
+																															
+																	<tr>
+										<td>�����ǵ�������</td>
+										<td>
+											<strong>4008000808-1</strong>
+																					</td>
+										<td>��һ������ 9:00-21:00</td>
+										<td>�ṩ�����Ǵ��������Ʒ������֧��������ҵ����ѯ</td>
+									</tr>
+																															
+																	<tr>
+										<td>��è��������</td>
+										<td>
+											<strong>4008432288</strong>
+																					</td>
+										<td>��һ~����9:00-18:00</td>
+										<td>Ϊ��è�����̼Һ��������ṩȫҵ����ѯ�����̣����ף���Ʒ����ȣ�<p>��è����������ѯ<a href="https://service.taobao.com/support/minerva/robot.htm?source_id=1516100927&redirect_url=&param=&kbs_key=&out_token=&queue_id=">��˽���</a></p></td>
+									</tr>
+															                      </tbody>
+					  </table>
+                      
+					  
+					  
+					<table class="contact-table">
+                      <thead>
+                          <tr>
+								<th colspan="4" style="text-align:center;">��������</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          																	<tr>
+										<td width="72">̨������</td>
+										<td width="128">
+											<strong>(886)02-7706-3088</strong>
+																					</td>
+										<td width="134">��һ������ 9:00-18:00<br />�ڼ�����Ϣ</td>
+										<td>Ϊ̨���û��ṩ��ѯ</td>
+									</tr>
+																
+																															
+																	<tr>
+										<td>�������</td>
+										<td>
+											<strong>(852)2215-5300</strong>
+																					</td>
+										<td>��һ������ 9:00-18:00<br />�ڼ�����Ϣ</td>
+										<td>Ϊ��ۡ������Լ�����ȵ��û��ṩ��ѯ</td>
+									</tr>
+																															
+																	<tr>
+										<td>�¼�������</td>
+										<td>
+											<strong>800-188-6018</strong>
+																					</td>
+										<td>��һ������ 9:00-18:00<br />�ڼ�����Ϣ</td>
+										<td>Ϊ�¼����û��ṩ��ѯ</td>
+									</tr>
+																															
+																	<tr>
+										<td>������������</td>
+										<td>
+											<strong>1800-807-178</strong>
+																					</td>
+										<td>��һ������ 9:00-18:00<br />�ڼ�����Ϣ</td>
+										<td>Ϊ���������û��ṩ��ѯ</td>
+									</tr>
+															                      </tbody>
+					  </table>
+                      
+					  
+                      
+					 
+						<h3>������ϵ��ʽ</h3> 
+                	 
+                     <table class="contact-table">
+                        <tbody>
+                            <tr>
+                    
+                                <td width="72">��ϵ��ַ</td>
+                                <td>
+                                
+                                    �������ຼ����һ��·969�Ű���Ͱ���Ϫ԰�� <br/><span class="notice">�˵�ַ�ݲ�����֧�������������ֽ�ɿ�</span>
+                                 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>��������</td>
+                                <td>
+                                
+                                    311100
+                                
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>��������</td>
+                                <td>
+                                    
+                                        <a href="//service.taobao.com/support/main/service_center.htm?spm=1.22476.122139.14&/">��˽����������</a>������֪ʶ��ʱ������������⣩
+                                    
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>������è</td>
+                                <td>
+                                	
+                                   		<a href="//zhaoshang.mall.taobao.com/?spm=1.22476.122139.15">��˼�����è</a> ����ҵר�����ƽ̨�����������Ҿۼ��أ�
+                                	    
+                                </td>
+                            </tr>
+                        </tbody>
+                    
+                    </table>
+                   
+
+                <div class="box-bt"></div>
+				</div><!-- ��ϵ���ǽ��� -->
+                
+                <div class="service-promise">
+                     
+                     <p>
+                                                               	1 �����ǳ�ŵ�ڹ���ȫ���չ�����<br />
+						                                          	2 �����ǳ�ŵΪ���ṩ��ƽ��������͸���Ľ���ƽ̨��<br />
+						                                          	3 �����ǳ�ŵ������Ҫ��ʱ���ܹ���ݵ��ҵ����ǣ�����ʼ��������ߡ�<br />
+						                                          	4 �����ǳ�ŵһ��һ���Ϊ���ṩ���ʡ�����ķ���<br />
+						                                          	5 �����ǳ�ŵ�ù�ƽ������̬�ȴ������Ľ��׾��ף��������ڹ�������е�Ȩ�档<br />
+						                                          </p>
+                    
+                    <div class="box-bt"></div>
+				</div><!-- ���ǵĳ�ŵ���� --> 
+                
+				<div class="service-team">
+                	<div id="team">
+                    	
+                    	<ul>
+                        	                            <li>
+                                <a href="//img.alicdn.com/tps/i1/T1yJhCXdhXXXXXXXXX.jpg?spm=1.22476.122139.16"><img src="//img.alicdn.com/tps/i1/T1yJhCXdhXXXXXXXXX.jpg" alt="�ͻ���������-���׷�����Ӫ����" width="260" height="180" /></a>
+                                <p>�ͻ���������-���׷�����Ӫ����</p>
+                            </li>
+                                                        <li>
+                                <a href="//img.alicdn.com/tps/i2/T1JYJCXghAXXXXXXXX.jpg?spm=1.22476.122139.17"><img src="//img.alicdn.com/tps/i2/T1JYJCXghAXXXXXXXX.jpg" alt="�ͻ���������-�̼ҷ�����Ӫ����" width="260" height="180" /></a>
+                                <p>�ͻ���������-�̼ҷ�����Ӫ����</p>
+                            </li>
+                                                        <li>
+                                <a href="//img.alicdn.com/tps/i3/T1SrlCXnXIXXXXXXXX.jpg?spm=1.22476.122139.18"><img src="//img.alicdn.com/tps/i3/T1SrlCXnXIXXXXXXXX.jpg" alt="�ͻ���������-Ʒ����������Ա��չ&�����ﲿ" width="260" height="180" /></a>
+                                <p>�ͻ���������-Ʒ����������Ա��չ&�����ﲿ</p>
+                            </li>
+                                                        <li>
+                                <a href="//img.alicdn.com/tps/i3/T104hEXeBnXXXXXXXX.jpg?spm=1.22476.122139.19"><img src="//img.alicdn.com/tps/i3/T104hEXeBnXXXXXXXX.jpg" alt="��è-�ͻ����ⲿ" width="260" height="180" /></a>
+                                <p>��è-�ͻ����ⲿ</p>
+                            </li>
+                                                        <li>
+                                <a href="//img.alicdn.com/tps/i4/T1tyOrFhdiXXb6fsgU-1500-1000.jpg"><img src="//img.alicdn.com/tps/i4/T1tyOrFhdiXXb6fsgU-1500-1000.jpg" alt="�Ա�������-CRMƽ̨" width="260" height="180" /></a>
+                                <p>�Ա�������-CRMƽ̨</p>
+                            </li>
+                                                    </ul>
+                        
+					</div>
+                	<div class="box-bt"></div>
+				</div><!-- ���ǵ��Ŷӽ��� --> 
+                
+			</div>
+		</div>
+<script type="text/javascript" src="//assets.alicdn.com/apps/support/robot/js/minerva_ask.js?t=20110421"></script>
+<script type="text/javascript"> 
+   MINERVA_POPUP_URL = '//service.taobao.com/support/minerva/minerva_ask.htm?minervasource=1314110553';
+</script>    </div>    <div id="footer">
+		<!-- c2c_column start -->
+    <div class="c2c_column clearfix">
+      <a href="//www.taobao.com/go/act/315/xb_20100707.php?ad_id=&am_id=1300268931aef04f0cdc&cm_id=&pm_id=#rushi" target="_blank" class="cp_logo" ><img src="//img.alicdn.com/tps/i4/T1FqRVXo4JXXXXXXXX.png" alt="�����߱���" /></a>
+
+        <dl class="ensure">
+            <dt><em>�����߱���</em></dt>
+            <dd><ul>
+
+<li><a href="//www.taobao.com/go/act/315/xb_20100707.php?spm=1.41461.135395.1&ad_id=&am_id=1300268931aef04f0cdc&cm_id=&pm_id=#rushi" target="_blank">���Ϸ�Χ</a></li>
+<li><a href="//service.taobao.com/support/knowledge-1119776.htm?spm=1.41461.135395.2" target="_blank">�˻��˿�����</a></li>
+<li><a href="//315.taobao.com/?spm=1.41461.135395.3" target="_blank">���Ѿ�ʾ</a></li>
+<li><a href="//support.taobao.com/myservice/rights/right_main.htm?spm=1.41461.135395.4" target="_blank">��Ҫ����άȨ</a></li>
+<li><a href="//www.taobao.com/go/act/315/xb_20100707.php?spm=1.41461.135395.5&ad_id=&am_id=1300268931aef04f0cdc&cm_id=&pm_id=#rushi" target="_blank">������ɫ����</a></li>
+
+            </ul></dd>
+        </dl>
+        <dl class="newbie">
+            <dt><em>������·</em></dt>
+            <dd><ul>
+
+<li><a href="//www.taobao.com/help/buy_step1_01.html?spm=1.41461.135395.6" target="_blank">����ѧ��</a></li>
+<li><a href="//member1.taobao.com/member/new_register.jhtml?spm=1.41461.135395.7&from=&ex_info=&ex_sign=" target="_blank">����ע��</a></li>
+<li><a href="//www.taobao.com/go/act/vip/newer/guidepage.php?spm=1.41461.135395.8" target="_blank">��������ר��</a></li>
+<li><a href="//bbs.taobao.com/catalog/424023-49511-1.htm?spm=1.41461.135395.9#ThreadList" target="_blank">���װ�ȫ</a></li>
+<li><a href="//service.taobao.com/support/minerva/robot_main.htm?spm=1.41461.135395.10&sourceId=113&businessId=100&moduleGroupId=taobaocrm" target="_blank">24Сʱ���߰���</a></li>
+
+            </ul></dd>
+        </dl>
+        <dl class="payment">
+            <dt><em>���ʽ</em></dt>
+            <dd><ul>
+
+<li><a href="http://help.alipay.com/lab/help_detail.htm?help_id=245296" target="_blank">֧�������֧��</a></li>
+<li><a href="http://help.alipay.com/lab/help_detail.htm?help_id=251547" target="_blank">֧��������</a></li>
+<li><a href="http://help.alipay.com/lab/help_detail.htm?help_id=253912" target="_blank">֧����������</a></li>
+<li><a href="//cod.taobao.com/?spm=1.41461.135395.14" target="_blank">��������</a></li>
+<li><a href="http://abc.alipay.com/cool/fastPayment.htm" target="_blank">����֧��</a></li>
+
+            </ul></dd>
+        </dl>
+        <dl class="recommend">
+            <dt><em>��ɫ�г��Ƽ�</em></dt>
+            <dd><ul>
+
+<li><a target="_blank" href="//love.taobao.com/?spm=1.41461.135395.16">��Ҫ��</a><span>���� ���� ����</span></li>
+<li><a target="_blank" href="//jie.taobao.com/?spm=1.41461.135395.17">���̽�</a><span>���������Һõ�</span></li>
+<li><a target="_blank" href="//global.taobao.com/?spm=1.41461.135395.18">ȫ��</a><span>100%���⾫Ʒ</span></li>
+<li><a target="_blank" href="//nvzhuang.taobao.com/market/nvzhuang/indextest.php?spm=1.41461.135395.19">Ůװ�г�</a><span>��ɫŮװ��ɢ��</span></li>
+<li><a target="_blank" href="http://ju.atpanel.com/?url=//list.taobao.com/browse/cat-0.htm?spm=1.41461.135395.20&id=woyaomai&ad_id=&am_id=&cm_id=&pm_id=15004366061cf57b9b72">������ɫ�г�</a><span></span></li>
+
+            </ul></dd>
+        </dl>
+    </div>
+    <!-- c2c_column end -->        <div class="g_foot">
+    <div class="g_foot-ali">
+    <a href="//news.alibaba.com/specials/aboutalibaba/aligroup/index.html">����Ͱͼ���</a>
+    <b>|</b>
+    <a href="//www.alibaba.com">����Ͱ͹���վ</a>
+    <b>|</b>
+    <a href="//www.1688.com">����Ͱ��й�վ</a>
+    <b>|</b>
+    <a href="//www.aliexpress.com">ȫ������ͨ</a>
+    <b>|</b>
+    <a href="//www.taobao.com/index_global.php">�Ա���</a>
+    <b>|</b>
+    <a href="//www.tmall.com">��è</a>
+    <b>|</b>
+    <a href="//ju.taobao.com">�ۻ���</a>
+    <b>|</b>
+    <a href="//www.etao.com">һ��</a>
+    <b>|</b>
+    <a href="//www.alimama.com">��������</a>
+    <b>|</b>
+    <a href="//www.aliyun.com">�����Ƽ���</a>
+    <b>|</b>
+    <a href="//www.yunos.com">��OS</a>
+    <b>|</b>
+    <a href="//www.net.cn">����</a>
+    <b>|</b>
+    <a href="//cn.yahoo.com">�й��Ż�</a>
+    <b>|</b>
+    <a href="//www.alipay.com">֧����</a>
+    </div>
+    <div class="g_foot-nav">
+        <a href="//www.taobao.com/about/">�����Ա�</a>
+        <a href="//www.taobao.com/about/partners.php">�������</a>
+        <a href="//pro.taobao.com/">Ӫ������</a>
+        <a href="//service.taobao.com/support/main/service_route.htm">��ϵ�ͷ�</a>
+        <a href="//open.taobao.com/">����ƽ̨</a>
+        <a href="//www.taobao.com/about/join.php">����Ӣ��</a>
+        <a href="//www.taobao.com/about/contact.php">��ϵ����</a>
+        <a href="//www.taobao.com/sitemap.php">��վ��ͼ</a>
+        <a href="//www.taobao.com/about/copyright.php">��������</a>
+        <span>&copy; 2015 Taobao.com ��Ȩ����</span>
+    </div>
+    <span class="g_foot-toy"></span>
+    <span class="g_foot-line"></span>
 </div>
 
+<style>
+.g_foot{
+  width: 960px;
+  margin: 0 auto;
+  font: 12px/1.5 tahoma,arial,����b8b\4f53;
+  padding: 7px 0 9px;
+  color: #b0b0b0;
+  text-align: left !important;
+  position: relative;
+  clear:both;
+}
+.g_foot a{
+  margin: 0 2px;
+  color: #3e3e3e;
+  text-decoration:none;
+}
+.g_foot a:hover{
+  color: #F60;
+  text-decoration: underline;
 
+}
+.g_foot-ali{
+  margin-right: 100px;
+  padding-left: 0;
+  border-bottom: 1px solid #D3D3D3;
+  padding-bottom: 8px;
+  height: 18px;
+}
+.g_foot-nohover{
+  cursor: default;
+}
+.g_foot-nohover:hover{
+  color:#3e3e3e !important;
+  text-decoration:none !important;
+}
+.g_foot-ali a,.g_foot-ali b{
+  float: left;
 
-</div>
-</div>
-<div id="leftmenu">
+}
+.g_foot-ali b {
+  margin: 0 2px;
+  color:#d3d3d3;
+  font-weight: normal;
+  *margin-top:-1px;
+  margin-top:-1px \0/;
+}
+.g_foot-nav{
+  margin-top: 8px;
+  line-height: 20px;
+}
+.g_foot-nav span{
+  margin-left: 50px;
+}
+.g_foot-toy{
+  position: absolute;
+  background: url(//img.alicdn.com/tps/i1/T1MMPaXkNjXXaXezbh-48-70.png) no-repeat;
+  _background: url(//img.alicdn.com/tps/i1/T1XgzaXX0kXXaXezbh-48-70.png) no-repeat;
+  width: 69px;
+  height: 100px;
+  display: block;
+  right: 0px;
+  top:0px;
+}
+/* IE9 only */
+:root .g_foot-toy {
+    right:-20px\9; 
+ } 
+.g_foot-line{
+  display: none;
+  position: absolute;
+  background: url(//img.alicdn.com/tps/i1/T1I_56Xl0wXXXXXXXX-104-1.png) no-repeat;
+  width: 104px;
+  height: 1px;
+  right: 45px;
+  top:33px;
+}
 
+.footer-more {
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  padding-top: 1px;
+  width: 82px;
+  float: left;
+  *top:-1px;
+  top:-2px \0/;
 
-<h3>导航</h3>
-<ul>
-    <li>
-        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
-博客园</a>
+}
+.footer-more-trigger {
+  position: absolute;
 
-    </li>
-    <li>
-        
-<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/dstang2000/">
-首页</a>
+  padding: 6px 11px 4px 14px;
+  width: 37px;
+  line-height: 1.3;
+  border: 1px solid #fff;
+  left:-12px;
+  top:-5px;
+}
 
-    </li>
-    <li>
-        
+.footer-more-trigger .arrow{
+    position: absolute;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    border: dashed 4px;
+}
+.footer-more-trigger .arrow-d {
+  border-color: #666 transparent transparent transparent;
+  border-top-style: solid;
+  right: 12px;
+  top: 11px;
+}
+.footer-more-panel {
+  text-align: left;
+  position: absolute;
+  right: 26px;
+  bottom: -90px;
+  padding: 7px 3px 2px 2px;
+  border: 1px solid #C5C5C5;
+  width: 57px;
+  background: 
+  white;
+  line-height: 1.9;
+  display: none;
+}
+.footer-more-panel a {
+  float: none;
+  margin-right: 3px;
+}
+.footer-more-hover .footer-more-trigger,.footer-more:hover .footer-more-trigger {
+  border-color: #c5c5c5;
+  background: #fff;
+  border-bottom: 0;
+}
+.footer-more-hover .footer-more-panel,.footer-more:hover .footer-more-panel  {
+  display: block;
+}
 
-<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
-新随笔</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%8B%93%E8%8D%92%E8%80%85">
-联系</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/dstang2000/rss/">
-订阅</a>
-        
-<a id="blog_nav_rss_image" href="https://www.cnblogs.com/dstang2000/rss/">
-    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
-</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
-管理</a>
-
-    </li>
-</ul>
-
-
-<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
-<div id="sidebar_news" class="newsItem">
-            <script>loadBlogNews();</script>
-</div>
-<div id="sidebar_c3"></div>
-<div id="blog-sidecolumn"></div>
-                    <script>loadBlogSideColumn();</script>
-
-</div>
-</div>
-<div class="clear"></div>
-<div id="footer">
-<p id="footer">
-	Powered by: 
-	<br />
-	
-	<a href="https://www.cnblogs.com/" id="footer_site_link">博客园</a>
-	<br />
-	Copyright &copy; 2021 拓荒者
-<br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
-
-</p>
-
-
-</div>
-</div>
-
-
-    
-
-    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjve_oaYdYA61U27SN_92s-8Oxn_3F5S90ULYENI1RnB15tw1Nt3bK6dTlxPKxxLzFGBkZFbhetlwkyE_KmE7Rk-Kq65EhNrMaaJfVdWx9U7zVq9D5DayPA_XFQC9bibyVA" />
-</body>
+.footer-more-hover .footer-more-trigger .arrow-d,.footer-more:hover .footer-more-trigger .arrow-d {
+  -moz-transform: rotate(180deg);
+  -moz-transform-origin: 50% 30%;
+  -o-transform: rotate(180deg);
+  -o-transform-origin: 50% 30%;
+  -webkit-transform: rotate(180deg);
+  -webkit-transform-origin: 50% 30%;
+  transform: rotate(180deg);
+  transform-origin: 50% 30%;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation = 2);
+  *top: 8px;
+  top:8px \0/;
+}
+</style>        <div id="server-num">
+<!-- 0.00047993659973145 -->        </div>
+    </div>
+</div></body>
 </html>

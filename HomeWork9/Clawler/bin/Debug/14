@@ -1,300 +1,56 @@
-﻿<!DOCTYPE html>
-<html lang="zh-cn">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="referrer" content="never" />
-    <meta name="description" content="最近RSS越来越流行，一般都需要专用的软件，有时候，在IE中看见的只是xml文件，很不方便。 我这里做了一个小工具，作为IE的插件，使得点右键&amp;#8220;选Rss In IE&amp;#8221;时，可以直" />
-    <meta property="og:description" content="最近RSS越来越流行，一般都需要专用的软件，有时候，在IE中看见的只是xml文件，很不方便。 我这里做了一个小工具，作为IE的插件，使得点右键&amp;#8220;选Rss In IE&amp;#8221;时，可以直" />
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>小工具RssInIE： 在IE中点右键，可以直接查看RSS - 拓荒者 - 博客园</title>
-    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
-    
-    <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
-    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=9x2ZP2K8SSBJowZA6xv0D5FvOmlvd5g21u0NBEAEwfQ" />
-    
-    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=xFiYH0_zTHqf_pk9Nf2PvR4VdQ1qJnJcRVcot-VdM-8" />
-    
-    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/dstang2000/rss" />
-    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/dstang2000/rsd.xml" />
-    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/dstang2000/wlwmanifest.xml" />
-    <script>
-        var currentBlogId = 9986;
-        var currentBlogApp = 'dstang2000';
-        var cb_enable_mathjax = false;
-        var isLogined = false;
-        var isBlogOwner = false;
-        var skinName = 'AnotherEon001';
-        var visitorUserId = '';
-    </script>
-        <script>
-            var currentPostDateAdded = '2005-03-06 12:56';
-        </script>
-    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
-    <script src="/js/blog-common.min.js?v=2Mic1VLeHXarpdzASbXqFMIMVLEBiWXNO5yiTHUcmhw"></script>
-    
-    
-    
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>�������-����-�Ա���</title>
+<link href="http://www.taobao.com/home/css/sys/help.css" rel="stylesheet" type="text/css" />
+<link href="help-step4.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="has-navbar">
-    <a name="top"></a>
-        <div id="bannerbar" class="bannerbar-mobile formobile">
-            <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-blog-bannerbar-mobile')">
-                <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
-            </a>
-        </div>
-    <div id="top_nav" class="navbar forpc">
-        <nav id="nav_main" class="navbar-main">
-            <ul id="nav_left" class="navbar-list navbar-left">
-                <li class="navbar-branding"><a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a></li>
-                <li><a href="/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-sitehome')">首页</a></li>
-                <li><a href="https://news.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-news')">新闻</a></li>
-                <li><a href="https://q.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-q')">博问</a></li>
-                <li><a id="nav_brandzone" href="https://brands.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-brands')">专区</a></li>
-                <li><a href="https://ing.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-ing')">闪存</a></li>
-                <li><a href="https://edu.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-edu')">班级</a></li>
-            </ul>
-            <ul id="nav_right" class="navbar-list navbar-right">
-                <li>
-                    <form id="zzk_search" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
-                        <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="text" tabindex="3" />
-                        <button type="submit" id="zzk_search_button">
-                            <img src="/images/aggsite/search.svg" alt="搜索" />
-                        </button>
-                    </form>
-                </li>
-                <li id="navbar_login_status" class="navbar-list">
-                    <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
-                        <img id="new_post_icon" class="navbar-icon" src="/images/aggsite/newpost.svg" alt="写随笔" />
-                    </a>
-                    <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
-                        <img id="myblog_icon" class="navbar-icon" src="/images/aggsite/myblog.svg" alt="我的博客" />
-                    </a>
-                    <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
-                        <img id="msg_icon" class="navbar-icon" src="/images/aggsite/message.svg?v=J0WS2P2iPgaIVgXxcAhliw4AFZIpaTWxtdoNAv9eiCA" alt="短消息" />
-                        <span id="msg_count" style="display: none"></span>
-                    </a>
-                    <div id="user_info" class="navbar-user-info dropdown">
-                        <a class="dropdown-button" href="https://home.cnblogs.com/">
-                            <img id="user_icon" class="navbar-avatar" src="/images/aggsite/avatar-default.svg" alt="用户头像" />
-                        </a>
-                        <div class="dropdown-menu">
-                            <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
-                            <a href="https://home.cnblogs.com/">我的园子</a>
-                            <a href="https://account.cnblogs.com/settings/account">账号设置</a>
-                            <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
-    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
-</a>
-                            <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
-                        </div>
-                    </div>
-                    <a class="navbar-anonymous" href="https://account.cnblogs.com/signup/">注册</a>
-                    <a class="navbar-anonymous" href="javascript:void(0);" onclick="account.login()">登录</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    
-    <div id="wrapper">
-<div id="header">
-
-<div id="top">
-<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/dstang2000/">拓荒者 dstang2000 <a href="http://www.dstang.com"><font size=-1 color=red>http://www.dstang.com</font></a>
-</h1>
-<div id="subtitle">KISS：Keeping things that work，Improve systems procedures styles，Start things of value，Stop things of no value </div>
-</div>
-<div id="sub"><div id="blog_stats_place_holder"><script>loadBlogStats();</script></div></div>
-
-
-
-
-</div>
-<div id="main_container">
-<div id="main_content">
-<div id="content">
-	<div id="post_detail">
-    <div class="post">
-        <h2>
-            
-<a id="cb_post_title_url" class="postTitle2 vertical-middle" href="https://www.cnblogs.com/dstang2000/archive/2005/03/06/113761.html">
-    <span>小工具RssInIE： 在IE中点右键，可以直接查看RSS</span>
-    
-
-
-
-</a>
-
-        </h2>
-        <div class="postbody">
-            <div id="cnblogs_post_body" class="blogpost-body blogpost-body-html">
-<p>最近RSS越来越流行，一般都需要专用的软件，有时候，在IE中看见的只是xml文件，很不方便。 
-<br>我这里做了一个小工具，作为IE的插件，使得点右键“选Rss In IE”时，可以直接查看RSS。 
-<br>程序的原理是使用xslt将RSS的xml转成为链接，放到窗口左边，而右边用一个iframe来放内容。 
-<br>（由于iframe使用得不太好，欢迎提出改进意见）。 
-<br>
-<br>下载RssInIE：<a title="RssInIE.zip" href="/Files/dstang2000/RssInIE.zip">RssInIE.zip</a>&nbsp;(2k,含源程序)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 附：<a title="反安装文件" href="/Files/dstang2000/RssInIE_uninstall.zip">反安装文件</a> 
-<br>
-<br>解压后，安装inf文件以后，就可以看见IE右键菜单上多了一项“Rss In IE”。 
-<br>
-<br>点击后，打开一个新窗口，如图： 
-<br><img height="384" src="/images/cnblogs_com/dstang2000/RssInIE2.jpg" width="512">&nbsp; 
-<br>
-</p>
-<p><font size="-1">参考文献：<a href="http://www.gotdotnet.com/Community/UserSamples/Details.aspx?SampleGuid=80648c4e-584f-4aa1-919a-fc7ce6630be1"> 
-<br>JJulian: Simple RSS Feed Transform with XSLT </a>
-<br><a href="http://www.codeproject.com/jscript/TinyRSS.asp">Matthias Hertel: TinyRSS, an RSS Reader for Internet Explorer</a> 
-<br><a href="http://www.thundermain.com/FullSource.html">Full Source</a></font> 
-</p>
-</div>
-<div id="MySignature"></div>
-<div class="clear"></div>
-<div id="blog_post_info_block">
-    <div id="blog_post_info"></div>
-    <div class="clear"></div>
-    <div id="post_next_prev"></div>
-</div>
-        </div>
-        <p class="postfoot">
-            posted on 
-<span id="post-date">2005-03-06 00:56</span>&nbsp;
-<a href="https://www.cnblogs.com/dstang2000/">拓荒者</a>&nbsp;
-阅读(<span id="post_view_count">1580</span>)&nbsp;
-评论(<span id="post_comment_count">5</span>)&nbsp;
-<a href="https://i.cnblogs.com/EditPosts.aspx?postid=113761" rel="nofollow">编辑</a>&nbsp;
-<a href="javascript:void(0)" onclick="AddToWz(113761);return false;">收藏</a>
-        </p>
-    </div>
-</div>
-
-<script src="https://common.cnblogs.com/highlight/10.3.1/highlight.min.js"></script>
-<script>markdown_highlight();</script>
-<script>
-    var allowComments = true, cb_blogId = 9986, cb_blogApp = 'dstang2000', cb_blogUserGuid = 'd796310b-63cf-dd11-9e4d-001cf0cd104b';
-    var cb_entryId = 113761, cb_entryCreatedDate = '2005-03-06 00:56', cb_postType = 1;
-    updatePostStats(
-        [cb_entryId],
-        function(id, count) { $("#post_view_count").text(count) },
-        function(id, count) { $("#post_comment_count").text(count) })
-    zoomManager.apply("#cnblogs_post_body img:not(.code_img_closed):not(.code_img_opened)");
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&udpid=&&yunid=&&trid=3da8641a16207398123371345e&asid=AQAAAADkhppgI6DYMAAAAAC4S6odlmYelw==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&asid=AQAAAADkhppgPPuCXQAAAACdV38Bvv3iww==&sidx=ATlBOMxNIE9k/fBH2ArkOYRmWC1FikztXgPbfhG8WGlCsmZWtwSeXp+0Yw94uZPa8tvwISEEeLKnTqIryd/3tW7Fe3v583kD6Bw7mEO/cULWysMLO+Guk8vxqU4bvsR9Z+IcJmmG1auiu9rlJHaFIV79PvgRSxOVpSUKIMSO5Nc=",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
 </script>
-<a name="!comments"></a>
-<div id="blog-comments-placeholder"></div>
-<div id="comment_form" class="commentform">
-    <a name="commentform"></a>
-    <div id="divCommentShow"></div>
-    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
-    <div id="comment_form_container"></div>
-    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
-    <div id="ad_t2"></div>
-    <div id="opt_under_post"></div>
-    <div id="cnblogs_c1" class="under-post-card">
-        <div id='div-gpt-ad-1592365906576-0' style='width: 300px; height: 250px;'></div>
+<div id="help">
+	<div class="tab">
+    	<a href="buy_step1_01.html" class="tab-buyer">�������</a>
+        <a href="sell_step1_01.html" class="tab-saler">�������</a>
+		<a href="http://service.taobao.com/support/help.htm" class="back-home">������ҳ</a>
     </div>
-    <div id="under_post_card1"></div>
-    <div id="cnblogs_c2" class="under-post-card">
-        <div id='div-gpt-ad-1592366332455-0' style='width: 468px; height: 60px;'></div>
+    <div class="step">
+    	<a href="buy_step1_01.html" class="step1 step1-on">�˻�ע��</a>
+        <a href="alipay_step1_01.html" class="step1">֧�����˻�����</a>
+        <a href="buy_step2_01.html" class="step1">�������</a>
+		<div class="step2-box">
+			<a href="buy_step4_02.html" class="step2">��������</a>
+			<a href="purchase_step1.html" class="step2">���빺�ﳵ</a>
+		</div>
+		<a href="buy_step4_03.html" class="step1">��θ���</a>
+		<div class="step3-box">
+		<a href="new-buy-step4-3-2.html" class="step3-box-bt">���֧��</a>
+		<a href="new-buy-step4-3-3.html" class="step3-box-bt">��������</a>
+		<a href="new-buy-step4-3-1.html" class="step3-box-bt">���˴���</a>
+		<a href="new-buy-step4-3-0.html" class="step3-box-bt">��������</a>
+		</div>
+        <a href="buy_step5_01.html" class="step1">�ջ�&amp;����</a>
     </div>
-    <div id="under_post_card2"></div>
-    <div id="HistoryToday" class="under-post-card"></div>
-    <script type="text/javascript">
-       var commentManager = new blogCommentManager();
-       commentManager.renderComments(0);
-       fixPostBody();
-       deliverBigBanner();
-setTimeout(function() { incrementViewCount(cb_entryId); }, 50);       deliverT2();
-       deliverC1C2();
-       loadNewsAndKb();
-       loadBlogSignature();
-LoadPostCategoriesTags(cb_blogId, cb_entryId);       LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
-       GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
-       loadOptUnderPost();
-       GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
-    </script>
+    <div class="sub-step">
+    	<a href="buy_step1_01.html" class="sub-step-on">��1��</a>
+        <a href="buy_step1_02.html">��2��</a>
+        <a href="buy_step1_03.html">��3��</a>
+        <a href="buy_step1_04.html">��4��</a>
+        <a href="buy_step1_05.html" class="sub-step-last">��5��</a>
+    </div>
+    <div class="show-box">
+	<img src="http://img01.taobaocdn.com/tps/i1/T1mTtYXkVEXXXXXXXX-900-514.gif" alt="����-�Ա���" border="0" usemap="#Map" />
+<map name="Map" id="Map">
+  <area shape="rect" coords="144,1,209,29" href="buy_step1_02.html" />
+<area shape="rect" coords="596,205,693,252" href="buy_step1_02.html" />
+</map>
+  </div>
+<div class="go-top">
+    	<a href="#help">top</a>
+  </div>
 </div>
-
-
-
-</div>
-</div>
-<div id="leftmenu">
-
-
-<h3>导航</h3>
-<ul>
-    <li>
-        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
-博客园</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/dstang2000/">
-首页</a>
-
-    </li>
-    <li>
-        
-
-<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
-新随笔</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%8B%93%E8%8D%92%E8%80%85">
-联系</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/dstang2000/rss/">
-订阅</a>
-        
-<a id="blog_nav_rss_image" href="https://www.cnblogs.com/dstang2000/rss/">
-    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
-</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
-管理</a>
-
-    </li>
-</ul>
-
-
-<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
-<div id="sidebar_news" class="newsItem">
-            <script>loadBlogNews();</script>
-</div>
-<div id="sidebar_c3"></div>
-<div id="blog-sidecolumn"></div>
-                    <script>loadBlogSideColumn();</script>
-
-</div>
-</div>
-<div class="clear"></div>
-<div id="footer">
-<p id="footer">
-	Powered by: 
-	<br />
-	
-	<a href="https://www.cnblogs.com/" id="footer_site_link">博客园</a>
-	<br />
-	Copyright &copy; 2021 拓荒者
-<br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
-
-</p>
-
-
-</div>
-</div>
-
-
-    
-
-    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjsgnCMLvNmgJNR1j05x5n1ifIKFGIOPhubjqZa1Vj573XHkJ2hTNTkFxucWDfz1K_oSCHlkBRKVD-k-gGBwSxrCS3FBs5ajoNfEJLLvYZ_G-qX0g6xMVdtmDNgvKnPsyJA" />
 </body>
 </html>

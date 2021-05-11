@@ -1,243 +1,365 @@
-﻿<!DOCTYPE html>
-<html lang="zh-cn">
+﻿
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="referrer" content="origin-when-crossorigin" />
-    
-    
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>2005 年 3月 5 日 随笔档案 - 拓荒者 - 博客园</title>
-    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
-    
-    <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
-    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=9x2ZP2K8SSBJowZA6xv0D5FvOmlvd5g21u0NBEAEwfQ" />
-    
-    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=xFiYH0_zTHqf_pk9Nf2PvR4VdQ1qJnJcRVcot-VdM-8" />
-    
-    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/dstang2000/rss" />
-    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/dstang2000/rsd.xml" />
-    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/dstang2000/wlwmanifest.xml" />
-    <script>
-        var currentBlogId = 9986;
-        var currentBlogApp = 'dstang2000';
-        var cb_enable_mathjax = false;
-        var isLogined = false;
-        var isBlogOwner = false;
-        var skinName = 'AnotherEon001';
-        var visitorUserId = '';
-    </script>
-    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
-    <script src="/js/blog-common.min.js?v=2Mic1VLeHXarpdzASbXqFMIMVLEBiWXNO5yiTHUcmhw"></script>
-    
-    
-    
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="renderer" content="webkit" />
+  <title>淘宝网 - 淘！我喜欢</title>
+  <meta name="spm-id" content="1" />
+  <meta name="description"
+    content="淘宝网 - 亚洲较大的网上交易平台，提供各类服饰、美容、家居、数码、话费/点卡充值… 数亿优质商品，同时提供担保交易(先收货后付款)等安全交易保障服务，并由商家提供退货承诺、破损补寄等消费者保障服务，让你安心享受网上购物乐趣！" />
+  <meta name="keyword"
+    content="淘宝,掏宝,网上购物,C2C,在线交易,交易市场,网上交易,交易市场,网上买,网上卖,购物网站,团购,网上贸易,安全购物,电子商务,放心买,供应,买卖信息,网店,一口价,拍卖,网上开店,网络购物,打折,免费开店,网购,频道,店铺" />
+  <link rel="stylesheet" href="//g.alicdn.com/??kg/global-util/1.0.6/index-min.css,kg/tb-nav/2.4.1/index-min.css">
+  <link rel="stylesheet" type="text/css" href="//g.alicdn.com/tb/err/0.7.0/err/40x/index-min.css" />
+  <script
+    src="//g.alicdn.com/??kissy/k/1.4.16/seed-min.js,kg/kmd-adapter/0.1.5/index.js,kg/kmd-adapter/0.1.5/util.js,kg/global-util/1.0.7/index-min.js,tb/tracker/4.3.18/index.js,kg/tb-nav/2.5.4/index-min.js"></script>
 </head>
-<body class="has-navbar">
-    <a name="top"></a>
-        <div id="bannerbar" class="bannerbar-mobile formobile">
-            <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-blog-bannerbar-mobile')">
-                <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
+
+<body data-spm="7156474"><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&udpid=&&yunid=&&trid=d35ba34316207398109644467e&asid=AQAAAADihppgF4rpFwAAAABAC7MfQJIong==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+  <div class="site-nav" id="J_SiteNav"
+    data-component-config='{ "cart": "0.0.6","message": "3.4.6","umpp": "1.5.4","mini-login": "6.3.8","tb-ie-updater": "0.0.4","tbar": "2.1.0","tb-footer": "1.1.7","sidebar": "1.0.10" }'
+    data-tbar='{ "show":true, "miniCart": "2.12.2","paramsBlackList": "_wt,seeyouagain1722","my_activity": "https:&#x2F;&#x2F;market.m.taobao.com&#x2F;apps&#x2F;abs&#x2F;5&#x2F;38&#x2F;my12?psId=58386&amp;pcPsId=58388", "venueUrl": "https:&#x2F;&#x2F;1212.taobao.com?wh_weex=true&amp;data_prefetch=true&amp;wx_navbar_transparent=true", "helpUrl": "https://consumerservice.taobao.com/online-help", "validTime":{"startTime": 1512057599, "endTime": 1513094400}, "style": {"name": "171212", "path": "kg/sidebar-style-171212/0.0.5/" }, "page":[],"blackList":[],"navDataId":{"tceSid":1182567,"tceVid":0},"pluginVersion":{ "cart":"0.2.0","history":"0.2.0","redpaper":"0.0.8","gotop":"0.2.5","help":"0.2.1","ww":"0.0.3","pagenav":"0.0.27","myasset":"0.0.9","my1212":"0.0.1","my1111":"0.2.2"}}'>
+    <div class="site-nav-bd" id="J_SiteNavBd">
+
+      <ul class="site-nav-bd-l" id="J_SiteNavBdL" data-spm-ab="1">
+
+        <li class="site-nav-menu site-nav-login" id="J_SiteNavLogin" data-name="login" data-spm="754894437">
+          <div class="site-nav-menu-hd">
+            <a href="//login.taobao.com/member/login.jhtml?f=top&redirectURL=https%3A%2F%2Fwww.taobao.com%2F"
+              target="_top">
+
+              <span>亲，请登录</span>
             </a>
+
+          </div>
+
+        </li>
+
+
+
+
+        <li id="J_Tmsg" class="site-nav-tmsg tmsg site-nav-multi-menu J_MultiMenu" data-name="tmsg"
+          data-spm="1997563201">
+          <div class="J_Menu site-nav-menu">
+            <div class="site-nav-menu-hd J_Tmsg_Basic tmsg_basic">
+              <span class="J_Tmsg_Logo tmsg_logo_area" style="zoom:1;">
+                <span class="J_Tmsg_Logo_Loading tmsg_logo_loading"></span>
+                <span class="J_Tmsg_Logo_Icon tmsg_logo_icon site-nav-icon" style="display:none">&#xe602;</span>
+                <span class="J_Tmsg_Logo_Text tmsg_logo_text">消息</span>
+                <span class="J_Tmsg_Logo_Unread tmsg_logo_unread"></span>
+              </span>
+
+              <span class="site-nav-arrow"><span class="site-nav-icon">&#xe605;</span></span>
+
+            </div>
+
+            <div class="site-nav-menu-bd">
+              <div class="J_Tmsg_Panel_Apps tmsg_panel_apps"></div>
+            </div>
+          </div>
+          <div class="J_Tmsg_Panels tmsg_panels">
+            <div class="J_Tmsg_Panel_Detail tmsg_panel_detail"></div>
+            <div class="J_Tmsg_Panel_history tmsg_panel_history"></div>
+            <div class="J_Tmsg_Panel_Strong tmsg_panel_strong"></div>
+            <div class="J_Tmsg_Panel_Setting tmsg_panel_setting"></div>
+          </div>
+        </li>
+
+
+
+
+        <li class="site-nav-menu site-nav-mobile" id="J_SiteNavMobile" data-name="mobile" data-spm="1997563273">
+          <div class="site-nav-menu-hd">
+            <a href="https://market.m.taobao.com/app/fdilab/download-page/main/index.html" target="_top">
+
+              <span>手机逛淘宝</span>
+            </a>
+
+          </div>
+
+        </li>
+
+
+
+
+        <li class="site-nav-menu site-nav-weekend site-nav-multi-menu J_MultiMenu" id="J_SiteNavWeekend"
+          data-name="weekend" data-spm="201711111212">
+        </li>
+
+
+
+      </ul>
+
+      <ul class="site-nav-bd-r" id="J_SiteNavBdR" data-spm-ab="2">
+
+
+        <li class="site-nav-menu site-nav-home" id="J_SiteNavHome" data-name="home" data-spm="1581860521">
+          <div class="site-nav-menu-hd">
+            <a href="//www.taobao.com/" target="_top">
+
+              <span>淘宝网首页</span>
+            </a>
+
+          </div>
+
+        </li>
+
+
+
+
+        <li class="site-nav-menu site-nav-mytaobao site-nav-multi-menu J_MultiMenu" id="J_SiteNavMytaobao"
+          data-name="mytaobao" data-spm="1997525045">
+          <div class="site-nav-menu-hd">
+            <a href="//i.taobao.com/my_taobao.htm" target="_top">
+
+              <span>我的淘宝</span>
+            </a>
+
+            <span class="site-nav-arrow"><span class="site-nav-icon">&#xe605;</span></span>
+
+          </div>
+
+          <div class="site-nav-menu-bd site-nav-menu-list">
+            <div class="site-nav-menu-bd-panel menu-bd-panel">
+
+              <a href="//trade.taobao.com/trade/itemlist/list_bought_items.htm" target="_top">已买到的宝贝</a>
+
+              <a href="//www.taobao.com/markets/footmark/tbfoot" target="_top">我的足迹</a>
+
+            </div>
+          </div>
+
+        </li>
+
+
+
+
+        <li class="site-nav-menu site-nav-cart site-nav-menu-empty site-nav-multi-menu J_MultiMenu" id="J_MiniCart"
+          data-name="cart" data-spm="1997525049">
+          <div class="site-nav-menu-hd">
+            <a href="//cart.taobao.com/cart.htm?from=mini&ad_id=&am_id=&cm_id=&pm_id=1501036000a02c5c3739"
+              target="_top">
+              <span class="site-nav-icon site-nav-icon-highlight">&#xe603;</span>
+              <span>购物车</span>
+              <strong class="h" id="J_MiniCartNum"></strong>
+            </a>
+
+            <span class="site-nav-arrow"><span class="site-nav-icon">&#xe605;</span></span>
+
+          </div>
+          <div class="site-nav-menu-bd">
+            <div class="site-nav-menu-bd-panel menu-bd-panel">
+            </div>
+          </div>
+        </li>
+
+
+
+
+        <li class="site-nav-menu site-nav-favor site-nav-multi-menu J_MultiMenu" id="J_SiteNavFavor" data-name="favor"
+          data-spm="1997525053">
+          <div class="site-nav-menu-hd">
+            <a href="//shoucang.taobao.com/item_collect.htm" target="_top">
+              <span class="site-nav-icon">&#xe604;</span>
+              <span>收藏夹</span>
+            </a>
+
+            <span class="site-nav-arrow"><span class="site-nav-icon">&#xe605;</span></span>
+
+          </div>
+
+          <div class="site-nav-menu-bd site-nav-menu-list">
+            <div class="site-nav-menu-bd-panel menu-bd-panel">
+
+              <a href="//shoucang.taobao.com/item_collect.htm" target="_top">收藏的宝贝</a>
+
+              <a href="//shoucang.taobao.com/shop_collect_list.htm" target="_top">收藏的店铺</a>
+            </div>
+          </div>
+        </li>
+        <li class="site-nav-menu site-nav-catalog" id="J_SiteNavCatalog" data-name="catalog" data-spm="1997563209">
+          <div class="site-nav-menu-hd">
+            <a href="//www.taobao.com/tbhome/page/market-list" target="_top">
+              <span>商品分类</span>
+            </a>
+          </div>
+        </li>
+        <li class="site-nav-pipe">|</li>
+        <li class="site-nav-menu site-nav-seller site-nav-multi-menu J_MultiMenu" id="J_SiteNavSeller"
+          data-name="seller" data-spm="1997525073">
+          <div class="site-nav-menu-hd">
+            <a href="//mai.taobao.com/seller_admin.htm" target="_top">
+              <span>千牛卖家中心</span>
+            </a>
+            <span class="site-nav-arrow"><span class="site-nav-icon">&#xe605;</span></span>
+          </div>
+          <div class="site-nav-menu-bd site-nav-menu-list">
+            <div class="site-nav-menu-bd-panel menu-bd-panel">
+              <a href="//mai.taobao.com/seller_admin.htm" target="_top">免费开店</a>
+              <a href="//trade.taobao.com/trade/itemlist/list_sold_items.htm" target="_top">已卖出的宝贝</a>
+              <a href="//sell.taobao.com/auction/goods/goods_on_sale.htm" target="_top">出售中的宝贝</a>
+              <a href="//fuwu.taobao.com/?tracelog=tbdd" target="_top">卖家服务市场</a>
+              <a href="//daxue.taobao.com/" target="_top">卖家培训中心</a>
+              <a href="//healthcenter.taobao.com/home/health_home.htm" target="_top">体检中心</a>
+              <a href="//infob.taobao.com/help" target="_top">问商友</a>
+            </div>
+          </div>
+        </li>
+        <li class="site-nav-menu site-nav-service site-nav-multi-menu J_MultiMenu" id="J_SiteNavService"
+          data-name="service" data-spm="754895749">
+          <div class="site-nav-menu-hd">
+            <a href="https://consumerservice.taobao.com" target="_top">
+              <span>联系客服</span>
+            </a>
+            <span class="site-nav-arrow"><span class="site-nav-icon">&#xe605;</span></span>
+          </div>
+          <div class="site-nav-menu-bd site-nav-menu-list">
+            <div class="site-nav-menu-bd-panel menu-bd-panel">
+              <a href="https://consumerservice.taobao.com/online-help" target="_top">消费者客服</a>
+              <a href="//helpcenter.taobao.com/index?from=high" target="_top">卖家客服</a>
+            </div>
+          </div>
+        </li>
+        <li class="site-nav-menu site-nav-sitemap site-nav-multi-menu J_MultiMenu" id="J_SiteNavSitemap"
+          data-name="sitemap" data-spm="1997525077">
+          <div class="site-nav-menu-hd">
+            <a href="https://www.taobao.com/tbhome/page/sitemap" target="_top">
+              <span class="site-nav-icon site-nav-icon-highlight">&#xe601;</span>
+              <span>网站导航</span>
+            </a>
+            <span class="site-nav-arrow"><span class="site-nav-icon">&#xe605;</span></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--[if lt IE 8]>
+    <style>html,body{overflow:hidden;height:100%}</style>
+    <div class="tb-ie-updater-layer"></div>
+    <div class="tb-ie-updater-box" data-spm="20161112">
+      <a href="https://www.google.cn/intl/zh-CN/chrome/browser/desktop/" class="tb-ie-updater-google" target="_blank" data-spm-click="gostr=/tbieupdate;locaid=d1;name=google">谷歌 Chrome</a>
+      <a href="http://www.uc.cn/ucbrowser/download/" class="tb-ie-updater-uc" target="_blank" data-spm-click="gostr=/tbieupdate20161112;locaid=d2;name=uc">UC 浏览器</a>"
+    </div>
+    <![endif]-->
+  <div id="content">
+    <div id="J_Header" class="header clearfix">
+      <h1 id="logo" class="logo">
+        <a href="//www.taobao.com/" title="淘宝网 Taobao.com - 阿里巴巴旗下网站" target="_top">淘宝网<span></span></a>
+      </h1>
+    </div>
+    <div id="main">
+      <div id="banner" data-spm="1997480849">
+        <a id="J_Banner" href="//www.taobao.com"><img
+            src="//gtms04.alicdn.com/tps/i4/T1Sa1dFuJaXXaESgf7-520-500.png" /></a>
+      </div>
+      <div id="err" data-spm="1997480901">
+        <div class="tips">
+          <p>抱歉！页面无法访问……</p>
         </div>
-    <div id="top_nav" class="navbar forpc">
-        <nav id="nav_main" class="navbar-main">
-            <ul id="nav_left" class="navbar-list navbar-left">
-                <li class="navbar-branding"><a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a></li>
-                <li><a href="/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-sitehome')">首页</a></li>
-                <li><a href="https://news.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-news')">新闻</a></li>
-                <li><a href="https://q.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-q')">博问</a></li>
-                <li><a id="nav_brandzone" href="https://brands.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-brands')">专区</a></li>
-                <li><a href="https://ing.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-ing')">闪存</a></li>
-                <li><a href="https://edu.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-edu')">班级</a></li>
-            </ul>
-            <ul id="nav_right" class="navbar-list navbar-right">
-                <li>
-                    <form id="zzk_search" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
-                        <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="text" tabindex="3" />
-                        <button type="submit" id="zzk_search_button">
-                            <img src="/images/aggsite/search.svg" alt="搜索" />
-                        </button>
-                    </form>
-                </li>
-                <li id="navbar_login_status" class="navbar-list">
-                    <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
-                        <img id="new_post_icon" class="navbar-icon" src="/images/aggsite/newpost.svg" alt="写随笔" />
-                    </a>
-                    <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
-                        <img id="myblog_icon" class="navbar-icon" src="/images/aggsite/myblog.svg" alt="我的博客" />
-                    </a>
-                    <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
-                        <img id="msg_icon" class="navbar-icon" src="/images/aggsite/message.svg?v=J0WS2P2iPgaIVgXxcAhliw4AFZIpaTWxtdoNAv9eiCA" alt="短消息" />
-                        <span id="msg_count" style="display: none"></span>
-                    </a>
-                    <div id="user_info" class="navbar-user-info dropdown">
-                        <a class="dropdown-button" href="https://home.cnblogs.com/">
-                            <img id="user_icon" class="navbar-avatar" src="/images/aggsite/avatar-default.svg" alt="用户头像" />
-                        </a>
-                        <div class="dropdown-menu">
-                            <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
-                            <a href="https://home.cnblogs.com/">我的园子</a>
-                            <a href="https://account.cnblogs.com/settings/account">账号设置</a>
-                            <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
-    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
-</a>
-                            <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
-                        </div>
-                    </div>
-                    <a class="navbar-anonymous" href="https://account.cnblogs.com/signup/">注册</a>
-                    <a class="navbar-anonymous" href="javascript:void(0);" onclick="account.login()">登录</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    
-    <div id="wrapper">
-<div id="header">
-
-<div id="top">
-<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/dstang2000/">拓荒者 dstang2000 <a href="http://www.dstang.com"><font size=-1 color=red>http://www.dstang.com</font></a>
-</h1>
-<div id="subtitle">KISS：Keeping things that work，Improve systems procedures styles，Start things of value，Stop things of no value </div>
-</div>
-<div id="sub"><div id="blog_stats_place_holder"><script>loadBlogStats();</script></div></div>
-
-
-
-
-</div>
-<div id="main_container">
-<div id="main_content">
-<div id="content">
-	
-        <!--done-->
-
-<p class="date">
-	<span>		  
-	<a>2005年3月5日</a>
-	</span>
-</p>
-
-    <div class="post">
-        <h2>
-            
-
-<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/dstang2000/archive/2005/03/05/113513.html">
-    <span>
-        分不清正数负数，是我错了，还是VS.NET错了
-    </span>
-    
-
-
-
-</a>
-
-        </h2>
-        <div class="postbody">
-            
-
-    <div class="c_b_p_desc">
-摘要：三年前做的一个ASP.NET的项目（www.SurveyStar.net），一直运行好好的， 前几天，客户打电话来说，出了问题。 反复跟踪，发现是一个正数、负数的判断与ToString()的问题。 将问题简化后，源程序可表示为只有4句的程序，如下： class&#160;Test { &#160;&#160;&#160;&#160;static&#160;void&#160;Main() &#16...        <a href="https://www.cnblogs.com/dstang2000/archive/2005/03/05/113513.html" class="c_b_p_desc_readmore">阅读全文</a>
-    </div>
-
+        <div class="reason">
+          <p>可能因为：</p>
+          <ul class="reason-list">
+            <li>网址有错误<span><i class="gt">&gt;</i>请检查地址是否完整或存在多余字符</span></li>
+            <li>网址已失效<span><i class="gt">&gt;</i>可能页面已删除，活动已下线等</span></li>
+          </ul>
         </div>
-        <p class="postfoot">
-            posted @ 2005-03-05 14:45
-拓荒者
-<span data-post-id="113513" class="post-view-count">阅读(2657)</span> 
-<span data-post-id="113513" class="post-comment-count">评论(5)</span> 
-<span data-post-id="113513" class="post-digg-count">推荐(1)</span> 
-<a href="https://i.cnblogs.com/EditPosts.aspx?postid=113513" rel="nofollow">
-    编辑
-</a>
-
-        </p>
+        <div class="methods" style="display: none;">
+          <p><a href="//wenda.taobao.com/">了解更多原因<i class="gt">&gt;&gt;</i></a></p>
+          <div class="search">
+            <form class="search-form s-focus" action="//wenda.taobao.com/search.htm" method="get">
+              <input type="hidden" name="from_page_type" value="1">
+              <input type="hidden" name="cat" value="null">
+              <input id="J_SearchReason" placeholder="直接描述问题" accesskey="s" autofocus="true" x-webkit-speech=""
+                x-webkit-grammar="builtin:translate" type="search" autocomplete="off" name="q" value=""
+                hidefocus="true" />
+              <button type="submit" class="search-btn">寻找答案</button>
+            </form>
+          </div>
+        </div>
+        <div class="links">
+          <p>或者逛逛：<a href="//www.taobao.com/">淘宝首页</a><span>|</span><a
+              href="//i.taobao.com/my_taobao.htm">我的淘宝</a><span>|</span><a 
+              href="//s.taobao.com">搜宝贝/店铺&nbsp;<i
+                class="iconfont icon-search"></a>
+          </p>
+        </div>
+      </div>
+      <div id="J_P4P" class="p4p-area">
+        <script src="//assets.alicdn.com/apps/med/other/etao/etao_srp_doplots.js"></script>
+        <div id="p4p_ad">
+          <script>
+            (function () {
+              window._ent = []
+              window.P4P = {}
+              var args = "?"
+              var id = "2015_3/129318"
+              var name = "TB10yZWHVXXXXXsXpXXdutXFXXX"
+              var doplots = +com_TBCC.util.getDoplots("cna") || 0
+              var uid = "c" + id.replace(/[^-a-z0-9]/ig, "-")
+              var config = P4P[id] = {}
+              config.pid = "430393_1007"
+              config.name = "tcmad"
+              document.createElement("tbcc")
+              document.getElementById("p4p_ad").innerHTML = '<tbcc id="tbcc-c-' + uid + '" style="display:none" data-args="' + args + '"><tbcc></tbcc></tbcc>'
+              KISSY.getScript("//acc.alicdn.com/tfscom/" + name + ".js", function () {
+                _ent.use("cc/show", function (cc) {
+                  cc.show(id, uid)
+                })
+              })
+            })()
+          </script>
+        </div>
+        <script src="//assets.alicdn.com/apps/med/other/etao/etao_srp_doplots.js"></script>
+        <div id="p4p_ad">
+          <script>
+              (function () {
+                window._ent = []
+                window.P4P = {}
+                var args = "?"
+                var id = "2015_3/129318"
+                var name = "TB10yZWHVXXXXXsXpXXdutXFXXX"
+                var doplots = +com_TBCC.util.getDoplots("cna") || 0
+                var uid = "c" + id.replace(/[^-a-z0-9]/ig, "-")
+                var config = P4P[id] = {}
+                config.pid = "430394_1007"
+                config.name = "tcmad"
+                document.createElement("tbcc")
+                document.getElementById("p4p_ad").innerHTML = '<tbcc id="tbcc-c-' + uid + '" style="display:none" data-args="' + args + '"><tbcc></tbcc></tbcc>'
+                KISSY.getScript("//acc.alicdn.com/tfscom/" + name + ".js", function () {
+                  _ent.use("cc/show", function (cc) {
+                    cc.show(id, uid)
+                  })
+                })
+              })()
+          </script>
+        </div>
+      </div>
     </div>
+    <div id="footer"></div>
+  </div>
 
+  <script> KISSY.use('kg/global-util/1.0.7/'); KISSY.config({ modules: { 'kg/tb-nav': { alias: 'kg/tb-nav/2.5.11/', requires: ['kg/global-util/1.0.7/'] } } }); KISSY.ready(function () { KISSY.use('kg/tb-nav') });</script>
+  <script>
+    KISSY.config({
+      packages: {
+        err: {
+          base: '//g.alicdn.com/tb/err/0.7.0/'
+        }
+      }
+    });
+    KISSY.use('err/40x/index', function (S, Index) {
+      Index.init();
+    });
+  </script>
 
-
-
-</div>
-</div>
-<div id="leftmenu">
-
-
-<h3>导航</h3>
-<ul>
-    <li>
-        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
-博客园</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/dstang2000/">
-首页</a>
-
-    </li>
-    <li>
-        
-
-<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
-新随笔</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%8B%93%E8%8D%92%E8%80%85">
-联系</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/dstang2000/rss/">
-订阅</a>
-        
-<a id="blog_nav_rss_image" href="https://www.cnblogs.com/dstang2000/rss/">
-    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
-</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
-管理</a>
-
-    </li>
-</ul>
-
-
-<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
-<div id="sidebar_news" class="newsItem">
-            <script>loadBlogNews();</script>
-</div>
-<div id="sidebar_c3"></div>
-<div id="blog-sidecolumn"></div>
-                    <script>loadBlogSideColumn();</script>
-
-</div>
-</div>
-<div class="clear"></div>
-<div id="footer">
-<p id="footer">
-	Powered by: 
-	<br />
-	
-	<a href="https://www.cnblogs.com/" id="footer_site_link">博客园</a>
-	<br />
-	Copyright &copy; 2021 拓荒者
-<br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
-
-</p>
-
-
-</div>
-</div>
-
-
-    
-
-    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjvdh3pRYfeuLYNNRqktUZ6gWyM-w2cdwzK3VCqEZZTJA2Ofktm35mQkUGV_EoV15kRPBfHz63R87dDLYb8dFIdUKigWugHMK2hDAWMcTiw2LJYdXKH1ejd2aLQFUl2vUDQ" />
 </body>
+
 </html>
