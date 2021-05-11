@@ -1,502 +1,940 @@
 ﻿<!DOCTYPE html>
-<html>
-    <head>
-        <!-- h5 start -->
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width" />
-<meta content="telephone=no" name="format-detection">
-<meta name="apple-mobile-web-app-capable">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="robots" content="noarchive">
-<meta name="Baiduspider" content="noarchive">
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="applicable-device" content="pc,mobile">
-<meta name="MobileOptimized" content="width" />
-<meta name="HandheldFriendly" content="true" />
-
-        <!-- 如果设计稿给的是750的采用如下的，
-        如果是640的设计稿，则地址变换为./common/rem640.html -->
-        <script type="text/javascript">
-    var __rootrem;
-    (function() {
-        function setFont() {
-            var clientWidth = (document.documentElement || document.body.parentNode).clientWidth;
-            // 640尺寸的比例 换算成设计稿正好是0.1rem = 1px;
-            __rootrem = clientWidth * 100 / 750;
-            (document.documentElement || document.body.parentNode).style.fontSize = __rootrem + "px";
-        }
-        setFont();
-        window.onresize = setFont;
-    })();
-</script>
-
-        <!-- h5 end -->
-        <title>强哥记者会 最全现场都在这里了</title>
-        <script type="text/javascript">
-            var items = [{
-                tab_title:'中美关系',
-                marks:'中美关系',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13444P1DT20170315134135.jpg',
-                    name:'CNN',
-                    text:'总理，早上好。特朗普总统一直对华发表一些批评性言论，表示中国偷窃了美国就业岗位，批评中国汇率政策以及中国在维护地区安全上做的不够。我们还了解到，很有可能最早就在下个月，中美两国元首可能会实现会晤。基于此，我们对于美国希望从中国得到什么已经有了一些概念，我想问，中国希望从美国那儿得到什么？中国对于一个健康可持续发展中美关系的底线是什么？您是否有信心实现这样的中美关系的发展？还是觉得前路比较艰难？',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['你的提问让我回想起去年9月份我去联大出席系列高级别会议期间到美国纽约经济俱乐部演讲，就有人向我提问，当时美国总统大选正在白热化阶段，如果新的总统当选，中美关系会不会有大的改变？我的回答是，不管谁当选美国总统，虽然中美关系经历过风风雨雨，但是一直前行，我对此持乐观态度。特朗普总统当选以后，习近平主席和特朗普总统通了电话，两位元首都表示要共同推进中美关系向前发展。特朗普总统和美国新政府的高官也都明确表示，要坚持一个中国的政策，这是中美关系的政治基础，不是风云变幻能够动摇的，也动摇不得。有了这样一个政治基础，中美合作的前景是广阔的。','我们之所以对中美关系前行持乐观态度，是因为中美建交几十年了，已经有了广泛的共同利益。当然，我们之间也有分歧，比如你刚才提到的像在就业岗位、汇率等问题上有些看法不一，或者在安全问题上也有不同认识。但是，我们双方都需要保持战略定力，加强沟通，坐下来谈，增进相互了解和理解，现在两国外交部门正就两国元首会晤进行沟通。我想，中美关系不仅会关系两国利益，而且涉及到地区和世界的和平安全稳定，我们要维护它前行。','至于贸易问题，我在两会参加代表团讨论时，有来自外贸企业的人大代表跟我说，虽然中方是贸易顺差，但是企业生产的产品利润90%以上是美国企业拿走了，中国的生产企业拿到的利润最低只有2%—3%。据有关统计，光去年一年，中美的贸易、投资给美国创造的就业岗位过百万个。当然，各方的统计方法可能不一，没关系，我们坐下来谈，总是会有共识，即便一时达不成共识，可以搁置分歧，智者的办法是扩大共同利益，分歧点所占比例就会更小。','我想起前两天看到国际上有一个权威智库发表文章，他们认为，如果中美发生贸易战的话，首先受损的是外资企业，首当其冲的是美资企业。我们不希望看到打贸易战，贸易战带不来贸易公平，而且双方都受损。现在全世界都比较关心中美关系，中方希望，中美关系不管有什么样的坎坷，还是要向前走、向好处走。中美两国人民都是伟大的人民，我们有智慧来管控分歧，我们有需要也有条件来扩大共同利益。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaCNNJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141771563'
-
-            },{
-                tab_title:'宏观经济',
-                marks:'宏观经济',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13444P1DT20170315134140_1.jpg',
-                    name:'中央人民广播电台',
-                    text:'总理您好，我们注意到这几年中国经济的增长速度在持续放缓，今年又把经济增长的预期目标下调到6.5%左右，这是否会对世界经济造成不利的影响？另外有人认为中国经济存在很多风险，特别是在金融方面的风险，中国是否能够在世界经济疲软这个大背景下继续扮演世界经济的推动者这样一个角色？谢谢。',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['我们把今年经济增速定在6.5%左右，我看到当时有外媒报道说中国是温和下调了增速。其实，增长6.5%这个速度不低了，也很不容易。我曾经在中国少林寺陪同外宾看过武僧表演，几岁的小武僧一口气翻十几个跟头不费劲，而练过十几年武功的青年武僧翻三五个跟头就了不得了，主要是块头大了。如果今年中国实现经济增长目标，增量比去年还要大，因为这是在我们经济总量已经超过74万亿元人民币，相当于11万亿美元基础上的增长，而且可以带动1100万人以上的就业。这符合经济规律，也可以使注意力更多地放到提高质量和效益上来，对世界经济增长的贡献率不会低，中国仍然是世界经济复苏乏力情况下推动全球增长的重要力量。','至于说到风险，今年世界经济政治不确定的因素很多，这是很大的外部风险。对中国来讲，不发展是最大的风险。我们保持中高速的稳定增长，本身就是在为世界稳定做贡献。当然，我们自己也有一些不可忽视的风险，刚刚你讲到像金融领域。对于这些风险点，我们是高度关注的，发现了会及时处置、靶向治疗，不会让它蔓延。当然，我还必须要强调，中国金融体系总体是安全的，不会发生系统性风险。因为我们有很多应对工具，储备政策许多还没有用。我们的财政赤字率没超过3%，商业银行资本充足率在13%，拨备覆盖率176%，这些都超过许多国家，特别是国际所确定的相关标准。所以我们是有能力防范风险的，当然，我们在中高速行进当中也会系紧安全带，不会让风险“急性发作”，更不会发生区域性或者系统性的风险。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaZhongYangRenMinGuangBoDianTaiJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141785124'
-
-            },{
-                tab_title:'全球贸易',
-                marks:'全球贸易',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13444P1DT20170315134133.jpg',
-                    name:'彭博社',
-                    text:'随着美国收缩它在全球贸易体系中所发挥的作用，包括退出TPP，似乎中国愿意在全球贸易中发挥领导性作用。您和习近平主席都倡导自由贸易、开放型经济以及全球化。但同时我们看到，中国也在实施不公平贸易、开放自身经济速度还不快方面遭到批评。请问，在未来一年，中国方面会采取什么措施让国际社会确信中国是要致力于推进自由贸易和开放型经济的？',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['首先，在全球化进程受到一些非议或者在某些方面有挫折的情况下，中国始终坚持一贯的立场，那就是：维护经济全球化，支持自由贸易。这本身就表明中国是要推动开放。实际上，全球化使各国都受益了，不过在这个过程中也有一些问题，像分配等方面，但它们不是全球化本身的问题，而是应对的问题。中方也愿意和世界各国一道来改善全球治理体系。全球化和世界的和平发展合作是一体的、不可分的。关起门来以邻为壑，解决不了问题。','中国和世界许多国家一样，是全球化的受益者，这其中也因为中国一直在坚持不断地扩大开放。中国首先要把自己的事情办好，但关起门来也办不好自己的事情。所以我们的开放大门会越开越大。当然，开放是一个渐进的过程。回过头来看，这几十年来，我们的步伐一直是向前进的。','去年，我们吸引外资在发展中国家仍居首位，达到1260亿美元。世界银行对中国营商环境的评估，去年和2013年相比上升了18位。我们推动上海自贸试验区建设，已经逐步扩大到11个省区市，而且还会把普遍适用的经验向全国推广。我们还要在今年举办“一带一路”国际合作高峰论坛，不断推出扩大开放的措施。我们也和很多国家提议，建立自由贸易区或者进行投资贸易协定的谈判，这些都是有利于双向开放的措施。有一点我想大家要明确，就是你的开放力度越大，开放程度越深，这里面的摩擦相应就会越多，但是占的比例会越来越小。对此，我们是有信心的。我们就是要打造开放的高地、投资的热土，和世界共享发展机遇。','至于维护全球贸易的自由化，这需要世界各国共同努力，因为天下是天下人的天下。我们对已经达成或者希望达成的一些区域贸易安排一直持开放态度，也乐见其成。只要是有利于贸易自由化的，我们都会去参与、去推进，而且中国人明白，要用开放抓住全球化的机遇，不管有什么挑战都不能错过。','关于区域的自由贸易安排，涉及中国的，有条件的，我们持开放态度，愿意去进行推动。我们不会越俎代庖，不会超越区域去做不应是中国做的事情。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaPengBoXinWenSheJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141785210'
-
-            },{
-                tab_title:'简政放权',
-                marks:'简政放权',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13444P1DT20170315134137.jpg',
-                    name:'人民日报',
-                    text:'总理您好。我们注意到这四年来您一直都抓住简政放权这件事情不放松，今年政府工作报告也显示，您所要求的本届政府要精简1/3的行政审批事项的任务已经提前完成了，那么剩下的2/3呢？这项工作要不要继续往下推进，如果要继续的话您准备怎么推进？谢谢。',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['简政放权核心是要转变政府职能，处理好政府和市场的关系，这不是一朝一夕之功。我们的确已经完成了本届政府成立之初确定的任务，但是在推进的过程中发现这里面的名堂多了，不仅是审批权，还有名目繁多的行政许可、资格认证、各种奇葩证明，让企业不堪重负的收费等等，这些都属于简政放权要继续推进的内容。我们就是要在推进过程中，让政府职能得到转变，把更多的精力放到该管的事情上来。政府确实管了一些不该管、也不应属于自己管的事情，它束缚了市场主体的手脚，降低了行政效率，甚至影响了政府的公信力。因此，我们必须进行自我革命，刀刃向内，我一直说要用壮士断腕的精神坚韧不拔地加以推进，不管遇到什么样的问题，甚至会有较大阻力，但是要相信我们有足够的韧性。','简政放权、放管结合、优化服务是三位一体的，也就是政府要把更多的精力放到事中事后监管和优化对人民群众的服务上，把市场的准入放宽了，那就要为市场主体公平竞争营造环境。对那些假冒伪劣、坑蒙拐骗、侵犯知识产权以及涉及食品、药品、环保等群众密切关注的违法违规问题要坚决查处。我们要通过“互联网+政务服务”，让群众少跑腿、少烦心、多顺心。要把更多的力量用于扶贫攻坚、棚户区改造、义务教育、基本医疗等诸多民生关注的方面。','简言之，就是要向依法依规的市场主体发出“前行、前行、再前行”的信号；向依靠劳动创业创新者亮起“可以、可以、再可以”的绿灯；对那些违法违规不良行为，就要及时亮出黄牌，甚至出红牌罚他下场。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaRenMinRiBaoJiZheWen.mp3 ',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141785284'
-
-            },{
-                tab_title:'朝鲜半岛',
-                marks:'朝鲜半岛',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13444P1DT20170315134131.png',
-                    name:'日本经济新闻',
-                    text:'总理，您好。我是日本经济新闻社的记者。我想问一个关于朝鲜半岛的问题。美国国务卿蒂勒森先生从今天起访问日本，之后他还要访问中国和韩国。外界认为此访的重点之一是讨论朝鲜半岛问题。当前，朝鲜继续试射导弹，推进核武计划，导致东北亚局势非常紧张。在此背景下，中国打算采取什么样的措施和行动来缓解紧张的地区局势？中方将如何同日本等相关国家合作，解决所谓的朝核问题。谢谢。',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['你在哪里学的中文？我听你普通话讲的很好。','记者：我刚开始是在北京学的，在台湾待过，可能有台湾腔。','李克强：中国在朝鲜半岛问题上的立场是明确的、一贯的，坚持实现半岛无核化，坚持维护半岛的和平稳定，坚持通过对话协商解决问题。对于联合国已经通过的相关决议，中国一直是态度鲜明，而且是全面严格执行。中国始终是核不扩散体系的坚定维护者。的确，近来半岛乃至于东北亚出现了一些紧张的气氛，紧张很可能会导致冲突，会使相关各方都受损。我们希望的是，各方共同努力，把紧张的气氛降下来，使大家都回到对话的轨道上来，最终解决问题。按常理说，谁也不愿意自己的家门口整天闹个不停。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaRiBenJingJiXinWenJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141785356'
-
-            },{
-                tab_title:'就业',
-                marks:'就业',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13444P1DT20170315134130.png',
-                    name:'中央电视台',
-                    text:'总理您好，我想问有关就业的问题。您常说就业是民生之本，而且我们看到有报道说您每个月在看经济指标的时候都非常关注就业的变化。今年我们看到在政府工作报告当中您特别提到今年我国的就业压力加大。那我想请问总理，今年会不会出现群体性的失业问题？谢谢。',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['终于又听到三位一体的记者提问了。可能稍加注意你们就会发现，在政府工作报告所提的主要经济社会发展指标当中，有一项是抬高的，那就是今年我们要新增城镇就业1100万人，比去年的目标增加100万人。我们之所以要有6.5%左右的经济增速，稳增长主要还是要保就业。因为就业对我们这样一个13亿多人口的大国来说是最大的民生。就业是经济发展的基础，是财富增长的来源，也是居民收入的主渠道。我们这几年一直在实施积极的就业政策，已经连续4年实现新增城镇就业1300万人以上，今年更是强调就业优先，就是要保证能够实现比较充分的就业，把失业率控制在较低的水平。','这几年我们一直处在新成长劳动力的高峰，今年的就业压力仍然比较大，光高校毕业生就达795万，创历史新高，还有500万左右的中职毕业生，加上去过剩产能需要安置的几十万转岗职工等等。我们要营造有利于创业就业的环境，不是靠政府去提供铁饭碗，而是让人民群众用劳动和智慧去创造或者说打造金饭碗。这几年我们就是通过创造岗位实现了比较充分的就业，这里我还想请记者朋友包括外国记者能够多报道中国的就业岗位是靠自己创出来的。','我们完全有能力扩大就业，不会也不允许出现大规模群体性失业，对于一时不能就业、生计没有着落的群众，政府会负起责任，保障他们的基本生活。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaYangShiJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141771793'
-
-            },{
-                tab_title:'成就',
-                marks:'成就',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13444P1DT20170315134138.jpg',
-                    name:'新加坡联合早报',
-                    text:'总理，您好。我的问题是，今年是本届政府的收官之年。您认为过去四年多最重要的成就是什么？最难攻克的又是什么？谢谢。',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['您问的问题虽然简短，但比较大。如果说到四年来施政的主要成果，那就是在以习近平同志为核心的党中央领导下，全国上下共同努力，我们不断创新宏观调控方式，中国经济运行保持在合理区间，始终是中高速增长，四年来增速波动也就是1个百分点左右，可以说是平稳的。而且这不是靠大水漫灌的强刺激来获得的，而是通过推动产业、消费升级，使经济结构优化取得新进展，通过加快新旧动能转换促进出现经济向好势头，更重要的是带动了5000多万人的城镇新增就业。','这几年，我一直听到中国经济会硬着陆的声音，可以说不绝于耳。去年在世界经济和贸易增长出现7年来增速最低的情况下，中国仍然保持中高速增长。这几年的实践可以证明，中国经济“硬着陆”论可以休矣。中国经济不会硬着陆，我们会长期保持中高速增长，并迈向中高端水平。','当然，并不是说我们还没有问题和挑战，所以要推动改革。说到最难的，还是在深化改革方面。比如说简政放权、放管结合、优化服务的改革，这不仅会触动利益，而且要触动灵魂。我们要让权力不能任性，就得把那些不应该有的权力砍掉，有些涉及到部门利益，要压缩寻租的空间。这不是一个简单的过程，从中央政府一直到地方、到基层，要打通“最后一公里”。','我到有的地方去看，在简政放权中一次封了108个公章，用一个公章代替。中国太大，不知道类似的情况哪些地方还有。你们可能也都记得，在前几年两会上，曾有人展示了一个项目审批“万里长征图”，据说现在变成百里了，百里也不少啊，还要继续推进。我前面已经讲了，不管有什么样的阻力，我们都有足够的韧性推动改革。改革就是要解放和发展生产力，调动广大人民的积极性，让群众得到实惠，为政之要就是要舍小利、顾大义、顺民心。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaXinJiaPoLianHeZaoBaoJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141771849'
-
-            },{
-                tab_title:'大众创业万众创新',
-                marks:'大众创业万众创新',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315144930.jpg',
-                    name:'深圳特区报',
-                    text:'总理您好，想请教您的问题是去年10月您曾到深圳参加“全国双创周”主会场的活动。据统计，一周之内有50万人参加了这次活动，场面非常火爆。过去一年“大众创业、万众创新”蓬勃发展，现在共享经济发展也很快，但是也有人有不同的看法。那么请问总理，您觉得“双创”的热情会持久吗？谢谢。',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['“双创”可以说是应运而生，在全球化、“互联网+”的时代，我们推动“放管服”改革，也促进了“大众创业、万众创新”。这3年多来，每天平均有4万个以上市场主体注册登记，那就相当于每年新增1000多万个。我和有些外国的领导人，还并不是小国，谈到这件事，他很惊讶，这相当于他们国家中小微企业的总量。其实“双创”不仅是中小微企业的事，也是大企业的事，现在许多大企业也在推动“双创”，在线上创造很多众创空间，让线上的工人当创客，和订单背后的市场需求结合起来，更适应消费者的需要。“双创”覆盖了一二三产业、大中小企业，是有着很强的生命力的。','“双创”不仅带动了大量就业，促进创新驱动发展战略深入实施，它也是一场改革，因为它抓住了人这个生产力当中最重要的因素，让人的聪明才智和活力充分展现出来，让大家有改变命运、获得纵向上升的平等机会。它也创新了生产模式，许多新业态，像共享经济、分享经济、“互联网+”等等，可以说层出不穷，这些新业态有的是新旧动能转换过程当中产生的，新旧嫁接，有的是老树开新花。但总的看它适应了市场的需求，适应了消费者个性化、多样化的要求。','另外，新业态的成长也倒逼了政府职能转变。确实，这些新业态很多是过去未知的，对此，我觉得有不同争议是正常的，我们还是要以开放的态度、包容的理念审慎监管，促使它健康发展。','我一直在想，也一直这么认为，中国有1.7亿受过高等教育和拥有高技能的人才，与8亿左右的劳动力结合起来，能创造的财富，激发的能量是难以估算的，也会给市场，包括世界市场带来巨大的机遇。中国人民勤劳智慧，有着追求美好生活的不竭动力，政府就是要创造环境，让人民群众创业创新的热情持久不衰，当然“双创”和许多新事物一样，发展过程当中一些方面、一些企业会遇到曲折，但是大方向是正确的。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaShenChouTeQuBaoJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141785550'
-
-            },{
-                tab_title:'香港',
-                marks:'香港',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315144859.png',
-                    name:'凤凰卫视',
-                    text:'总理，您好。我提的问题涉及到香港问题。因为今年政府工作报告当中，您首次提到了“港独”问题，指出“港独”是没有出路的，这是否意味着政策上会有什么变化？比如在落实“一国两制”这个原则问题上是否会更加强调“一国”而弱化“两制”？或者以后中央对香港的支持会减少？',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['对“一国两制”的方针要全面理解和执行，我在政府工作报告当中已经说了，“一国两制”的实践要不动摇、不走样、不变形。至于说支持香港发展，中央政府会不断地加大力度，会继续出台许多有利于香港发展、有利于内地和香港合作的举措。比如说去年我们出台了“深港通”，我们要进一步探索开放债券市场，这是国家的需要，香港也有平台。我们准备今年在香港和内地试行“债券通”，也就是说允许境外资金在境外购买内地的债券，这是第一次。香港是近水楼台先得月，这有利于维护香港国际金融中心的地位，有利于香港居民有更多的投资渠道，从而受惠，有利于香港的长期繁荣稳定。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaFengHuangWeiShiJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141785580'
-
-            },{
-                tab_title:'中俄关系',
-                marks:'中俄关系',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13444P1DT20170315134132_1.png',
-                    name:'俄罗斯塔斯社',
-                    text:'李总理你好，请问您如何评价中俄关系？两国是否能够在世界经济不稳定，能源价格波动的背景下取得经贸关系发展？谢谢。',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['你很有勇气，始终用中文提问。说到中俄关系，我们互为最大的近邻，是全面战略协作伙伴关系。中俄关系的健康稳定发展，不仅有利于地区，也有利于世界。去年两国元首多次会晤，达成许多重要共识，中俄总理会晤多年来一直如期举行，这本身表明了中俄关系的稳定性。','至于说到两国的经贸关系，这些年世界经济复苏低迷，贸易增长乏力，确实中俄关系在经贸方面由于能源价格下跌等因素也受到了一些影响。我记得在去年的记者会上，我曾经说希望中俄经贸关系当年能够有转折性变化，现在应该说这个预言实现了，当然这是我们共同努力的结果。特别是今年前两个月，中俄贸易额有大幅增长，这表明中俄双方经贸合作的潜力很大，互补性很强，双方所达成的经贸关系目标是可以实现的。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaTaSiSheJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141785610'
-
-            },{
-                tab_title:'人民币汇率',
-                marks:'人民币汇率',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13444P1DT20170315134140.jpg',
-                    name:'财新网',
-                    text:'我想问一个关于汇率的问题。现在人民币汇率有一定的下跌压力，但是要稳住汇率，要么就是消耗外汇储备，要么就要加强外汇管制。您如何看待汇率下跌、外储下降或者外汇管制的代价？这几害相权您会作何选择？谢谢。',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['你给我提了三个问题让我做选择性回答，我想我还是分开回答。','首先关于汇率。去年因为国际货币市场动荡，特别是美元走高，许多货币尤其是主要国际货币对美元的汇率大幅度贬值，而人民币汇率贬值幅度是比较小的。因为我们不希望通过贬值来增加出口，这不利于企业转型升级。我们也不希望打贸易战，这不利于国际贸易和货币体系的稳定。我们坚持人民币汇率形成机制的改革，实行以市场供求为基础、有管理的浮动汇率制度。可以说在人民币汇率弹性加大的情况下，我们保持了人民币汇率在合理均衡水平上的基本稳定。当然，这也得益于中国经济基本面向好。人民币汇率的基本稳定是对国际货币体系稳定的重要贡献。','至于说到外汇储备，中国是世界上外汇储备最多的国家。合理的外汇储备规模到底需要多少？这可能还有一个实践探索的过程。总之，我们的外汇储备是充裕的，是足以支付进口和满足短期偿债需要的，远远高于国际标准。','至于说到我们对于用汇进行真实性、合规性审查，实际上这是法律法规早就规定的。我在这里明确，企业正常的用汇、居民到国外求学旅游等的合理用汇是有保证的。人民币在国际货币体系中是有分量的，汇率会保持基本稳定。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaCaiXinWangJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141772023'
-
-            },{
-                tab_title:'下岗工人',
-                marks:'下岗工人',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13444P1DT20170315134138.png',
-                    name:'路透社',
-                    text:'总理你好，我的问题也跟就业有关。今年中国政府准备进一步减少无效供给，扩大有效供给。在这一过程中，政府需要确保下岗工人能找到新的工作，并确保他们的生计安全问题。如果我是一名矿工或是钢厂工人，我能在本省找到什么样的新工作呢？今年预计哪些部门会出现工作岗位增加？谢谢。',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['你把就业问题更加人性化、个性化了。去年，我们推动供给侧结构性改革的一个重要任务就是化解钢铁、煤炭行业的过剩和落后产能，我们最关心的就是在去产能过程中如何安置好职工。所以中央财政拿了1000亿元专项资金用于员工转岗安置，并且要求地方政府配套。去年，有72万去过剩产能过程当中的职工得到了妥善安置，当然，还有一些职工因为多种因素没有到新的就业岗位，包括有的职工和企业有比较深的感情，想多留一段，但他们的生活都是有着落的。','今年去产能还要扩大到煤电领域，加上去年一些还没安置的职工，累计可能会有近百万需要安置。我们的办法还是创造新的岗位，因为我们在推动发展新动能。刚才我讲了“双创”带动了大量新的就业，实际上也转移了许多传统动能的就业，新旧动能转换也为传统产业带来了新的活力和生机，催生了新的就业岗位。当然我们没有掉以轻心，还会继续运用好专项基金，并要求地方政府做好配套。当然企业也要尽社会责任。','如果你是一名煤矿工人，这个矿被淘汰，或者暂时停产了，我看你有很强的、灵活的就业能力，我建议你到新动能去，或者到老动能当中产生的新职业当中去。而且中国很多企业是有文化的，他们对老职工有感情，去新岗位就业了，企业仍然还会给一些补贴，扶上马、送一程。','总而言之，把职工安置好还是我们推进供给侧结构性改革，推动化解和淘汰过剩产能中最关键的问题。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaLuTouSheJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141786000'
-
-            },{
-                tab_title:'70年产权',
-                marks:'70年产权',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13444P1DT20170315134137.png',
-                    name:'澎湃新闻',
-                    text:'今年两会前夕，中国政府网联合27家网络媒体共同发起“我向总理说句话”建言征集活动，澎湃新闻和今日头条就其中与民生密切相关问题进行了网上投票。到目前，已经有2131万网友投给了“房屋产权70年到期后怎么办？”。请问总理，国家准备怎么解决这一问题？谢谢。',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['我也想问一下，诸多问题当中你讲的这个问题是排在第几位？','记者：第一位。','李克强：中国有句古话：有恒产者有恒心。网民们实际上也是群众，对70年住宅土地使用权到期续期问题普遍关心可以理解。国务院已经要求有关部门作了回应，就是可以续期，不需申请，没有前置条件，也不影响交易。当然，也可能有人说，你们只是说，有法律保障吗？我在这里强调，国务院已经责成相关部门就不动产保护相关法律抓紧研究提出议案。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaPengPaiXinWenJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141785718'
-
-            },{
-                tab_title:'亚太安全',
-                marks:'亚太安全',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315151540.jpg',
-                    name:'泰国经理报',
-                    text:'奥巴马总统任职期间提出了亚太再平衡的战略，特朗普政府现在正在制定对亚洲外交政策，泰国和其他东南亚国家都希望本地区保持和平和稳定，不愿意看到中美在这一地区发生冲突，更不愿意在其中选边站队，您怎么看中国在亚太地区现在发挥的作用？中国对于本地区的秩序和规则理想化的想法是怎样的？中美如何在这个地区继续和平共处？',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['亚太地区是地区国家共有的家园，我们不希望、也不愿意看到冷战思维下所谓“选边站队”的事情发生，有什么事情按是非曲直来说话，总的还是要维护亚太地区的和平和稳定。而且在亚太地区，我们始终把东盟作为中国周边外交的优先方向，支持东盟共同体建设，在区域合作中发挥中心地位作用。我们希望看到的亚太地区是一个稳定、有秩序的地区，是一个可以协商一致、达成原则的地区，是一个有能力管控分歧的地区，也是一个有智慧解决争端的地区。','中国和东盟正在推进《南海行为准则》磋商，已经取得了实质性进展，我们还会继续积极地推进，我们希望维护南海的和平稳定，有关争端由当事方直接对话解决，各方共同维护地区的和平稳定与发展。','中美在亚太地区合作多年了，我们有许多合作的交汇点。不少美国跨国公司把亚太地区销售总部放在中国，我们希望中美合作的共同利益不断扩大，使东盟国家能从中得到机遇，而不是让你们感到麻烦。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaTaiGuoJingLiBaoJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141772149'},{
-                tab_title:'减费降税',
-                marks:'减费降税',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315153606.jpg',
-                    name:'新华社',
-                    text:'总理，您好。我的问题是，我们在调研采访中了解到，现在一些企业抱怨税费负担过重，辛苦半天也挣不了多少钱。也有消费者抱怨，很多高品质的产品在国内生产不了。请问总理，您对此怎么看？有什么进一步改进的政策措施？谢谢。',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['我在政府工作报告当中用了很多篇幅也提出了许多措施来强调，今年要推进更大力度的减税降费，特别是那些名目繁多、企业不堪重负的行政事业性收费。这些收费是有用途的，有的是用来“养人”的，减少收费，那政府就要过紧日子。我明确提出，中央政府要带头，一律减少一般性支出5%以上。我在参加代表团讨论时，许多地方政府也都有这样的表示。我们就是要用政府的“痛”换来企业的“顺”，让企业轻装上阵，提高竞争力。我们还要通过像降网费、电费、物流成本等措施，力争今年减税降费能够达到万亿元人民币。当然，根本上还要降低制度性交易成本。','至于消费者抱怨中国的一些产品质量不优，这说明我们的企业需要让产品进入质量时代，这也是供给侧结构性改革的重要内容。我们实施《中国制造2025》，就是要提升企业产品和装备的质量。当然，国际上也有一种舆论，说是不是中国会减少进口，开放有所收缩，这是误解。提高中国产品的质量，促进产业迈向中高端，必然要更大地打开开放的大门，更多地引进国外先进技术和产品，当然我们会严格保护知识产权，让企业双赢。对于普通消费者所需要的一些优质产品一时供给不上，我们还可能考虑降低关税、增加进口。总之，要让消费者有更多选择，从中受惠，更重要的是让我们的企业下决心，通过发扬工匠精神，使自己的产品赢得消费者的信赖。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaXinHuaSheJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141772217'
-
-            },{
-                tab_title:'两岸关系',
-                marks:'两岸关系',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13444P1DT20170315134134.png',
-                    name:'台湾联合报',
-                    text:'总理您好。去年以来两岸关系越来越复杂严峻，前景令人担忧，面对这样的形势，大陆要如何维护两岸关系的和平发展，以及如何维护两岸同胞的福祉？谢谢。',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['两岸是骨肉同胞，血浓于水，不管岛内形势如何变化，都割断不了两岸的亲情，改变不了两岸同属一个中国的历史和现状，也改变不了我们维护两岸关系和平发展的决心和诚意。','我们对台方针是一贯的、明确的，就是要坚持体现一个中国原则的“九二共识”这个政治基础，坚决反对“台独”，坚决维护台海和平，维护两岸关系和平发展，增进两岸同胞的福祉。','两岸的和平发展确实给两岸同胞带来了很多新的机遇。据不完全统计，每年大概有500万台湾同胞往返于大陆和岛内。我们会出台更多政策让台湾同胞在大陆就业、创业、工作、生活，享受一家人的便利条件。对台商来大陆投资，我们是欢迎的。我记得去年在记者会上曾经有人提出，希望继续保持对台商投资的优惠政策，我重申：我们会继续提供优惠，让台商、台湾同胞和大陆一起共享发展的机遇，终归我们是一家人。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaTaiWanLianHeBaoJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141772473'
-
-            },{
-                tab_title:'欧盟',
-                marks:'欧盟',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315145400.jpg',
-                    name:'法国广播公司',
-                    text:'欧盟是中国第二大贸易伙伴，但欧盟对华贸易赤字高达1370亿欧元，这是欧方的统计数字。所以欧盟一些企业对此颇有微词。请问中国如何进一步改进对欧企业的市场准入以及对于外商投资给予更好的对等性待遇？',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['你刚才说中欧贸易逆差问题是欧方的统计，讲的很正确。当然，我们中方从不刻意追求贸易顺差，而且希望看到贸易平衡，否则不可持续。如果说赚钱的话，我想欧洲企业在中国不仅有钱可赚，而且还是赚大头，因为你们处于价值链的高端。如果你们欧洲放宽对华高技术出口，那贸易不平衡的状况就会有明显改善。','中国提出和欧盟加快谈判投资协定，希望能够得到积极的回应。有一个高水平的BIT，那必将会有助于双方扩大相互开放。即便暂时没有这个协定，我们也会不断扩大对欧盟企业的准入，让欧盟企业在华投资和中国企业一样，只要注册了，就一视同仁。中欧之间存在贸易摩擦，我们有经验去妥善解决。我这里特别强调，中国始终支持一个团结繁荣稳定的欧盟，也支持强大的欧元，支持欧洲一体化进程，因为这有利于经济全球化、世界多极化和文明多样化。我对欧盟的前景是乐观的，我们对中欧关系的发展前景也是看好的。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaFaLanXiGuangBoGongSiJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141772305'
-
-            },{
-                tab_title:'雾霾',
-                marks:'雾霾',
-                media:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13444P1DT20170315134136.png',
-                    name:'新京报',
-                    text:'提问一个和雾霾有关的问题。这几年雾霾成了百姓心中的一个痛点，严重地影响了大家的生活，但是每当重大活动来的时候蓝天也就回来了，大家都兴高采烈地拍照、刷朋友圈。请问总理，怎么样才能让这样持续的蓝天不再是奢侈品呢？谢谢。',
-                },
-                premier:{
-                    photo_url:'http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315104910.jpg',
-                    name:'李克强',
-                    text:['雾霾问题的确是百姓的痛点。蓝天和空气一样，对每个人都是平等的，我们在座的各位都希望看到更多的蓝天，但中国在发展过程中确实遇到了环保特别是雾霾问题的挑战。我在政府工作报告当中讲了五条措施，会坚定地向前推进，真正打一场“蓝天保卫战”。但是也坦率地告诉各位，这是需要有一个过程的。','我们治理雾霾重点对着燃煤、尾气排放、扬尘等，但今年我参加两会讨论的时候，有科学家说，除此之外还有很重要的因素，雾霾的形成机理我们还没完全搞透，他说中国北方冬季的雾霾在全世界都是特殊的，当然，这个因素我不便在这儿讲，科学家还要做充分的论证。但是，我想明确，国家为此将设立专项基金，不惜重金组织最优秀的相关科学家攻关，抓紧把雾霾形成的未知因素找出来，使我们治理雾霾更加有效。','大自然的阴晴风雨不是人类能支配的，但是我们可以支配我们的行为，可以转变我们的发展方式。我和大家的心情一样，雾霾要治理，蓝天在未来不会也不应该成为奢侈品。谢谢。'
-                    ]
-                },
-                audio_url:'http://n.sinaimg.cn/news/7a9c1b84/20170315/DaXinJingBaoJiZheWen.mp3',
-                video_url:'http://ask.ivideo.sina.com.cn/v_play_ipad.php?vid=141785876'
-
-            }];
-            
-        </script>
-    <link href="http://simg.sinajs.cn/products/news/items/2017/premier-conference/css/index-f2fdbb.css" rel="stylesheet"></head>
-    <body><!-- body code begin -->
-
-<!-- SUDA_CODE_START --> 
-<script type="text/javascript"> 
-//<!--
-(function(){var an="V=2.1.16";var ah=window,F=document,s=navigator,W=s.userAgent,ao=ah.screen,j=ah.location.href;var aD="https:"==ah.location.protocol?"https://s":"http://",ay="beacon.sina.com.cn";var N=aD+ay+"/a.gif?",z=aD+ay+"/g.gif?",R=aD+ay+"/f.gif?",ag=aD+ay+"/e.gif?",aB=aD+"beacon.sinauda.com/i.gif?";var aA=F.referrer.toLowerCase();var aa="SINAGLOBAL",Y="FSINAGLOBAL",H="Apache",P="ULV",l="SUP",aE="UOR",E="_s_acc",X="_s_tentry",n=false,az=false,B=(document.domain=="sina.com.cn")?true:false;var o=0;var aG=false,A=false;var al="";var m=16777215,Z=0,C,K=0;var r="",b="",a="";var M=[],S=[],I=[];var u=0;var v=0;var p="";var am=false;var w=false;function O(){var e=document.createElement("iframe");e.src=aD+ay+"/data.html?"+new Date().getTime();e.id="sudaDataFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function k(){var e=document.createElement("iframe");e.src=aD+ay+"/ckctl.html";e.id="ckctlFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function q(){var e=document.createElement("script");e.src=aD+ay+"/h.js";document.getElementsByTagName("head")[0].appendChild(e)}function h(aH,i){var D=F.getElementsByName(aH);var e=(i>0)?i:0;return(D.length>e)?D[e].content:""}function aF(){var aJ=F.getElementsByName("sudameta");var aR=[];for(var aO=0;aO<aJ.length;aO++){var aK=aJ[aO].content;if(aK){if(aK.indexOf(";")!=-1){var D=aK.split(";");for(var aH=0;aH<D.length;aH++){var aP=aw(D[aH]);if(!aP){continue}aR.push(aP)}}else{aR.push(aK)}}}var aM=F.getElementsByTagName("meta");for(var aO=0,aI=aM.length;aO<aI;aO++){var aN=aM[aO];if(aN.name=="tags"){aR.push("content_tags:"+encodeURI(aN.content))}}var aL=t("vjuids");aR.push("vjuids:"+aL);var e="";var aQ=j.indexOf("#");if(aQ!=-1){e=escape(j.substr(aQ+1));aR.push("hashtag:"+e)}return aR}function V(aK,D,aI,aH){if(aK==""){return""}aH=(aH=="")?"=":aH;D+=aH;var aJ=aK.indexOf(D);if(aJ<0){return""}aJ+=D.length;var i=aK.indexOf(aI,aJ);if(i<aJ){i=aK.length}return aK.substring(aJ,i)}function t(e){if(undefined==e||""==e){return""}return V(F.cookie,e,";","")}function at(aI,e,i,aH){if(e!=null){if((undefined==aH)||(null==aH)){aH="sina.com.cn"}if((undefined==i)||(null==i)||(""==i)){F.cookie=aI+"="+e+";domain="+aH+";path=/"}else{var D=new Date();var aJ=D.getTime();aJ=aJ+86400000*i;D.setTime(aJ);aJ=D.getTime();F.cookie=aI+"="+e+";domain="+aH+";expires="+D.toUTCString()+";path=/"}}}function f(D){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;return i.get(D)}catch(aH){return false}}function ar(D,aH){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;i.set(D,aH);return true}catch(aI){return false}}function L(){var aJ=15;var D=window.SUDA.etag;if(!B){return"-"}if(u==0){O();q()}if(D&&D!=undefined){w=true}ls_gid=f(aa);if(ls_gid===false||w==false){return false}else{am=true}if(ls_gid&&ls_gid.length>aJ){at(aa,ls_gid,3650);n=true;return ls_gid}else{if(D&&D.length>aJ){at(aa,D,3650);az=true}var i=0,aI=500;var aH=setInterval((function(){var e=t(aa);if(w){e=D}i+=1;if(i>3){clearInterval(aH)}if(e.length>aJ){clearInterval(aH);ar(aa,e)}}),aI);return w?D:t(aa)}}function U(e,aH,D){var i=e;if(i==null){return false}aH=aH||"click";if((typeof D).toLowerCase()!="function"){return}if(i.attachEvent){i.attachEvent("on"+aH,D)}else{if(i.addEventListener){i.addEventListener(aH,D,false)}else{i["on"+aH]=D}}return true}function af(){if(window.event!=null){return window.event}else{if(window.event){return window.event}var D=arguments.callee.caller;var i;var aH=0;while(D!=null&&aH<40){i=D.arguments[0];if(i&&(i.constructor==Event||i.constructor==MouseEvent||i.constructor==KeyboardEvent)){return i}aH++;D=D.caller}return i}}function g(i){i=i||af();if(!i.target){i.target=i.srcElement;i.pageX=i.x;i.pageY=i.y}if(typeof i.layerX=="undefined"){i.layerX=i.offsetX}if(typeof i.layerY=="undefined"){i.layerY=i.offsetY}return i}function aw(aH){if(typeof aH!=="string"){throw"trim need a string as parameter"}var e=aH.length;var D=0;var i=/(\u3000|\s|\t|\u00A0)/;while(D<e){if(!i.test(aH.charAt(D))){break}D+=1}while(e>D){if(!i.test(aH.charAt(e-1))){break}e-=1}return aH.slice(D,e)}function c(e){return Object.prototype.toString.call(e)==="[object Array]"}function J(aH,aL){var aN=aw(aH).split("&");var aM={};var D=function(i){if(aL){try{return decodeURIComponent(i)}catch(aP){return i}}else{return i}};for(var aJ=0,aK=aN.length;aJ<aK;aJ++){if(aN[aJ]){var aI=aN[aJ].split("=");var e=aI[0];var aO=aI[1];if(aI.length<2){aO=e;e="$nullName"}if(!aM[e]){aM[e]=D(aO)}else{if(c(aM[e])!=true){aM[e]=[aM[e]]}aM[e].push(D(aO))}}}return aM}function ac(D,aI){for(var aH=0,e=D.length;aH<e;aH++){aI(D[aH],aH)}}function ak(i){var e=new RegExp("^http(?:s)?://([^/]+)","im");if(i.match(e)){return i.match(e)[1].toString()}else{return""}}function aj(aO){try{var aL="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var D="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";var aQ=function(e){var aR="",aS=0;for(;aS<e.length;aS++){aR+="%"+aH(e[aS])}return decodeURIComponent(aR)};var aH=function(e){var i="0"+e.toString(16);return i.length<=2?i:i.substr(1)};var aP=function(aY,aV,aR){if(typeof(aY)=="string"){aY=aY.split("")}var aX=function(a7,a9){for(var a8=0;a8<a7.length;a8++){if(a7[a8]==a9){return a8}}return -1};var aS=[];var a6,a4,a1="";var a5,a3,a0,aZ="";if(aY.length%4!=0){}var e=/[^A-Za-z0-9\+\/\=]/g;var a2=aL.split("");if(aV=="urlsafe"){e=/[^A-Za-z0-9\-_\=]/g;a2=D.split("")}var aU=0;if(aV=="binnary"){a2=[];for(aU=0;aU<=64;aU++){a2[aU]=aU+128}}if(aV!="binnary"&&e.exec(aY.join(""))){return aR=="array"?[]:""}aU=0;do{a5=aX(a2,aY[aU++]);a3=aX(a2,aY[aU++]);a0=aX(a2,aY[aU++]);aZ=aX(a2,aY[aU++]);a6=(a5<<2)|(a3>>4);a4=((a3&15)<<4)|(a0>>2);a1=((a0&3)<<6)|aZ;aS.push(a6);if(a0!=64&&a0!=-1){aS.push(a4)}if(aZ!=64&&aZ!=-1){aS.push(a1)}a6=a4=a1="";a5=a3=a0=aZ=""}while(aU<aY.length);if(aR=="array"){return aS}var aW="",aT=0;for(;aT<aS.lenth;aT++){aW+=String.fromCharCode(aS[aT])}return aW};var aI=[];var aN=aO.substr(0,3);var aK=aO.substr(3);switch(aN){case"v01":for(var aJ=0;aJ<aK.length;aJ+=2){aI.push(parseInt(aK.substr(aJ,2),16))}return decodeURIComponent(aQ(aP(aI,"binnary","array")));break;case"v02":aI=aP(aK,"urlsafe","array");return aQ(aP(aI,"binnary","array"));break;default:return decodeURIComponent(aO)}}catch(aM){return""}}var ap={screenSize:function(){return(m&8388608==8388608)?ao.width+"x"+ao.height:""},colorDepth:function(){return(m&4194304==4194304)?ao.colorDepth:""},appCode:function(){return(m&2097152==2097152)?s.appCodeName:""},appName:function(){return(m&1048576==1048576)?((s.appName.indexOf("Microsoft Internet Explorer")>-1)?"MSIE":s.appName):""},cpu:function(){return(m&524288==524288)?(s.cpuClass||s.oscpu):""},platform:function(){return(m&262144==262144)?(s.platform):""},jsVer:function(){if(m&131072!=131072){return""}var aI,e,aK,D=1,aH=0,i=(s.appName.indexOf("Microsoft Internet Explorer")>-1)?"MSIE":s.appName,aJ=s.appVersion;if("MSIE"==i){e="MSIE";aI=aJ.indexOf(e);if(aI>=0){aK=window.parseInt(aJ.substring(aI+5));if(3<=aK){D=1.1;if(4<=aK){D=1.3}}}}else{if(("Netscape"==i)||("Opera"==i)||("Mozilla"==i)){D=1.3;e="Netscape6";aI=aJ.indexOf(e);if(aI>=0){D=1.5}}}return D},network:function(){if(m&65536!=65536){return""}var i="";i=(s.connection&&s.connection.type)?s.connection.type:i;try{F.body.addBehavior("#default#clientCaps");i=F.body.connectionType}catch(D){i="unkown"}return i},language:function(){return(m&32768==32768)?(s.systemLanguage||s.language):""},timezone:function(){return(m&16384==16384)?(new Date().getTimezoneOffset()/60):""},flashVer:function(){if(m&8192!=8192){return""}var aK=s.plugins,aH,aL,aN;if(aK&&aK.length){for(var aJ in aK){aL=aK[aJ];if(aL.description==null){continue}if(aH!=null){break}aN=aL.description.toLowerCase();if(aN.indexOf("flash")!=-1){aH=aL.version?parseInt(aL.version):aN.match(/\d+/);continue}}}else{if(window.ActiveXObject){for(var aI=10;aI>=2;aI--){try{var D=new ActiveXObject("ShockwaveFlash.ShockwaveFlash."+aI);if(D){aH=aI;break}}catch(aM){}}}else{if(W.indexOf("webtv/2.5")!=-1){aH=3}else{if(W.indexOf("webtv")!=-1){aH=2}}}}return aH},javaEnabled:function(){if(m&4096!=4096){return""}var D=s.plugins,i=s.javaEnabled(),aH,aI;if(i==true){return 1}if(D&&D.length){for(var e in D){aH=D[e];if(aH.description==null){continue}if(i!=null){break}aI=aH.description.toLowerCase();if(aI.indexOf("java plug-in")!=-1){i=parseInt(aH.version);continue}}}else{if(window.ActiveXObject){i=(new ActiveXObject("JavaWebStart.IsInstalled")!=null)}}return i?1:0}};var ad={pageId:function(i){var D=i||r,aK="-9999-0-0-1";if((undefined==D)||(""==D)){try{var aH=h("publishid");if(""!=aH){var aJ=aH.split(",");if(aJ.length>0){if(aJ.length>=3){aK="-9999-0-"+aJ[1]+"-"+aJ[2]}D=aJ[0]}}else{D="0"}}catch(aI){D="0"}D=D+aK}return D},sessionCount:function(){var e=t("_s_upa");if(e==""){e=0}return e},excuteCount:function(){return SUDA.sudaCount},referrer:function(){if(m&2048!=2048){return""}var e=/^[^\?&#]*.swf([\?#])?/;if((aA=="")||(aA.match(e))){var i=V(j,"ref","&","");if(i!=""){return escape(i)}}return escape(aA)},isHomepage:function(){if(m&1024!=1024){return""}var D="";try{F.body.addBehavior("#default#homePage");D=F.body.isHomePage(j)?"Y":"N"}catch(i){D="unkown"}return D},PGLS:function(){return(m&512==512)?h("stencil"):""},ZT:function(){if(m&256!=256){return""}var e=h("subjectid");e.replace(",",".");e.replace(";",",");return escape(e)},mediaType:function(){return(m&128==128)?h("mediaid"):""},domCount:function(){return(m&64==64)?F.getElementsByTagName("*").length:""},iframeCount:function(){return(m&32==32)?F.getElementsByTagName("iframe").length:""}};var av={visitorId:function(){var i=15;var e=t(aa);if(e.length>i&&u==0){return e}else{return}},fvisitorId:function(e){if(!e){var e=t(Y);return e}else{at(Y,e,3650)}},sessionId:function(){var e=t(H);if(""==e){var i=new Date();e=Math.random()*10000000000000+"."+i.getTime()}return e},flashCookie:function(e){if(e){}else{return p}},lastVisit:function(){var D=t(H);var aI=t(P);var aH=aI.split(":");var aJ="",i;if(aH.length>=6){if(D!=aH[4]){i=new Date();var e=new Date(window.parseInt(aH[0]));aH[1]=window.parseInt(aH[1])+1;if(i.getMonth()!=e.getMonth()){aH[2]=1}else{aH[2]=window.parseInt(aH[2])+1}if(((i.getTime()-e.getTime())/86400000)>=7){aH[3]=1}else{if(i.getDay()<e.getDay()){aH[3]=1}else{aH[3]=window.parseInt(aH[3])+1}}aJ=aH[0]+":"+aH[1]+":"+aH[2]+":"+aH[3];aH[5]=aH[0];aH[0]=i.getTime();at(P,aH[0]+":"+aH[1]+":"+aH[2]+":"+aH[3]+":"+D+":"+aH[5],360)}else{aJ=aH[5]+":"+aH[1]+":"+aH[2]+":"+aH[3]}}else{i=new Date();aJ=":1:1:1";at(P,i.getTime()+aJ+":"+D+":",360)}return aJ},userNick:function(){if(al!=""){return al}var D=unescape(t(l));if(D!=""){var i=V(D,"ag","&","");var e=V(D,"user","&","");var aH=V(D,"uid","&","");var aJ=V(D,"sex","&","");var aI=V(D,"dob","&","");al=i+":"+e+":"+aH+":"+aJ+":"+aI;return al}else{return""}},userOrigin:function(){if(m&4!=4){return""}var e=t(aE);var i=e.split(":");if(i.length>=2){return i[0]}else{return""}},advCount:function(){return(m&2==2)?t(E):""},setUOR:function(){var aL=t(aE),aP="",i="",aO="",aI="",aM=j.toLowerCase(),D=F.referrer.toLowerCase();var aQ=/[&|?]c=spr(_[A-Za-z0-9]{1,}){3,}/;var aK=new Date();if(aM.match(aQ)){aO=aM.match(aQ)[0]}else{if(D.match(aQ)){aO=D.match(aQ)[0]}}if(aO!=""){aO=aO.substr(3)+":"+aK.getTime()}if(aL==""){if(t(P)==""){aP=ak(D);i=ak(aM)}at(aE,aP+","+i+","+aO,365)}else{var aJ=0,aN=aL.split(",");if(aN.length>=1){aP=aN[0]}if(aN.length>=2){i=aN[1]}if(aN.length>=3){aI=aN[2]}if(aO!=""){aJ=1}else{var aH=aI.split(":");if(aH.length>=2){var e=new Date(window.parseInt(aH[1]));if(e.getTime()<(aK.getTime()-86400000*30)){aJ=1}}}if(aJ){at(aE,aP+","+i+","+aO,365)}}},setAEC:function(e){if(""==e){return}var i=t(E);if(i.indexOf(e+",")<0){i=i+e+","}at(E,i,7)},ssoInfo:function(){var D=unescape(aj(t("sso_info")));if(D!=""){if(D.indexOf("uid=")!=-1){var i=V(D,"uid","&","");return escape("uid:"+i)}else{var e=V(D,"u","&","");return escape("u:"+unescape(e))}}else{return""}},subp:function(){return t("SUBP")}};var ai={CI:function(){var e=["sz:"+ap.screenSize(),"dp:"+ap.colorDepth(),"ac:"+ap.appCode(),"an:"+ap.appName(),"cpu:"+ap.cpu(),"pf:"+ap.platform(),"jv:"+ap.jsVer(),"ct:"+ap.network(),"lg:"+ap.language(),"tz:"+ap.timezone(),"fv:"+ap.flashVer(),"ja:"+ap.javaEnabled()];return"CI="+e.join("|")},PI:function(e){var i=["pid:"+ad.pageId(e),"st:"+ad.sessionCount(),"et:"+ad.excuteCount(),"ref:"+ad.referrer(),"hp:"+ad.isHomepage(),"PGLS:"+ad.PGLS(),"ZT:"+ad.ZT(),"MT:"+ad.mediaType(),"keys:","dom:"+ad.domCount(),"ifr:"+ad.iframeCount()];return"PI="+i.join("|")},UI:function(){var e=["vid:"+av.visitorId(),"sid:"+av.sessionId(),"lv:"+av.lastVisit(),"un:"+av.userNick(),"uo:"+av.userOrigin(),"ae:"+av.advCount(),"lu:"+av.fvisitorId(),"si:"+av.ssoInfo(),"rs:"+(n?1:0),"dm:"+(B?1:0),"su:"+av.subp()];return"UI="+e.join("|")},EX:function(i,e){if(m&1!=1){return""}i=(null!=i)?i||"":b;e=(null!=e)?e||"":a;return"EX=ex1:"+i+"|ex2:"+e},MT:function(){return"MT="+aF().join("|")},V:function(){return an},R:function(){return"gUid_"+new Date().getTime()}};function ax(){var aK="-",aH=F.referrer.toLowerCase(),D=j.toLowerCase();if(""==t(X)){if(""!=aH){aK=ak(aH)}at(X,aK,"","weibo.com")}var aI=/weibo.com\/reg.php/;if(D.match(aI)){var aJ=V(unescape(D),"sharehost","&","");var i=V(unescape(D),"appkey","&","");if(""!=aJ){at(X,aJ,"","weibo.com")}at("appkey",i,"","weibo.com")}}function d(e,i){G(e,i)}function G(i,D){D=D||{};var e=new Image(),aH;if(D&&D.callback&&typeof D.callback=="function"){e.onload=function(){clearTimeout(aH);aH=null;D.callback(true)}}SUDA.img=e;e.src=i;aH=setTimeout(function(){if(D&&D.callback&&typeof D.callback=="function"){D.callback(false);e.onload=null}},D.timeout||2000)}function x(e,aH,D,aI){SUDA.sudaCount++;if(!av.visitorId()&&!L()){if(u<3){u++;setTimeout(x,500);return}}var i=N+[ai.V(),ai.CI(),ai.PI(e),ai.UI(),ai.MT(),ai.EX(aH,D),ai.R()].join("&");G(i,aI)}function y(e,D,i){if(aG||A){return}if(SUDA.sudaCount!=0){return}x(e,D,i)}function ab(e,aH){if((""==e)||(undefined==e)){return}av.setAEC(e);if(0==aH){return}var D="AcTrack||"+t(aa)+"||"+t(H)+"||"+av.userNick()+"||"+e+"||";var i=ag+D+"&gUid_"+new Date().getTime();d(i)}function aq(aI,e,i,aJ){aJ=aJ||{};if(!i){i=""}else{i=escape(i)}var aH="UATrack||"+t(aa)+"||"+t(H)+"||"+av.userNick()+"||"+aI+"||"+e+"||"+ad.referrer()+"||"+i+"||"+(aJ.realUrl||"")+"||"+(aJ.ext||"");var D=ag+aH+"&gUid_"+new Date().getTime();d(D,aJ)}function aC(aK){var i=g(aK);var aI=i.target;var aH="",aL="",D="";var aJ;if(aI!=null&&aI.getAttribute&&(!aI.getAttribute("suda-uatrack")&&!aI.getAttribute("suda-actrack")&&!aI.getAttribute("suda-data"))){while(aI!=null&&aI.getAttribute&&(!!aI.getAttribute("suda-uatrack")||!!aI.getAttribute("suda-actrack")||!!aI.getAttribute("suda-data"))==false){if(aI==F.body){return}aI=aI.parentNode}}if(aI==null||aI.getAttribute==null){return}aH=aI.getAttribute("suda-actrack")||"";aL=aI.getAttribute("suda-uatrack")||aI.getAttribute("suda-data")||"";sudaUrls=aI.getAttribute("suda-urls")||"";if(aL){aJ=J(aL);if(aI.tagName.toLowerCase()=="a"){D=aI.href}opts={};opts.ext=(aJ.ext||"");aJ.key&&SUDA.uaTrack&&SUDA.uaTrack(aJ.key,aJ.value||aJ.key,D,opts)}if(aH){aJ=J(aH);aJ.key&&SUDA.acTrack&&SUDA.acTrack(aJ.key,aJ.value||aJ.key)}}if(window.SUDA&&Object.prototype.toString.call(window.SUDA)==="[object Array]"){for(var Q=0,ae=SUDA.length;Q<ae;Q++){switch(SUDA[Q][0]){case"setGatherType":m=SUDA[Q][1];break;case"setGatherInfo":r=SUDA[Q][1]||r;b=SUDA[Q][2]||b;a=SUDA[Q][3]||a;break;case"setPerformance":Z=SUDA[Q][1];break;case"setPerformanceFilter":C=SUDA[Q][1];break;case"setPerformanceInterval":K=SUDA[Q][1]*1||0;K=isNaN(K)?0:K;break;case"setGatherMore":M.push(SUDA[Q].slice(1));break;case"acTrack":S.push(SUDA[Q].slice(1));break;case"uaTrack":I.push(SUDA[Q].slice(1));break}}}aG=(function(D,i){if(ah.top==ah){return false}else{try{if(F.body.clientHeight==0){return false}return((F.body.clientHeight>=D)&&(F.body.clientWidth>=i))?false:true}catch(aH){return true}}})(320,240);A=(function(){return false})();av.setUOR();var au=av.sessionId();window.SUDA=window.SUDA||[];SUDA.sudaCount=SUDA.sudaCount||0;SUDA.log=function(){x.apply(null,arguments)};SUDA.acTrack=function(){ab.apply(null,arguments)};SUDA.uaTrack=function(){aq.apply(null,arguments)};U(F.body,"click",aC);window.GB_SUDA=SUDA;GB_SUDA._S_pSt=function(){};GB_SUDA._S_acTrack=function(){ab.apply(null,arguments)};GB_SUDA._S_uaTrack=function(){aq.apply(null,arguments)};window._S_pSt=function(){};window._S_acTrack=function(){ab.apply(null,arguments)};window._S_uaTrack=function(){aq.apply(null,arguments)};window._S_PID_="";if(!window.SUDA.disableClickstream){y()}try{k()}catch(T){}})();
-//-->
-</script> 
-<noScript> 
-<div style='position:absolute;top:0;left:0;width:0;height:0;visibility:hidden'><img width=0 height=0 src='//beacon.sina.com.cn/a.gif?noScript' border='0' alt='' /></div> 
-</noScript> 
-<!-- SUDA_CODE_END -->
-
-<!-- SSO_GETCOOKIE_START -->
-<script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.getSinaCookie=function(){function dc(u){if(u==undefined){return""}var decoded=decodeURIComponent(u);return decoded=="null"?"":decoded}function ps(str){var arr=str.split("&");var arrtmp;var arrResult={};for(var i=0;i<arr.length;i++){arrtmp=arr[i].split("=");arrResult[arrtmp[0]]=dc(arrtmp[1])}return arrResult}function gC(name){var Res=eval("/"+name+"=([^;]+)/").exec(document.cookie);return Res==null?null:Res[1]}var sup=dc(gC("SUP"));if(!sup){sup=dc(gC("SUR"))}if(!sup){return null}return ps(sup)};</script>
-<!-- SSO_GETCOOKIE_END -->
-
-<script type="text/javascript">new function(r,s,t){this.a=function(n,t,e){if(window.addEventListener){n.addEventListener(t,e,false);}else if(window.attachEvent){n.attachEvent("on"+t,e);}};this.b=function(f){var t=this;return function(){return f.apply(t,arguments);};};this.c=function(){var f=document.getElementsByTagName("form");for(var i=0;i<f.length;i++){var o=f[i].action;if(this.r.test(o)){f[i].action=o.replace(this.r,this.s);}}};this.r=r;this.s=s;this.d=setInterval(this.b(this.c),t);this.a(window,"load",this.b(function(){this.c();clearInterval(this.d);}));}(/http:\/\/www\.google\.c(om|n)\/search/, "http://keyword.sina.com.cn/searchword.php", 250);</script>
-<!-- body code end -->
-<!-- SUDA_CODE_START --> 
-<script type="text/javascript"> 
-//<!--
-(function(){var an="V=2.1.15";var ah=window,F=document,s=navigator,W=s.userAgent,ao=ah.screen,j=ah.location.href;var aD="https:"==ah.location.protocol?"https://s":"http://",ay="beacon.sina.com.cn";var N=aD+ay+"/a.gif?",z=aD+ay+"/g.gif?",R=aD+ay+"/f.gif?",ag=aD+ay+"/e.gif?",aB=aD+"beacon.sinauda.com/i.gif?";var aA=F.referrer.toLowerCase();var aa="SINAGLOBAL",Y="FSINAGLOBAL",H="Apache",P="ULV",l="SUP",aE="UOR",E="_s_acc",X="_s_tentry",n=false,az=false,B=(document.domain=="sina.com.cn")?true:false;var o=0;var aG=false,A=false;var al="";var m=16777215,Z=0,C,K=0;var r="",b="",a="";var M=[],S=[],I=[];var u=0;var v=0;var p="";var am=false;var w=false;function O(){var e=document.createElement("iframe");e.src=aD+ay+"/data.html?"+new Date().getTime();e.id="sudaDataFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function k(){var e=document.createElement("iframe");e.src=aD+ay+"/ckctl.html";e.id="ckctlFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function q(){var e=document.createElement("script");e.src=aD+ay+"/h.js";document.getElementsByTagName("head")[0].appendChild(e)}function h(aH,i){var D=F.getElementsByName(aH);var e=(i>0)?i:0;return(D.length>e)?D[e].content:""}function aF(){var aJ=F.getElementsByName("sudameta");var aR=[];for(var aO=0;aO<aJ.length;aO++){var aK=aJ[aO].content;if(aK){if(aK.indexOf(";")!=-1){var D=aK.split(";");for(var aH=0;aH<D.length;aH++){var aP=aw(D[aH]);if(!aP){continue}aR.push(aP)}}else{aR.push(aK)}}}var aM=F.getElementsByTagName("meta");for(var aO=0,aI=aM.length;aO<aI;aO++){var aN=aM[aO];if(aN.name=="tags"){aR.push("content_tags:"+encodeURI(aN.content))}}var aL=t("vjuids");aR.push("vjuids:"+aL);var e="";var aQ=j.indexOf("#");if(aQ!=-1){e=escape(j.substr(aQ+1))}aR.push("hashtag:"+e);return aR}function V(aK,D,aI,aH){if(aK==""){return""}aH=(aH=="")?"=":aH;D+=aH;var aJ=aK.indexOf(D);if(aJ<0){return""}aJ+=D.length;var i=aK.indexOf(aI,aJ);if(i<aJ){i=aK.length}return aK.substring(aJ,i)}function t(e){if(undefined==e||""==e){return""}return V(F.cookie,e,";","")}function at(aI,e,i,aH){if(e!=null){if((undefined==aH)||(null==aH)){aH="sina.com.cn"}if((undefined==i)||(null==i)||(""==i)){F.cookie=aI+"="+e+";domain="+aH+";path=/"}else{var D=new Date();var aJ=D.getTime();aJ=aJ+86400000*i;D.setTime(aJ);aJ=D.getTime();F.cookie=aI+"="+e+";domain="+aH+";expires="+D.toUTCString()+";path=/"}}}function f(D){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;return i.get(D)}catch(aH){return false}}function ar(D,aH){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;i.set(D,aH);return true}catch(aI){return false}}function L(){var aJ=15;var D=window.SUDA.etag;if(!B){return"-"}if(u==0){O();q()}if(D&&D!=undefined){w=true}ls_gid=f(aa);if(ls_gid===false||w==false){return false}else{am=true}if(ls_gid&&ls_gid.length>aJ){at(aa,ls_gid,3650);n=true;return ls_gid}else{if(D&&D.length>aJ){at(aa,D,3650);az=true}var i=0,aI=500;var aH=setInterval((function(){var e=t(aa);if(w){e=D}i+=1;if(i>3){clearInterval(aH)}if(e.length>aJ){clearInterval(aH);ar(aa,e)}}),aI);return w?D:t(aa)}}function U(e,aH,D){var i=e;if(i==null){return false}aH=aH||"click";if((typeof D).toLowerCase()!="function"){return}if(i.attachEvent){i.attachEvent("on"+aH,D)}else{if(i.addEventListener){i.addEventListener(aH,D,false)}else{i["on"+aH]=D}}return true}function af(){if(window.event!=null){return window.event}else{if(window.event){return window.event}var D=arguments.callee.caller;var i;var aH=0;while(D!=null&&aH<40){i=D.arguments[0];if(i&&(i.constructor==Event||i.constructor==MouseEvent||i.constructor==KeyboardEvent)){return i}aH++;D=D.caller}return i}}function g(i){i=i||af();if(!i.target){i.target=i.srcElement;i.pageX=i.x;i.pageY=i.y}if(typeof i.layerX=="undefined"){i.layerX=i.offsetX}if(typeof i.layerY=="undefined"){i.layerY=i.offsetY}return i}function aw(aH){if(typeof aH!=="string"){throw"trim need a string as parameter"}var e=aH.length;var D=0;var i=/(\u3000|\s|\t|\u00A0)/;while(D<e){if(!i.test(aH.charAt(D))){break}D+=1}while(e>D){if(!i.test(aH.charAt(e-1))){break}e-=1}return aH.slice(D,e)}function c(e){return Object.prototype.toString.call(e)==="[object Array]"}function J(aH,aL){var aN=aw(aH).split("&");var aM={};var D=function(i){if(aL){try{return decodeURIComponent(i)}catch(aP){return i}}else{return i}};for(var aJ=0,aK=aN.length;aJ<aK;aJ++){if(aN[aJ]){var aI=aN[aJ].split("=");var e=aI[0];var aO=aI[1];if(aI.length<2){aO=e;e="$nullName"}if(!aM[e]){aM[e]=D(aO)}else{if(c(aM[e])!=true){aM[e]=[aM[e]]}aM[e].push(D(aO))}}}return aM}function ac(D,aI){for(var aH=0,e=D.length;aH<e;aH++){aI(D[aH],aH)}}function ak(i){var e=new RegExp("^http(?:s)?://([^/]+)","im");if(i.match(e)){return i.match(e)[1].toString()}else{return""}}function aj(aO){try{var aL="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var D="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";var aQ=function(e){var aR="",aS=0;for(;aS<e.length;aS++){aR+="%"+aH(e[aS])}return decodeURIComponent(aR)};var aH=function(e){var i="0"+e.toString(16);return i.length<=2?i:i.substr(1)};var aP=function(aY,aV,aR){if(typeof(aY)=="string"){aY=aY.split("")}var aX=function(a7,a9){for(var a8=0;a8<a7.length;a8++){if(a7[a8]==a9){return a8}}return -1};var aS=[];var a6,a4,a1="";var a5,a3,a0,aZ="";if(aY.length%4!=0){}var e=/[^A-Za-z0-9\+\/\=]/g;var a2=aL.split("");if(aV=="urlsafe"){e=/[^A-Za-z0-9\-_\=]/g;a2=D.split("")}var aU=0;if(aV=="binnary"){a2=[];for(aU=0;aU<=64;aU++){a2[aU]=aU+128}}if(aV!="binnary"&&e.exec(aY.join(""))){return aR=="array"?[]:""}aU=0;do{a5=aX(a2,aY[aU++]);a3=aX(a2,aY[aU++]);a0=aX(a2,aY[aU++]);aZ=aX(a2,aY[aU++]);a6=(a5<<2)|(a3>>4);a4=((a3&15)<<4)|(a0>>2);a1=((a0&3)<<6)|aZ;aS.push(a6);if(a0!=64&&a0!=-1){aS.push(a4)}if(aZ!=64&&aZ!=-1){aS.push(a1)}a6=a4=a1="";a5=a3=a0=aZ=""}while(aU<aY.length);if(aR=="array"){return aS}var aW="",aT=0;for(;aT<aS.lenth;aT++){aW+=String.fromCharCode(aS[aT])}return aW};var aI=[];var aN=aO.substr(0,3);var aK=aO.substr(3);switch(aN){case"v01":for(var aJ=0;aJ<aK.length;aJ+=2){aI.push(parseInt(aK.substr(aJ,2),16))}return decodeURIComponent(aQ(aP(aI,"binnary","array")));break;case"v02":aI=aP(aK,"urlsafe","array");return aQ(aP(aI,"binnary","array"));break;default:return decodeURIComponent(aO)}}catch(aM){return""}}var ap={screenSize:function(){return(m&8388608==8388608)?ao.width+"x"+ao.height:""},colorDepth:function(){return(m&4194304==4194304)?ao.colorDepth:""},appCode:function(){return(m&2097152==2097152)?s.appCodeName:""},appName:function(){return(m&1048576==1048576)?((s.appName.indexOf("Microsoft Internet Explorer")>-1)?"MSIE":s.appName):""},cpu:function(){return(m&524288==524288)?(s.cpuClass||s.oscpu):""},platform:function(){return(m&262144==262144)?(s.platform):""},jsVer:function(){if(m&131072!=131072){return""}var aI,e,aK,D=1,aH=0,i=(s.appName.indexOf("Microsoft Internet Explorer")>-1)?"MSIE":s.appName,aJ=s.appVersion;if("MSIE"==i){e="MSIE";aI=aJ.indexOf(e);if(aI>=0){aK=window.parseInt(aJ.substring(aI+5));if(3<=aK){D=1.1;if(4<=aK){D=1.3}}}}else{if(("Netscape"==i)||("Opera"==i)||("Mozilla"==i)){D=1.3;e="Netscape6";aI=aJ.indexOf(e);if(aI>=0){D=1.5}}}return D},network:function(){if(m&65536!=65536){return""}var i="";i=(s.connection&&s.connection.type)?s.connection.type:i;try{F.body.addBehavior("#default#clientCaps");i=F.body.connectionType}catch(D){i="unkown"}return i},language:function(){return(m&32768==32768)?(s.systemLanguage||s.language):""},timezone:function(){return(m&16384==16384)?(new Date().getTimezoneOffset()/60):""},flashVer:function(){if(m&8192!=8192){return""}var aK=s.plugins,aH,aL,aN;if(aK&&aK.length){for(var aJ in aK){aL=aK[aJ];if(aL.description==null){continue}if(aH!=null){break}aN=aL.description.toLowerCase();if(aN.indexOf("flash")!=-1){aH=aL.version?parseInt(aL.version):aN.match(/\d+/);continue}}}else{if(window.ActiveXObject){for(var aI=10;aI>=2;aI--){try{var D=new ActiveXObject("ShockwaveFlash.ShockwaveFlash."+aI);if(D){aH=aI;break}}catch(aM){}}}else{if(W.indexOf("webtv/2.5")!=-1){aH=3}else{if(W.indexOf("webtv")!=-1){aH=2}}}}return aH},javaEnabled:function(){if(m&4096!=4096){return""}var D=s.plugins,i=s.javaEnabled(),aH,aI;if(i==true){return 1}if(D&&D.length){for(var e in D){aH=D[e];if(aH.description==null){continue}if(i!=null){break}aI=aH.description.toLowerCase();if(aI.indexOf("java plug-in")!=-1){i=parseInt(aH.version);continue}}}else{if(window.ActiveXObject){i=(new ActiveXObject("JavaWebStart.IsInstalled")!=null)}}return i?1:0}};var ad={pageId:function(i){var D=i||r,aK="-9999-0-0-1";if((undefined==D)||(""==D)){try{var aH=h("publishid");if(""!=aH){var aJ=aH.split(",");if(aJ.length>0){if(aJ.length>=3){aK="-9999-0-"+aJ[1]+"-"+aJ[2]}D=aJ[0]}}else{D="0"}}catch(aI){D="0"}D=D+aK}return D},sessionCount:function(){var e=t("_s_upa");if(e==""){e=0}return e},excuteCount:function(){return SUDA.sudaCount},referrer:function(){if(m&2048!=2048){return""}var e=/^[^\?&#]*.swf([\?#])?/;if((aA=="")||(aA.match(e))){var i=V(j,"ref","&","");if(i!=""){return escape(i)}}return escape(aA)},isHomepage:function(){if(m&1024!=1024){return""}var D="";try{F.body.addBehavior("#default#homePage");D=F.body.isHomePage(j)?"Y":"N"}catch(i){D="unkown"}return D},PGLS:function(){return(m&512==512)?h("stencil"):""},ZT:function(){if(m&256!=256){return""}var e=h("subjectid");e.replace(",",".");e.replace(";",",");return escape(e)},mediaType:function(){return(m&128==128)?h("mediaid"):""},domCount:function(){return(m&64==64)?F.getElementsByTagName("*").length:""},iframeCount:function(){return(m&32==32)?F.getElementsByTagName("iframe").length:""}};var av={visitorId:function(){var i=15;var e=t(aa);if(e.length>i&&u==0){return e}else{return}},fvisitorId:function(e){if(!e){var e=t(Y);return e}else{at(Y,e,3650)}},sessionId:function(){var e=t(H);if(""==e){var i=new Date();e=Math.random()*10000000000000+"."+i.getTime()}return e},flashCookie:function(e){if(e){}else{return p}},lastVisit:function(){var D=t(H);var aI=t(P);var aH=aI.split(":");var aJ="",i;if(aH.length>=6){if(D!=aH[4]){i=new Date();var e=new Date(window.parseInt(aH[0]));aH[1]=window.parseInt(aH[1])+1;if(i.getMonth()!=e.getMonth()){aH[2]=1}else{aH[2]=window.parseInt(aH[2])+1}if(((i.getTime()-e.getTime())/86400000)>=7){aH[3]=1}else{if(i.getDay()<e.getDay()){aH[3]=1}else{aH[3]=window.parseInt(aH[3])+1}}aJ=aH[0]+":"+aH[1]+":"+aH[2]+":"+aH[3];aH[5]=aH[0];aH[0]=i.getTime();at(P,aH[0]+":"+aH[1]+":"+aH[2]+":"+aH[3]+":"+D+":"+aH[5],360)}else{aJ=aH[5]+":"+aH[1]+":"+aH[2]+":"+aH[3]}}else{i=new Date();aJ=":1:1:1";at(P,i.getTime()+aJ+":"+D+":",360)}return aJ},userNick:function(){if(al!=""){return al}var D=unescape(t(l));if(D!=""){var i=V(D,"ag","&","");var e=V(D,"user","&","");var aH=V(D,"uid","&","");var aJ=V(D,"sex","&","");var aI=V(D,"dob","&","");al=i+":"+e+":"+aH+":"+aJ+":"+aI;return al}else{return""}},userOrigin:function(){if(m&4!=4){return""}var e=t(aE);var i=e.split(":");if(i.length>=2){return i[0]}else{return""}},advCount:function(){return(m&2==2)?t(E):""},setUOR:function(){var aL=t(aE),aP="",i="",aO="",aI="",aM=j.toLowerCase(),D=F.referrer.toLowerCase();var aQ=/[&|?]c=spr(_[A-Za-z0-9]{1,}){3,}/;var aK=new Date();if(aM.match(aQ)){aO=aM.match(aQ)[0]}else{if(D.match(aQ)){aO=D.match(aQ)[0]}}if(aO!=""){aO=aO.substr(3)+":"+aK.getTime()}if(aL==""){if(t(P)==""){aP=ak(D);i=ak(aM)}at(aE,aP+","+i+","+aO,365)}else{var aJ=0,aN=aL.split(",");if(aN.length>=1){aP=aN[0]}if(aN.length>=2){i=aN[1]}if(aN.length>=3){aI=aN[2]}if(aO!=""){aJ=1}else{var aH=aI.split(":");if(aH.length>=2){var e=new Date(window.parseInt(aH[1]));if(e.getTime()<(aK.getTime()-86400000*30)){aJ=1}}}if(aJ){at(aE,aP+","+i+","+aO,365)}}},setAEC:function(e){if(""==e){return}var i=t(E);if(i.indexOf(e+",")<0){i=i+e+","}at(E,i,7)},ssoInfo:function(){var D=unescape(aj(t("sso_info")));if(D!=""){if(D.indexOf("uid=")!=-1){var i=V(D,"uid","&","");return escape("uid:"+i)}else{var e=V(D,"u","&","");return escape("u:"+unescape(e))}}else{return""}},subp:function(){return t("SUBP")}};var ai={CI:function(){var e=["sz:"+ap.screenSize(),"dp:"+ap.colorDepth(),"ac:"+ap.appCode(),"an:"+ap.appName(),"cpu:"+ap.cpu(),"pf:"+ap.platform(),"jv:"+ap.jsVer(),"ct:"+ap.network(),"lg:"+ap.language(),"tz:"+ap.timezone(),"fv:"+ap.flashVer(),"ja:"+ap.javaEnabled()];return"CI="+e.join("|")},PI:function(e){var i=["pid:"+ad.pageId(e),"st:"+ad.sessionCount(),"et:"+ad.excuteCount(),"ref:"+ad.referrer(),"hp:"+ad.isHomepage(),"PGLS:"+ad.PGLS(),"ZT:"+ad.ZT(),"MT:"+ad.mediaType(),"keys:","dom:"+ad.domCount(),"ifr:"+ad.iframeCount()];return"PI="+i.join("|")},UI:function(){var e=["vid:"+av.visitorId(),"sid:"+av.sessionId(),"lv:"+av.lastVisit(),"un:"+av.userNick(),"uo:"+av.userOrigin(),"ae:"+av.advCount(),"lu:"+av.fvisitorId(),"si:"+av.ssoInfo(),"rs:"+(n?1:0),"dm:"+(B?1:0),"su:"+av.subp()];return"UI="+e.join("|")},EX:function(i,e){if(m&1!=1){return""}i=(null!=i)?i||"":b;e=(null!=e)?e||"":a;return"EX=ex1:"+i+"|ex2:"+e},MT:function(){return"MT="+aF().join("|")},V:function(){return an},R:function(){return"gUid_"+new Date().getTime()}};function ax(){var aK="-",aH=F.referrer.toLowerCase(),D=j.toLowerCase();if(""==t(X)){if(""!=aH){aK=ak(aH)}at(X,aK,"","weibo.com")}var aI=/weibo.com\/reg.php/;if(D.match(aI)){var aJ=V(unescape(D),"sharehost","&","");var i=V(unescape(D),"appkey","&","");if(""!=aJ){at(X,aJ,"","weibo.com")}at("appkey",i,"","weibo.com")}}function d(e,i){G(e,i)}function G(i,D){D=D||{};var e=new Image(),aH;if(D&&D.callback&&typeof D.callback=="function"){e.onload=function(){clearTimeout(aH);aH=null;D.callback(true)}}SUDA.img=e;e.src=i;aH=setTimeout(function(){if(D&&D.callback&&typeof D.callback=="function"){D.callback(false);e.onload=null}},D.timeout||2000)}function x(e,aH,D){SUDA.sudaCount++;if(!av.visitorId()&&!L()){if(u<3){u++;setTimeout(x,500);return}}var i=N+[ai.V(),ai.CI(),ai.PI(e),ai.UI(),ai.MT(),ai.EX(aH,D),ai.R()].join("&");G(i);if(window.location.host.search("auto.sina.com.cn")>=0){wrating_url="http://m.wrating.com/m.gif?a=&c=860010-2370010112&mcookie="+av.visitorId()+"&"+ai.R()+"=";G(wrating_url)}}function y(e,D,i){if(aG||A){return}if(SUDA.sudaCount!=0){return}x(e,D,i)}function ab(e,aH){if((""==e)||(undefined==e)){return}av.setAEC(e);if(0==aH){return}var D="AcTrack||"+t(aa)+"||"+t(H)+"||"+av.userNick()+"||"+e+"||";var i=ag+D+"&gUid_"+new Date().getTime();d(i)}function aq(aI,e,i,aJ){aJ=aJ||{};if(!i){i=""}else{i=escape(i)}var aH="UATrack||"+t(aa)+"||"+t(H)+"||"+av.userNick()+"||"+aI+"||"+e+"||"+ad.referrer()+"||"+i+"||"+(aJ.realUrl||"")+"||"+(aJ.ext||"");var D=ag+aH+"&gUid_"+new Date().getTime();d(D,aJ)}function aC(aK){var i=g(aK);var aI=i.target;var aH="",aL="",D="";var aJ;if(aI!=null&&aI.getAttribute&&(!aI.getAttribute("suda-uatrack")&&!aI.getAttribute("suda-actrack")&&!aI.getAttribute("suda-data"))){while(aI!=null&&aI.getAttribute&&(!!aI.getAttribute("suda-uatrack")||!!aI.getAttribute("suda-actrack")||!!aI.getAttribute("suda-data"))==false){if(aI==F.body){return}aI=aI.parentNode}}if(aI==null||aI.getAttribute==null){return}aH=aI.getAttribute("suda-actrack")||"";aL=aI.getAttribute("suda-uatrack")||aI.getAttribute("suda-data")||"";sudaUrls=aI.getAttribute("suda-urls")||"";if(aL){aJ=J(aL);if(aI.tagName.toLowerCase()=="a"){D=aI.href}opts={};opts.ext=(aJ.ext||"");aJ.key&&SUDA.uaTrack&&SUDA.uaTrack(aJ.key,aJ.value||aJ.key,D,opts)}if(aH){aJ=J(aH);aJ.key&&SUDA.acTrack&&SUDA.acTrack(aJ.key,aJ.value||aJ.key)}}if(window.SUDA&&Object.prototype.toString.call(window.SUDA)==="[object Array]"){for(var Q=0,ae=SUDA.length;Q<ae;Q++){switch(SUDA[Q][0]){case"setGatherType":m=SUDA[Q][1];break;case"setGatherInfo":r=SUDA[Q][1]||r;b=SUDA[Q][2]||b;a=SUDA[Q][3]||a;break;case"setPerformance":Z=SUDA[Q][1];break;case"setPerformanceFilter":C=SUDA[Q][1];break;case"setPerformanceInterval":K=SUDA[Q][1]*1||0;K=isNaN(K)?0:K;break;case"setGatherMore":M.push(SUDA[Q].slice(1));break;case"acTrack":S.push(SUDA[Q].slice(1));break;case"uaTrack":I.push(SUDA[Q].slice(1));break}}}aG=(function(D,i){if(ah.top==ah){return false}else{try{if(F.body.clientHeight==0){return false}return((F.body.clientHeight>=D)&&(F.body.clientWidth>=i))?false:true}catch(aH){return true}}})(320,240);A=(function(){return false})();av.setUOR();var au=av.sessionId();window.SUDA=window.SUDA||[];SUDA.sudaCount=SUDA.sudaCount||0;SUDA.log=function(){x.apply(null,arguments)};SUDA.acTrack=function(){ab.apply(null,arguments)};SUDA.uaTrack=function(){aq.apply(null,arguments)};U(F.body,"click",aC);window.GB_SUDA=SUDA;GB_SUDA._S_pSt=function(){};GB_SUDA._S_acTrack=function(){ab.apply(null,arguments)};GB_SUDA._S_uaTrack=function(){aq.apply(null,arguments)};window._S_pSt=function(){};window._S_acTrack=function(){ab.apply(null,arguments)};window._S_uaTrack=function(){aq.apply(null,arguments)};window._S_PID_="";y();try{k()}catch(T){}})();
-//-->
-</script> 
-<noScript> 
-<div style='position:absolute;top:0;left:0;width:0;height:0;visibility:hidden'><img width=0 height=0 src='http://beacon.sina.com.cn/a.gif?noScript' border='0' alt='' /></div> 
-</noScript> 
-<!-- SUDA_CODE_END -->
-
-<!-- SSO_GETCOOKIE_START -->
-<script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.getSinaCookie=function(){function dc(u){if(u==undefined){return""}var decoded=decodeURIComponent(u);return decoded=="null"?"":decoded}function ps(str){var arr=str.split("&");var arrtmp;var arrResult={};for(var i=0;i<arr.length;i++){arrtmp=arr[i].split("=");arrResult[arrtmp[0]]=dc(arrtmp[1])}return arrResult}function gC(name){var Res=eval("/"+name+"=([^;]+)/").exec(document.cookie);return Res==null?null:Res[1]}var sup=dc(gC("SUP"));if(!sup){sup=dc(gC("SUR"))}if(!sup){return null}return ps(sup)};</script>
-<!-- SSO_GETCOOKIE_END -->
-
-<script type="text/javascript">new function(r,s,t){this.a=function(n,t,e){if(window.addEventListener){n.addEventListener(t,e,false);}else if(window.attachEvent){n.attachEvent("on"+t,e);}};this.b=function(f){var t=this;return function(){return f.apply(t,arguments);};};this.c=function(){var f=document.getElementsByTagName("form");for(var i=0;i<f.length;i++){var o=f[i].action;if(this.r.test(o)){f[i].action=o.replace(this.r,this.s);}}};this.r=r;this.s=s;this.d=setInterval(this.b(this.c),t);this.a(window,"load",this.b(function(){this.c();clearInterval(this.d);}));}(/http:\/\/www\.google\.c(om|n)\/search/, "http://keyword.sina.com.cn/searchword.php", 250);</script>
-<!-- body code end -->
-
-
-        <div class="hide">
-            <!-- 分享缩略图 -->
-            <img src="http://www.sinaimg.cn/dy/2017/0315/U13258P1DT20170315151939.jpg" alt="">
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="always" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>精华区 - 博客园</title>
+    <link rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
+    <link rel="Stylesheet" type="text/css" href="/css/aggsite-new.min.css?v=fgrNTulsHgkG0zRModH-3rZ_SretLK8ShGJso-YWICk" />
+    <link rel="Stylesheet" type="text/css" href="/css/aggsite-mobile-new.min.css?v=YHmWdkxWQChwU7p98MSLWk9JBmcd9ddT7q7Xf3711GM" media="only screen and (max-width: 767px)" />
+        <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="http://feed.cnblogs.com/blog/picked/rss" />
+        <link rel="prefetch" href="//common.cnblogs.com/images/banner/bannerbar-aws-bg.jpg" />
+        <link rel="prefetch" href="//common.cnblogs.com/images/banner/bannerbar-aws-logo.png" />
+        <link rel="prefetch" href="//common.cnblogs.com/images/banner/bannerbar-aws-ssh.png?v=2" />
+        <link rel="prefetch" href="//img2020.cnblogs.com/blog/35695/202101/35695-20210101110709031-1748833382.jpg" />
+    <script src="//common.cnblogs.com/script/jquery.js" type="text/javascript"></script>
+    <script src="/js/aggsite-new.min.js?v=fPojGt-SDdAhFz3Vfh9MCK05Em2TFzF6YOZclgt3Rek"></script>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot('/1090369/A1', [300, 60], 'div-gpt-ad-1547816814884-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B1', [300, 250], 'div-gpt-ad-1546331539224-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B2', [300, 250], 'div-gpt-ad-1539007469525-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B3', [300, 250], 'div-gpt-ad-1546331252242-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B4', [300, 250], 'div-gpt-ad-1546331385104-0').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper" class="flow">
+        <div id="top_nav" class="navbar border-none">
+            <nav id="nav_main" class="navbar-main">
+                <ul id="nav_left" class="navbar-list navbar-left">
+                    <li class="navbar-branding">
+                        <a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a>
+                    </li>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="https://news.cnblogs.com/">新闻</a></li>
+                    <li><a href="https://q.cnblogs.com/">博问</a></li>
+                    <li><a id="nav_brandzone" href="https://brands.cnblogs.com/">专区</a></li>
+                    <li><a href="https://ing.cnblogs.com/">闪存</a></li>
+                    <li><a href="https://edu.cnblogs.com/">班级</a></li>
+                    <li><a id="nav_legacy" href="/legacy">怀旧</a></li>
+                    <li class="dropdown">
+                        <div class="dropdown-button">
+                            <a href="javascript:void(0)">发现</a>
+                            <img src="/images/aggsite/pulldown-light.svg" />
+                        </div>
+                        <div class="dropdown-menu">
+                            <a href="https://home.cnblogs.com/">园子</a>
+                            <a href="https://group.cnblogs.com/">小组</a>
+                            <a href="https://wz.cnblogs.com/">收藏</a>
+                            <a href="https://job.cnblogs.com/">招聘</a>
+                            <a href="https://zzk.cnblogs.com/">找找看</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="nav_right" class="navbar-list navbar-right">
+                    <li>
+                        <form id="zzk_search" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
+                            <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="text" tabindex="3" />
+                            <button type="submit" id="zzk_search_button">
+                                <img src="/images/aggsite/search.svg" alt="搜索" />
+                            </button>
+                        </form>
+                    </li>
+                    <li id="navbar_login_status" class="navbar-list">
+                        <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
+                            <img id="new_post_icon" class="navbar-icon" src="/images/aggsite/newpost.svg" alt="写随笔" />
+                        </a>
+                        <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
+                            <img id="myblog_icon" class="navbar-icon" src="/images/aggsite/myblog.svg" alt="我的博客" />
+                        </a>
+                        <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
+                            <img id="msg_icon" class="navbar-icon" src="/images/aggsite/message.svg?v=J0WS2P2iPgaIVgXxcAhliw4AFZIpaTWxtdoNAv9eiCA" alt="短消息" />
+                            <span id="msg_count" style="display: none"></span>
+                        </a>
+                        <div id="user_info" class="navbar-user-info dropdown">
+                            <a class="dropdown-button" href="https://home.cnblogs.com/">
+                                <img id="user_icon" class="navbar-avatar" src="/images/aggsite/avatar-default.svg" alt="用户头像" />
+                            </a>
+                            <div class="dropdown-menu" id="navbar_menu">
+                                <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
+                                <a href="https://home.cnblogs.com/">我的园子</a>
+                                <a href="https://account.cnblogs.com/settings/account">账号设置</a>
+                                <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
+    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
+</a>
+                                <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
+                            </div>
+                        </div>
+                        <a class="navbar-anonymous" href="https://account.cnblogs.com/signup/">注册</a>
+                        <a class="navbar-anonymous" href="https://account.cnblogs.com/signin/?returnUrl=https://www.cnblogs.com/">登录</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="nav_mobile" class="navbar-mobile">
+                <ul class="navbar-list">
+                    <li class="navbar-branding">
+                        <a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a>
+                    </li>
+                    <li class="dropdown">
+                        <div class="dropdown-button" onclick="toggleDropdownMenu()">
+                            <a href="javascript:void(0)">发现</a>
+                            <img src="/images/aggsite/pulldown-bold.svg" height="5" />
+                        </div>
+                        <div id="nav_dropdown_menu" class="dropdown-menu">
+                            <a href="https://news.cnblogs.com/">新闻</a>
+                            <a href="https://q.cnblogs.com/">博问</a>
+                            <a href="https://brands.cnblogs.com/">专区</a>
+                            <a href="https://ing.cnblogs.com/">闪存</a>
+                            <a href="https://edu.cnblogs.com/">班级</a>
+                            <a href="/legacy">怀旧</a>
+                            <a href="https://home.cnblogs.com/">园子</a>
+                            <a href="https://wz.cnblogs.com/">收藏</a>
+                            <a href="https://job.cnblogs.com/">招聘</a>
+                            <a href="https://zzk.cnblogs.com/">找找看</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-list">
+                    <li>
+                        <form id="zzk_search_mobile" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
+                            <input name="w" id="zzk_search_input_mobile" placeholder="搜索" type="text" tabindex="3" />
+                            <button type="submit" id="zzk_search_button_mobile">
+                                <img src="/images/aggsite/search.svg" alt="搜索" />
+                            </button>
+                        </form>
+                    </li>
+                    <li id="user_info_mobile" class="navbar-user-info dropdown">
+                        <a class="dropdown-button" href="https://home.cnblogs.com/">
+                            <img id="user_icon_mobile" class="navbar-icon avatar" />
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="https://account.cnblogs.com/settings/account">设置</a>
+                            <a href="javascript:void(0)" onclick="account.logout();">退出</a>
+                        </div>
+                    </li>
+                    <li class="navbar-anonymous" id="login_area_mobile">
+                        <a href="https://account.cnblogs.com/signup/">注册</a>
+                    </li>
+                    <li class="navbar-anonymous">
+                        <a href="https://account.cnblogs.com/signin/?returnUrl=https://www.cnblogs.com/">登录</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-
-        <div class="contents">
-        <div class="headerbg" id="top">
-            <div></div>
+            <div class="bannerbar aws formobile">
+                <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-aggsite-bannerbar-mobile')">
+                    <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
+                </a>
+            </div>
+            <img src="https://common.cnblogs.com/images/banner/bannerbar-q-background.png" alt="" style="display:none" />
+            <a href="https://q.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'sitehome-bannerbar')">
+                <div class="bannerbar bannerbar-q forpc">
+                    <img id="banner-q-logo" src="https://common.cnblogs.com/images/banner/bannerbar-q-logo.png" alt="" />
+                    <img id="banner-q-slogan" src="https://common.cnblogs.com/images/banner/bannerbar-q-slogan.png" alt="" />
+                </div>
+            </a>
+        <div id="main_content" class="hero">
+            <div id="main" class="main">
+                <div id="side_nav" class="side-left tab-bar">
+                    
+<ul class="sidenav">
+            <li id="sidenav_pick" class="sidenav-item current-nav">
+                <a href="/pick/" title="精华区博文">
+                    <img src="/images/aggsite/picked.svg" />
+                    <span>精华</span>
+                </a>
+            </li>
+            <li id="sidenav_candidate" class="sidenav-item ">
+                <a href="/candidate/" title="候选区博文">
+                    <img src="/images/aggsite/candidate.svg" />
+                    <span>候选</span>
+                </a>
+            </li>
+            <li class="sidenav-splitter"></li>
+            <li id="sidenav_subscription" class="sidenav-item ">
+                <a href="/subscription" title="我订阅的博客">
+                    <img src="/images/aggsite/subscription.svg" />
+                    <span>订阅</span>
+                </a>
+            </li>
+            <li id="sidenav_following" class="sidenav-item ">
+                <a href="/following" title="我关注的园友">
+                    <img src="/images/aggsite/following.svg" />
+                    <span>关注</span>
+                </a>
+            </li>
+            <li id="sidenav_commented" class="sidenav-item ">
+                <a href="/aggsite/mycommented" title="我评论过的博文">
+                    <img src="/images/aggsite/commented.svg" />
+                    <span>我评</span>
+                </a>
+            </li>
+            <li id="sidenav_digged" class="sidenav-item ">
+                <a href="/aggsite/mydigged" title="我推荐过的博文">
+                    <img src="/images/aggsite/digged.svg" />
+                    <span>我赞</span>
+                </a>
+            </li>
+    <li id="sidenav_more" class="dropdown sidenav-item ">
+        <div class="dropdown-button">
+            <a href="javascript:void(0)">
+                <img src="/images/aggsite/more.svg" />
+                <span>更多</span>
+            </a>
         </div>
-        <div class="header">
-
-            <div class="logo">
-                <img src="http://simg.sinajs.cn/products/news/items/2017/premier-conference/img/logo_sinanews.png" alt="">
-            </div>
-            <div class="h3">
-                <img src="http://simg.sinajs.cn/products/news/items/2017/premier-conference/img/banner_tab_zonglijizhehui.png">
-            </div>
-            <div class="bottom">
-
-            </div>
+        <div class="dropdown-menu">
+            <a href="/cate/all">所有随笔</a>
+            <a href="/comment/">最新评论</a>
+            <a href="/cmt/">官方博客</a>
+            <a href="/skins.aspx">博客皮肤</a>
         </div>
-
-        <!-- contents -->
-        <a href="javascript:void(0);" class="audio-all-play-btn hiden" id="btn-play-all"></a>
-        <a href="javascript:void(0);" class="audio-all-pause-btn" id="btn-pause-all">
-            <i class="i-1"></i>
-            <i class="i-2"></i>
-            <i class="i-3"></i>
+    </li>
+    <li class="sidenav-splitter"></li>
+    <li class="sidenav-item feedback">
+        <a href="https://group.cnblogs.com/forum/public/" class="feedback">
+            <img src="/images/aggsite/feedback.svg" />
+            <span>反馈</span>
         </a>
-        <img src="http://simg.sinajs.cn/products/news/items/2017/premier-conference/img/bg_likeqiang.png" class="img-premier">
+    </li>
+    <li id="dark_switch">
+        <a href="javascript:void(0)"><img src="/images/aggsite/dark.svg" /></a>
+    </li>
+</ul>
+                </div>
 
-        <!-- 标语 -->
-        <div class="banner-box">
-            <div class="header_bg"></div>
-            <div class="slogan-box">
-                <i class="left-marks"></i>
-                <p class="slogan">
-                最难的是改革，因为要触动利益，为政之要就是要舍小利、顾大义、顺民心。
+                <div id="main_flow" class="main-flow">
+                    <div class="card">
+                            <div id="post_list_title" class="card-title-block">
+                                <div class="card-title">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.819 4H17.18c.764 0 1.381.692 1.381 1.547v12.906c0 .855-.617 1.547-1.38 1.547H6.818c-.764 0-1.381-.692-1.381-1.547V5.547c0-.855.617-1.547 1.38-1.547z" fill="#8D8EA2" /><path d="M12.488 10.769h-3.91c-.284 0-.515.34-.515.76 0 .418.23.759.515.759h3.912c.284 0 .515-.341.515-.76 0-.418-.231-.76-.517-.76zm-1.646 3.947H8.578c-.284 0-.515.34-.515.76 0 .418.23.76.515.76h2.264c.284 0 .515-.342.515-.76 0-.42-.231-.76-.515-.76zm3.705-7.892h-5.97c-.283 0-.514.34-.514.76 0 .418.23.759.515.759h5.97c.283 0 .514-.341.514-.76s-.23-.76-.515-.76z" fill="#FFF" /></svg><a href="/pick/">精华区博文</a>
+                                </div>
+                                    <span id="posts_refresh_tips" class="card-title"></span>
+                                    <a id="posts_refresh" href="#" class="card-title" title="刷新博文列表" onclick="aggSite.loadCategoryPostList();return false;">
+                                        刷新
+                                    </a>
+                            </div>
+                            <div class="card-title-line"></div>
+
+                        <div class="card headline">
+    <ul>
+        <li>
+            <a href="https://www.cnblogs.com/xuanyuan/p/14749838.html" id="editor_pick_lnk" target="_blank" data-postId="14749838">
+                <span class="headline-label">【编辑推荐】</span>一个故事看懂计算机操作系统的进化史(12/14/1675)
+            </a>
+                <a href="/aggsite/headline" title="查看更多编辑推荐" class="right_more">»</a>
+        </li>
+        <li>
+                <a href="https://www.cnblogs.com/huangxincheng/p/14754776.html" target="_blank" title="评论15, 推荐11, 阅读1154">
+                    <span class="headline-label">【最多推荐】</span>一句 Task.Result 就死锁, 这代码还怎么写？(15/11/1154)
+                </a>
+                <a href="/aggsite/topdigged24h" title="查看24小时推荐排行" class="right_more">»</a>
+        </li>
+        <li>
+                <a href="https://www.cnblogs.com/saper/p/14753755.html" target="_blank" title="评论16, 推荐8, 阅读1219">
+                    <span class="headline-label">【最多评论】</span>还特么能不能好好说话了！？(16/8/1219)
+                </a>
+                <a href="/aggsite/topcommented24h" title="查看24小时推荐排行" class="right_more">»</a>
+        </li>
+        <li>
+                <a href="https://news.cnblogs.com/n/693572/" target="_blank" title="评论0, 推荐27, 阅读914">
+                    <span class="headline-label">【新闻头条】</span>我为什么讨厌特斯拉(0/27/914)
+                </a>
+                <a href="https://news.cnblogs.com/" title="查看更多新闻" class="right_more">»</a>
+        </li>
+        <li>
+                <a href="https://news.cnblogs.com/n/693565/" target="_blank" title="评论0, 推荐21, 阅读1955">
+                    <span class="headline-label">【推荐新闻】</span>难进更难出，我被困在大厂围城(0/21/1955)
+                </a>
+                <a href="https://news.cnblogs.com/n/recommend" title="查看更多推荐新闻" class="right_more">»</a>
+        </li>
+    </ul>
+</div>
+
+                        <div id="pager_top" style="display: none"></div>
+                        <div id="post_list_tips" class="hide"></div>
+                        
+                        <div id="post_list" class="post-list">
+                            
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <defs>
+        <g id="icon_digg" stroke-linejoin="round" fill="none"><path d="M12.197 7.005H9C10.239 3.195 8.146 3 8.146 3c-.886 0-.703.584-.77.681C7.376 5.545 5 7.005 5 7.005v5.285c0 .522.853.71 1.188.71h4.804c.452 0 .82-.987.82-.987C13 8.647 13 7.645 13 7.645c0-.695-.803-.64-.803-.64z" /><path d="M4.48 7H2.43c-.423 0-.43.324-.43.324l.423 5.336c0 .34.437.34.437.34h1.774c.37 0 .366-.225.366-.225v-5.37C5 6.995 4.48 7 4.48 7z" /></g>
+        <g id="icon_comment"><path fill="none" d="M4.25 3.5C3.56 3.5 3 4.054 3 4.738v4.957c0 .684.56 1.238 1.25 1.238h2.454L8 12.5l1.293-1.567h2.457c.69 0 1.25-.554 1.25-1.238V4.738A1.242 1.242 0 0011.751 3.5H4.25z" /><path stroke="none" d="M10.5 7.5a.5.5 0 110-1 .5.5 0 010 1zM8 7.5a.5.5 0 11.001-1.001A.5.5 0 018 7.5zm-2.5 0a.5.5 0 110-1 .5.5 0 010 1z" /></g>
+        <path id="icon_views" stroke="none" d="M7.5 5.406c-1.23 0-2.231.94-2.231 2.094 0 1.156 1 2.097 2.23 2.097S9.73 8.657 9.73 7.5c0-1.155-1-2.094-2.23-2.094zm0 3.203c-.653 0-1.184-.497-1.184-1.11 0-.611.53-1.109 1.184-1.109.653 0 1.184.498 1.184 1.11 0 .612-.531 1.11-1.184 1.11zm6.482-1.265a1.069 1.069 0 00-.03-.148.27.27 0 00-.008-.018l-.003-.007a1.072 1.072 0 00-.024-.065C12.715 4.65 10.136 3 7.5 3 4.86 3 2.285 4.645 1.094 7.09a.518.518 0 00-.034.082l-.012.023a.355.355 0 00-.026.126c-.01.052-.018.127-.019.13a.374.374 0 000 .099l.013.094a.566.566 0 00.016.1c.007.027.015.058.032.091a.92.92 0 00.022.056C2.284 10.349 4.86 12 7.5 12c2.64 0 5.211-1.64 6.399-4.078a.562.562 0 00.042-.097l.005-.012.005-.011a.519.519 0 00.028-.122l.003-.017a.672.672 0 000-.32zM7.5 11.015c-2.211 0-4.399-1.404-5.447-3.497L2.05 7.51a.136.136 0 00-.003-.015V7.49a.064.064 0 00.002-.007c1.035-2.093 3.225-3.5 5.45-3.5 2.223 0 4.41 1.404 5.442 3.493l.002.004.002.007v.007l.001.002-.004.004v.02c-1.036 2.09-3.222 3.494-5.443 3.494z" fill-rule="nonzero"></path>
+    </defs>
+</svg>
+
+    <article class="post-item" data-post-id="14420239">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/sheng-jie/p/how-much-you-know-about-dapr.html" target="_blank">Dapr 知多少 | 分布式应用运行时</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/sheng-jie/">
+                            <img src="https://pic.cnblogs.com/face/577140/20170107145656.png" class="avatar" alt="博主头像" />
+                        </a>
+                    Dapr 是一个可移植的、事件驱动的运行时，它使任何开发人员能够轻松构建出弹性的、无状态和有状态的应用程序，并可运行在云平台或边缘计算中，它同时也支持多种开发语言和开发框架。 ...
                 </p>
-                <i class="right-marks"></i>
             </div>
-            <p class="slogan-intro">李克强在总理记者会上答记者问<br/></p>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/sheng-jie/" class="post-item-author"><span>「圣杰」</span></a>
+                <span class="post-meta-item">
+                    <span>2021-02-20 12:23</span>
+                </span>
+                <a id="digg_control_14420239" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('sheng-jie', 14420239, 326932, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_14420239">46</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/sheng-jie/p/how-much-you-know-about-dapr.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>27</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/sheng-jie/p/how-much-you-know-about-dapr.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>7906</span>
+                </a>
+                <span id="digg_tip_14420239" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="14281870">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/alisystemsoftware/p/14281870.html" target="_blank">解读容器的 2020：寻找云原生的下一站</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/alisystemsoftware/">
+                            <img src="https://pic.cnblogs.com/face/1411156/20180531141029.png" class="avatar" alt="博主头像" />
+                        </a>
+                    “云原生”到底是什么？它就是容器和 Kubernetes 吗？虚拟机是云原生的吗？…… ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/alisystemsoftware/" class="post-item-author"><span>阿里巴巴云原生</span></a>
+                <span class="post-meta-item">
+                    <span>2021-01-15 14:27</span>
+                </span>
+                <a id="digg_control_14281870" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('alisystemsoftware', 14281870, 435351, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_14281870">11</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/alisystemsoftware/p/14281870.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>2</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/alisystemsoftware/p/14281870.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>2161</span>
+                </a>
+                <span id="digg_tip_14281870" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="14266148">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/flashsun/p/14266148.html" target="_blank">图解 | 原来这就是网络</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/flashsun/">
+                            <img src="https://pic.cnblogs.com/face/1096103/20210208200815.png" class="avatar" alt="博主头像" />
+                        </a>
+                    你是一台电脑，你的名字叫 A 很久很久之前，你不与任何其他电脑相连接，孤苦伶仃。 直到有一天，你希望与另一台电脑 B 建立通信，于是你们各开了一个网口，用一根网线连接了起来。 用一根网线连接起来怎么就能&quot;通信&quot;了呢？我可以给你讲 IO、讲中断、讲缓冲区，但这不是研究网络时该关心的问题。 如果你纠结， ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/flashsun/" class="post-item-author"><span>闪客sun</span></a>
+                <span class="post-meta-item">
+                    <span>2021-01-13 16:34</span>
+                </span>
+                <a id="digg_control_14266148" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('flashsun', 14266148, 328348, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_14266148">407</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/flashsun/p/14266148.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>115</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/flashsun/p/14266148.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>18941</span>
+                </a>
+                <span id="digg_tip_14266148" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="14089661">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/LiT-26647879-510087153/p/14089661.html" target="_blank">《Machine Learning in Action》—— 浅谈线性回归的那些事</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/LiT-26647879-510087153/">
+                            <img src="https://pic.cnblogs.com/face/1305181/20200309114004.png" class="avatar" alt="博主头像" />
+                        </a>
+                    tags:机器学习 《Machine Learning in Action》—— 浅谈线性回归的那些事 手撕机器学习算法系列文章已经肝了不少，自我感觉质量都挺不错的。目前已经更新了支持向量机SVM、决策树、K-近邻（KNN）、贝叶斯分类，读者可根据以下内容自行“充电”（持续更新中）： 《Machin ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/LiT-26647879-510087153/" class="post-item-author"><span>玩世不恭的Coder</span></a>
+                <span class="post-meta-item">
+                    <span>2020-12-05 14:48</span>
+                </span>
+                <a id="digg_control_14089661" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('LiT-26647879-510087153', 14089661, 460400, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_14089661">14</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/LiT-26647879-510087153/p/14089661.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>12</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/LiT-26647879-510087153/p/14089661.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>3847</span>
+                </a>
+                <span id="digg_tip_14089661" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="14048685">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/zkweb/p/14048685.html" target="_blank">写给程序员的机器学习入门 (九) - 对象识别 RCNN 与 Fast-RCNN</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/zkweb/">
+                            <img src="https://pic.cnblogs.com/face/881857/20160909151806.png" class="avatar" alt="博主头像" />
+                        </a>
+                    因为这几个月饭店生意恢复，加上研究 Faster-RCNN 用掉了很多时间，就没有更新博客了&#128054;。这篇开始会介绍对象识别的模型与实现方法，首先会介绍最简单的 RCNN 与 Fast-RCNN 模型，下一篇会介绍 Faster-RCNN 模型，再下一篇会介绍 YOLO 模型。 图片分类与对象识别 在前 ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/zkweb/" class="post-item-author"><span>q303248153</span></a>
+                <span class="post-meta-item">
+                    <span>2020-11-27 16:25</span>
+                </span>
+                <a id="digg_control_14048685" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('zkweb', 14048685, 263597, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_14048685">25</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/zkweb/p/14048685.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>11</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/zkweb/p/14048685.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>4673</span>
+                </a>
+                <span id="digg_tip_14048685" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="14030280">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/dennisj/p/14030280.html" target="_blank">速度提高几百倍，记一次数据结构在实际工作中的运用</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/dennisj/">
+                            <img src="https://pic.cnblogs.com/face/1368663/20201109134025.png" class="avatar" alt="博主头像" />
+                        </a>
+                    这段时间写了一堆源码解析，这篇文章想换换口味，跟大家分享一个我工作中遇到的案例。毕竟作为一个打工人，上班除了摸鱼看源码外，砖还是要搬的。本文会分享一个使用恰当的数据结构来进行性能优化，从而大幅提高响应速度的故事，提高有几百倍那么多。 事情是这样的，我现在供职一家外企，我们有一个给外国人用的线下卖货的 ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/dennisj/" class="post-item-author"><span>_蒋鹏飞</span></a>
+                <span class="post-meta-item">
+                    <span>2020-11-24 14:51</span>
+                </span>
+                <a id="digg_control_14030280" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('dennisj', 14030280, 481846, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_14030280">80</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/dennisj/p/14030280.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>67</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/dennisj/p/14030280.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>12865</span>
+                </a>
+                <span id="digg_tip_14030280" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="13947928">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/tcjiaan/p/13947928.html" target="_blank">说说 C# 9 新特性的实际运用</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/tcjiaan/">
+                            <img src="https://pic.cnblogs.com/face/367389/20201110105022.png" class="avatar" alt="博主头像" />
+                        </a>
+                    你一定会好奇：“老周，你去哪开飞机了？这么久没写博客了。” 老周：“我买不起飞机，开了个铁矿，挖了一年半的石头。谁知铁矿垮了，压死了几条蜈蚣，什么也没挖着。” 所以，这么丢死人的事，还是不要提了，爷爷从小教导我做人要低调…… 一转眼，.NET 5 要来了，同时也带来了 C# 9。遥想当年，老周刚接触 ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/tcjiaan/" class="post-item-author"><span>东邪独孤</span></a>
+                <span class="post-meta-item">
+                    <span>2020-11-09 18:14</span>
+                </span>
+                <a id="digg_control_13947928" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('tcjiaan', 13947928, 113198, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_13947928">57</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/tcjiaan/p/13947928.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>36</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/tcjiaan/p/13947928.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>9521</span>
+                </a>
+                <span id="digg_tip_13947928" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="13685179">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/lane_cn/p/13685179.html" target="_blank">从技术谈到管理，把系统优化的技术用到企业管理</a>
+                <p class="post-item-summary">
+                    很多技术人员在职业上对自己要求高，工作勤奋，承担越来越大的责任，最终得到信任，被提拔到管理岗位。但是往往缺乏专业的管理知识，在工作中不能从整体范围优化工作流程，仍然是“个人贡献者”的工作方式，遇到问题自己上，经常耽误了本职工作。于是翻了很多书，看了很多文章，学习了很多“为人处世的艺术”和“企业发展的 ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/lane_cn/" class="post-item-author"><span>小陆</span></a>
+                <span class="post-meta-item">
+                    <span>2020-09-17 14:55</span>
+                </span>
+                <a id="digg_control_13685179" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('lane_cn', 13685179, 7835, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_13685179">38</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/lane_cn/p/13685179.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>26</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/lane_cn/p/13685179.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>8276</span>
+                </a>
+                <span id="digg_tip_13685179" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="13665170">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/xuanyuan/p/13665170.html" target="_blank">还不懂Redis？看完这个故事就明白了！</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/xuanyuan/">
+                            <img src="https://pic.cnblogs.com/face/659280/20210228194243.png" class="avatar" alt="博主头像" />
+                        </a>
+                    我是Redis 你好，我是Redis，一个叫Antirez的男人把我带到了这个世界上。 说起我的诞生，跟关系数据库MySQL还挺有渊源的。 在我还没来到这个世界上的时候，MySQL过的很辛苦，互联网发展的越来越快，它容纳的数据也越来越多，用户请求也随之暴涨，而每一个用户请求都变成了对它的一个又一个读 ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/xuanyuan/" class="post-item-author"><span>轩辕之风</span></a>
+                <span class="post-meta-item">
+                    <span>2020-09-14 10:01</span>
+                </span>
+                <a id="digg_control_13665170" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('xuanyuan', 13665170, 193695, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_13665170">358</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/xuanyuan/p/13665170.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>105</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/xuanyuan/p/13665170.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>23975</span>
+                </a>
+                <span id="digg_tip_13665170" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="13599771">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/linianhui/p/objective-and-approach-of-software-design.html" target="_blank">[漫谈] 软件设计的目标和途径</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/linianhui/">
+                            <img src="https://pic.cnblogs.com/face/168328/20150531133029.png" class="avatar" alt="博主头像" />
+                        </a>
+                    记录一下笔者关于软件设计的一些相关认知。在开始之前，先引入两个概念目标和途径(这里可能会有些咬文嚼字，不过主要是为了区分主观和客观的一些细微差异)。 1 目标和途径 我们在做某一件事情的时候，总是会带有一定的目的性的：比如说一日三餐，是为了给身体补充所需的能量。那么这三餐具体如何落实呢，则会有多种多 ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/linianhui/" class="post-item-author"><span>blackheart</span></a>
+                <span class="post-meta-item">
+                    <span>2020-09-02 07:08</span>
+                </span>
+                <a id="digg_control_13599771" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('linianhui', 13599771, 77344, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_13599771">48</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/linianhui/p/objective-and-approach-of-software-design.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>28</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/linianhui/p/objective-and-approach-of-software-design.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>5944</span>
+                </a>
+                <span id="digg_tip_13599771" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="13409534">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/alchemystar/p/13409534.html" target="_blank">解Bug之路-Nginx 502 Bad Gateway </a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/alchemystar/">
+                            <img src="https://pic.cnblogs.com/face/1411116/20200524105009.png" class="avatar" alt="博主头像" />
+                        </a>
+                    解Bug之路-Nginx 502 Bad Gateway 前言 事实证明，读过Linux内核源码确实有很大的好处，尤其在处理问题的时刻。当你看到报错的那一瞬间，就能把现象/原因/以及解决方案一股脑的在脑中闪现。甚至一些边边角角的现象都能很快的反应过来是为何。笔者读过一些Linux TCP协议栈的源码 ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/alchemystar/" class="post-item-author"><span>无毁的湖光-Al</span></a>
+                <span class="post-meta-item">
+                    <span>2020-07-31 14:30</span>
+                </span>
+                <a id="digg_control_13409534" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('alchemystar', 13409534, 605890, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_13409534">56</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/alchemystar/p/13409534.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>42</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/alchemystar/p/13409534.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>9686</span>
+                </a>
+                <span id="digg_tip_13409534" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="12894711">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/xuanyuan/p/12894711.html" target="_blank">CPU瞒着内存竟干出这种事</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/xuanyuan/">
+                            <img src="https://pic.cnblogs.com/face/659280/20210228194243.png" class="avatar" alt="博主头像" />
+                        </a>
+                    还记得我吗，我是阿Q，CPU一号车间的那个阿Q。 今天忙里偷闲，来到厂里地址翻译部门转转，负责这项工作的小黑正忙得满头大汗。 看到我的到来，小黑指着旁边的座椅示意让我坐下。 坐了好一会儿，小黑才从工位上忙完转过身来，“实在不好意思阿Q，今天活太多，没来得及招待你” “刚忙什么呢，看你满头大汗的”，我 ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/xuanyuan/" class="post-item-author"><span>轩辕之风</span></a>
+                <span class="post-meta-item">
+                    <span>2020-05-15 14:22</span>
+                </span>
+                <a id="digg_control_12894711" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('xuanyuan', 12894711, 193695, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_12894711">113</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/xuanyuan/p/12894711.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>39</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/xuanyuan/p/12894711.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>15474</span>
+                </a>
+                <span id="digg_tip_12894711" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="12866824">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/huangxincheng/p/12866824.html" target="_blank">不要把异常当做业务逻辑，这性能可能你无法承受</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/huangxincheng/">
+                            <img src="https://pic.cnblogs.com/face/214741/20200614104537.png" class="avatar" alt="博主头像" />
+                        </a>
+                    一：背景 1. 讲故事 在项目中摸爬滚打几年，应该或多或少的见过有人把异常当做业务逻辑处理的情况(┬＿┬)，比如说判断一个数字是否为整数,就想当然的用try catch 包起来，再进行 int.Parse，如果抛异常就说明不是整数，简单粗暴，也不需要写正则或者其他逻辑，再比如一个字符串强制转化为En ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/huangxincheng/" class="post-item-author"><span>一线码农</span></a>
+                <span class="post-meta-item">
+                    <span>2020-05-11 07:30</span>
+                </span>
+                <a id="digg_control_12866824" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('huangxincheng', 12866824, 85195, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_12866824">105</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/huangxincheng/p/12866824.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>71</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/huangxincheng/p/12866824.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>18338</span>
+                </a>
+                <span id="digg_tip_12866824" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="12310669">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/techflow/p/12310669.html" target="_blank">大数据算法——布隆过滤器</a>
+                <p class="post-item-summary">
+                    本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天的文章和大家一起来学习大数据领域一个经常用到的算法——布隆过滤器。如果看过《数学之美》的同学对它应该并不陌生，它经常用在集合的判断上，在海量数据的场景当中用来快速地判断某个元素在不在一个庞大的集合当中。它的原理不难，但是设计非常巧妙 ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/techflow/" class="post-item-author"><span>TechFlow2019</span></a>
+                <span class="post-meta-item">
+                    <span>2020-02-15 09:22</span>
+                </span>
+                <a id="digg_control_12310669" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('techflow', 12310669, 569749, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_12310669">46</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/techflow/p/12310669.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>32</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/techflow/p/12310669.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>13115</span>
+                </a>
+                <span id="digg_tip_12310669" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+    <article class="post-item" data-post-id="12221622">
+        <section class="post-item-body">
+            <div class="post-item-text">
+                <a class="post-item-title" href="https://www.cnblogs.com/alisystemsoftware/p/12221622.html" target="_blank">为什么 K8s 在阿里能成功？| 问底中国 IT 技术演进</a>
+                <p class="post-item-summary">
+                        <a href="https://www.cnblogs.com/alisystemsoftware/">
+                            <img src="https://pic.cnblogs.com/face/1411156/20180531141029.png" class="avatar" alt="博主头像" />
+                        </a>
+                    作者： 曾凡松 阿里云云原生应用平台高级技术专家 张振 阿里云云原生应用平台高级技术专家 导读 ：本文描述了阿里巴巴在容器管理领域的技术演进历程，解读了为什么 K8s 最终能够大获成功的原因，以及到今年 双11 阿里巴巴内部的 K8s 应用情况。内容着重描述了阿里巴巴基于 K8s 的云原生改造实践过 ...
+                </p>
+            </div>
+            <footer class="post-item-foot">
+                <a href="https://www.cnblogs.com/alisystemsoftware/" class="post-item-author"><span>阿里巴巴云原生</span></a>
+                <span class="post-meta-item">
+                    <span>2020-01-21 14:27</span>
+                </span>
+                <a id="digg_control_12221622" class="post-meta-item btn " href="javascript:void(0)" onclick="DiggPost('alisystemsoftware', 12221622, 435351, 1);return false;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_digg"></use>
+                    </svg>
+                    <span id="digg_count_12221622">24</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/alisystemsoftware/p/12221622.html#commentform">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_comment"></use>
+                    </svg>
+                    <span>11</span>
+                </a>
+                <a class="post-meta-item btn" href="https://www.cnblogs.com/alisystemsoftware/p/12221622.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#icon_views"></use>
+                    </svg>
+                    <span>13725</span>
+                </a>
+                <span id="digg_tip_12221622" class="digg-tip" style="color: red"></span>
+            </footer>
+        </section>
+        <figure>
+        </figure>
+    </article>
+
+
+                        </div>
+                        <script type="text/javascript">
+                        var aggSiteModel = {"CategoryType":"Picked","ParentCategoryId":0,"CategoryId":-2,"PageIndex":1,"TotalPostCount":1635,"ItemListActionName":"AggSitePostList"};
+                        </script>
+                        <div id="pager_bottom">
+<div id="paging_block"><div class="pager"><a href="/pick/" class="p_1 current" onclick="aggSite.loadCategoryPostList(1,20);buildPaging(1);return false;">1</a><a href="/pick/2/" class="p_2 middle" onclick="aggSite.loadCategoryPostList(2,20);buildPaging(2);return false;">2</a><a href="/pick/3/" class="p_3 middle" onclick="aggSite.loadCategoryPostList(3,20);buildPaging(3);return false;">3</a><span class="ellipsis">···</span><a href="/pick/82/" class="p_82 last" onclick="aggSite.loadCategoryPostList(82,20);buildPaging(82);return false;">82</a><a href="/pick/2/" onclick="aggSite.loadCategoryPostList(2,20);buildPaging(2);return false;">&gt;</a></div></div><script type="text/javascript">var pagingBuider={"OnlyLinkText":false,"TotalCount":1635,"PageIndex":1,"PageSize":20,"ShowPageCount":1,"SkipCount":0,"UrlFormat":"/pick/{0}/","OnClickJsFunc":"aggSite.loadCategoryPostList()","FirstPageLink":"/pick/","AjaxUrl":"/AggSite/Pager","AjaxCallbak":null,"TopPagerId":"pager_top","IsRenderScript":true};function buildPaging(pageIndex){pagingBuider.PageIndex=pageIndex;$.ajax({url:pagingBuider.AjaxUrl,data:JSON.stringify(pagingBuider),type:'post',dataType:'text',contentType:'application/json; charset=utf-8',success:function (data) { $('#paging_block').html(data); var pagerTop=$('#pager_top');if(pageIndex>1){$(pagerTop).html(data).show();}else{$(pagerTop).hide();}}});}</script>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="side_right" class="side-right card-list sidebar">
+                    <div id="cnblogs_b1" class="sidebar-image"></div>
+                    <div id="sidebar_bh" class="sidebar-bh"></div>
+                </div>
+            </div>
         </div>
-        <!-- / end标语 -->
+        <footer id="footer" class="footer">
+            <div id="friend_link" class="link-list friend-link">
+    友情链接：
+    <a href="//www.vpsor.cn" target="_blank">硅云</a>
+    <a href="//aws.amazon.com" target="_blank">AWS</a>
+    <a href="//www.aliyun.com" target="_blank">阿里云</a>
+    <a href="//www.zentao.net/?from=upcnblogs" target="_blank">禅道项目管理</a>
+    <a href="//cloud.tencent.com" target="_blank">腾讯云</a>
+    <a href="//www.huaweicloud.com" target="_blank">华为云</a>
+    <a href="//cloud.baidu.com" target="_blank">百度云</a>
+    <a href="//www.jdcloud.com" target="_blank">京东云</a>
+    <a href="//www.shanhaibi.com/" target="_blank">山海鲸可视化</a>
+    <a href="http://www.gcpowertools.com.cn" target="_blank">葡萄城控件</a><a href="//www.chinaz.com/" target="_blank">站长之家</a><a href="http://dev.yesky.com" target="_blank">天极网</a><a href="//wetest.qq.com/?from=links_cnblogs" target="_blank">腾讯WeTest</a><a href="http://www.ucancode.com/" target="_blank">工控组态源码</a>
+</div>
 
-        <!-- 导航切换 -->
-        <div class="tab-box">
-            <a href="javascript:void(0)" class="btn position-ab"><b>展开</b><i class="up"></i></a>
-        </div>
-        <!-- / end导航切换 -->
-
-        <!-- 对话列表 -->
-        <div class="list-box">	
-        </div>
-        <!-- / end对话列表 -->
-
-        <!-- 结束语 -->
-        <div class="banner-box end-remarks">
-            <div class="header_bg"></div>
-            <div class="end-tlt">结束语</div>
-            <p class="p-text">3月15日上午，国务院总理李克强会见采访十二届全国人大五次会议的中外记者并回答提问。在谈及消费者权益保护时，李克强表示我和大家都是消费者，都需要权益保护，用网络语言说：我们要给优质产品“点赞”，把不良奸商“拉黑”。大家共同努力，让我们的优质产品一天一天多起来，让我们的生活一年比一年好。</p>
-            <img src="http://simg.sinajs.cn/products/news/items/2017/premier-conference/img/loading_sinanews.png">
-        </div>
-        <!-- / end结束语 -->
-
-        <!-- 遮罩层 -->
-        <div class="layer" id="layer">
-            <a href="javascripe:void(0)" class="closed"></a>
-        </div>
-        <!-- / end遮罩层 -->
-        <div class="backtop hiden "></div>
-        </div>
-        <!-- / end contents -->
-        <script src="http://n.sinaimg.cn/news/libs/zepto.20161223.js" charset="utf-8"></script>
-    <script type="text/javascript" src="http://simg.sinajs.cn/products/news/items/2017/premier-conference/js/vender.js?ver=1.2"></script><script type="text/javascript" src="http://simg.sinajs.cn/products/news/items/2017/premier-conference/js/index.js?ver=1.2"></script><!-- body code begin -->
-<script type="text/javascript">
-(function(){
-    if(window.top !== window.self || window._thereIsNoRealTimeMessage){return};
-    var script = document.createElement('script');
-    script.setAttribute('charset', 'gb2312');
-    script.src = 'http://news.sina.com.cn/js/694/2012/0830/realtime.js?ver=1.5.1';
-    document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-
-<!-- SSO_UPDATECOOKIE_START -->
-<script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.q=function(b){if(typeof b!="object"){return""}var a=new Array();for(key in b){a.push(key+"="+encodeURIComponent(b[key]))}return a.join("&")};sinaSSOManager.es=function(f,d,e){var c=document.getElementsByTagName("head")[0];var a=document.getElementById(f);if(a){c.removeChild(a)}var b=document.createElement("script");if(e){b.charset=e}else{b.charset="gb2312"}b.id=f;b.type="text/javascript";d+=(/\?/.test(d)?"&":"?")+"_="+(new Date()).getTime();b.src=d;c.appendChild(b)};sinaSSOManager.doCrossDomainCallBack=function(a){sinaSSOManager.crossDomainCounter++;document.getElementsByTagName("head")[0].removeChild(document.getElementById(a.scriptId))};sinaSSOManager.crossDomainCallBack=function(a){if(!a||a.retcode!=0){return false}var d=a.arrURL;var b,f;var e={callback:"sinaSSOManager.doCrossDomainCallBack"};sinaSSOManager.crossDomainCounter=0;if(d.length==0){return true}for(var c=0;c<d.length;c++){b=d[c];f="ssoscript"+c;e.scriptId=f;b=b+(/\?/.test(b)?"&":"?")+sinaSSOManager.q(e);sinaSSOManager.es(f,b)}};sinaSSOManager.updateCookieCallBack=function(c){var d="ssoCrossDomainScriptId";var a="http://login.sina.com.cn/sso/crossdomain.php";if(c.retcode==0){var e={scriptId:d,callback:"sinaSSOManager.crossDomainCallBack",action:"login",domain:"sina.com.cn"};var b=a+"?"+sinaSSOManager.q(e);sinaSSOManager.es(d,b)}else{}};sinaSSOManager.updateCookie=function(){var g=1800;var p=7200;var b="ssoLoginScript";var h=3600*24;var i="sina.com.cn";var m=1800;var l="http://login.sina.com.cn/sso/updatetgt.php";var n=null;var f=function(e){var r=null;var q=null;switch(e){case"sina.com.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"sina.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"51uc.com":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break}return r};var j=function(){try{return f(i)}catch(e){return null}};try{if(g>5){if(n!=null){clearTimeout(n)}n=setTimeout("sinaSSOManager.updateCookie()",g*1000)}var d=j();var c=(new Date()).getTime()/1000;var o={};if(d==null){o={retcode:6102}}else{if(d<c){o={retcode:6203}}else{if(d-h+m>c){o={retcode:6110}}else{if(d-c>p){o={retcode:6111}}}}}if(o.retcode!==undefined){return false}var a=l+"?callback=sinaSSOManager.updateCookieCallBack";sinaSSOManager.es(b,a)}catch(k){}return true};sinaSSOManager.updateCookie();</script>
-<!-- SSO_UPDATECOOKIE_END -->
-
-<!-- Start  Wrating  -->
-<script language="javascript">
-var wrUrl="//sina.wrating.com/";var wrDomain="sina.com.cn";var wratingDefaultAcc="860010-0323010000";var wratingAccArray={"history.sina.com.cn":"860010-0334010000","health.sina.com.cn":"860010-0330010000","fashion.sina.com.cn":"860010-0311010000","collection.sina.com.cn":"860010-0331010000","2014.sina.com.cn":"860010-0308160000","2012.sina.com.cn":"860010-0308150000","torch.2008.sina.com.cn":"860010-0308070000","video.sina.com.cn":"860010-0309010000","ent.sina.com.cn":"860010-0312010000","tech.sina.com.cn":"860010-0313010000","mobile.sina.com.cn":"860010-0313020000","house.sina.com.cn":"860010-0315010000","bj.house.sina.com.cn":"860010-0315020000","auto.sina.com.cn":"860010-0316010000","eladies.sina.com.cn":"860010-0317010000","woman.sina.com.cn":"860010-0317010000","games.sina.com.cn":"860010-0318010000","edu.sina.com.cn":"860010-0307010000","baby.sina.com.cn":"860010-0320010000","astro.sina.com.cn":"860010-0321020000","news.sina.com.cn":"860010-0310010000","weather.news.sina.com.cn":"860010-0310020000","mil.news.sina.com.cn":"860010-0310030000","www.sina.com.cn":"860010-0322010000","home.sina.com.cn":"860010-0322010000","sports.sina.com.cn":"860010-0308010000","shidefc.sina.com.cn":"860010-0308020000","weiqi.sina.com.cn":"860010-0308030000","f1.sina.com.cn":"860010-0308040000","golf.sina.com.cn":"860010-0308050000","2002.sina.com.cn":"860010-0308060000","2004.sina.com.cn":"860010-0308060000","2006.sina.com.cn":"860010-0308060000","2008.sina.com.cn":"860010-0308070000","yayun2002.sina.com.cn":"860010-0308060000","yayun2006.sina.com.cn":"860010-0308060000","book.sina.com.cn":"860010-0319010000","cul.book.sina.com.cn":"860010-0319020000","comic.book.sina.com.cn":"860010-0319030000","finance.sina.com.cn":"860010-0314010000","money.sina.com.cn":"860010-0314020000","yue.sina.com.cn":"860010-0324010000","www.sina.com":"860010-0322010000"};function vjTrack(){var U=1800;var T=false;var S=false;var R="";var Q="0";var P="";var N;var L;var K;var J;var I;var H="expires=Fri, 1 Jan 2038 00:00:00 GMT;";var G=0;if(document.location.protocol=="file:"){return }T=navigator.cookieEnabled?"1":"0";S=navigator.javaEnabled()?"1":"0";var F="0";var E;var C=-1;var D=document.cookie;if(T=="1"){C=D.indexOf("vjuids=");if(C<0){E=vjVisitorID();document.cookie="vjuids="+escape(E)+";"+H+";domain="+wrDomain+";path=/;";if(document.cookie.indexOf("vjuids=")<0){T="0"}else{Q="1"}}else{E=vjGetCookie("vjuids")}}L=document.referrer;if(!L||L==""){L=""}R=vjFlash();if(self.screen){N=screen.width+"x"+screen.height+"x"+screen.colorDepth}else{if(self.java){var M=java.awt.Toolkit.getDefaultToolkit();var O=M.getScreenSize();N=O.width+"x"+O.height+"x0"}}if(navigator.language){K=navigator.language.toLowerCase()}else{if(navigator.browserLanguage){K=navigator.browserLanguage.toLowerCase()}else{K="-"}}I="";var B;var X;X=new Date();J=X.getTimezoneOffset()/-60;J=X.getTimezoneOffset()/-60;B="&s="+N+"&l="+K+"&z="+J+"&j="+S+"&f="+R;if(T=="1"){C=document.cookie.indexOf("vjlast=");if(C<0){G=0}else{G=parseInt(vjGetCookie("vjlast"))}}if((X.getTime()/1000)-G>U){F="1";document.cookie="vjlast="+Math.round(X.getTime()/1000)+";"+H+";domain="+wrDomain+";path=/;"}if(L!=""){B=B+"&r="+escape(L)}if(F!="0"){B=B+"&n="+G}if(Q!="0"){B=B+"&u="+Q}var V;var A=vjGetAcc();var W=vjGetDomain();V=wrUrl+"a.gif?a="+X.getTime().toString(16)+"&t="+escape(I)+"&i="+escape(E)+"&b="+escape(document.location)+"&c="+A+B+"&ck="+W;document.write('<img src="'+V+'" width="1" height="1" style="visibility:hidden;position:absolute;left:0px;top:0px;z-index:-1" />')}function vjGetAcc(){var B=document.location.toString().toLowerCase();var C=(B.split("/"))[2];var A=wratingAccArray[C];if(typeof (A)=="undefined"){A=wratingDefaultAcc}return A}function vjFlash(){var _wr_f="-",_wr_n=navigator;if(_wr_n.plugins&&_wr_n.plugins.length){for(var ii=0;ii<_wr_n.plugins.length;ii++){if(_wr_n.plugins[ii].name.indexOf("Shockwave Flash")!=-1){_wr_f=_wr_n.plugins[ii].description.split("Shockwave Flash ")[1];break}}}else{if(window.ActiveXObject){for(var ii=10;ii>=2;ii--){try{var fl=eval("new ActiveXObject('ShockwaveFlash.ShockwaveFlash."+ii+"');");if(fl){_wr_f=ii+".0";break}}catch(e){}}}}return _wr_f}function vjHash(B){if(!B||B==""){return 0}var D=0;for(var C=B.length-1;C>=0;C--){var A=parseInt(B.charCodeAt(C));D=(D<<5)+D+A}return D}function vjVisitorID(){var B=vjHash(document.location+document.cookie+document.referrer).toString(16);var A;A=new Date();return B+"."+A.getTime().toString(16)+"."+Math.random().toString(16)}function vjGetCookieVal(B){var A=document.cookie.indexOf(";",B);if(A==-1){A=document.cookie.length}return unescape(document.cookie.substring(B,A))}function vjGetCookie(C){var B=C+"=";var F=B.length;var A=document.cookie.length;var E=0;while(E<A){var D=E+F;if(document.cookie.substring(E,D)==B){return vjGetCookieVal(D)}E=document.cookie.indexOf(" ",E)+1;if(E==0){break}}return null}function vjGetDomain(){var A=0;try{if(window.self.parent!=self){var D=/sina.com/i;var C=document.location.toString().toLowerCase();var B=parent.location.toString().toLowerCase();if(D.test(C)&&D.test(B)){A=1}}}catch(e){A=1}return A}vjTrack();
-</script>
-<!-- End Wrating-->
-<!-- start dmp -->
-<script type="text/javascript">
-(function(d, s, id) {
-var n = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-s = d.createElement(s);
-s.id = id;
-s.setAttribute('charset', 'utf-8');
-s.src = '//d' + Math.floor(0 + Math.random() * (8 - 0 + 1)) + '.sina.com.cn/litong/zhitou/sinaads/src/spec/sinaads_ck.js';
-n.parentNode.insertBefore(s, n);
-})(document, 'script', 'sinaads-ck-script');
-</script>
-<!-- end dmp -->
-<!-- body code end -->
-
-<!-- body code begin -->
-
-<!-- SSO_UPDATECOOKIE_START -->
-<script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.q=function(b){if(typeof b!="object"){return""}var a=new Array();for(key in b){a.push(key+"="+encodeURIComponent(b[key]))}return a.join("&")};sinaSSOManager.es=function(f,d,e){var c=document.getElementsByTagName("head")[0];var a=document.getElementById(f);if(a){c.removeChild(a)}var b=document.createElement("script");if(e){b.charset=e}else{b.charset="gb2312"}b.id=f;b.type="text/javascript";d+=(/\?/.test(d)?"&":"?")+"_="+(new Date()).getTime();b.src=d;c.appendChild(b)};sinaSSOManager.doCrossDomainCallBack=function(a){sinaSSOManager.crossDomainCounter++;document.getElementsByTagName("head")[0].removeChild(document.getElementById(a.scriptId))};sinaSSOManager.crossDomainCallBack=function(a){if(!a||a.retcode!=0){return false}var d=a.arrURL;var b,f;var e={callback:"sinaSSOManager.doCrossDomainCallBack"};sinaSSOManager.crossDomainCounter=0;if(d.length==0){return true}for(var c=0;c<d.length;c++){b=d[c];f="ssoscript"+c;e.scriptId=f;b=b+(/\?/.test(b)?"&":"?")+sinaSSOManager.q(e);sinaSSOManager.es(f,b)}};sinaSSOManager.updateCookieCallBack=function(c){var d="ssoCrossDomainScriptId";var a="http://login.sina.com.cn/sso/crossdomain.php";if(c.retcode==0){var e={scriptId:d,callback:"sinaSSOManager.crossDomainCallBack",action:"login",domain:"sina.com.cn"};var b=a+"?"+sinaSSOManager.q(e);sinaSSOManager.es(d,b)}else{}};sinaSSOManager.updateCookie=function(){var g=1800;var p=7200;var b="ssoLoginScript";var h=3600*24;var i="sina.com.cn";var m=1800;var l="http://login.sina.com.cn/sso/updatetgt.php";var n=null;var f=function(e){var r=null;var q=null;switch(e){case"sina.com.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"sina.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"51uc.com":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break}return r};var j=function(){try{return f(i)}catch(e){return null}};try{if(g>5){if(n!=null){clearTimeout(n)}n=setTimeout("sinaSSOManager.updateCookie()",g*1000)}var d=j();var c=(new Date()).getTime()/1000;var o={};if(d==null){o={retcode:6102}}else{if(d<c){o={retcode:6203}}else{if(d-h+m>c){o={retcode:6110}}else{if(d-c>p){o={retcode:6111}}}}}if(o.retcode!==undefined){return false}var a=l+"?callback=sinaSSOManager.updateCookieCallBack";sinaSSOManager.es(b,a)}catch(k){}return true};sinaSSOManager.updateCookie();</script>
-<!-- SSO_UPDATECOOKIE_END -->
-
-<!-- body code end -->
-
+            <div class="footer-splitter"></div>
+            <div id="footer_bottom">
+                <div class="poweredby">Powered by .NET 5.0 on Kubernetes</div>
+                <div class="about"><a href="//about.cnblogs.com/">关于博客园</a><a href="//about.cnblogs.com/contact">联系我们</a><a href="//about.cnblogs.com/ad">广告服务</a><a href="//about.cnblogs.com/brandzone">专区合作</a><span>&copy;2004-2021</span><a href="https://www.cnblogs.com/">博客园</a><span>保留所有权利</span><a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备09004260号-1</a></div>
+                <div class="beian"><a href="https://ss.knet.cn/verifyseal.dll?sn=e131108110100433392itm000000&amp;ct=df&amp;a=1&amp;pa=0.25787803245785335" rel="nofollow" target="_blank"><img id="cnnic_img" src="//common.cnblogs.com/images/cnnic.png" alt="" width="64" height="23" /></a><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502001144" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="//common.cnblogs.com/images/ghs.png" alt="" /><span style="float:left;height:20px;line-height:20px;margin: 0 5px 0 5px;">沪公网安备 31011502001144号</span></a></div>
+                <div class="report-contact">举报电话：0571-88079867，举报邮箱：contact@cnblogs.com <a href="http://www.shjbzx.cn" target="_blank"><img src="/images/jblogo.png?v=20200730" alt="" /></a></div>
+                <div clas="weixin-mp">
+                    <img src="https://img2020.cnblogs.com/blog/35695/202011/35695-20201110200531630-9844.png" alt="" style="width:50px;" />
+                    <p>博客园公众号</p>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjtzk9dlU2qrAjnnFSF2BNOYu7hEnuw3EVrrh1WX5zjOnJuDSbVzsqXKVkcmSu2n5PDN_wE9Fb4rBvx-eRy28X1ia1nj_tAzfAOjgWljdpMF2OHuy_VD5dZSvWZRC08wXpI" />
 </body>
-
 </html>

@@ -30,9 +30,8 @@ namespace SimpleCrawler
 
         private string startUrl = "http://www.cnblogs.com/dstang2000/";
         private string Host;
-        private Regex crawlNext = new Regex(@".*(.html|.htm|.jsp|.aspx)?$");    //判断网页格式 
-        // private Regex urlContent = new Regex(@"^(?:([A-Za-z]+):)?(\/{,})([-.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$");
-        private Regex urlContent = new Regex(@"(?<url>http(s)?://(?<host>([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?))(?<type>.*(.html|.htm|.jsp|.aspx)?$)");
+        private Regex crawlNext = new Regex("((.html?|.aspx|.jsp|.php)$|^[^.]+$)");    //判断网页格式 
+        private Regex urlContent = new Regex(@"^(?<site>(?<protocal>https?)://(?<host>[\w.-]+)(:\d+)?($|/))(\w+/)*(?<type>[^#?]*)");
         private Hashtable urls = new Hashtable();
         private int count = 0;
 
@@ -75,7 +74,6 @@ namespace SimpleCrawler
                 {
                     urls[current] = true; count++;
                     string html = DownLoad(current); // 下载
-                    // 当爬取html等网页时才解析并加入新链接
                     Parse(html, current);
                     if (find) current = "爬取成功: " + current;
                 }
@@ -118,29 +116,34 @@ namespace SimpleCrawler
             foreach (Match match in matches)
             {
                 strRef = match.Value.Substring(match.Value.IndexOf('=') + 1).Trim('"', '\"', '#', '>');
-                if (strRef.Length == 0) continue;
+                if (strRef.Length == 0 || strRef.StartsWith("javascript:")) continue;
 
                 strRef = CompletURL(strRef, baseURL);
                 string currentHost = urlContent.Match(strRef).Groups["host"].Value;
-                if (Regex.IsMatch(currentHost, Host) && crawlNext.IsMatch(strRef) && urls[strRef] == null) urls[strRef] = false;
+                string currentFileType = urlContent.Match(strRef).Groups["type"].Value;
+                if (Regex.IsMatch(currentHost, Host) && crawlNext.IsMatch(currentFileType) && urls[strRef] == null) urls[strRef] = false;
             }
         }
 
         private string CompletURL(string url, string baseURL)
         {
             if (url.Contains("://")) return url;
-            else if (url.StartsWith("//")) return "https:" + url;
+            else if (url.StartsWith("//"))
+            {
+                MatchCollection matches = urlContent.Matches(baseURL);
+                return matches[matches.Count - 1].Groups["protocal"].Value + ":" + url;
+            }
             else if (url.StartsWith("/"))
             {
                 MatchCollection matches = urlContent.Matches(baseURL);
-                string baseUrl = matches[0].Value;
-                return baseURL + (baseUrl.EndsWith("/") ? url.Substring(1) : url);
+                string site = matches[matches.Count - 1].Groups["site"].Value;
+                return site + (site.EndsWith("/")?url.Substring(1):url);
             }
             else if (url.StartsWith("./")) return CompletURL(url.Substring(2), baseURL);
             else if (url.StartsWith("../"))
             {
-                int lastIndex = baseURL.LastIndexOf("/");
-                return CompletURL(url, baseURL.Substring(0, lastIndex));
+                int lastIndex = baseURL.Substring(3).LastIndexOf("/");
+                return CompletURL(url, baseURL.Substring(0, 3 + lastIndex));
             }
             int idx = baseURL.LastIndexOf("/");
             return baseURL.Substring(0, idx) + "/" + url;

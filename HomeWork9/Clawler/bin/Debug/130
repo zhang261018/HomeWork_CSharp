@@ -4,46 +4,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="origin-when-crossorigin" />
-    
-    
+    <meta name="description" content="源码分析Gateway断言、过滤器加载" />
+    <meta property="og:description" content="源码分析Gateway断言、过滤器加载" />
     <meta http-equiv="Cache-Control" content="no-transform" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>2005 年 3月 5 日 随笔档案 - 拓荒者 - 博客园</title>
+    <title>源码分析SpringCloud Gateway如何加载断言（predicates）与过滤器（filters） - 努力的小雨 - 博客园</title>
     <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
     
     <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
-    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=9x2ZP2K8SSBJowZA6xv0D5FvOmlvd5g21u0NBEAEwfQ" />
+    <link id="MainCss" rel="stylesheet" href="/skins/coffee/bundle-coffee.min.css?v=BgguPR_JbmA1HKLJOLqLtHq5pt8a1UlO6ibCA_xgwdI" />
     
-    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=xFiYH0_zTHqf_pk9Nf2PvR4VdQ1qJnJcRVcot-VdM-8" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/coffee/bundle-coffee-mobile.min.css?v=gcYNuAuJkNMICFERxhZCtKHGitYmBYNTxm9W97H2O2g" />
     
-    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/dstang2000/rss" />
-    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/dstang2000/rsd.xml" />
-    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/dstang2000/wlwmanifest.xml" />
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/guoxiaoyu/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/guoxiaoyu/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/guoxiaoyu/wlwmanifest.xml" />
     <script>
-        var currentBlogId = 9986;
-        var currentBlogApp = 'dstang2000';
+        var currentBlogId = 438774;
+        var currentBlogApp = 'guoxiaoyu';
         var cb_enable_mathjax = false;
         var isLogined = false;
         var isBlogOwner = false;
-        var skinName = 'AnotherEon001';
+        var skinName = 'coffee';
         var visitorUserId = '';
     </script>
+        <script>
+            var currentPostDateAdded = '2021-05-08 05:06';
+        </script>
     <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
-    <script src="/js/blog-common.min.js?v=yJQaJ16S00coMfzvh-NgF2zm2J87f5VfNamFdsnKHrc"></script>
+    <script src="/js/blog-common.min.js?v=2Mic1VLeHXarpdzASbXqFMIMVLEBiWXNO5yiTHUcmhw"></script>
     
     
     
 </head>
-<body class="has-navbar has-bannerbar">
+<body class="has-navbar">
     <a name="top"></a>
-        <a target="_blank" href="https://www.aliyun.com/minisite/goods?userCode=swh7dvlt" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-cps-blog-bannerbar-pc')">
-            <div class="bannerbar aliyun forpc" style="background-size: contain;background-image: url(https://img2020.cnblogs.com/blog/35695/202104/35695-20210428221933214-737067094.jpg)">
-            </div>
-        </a>
         <div id="bannerbar" class="bannerbar-mobile formobile">
-            <a href="https://www.aliyun.com/minisite/goods?userCode=swh7dvlt" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-cps-blog-bannerbar-mobile')">
-                <img src="https://img2020.cnblogs.com/blog/35695/202104/35695-20210428213541700-642740375.jpg" alt="" />
+            <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-blog-bannerbar-mobile')">
+                <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
             </a>
         </div>
     <div id="top_nav" class="navbar forpc">
@@ -99,149 +98,391 @@
     </div>
 
     
-    <div id="wrapper">
-<div id="header">
-
-<div id="top">
-<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/dstang2000/">拓荒者 dstang2000 <a href="http://www.dstang.com"><font size=-1 color=red>http://www.dstang.com</font></a>
-</h1>
-<div id="subtitle">KISS：Keeping things that work，Improve systems procedures styles，Start things of value，Stop things of no value </div>
-</div>
-<div id="sub"><div id="blog_stats_place_holder"><script>loadBlogStats();</script></div></div>
-
-
-
-
-</div>
-<div id="main_container">
-<div id="main_content">
-<div id="content">
-	
-        <!--done-->
-
-<p class="date">
-	<span>		  
-	<a>2005年3月5日</a>
-	</span>
-</p>
-
-    <div class="post">
-        <h2>
-            
-
-<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/dstang2000/archive/2005/03/05/113513.html">
-    <span>
-        分不清正数负数，是我错了，还是VS.NET错了
-    </span>
     
-
-
-
-</a>
-
-        </h2>
-        <div class="postbody">
-            
-
-    <div class="c_b_p_desc">
-摘要：三年前做的一个ASP.NET的项目（www.SurveyStar.net），一直运行好好的， 前几天，客户打电话来说，出了问题。 反复跟踪，发现是一个正数、负数的判断与ToString()的问题。 将问题简化后，源程序可表示为只有4句的程序，如下： class&#160;Test { &#160;&#160;&#160;&#160;static&#160;void&#160;Main() &#16...        <a href="https://www.cnblogs.com/dstang2000/archive/2005/03/05/113513.html" class="c_b_p_desc_readmore">阅读全文</a>
-    </div>
-
-        </div>
-        <p class="postfoot">
-            posted @ 2005-03-05 14:45
-拓荒者
-<span data-post-id="113513" class="post-view-count">阅读(2655)</span> 
-<span data-post-id="113513" class="post-comment-count">评论(5)</span> 
-<span data-post-id="113513" class="post-digg-count">推荐(1)</span> 
-<a href="https://i.cnblogs.com/EditPosts.aspx?postid=113513" rel="nofollow">
-    编辑
-</a>
-
-        </p>
-    </div>
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a href="https://www.cnblogs.com/guoxiaoyu/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/guoxiaoyu/">努力的小雨</a>
+</h1>
+<h2>活出自己的样子</h2>
 
 
 
 
-</div>
-</div>
-<div id="leftmenu">
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+</div><!--end: header 头部 -->
 
-
-<h3>导航</h3>
-<ul>
-    <li>
-        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="navigator">
+			
+<ul id="navList">
+	<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
 博客园</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/dstang2000/">
+</li>
+	<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/guoxiaoyu/">
 首页</a>
-
-    </li>
-    <li>
-        
+</li>
+	<li>
 
 <a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
 新随笔</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%8B%93%E8%8D%92%E8%80%85">
-联系</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/dstang2000/rss/">
-订阅</a>
-        
-<a id="blog_nav_rss_image" href="https://www.cnblogs.com/dstang2000/rss/">
-    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
-</a>
-    </li>
-    <li>
-        
+</li>
+	<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%8A%AA%E5%8A%9B%E7%9A%84%E5%B0%8F%E9%9B%A8">
+联系</a></li>
+	<li>
 <a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
 管理</a>
-
-    </li>
+</li>
+	<li>
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/guoxiaoyu/rss/">
+订阅</a>
+	
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/guoxiaoyu/rss/">
+    <img src="/skins/coffee/images/xml.gif" alt="订阅" />
+</a></li>
 </ul>
 
 
-<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
-<div id="sidebar_news" class="newsItem">
+
+			<div class="blogStats">
+				
+				<div id="blog_stats_place_holder"><script>loadBlogStats();</script></div>
+				
+			</div><!--end: blogStats -->
+		</div><!--end: navigator 博客导航栏 -->
+		<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class = "postTitle">
+			
+<a id="cb_post_title_url" class="postTitle2 vertical-middle" href="https://www.cnblogs.com/guoxiaoyu/p/14735706.html">
+    <span>源码分析SpringCloud Gateway如何加载断言（predicates）与过滤器（filters）</span>
+    
+
+
+
+</a>
+
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			    <div id="cnblogs_post_description" style="display: none">
+        源码分析Gateway断言、过滤器加载
+    </div>
+<div id="cnblogs_post_body" class="blogpost-body blogpost-body-html">
+<p>　　<span style="font-size: 18px">我们今天的主角是Gateway网关，一听名字就知道它基本的任务就是去分发路由。根据不同的指定名称去请求各个服务，下面是Gateway官方的解释：</span></p>
+<p><span style="font-size: 18px"><a href="https://spring.io/projects/spring-cloud-gateway" target="_blank">https://spring.io/projects/spring-cloud-gateway</a>，其他的博主就不多说了，大家多去官网看看，只有官方的才是最正确的，回归主题，我们的过滤器与断言如何加载进来的，并且是如何进行对请求进行过滤的。</span></p>
+<p><span style="font-size: 18px">　　大家如果对SpringBoot自动加载的熟悉的话，一定知道要看一个代码的源码，要找到META-INF下的spring.factories，具体为啥的博主就不多说了，网上也有很多讲解自动加载的源码分析，今天就讲解Gateway，所有项目三板斧：加依赖、写注解、弄配置</span></p>
+<p><span style="font-size: 18px">　　依赖：</span></p>
+<div class="cnblogs_code">
+<pre>&lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-gateway&lt;/artifactId&gt;
+        &lt;/dependency&gt;</pre>
+</div>
+<p><span style="font-size: 18px">　　注解：启动类上需要添加</span><span style="font-size: 18px">@EnableDiscoveryClient，启动服务发现</span></p>
+<p><span style="font-size: 18px">　　配置：</span></p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 0, 0, 1)">spring:
+  cloud:
+    gateway:
+      routes:
+       </span>- id: after-<span style="color: rgba(0, 0, 0, 1)">route #id必须要唯一
+         uri: lb:</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">product-center</span>
+<span style="color: rgba(0, 0, 0, 1)">         predicates:
+          </span>- After=2030-12-16T15:53:22.999+08:00[Asia/<span style="color: rgba(0, 0, 0, 1)">Shanghai]
+        filters:
+          </span>- PrefixPath=/product-api    </pre>
+</div>
+<p><span style="font-size: 18px">　　大家看到这个配置的时候，为什么我们写After断言与PrefixPath过滤器，gateway就会自动识别呢，那我们有没有那一个地方可以看到所有的自带的属性呢？当然有，而且我们本篇就主要讲解为什么gateway会自动识别，并且我们要自己实现并且添加自定义属性。开始源码解析第一步，找到自动加载的类一探究竟；</span></p>
+<p><span style="font-size: 18px"><img src="https://img2020.cnblogs.com/blog/1423484/202105/1423484-20210506142421791-536467541.png" alt="" loading="lazy"></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-size: 18px">　　看到这里的时候，第一步就成功了，剩下的就是找到</span><span style="font-size: 18px">org.springframework.cloud.gateway.config.GatewayAutoConfiguration这个关键类，我们主要看看里面的两个类</span></p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 0, 0, 1)">    @Bean
+    </span><span style="color: rgba(0, 0, 255, 1)">public</span><span style="color: rgba(0, 0, 0, 1)"> RouteLocator routeDefinitionRouteLocator(GatewayProperties properties,
+                                                   List</span>&lt;GatewayFilterFactory&gt;<span style="color: rgba(0, 0, 0, 1)"> GatewayFilters,
+                                                   List</span>&lt;RoutePredicateFactory&gt;<span style="color: rgba(0, 0, 0, 1)"> predicates,
+                                                   RouteDefinitionLocator routeDefinitionLocator) {
+        </span><span style="color: rgba(0, 0, 255, 1)">return</span> <span style="color: rgba(0, 0, 255, 1)">new</span><span style="color: rgba(0, 0, 0, 1)"> RouteDefinitionRouteLocator(routeDefinitionLocator, predicates, GatewayFilters, properties);
+    }
+
+    @Bean
+    @Primary
+    </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">TODO: property to disable composite?</span>
+    <span style="color: rgba(0, 0, 255, 1)">public</span> RouteLocator cachedCompositeRouteLocator(List&lt;RouteLocator&gt;<span style="color: rgba(0, 0, 0, 1)"> routeLocators) {
+        </span><span style="color: rgba(0, 0, 255, 1)">return</span> <span style="color: rgba(0, 0, 255, 1)">new</span> CachingRouteLocator(<span style="color: rgba(0, 0, 255, 1)">new</span><span style="color: rgba(0, 0, 0, 1)"> CompositeRouteLocator(Flux.fromIterable(routeLocators)));
+    }</span></pre>
+</div>
+<p><span style="font-size: 18px">　　这俩个类配置，大家可能非常熟悉，大家上手一个新知识点的时候，肯定会找一些快速入门的文章看看，博主还是习惯直接找官方的quick start来看，大家可以看看这些快速上手项目：<a href="https://spring.io/guides/gs/gateway/" target="_blank">https://spring.io/guides/gs/gateway/</a></span></p>
+<p><span style="font-size: 18px">　　所以博主直接就找到了RouteLocator这个类配置，果不其然，我们找到了断言与过滤器的注入，虽然实在方法体内作为参数传入，但是会被spring解析到，直接去工厂里拿到，具体怎么拿呢？我们再来看看：</span></p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)"> 1</span> <span style="color: rgba(0, 0, 255, 1)">public</span><span style="color: rgba(0, 0, 0, 1)"> BeanWrapper instantiateUsingFactoryMethod(
+</span><span style="color: rgba(0, 128, 128, 1)"> 2</span> <span style="color: rgba(0, 0, 0, 1)">            String beanName, RootBeanDefinition mbd, @Nullable Object[] explicitArgs) {
+</span><span style="color: rgba(0, 128, 128, 1)"> 3</span> 
+<span style="color: rgba(0, 128, 128, 1)"> 4</span> <span style="color: rgba(0, 0, 0, 1)">        .....
+</span><span style="color: rgba(0, 128, 128, 1)"> 5</span> 
+<span style="color: rgba(0, 128, 128, 1)"> 6</span>             <span style="color: rgba(0, 0, 255, 1)">for</span><span style="color: rgba(0, 0, 0, 1)"> (Method candidate : candidates) {
+</span><span style="color: rgba(0, 128, 128, 1)"> 7</span>                 Class&lt;?&gt;[] paramTypes =<span style="color: rgba(0, 0, 0, 1)"> candidate.getParameterTypes();
+</span><span style="color: rgba(0, 128, 128, 1)"> 8</span> 
+<span style="color: rgba(0, 128, 128, 1)"> 9</span>                 <span style="color: rgba(0, 0, 255, 1)">if</span> (paramTypes.length &gt;=<span style="color: rgba(0, 0, 0, 1)"> minNrOfArgs) {
+</span><span style="color: rgba(0, 128, 128, 1)">10</span> <span style="color: rgba(0, 0, 0, 1)">                    ArgumentsHolder argsHolder;
+</span><span style="color: rgba(0, 128, 128, 1)">11</span> 
+<span style="color: rgba(0, 128, 128, 1)">12</span>                     <span style="color: rgba(0, 0, 255, 1)">if</span> (explicitArgs != <span style="color: rgba(0, 0, 255, 1)">null</span><span style="color: rgba(0, 0, 0, 1)">) {
+</span><span style="color: rgba(0, 128, 128, 1)">13</span>                         <span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> Explicit arguments given -&gt; arguments length must match exactly.</span>
+<span style="color: rgba(0, 128, 128, 1)">14</span>                         <span style="color: rgba(0, 0, 255, 1)">if</span> (paramTypes.length !=<span style="color: rgba(0, 0, 0, 1)"> explicitArgs.length) {
+</span><span style="color: rgba(0, 128, 128, 1)">15</span>                             <span style="color: rgba(0, 0, 255, 1)">continue</span><span style="color: rgba(0, 0, 0, 1)">;
+</span><span style="color: rgba(0, 128, 128, 1)">16</span> <span style="color: rgba(0, 0, 0, 1)">                        }
+</span><span style="color: rgba(0, 128, 128, 1)">17</span>                         argsHolder = <span style="color: rgba(0, 0, 255, 1)">new</span><span style="color: rgba(0, 0, 0, 1)"> ArgumentsHolder(explicitArgs);
+</span><span style="color: rgba(0, 128, 128, 1)">18</span> <span style="color: rgba(0, 0, 0, 1)">                    }
+</span><span style="color: rgba(0, 128, 128, 1)">19</span>                     <span style="color: rgba(0, 0, 255, 1)">else</span><span style="color: rgba(0, 0, 0, 1)"> {
+</span><span style="color: rgba(0, 128, 128, 1)">20</span>                         <span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> Resolved constructor arguments: type conversion and/or autowiring necessary.</span>
+<span style="color: rgba(0, 128, 128, 1)">21</span>                         <span style="color: rgba(0, 0, 255, 1)">try</span><span style="color: rgba(0, 0, 0, 1)"> {
+</span><span style="color: rgba(0, 128, 128, 1)">22</span>                             String[] paramNames = <span style="color: rgba(0, 0, 255, 1)">null</span><span style="color: rgba(0, 0, 0, 1)">;
+</span><span style="color: rgba(0, 128, 128, 1)">23</span>                             ParameterNameDiscoverer pnd = <span style="color: rgba(0, 0, 255, 1)">this</span><span style="color: rgba(0, 0, 0, 1)">.beanFactory.getParameterNameDiscoverer();
+</span><span style="color: rgba(0, 128, 128, 1)">24</span>                             <span style="color: rgba(0, 0, 255, 1)">if</span> (pnd != <span style="color: rgba(0, 0, 255, 1)">null</span><span style="color: rgba(0, 0, 0, 1)">) {
+</span><span style="color: rgba(0, 128, 128, 1)">25</span>                                 paramNames =<span style="color: rgba(0, 0, 0, 1)"> pnd.getParameterNames(candidate);
+</span><span style="color: rgba(0, 128, 128, 1)">26</span> <span style="color: rgba(0, 0, 0, 1)">                            }
+</span><span style="color: rgba(0, 128, 128, 1)">27</span>                             <span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">主要就是会进入到这里去解析每一个参数类型</span>
+<span style="color: rgba(0, 128, 128, 1)">28</span>                             argsHolder =<span style="color: rgba(0, 0, 0, 1)"> createArgumentArray(beanName, mbd, resolvedValues, bw,
+</span><span style="color: rgba(0, 128, 128, 1)">29</span>                                     paramTypes, paramNames, candidate, autowiring, candidates.length == 1<span style="color: rgba(0, 0, 0, 1)">);
+</span><span style="color: rgba(0, 128, 128, 1)">30</span> <span style="color: rgba(0, 0, 0, 1)">                        }
+</span><span style="color: rgba(0, 128, 128, 1)">31</span>                         <span style="color: rgba(0, 0, 255, 1)">catch</span><span style="color: rgba(0, 0, 0, 1)"> (UnsatisfiedDependencyException ex) {
+</span><span style="color: rgba(0, 128, 128, 1)">32</span>                             <span style="color: rgba(0, 0, 255, 1)">if</span><span style="color: rgba(0, 0, 0, 1)"> (logger.isTraceEnabled()) {
+</span><span style="color: rgba(0, 128, 128, 1)">33</span>                                 logger.trace("Ignoring factory method [" + candidate + "] of bean '" + beanName + "': " +<span style="color: rgba(0, 0, 0, 1)"> ex);
+</span><span style="color: rgba(0, 128, 128, 1)">34</span> <span style="color: rgba(0, 0, 0, 1)">                            }
+</span><span style="color: rgba(0, 128, 128, 1)">35</span>                             <span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> Swallow and try next overloaded factory method.</span>
+<span style="color: rgba(0, 128, 128, 1)">36</span>                             <span style="color: rgba(0, 0, 255, 1)">if</span> (causes == <span style="color: rgba(0, 0, 255, 1)">null</span><span style="color: rgba(0, 0, 0, 1)">) {
+</span><span style="color: rgba(0, 128, 128, 1)">37</span>                                 causes = <span style="color: rgba(0, 0, 255, 1)">new</span> LinkedList&lt;&gt;<span style="color: rgba(0, 0, 0, 1)">();
+</span><span style="color: rgba(0, 128, 128, 1)">38</span> <span style="color: rgba(0, 0, 0, 1)">                            }
+</span><span style="color: rgba(0, 128, 128, 1)">39</span> <span style="color: rgba(0, 0, 0, 1)">                            causes.add(ex);
+</span><span style="color: rgba(0, 128, 128, 1)">40</span>                             <span style="color: rgba(0, 0, 255, 1)">continue</span><span style="color: rgba(0, 0, 0, 1)">;
+</span><span style="color: rgba(0, 128, 128, 1)">41</span> <span style="color: rgba(0, 0, 0, 1)">                        }
+</span><span style="color: rgba(0, 128, 128, 1)">42</span> <span style="color: rgba(0, 0, 0, 1)">                    }
+</span><span style="color: rgba(0, 128, 128, 1)">43</span> 
+<span style="color: rgba(0, 128, 128, 1)">44</span>                     <span style="color: rgba(0, 0, 255, 1)">int</span> typeDiffWeight = (mbd.isLenientConstructorResolution() ?
+<span style="color: rgba(0, 128, 128, 1)">45</span> <span style="color: rgba(0, 0, 0, 1)">                            argsHolder.getTypeDifferenceWeight(paramTypes) : argsHolder.getAssignabilityWeight(paramTypes));
+</span><span style="color: rgba(0, 128, 128, 1)">46</span>                     <span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> Choose this factory method if it represents the closest match.</span>
+<span style="color: rgba(0, 128, 128, 1)">47</span>                     <span style="color: rgba(0, 0, 255, 1)">if</span> (typeDiffWeight &lt;<span style="color: rgba(0, 0, 0, 1)"> minTypeDiffWeight) {
+</span><span style="color: rgba(0, 128, 128, 1)">48</span>                         factoryMethodToUse =<span style="color: rgba(0, 0, 0, 1)"> candidate;
+</span><span style="color: rgba(0, 128, 128, 1)">49</span>                         argsHolderToUse =<span style="color: rgba(0, 0, 0, 1)"> argsHolder;
+</span><span style="color: rgba(0, 128, 128, 1)">50</span>                         argsToUse =<span style="color: rgba(0, 0, 0, 1)"> argsHolder.arguments;
+</span><span style="color: rgba(0, 128, 128, 1)">51</span>                         minTypeDiffWeight =<span style="color: rgba(0, 0, 0, 1)"> typeDiffWeight;
+</span><span style="color: rgba(0, 128, 128, 1)">52</span>                         ambiguousFactoryMethods = <span style="color: rgba(0, 0, 255, 1)">null</span><span style="color: rgba(0, 0, 0, 1)">;
+</span><span style="color: rgba(0, 128, 128, 1)">53</span> <span style="color: rgba(0, 0, 0, 1)">                    }
+</span><span style="color: rgba(0, 128, 128, 1)">54</span>                     <span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> Find out about ambiguity: In case of the same type difference weight
+</span><span style="color: rgba(0, 128, 128, 1)">55</span>                     <span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> for methods with the same number of parameters, collect such candidates
+</span><span style="color: rgba(0, 128, 128, 1)">56</span>                     <span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> and eventually raise an ambiguity exception.
+</span><span style="color: rgba(0, 128, 128, 1)">57</span>                     <span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> However, only perform that check in non-lenient constructor resolution mode,
+</span><span style="color: rgba(0, 128, 128, 1)">58</span>                     <span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> and explicitly ignore overridden methods (with the same parameter signature).</span>
+<span style="color: rgba(0, 128, 128, 1)">59</span>                     <span style="color: rgba(0, 0, 255, 1)">else</span> <span style="color: rgba(0, 0, 255, 1)">if</span> (factoryMethodToUse != <span style="color: rgba(0, 0, 255, 1)">null</span> &amp;&amp; typeDiffWeight == minTypeDiffWeight &amp;&amp;
+<span style="color: rgba(0, 128, 128, 1)">60</span>                             !mbd.isLenientConstructorResolution() &amp;&amp;
+<span style="color: rgba(0, 128, 128, 1)">61</span>                             paramTypes.length == factoryMethodToUse.getParameterCount() &amp;&amp;
+<span style="color: rgba(0, 128, 128, 1)">62</span>                             !<span style="color: rgba(0, 0, 0, 1)">Arrays.equals(paramTypes, factoryMethodToUse.getParameterTypes())) {
+</span><span style="color: rgba(0, 128, 128, 1)">63</span>                         <span style="color: rgba(0, 0, 255, 1)">if</span> (ambiguousFactoryMethods == <span style="color: rgba(0, 0, 255, 1)">null</span><span style="color: rgba(0, 0, 0, 1)">) {
+</span><span style="color: rgba(0, 128, 128, 1)">64</span>                             ambiguousFactoryMethods = <span style="color: rgba(0, 0, 255, 1)">new</span> LinkedHashSet&lt;&gt;<span style="color: rgba(0, 0, 0, 1)">();
+</span><span style="color: rgba(0, 128, 128, 1)">65</span> <span style="color: rgba(0, 0, 0, 1)">                            ambiguousFactoryMethods.add(factoryMethodToUse);
+</span><span style="color: rgba(0, 128, 128, 1)">66</span> <span style="color: rgba(0, 0, 0, 1)">                        }
+</span><span style="color: rgba(0, 128, 128, 1)">67</span> <span style="color: rgba(0, 0, 0, 1)">                        ambiguousFactoryMethods.add(candidate);
+</span><span style="color: rgba(0, 128, 128, 1)">68</span> <span style="color: rgba(0, 0, 0, 1)">                    }
+</span><span style="color: rgba(0, 128, 128, 1)">69</span> <span style="color: rgba(0, 0, 0, 1)">                }
+</span><span style="color: rgba(0, 128, 128, 1)">70</span> <span style="color: rgba(0, 0, 0, 1)">            }
+</span><span style="color: rgba(0, 128, 128, 1)">71</span> 
+<span style="color: rgba(0, 128, 128, 1)">72</span> <span style="color: rgba(0, 0, 0, 1)">            .....
+</span><span style="color: rgba(0, 128, 128, 1)">73</span>         <span style="color: rgba(0, 0, 255, 1)">return</span><span style="color: rgba(0, 0, 0, 1)"> bw;
+</span><span style="color: rgba(0, 128, 128, 1)">74</span>     }</pre>
+</div>
+<p><span style="font-size: 18px">　　每一个参数都需要解析，但是看这里不像没关系，继续往下走：就会看到</span></p>
+<div class="cnblogs_code">
+<pre>    <span style="color: rgba(0, 0, 255, 1)">private</span><span style="color: rgba(0, 0, 0, 1)"> ArgumentsHolder createArgumentArray(
+            String beanName, RootBeanDefinition mbd, @Nullable ConstructorArgumentValues resolvedValues,
+            BeanWrapper bw, Class</span>&lt;?&gt;<span style="color: rgba(0, 0, 0, 1)">[] paramTypes, @Nullable String[] paramNames, Executable executable,
+            </span><span style="color: rgba(0, 0, 255, 1)">boolean</span> autowiring, <span style="color: rgba(0, 0, 255, 1)">boolean</span> fallback) <span style="color: rgba(0, 0, 255, 1)">throws</span><span style="color: rgba(0, 0, 0, 1)"> UnsatisfiedDependencyException {
+
+        ....
+        </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">这下就是了，每个参数都被进行解析</span>
+        <span style="color: rgba(0, 0, 255, 1)">for</span> (<span style="color: rgba(0, 0, 255, 1)">int</span> paramIndex = 0; paramIndex &lt; paramTypes.length; paramIndex++<span style="color: rgba(0, 0, 0, 1)">) {
+            ....
+                </span><span style="color: rgba(0, 0, 255, 1)">try</span><span style="color: rgba(0, 0, 0, 1)"> {
+                </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">我们的参数就是在这里被进行解析的--resolveAutowiredArgument</span>
+                    Object autowiredArgument =<span style="color: rgba(0, 0, 0, 1)"> resolveAutowiredArgument(
+                            methodParam, beanName, autowiredBeanNames, converter, fallback);
+                    args.rawArguments[paramIndex] </span>=<span style="color: rgba(0, 0, 0, 1)"> autowiredArgument;
+                    args.arguments[paramIndex] </span>=<span style="color: rgba(0, 0, 0, 1)"> autowiredArgument;
+                    args.preparedArguments[paramIndex] </span>= <span style="color: rgba(0, 0, 255, 1)">new</span><span style="color: rgba(0, 0, 0, 1)"> AutowiredArgumentMarker();
+                    args.resolveNecessary </span>= <span style="color: rgba(0, 0, 255, 1)">true</span><span style="color: rgba(0, 0, 0, 1)">;
+                }
+                </span><span style="color: rgba(0, 0, 255, 1)">catch</span><span style="color: rgba(0, 0, 0, 1)"> (BeansException ex) {
+                    </span><span style="color: rgba(0, 0, 255, 1)">throw</span> <span style="color: rgba(0, 0, 255, 1)">new</span><span style="color: rgba(0, 0, 0, 1)"> UnsatisfiedDependencyException(
+                            mbd.getResourceDescription(), beanName, </span><span style="color: rgba(0, 0, 255, 1)">new</span><span style="color: rgba(0, 0, 0, 1)"> InjectionPoint(methodParam), ex);
+                }
+            }
+        }
+        </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">其他不重要的，直接忽略掉</span>
+<span style="color: rgba(0, 0, 0, 1)">        ...
+        </span><span style="color: rgba(0, 0, 255, 1)">return</span><span style="color: rgba(0, 0, 0, 1)"> args;
+    }</span></pre>
+</div>
+<p><span style="font-size: 18px">　　开始解析的时看到了，我们需要把断言和过滤器列表都加在进来，那spring是如何加载的呢？是根据方法体内传入的类型找到所有实现了断言和过滤器工厂接口的类并且进行获取实例，我们仔细这些工厂的实现类，就会找到我们的使用的一些属性，比如我们例子中的</span><span style="font-size: 18px">PrefixPath过滤器和Path断言；</span></p>
+<div class="cnblogs_code">
+<pre>    <span style="color: rgba(0, 0, 255, 1)">protected</span> Map&lt;String, Object&gt;<span style="color: rgba(0, 0, 0, 1)"> findAutowireCandidates(
+            @Nullable String beanName, Class</span>&lt;?&gt;<span style="color: rgba(0, 0, 0, 1)"> requiredType, DependencyDescriptor descriptor) {
+        </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">主要的就是这个，beanNamesForTypeIncludingAncestors方法，该方法就是从bean工厂中获取所有当前类的实现实例名称，</span>
+        String[] candidateNames =<span style="color: rgba(0, 0, 0, 1)"> BeanFactoryUtils.beanNamesForTypeIncludingAncestors(
+                </span><span style="color: rgba(0, 0, 255, 1)">this</span>, requiredType, <span style="color: rgba(0, 0, 255, 1)">true</span><span style="color: rgba(0, 0, 0, 1)">, descriptor.isEager());
+        Map</span>&lt;String, Object&gt; result = <span style="color: rgba(0, 0, 255, 1)">new</span> LinkedHashMap&lt;&gt;<span style="color: rgba(0, 0, 0, 1)">(candidateNames.length);
+        ...
+        </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">遍历名称，进行实例化</span>
+        <span style="color: rgba(0, 0, 255, 1)">for</span><span style="color: rgba(0, 0, 0, 1)"> (String candidate : candidateNames) {
+            </span><span style="color: rgba(0, 0, 255, 1)">if</span> (!isSelfReference(beanName, candidate) &amp;&amp;<span style="color: rgba(0, 0, 0, 1)"> isAutowireCandidate(candidate, descriptor)) {
+                addCandidateEntry(result, candidate, descriptor, requiredType);
+            }
+        }
+        .....
+        </span><span style="color: rgba(0, 0, 255, 1)">return</span><span style="color: rgba(0, 0, 0, 1)"> result;
+    }</span></pre>
+</div>
+<p><img src="https://img2020.cnblogs.com/blog/1423484/202105/1423484-20210506155203845-924855115.png" alt="" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;<img src="https://img2020.cnblogs.com/blog/1423484/202105/1423484-20210506155242458-2108615342.png" alt="" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-size: 18px">　　这下我们知道了，系统配置的断言和过滤器是如何被加载 的了，那我们还有一个问题，如果我自定义一个，如何被系统识别呢？并且怎么进行配置呢？不难发现我们之前看源码时，他是被spring通过找工厂实现类找到并且加载进来的，那我们自己实现工厂接口并且使用@Component注解，让spring加载进来不就的了吗？但是你会发现系统自定义的属性断言或者过滤器都有工厂名字的后缀，这是为什么呢？影响我们自定义 的类被加载到gateway中且生效吗？事实是会影响，那为什么影响呢？我们还是看源码。因为我们之前的类加载还没有看完，我们最开始的时候就找到了两个@bean 的自动加载，那这两个类实例化的时候都做了哪些工作，我们还没有细看；</span></p>
+<div class="cnblogs_code">
+<pre>    <span style="color: rgba(0, 0, 255, 1)">public</span><span style="color: rgba(0, 0, 0, 1)"> RouteDefinitionRouteLocator(RouteDefinitionLocator routeDefinitionLocator,
+                                       List</span>&lt;RoutePredicateFactory&gt;<span style="color: rgba(0, 0, 0, 1)"> predicates,
+                                       List</span>&lt;GatewayFilterFactory&gt;<span style="color: rgba(0, 0, 0, 1)"> gatewayFilterFactories,
+                                       GatewayProperties gatewayProperties) {
+        </span><span style="color: rgba(0, 0, 255, 1)">this</span>.routeDefinitionLocator =<span style="color: rgba(0, 0, 0, 1)"> routeDefinitionLocator;
+        initFactories(predicates);
+        gatewayFilterFactories.forEach(factory </span>-&gt; <span style="color: rgba(0, 0, 255, 1)">this</span><span style="color: rgba(0, 0, 0, 1)">.gatewayFilterFactories.put(factory.name(), factory));
+        </span><span style="color: rgba(0, 0, 255, 1)">this</span>.gatewayProperties =<span style="color: rgba(0, 0, 0, 1)"> gatewayProperties;
+    }</span></pre>
+</div>
+<p><span style="font-size: 18px">　　initFactories(predicates)：这段代码主要是进行解析断言工厂实现类；并且放入一个Map中，</span></p>
+<p><span style="font-size: 18px">　　gatewayFilterFactories.forEach(factory -&gt; this.gatewayFilterFactories.put(factory.name(), factory))：跟断言的代码几乎一样，因为没有其他多余的逻辑，所以没有封装到方法中，直接使用java8 的流特性，写完了遍历的过程。大家要注意一段代码就是</span><span style="font-size: 18px">factory.name()，这里使用了一个方法；<br></span></p>
+<div class="cnblogs_code">
+<pre>    <span style="color: rgba(0, 0, 255, 1)">default</span><span style="color: rgba(0, 0, 0, 1)"> String name() {
+        </span><span style="color: rgba(0, 0, 255, 1)">return</span><span style="color: rgba(0, 0, 0, 1)"> NameUtils.normalizeRoutePredicateName(getClass());
+    }</span></pre>
+</div>
+<p><span style="font-size: 18px">　　主要就是把当前类包含工厂名字的部分去掉了，然后用剩下的字符串当key值，所以我们可以使用工厂名字做后坠，也可以不用，但是剩下的字符则是你要写进配置的关键字，不过博主基本都是按照系统自带属性一样，用的是工厂接口的名字做的后缀。</span></p>
+<p><span style="font-size: 18px"> 　　 好了，今天就讲解这么多，下次在讲解gateway接到请求后，是如何进行一步一步过滤的，何时进行断言校验的。一次不讲这么多，消化了就好。<br></span></p>
+<hr>
+<p><img src="https://img2020.cnblogs.com/blog/1423484/202105/1423484-20210506162007466-306292516.png" alt="" loading="lazy"></p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+		</div>
+		<div class="postDesc">posted @ 
+<span id="post-date">2021-05-08 17:06</span>&nbsp;
+<a href="https://www.cnblogs.com/guoxiaoyu/">努力的小雨</a>&nbsp;
+阅读(<span id="post_view_count">217</span>)&nbsp;
+评论(<span id="post_comment_count">0</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14735706" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(14735706);return false;">收藏</a></div>
+	</div>
+	
+	
+</div><!--end: topics 文章、评论容器-->
+<script src="https://common.cnblogs.com/highlight/10.3.1/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 438774, cb_blogApp = 'guoxiaoyu', cb_blogUserGuid = '3378738e-849a-4b7f-6718-08d5d1de73d4';
+    var cb_entryId = 14735706, cb_entryCreatedDate = '2021-05-08 17:06', cb_postType = 1;
+    updatePostStats(
+        [cb_entryId],
+        function(id, count) { $("#post_view_count").text(count) },
+        function(id, count) { $("#post_comment_count").text(count) })
+    zoomManager.apply("#cnblogs_post_body img:not(.code_img_closed):not(.code_img_opened)");
+</script>
+<a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <div id="cnblogs_c1" class="under-post-card">
+        <div id='div-gpt-ad-1592365906576-0' style='width: 300px; height: 250px;'></div>
+    </div>
+    <div id="under_post_card1"></div>
+    <div id="cnblogs_c2" class="under-post-card">
+        <div id='div-gpt-ad-1592366332455-0' style='width: 468px; height: 60px;'></div>
+    </div>
+    <div id="under_post_card2"></div>
+    <div id="HistoryToday" class="under-post-card"></div>
+    <script type="text/javascript">
+       var commentManager = new blogCommentManager();
+       commentManager.renderComments(0);
+       fixPostBody();
+       deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);       deliverT2();
+       deliverC1C2();
+       loadNewsAndKb();
+       loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);       LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+       GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+       loadOptUnderPost();
+       GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			<div id="sidebar_news" class="newsItem">
             <script>loadBlogNews();</script>
 </div>
 <div id="sidebar_c3"></div>
-<div id="blog-sidecolumn"></div>
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script></div>
+			
+			<DIV id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
                     <script>loadBlogSideColumn();</script>
-
-</div>
-</div>
-<div class="clear"></div>
-<div id="footer">
-<p id="footer">
-	Powered by: 
-	<br />
-	
-	<a href="https://www.cnblogs.com/" id="footer_site_link">博客园</a>
-	<br />
-	Copyright &copy; 2021 拓荒者
+			</DIV>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2021 努力的小雨
 <br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
 
-</p>
 
 
-</div>
-</div>
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
 
 
     
 
-    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjubkv3UEvgYEL8lRz3IMCDaEIXC-EocOSBKnw3edM9hduQOLLMDyfzvbuSj-veMtlWsfJUo5B5CdQyVCo2iYSuIXqtwUBju8K46a1G7DI3KGMHE02bH9cZjJom3Od7jx4Y" />
+    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjtC4j26Pva7xa9xf-taBrfcgF7_U06zqhDWWHZBkKxHz1r9DvWOoDKkU9qVMcyBdvJYFSaa4EZlYYnpTIdwGbdjC_MCPt8GFsu7KhmJjXE-QdqnU_FYYsYbcC3TPBNJFYE" />
 </body>
 </html>

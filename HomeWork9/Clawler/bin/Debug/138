@@ -9,41 +9,37 @@
     <meta http-equiv="Cache-Control" content="no-transform" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>2005 年 3月 5 日 随笔档案 - 拓荒者 - 博客园</title>
+    <title>程序员养成日记 - 博客园</title>
     <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
     
     <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
-    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=9x2ZP2K8SSBJowZA6xv0D5FvOmlvd5g21u0NBEAEwfQ" />
+    <link id="MainCss" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip.min.css?v=eoZATbPKwJCL5eWVDTQIYC6CIxJPcFz191dkzN2tSyQ" />
     
-    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=xFiYH0_zTHqf_pk9Nf2PvR4VdQ1qJnJcRVcot-VdM-8" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip-mobile.min.css?v=lU86o8mZVn3FOSdFt7nHKYTD8gzeKaiQIIZ6lSjEFyo" />
     
-    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/dstang2000/rss" />
-    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/dstang2000/rsd.xml" />
-    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/dstang2000/wlwmanifest.xml" />
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/xuehao/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/xuehao/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/xuehao/wlwmanifest.xml" />
     <script>
-        var currentBlogId = 9986;
-        var currentBlogApp = 'dstang2000';
+        var currentBlogId = 327688;
+        var currentBlogApp = 'xuehao';
         var cb_enable_mathjax = false;
         var isLogined = false;
         var isBlogOwner = false;
-        var skinName = 'AnotherEon001';
+        var skinName = 'darkgreentrip';
         var visitorUserId = '';
     </script>
     <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
-    <script src="/js/blog-common.min.js?v=yJQaJ16S00coMfzvh-NgF2zm2J87f5VfNamFdsnKHrc"></script>
+    <script src="/js/blog-common.min.js?v=2Mic1VLeHXarpdzASbXqFMIMVLEBiWXNO5yiTHUcmhw"></script>
     
     
     
 </head>
-<body class="has-navbar has-bannerbar">
+<body class="has-navbar">
     <a name="top"></a>
-        <a target="_blank" href="https://www.aliyun.com/minisite/goods?userCode=swh7dvlt" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-cps-blog-bannerbar-pc')">
-            <div class="bannerbar aliyun forpc" style="background-size: contain;background-image: url(https://img2020.cnblogs.com/blog/35695/202104/35695-20210428221933214-737067094.jpg)">
-            </div>
-        </a>
         <div id="bannerbar" class="bannerbar-mobile formobile">
-            <a href="https://www.aliyun.com/minisite/goods?userCode=swh7dvlt" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-cps-blog-bannerbar-mobile')">
-                <img src="https://img2020.cnblogs.com/blog/35695/202104/35695-20210428213541700-642740375.jpg" alt="" />
+            <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-blog-bannerbar-mobile')">
+                <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
             </a>
         </div>
     <div id="top_nav" class="navbar forpc">
@@ -99,39 +95,79 @@
     </div>
 
     
-    <div id="wrapper">
+    <!--done-->
+<div id="home">
 <div id="header">
-
-<div id="top">
-<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/dstang2000/">拓荒者 dstang2000 <a href="http://www.dstang.com"><font size=-1 color=red>http://www.dstang.com</font></a>
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/xuehao/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/xuehao/">饭米粒</a>
 </h1>
-<div id="subtitle">KISS：Keeping things that work，Improve systems procedures styles，Start things of value，Stop things of no value </div>
-</div>
-<div id="sub"><div id="blog_stats_place_holder"><script>loadBlogStats();</script></div></div>
+<h2></h2>
 
 
 
 
-</div>
-<div id="main_container">
-<div id="main_content">
-<div id="content">
-	
-        <!--done-->
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/xuehao/">
+首页</a>
+</li>
+<li>
 
-<p class="date">
-	<span>		  
-	<a>2005年3月5日</a>
-	</span>
-</p>
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%85%BB%E6%88%90%E6%97%A5%E8%AE%B0">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/xuehao/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
 
-    <div class="post">
-        <h2>
+
+		<div class="blogStats">
+			<div id="blog_stats_place_holder"><script>loadBlogStats();</script></div>
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xuehao/archive/2021/05/06.html">2021年5月6日</a>
+    </div>
+
+        <div class="postTitle">
             
 
-<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/dstang2000/archive/2005/03/05/113513.html">
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/xuehao/p/14736024.html">
     <span>
-        分不清正数负数，是我错了，还是VS.NET错了
+        看了这篇还不会Linux性能分析和优化，你来打我
     </span>
     
 
@@ -139,109 +175,459 @@
 
 </a>
 
-        </h2>
-        <div class="postbody">
-            
+        </div>
+        <div class="postCon">
 
     <div class="c_b_p_desc">
-摘要：三年前做的一个ASP.NET的项目（www.SurveyStar.net），一直运行好好的， 前几天，客户打电话来说，出了问题。 反复跟踪，发现是一个正数、负数的判断与ToString()的问题。 将问题简化后，源程序可表示为只有4句的程序，如下： class&#160;Test { &#160;&#160;&#160;&#160;static&#160;void&#160;Main() &#16...        <a href="https://www.cnblogs.com/dstang2000/archive/2005/03/05/113513.html" class="c_b_p_desc_readmore">阅读全文</a>
+摘要：前言 一般互联网的项目都是部署在linux服务器上的，如果linux服务器出了问题，那么咱们平时学习的高并发，稳定性之类的是没有任何意义的，所以对linux性能的把握就显得非常重要，当然很多同学可能觉得这些是运维同学的事情，但是我不这么认为，不管你是架构师，还是crud boy，对项目有个全局的掌控        <a href="https://www.cnblogs.com/xuehao/p/14736024.html" class="c_b_p_desc_readmore">阅读全文</a>
     </div>
-
-        </div>
-        <p class="postfoot">
-            posted @ 2005-03-05 14:45
-拓荒者
-<span data-post-id="113513" class="post-view-count">阅读(2655)</span> 
-<span data-post-id="113513" class="post-comment-count">评论(5)</span> 
-<span data-post-id="113513" class="post-digg-count">推荐(1)</span> 
-<a href="https://i.cnblogs.com/EditPosts.aspx?postid=113513" rel="nofollow">
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-05-06 17:17
+程序员养成日记
+<span data-post-id="14736024" class="post-view-count">阅读(617)</span> 
+<span data-post-id="14736024" class="post-comment-count">评论(1)</span> 
+<span data-post-id="14736024" class="post-digg-count">推荐(1)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14736024" rel="nofollow">
     编辑
 </a>
+</div>
+        <div class="clear"></div>
+</div>
 
-        </p>
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xuehao/archive/2021/04/22.html">2021年4月22日</a>
     </div>
 
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/xuehao/p/14690508.html">
+    <span>
+        redis实际应用-限流
+    </span>
+    
 
 
 
-</div>
-</div>
-<div id="leftmenu">
-
-
-<h3>导航</h3>
-<ul>
-    <li>
-        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
-博客园</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/dstang2000/">
-首页</a>
-
-    </li>
-    <li>
-        
-
-<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
-新随笔</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%8B%93%E8%8D%92%E8%80%85">
-联系</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/dstang2000/rss/">
-订阅</a>
-        
-<a id="blog_nav_rss_image" href="https://www.cnblogs.com/dstang2000/rss/">
-    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
 </a>
-    </li>
-    <li>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：为什么要做限流 首先让我们先看一看系统架构设计中，为什么要做“限流”。 旅游景点通常都会有最大的接待量，不可能无限制的放游客进入，比如故宫每天只卖八万张票，超过八万的游客，无法买票进入，因为如果超过八万人，景点的工作人员可能就忙不过来，过于拥挤的景点也会影响游客的体验和心情，并且还会有安全隐患；「只        <a href="https://www.cnblogs.com/xuehao/p/14690508.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-04-22 17:05
+程序员养成日记
+<span data-post-id="14690508" class="post-view-count">阅读(915)</span> 
+<span data-post-id="14690508" class="post-comment-count">评论(1)</span> 
+<span data-post-id="14690508" class="post-digg-count">推荐(4)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14690508" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xuehao/archive/2021/04/06.html">2021年4月6日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/xuehao/p/14622091.html">
+    <span>
+        防盗链的原理以及实现
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：大家在访问网站的时候，经常会看到图片展示不出来的时候，如下图 大家有没有想过这是为什么嘛？其实这是一种简单的防盗链的处理，那么盗链是什么呢？为什么需要防呢？咱们今天来一起揭开它神秘的面纱。 盗链的概念 盗链是指在自己的页面上展示一些并不在自己服务器上的一些内容， 获取别人的资源地址，绕过别人的资源展        <a href="https://www.cnblogs.com/xuehao/p/14622091.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-04-06 15:29
+程序员养成日记
+<span data-post-id="14622091" class="post-view-count">阅读(72)</span> 
+<span data-post-id="14622091" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14622091" class="post-digg-count">推荐(1)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14622091" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xuehao/archive/2021/02/20.html">2021年2月20日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/xuehao/p/14421795.html">
+    <span>
+        mysql一张表到底能存多少数据？
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 程序员平时和mysql打交道一定不少，可以说每天都有接触到，但是mysql一张表到底能存多少数据呢？计算根据是什么呢？接下来咱们逐一探讨 知识准备 数据页 在操作系统中，我们知道为了跟磁盘交互，内存也是分页的，一页大小4KB。同样的在MySQL中为了提高吞吐率，数据也是分页的，不过MySQL的        <a href="https://www.cnblogs.com/xuehao/p/14421795.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-02-20 16:15
+程序员养成日记
+<span data-post-id="14421795" class="post-view-count">阅读(1453)</span> 
+<span data-post-id="14421795" class="post-comment-count">评论(2)</span> 
+<span data-post-id="14421795" class="post-digg-count">推荐(5)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14421795" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xuehao/archive/2021/02/01.html">2021年2月1日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/xuehao/p/14355554.html">
+    <span>
+        mysql事务的实现原理
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：此篇文章算是对mysql事务的一个总结，基本把mysql事务相关的知识点都涵盖到了，面试问来问去无非也就是这些，在了解这些之前我们先对mysql在执行的过程中 有一个整体的认识，如下图 如上图所示，MySQL服务器逻辑架构从上往下可以分为三层： （1）第一层：处理客户端连接、授权认证等。 （2）第二        <a href="https://www.cnblogs.com/xuehao/p/14355554.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-02-01 11:01
+程序员养成日记
+<span data-post-id="14355554" class="post-view-count">阅读(137)</span> 
+<span data-post-id="14355554" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14355554" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14355554" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xuehao/archive/2020/12/30.html">2020年12月30日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/xuehao/p/14212703.html">
+    <span>
+        微信附近的人，用redis也能实现？（GEO）
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：相信微信附近的人的功能大家都应该用过 我可以很随意的通过我自己的定位能看到我附近的人，并且能看到那个人距离我的距离，大家有没有思考过这个是怎么实现的？ 作为一个程序猿任何问题应该都有一个思考的过程，而不是直接看结论，接下来大家一步一步的思考，直到问题解决。 获取自己的位置 附近的人其实就是一种位置的        <a href="https://www.cnblogs.com/xuehao/p/14212703.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-12-30 17:49
+程序员养成日记
+<span data-post-id="14212703" class="post-view-count">阅读(60)</span> 
+<span data-post-id="14212703" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14212703" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14212703" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xuehao/archive/2020/11/04.html">2020年11月4日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/xuehao/p/13925647.html">
+    <span>
+        redis五种数据类型的应用
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：redis的五种数据类型和使用场景 string类型 string类型多用于缓存 set key value(value可以为json字符串) setnx多用于分布式锁(后面详细整理) 计数器 incr article:{文章id}:readcount get article:{文章id}:read        <a href="https://www.cnblogs.com/xuehao/p/13925647.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-11-04 14:09
+程序员养成日记
+<span data-post-id="13925647" class="post-view-count">阅读(94)</span> 
+<span data-post-id="13925647" class="post-comment-count">评论(0)</span> 
+<span data-post-id="13925647" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13925647" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xuehao/archive/2020/10/26.html">2020年10月26日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/xuehao/p/13877261.html">
+    <span>
+        redis缓存穿透穿透解决方案-布隆过滤器
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：redis缓存穿透穿透解决方案-布隆过滤器 我们先来看一段代码 cache_key = &quot;id:1&quot; cache_value = GetValueFromRedis(cache_key); //判断缓存是否有数据 if cache_value != nil{ //如果有 直接返回数据 return         <a href="https://www.cnblogs.com/xuehao/p/13877261.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-10-26 10:41
+程序员养成日记
+<span data-post-id="13877261" class="post-view-count">阅读(300)</span> 
+<span data-post-id="13877261" class="post-comment-count">评论(0)</span> 
+<span data-post-id="13877261" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13877261" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xuehao/archive/2020/10/18.html">2020年10月18日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/xuehao/p/13837659.html">
+    <span>
+        Redis 对过期数据的处理
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Redis 对过期数据的处理 在 redis 中，对于已经过期的数据，Redis 采用两种策略来处理这些数据，分别是惰性删除和定期删除 惰性删除 惰性删除不会去主动删除数据，而是在访问数据的时候，再检查当前键值是否过期，如果过期则执行删除并返回 null 给客户端，如果没有过期则返回正常信息给客户端        <a href="https://www.cnblogs.com/xuehao/p/13837659.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-10-18 22:46
+程序员养成日记
+<span data-post-id="13837659" class="post-view-count">阅读(841)</span> 
+<span data-post-id="13837659" class="post-comment-count">评论(0)</span> 
+<span data-post-id="13837659" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13837659" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xuehao/archive/2020/10/16.html">2020年10月16日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/xuehao/p/13825101.html">
+    <span>
+        redis的两种持久化的机制，你真的了解么？
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：redis提供了两种持久化的机制 RDB和AOF机制 RDB(redis Database):RDB保存某一个时间点之前的快照数据。 AOF(Append-Only File):指所有的命令行记录以redis命令请求协议的格式完全持久化存储保存为AOF文件 混合持久化(4.0版本以后)：指进行AOF        <a href="https://www.cnblogs.com/xuehao/p/13825101.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-10-16 10:32
+程序员养成日记
+<span data-post-id="13825101" class="post-view-count">阅读(175)</span> 
+<span data-post-id="13825101" class="post-comment-count">评论(0)</span> 
+<span data-post-id="13825101" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13825101" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
         
-<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
-管理</a>
+    <a href="https://www.cnblogs.com/xuehao/default.html?page=2">
+        下一页
+    </a>
 
-    </li>
-</ul>
+    </div>    
+</div>
 
 
-<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
-<div id="sidebar_news" class="newsItem">
+
+
+
+
+<script>
+    updatePostStats(
+        $(".post-view-count").map(function () { return this.dataset.postId }).get(),
+        function(id, count) { $(".post-view-count[data-post-id=" + id + "]").text("阅读(" + count + ")") },
+        function(id, count) { $(".post-comment-count[data-post-id=" + id + "]").text("评论(" + count + ")") },
+        function(id, count) { $(".post-digg-count[data-post-id=" + id + "]").text("推荐(" + count + ")") });
+</script>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+	<div id="sideBar">
+		<div id="sideBarMain">
+			<div id="sidebar_news" class="newsItem">
             <script>loadBlogNews();</script>
 </div>
 <div id="sidebar_c3"></div>
-<div id="blog-sidecolumn"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
                     <script>loadBlogSideColumn();</script>
-
-</div>
-</div>
-<div class="clear"></div>
-<div id="footer">
-<p id="footer">
-	Powered by: 
-	<br />
-	
-	<a href="https://www.cnblogs.com/" id="footer_site_link">博客园</a>
-	<br />
-	Copyright &copy; 2021 拓荒者
+			</div>			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2021 程序员养成日记
 <br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
 
-</p>
 
 
-</div>
-</div>
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
 
 
     
 
-    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjuAlatkKj5TprMijDPN4xetkhj12ML7a6PAQ0pc1OWVSHivqXj-rPOcppRSzdC8bekzO70V_XQU5DWI2dO2wmTP7irFsniZKSKdIpyqD8BtjbUvlYLPaYmfK_VLTtF9450" />
+    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjvkFh4P3WzE_TH1tWGvoUpXzhOaH_0jcajeMCqFLgL0Mlfu1NWogpwxvevtDDtTL7keY8CrBQdQA1nvepwkhgQ_CxAD7O9DBSBKDNf8bFK2plE1vR43S4Cff1yJpvNDdL8" />
 </body>
 </html>

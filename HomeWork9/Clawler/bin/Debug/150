@@ -1,1540 +1,659 @@
-﻿<!doctype html>
-<!-- LLTJ_MT:name ="" -->
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
 <head>
-    <meta charset="gb2312">
-    <title>ȫ�������׳�������ͨ��������_����ͼ��_������</title>
-    <meta name="keywords" content="����ͼƬ,ȫ������,����ͨ��" />
-    <meta name="tags" content="����ͼƬ,ȫ������,����ͨ��" />
-    <meta name="description" content="ȫ�������׳�������ͨ��������,2018��ȫ�������׳�������ͨ������3��3������ȫ����Эʮ����һ�λ��鿪Ļ���������ʽ�����ͼΪ�����������±������ܼ��߲ɷ�" />
-    <meta itemprop="name" content="ȫ�������׳�������ͨ��������" />
-    <meta itemprop="image" content="http://n.sinaimg.cn/news/transform/w600h400/20180303/iheU-fwnpcnt6752514.jpg" />
-    <meta name="Editor" content="puxiao" />
-    <meta name="stencil" content="PGLS004271" />    <meta name="sinaads_keywords" content="1,89356" />
-                <meta name="sudameta" content="allCIDs:200856,257,51895,219701,103869,218984,218986" >        <meta name="sudameta" content="dataid:comos:fwnpcnt6752999" >
-����<meta property="article:published_time" content="2018-03-03T17:27:06+08:00"/>
-    <meta property="article:author" content="�й�������"/>
-
-    <meta property="og:type" content="image" />
-    <meta property="og:url" content="http://slide.news.sina.com.cn/slide_1_89356_246217.html" />
-    <meta property="og:title" content="ȫ�������׳�������ͨ��������" />
-    <meta property="og:description" content="2018��ȫ�������׳�������ͨ������3��3������ȫ����Эʮ����һ�λ��鿪Ļ���������ʽ�����ͼΪ�����������±������ܼ��߲ɷ�" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin-when-crossorigin" />
+    <meta name="description" content="所谓“飞控”，其实是重力加速度计和陀螺仪的组合，因为多用于控制飞行器的平衡（无人机、遥控飞机）。有同学会问，这货为什么会有六轴呢？咱们常见的不是X、Y、Z三轴吗？重力加速度有三轴，陀螺仪也有三轴，那我" />
+    <meta property="og:description" content="所谓“飞控”，其实是重力加速度计和陀螺仪的组合，因为多用于控制飞行器的平衡（无人机、遥控飞机）。有同学会问，这货为什么会有六轴呢？咱们常见的不是X、Y、Z三轴吗？重力加速度有三轴，陀螺仪也有三轴，那我" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>【.NET 与树莓派】六轴飞控传感器（MPU 6050） - 东邪独孤 - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
     
-    <script>
-var ua = navigator.userAgent.toLowerCase();
-//var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
-var isIOS = /\(iPad/i.test(ua);
-if(isIOS){
-    location.replace('http://slide.ipad.sina.com.cn/play.php?sid=89356&id=246217&ch=1'+location.hash);
-}
-
-
-//iPhone,android����ת��wapҳ��
-var isIPhone = /\(iPhone/i.test(ua);
-var isAndroid = /android/.test(ua);
-if( isIPhone || isAndroid ){
-    ss = location.search.replace("?","&")
-    location.replace('https://interface.sina.cn/pc_to_wap_dp.d.html?sourcefrom=slide_pc&url=http%3A%2F%2Fslide.news.sina.com.cn%2Fslide_1_89356_246217.html'+ss);
-}
-
-
-</script>
-
-
-    <script>var __ch_id__ ='1';</script>
-    <script>var __sid__ ='89356';</script>
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
+    <link id="MainCss" rel="stylesheet" href="/skins/moonlightink/bundle-moonlightink.min.css?v=iVE30sZ6vb6blzqPWbGs2kM432fxmh8k3P9XllAp48s" />
     
-    <!--[if lte IE 8]>
-    <script type="text/javascript" src="//n.sinaimg.cn/slide-news/es5_shim.js?t=20180917"></script>
-    <script type="text/javascript" src="//n.sinaimg.cn/slide-news/es6_shim.js?t=20180917"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="//n3.sinaimg.cn/slide-news/css/styles.css">
-    <script type="text/javascript" src="//n.sinaimg.cn/lib/core/core.js" charset="utf-8"></script>
-    <script type="text/javascript" src="//n.sinaimg.cn/news/photos/common.js" charset="utf-8"></script>
-    <script type="text/javascript" src="//n.sinaimg.cn/slide-news/common.js?t=20180917" charset="utf-8"></script>
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/moonlightink/bundle-moonlightink-mobile.min.css?v=axcwoS9UbqWFSKj9O2YcPP0sVreDAEIZDpcqOVKt8M4" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/tcjiaan/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/tcjiaan/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/tcjiaan/wlwmanifest.xml" />
     <script>
-        var $SCOPE = {
-            SINA_COMPONENTS: {}  //Ϊģ�黯ʹ�õĶ���
-        };
+        var currentBlogId = 113198;
+        var currentBlogApp = 'tcjiaan';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var isBlogOwner = false;
+        var skinName = 'MoonlightInk';
+        var visitorUserId = '';
     </script>
-    <style type="text/css">
-a:hover{color:#f00;text-decoration:underline;}
-a:visited{color:#999;text-decoration:none;}
-a{color:#999;text-decoration:none;}
-body,.wrap{margin:0;}
-body{color:#000;background:#fff;font:12px/20px "Microsoft Yahei","΢���ź�","SimSun","����","Arial Narrow",serif;background:#F9F9F9;min-width: 1000px;}
-html,body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,th,img{margin:0;padding:0;border:0;}
-img{border:0;}
-select,input{vertical-align:middle;font-size:12px;}
-textarea {resize: none;}
-textarea,td,div,input,p{font-size:12px;}
-ul,lo{list-style:none;}
-.clearfix:after{content:'.';display:block;height:0;clear:both;visibility: hidden;}
-.clearfix{*zoom:1;}
-.clearit{clear:both;font-size:0;line-height:0;height:0;}
-.rgba-75{background:rgba(0,0,0, 0.75); filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#bf000000', EndColorStr='#bf000000');*zoom:1;} :root .rgba-75{filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00000000', EndColorStr='#00000000'); }
-/*ͼ��*/
-.videoNewsLeft{background: url(//i0.sinaimg.cn/ty/2011hqj/0705/video_icon_bg.png) no-repeat 2px center;padding-left: 22px;}
-.nav-inner .logo,.nwi-lnk,.swpt-tip i,.swpt-full-tip i,.swpt-original i,.swpt-mode i,.swpl-btn i,.swpb-item i,.swp-btn i,.heart-vote i,.sw-audio .sw-audio-play, .sw-audio .sw-audio-loading, .sw-audio .sw-audio-error, .sw-audio .sw-audio-pause,.hr-a i,.top-tip .hot,.swpw-txt .swpw-follow span,.swpw-txt .swpw-follow a,.swpw-approve,.side-btns-top-btn{background-image: url(//www.sinaimg.cn/dy/deco/2014/0212/images/bg.png);background-repeat: no-repeat;}
-
-.nav-inner .logo{background-position: 0 -390px;}
-.nwi-lnk{display: block;width:82px;height: 23px;overflow: hidden;background-position: 0 -300px;}
-.nwi-lnk:hover{background-position: -90px -300px;}
-
-.swpt-tip i{display: block;width:32px;height:10px;background-position: -180px -280px;}
-.swpt-full-tip i{display: block;width:14px;height:14px;background-position: 0 -280px;}
-.swpt-mode-list i{display: block;width: 16px;height:16px;background-position: -100px -160px;}
-.swpt-mode-hp i{display: block;width: 16px;height:16px;background-position: -40px -160px;}
-.swpt-mode-list:hover i{background-position: -130px -160px;}
-.swpt-mode-hp:hover i{background-position: -70px -160px;}
-.swpt-full-wrap.hover i,.swpt-full-wrap:hover i, .swpt-full-tip:hover i{display: block;width:14px;height:14px;background-position: -30px -280px;}
-.swpt-original i{display: block;width:13px;height: 14px;background-position: -160px -160px;}
-.swpt-original:hover i{float: left;display: inline;background-position: -190px -160px;}
-.swpl-btn i{display: block;width:12px;height: 20px;}
-.swpl-fastprev i{background-position: 0 -190px;}
-.swpl-fastprev:hover i{background-position: -20px -190px;}
-.swp-list-prev-last .disabled:hover i{background-position: 0 -190px;}
-.swpl-fastnext i{background-position: -40px -190px;}
-.swpl-fastnext:hover i{background-position: -60px -190px;}
-.swp-list-next-last .disabled :hover i{background-position: -40px -190px;}
-.heart-vote i{display: block; width:32px;height:27px;overflow:hidden;background-position:-0px -360px;}
-.heart-vote:hover i{background-position:-40px -360px;}
-.swpb-item i{display: block;width: 17px;height: 15px;}
-.swpb-download i{background-position:-60px -280px;}
-.swpb-download:hover i{background-position:-90px -280px;}
-
-.swpb-comment i{background-position:-120px -280px;}
-.swpb-comment:hover i{background-position:-150px -280px;}
-
-.swp-btn i{display: block; width:21px;height:41px;overflow: hidden;cursor: pointer;}
-.swp-prev i{background-position: 0 -230px;}
-.swp-prev:hover i{background-position: -40px -230px;}
-.swp-next i{background-position: -80px -230px;}
-.swp-next:hover i{background-position: -120px -230px;}
-.top-tip .hot{display: block;width:21px;height: 21px;overflow: hidden;background-position: -180px -300px;}
-
-/*΢���б�*/
-.swpw-approve{display: block; width:16px;height:14px;margin-left: 2px;vertical-align: middle;_vertical-align: -5px;}
-.swpw-approve-y{background-position: 0 -120px;}
-.swpw-approve-b{background-position: -25px -120px;}
-.swpw-txt .swpw-follow a{width: 47px; height: 22px; display: block;background-position: -40px -330px;}
-.swpw-txt .swpw-follow span{width: 40px; padding-left: 14px; height: 22px; display: block;background-position: -90px -334px;}
-/*���ض���*/
-.side-btns-top-btn{display: block;width:50px;height:50px;text-indent: -9999em; background-position: 0 -430px;}
-
-.wrap{width:1000px;margin: 0 auto;}
-.mt-a{margin-top:20px !important;}
-.mb-a{margin-bottom:20px !important;}
-.hr-a{height:0;margin-top:4px;border-top:1px solid #eee;font-size: 0;line-height: 0;}
-.hr-a i{display: block; width:30px;height:10px;margin: -5px auto 0;background-color: #F9F9F9;background-position: -210px -281px;}
-.part-a{border: 1px solid #eee;background: #fff;margin:0 0 20px 0;position: relative;}
-/*��������*/
-/*����*/
-.nav-wrap{border-bottom: 1px solid #E8E8E8; -moz-box-shadow: 0px 1px 1px #F3F3F3; -webkit-box-shadow: 0px 1px 1px #F3F3F3; box-shadow: 0px 1px 1px #F3F3F3;/*-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#F3F3F3')";filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#F3F3F3');*/background: #fff;overflow: hidden;width:100%;overflow: hidden;}
-.nav-inner{width:1000px;height:64px;margin:0 auto;}
-.nav-inner .logo{float: left;display: inline; width: 287px; height: 37px;margin: 14px 0 0 0; text-indent: -9999em;}
-.nav-extra{float: right;display: inline;padding: 22px 0 0 0;}
-.nwi-lnk,.top-search{float: left;display: inline;}
-.nwi-lnk{ display: block; width: 82px; height: 23px; font-size: 13px; line-height: 23px;margin-right: 6px; text-align: center;color:#2c2c2c;text-decoration: none;}
-.nwi-lnk:link,.nwi-lnk:visited{color:#2c2c2c;text-decoration: none;}
-.nwi-lnk:hover{color:#fff;text-decoration: none;}
-.top-search{width:154px; border-left:1px solid #D7D4CF;padding:0 0 0 20px;margin-left:3px;position: relative;}
-.top-search-bg{width:150px;height:24px;background:url(//www.sinaimg.cn/dy/deco/2013/1021/images/search.png) 0 0 no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale, src='//www.sinaimg.cn/dy/deco/2013/1021/images/search.png');_background:none;padding:0 0 0 14px;position:absolute;top:0;right:0;}
-.top-search form{position:relative;}
-.top-search .input,.top-search .input:focus{border:0;outline:none;padding:0 0 0 0;width:120px;height:24px;line-height:24px\9; *line-height:24px;background:none;float:left;display:inline;font-family:"Microsoft Yahei","΢���ź�";position:relative;z-index:100;color:#2c2c2c;font-size: 13px;}
-.top-search .btn{background:none;width:25px;height:24px;border:none;cursor:pointer;float:left;display:inline;position:relative;z-index:100;}
-.top-search .gray,.top-search .gray:focus{color:#666;}
-/*������*/
-.main-nav-wrap{width:1000px;height:56px;margin:25px 0 30px 0;overflow:hidden; position:relative;*zoom:1;}
-.main-nav-wrap ul{margin-bottom:20px;}
-.main-nav-wrap li{width:90px;padding:0 0 0 20px;height:18px;line-height:18px;overflow:hidden; font-size:16px;color:#333;font-family:"Microsoft Yahei","΢���ź�", "����",SimHei; border-right:1px solid #B2B2B2;float:left;display:inline;}
-.main-nav-wrap .last{border-right:0;position:absolute;top:18px;right:0;}
-.main-nav-wrap a:link,.main-nav-wrap a:visited{color:#333;text-decoration:none;}
-.main-nav-wrap a:hover{color:#ab000e;text-decoration:none;}
-.main-nav-wrap a:active{color:#333;text-decoration:none;}
-.main-nav-wrap a.current:link,.main-nav-wrap a.current:visited{color:#ab000e;text-decoration:none;}
-.main-nav-wrap a.current:hover,.main-nav-wrap a.current:active{color:#ab000e;text-decoration:none;}
-/*��Ϣ��ʾ*/
-.top-tip{border:1px solid #eee;-moz-box-shadow: 0px 1px 1px #eee; -webkit-box-shadow: 0px 1px 1px #eee; box-shadow: 0px 1px 1px #eee;-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#eeeeee')";filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#eeeeee');}
-.top-tip .txt{padding:6px 0 7px;line-height:22px;font-size:14px;text-align:center;color:#666;border-top: 1px solid #fff;position: relative;}
-.top-tip .txt a:link,.top-tip .txt a:visited{color:#666;text-decoration:none;}
-.top-tip .txt a:hover,.top-tip .txt a:active{color:#c00;text-decoration:underline;}
-.top-tip .hot{display: inline-block;margin-right:5px;vertical-align: middle;}
-/*ͼƬ������*/
-.slide-wrap{position: relative;}
-.sw-player{position: relative;}
-.swp-tit{height: 35px;line-height: 35px; padding: 17px 24px 11px; overflow: hidden;}
-.swp-tit h2,.swp-tit span{font-size: 21px;color:#2c2c2c;float: left;display: inline;font-weight: normal;}
-.swp-tit span{padding-left: 5px;}
-.swp-tit em{font-style: normal;}
-.swp-tool{height:16px;line-height: 16px;padding:0 24px 20px;color:#666;}
-.swp-tool .swpt-time{font-style: normal;font-size: 12px;}
-.swpt-extra{float:right;display: inline;/*width: 423px;*/}
-.swpt-tip,.swpt-full-wrap{float:left;display: inline;}
-.swpt-tip{height:16px;padding-right: 17px;border-right:1px solid #DFDFDF;margin-right:17px;overflow: hidden;}
-.swpt-tip i{display: inline-block;vertical-align: middle;_vertical-align: -3px;}
-.swpt-full-wrap{width:92px;position: relative;height:16px;}
-.swpt-flash-wrap{position: absolute;top:0;left:0;z-index: 10;line-height:0}
-.swpt-flash{height:16px;overflow: hidden;}
-.swpt-full-tip{position: absolute;top:0;left:0;width:100px;height:16px;margin-left:20px;}
-.swpt-full-tip i{float: left;display: inline;}
-.swpt-full-tip:link,.swpt-full-tip:visited{color:#666;text-decoration: none;}
-.swpt-full-tip:hover,.swpt-full-tip:active{color:#666;text-decoration: none;}
-.swpt-full-tip i{margin:1px 8px 0 0;*margin-top:0px;}
-.swpt-mode-wrap{float: left;display: inline;height:16px;padding-right: 17px;margin-right:16px;border-right:1px solid #DFDFDF;overflow: hidden;}
-.swpt-mode-wrap a:link,.swpt-mode-wrap a:visited{color:#666;text-decoration: none;}
-.swpt-mode-wrap a:hover,.swpt-mode-wrap a:active{color:#666;text-decoration: none;}
-.swpt-mode-list i, .swpt-mode-hp i{float: left;display: inline;margin-right: 8px;}
-.swpt-original i{float: left;display: inline;margin-right: 8px;}
-.swpt-original{float: left;display: inline;padding-right:17px;border-right:1px solid #DFDFDF;}
-.swpt-original:link,.swpt-original:visited{color:#666;text-decoration: none;}
-.swpt-original:hover,.swpt-original:active{color:#666;text-decoration: none;}
-.swp-hd img{vertical-align:middle;}
-.swp-hd{position: relative;overflow: hidden;background: url(//www.sinaimg.cn/dy/deco/2013/0604/loader.gif) 406px center no-repeat;cursor:pointer;margin: 0 auto;/*min-height:300px;_height:300px;*/}
-.swp-hd-small{padding: 60px 0 0 0;}
-.swp-hd-loaded{background-image: none;}
-.swp-hd-list{width:100%;}
-.swp-btn{position: absolute;/*top:380px;*/ top:50%;margin-top: -105px;display: block;padding:15px 20px;}
-.swp-btn{background:rgba(255,255,255, 0.6); filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#99ffffff', EndColorStr='#99ffffff');*zoom:1;} :root .swp-btn{filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00ffffff', EndColorStr='#00ffffff'); }
-.swp-prev{left:25px;}
-.swp-next{right:25px;}
-.swp-item{width:100%; overflow:hidden;*font-size:0;float: left;display: inline;}
-.swp-img{text-align: center;min-height:100px;_height:100px;zoom:1;}
-.swp-img img{display: none;background-color: #fff;}
-.current .swp-img img{display: inline-block;zoom:1;}
-.swp-img-left{cursor: url(//www.sinaimg.cn/edu/images/slidenews/arr_left.cur),auto;}
-.swp-img-right{cursor: url(//www.sinaimg.cn/edu/images/slidenews/arr_right.cur),auto;}
-.swp-txt{line-height: 24px;padding: 15px 15px 15px 65px;}
-
-.swpt-intro a:link,.swpt-intro a:visited{color:#999;text-decoration:none;}
-.swpt-intro a:hover,.swpt-intro a:active{color:#999;text-decoration:none;}
-.swpt-time{font-family: "helvetica_neue_lt_pro35_thin",Helvetica,Verdana;font-size: 14px;color:#ababab;}
-
-.swp-txt{padding:15px 0 15px 25px;position: relative;margin:0 1px;}
-.swpt-table{ text-align:left;/**position:relative; *display:block;*/ width:815px; height:auto !important; height:75px; min-height:75px;padding:0 25px 0 0;border-right: 1px solid #E6E6E6;}
-.swpt-table .swpt-cell{ vertical-align: middle;/**display:block; *position:absolute; *top:50%; */}
-/*.item-table .item-cont{*display:block; *position:relative; *top:-50%; *left:-50%; }*/
-.swpt-cont{line-height: 28px; font-size: 14px; color: #666;text-indent: 2em;}
-
-.heart-vote-wrap{position: absolute;right:25px;top:15px;}
-.heart-vote{display: block; width: 90px;height: 85px;line-height: 30px;text-align: center; font-family: "Microsoft Yahei","΢���ź�";font-size: 14px;color:#666;  cursor: pointer;overflow: hidden;*zoom:1;}
-.heart-vote i{margin:5px 0 10px 27px;*margin-left: 0;}
-.heart-vote:link,.heart-vote:visited{color:#666;text-decoration: none;}
-.heart-vote:hover,.heart-vote:active{color:#666;text-decoration: none;}
-.heart-vote.liked,.heart-vote.liked:hover{color:#666;text-decoration: none;cursor: default;}
-.heart-vote.liked i,.heart-vote.liked:hover i{background-position:-40px -360px;}
-.heart-vote-wrap .hover{cursor: text;}
-
-.swp-bd{height:37px;border-top: 1px solid #eee;background: #F9F9F9;}
-.swpb-left{margin-left: 25px;line-height: 35px;}
-.swpb-right{float: right;padding-right: 24px;}
-.swpb-item{float: left;display: inline;font-size: 12px;margin:10px 0 0 0; padding: 0 10px 0 3px;height:36px;}
-.swpb-item:link,.swpb-item:visited{color:#666;text-decoration: none;}
-.swpb-item:hover,.swpb-item:active{color:#666;text-decoration: none;}
-.swpb-item i{float: left;display: inline;margin: 0 6px 0;_margin-top: 0px; overflow: hidden;}
-.swpb-comment.active,.swpb-comment.active:hover{color:#000;background: #fff;text-decoration: none;}
-.swpb-comment.active i,.swpb-comment.active:hover i{background-position:-120px -280px;}
-.swpb-comment i{overflow:hidden;}
-.swpb-download,.swpb-comment{height:16px;line-height: 16px; border-right:1px solid #DFDFDF;overflow: hidden;}
-.swpb-share{height:50px;line-height: 37px;font-size: 12px;color:#666;padding: 0px;margin: 0}
-.swpb-share .label{float: left;display: inline;padding:0 5px 0 12px;}
-.swpb-share #bdshare{margin-top: 6px;}
-.swpb-share .bds_tsina{margin-right:3px;}
-.slide-voted{width:47px;height:20px;overflow: hidden;text-indent: -999em;background: url(//www.sinaimg.cn/dy/deco/2013/1121/voted.png) no-repeat;}
-.slide-vote{width:27px;height:17px;overflow: hidden;text-indent: -999em;background: url(//www.sinaimg.cn/dy/deco/2013/1121/vote.png) no-repeat;}
-
- /* ͼƬ�������޸� 141013 begin */
-.swpt-cont{ text-indent: 0em; }
-.swpt-1013{ overflow:hidden ; font-size: 14px; }
-.num{ color: #a1a1a1; font-size: 16px; float: left; margin: 4px 0 0 0;padding-right: 10px}
-.num em{ color: #ab000e; font-size: 24px; font-style: normal; }
-  /* ͼƬ�������޸� 141013 end */
-
-
-
-/*ͼ������*/
-.swp-summary{position: relative;}
-.swp-summary .swps-tit{font-size: 21px; color: #2c2c2c; height: 60px; line-height: 60px; padding: 0 95px; text-align: left;font-weight: normal;padding-top:16px;}
-.swp-summary .swps-cont{padding: 0 95px 20px; line-height: 28px; color: #666; font-size: 14px;margin-top:7px;}
-.swp-summary .swps-cont p{font-size: 14px;margin-bottom:21px;}
-.swp-summary a:link,.swp-summary a:visited{color:#666;text-decoration: underline;}
-.swp-summary a:hover,.swp-summary a:active{color:#c00;text-decoration: underline;}
-
-/*��������*/
-.swp-list-wrap{display:block;text-align:center;font-size:0;height:132px;padding: 5px 0 20px 0;}
-.swp-list{padding:0 20px;display:inline-block;*display:inline;*zoom:1;vertical-align:top;font-size:12px;overflow: hidden;}
-
-.swp-list-cont{/*width:840px;*/width:670px; height:120px;float: left;display: inline;margin: 0 15px;overflow: hidden;}
-.swp-list ul{float: left;width:1900px;overflow: hidden;}
-.swp-list li{float: left;display: inline;width: 120px;}
-.swp-list li img{border: 1px solid #dfdfdf;}
-.swp-list li.current img,.swp-list li.hover img{padding:0;border-width: 5px; border-color:#DFDFDF;}
-.swp-list li a{display: table-cell; vertical-align:middle; text-align:center; *display: block; *font-size: 105px;/*ԼΪ�߶ȵ�0.873��120*0.873 ԼΪ105*/ *font-family:Arial;/*��ֹ��utf-8�����hackʧЧ���⣬��gbk����*/ width:120px; height:120px; }
-.swp-list img{vertical-align:middle;}
-.swpl-btn{width:12px;height:120px;padding:0 9px;float: left;display: inline;background: #F9F9F9;}
-.swpl-btn:hover{background: #eee;}
-.swpl-btn i{margin-top: 50px;cursor: pointer;}
-.swpl-fastprev{border-radius: 10px 0 0 10px;}
-.swpl-fastnext{border-radius: 0 10px 10px 0;margin-right: 20px;}
-.swp-list-wrap .disabled,.swp-list-wrap .disabled i{cursor: text;}
-.swp-list-wrap .disabled:hover{background: #F9F9F9;}
-.swpl-group{float: left;display: inline;width:106px;height:150px;overflow: hidden;margin: 0 20px 0 0;position: relative;overflow: hidden;cursor: pointer;}
-.swpl-group-next{margin:0;}
-.swpl-group:link,.swpl-group:visited{color:#333;text-decoration: none;}
-.swpl-group:hover,.swpl-group:active{color:#ab000e;text-decoration: none;}
-.swpl-group .bg{border:1px solid #DEDFE3;display: block;width:100px;height:100px;position: absolute;left:0;top:0;background:#fff;z-index: 3;}
-.swpl-group img{position: relative;z-index: -1;}
-/*.swpl-group .bg-b,.swpl-group .bg-a{padding: 1px;}*/
-.swpl-group .bg-c{left:4px;top:4px;z-index: 1;}
-.swpl-group .bg-b{left:2px;top:2px;z-index: 2;}
-.swpl-group .inner{ /*��IE�����������ʶ��Ĵ�ֱ���еķ���*/ display: table-cell; vertical-align:middle; /*����ˮƽ����*/ text-align:center; /* ���IE��Hack */ *display: block; *font-size: 88px;/*ԼΪ�߶ȵ�0.873��200*0.873 ԼΪ175*/ *font-family:Arial;/*��ֹ��utf-8�����hackʧЧ���⣬��gbk����*/width:100px;height:100px;}
-.swpl-group .inner{/*����ͼƬ��ֱ����*/ vertical-align:middle;}
-.swpl-group i{position: absolute;padding:0 55px;line-height:105px;left:0;top:0;z-index: 12;background-image:url(#); }
-.swpl-group em{line-height: 18px;height:40px;display: block;font-style: normal;position: absolute;bottom:0;left:0;width:106px;text-align: center;}
-
-/*�б�ģʽ*/
-/*��������*/
-.sw-list{z-index: 1;background: #fff;}
-.sw-list-bd ul{border-top:1px solid #eee;width: 1001px;margin-left: -1px;}
-.sw-list li {float:left;display:inline;width: 249px;height:274px;overflow:hidden;margin: 0;padding:40px 0 0 0;cursor: pointer;position: relative;border-left:1px solid #eee;border-bottom:1px solid #eee;}
-.sw-list li.current,.sw-list li.hover{background: #fafafa;}
-.sw-list .swi-hd{display: table-cell; vertical-align:middle; text-align:center; *display: block; *font-size: 140px;/*ԼΪ�߶ȵ�0.873��160*0.873 ԼΪ140*/ *font-family:Arial;/*��ֹ��utf-8�����hackʧЧ���⣬��gbk����*/ width:249px; height:160px; }
-.sw-list .swl-item-right{border-right:1px solid #eee;width:248px;}
-.sw-list .swl-item-notrigth-last{width:249px;}
-.sw-list .swl-item-bottom{border-bottom:1px solid #eee;}
-.sw-list h3{font-weight: normal;}
-.sw-list img{vertical-align:middle;}
-.swi-bd{padding: 25px 20px 0;line-height: 25px;text-align: center;}
-.swi-bd p{display: none;}
-/*.swi-ft{position: absolute;right:0;bottom: 0;height: 26px;line-height: 26px;padding: 0 10px 0 15px;font-family: Georgia;}*/
-.sw-list-hd{display: none;}
-
-.slide-wrap-show-list .swp-hd, .slide-wrap-show-list .swp-btn, .slide-wrap-show-list .sw-audio, .slide-wrap-show-list .swp-txt,.slide-wrap-show-list .swp-list-wrap,.slide-wrap-show-list .swpt-tip, .slide-wrap-show-list .swpt-original, .slide-wrap-show-list .swpt-full-wrap{display: none;}
-.slide-wrap-show-list .swp-bd{margin-top: -1px;}
-.slide-wrap-show-list .swpt-mode-wrap{padding-right:0;margin-right: 0;border-right: 0;float: right; }
-/*����ǰ��ʽ*/
-.slide-wrap-loading .sw-player{background: url(//www.sinaimg.cn/dy/deco/2013/0604/loader.gif) 406px center no-repeat #fff;}
-.slide-wrap-loading .sw-player .part-a{visibility: hidden;}
-/*.slide-wrap-loading .swp-btn{top:-9999px;}*/
-/*����*/
-.slide-comment-loading{line-height: 50px;text-align: center;font-size: 16px;}
-/*���ֲ���*/
-.sw-audio{width:40px;height:41px;overflow:hidden;position:absolute;right:44px;top:117px;}
-.sw-audio audio { position: absolute; left: -1px; }
-.sw-audio {/* width: 460px; */height: 40px; overflow: hidden; font-family: monospace; font-size: 12px;}
-.sw-audio .sw-audio-play-pause { width:40px;height:40px;margin: 0px; float: left; overflow: hidden;}
-.sw-audio p,.sw-audio a {display:block; width:40px;height:40px;display:block;cursor:pointer;display:none;}
-.sw-audio .sw-audio-play { display: block; }
-.sw-audio .sw-audio-scrubber { position: relative; float: left; width: 280px; background: #fcc; height: 14px; margin: 10px; border-left: 0px; border-bottom: 0px; overflow: hidden; }
-.sw-audio .sw-audio-progress { position: absolute; top: 0px; left: 0px; height: 14px; width: 0px; background: #600; z-index: 1; }
-.sw-audio .sw-audio-loaded { position: absolute; top: 0px; left: 0px; height: 14px; width: 0px; background: #c00; }
-.sw-audio .sw-audio-time { float: left; height: 36px; line-height: 36px; margin: 0px 0px 0px 6px; padding: 0px 6px 0px 12px; border-left: 1px solid #c00; color: #600; }
-.sw-audio .sw-audio-time em { padding: 0px 2px 0px 0px; color: #fcc; font-style: normal; }
-.sw-audio .sw-audio-time strong { padding: 0px 0px 0px 2px; font-weight: normal; }
-.sw-audio .sw-audio-error-message { float: left; display: none; margin: 0px 10px; height: 36px; width: 400px; overflow: hidden; line-height: 36px; white-space: nowrap; color: #fff;}
-.sw-audio .sw-audio-error-message a { color: #eee; text-decoration: none; padding-bottom: 1px; border-bottom: 1px solid #999; white-space: wrap; }
-.sw-audio .sw-audio-play, .sw-audio .sw-audio-loading, .sw-audio .sw-audio-error, .sw-audio .sw-audio-pause{}
-.sw-audio .sw-audio-play { background-position: -10px -50px;}
-.sw-audio .sw-audio-loading { background-position: -110px -50px;}
-.sw-audio .sw-audio-error { background-position: -10px -100px;}
-.sw-audio .sw-audio-pause { background-position: -10px 0;}
-
-.sw-audio .sw-audio-play:hover { background-position: -60px -50px;}
-.sw-audio .sw-audio-loading:hover { background-position: -110px -50px;}
-.sw-audio .sw-audio-error:hover { background-position: -60px -100px;}
-.sw-audio .sw-audio-pause:hover { background-position: -60px 0;}
-.sw-audio-playing .sw-audio-play, .sw-audio-playing .sw-audio-loading, .sw-audio-playing .sw-audio-error { display: none; }
-.sw-audio-playing .sw-audio-pause { display: block; }
-.sw-audio-loading .sw-audio-play, .sw-audio-loading .sw-audio-pause, .sw-audio-loading .sw-audio-error { display: none; }
-.sw-audio-loading .sw-audio-loading { display: block; }
-.sw-audio-error .sw-audio-time, .sw-audio-error .sw-audio-play, .sw-audio-error .sw-audio-pause, .sw-audio-error .sw-audio-scrubber, .sw-audio-error .sw-audio-loading { display: none; }
-.sw-audio-error .sw-audio-error { display: block; }
-.sw-audio-error .sw-audio-play-pause p { cursor: auto; }
-.sw-audio-error .sw-audio-error-message { display: block; }
-/*���ض���*/
-html,* html body{background-attachment:fixed}
-.side-btns-wrap{width:50px;left: 50%; margin-left:505px;position: fixed;bottom: 60px; _position:absolute;_top:expression(documentElement.scrollTop + documentElement.clientHeight-120);z-index:100;visibility: hidden;overflow: hidden;}
-.side-btns-top{width:50px;}
-.side-btns-top a{display: block; text-indent:-999em; cursor:pointer;}
-a.side-btns-detail-btn{ display: none;color:#fff;text-indent: 0;text-align: center;background: #AB010E;margin-bottom: 1px;height:24px;line-height: 24px;overflow: hidden;font:12px/24px "����","Arial Narrow",HELVETICA;}
-.slide-has-intro .side-btns-detail-btn{display: block;}
-.side-btns-detail-btn:link,.side-btns-detail-btn:visited{color:#fff;text-decoration: none;}
-.side-btns-detail-btn:hover,.side-btns-detail-btn:active{color:#fff;text-decoration: none;}
-.side-btns-top-btn { filter:Alpha(Opacity=35); opacity:.35; overflow:hidden;}
-.side-btns-top-btn:hover {filter:Alpha(Opacity=50); opacity:.5;}
-.side-btns-top-close{width: 50px;height: 18px;margin-top:1px;background: url(//www.sinaimg.cn/dy/deco/2013/0913/close2.png) no-repeat;}
-.side-btns-wrap-resize{display: none !important;}
-/*����iframe*/
-.daoliu-iframe{padding: 9px 0 0 9px;}
-/*΢���б�*/
-.swp-weibolist{ background:#FFF; border-top: 1px solid #eee;}
-.swpw-item{ margin-top: 18px; margin-bottom: 10px; float: left; display: inline; border-right: 1px solid #e6e6e6; padding-right: 10px;}
-.swpw-item-last{ border-right: none; padding-right: 0;}
-.swpw-pic{ position: relative;float: left;display: inline;}
-.swpw-pic img{ width: 50px; height: 50px; margin: 0 0 0 24px; border: 1px solid #ccc;vertical-align: middle;}
-.swpw-txt{ margin-left: 85px; width: 238px; _margin-left:82px;}
-.swpw-txt h3{ font-size: 14px; height: 19px; line-height: 19px; vertical-align: middle;font-family: "΢���ź�","����";font-weight: normal;}
-.swpw-name img{vertical-align: middle;}
-.swpw-txt p{color:#666;}
-.swpw-txt a{ display: block; float: left;}
-.swpw-txt a:link,.swpw-txt a:visited{color:#2c2c2c;text-decoration:none;}
-.swpw-txt a:hover,.swpw-txt a:active{color:#ab000e;text-decoration:none;}
-.swpw-txt .swpw-label{ font-family: "΢���ź�","����"; color: #2c2c2c; font-size: 14px; margin-right: 6px; height: 19px; display: block; background: #ECECEC; padding: 0 5px; float: left;}
-.swpw-btn-wrap{ margin: 10px 0 6px 0; color: #000; height: 22px; line-height: 22px;}
-.swpw-btn-wrap span, .swpw-btn-wrap a{ display: block; float: left; height: 22px;}
-.swpw-txt .swpw-approve{display: inline-block;}
-/* footer */
-.footer{ text-align:center; color:#666; line-height:30px; padding:20px 0; margin-top:5px;}
-.footer-inner{margin:0 auto;width:1000px;}
-.footer a, .footer a.visited{ color:#666;}
-
- /*βҳ*/
-.slide-end-tip{display:block; visibility:hidden;margin: 0 auto;position: absolute;top:-99999em;z-index: 100;}
-.body-end-show .slide-end-tip{visibility: visible;position: relative;top:0;margin-left: -1px;}
-.body-end-show .swp-hd{visibility:hidden;position: absolute;top:-99999em;}
-/*βҳ scroll*/
-.recommend-scroll-prev,.recommend-scroll-next,.recommend-scroll-dots span,.recommend-tab-nav .last,.slide-end-control .btn-weibo i{background: url(//www.sinaimg.cn/dy/deco/2013/0604/tab_scroll_bg.png) no-repeat;_background-image:url(//www.sinaimg.cn/dy/deco/2013/0604/tab_scroll_bg_.png);}
-.slide-end-bg{height:100%;width:100%;background:#27282A;/*filter:Alpha(Opacity=70);opacity:0.7;*/position: absolute;top:0;right:0;z-index: 0;}
-.recommend-scroll-bd{ position: relative; overflow: hidden; z-index: 100; height:155px;}
-.recommend-scroll-list{ position: relative; overflow: hidden;}
-.recommend-scroll-item{ float: left; display: inline; width: 200px; height: 185px; overflow: hidden; position: relative;}
-.recommend-scroll-item a{ float:left;display: inline; width: 198px; height: 153px; border: 1px solid #27292C; border-width:0 1px;background: #202123; position: relative; overflow: hidden; z-index: 50;text-align: center; }
-.recommend-scroll-item a{text-decoration: none;}
-.recommend-scroll-item a:hover{ /*border-color: #ff8400;*/ text-decoration: none;}
-.recommend-scroll-item .txt{ width: 198px; height: 21px; line-height: 21px; position: absolute; z-index: 1000; left: 0px; background: #3E4044; top: 132px; display: block; text-align: center; }
-.recommend-scroll-item a:link .txt, .recommend-scroll-item a:visited .txt{ color: #A4A6A7; }
-.recommend-scroll-item a:hover .txt/*, .recommend-scroll-item a:active .txt, .recommend-scroll-item a:focus .txt*/{ color: #fff; text-decoration: none; background: #62666E;}
-.recommend-scroll-prev, .recommend-scroll-next{ position: absolute; z-index: 20000; width: 33px; height: 43px; top: 48px; cursor: pointer;}
-.recommend-scroll-prev{ left: 0; background-position:0 -89px; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src='//www.sinaimg.cn/dy/deco/2013/0604/prev_b.png'); }
-.recommend-scroll-next{ right: 0; background-position: 0 -139px; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src='//www.sinaimg.cn/dy/deco/2013/0604/next_b.png'); }
-.recommend-scroll-prev:hover{background-position:-40px -89px; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src='//www.sinaimg.cn/dy/deco/2013/0604/prev_b_hover.png'); }
-.recommend-scroll-next:hover{background-position: -40px -139px; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src='//www.sinaimg.cn/dy/deco/2013/0604/next_b_hover.png'); }
-.recommend-scroll-prev:hover{color:#fff !important;}
-.recommend-scroll-next:hover{color:#fff !important;}
-.recommend-scroll-dots{ clear: both; text-align: center; height: 20px; padding-top: 10px; }
-.recommend-scroll-dots span{ display: inline-block; width: 10px; height: 10px;overflow: hidden; background-position:  -40px -189px; cursor: pointer; margin: 0 7px; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src='//www.sinaimg.cn/dy/deco/2013/0604/dot.png'); }
-.recommend-scroll-dots span.current{ background-position: 0 -189px;_background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src='//www.sinaimg.cn/dy/deco/2013/0604/dot_hover.png');  }
-.recommend-scroll-list .pic{display: inline-block; *display:table-cell;width:198px;height:132px;text-align: center;cursor: pointer;overflow:hidden;position: relative;}
-.recommend-scroll-list .pic img{display: inline-block;*margin-top:-22px;border: none;vertical-align: middle;max-height: 100%;max-width: 100%;}
-.recommend-scroll-list i{display: inline-block;height: 100%;line-height: 132px; vertical-align: middle;font-size: 0;}
-.recommend-scroll-loading{width:128px;height:15px;margin:60px auto 0 auto;overflow: hidden;background: url(//www.sinaimg.cn/dy/deco/2013/0604/loader.gif) no-repeat;}
-/*βҳ ѡ�*/
-.recommend-tab-wrap{width:1000px;height:250px;overflow:hidden;font:12px/20px "SimSun","����","Arial Narrow",HELVETICA;position: relative;}
-.recommend-tab-wrap ul, .recommend-tab-wrap li, .recommend-tab-wrap img { margin:0; padding:0; }
-.recommend-tab-wrap img{border:none;display: block;}
-.recommend-tab-wrap ul, .recommend-tab-wrap ol { list-style:none;}
-.recommend-tab-nav{height:31px;line-height:31px;padding:5px 0;font-family:"΢���ź�";font-size: 16px;border-bottom:2px solid #5A5A5A;margin-bottom:20px;background: #27282A;}
-.recommend-tab-nav{padding-left:8px;}
-.recommend-tab-nav li{float:left;padding:0 10px;position: relative;}
-.recommend-tab-nav a:link,.recommend-tab-nav a:visited{color:#A9A9A9;text-decoration: none;}
-.recommend-tab-nav a:hover{color:#fff !important;text-decoration: none;}
-.recommend-tab-nav .current a:link,.recommend-tab-nav .current a:hover,.recommend-tab-nav span{color:#fff;text-decoration: none;}
-/*βҳ  HACK ScrollPic ��display:none��ʼ��ʱ��������ȷ����dots*/
-.recommend-tab-cont{width:1000px;height:185px;overflow: hidden;position:relative}
-.recommend-tab-nav .arrow{display:none;position: absolute;z-index: 1;top:29px;right:0;width:85px;height:7px;border-bottom:2px solid #EA2929;text-align: center;overflow: hidden;}
-.recommend-tab-nav .arrow i{display: inline-block;margin-top: -3px;width:0;height:0;border-style: dashed dashed solid dashed;border-width:7px;border-color: transparent transparent #EA2929 transparent;overflow: hidden;zoom:1;font-size: 0;}
-.recommend-tab-nav .current .arrow{display: block;}
-.recommend-tab-nav .last{padding-left:12px;background-position:0 -202px;}
-/*βҳ ��ť*/
-.slide-end-control .left{float: left;padding-left:15px;}
-.slide-end-control .right{float: right;}
-.slide-end-control .btn-weibo{height:26px;line-height: 26px;float: right;display: inline;font-size: 14px;}
-.slide-end-control .btn-weibo i{float:left;display: inline;width: 16px;height:13px; overflow: hidden;margin:6px 2px 0 0;}
-.slide-end-control .btn-weibo:link,.slide-end-control .btn-weibo:visited{color: #B8BDBF;text-decoration: none;}
-.slide-end-control .btn-weibo:link i,.slide-end-control .btn-weibo:visited i{background-position:0 -240px;_background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src='//www.sinaimg.cn/dy/deco/2013/0604/weibo.png');}
-.slide-end-control .btn-weibo:hover, .slide-end-control .btn-weibo:active{color: #fff !important;text-decoration: none;}
-.slide-end-control .btn-weibo:hover i, .slide-end-control .btn-weibo:active i{background-position:-40px -240px;_background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src='//www.sinaimg.cn/dy/deco/2013/0604/weibo_hover.png');}
-.slide-end-control .btn-a,.slide-end-control .disabled{float:left;display: inline;height:26px;line-height: 26px;_line-height:27px;padding:0 10px;overflow: hidden;background:#515254;text-align: center;font-size: 16px;font-family: "΢���ź�";color: #B8BDBF;border-top:1px solid #6D6D6D;border-radius: 5px;box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); -ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000000')"; filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000000');}
-.slide-end-control .btn-a:link,.slide-end-control .btn-a:visited{background: #515254;color: #B8BDBF;text-decoration: none;}
-.slide-end-control .btn-a:hover{background: #5F6262;color: #fff !important;text-decoration: none;}
-.slide-end-control .btn-a:active{background: #5F6262;color: #fff;text-decoration: none;}
-/*βҳ disabled*/
-.slide-end-control .disabled{color:#777;}
-.slide-end-control .btn-b{border-top:1px solid #B91111;}
-.slide-end-control .btn-b:link,.slide-end-control .btn-b:visited{background: #A00606;color: #fff;text-decoration: none;}
-.slide-end-control .btn-b:hover{background: #AA0A0A;color: #fff !important;text-decoration: none;}
-.slide-end-control .btn-b:active{background: #AA0A0A;color: #fff;text-decoration: none;}
-
-.slide-end-control{padding:0 15px 15px 0;position: relative;z-index: 1;}
-.slide-end-control .btn-a,.slide-end-control .btn-b,.slide-end-control .disabled{margin-right:5px;}
-/*βҳ-����*/
-.slide-end-tip{width:1000px;min-height:545px;_height:545px;position: absolute;z-index:100;background:#27282A;}
-.slide-end-da{position:relative;}
-.slide-end-da{background:#27282A;}
-.slide-end-da img{border: none;display: block;}
-.slide-end-close{width:65px;height:18px;display: block;position: absolute;right:3px;top:3px;text-indent: -9999em;background:url('//www.sinaimg.cn/cj/hd/close_h2.jpg') no-repeat;z-index: 1;}
-.slide-end-close:hover{filter:Alpha(Opacity=80);opacity:0.8;}
-
-/* 201403 ͳһ�ղط����� begin */
-/* ��½ */
-.fl{float:left;}
-.fr{float:right;}
-.login-frame{float:right;color:#000;height:30px;line-height:30px;padding:18px 0 16px 14px;display:inline;margin-right:20px;font-size:14px;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;}
-.login-frame .sc-img{width:30px;height:30px;overflow:hidden;float:left;padding-right:13px;}
-.login-frame a:link,.login-frame a:visited{color:#2c2c2c;}
-.login-frame .login-button{padding-left:4px;}
-.login-frame .login-button .span2{width:8px;height:4px;margin:14px 14px 0 8px;background:url(//www.sinaimg.cn/ent/deco/2014/0311/images/pic_star.png) 0 -60px no-repeat;overflow:hidden;}
-.login-frame a.login-button:hover .span2{background-position:0 -70px;}
-
-.login-frame .logined-wrap{float:left;}
-.login-frame .top-nr-welcome{float:left;}
-.login-frame .username{padding-right:5px;}
-.login-frame .logout{padding-right:15px;}
-.login-frame a.username,.login-frame a.username:visited{color:#6c6c6c;}
-.login-frame a.login-button:hover,.login-frame a.username:hover,.login-frame a.logout:hover{color:#ab010e;text-decoration:none;}
-
-/* �ղ� */
-.swpb-shoucang i{background:url(//www.sinaimg.cn/ent/deco/2014/0311/images/pic_star.png) no-repeat;}
-.swpb-shoucang:hover i,.shoucang-active i{background-position:0px -20px;}
-.swpb-shoucang{height:16px;line-height:16px;border-right:1px solid #DFDFDF;overflow:hidden;}
-
-.sc_success_tit{position:absolute;z-index:99999;padding:0 15px;border:1px solid #ccc;background:#fff;display:none;_width:150px;}
-.sc_success_tit .sp{color:#666;height:30px;line-height:30px;}
-.sc_success_tit a.a{color:#b60c0c;padding-left:8px;height:30px;line-height:30px;}
-.sc_success_tit a.a:hover{text-decoration:underline;}
-.sc_success_tit .sp2{width:11px;height:6px;position:absolute;top:-6px;left:50%;margin-left:-5px;background:url(//www.sinaimg.cn/dy/deco/2014/0314/images/sc_tit_top.png) no-repeat;}
-/* ��һ���ղ���ʾ */
-.sc_success_alert{display:none;padding:30px 30px 18px;width:451px;z-index:20000;top:50%;left:50%;margin-top:-168px;margin-left:-250px;position:fixed; _position:absolute;background:#fff;border-radius:3px;font-family: "Microsoft YaHei","΢���ź�","SimSun","����"; }
-.sc_success_alert .top{margin-bottom:25px;height:90px;}
-.sc_success_alert .bg{width:95px;height:80px;border-right:1px solid #cde5b8;margin-top:7px;background:url(//www.sinaimg.cn/ent/deco/2014/0311/images/sc_suc.png) no-repeat;}
-.sc_success_alert .txt{width:335px;padding-left:20px;}
-.sc_success_alert .fir{color:#61c520;font-size:28px;height:43px;line-height:42px;}
-.sc_success_alert .sec{font-size:14px;line-height:23px;color:#717171;}
-.sc_success_alert .sec a{color:#ff8c11;}
-.sc_success_alert .sec a:hover{text-decoration:underline;}
-.sc_success_alert .sure{width:147px;height:41px;font-size:18px;text-align:center;line-height:40px;color:#fff;background:#ff8400;margin-top:15px;border-radius:3px;cursor:pointer;}
-.sc_success_alert .close{position:absolute;background:url(//www.sinaimg.cn/ent/deco/2014/0311/images/sc_suc_close.png) no-repeat;right:15px;top:15px;width:25px;height:25px;cursor:pointer;}
-
-/* 201403 ͳһ�ղط����� end */
-
-/*0319 zyc*/
-.swpt-original{display: none;}
-.swpt-mode-wrap{margin-right: 0;}
-.slide-has-intro .side-btns-detail-btn{display: none;}
-.swp-summary .swps-cont{padding-bottom: 40px!important;position: relative;zoom:1;}
-.showAllTxt{height: 150px;overflow: hidden;margin-bottom: 20px;}
-
-#showAll_btn{line-height: 36px!important;height: 36px!important;display: block;border-top: 1px solid #f1f1f1;border-bottom: 1px solid #f1f1f1;text-align: center;}
-#showAll_btn a{display: block;text-decoration: none;color: #666666;font-size: 14px;}
-#showAll_btn a:visited{text-decoration: none;color: #666666;}
-#showAll_btn a:hover{background:#f9f9f9;text-decoration: none;color: #ca3030;}
-#showAll_btn a em{background: url(//www.sinaimg.cn/dy/deco/2014/0324/images/0321_slide_zyc_arrows.png) 0 0px;width: 14px;height: 6px;font-size: 0;line-height: 0;display: inline-block;}
-
-#showAll_btn a:hover em{background-position: 0px -36px;}
-#showAll_btn a .hideEm{background-position: -66px 0px;}
-#showAll_btn a:hover .hideEm{background-position: -66px -36px;}
-
-/*.part-wbtj{height:170px;margin:0px 0 20px 0;overflow:hidden;background:#fff;border:1px solid #eee;width:998px}/*0702 zyc*/
-/*div.wb_rec_c{width:auto;border:none;margin:0 0 0 0px;padding-bottom: 0;margin-bottom: 0}/*0702 zyc*/
-/*h3.wb_rec_tt{display:none;}
-div.wb_rec_fl{margin-left:0;}
-ul.wb_rec_list{width:820px;padding-top:12px;float:left;}/*0702 zyc*/
-/*ul.wb_rec_list .wb_rec_item{width:102px;}/*0702 zyc*/
-/*div.wb_action{float:left;width:155px;margin:10px 0 0 20px;}/*0702 zyc*/
-/*.wb_rec_c .wb_rec_tt{text-align:center;padding:5px 0 0 0;margin:0;background:none;}
-.wb_rec_c .wb_rec_tt a, .wb_rec_c .wb_rec_tt a:visited{color:#000;font-size:18px;}
-span.wb_rec_fled,span.wb_rec_fl{margin-left:0;background:url(/images/v1/default/weibo_rec_btns_0702.png)  0 0 no-repeat;}/*0702 zyc*/
-/*span.wb_rec_fled{background-position:0 -148px;}/*0702 zyc*/
-/*span.wb_rec_fl,span.wb_rec_fled{padding-left: 20px;width: 100px;font-size: 16px;height: 36px;line-height: 36px;margin-top: 30px;}/*0702 zyc*/
-/*.wb_rec_c .wb_rec_more, .wb_rec_c .wb_rec_more:visited{width:142px;margin:7px 10px 0 0;background:none;color:#1b1b1b;float: right;}/*0702 zyc*/
-/*.wb_rec_c .wb_rec_more:hover{color:#ab000e;}
-.wb_more{width: 98%;border-top: 1px solid #f0f0f0;margin: 0 auto;overflow: hidden;}/*0702 zyc*/
-
-
-.article-editor{display:none;visibility:hidden;}
-.Mblk_cmnt {width:1000px !important;}
-
-
-
-
-
-
-#SI_SlideEnd{display:none !important;}
-.slide-end-close{display:none !important;}
-#taobaoAd_1{display:none !important;}
-#SI_Comment_DA{display:none !important;}
-#sinaadToolkitBox0{display:none !important;}
-#sinaadToolkitBox1{display:none !important;}
-#sinaadToolkitBox2{display:none !important;}
-.daoliu-iframe{display:none !important;}
-
-    
-</style>
+        <script>
+            var currentPostDateAdded = '2021-05-11 05:12';
+        </script>
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=2Mic1VLeHXarpdzASbXqFMIMVLEBiWXNO5yiTHUcmhw"></script>
     
     
-    <!--[if IE 6]>
-    <script src="//www.sinaimg.cn/dy/deco/2013/1121/js/DD_belatedPNG_0.0.8a.js"></script>
-    <script>
-      DD_belatedPNG.fix('.png24,.swpb-shoucang i,.nav-inner .logo,.nwi-lnk,.swpt-tip i,.swpt-full-tip i,.swpt-original i,.swpt-mode i,.swpl-btn i,.swpb-item i,.swp-btn i,.heart-vote i,.sw-audio .sw-audio-play, .sw-audio .sw-audio-loading, .sw-audio .sw-audio-error, .sw-audio .sw-audio-pause,.hr-a i,.top-tip .hot');
-    </script>
-    <![endif]-->
+    
 </head>
-<!-- <body ontouchmove="event.preventDefault()"> -->
-<body>
-
-<script src="//n.sinaimg.cn/slide-news/js/share.min.js?t=20181213" charset="utf-8"></script>
-<div id="CCCFloatBarRight" class="CCC-float-bar-right">
-    <a class="CCC-fbr-box CCC-fbr-home" target="_blank" href="https://www.sina.com.cn/" suda-uatrack="key=index_content_right&value=www_back_click">
-        <span class="CCC-fbr-dian"></span><span class="CCC-fbr-title">������ҳ</span>
-    </a>
-    <a class="CCC-fbr-box CCC-fbr-share-weibo" id="CCCFBRShareWeibo" suda-uatrack="key=index_content_right&value=share_weibo" href="" data-share="weibo">
-        <span class="CCC-fbr-title">����΢��</span>
-    </a>
-    <a class="CCC-fbr-box CCC-fbr-share-weixin" suda-uatrack="key=index_content_right&value=share_weixing" id="CCCFBRShareWeixin" href="javascript:void(0);" data-share="weixin">
-        <span class="CCC-fbr-title">����΢��</span>
-    </a>
-    <a class="CCC-fbr-box CCC-fbr-to-top" id="CCCFBRScrollToTop" href="javascript:window.scrollTo(0,1);" suda-uatrack="key=index_content_right&value=top_back_click">
-        <span class="CCC-fbr-title">�ص�����</span>
-    </a>
-</div>
-<script>
-    function setPosition() {
-        var w = $(window).width();
-        if (w >= 1440) {
-            var pageWidth = 1186;
-            $(".main_content").css("width", "1186px");
-        } else if (w < 1440) {
-            var pageWidth = 1000;
-            $(".main_content").css("width", "1000px");
-        }
-        $('#CCCFloatBarRight').css('margin-left', pageWidth / 2 + 10);
-    };
-    var shareObj = new FnShare('#CCCFloatBarRight', {
-        title: 'ȫ�������׳�������ͨ��������_����ͼ��_������'
-    });
-    setPosition();
-</script>
-
-    <script type="text/javascript">try{document.domain = "sina.com.cn";}catch(e){}</script>
-    <!-- ad config -->
-    <script src="//photo.sina.com.cn/34/2014/0729/ad_config.js?t=20161014"></script>
-    <script type="text/javascript">
-    var slide_data = {"slide":{"title":"\u5168\u56fd\u4e24\u4f1a\u9996\u573a\u201c\u90e8\u957f\u901a\u9053\u201d\u5f00\u542f_\u9ad8\u6e05\u56fe\u96c6_\u65b0\u6d6a\u7f51","createtime":"2018-03-03 17:27:06","url":"\/\/slide.news.sina.com.cn\/slide_1_89356_246217.html","lead":"","long_intro":""},"images":[{"title":"\u5168\u56fd\u4e24\u4f1a\u9996\u573a\u201c\u90e8\u957f\u901a\u9053\u201d\u5f00\u542f","intro":"2018\u5e74\u5168\u56fd\u4e24\u4f1a\u9996\u573a\u201c\u90e8\u957f\u901a\u9053\u201d\u4e8e3\u67083\u65e5\u4e0b\u5348\u5168\u56fd\u653f\u534f\u5341\u4e09\u5c4a\u4e00\u6b21\u4f1a\u8bae\u5f00\u5e55\u4f1a\u7ed3\u675f\u540e\u6b63\u5f0f\u5f00\u542f\u3002\u6765\u6e90\uff1a\u4e2d\u56fd\u7f51","comment":"\/\/comment5.news.sina.com.cn\/comment\/skin\/default.html?channel=gn&newsid=slidenews-89356-1673941","thumb_50":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/ONxu-fwnpcnt6785989.jpg\/w50hdp.jpg","img_100_100":"\/\/z0.sinaimg.cn\/auto\/resize?img=http%3A%2F%2Fn.sinaimg.cn%2Fnews%2F1_img%2Fupload%2F2b0c102b%2Fw800h600%2F20180303%2FONxu-fwnpcnt6785989.jpg&size=100_100","thumb_100":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/ONxu-fwnpcnt6785989.jpg\/w100hdp.jpg","thumb_160":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/ONxu-fwnpcnt6785989.jpg\/w160h120hdp.jpg","image_url":"\/\/n.sinaimg.cn\/news\/1_img\/upload\/2b0c102b\/w800h600\/20180303\/ONxu-fwnpcnt6785989.jpg","download_img":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/ONxu-fwnpcnt6785989.jpg\/w5000hdp.jpg","createtime":"2018\u5e7403\u670803\u65e5 17:38","source":"","id":"1673941"},{"title":"\u5168\u56fd\u4e24\u4f1a\u9996\u573a\u201c\u90e8\u957f\u901a\u9053\u201d\u5f00\u542f","intro":"\u6559\u80b2\u90e8\u90e8\u957f\u9648\u5b9d\u751f\u63a5\u53d7\u8bb0\u8005\u91c7\u8bbf\u3002","comment":"\/\/comment5.news.sina.com.cn\/comment\/skin\/default.html?channel=gn&newsid=slidenews-89356-1673899","thumb_50":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/m4af-fwnpcnt6731780.jpg\/w50hdp.jpg","img_100_100":"\/\/z0.sinaimg.cn\/auto\/resize?img=http%3A%2F%2Fn.sinaimg.cn%2Fnews%2F1_img%2Fupload%2F2b0c102b%2Fw800h600%2F20180303%2Fm4af-fwnpcnt6731780.jpg&size=100_100","thumb_100":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/m4af-fwnpcnt6731780.jpg\/w100hdp.jpg","thumb_160":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/m4af-fwnpcnt6731780.jpg\/w160h120hdp.jpg","image_url":"\/\/n.sinaimg.cn\/news\/1_img\/upload\/2b0c102b\/w800h600\/20180303\/m4af-fwnpcnt6731780.jpg","download_img":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/m4af-fwnpcnt6731780.jpg\/w5000hdp.jpg","createtime":"2018\u5e7403\u670803\u65e5 17:27","source":"","id":"1673899"},{"title":"\u5168\u56fd\u4e24\u4f1a\u9996\u573a\u201c\u90e8\u957f\u901a\u9053\u201d\u5f00\u542f","intro":"\u56fd\u52a1\u9662\u4fa8\u52a1\u529e\u516c\u5ba4\u4e3b\u4efb\u88d8\u63f4\u5e73\u63a5\u53d7\u91c7\u8bbf\u3002","comment":"\/\/comment5.news.sina.com.cn\/comment\/skin\/default.html?channel=gn&newsid=slidenews-89356-1673900","thumb_50":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/bu6G-fwnpcnt6731788.jpg\/w50hdp.jpg","img_100_100":"\/\/z0.sinaimg.cn\/auto\/resize?img=http%3A%2F%2Fn.sinaimg.cn%2Fnews%2F1_img%2Fupload%2F2b0c102b%2Fw800h600%2F20180303%2Fbu6G-fwnpcnt6731788.jpg&size=100_100","thumb_100":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/bu6G-fwnpcnt6731788.jpg\/w100hdp.jpg","thumb_160":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/bu6G-fwnpcnt6731788.jpg\/w160h120hdp.jpg","image_url":"\/\/n.sinaimg.cn\/news\/1_img\/upload\/2b0c102b\/w800h600\/20180303\/bu6G-fwnpcnt6731788.jpg","download_img":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/bu6G-fwnpcnt6731788.jpg\/w5000hdp.jpg","createtime":"2018\u5e7403\u670803\u65e5 17:27","source":"","id":"1673900"},{"title":"\u5168\u56fd\u4e24\u4f1a\u9996\u573a\u201c\u90e8\u957f\u901a\u9053\u201d\u5f00\u542f","intro":"\u53f8\u6cd5\u90e8\u90e8\u957f\u5f20\u519b\u63a5\u53d7\u91c7\u8bbf\u3002","comment":"\/\/comment5.news.sina.com.cn\/comment\/skin\/default.html?channel=gn&newsid=slidenews-89356-1673901","thumb_50":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/RYAw-fwnpcnt6731799.jpg\/w50hdp.jpg","img_100_100":"\/\/z0.sinaimg.cn\/auto\/resize?img=http%3A%2F%2Fn.sinaimg.cn%2Fnews%2F1_img%2Fupload%2F2b0c102b%2Fw800h600%2F20180303%2FRYAw-fwnpcnt6731799.jpg&size=100_100","thumb_100":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/RYAw-fwnpcnt6731799.jpg\/w100hdp.jpg","thumb_160":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/RYAw-fwnpcnt6731799.jpg\/w160h120hdp.jpg","image_url":"\/\/n.sinaimg.cn\/news\/1_img\/upload\/2b0c102b\/w800h600\/20180303\/RYAw-fwnpcnt6731799.jpg","download_img":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/RYAw-fwnpcnt6731799.jpg\/w5000hdp.jpg","createtime":"2018\u5e7403\u670803\u65e5 17:27","source":"","id":"1673901"},{"title":"\u5168\u56fd\u4e24\u4f1a\u9996\u573a\u201c\u90e8\u957f\u901a\u9053\u201d\u5f00\u542f","intro":"\u56fd\u5bb6\u4e2d\u533b\u836f\u7ba1\u7406\u5c40\u5c40\u957f\u738b\u56fd\u5f3a\u63a5\u53d7\u91c7\u8bbf\u3002","comment":"\/\/comment5.news.sina.com.cn\/comment\/skin\/default.html?channel=gn&newsid=slidenews-89356-1673902","thumb_50":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/H0ZK-fwnpcnt6731810.jpg\/w50hdp.jpg","img_100_100":"\/\/z0.sinaimg.cn\/auto\/resize?img=http%3A%2F%2Fn.sinaimg.cn%2Fnews%2F1_img%2Fupload%2F2b0c102b%2Fw800h600%2F20180303%2FH0ZK-fwnpcnt6731810.jpg&size=100_100","thumb_100":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/H0ZK-fwnpcnt6731810.jpg\/w100hdp.jpg","thumb_160":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/H0ZK-fwnpcnt6731810.jpg\/w160h120hdp.jpg","image_url":"\/\/n.sinaimg.cn\/news\/1_img\/upload\/2b0c102b\/w800h600\/20180303\/H0ZK-fwnpcnt6731810.jpg","download_img":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/H0ZK-fwnpcnt6731810.jpg\/w5000hdp.jpg","createtime":"2018\u5e7403\u670803\u65e5 17:27","source":"","id":"1673902"},{"title":"\u5168\u56fd\u4e24\u4f1a\u9996\u573a\u201c\u90e8\u957f\u901a\u9053\u201d\u5f00\u542f","intro":"\u56fd\u5bb6\u6587\u7269\u5c40\u5c40\u957f\u5218\u7389\u73e0\u63a5\u53d7\u91c7\u8bbf\u3002","comment":"\/\/comment5.news.sina.com.cn\/comment\/skin\/default.html?channel=gn&newsid=slidenews-89356-1673942","thumb_50":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/nIlw-fwnpcnt6786006.jpg\/w50hdp.jpg","img_100_100":"\/\/z0.sinaimg.cn\/auto\/resize?img=http%3A%2F%2Fn.sinaimg.cn%2Fnews%2F1_img%2Fupload%2F2b0c102b%2Fw800h600%2F20180303%2FnIlw-fwnpcnt6786006.jpg&size=100_100","thumb_100":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/nIlw-fwnpcnt6786006.jpg\/w100hdp.jpg","thumb_160":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/nIlw-fwnpcnt6786006.jpg\/w160h120hdp.jpg","image_url":"\/\/n.sinaimg.cn\/news\/1_img\/upload\/2b0c102b\/w800h600\/20180303\/nIlw-fwnpcnt6786006.jpg","download_img":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/2b0c102b\/w800h600\/20180303\/nIlw-fwnpcnt6786006.jpg\/w5000hdp.jpg","createtime":"2018\u5e7403\u670803\u65e5 17:38","source":"","id":"1673942"}],"next_album":{"interface":"\/\/slide.news.sina.com.cn\/interface\/slide_interface.php?ch=1&sid=89356&id=246187&range=\/d\/8","title":"\u5168\u56fd\u653f\u534f\u5341\u4e09\u5c4a\u4e00\u6b21\u4f1a\u8bae\u5f00\u5e55","url":"\/\/slide.news.sina.com.cn\/c\/slide_1_89356_246187.html\/d\/8","thumb_50":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/34fa2aa3\/w2048h1322\/20180303\/PKSF-fwnpcnt7151839.jpg\/w50hdp.jpg","img_url":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/34fa2aa3\/w2048h1322\/20180303\/PKSF-fwnpcnt7151839.jpg\/w160h120hdp.jpg"},"prev_album":{"interface":"\/\/slide.news.sina.com.cn\/interface\/slide_interface.php?ch=1&sid=89356&id=246307&range=\/d\/8","title":"\u76f4\u51fb\u653f\u534f\u5f00\u5e55\u4f1a\u4e0a\u7684\u5a92\u4f53\u5927\u519b","url":"\/\/slide.news.sina.com.cn\/c\/slide_1_89356_246307.html\/d\/8","thumb_50":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/8de453bf\/w900h600\/20180304\/U5FD-fwnpcnt8224999.jpg\/w50hdp.jpg","img_url":"\/\/k.sinaimg.cn\/n\/news\/1_ori\/upload\/8de453bf\/w900h600\/20180304\/U5FD-fwnpcnt8224999.jpg\/w160h120hdp.jpg"}}
-      var ARTICLE_DATA = {
-        workinfo:'',
-        //����΢��ת����Ƶ��ַ
-        video_url:'',
-        //����΢��ת��ͼƬ��ַ�����ÿջ��Զ�ȡͼ
-        pic_url:'',
-       
-        //Ƶ��
-        channel:'gn',
-        //����id
-        newsid:'slidenews-album-89356-246217',
-        //�飬Ĭ��Ϊ0
-        
-        group:1,
-        //΢��ת������
-        source: '',
-        sourceUrl: '',
-        uid: '',
-        autoLogin:1,
-        cmntFix:0,
-        channelId: 0,
-        //1�������ײ��Զ����أ�0����������
-        scrollLoad:1,
-        width:1000,
-        sharePopDirection:'top',
-        // ����ͼ���л������У����۲����޸�
-        customNewsId:'',
-        customShareUrl:'',
-        customImgUrl:''
-      };
-       var SLIDE_DATA = {
-           
-            ch:'1',
-            sid:'89356',
-            aid:'246217',
-            range:'',
-            key:'',
-            pvurl:'http://news.sina.com.cn/hdphoto/lltj_photo_manual.html',
-            soundSrc:'',
-            soundAltSrc:'',
-            imgType:'img',
-            allowDownload:true,
-            likeBoard:'board=all-all,news-1',
-            
-
-    recommenderReady:function(wrap){
-                if(!SINAADS_CONFIG_POS_PDPS['recommender'][__ch_id__ + '']){return;}
-                var byAttr = ___SinaRecommender___.util.byAttr;
-                var items = byAttr(wrap,'recommend-type','item');
-                var total = 20;
-                (function(d, s, id) {
-                    var s, n = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    s = d.createElement(s);
-                    s.id = id;
-                    s.setAttribute("charset", "utf-8");
-                    s.src = "//d" + Math.floor(0 + Math.random() * (9 - 0 + 1)) + ".sina.com.cn/litong/zhitou/sinaads/release/sinaads.js";
-                    n.parentNode.insertBefore(s, n);
-                })(document, "script", "sinaads-script");
-                //�����Ƽ�����, ���ں������
-                var oHtml = items[4].innerHTML;
-                var _insId = 'ID' + SINAADS_CONFIG_POS_PDPS['recommender'][__ch_id__ + ''];
-                //���Ƽ��в�����ִ�д���4 �� 24 ��λ��
-                //�첽������ķ�ʽ��Ҫ��ֹ����ƥ�����ʹ��sync����
-                //���������渴�ƽڵ�
-                function fillOther(html, start) {
-                    for (var i = start; i < 2; i++) {
-                        items[4 + i * total].innerHTML = html;
-                    }
-                }
-                //ִ�й������
-                //create a hidden ad slot for request
-                var hiddenNode = document.createElement('div');
-                hiddenNode.style.cssText = 'display:none';
-                document.body.appendChild(hiddenNode);
-                hiddenNode.innerHTML = '<ins class="sinaads"' +
-                    ' data-ad-pdps="' + SINAADS_CONFIG_POS_PDPS['recommender'][__ch_id__ + ''] + '"' +
-                    ' id="' + _insId + '"' +
-                    ' data-ad-status="sync"' +
-                '></ins>';
-
-                sinaads = window.sinaads || [];
-                sinaads.push({
-                    element: document.getElementById(_insId),
-                    params: {
-                        sinaads_ad_width: 200,
-                        sinaads_ad_height: 153,
-                        sinaads_fail_handler:function(){
-                            //fail, fill ohtml 2 slider
-                            fillOther(oHtml, 0);
-                        },
-                        sinaads_success_handler: function (el) {
-                            //when success, fill hidden slot html 2 slider
-                            var html = el.innerHTML;
-                            fillOther(html, 0);
-                        },
-                        sinaads_ad_tpl: function() {
-                            return '<a title="#{src1}" target="_blank" href="#{link0}"><span class="pic"><img src="#{src0}" /><i></i></span><span class="txt">#{src1}</span></a>';
-                        }
-                    }
-                });
-            }
-          };
-    </script>
-
-
-    <!-- <div id="SI_Loading" class=""></div> -->
-
-    
-    <div class="nav-wrap" id="SI_Nav">
-        <div class="nav-inner">
-                            <a href="//photo.sina.com.cn/#dir" class="logo" suda-uatrack="key=hdphotov2&value=logo" title="����ͼƬ-���¶ȵ��Ӿ�">����ͼƬ-���¶ȵ��Ӿ�</a>
-                        <div class="nav-extra">
-                <a href="//slide.photo.sina.com.cn" class="nwi-lnk" suda-uatrack="key=hdphotov2&value=details" data-sudaclick="blk_logo_top_btn1" hidefocus>ȫվͼ��</a>
-                                <a href="//news.sina.com.cn" class="nwi-lnk" suda-uatrack="key=hdphotov2&value=channelhomepage" data-sudaclick="blk_logo_top_btn2" hidefocus>��������</a>
-                                <a href="//www.sina.com.cn" class="nwi-lnk" suda-uatrack="key=hdphotov2&value=homepage" data-sudaclick="blk_logo_top_btn3" hidefocus>������ҳ</a>
-                <div class="top-search">
-                    <div class="top-search-bg">
-                    </div>
-                    <form name="topSearchForm" method="get" action="//search.sina.com.cn/" target="_blank">
-                        <input type="text" name="q" class="input gray" value="����ͼƬ">
-                        <input type="hidden" name="from" value="slide">
-                        <input type="hidden" name="c" value="img">
-                        <input type="hidden" name="slide" value="1">
-                        <input type="hidden" name="size" value="l">
-                        <input suda-uatrack="key=hdphotov2&value=search" type="submit" class="btn" value="">
+<body class="has-navbar">
+    <a name="top"></a>
+        <div id="bannerbar" class="bannerbar-mobile formobile">
+            <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-blog-bannerbar-mobile')">
+                <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
+            </a>
+        </div>
+    <div id="top_nav" class="navbar forpc">
+        <nav id="nav_main" class="navbar-main">
+            <ul id="nav_left" class="navbar-list navbar-left">
+                <li class="navbar-branding"><a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a></li>
+                <li><a href="/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-sitehome')">首页</a></li>
+                <li><a href="https://news.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-news')">新闻</a></li>
+                <li><a href="https://q.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-q')">博问</a></li>
+                <li><a id="nav_brandzone" href="https://brands.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-brands')">专区</a></li>
+                <li><a href="https://ing.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-ing')">闪存</a></li>
+                <li><a href="https://edu.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-edu')">班级</a></li>
+            </ul>
+            <ul id="nav_right" class="navbar-list navbar-right">
+                <li>
+                    <form id="zzk_search" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
+                        <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="text" tabindex="3" />
+                        <button type="submit" id="zzk_search_button">
+                            <img src="/images/aggsite/search.svg" alt="搜索" />
+                        </button>
                     </form>
-                    
-                    <script type="text/javascript">
-                    (function() {var form = document.topSearchForm; var input = form.q; var txt = input.value; input.onfocus = function() {if (this.value == txt) {this.value = ''; this.className = 'input'} }; input.onblur = function() {if (this.value == '') {this.value = txt; this.className = 'input gray'; } }; form.onsubmit = function() {var kw = input.value; if (!kw || kw == txt) {input.focus(); return false; } } })();
-                    </script>
-                    
-                </div>
-            </div>
-            <!-- cheny start-->
-            <div class="login-frame">
-                <a href="//my.sina.com.cn/" target="_blank" class="fl"><img class="sc-img" src="//www.sinaimg.cn/ent/deco/2014/0311/images/sc_pic_loginImage.png"/></a>
-                <a href="javascript:;" class="login-button fl" id="JS_Login_Btn"><span class="fl"  style="cursor:pointer;">��¼</span><span class="fl span2" style="cursor:pointer;"></span></a>
-                <div class="logined-wrap fl" id="JS_Logined_Wrap"></div>
-                <div id="JS_Login_Layer" style="display:none"></div>
-            </div>
-            <!-- cheny end -->
-        </div>
+                </li>
+                <li id="navbar_login_status" class="navbar-list">
+                    <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
+                        <img id="new_post_icon" class="navbar-icon" src="/images/aggsite/newpost.svg" alt="写随笔" />
+                    </a>
+                    <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
+                        <img id="myblog_icon" class="navbar-icon" src="/images/aggsite/myblog.svg" alt="我的博客" />
+                    </a>
+                    <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
+                        <img id="msg_icon" class="navbar-icon" src="/images/aggsite/message.svg?v=J0WS2P2iPgaIVgXxcAhliw4AFZIpaTWxtdoNAv9eiCA" alt="短消息" />
+                        <span id="msg_count" style="display: none"></span>
+                    </a>
+                    <div id="user_info" class="navbar-user-info dropdown">
+                        <a class="dropdown-button" href="https://home.cnblogs.com/">
+                            <img id="user_icon" class="navbar-avatar" src="/images/aggsite/avatar-default.svg" alt="用户头像" />
+                        </a>
+                        <div class="dropdown-menu">
+                            <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
+                            <a href="https://home.cnblogs.com/">我的园子</a>
+                            <a href="https://account.cnblogs.com/settings/account">账号设置</a>
+                            <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
+    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
+</a>
+                            <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
+                        </div>
+                    </div>
+                    <a class="navbar-anonymous" href="https://account.cnblogs.com/signup/">注册</a>
+                    <a class="navbar-anonymous" href="javascript:void(0);" onclick="account.login()">登录</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div id="baidu_nav"></div>
+
     
-    <script>
-    ('undefined' !== SINAADS_CONFIG_POS_PDPS)
-        && SINAADS_CONFIG_POS_PDPS['top']
-        && SINAADS_CONFIG_POS_PDPS['top'][__ch_id__ + '']
-        && (
-            document.write('<ins class="sinaads" data-ad-pdps="' + SINAADS_CONFIG_POS_PDPS['top'][__ch_id__ + ''] + '"></ins>')
-            , (sinaads = window.sinaads || []).push({})
-        );
-    </script>
-    
-    <div class="wrap mt-a" id="SI_Wrap">
-                <div style="display:none;" class="top-da mb-a"><a href="#url"><img style="vertical-align:top;" src="" alt=""></a></div>
-        <div style="display:none;" class="hr-a mb-a"><i></i></div>
-        <div style="display:none;" class="banner mb-a"><a href="#url"><img style="vertical-align:top;" src="" alt=""></a></div>
+    <!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/tcjiaan/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/tcjiaan/">老周</a>
+</h1>
+<h2>成于天性，行于自然。</h2>
 
-        
-        <div class="slide-wrap  slide-wrap-loading" id="SI_Slide_Wrap">
-            <div class="sw-player" id="SI_Player">
 
-  <!--�����Ҳ�200*30��ť   2017/7   begin-->
-  <script>
-    ('undefined' !== SINAADS_CONFIG_POS_PDPS)
-        && SINAADS_CONFIG_POS_PDPS['title_right_button']
-        && SINAADS_CONFIG_POS_PDPS['title_right_button'][__ch_id__ + '']
-        && (
-            document.write('<ins class="sinaads" data-ad-pdps="' + SINAADS_CONFIG_POS_PDPS['title_right_button'][__ch_id__ + ''] + '" style="z-index:999;position:absolute;top: 25px;left:770px;"></ins>')
-            , (sinaads = window.sinaads || []).push({
-              params:{
-                 sinaads_ad_width:200,
-                 sinaads_ad_height:30
-              }
-            })
-        );
 
-  </script>
-  <!--�����Ҳ�200*30��ť  end-->
 
-                <div class="part-a">
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/tcjiaan/">
+首页</a>
+</li>
+<li>
 
-<script>
-    ('undefined' !== SINAADS_CONFIG_POS_PDPS)
-        && SINAADS_CONFIG_POS_PDPS['title_right_link']
-        && SINAADS_CONFIG_POS_PDPS['title_right_link'][__ch_id__ + '']
-        && (
-            document.write('<div style="position:relative;"><ins class="sinaads" data-ad-pdps="' + SINAADS_CONFIG_POS_PDPS['title_right_link'][__ch_id__ + ''] + '" style="position:absolute;right:24px;top:24px;"></ins></div>')
-            , (sinaads = window.sinaads || []).push({})
-        );
-</script>
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E4%B8%9C%E9%82%AA%E7%8B%AC%E5%AD%A4">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/tcjiaan/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
 
-                    <div class="swp-tit clearfix" slide-type="title">
-                    </div>
-                    <div class="swp-tool">
-                        <div class="swpt-extra">
-                            <span class="swpt-tip">֧�� <i></i> ������ͼƬ</span>
-                            <span id="SI_Mode_Trigger" class="swpt-mode-wrap"><a href="javascript:;" class="swpt-mode swpt-mode-list" action-type="mode-toggle" suda-uatrack="key=hdphoto_20140213&value=listview"><i></i>�б�鿴</a><a href="javascript:;" class="swpt-mode swpt-mode-hp" style="display: none;" action-type="mode-toggle" suda-uatrack="key=hdphoto_20140213&value=hdview"><i></i>����鿴</a></span>
-                            <a id="SI_Original_Lnk" href="javascript:;" target="_blank" action-type="slide-original" class="swpt-original" suda-uatrack="key=hdphoto_20140213&value=largephoto"><i></i>��ͼ</a>
 
-                            <div class="swpt-full-wrap">
-                                <div class="swpt-flash-wrap" data-sudaclick="blk_ecbFullScreen" title="���ȫ����ø��ùۿ�Ч��">
-                                    <div class="swpt-flash" id="SI_FullScreenFlash"></div>
-                                </div>
-                                <a suda-uatrack="key=hdphotov2&value=fullscreen" href="javascript:;" class="swpt-full-tip"><i></i>ȫ���ۿ�</a>
-                            </div>
-                        </div>
-                        <em  class="swpt-time" slide-type="time"></em>
-                    </div>
-                    <div class="swp-hd" id="SI_Cont" slide-type="cont" action-type="slide-move">
-                    </div>
-                    <a href="javascript:;" slide-type="prev" action-type="slide-prev" class="rgba-w-60 swp-btn swp-prev" title="��һ��" hidefocus><i></i></a>
-                    <a href="javascript:;" slide-type="next" action-type="slide-next" class="rgba-w-60 swp-btn swp-next" title="��һ��" hidefocus><i></i></a>
-                    <!-- �������� start -->
-                    <div id="SI_Audio" class="sw-audio" style="display:none;">
-                        <audio src="" autoplay="true" preload="auto" loop="loop"></audio>
-                        <div class="sw-audio-play-pause">
-                            <a href="javascript:;" class="sw-audio-play" title="����"></a>
-                            <a href="javascript:;" class="sw-audio-pause" title="��ͣ"></a>
-                            <a href="javascript:;" class="sw-audio-loading" title="������..."></a>
-                            <a href="javascript:;" class="sw-audio-error" title="���س���"></a>
-                        </div>
-                        <div class="sw-audio-scrubber">
-                            <div class="sw-audio-progress"></div>
-                            <div class="sw-audio-loaded"></div>
-                        </div>
-                        <div class="sw-audio-time"> <em class="sw-audio-played">00:00</em>
-                            / <strong class="sw-audio-duration">00:00</strong>
-                        </div>
-                        <div class="sw-audio-error-message"></div>
-                    </div>
-                    <!-- �������� end -->
-
-                   <!-- ��βҳ start -->
-                   <div id="SI_SlideEnd" class="slide-end-tip" style="visibility:visible;">
-                       <div class="slide-end-bg"></div>
-                       <a action-type="end-close" href="javascript:;" class="slide-end-close" title="�ر�">�ر�</a>
-                       <!-- ��� -->
-                       <div class="slide-end-da" id="endSelAd">
-                        <!-- TODO ɾ�����Թ�� -->
-                        
-                        <script>
-                            ('undefined' !== SINAADS_CONFIG_POS_PDPS)
-                                && SINAADS_CONFIG_POS_PDPS['tail']
-                                && SINAADS_CONFIG_POS_PDPS['tail'][__ch_id__ + '']
-                                && (
-                                    document.write('<ins class="sinaads" data-ad-pdps="' +  SINAADS_CONFIG_POS_PDPS['tail'][__ch_id__ + ''] + '"></ins>')
-                                    , (sinaads = window.sinaads || []).push({
-                                        params: {
-                                            sinaads_success_handler: function() {
-                                                PAGE = window.PAGE || {};
-                                                PAGE.hasEndAD = 1;
-                                            },
-                                            sinaads_fail_handler: function() {
-                                                PAGE = window.PAGE || {};
-                                                PAGE.hasEndAD = 0;
-                                            }
-                                        }
-                                    })
-                                );
-                        </script>
-                        
-                       </div>
-                       <!-- /���-->
-                       <!-- ����ϲ�� -->
-                       <div class="recommend-tab-wrap" tab-type="tab-wrap" id="SI_Scroll_Tab_Wrap">
-                           <div class="recommend-tab-nav clearfix">
-                               <ul>
-                                   <li tab-type="nav" tab-stat="current" class="current">
-                                       <span>����ϲ��</span>
-                                   </li>
-                               </ul>
-                           </div>
-                           <div class="recommend-tab-cont">
-                               <div tab-type="cont" tab-stat="current" style="" class="recommend-scroll-wrap current">
-                                   <div class="recommend-scroll-bd">
-                                       <div class="recommend-scroll-list" id="SI_Scroll_Guess_List" data-recommender="listlen=5&pagelen=4&itemlen=16&width=1000">
-                                           <p class="recommend-scroll-loading"></p>
-                                       </div>
-                                       <a href="javascript:;" class="recommend-scroll-prev" id="SI_Scroll_Guess_Prev" suda-uatrack="key=new_photo_stats&value=ai_change"></a>
-                                       <a href="javascript:;" class="recommend-scroll-next" id="SI_Scroll_Guess_Next" suda-uatrack="key=new_photo_stats&value=ai_change"></a>
-                                   </div>
-                                   <div class="recommend-scroll-dots" id="SI_Scroll_Guess_Dots"></div>
-                               </div>
-
-                           </div>
-                       </div>
-                       <!-- ����ϲ�� -->
-                       <!-- �����ֿ� -->
-                       <div class="recommend-tab-wrap scroll-hot-wrap" id="SI_Scroll_View_Wrap" style="display:none;">
-                           <div class="recommend-tab-nav clearfix">
-                               <ul>
-                                   <li>
-                                       <span>�����ֿ�</span>
-                                   </li>
-                               </ul>
-                           </div>
-                           <div tab-type="cont" style="" class="recommend-scroll-wrap">
-                                   <div class="recommend-scroll-bd">
-                                       <div class="recommend-scroll-list" id="SI_Scroll_View_List" data-recommender="listlen=5&pagelen=4&itemlen=16&width=1000&firstpics=window.last_page_pic_data[__ch_id__]">
-                                           <p class="recommend-scroll-loading"></p>
-                                       </div>
-                                       <a href="javascript:;" class="recommend-scroll-prev" id="SI_Scroll_View_Prev" suda-uatrack="key=new_photo_stats&value=pub_change"></a>
-                                       <a href="javascript:;" class="recommend-scroll-next" id="SI_Scroll_View_Next" suda-uatrack="key=new_photo_stats&value=pub_change"></a>
-                                   </div>
-                                   <div class="recommend-scroll-dots" id="SI_Scroll_View_Dots"></div>
-                           </div>
-                       </div>
-                       <!-- /�����ֿ� -->
-
-                       <div class="slide-end-control clearfix">
-                           <span class="left">
-                               <a action-type="end-next-album" href="javascript:;" class="btn-a btn-b" suda-uatrack="key=new_photo_stats&value=next_pic">��һͼ��</a>
-                               <a action-type="end-replay" href="javascript:;" class="btn-a" suda-uatrack="key=new_photo_stats&value=rewatch">�������</a>
-
-                                                                      <a href="http://photo.sina.com.cn/" target="_blank"  class="btn-a" suda-uatrack="key=new_photo_stats&value=add_1">������������ͼƬ��ҳ</a>
-                                
-                                
-                                                                    <a href="javascript:;" class="btn-a" data-weibo="disabled" onclick="WeiboFollow.follow(1364882532,this)" suda-uatrack="key=new_photo_stats&value=add_2">��ע@����ͼƬ</a>
-
-                                                                <a class="btn-a" href="//wp.news.sina.com.cn/?s=default&a=up_list_view&group_id=114 " target='_blank'>��ע��Ӱʦ΢��</a>
-                           </span>
-                            
-                           <span class="right">
-                               <a class="btn-weibo" href="javascript:(function(){window.open('//service.weibo.com/share/share.php?url=http%3A%2F%2Fslide.news.sina.com.cn%2Fslide_1_89356_246217.html&appkey=&pic=http://n.sinaimg.cn/news/1_img/upload/2b0c102b/w800h600/20180303/RYAw-fwnpcnt6731799.jpg&title=ȫ�������׳�������ͨ��������(��ͼ)','_blank','width=615,height=505');})()" id="weiboShareBut" suda-uatrack="key=new_photo_stats&value=share_to_weibo"><i></i>�����΢��</a>
-                           </span>
-                           
-                       </div>
-
-                </div>
-                <!-- ��βҳ end -->
-                     <!-- ͼƬ���� start -->
-                    <div class="swp-txt clearfix" slide-type="introWrap">
-                        <div class="swpt-table">
-                            <div class="swpt-cell">
-                                <div class="swpt-cont" slide-type="intro">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="heart-vote-wrap">
-                            <a id="SI_Heart_Vote" href="javascript:;" class="heart-vote" hidefocus="true" suda-uatrack="key=hdphotov2&value=dig" sudaclick="blk_pic_like_btn" title="��"><i></i></a>
-                        </div>
-                      </div>
-                     <!-- ͼƬ���� end -->
-                     <!-- Сͼ�б� start -->
-                    <div class="swp-list-wrap" scroll-type="wrap" id="SI_SmallList">
-
-                    </div>
-                     <!-- Сͼ�б� end -->
-                     <!-- �б�ģʽ start -->
-                      <div class="sw-list clearfix" id="SI_List" style="display:none;">
-                      </div>
-                     <!-- �б�ģʽ end -->
-                    <div class="swp-bd" slide-type="control">
-                        <div class="swpb-right">
-                             <a id="SI_ShouCang" suda-uatrack="" title="��¼���ղ� �Ժ��Ķ�"  data-docid="//doc.sina.cn/?id=slide:1-89356-246217" style="" href="javascript:;" class="swpb-item swpb-shoucang">
-                                <i></i>
-                                �ղ�
-                            </a>
-                            <a id="SI_Download" suda-uatrack="key=hdphotov2&value=download" style="display:none;" href="javascript:;" class="swpb-item swpb-download" hidefocus>
-                                <i></i>
-                                ����
-                            </a>
-                            <a href="#bottom_sina_comment" suda-uatrack="key=hdphotov2&value=comment_button" action-type="anchorGo"  class="swpb-item swpb-comment sinaLR2014_JCCT" id="SI_Commnet_Trigger" hidefocus>
-                                <i></i>
-                                ����
-                            </a>
-                            
-                            <div class="swpb-item swpb-share">
-                                <span class="label">�����</span>
-                                <!-- Baidu Button BEGIN -->
-                                <div id="bdshare" style="float: left; margin-top:4px;" class="bdshare_t bds_tools get-codes-bdshare bdsharebuttonbox" data-tag="share_1" data="{text:'',pic':''}">
-                                    <a onclick="SUDA.uaTrack('tblog_v4_recomd','page_key')"data-cmd="tsina" title="���������΢��"  class="bds_tsina"></a>
-                                    <a onclick="SUDA.uaTrack('tblog_v4_recomd','page_key_2')" data-cmd="weixin" title="�����΢��" class="bds_weixin"></a>
-                                    <a href="#" class="bds_more" data-cmd="more"></a>
-                                </div>
-                                <!-- Baidu Button END -->
-                            </div>
-                            
-                        </div>
-                                                                    </div>
-
-                </div>
+		<div class="blogStats">
+			<div id="blog_stats_place_holder"><script>loadBlogStats();</script></div>
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
                 
-                                <!-- taobao AD -->
-
-<!--�������ĸ���ͼ��ҳͼƬ�¸�Ƶ����ͨ�ײ�ͨ�� Start-->
-<div style="width:1000px;margin:10px auto 10px;" id="taobaoAd_1">
-<script>
-_sinaadsCacheData = window._sinaadsCacheData || {};
-_sinaadsCacheData["alimm15890324_2192376_11134171"] = {
-size : "1000*90",
-type : 'embed',
-content : [{
-src: ['<script type="text/javascript">' + 'var cpro_id = "u6182110";<' + '/script>' + '<script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/cm.js"><' + '/script>'].join(''),
-monitor : [""],
-link : [''],
-pv: [],
-type: ['html']
-}],
-id : "alimm15890324_2192376_11134171"
-};
-</script>
-<ins class="sinaads" data-ad-pdps="alimm15890324_2192376_11134171"></ins>
-<script>(sinaads = window.sinaads || []).push({})</script>
-<!--�������ĸ���ͼ��ҳͼƬ�¸�Ƶ����ͨ�ײ�ͨ�� End-->
-</div>
-
-                <!-- taobao AD end -->
-                                <div class="part-a">
-                    <!-- ͼ������ start -->
-                    <div class="swp-summary" slide-type="summaryWrap" style="display:none;">
-                        <h2 class="swps-tit" slide-type="summaryTit"></h2>
-                        <div class="swps-cont" slide-type="summaryCont"></div>
-                        <div id='showAll_btn'>��ʾ��������<em></em></div>
-                    </div>
-                    <!-- ͼ������ end -->
-                    <!-- ΢���б� start -->
-                    <a name='toWeibo'></a>
-                    <div class="swp-weibolist clearfix"  id="SI_Weibolist" data-sudaclick="blk_weibolist" style="display:none;">
-                    </div>
-                    <!-- ΢���б� end -->
-                </div>
-
-
-                <!-- ΢���Ƽ� start -->
-                    <!--div class="part-wbtj" id="SI_WBRE_Wrap" style="display:none;">
-                        <div class="wb_rec" id="SI_WBRE_1" style="display: none;">
-                            <div class="wb_rec_c clearfix">
-                                <h3 class="wb_rec_tt">
-                                    <a href="" wbrecom-type="tit" target="_blank">΢���Ƽ�</a>
-                                </h3>
-                                <ul class="wb_rec_list clearfix" wbrecom-type="list"></ul>
-                                <div class="wb_action">
-                                    <span class="wb_rec_fl" wbrecom-type="btnFollow">һ����ע</span>
-                                    <span class="wb_rec_fled" wbrecom-type="btnFollowed" style="display: none;">�ѹ�ע</span>
-                                </div>
-                                <div class='wb_more'>
-                                    <a class="wb_rec_more" wbrecom-type="more" tpl-data="��ע����$$" href="" target="_blank" suda-uatrack="key=content_weibo_user&value=contentmore">��ע����</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div-->
-
-
-            </div>
-
-        </div>
-
-        <!-- �������ͼ�� start -->
-        <div class="daoliu-iframe part-a">
-            <iframe scrolling="no" height="220" frameborder="0" width="979" style="border: 0pt none;" marginheight="0" allowtransparency="true" marginwidth="0" border="0" src="//news.sina.com.cn/iframe/external/sohuhl/iframe.shtml?ver=1.2&skin="></iframe>
-        </div>
-        <!-- �������ͼ�� end -->
-        <!-- ���۹��html start -->
-
-<script>
-('undefined' !== SINAADS_CONFIG_POS_PDPS)
-&& SINAADS_CONFIG_POS_PDPS['hover_banners']
-&& SINAADS_CONFIG_POS_PDPS['hover_banners'][__ch_id__ + '']
-&& (
-    document.write('<div id="SI_Comment_DA" style="z-index:100;width:1000px;height:250px;position:relative;overflow:hidden;">')
-    ,document.write('<ins class="sinaads" data-ad-pdps="' + SINAADS_CONFIG_POS_PDPS['hover_banners'][__ch_id__ + ''].split("|")[0] + '" style="width:300px;position:absolute;top:0;left:0;"></ins>')
-    ,(sinaads = window.sinaads || []).push({})
-    ,document.write('<ins class="sinaads" data-ad-pdps="' + SINAADS_CONFIG_POS_PDPS['hover_banners'][__ch_id__ + ''].split("|")[1] + '" style="width:300px;position:absolute;top:0;left:350px;"></ins>')
-    ,(sinaads = window.sinaads || []).push({})
-    ,document.write('<ins class="sinaads" data-ad-pdps="' + SINAADS_CONFIG_POS_PDPS['hover_banners'][__ch_id__ + ''].split("|")[2] + '" style="width:300px;position:absolute;top:0;left:700px;"></ins>')
-    ,(sinaads = window.sinaads || []).push({})
-    ,document.write('</div>')
-);
-</script>
-        <!-- ���۹��html end -->
-        <!-- �����б� start -->
-<!--��������-->
-<div class="sina-comment-wrap" id="bottom_sina_comment"></div>
-<!--���������ʽ-->
-<link rel="stylesheet" type="text/css" href="//finance.sina.com.cn/other/src/article-comment-2017.css">
-<link rel="stylesheet" type="text/css" href="//n.sinaimg.cn/news/photos/photo-comment-20180426.css">
-<!--�����������outlogin����Ҫ�ֶ�����-->
-<script type="text/javascript" charset="utf-8" src="//i.sso.sina.com.cn/js/outlogin_layer.js"></script>
-<!--�������JS-->
-<script type="text/javascript" charset="utf-8" src="//finance.sina.com.cn/other/src/article-comment-2017.js"></script>
-<!--�����������-->
-<script type="text/javascript">
-(function ($) {
-//����id�������ڵ�
-var wrapId = 'bottom_sina_comment';
-
-// ���ֺ�ҳ�����һ�£�gbk��utf-8
-$.cmnt.config.encoding = 'gbk';
-
-var FormList1 = new $.cmnt.FormList(wrapId,{
-    // Ƶ�����
-    channel: ARTICLE_DATA.channel,
-    // ����id
-    newsid: ARTICLE_DATA.newsid,
-    // Ĭ��Ϊ��
-    parent:''
-},{
-    channel: ARTICLE_DATA.channel,
-    // ����id
-    newsid: ARTICLE_DATA.newsid,
-    // Ĭ��Ϊ0���������ţ�ͼƬ�����ϵ�����Ϊ1
-    group: ARTICLE_DATA.group,
-    // ��ʼҳ����Ĭ��Ϊ1
-    page: 1,
-    // ÿҳ��������
-    pageSize: 20,
-    // ���¥��
-    maxFloor:1,
-     // ���������б��ֻ��ʾ���ۿ�
-    hideList:0,
-    // // ��������Ĭ����ʾ����
-    // hotPageNum:5,
-    // // ��������Ĭ����ʾ����
-    // firstPageNum:5,
-    // // �ɵ�������������ġ��������ۡ���ť����,�ﵽ�ô�������ʾ���鿴�������ۡ����ӣ��ٵ������ת
-    // clickMoreTimes:3,
-    loaded: function( self ){
-        var num = self.data.count?self.data.count.total:0;
-        //SinaSlide.util.byId('SI_Commnet_Trigger').innerHTML = '<i></i>���� ' + SinaSlide.util.numSplit(num);
-        numSplit = function (num){num=num+"";var re=/(-?\d+)(\d{3})/;while(re.test(num)){num=num.replace(re,"$1,$2")}return num};
-        document.getElementById('SI_Commnet_Trigger').innerHTML = '<i></i>���� ' + numSplit(num);
-    }
-},{});
-})(window.___sinacMNT___);
-</script>
-        <!-- �����б� end -->
-
-    </div>
-    <!-- βҳ start -->
-    <script src="//n.sinaimg.cn/news/photos/slide-recommend.js"></script>
-    <!-- βҳ end -->
-    <!-- ����ͼ��js�����js start -->
-    <script src="//i.sso.sina.com.cn/js/ssologin.js"></script>
-    <script src="//i.sso.sina.com.cn/js/outlogin_layer.js" charset="utf-8"></script>
-    <script src="//www.sinaimg.cn/dy/deco/2013/1121/js/audio.min.js"></script>
-    <script type="text/javascript" src="//i2.sinaimg.cn/cj/hsuan/js/libs/swfobject.js"></script>
-    <script type="text/javascript" src="//n.sinaimg.cn/slide-news/js/slide.js" charset="utf-8"></script>
-
-    <script type="text/javascript" src="//slide.news.sina.com.cn/js/v1/default/boot2.js?t=20171221"></script>
-
-    <!-- ����ͼ��js�����js end -->
-
-    <!-- ���۹��js start -->
+<a id="cb_post_title_url" class="postTitle2 vertical-middle" href="https://www.cnblogs.com/tcjiaan/p/14751964.html">
+    <span>【.NET 与树莓派】六轴飞控传感器（MPU 6050）</span>
     
-    <style type="text/css">
-        .slide-fixed-a{position: fixed !important;top:0;left:50% !important;margin-left: -500px !important;_position:absolute !important;width: 1000px;}
-    </style>
-    <script type="text/javascript">
-    ;(function() {
-        var ua = navigator.userAgent.toLowerCase(); var isIE6 = /msie 6/.test(ua); var extend = function(destination, source) {for (var property in source) {destination[property] = source[property]; } return destination; }; var setStyles = function(ele, styles) {for (property in styles) {ele.style[property] = styles[property]; } }; var getOffset = function(ele) {var top = 0; var left = 0; while (ele != null && ele != document.body) {left += ele.offsetLeft; top += ele.offsetTop; ele = ele.offsetParent; } return {top: top, left: left }; }; var hasClass = function(el, clz) {if (!el) {return false; } return el.className.match(new RegExp('(\\s|^)' + clz + '(\\s|$)')); }; var addClass = function(el, clz) {if (!hasClass(el, clz)) {el.className = el.className.replace(/(^\s*)|(\s*$)/g, '') + ' ' + clz; } }; var removeClass = function(el, clz) {if (hasClass(el, clz)) {var reg = new RegExp('(\\s|^)' + clz + '(\\s|$)'); el.className = el.className.replace(reg, ' '); } }; var addEvent = function(el, evType, func, useCapture) {if (typeof useCapture == 'undefined') {useCapture = false; } if (el.addEventListener) {el.addEventListener(evType, func, useCapture); return true; } else if (el.attachEvent) {el.attachEvent('on' + evType, func); return true; } else {el['on' + evType] = func; } };
-        var ScrollFix = function(wrap, config) {var defaults = {getTop: function(wrap) {return 0; }, getHeight: function(wrap) {return wrap.offsetHeight; }, fixed: function(wrap, scrollTop, offsetTop, top) {return scrollTop > offsetTop - top; }, onFix: function(wrap) {}, onUnFix: function(wrap) {} }; config = extend(defaults, config); var pNode = wrap.parentNode; var divFilled = document.createElement('div'); pNode.insertBefore(divFilled, wrap); if (isIE6) {var position = pNode.style.position; if (position !== 'absolute' && position !== 'relative') {setStyles(pNode, {position: 'relative'}); } } var fixedClz = config.fixedClz || 'fixed'; var toggle = function(b) {var height = '1px'; var marginTop = '-1px'; if (b) {height = config.getHeight(wrap) + 'px'; marginTop = 0; } setStyles(divFilled, {height: height, marginTop: marginTop, overflow: 'hidden'}); }; var scrollHandle = function() {var offsetTop = getOffset(divFilled).top; var scrollTop = document.documentElement.scrollTop || document.body.scrollTop; var top = config.getTop(wrap) || 0; if (config.fixed(wrap, scrollTop, offsetTop, top)) {toggle(true); addClass(wrap, fixedClz); if (isIE6) {top = top + scrollTop - getOffset(pNode).top; } setStyles(wrap, {top: top + 'px'}); config.onFix(wrap); } else {toggle(false); removeClass(wrap, fixedClz); config.onUnFix(wrap); } }; var timerId = false; addEvent(window, 'scroll', function() {if (!timerId) {scrollHandle(); timerId = true; } else {clearTimeout(timerId); setTimeout(function() {scrollHandle(); }, 100); } }); scrollHandle(); };
 
-        var getFormWrap = function(cb){var wrap = document.getElementById('J_Comment_Form_B'); if(wrap){setTimeout(function(){cb(wrap); },100); }else{setTimeout(function(){getFormWrap(cb); },100); } };
-        var faceWrap;
-        var changeFaceWrap = function(type){var data = 'id=J_Comment_Form_B'; if(!faceWrap){faceWrap = SAB.dom.byClass('cmnt-emotion-trigger','J_Comment_Form_B')[0]; } if(type=='fix'){data+='&wrap=J_Comment_Form_B'; } faceWrap.setAttribute('action-data',data); };
-        var fixedClz = 'slide-fixed-a';
 
-        // �������
-        var adWrap = document.getElementById('SI_Comment_DA');
-        // �Ƿ��й��
-        var hasAD = false;
-        if(('undefined' !== SINAADS_CONFIG_POS_PDPS) && SINAADS_CONFIG_POS_PDPS['hover_banner'] && SINAADS_CONFIG_POS_PDPS['hover_banner'][__ch_id__ + '']){
-            hasAD = true;
+
+</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                <div id="cnblogs_post_body" class="blogpost-body blogpost-body-html">
+<p>所谓“飞控”，其实是重力加速度计和陀螺仪的组合，因为多用于控制飞行器的平衡（无人机、遥控飞机）。有同学会问，这货为什么会有六轴呢？咱们常见的不是X、Y、Z三轴吗？重力加速度有三轴，陀螺仪也有三轴，那我问你，两个加起来多少轴？</p>
+<p>贴片常见的有 MPU-6000、MPU-6050、MPU-9250 。MPU 9250 是九轴传感器。哟，吓死阿伟了，怎么变成了九轴了？它弄了个磁场感应嘛。</p>
+<p>老周在淘宝“琉璃厂”淘到的模块是正点原子的 MPU 6050。万能法则——找最便宜的入，别相信那些叫你买贵的，你不妨把便宜的和贵各买一个对比看看，最后你会一刻拍案惊奇地发现——两个一模一样。网上卖东西，有些店就是瞎喊价格的。他们真不会做生意，想想网购这玩意儿，我完全可以货比万家的，一样的商品，当然谁便宜买谁了。反正过程一样，都是坐和等待 + 三通一达。</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210510163338886-1524140531.png" width="290" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;MPU 6050 使用的是 IIC/i2c 通信协议。也就是说你很熟悉了，除了供电两根线，就是数据线 SDA 和时钟线 SCL。</p>
+<p>&nbsp;</p>
+<p>MPU 6050 的操作方式是读写寄存器，输出的模拟量是 16 位有符号整数。2 的 16 次方有65536个数值，包含0，无符号整数是0 - 65535，但有符号就不同了，因为最高位用作符号位，故范围是 -32768 ~ +32767。这个范围也就是MPU 6050的输出分辨率。</p>
+<p>咱们在使用时要注意，这货有多种量程设置，不同量程下输出结果的精度不同。下面老周具体扯一下。</p>
+<p>先看重力加速度，可配置的量程有：</p>
+<p><span style="background-color: rgba(255, 255, 153, 1); color: rgba(51, 51, 51, 1)">1、±2g：g 就是我们以前上物理课时的老熟人了——重力加速度。故，此量程可测量两倍 g 的加速度，包含负值。</span></p>
+<p><span style="background-color: rgba(255, 255, 153, 1); color: rgba(51, 51, 51, 1)">2、±4g：原理同上，量程为四倍的 g 的加速度，包含正负值。</span></p>
+<p><span style="background-color: rgba(255, 255, 153, 1); color: rgba(51, 51, 51, 1)">3、±8g：八倍于 g ，含正负值。</span></p>
+<p><span style="background-color: rgba(255, 255, 153, 1); color: rgba(51, 51, 51, 1)">4、±16g：十六倍的g，含正负值。</span></p>
+<p>前面提到了，模块输出的是16位有符号整数，那么</p>
+<p>若量程为 <span style="color: rgba(255, 0, 0, 1)">+/- 2g</span>，正负值加起来，倍数是4，16位有65536个数值，所以，65536 ÷ 4 = 16384。也就是说，每一倍的 g 可以划分为 16384 等分来描述，精度是最高的。同样的计算方法，4g、8g、16g的分值也能算出来：</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210510165736102-370531915.png" height="96" loading="lazy"></p>
+<p>&nbsp;&nbsp;你可以看看，如果要测量 ±16 个g的量程，那么每个g只能划分为2048个等分了。可见：<strong><span style="color: rgba(51, 51, 153, 1)">量程越小，精度越高；量程越大，精度越低</span></strong>。</p>
+<p><span style="background-color: rgba(255, 0, 0, 1); color: rgba(255, 255, 0, 1)">* 由于正负两边是对轴的，也可以只算一边，即 +/-2g =&gt; 32768 / 2 = 16384。&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>陀螺仪是测量某个轴上的旋转速度，与加速度一样，角速度也可以设置量程。</p>
+<p>±250° / s：速度每秒旋转 250 度。同样，65536 ÷ (250 * 2) = 131，因为速度有正负值，所以250要乘以2。其他几个值也是这样算。</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210510170615503-109947673.png" height="96" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>配置重力加速度的量程的寄存器地址为 0x1C，一个字节，各二进制位的参数如下：</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210510171202067-2137117302.png" height="53" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>这里咱们只关心 bit3 和 bit4 即可，bit5 到 bit7是用来模块自测的，不必管他。AFS_SEL 两个二进制位可以产生四个值（00、01、10、11），这样就和上面咱们提到的量程对应上了。</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210510171447436-1956988379.png" height="100" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>默认是0，即 +/-2g，向寄存器写入 b0000_.0000。如果要+/-4g的量程，就向寄存器写入 b0000_1000。</p>
+<p>-----------------------------------------------------------------</p>
+<p>配置陀螺仪量程的寄存器地址是 0x1B。</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210510171822787-145028699.png" height="62" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;和上一个寄存器一样，咱们只关心 FS_SEL 两个二进制位即可，也是四个值，分别与前文中提到的角速度量程一一对应。</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210510172050445-44648671.png" height="100" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>接下来，要关注的是电源管理寄存器，地址为 0x6B。</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210510172240818-245313544.png" height="65" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;这里最关键的是 bit6，也就是参数 SLEEP。MPU6050 刚通电时，会默认进入休眠状态（可能别的厂家不是这样），这时候，SLEEP 位上的值是 1，要唤醒模块，就要<strong><span style="color: rgba(51, 51, 153, 1)">把这个二进制位改为 0</span></strong>。由于正点原子这个模块上面还有个温度传感器，所以，如果 TEMP_DIS 位为0，表示使用温度传感器，从寄存器 0x41 和 0x42 可以读到温度值；咱们使用这个模块主要是读重力加速度和角速度，所以要禁用温度计的话就把该位设置为 1。</p>
+<p>&nbsp;</p>
+<p>接下来是核心，如何读加速度和角速度的值。一个值是16位有符号整数，两个字节，因此需要两个寄存器；而加速度有三个轴的值，总共需要六个寄存器来存放。这六个寄存器是连续的，地址从&nbsp; 0x3B 到 0x40。依次读出来的是：X轴的高位字节 &gt; X轴的低位字节 &gt; Y轴的高位字节 &gt; Y轴的低位字节 &gt; Z轴的高位字节 &gt; Z轴的低位字节。读取时是高位字节先出，低位字节后出。</p>
+<p>读取角速度也一样，需要连续的六个寄存器—— 从 0x43 到 0x48。X、Y、Z三轴供六个字节，也是高字节在前，低字节在后。</p>
+<p>&nbsp;</p>
+<p>连接的时候，VCC接树莓派 5V，GND接树莓派GND，至于另外两根线，这里老周顺便提一下，如何让 Pi 4 开启多路 i2c。咱们通过 raspi-config 工具（或直接改 config.txt 文件）所使用的是默认的总线——i2c-1，也就是 GPIO2 和 GPIO3 引脚。</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210511123758604-217508510.png" width="400" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>i2c-0 是给专用扩展板通信的，官方文档建议咱们不要使用（引脚 GPIO0 和 GPIO1），在树莓派上电时会检测 i2c-0 总线，因此这一路是留给 EEPROM 专属。</p>
+<p>但不用担心，除了 i2c-0、i2c-1 外，还有四路我们可以选：i2c-3、i2c-4、i2c-5和i2c-6。根据文档说明，只有 BCM 2711 才能开启多路 i2c 接口。在树莓派上执行一下：</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 0, 255, 1)">cat</span> /proc/cpuinfo</pre>
+</div>
+<p>然后，你会看到让人兴奋的一幕。</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210511124540120-80819617.png" height="90" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;而 Raspberry Pi 4B 规格文档上的描述也印证了，4 代是支持开启多路 i2c 接口的（可用多个总线）。</p>
+<p>为什么要启用其他 i2c 总线？可以有以下理由：</p>
+<p>1、相同的器件挂到同一个总线上，有的模块可以设置地址，但有的不可以。为了不冲突，可以考虑地址相同的模块连到不同的总线上；</p>
+<p>2、GPIO2 或 GPIO3 用不了。当然，这里不是指针脚坏了，而是说另作他用。比如，你要给树莓派弄一个开机按钮；又或者，你在 5V 和 GND上接了风扇，有的散热风扇两根线是并在一起的，而且用的是插电脑主板的那种端子，既没法选其他引脚又占用空间，把GPIO2和GPIO3的位置都挡住了。</p>
+<p>哦，上面提到了为树莓派添加开机按钮的事，咱们先聊正题，待会儿正题扯完了，老周再补充。</p>
+<p>树莓派4B可用 GPIO 有 28 个，也就是说，GPIO 的 BCM 码最多只到 27，什么 40、45 号接口的就别做梦了。依据文档，咱们一起来瞧瞧这可用的四路 i2c 总线的参数。</p>
+<p>1、i2c-3：有两组引脚可用。GPIO2、GPIO3 与 i2c-1 是重叠的；所以可以选另一个组——GPIO4 和 GPIO5。</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210511160539241-1531139143.png" height="350" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>2、i2c-4：也是有两组引脚可选。第一组是 GPIO6 和 GPIO7；第二组是 GPIO8 和GPIO9。</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210511161249954-1815740126.png" height="325" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>3、i2c-5：也是有两组引脚可用。第一组 GPIO10 和 GPIO11；第二组 GPIO12 和 GPIO13。如果使用 PWM 的话，注意 12、13 的冲突。</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210511161746428-1843396438.png" height="313" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>4、i2c-6：第一组引脚 GPIO0 和 GPIO1，这个前面提到过，保留分配给专用扩展板，建议不使用；第二组是 GPIO23 和 GPIO23。</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210511162134247-1849387835.png" height="280" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>这里老周选用了 i2c-4，所以总线 Bus id 是 4，引脚是 6 和 7，打开 /boot/config.txt 文件，加入以下配置：</p>
+<div class="cnblogs_code">
+<pre>dtoverlay=i2c4,pins_6_7</pre>
+</div>
+<p>这个配置与 raspi-config 中对 i2c 的配置是独立的，也就是说，就算你禁用了 i2c，就像这样：</p>
+<div class="cnblogs_code">
+<pre>dtparam=i2c_arm=off</pre>
+</div>
+<p>i2c-4 仍然可以正常工作，所以，i2c-3 到 i2c-6 的配置不受默认 i2c 的启用状态影响，只要我配置有 i2c-4，哪怕禁用了i2c接口也能使用。</p>
+<p>&nbsp;</p>
+<p>好了，剩下的工作就是写代码。先上MPU6050类。代码我整个贴了。</p>
+<div class="cnblogs_code">
+<pre>    <span style="color: rgba(0, 0, 255, 1)">public</span> <span style="color: rgba(0, 0, 255, 1)">class</span><span style="color: rgba(0, 0, 0, 1)"> Mpu6050 : IDisposable
+    {
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;summary&gt;</span>
+        <span style="color: rgba(128, 128, 128, 1)">///</span><span style="color: rgba(0, 128, 0, 1)"> 默认从机地址
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;/summary&gt;</span>
+        <span style="color: rgba(0, 0, 255, 1)">public</span> <span style="color: rgba(0, 0, 255, 1)">const</span> <span style="color: rgba(0, 0, 255, 1)">int</span> DEFAULT_ADDR = <span style="color: rgba(128, 0, 128, 1)">0x68</span><span style="color: rgba(0, 0, 0, 1)">;
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;summary&gt;</span>
+        <span style="color: rgba(128, 128, 128, 1)">///</span><span style="color: rgba(0, 128, 0, 1)"> 重力加速度
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;/summary&gt;</span>
+        <span style="color: rgba(0, 0, 255, 1)">public</span> <span style="color: rgba(0, 0, 255, 1)">const</span> <span style="color: rgba(0, 0, 255, 1)">float</span> G = <span style="color: rgba(128, 0, 128, 1)">9.8f</span><span style="color: rgba(0, 0, 0, 1)">;
+
+        </span><span style="color: rgba(0, 0, 255, 1)">#region</span> 寄存器列表
+        <span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 电源管理，用于唤醒模块</span>
+        <span style="color: rgba(0, 0, 255, 1)">const</span> <span style="color: rgba(0, 0, 255, 1)">byte</span> REG_POWER_MGR = <span style="color: rgba(128, 0, 128, 1)">0x6b</span><span style="color: rgba(0, 0, 0, 1)">;
+
+        </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 配置加速度的量程</span>
+        <span style="color: rgba(0, 0, 255, 1)">const</span> <span style="color: rgba(0, 0, 255, 1)">byte</span> REG_ACCEL_CONFIG = <span style="color: rgba(128, 0, 128, 1)">0x1c</span><span style="color: rgba(0, 0, 0, 1)">;
+
+        </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 配置角速度的量程</span>
+        <span style="color: rgba(0, 0, 255, 1)">const</span> <span style="color: rgba(0, 0, 255, 1)">byte</span> REG_GYRO_CONFIG = <span style="color: rgba(128, 0, 128, 1)">0x1b</span><span style="color: rgba(0, 0, 0, 1)">;
+
+        </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 读取重力加速度</span>
+        <span style="color: rgba(0, 0, 255, 1)">const</span> <span style="color: rgba(0, 0, 255, 1)">byte</span> REG_ACCL_MS_BASE = <span style="color: rgba(128, 0, 128, 1)">0x3b</span><span style="color: rgba(0, 0, 0, 1)">;
+
+        </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 读取角速度</span>
+        <span style="color: rgba(0, 0, 255, 1)">const</span> <span style="color: rgba(0, 0, 255, 1)">byte</span> REG_GYRO_MS_BASE = <span style="color: rgba(128, 0, 128, 1)">0x43</span><span style="color: rgba(0, 0, 0, 1)">;
+        </span><span style="color: rgba(0, 0, 255, 1)">#endregion</span>
+    
+        <span style="color: rgba(0, 0, 255, 1)">private</span> I2cDevice _device = <span style="color: rgba(0, 0, 255, 1)">default</span><span style="color: rgba(0, 0, 0, 1)">;
+        
+        </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 构造函数</span>
+        <span style="color: rgba(0, 0, 255, 1)">public</span> Mpu6050(<span style="color: rgba(0, 0, 255, 1)">int</span> i2cBusid, <span style="color: rgba(0, 0, 255, 1)">int</span> devAddress =<span style="color: rgba(0, 0, 0, 1)"> DEFAULT_ADDR)
+        {
+            I2cConnectionSettings cs </span>= <span style="color: rgba(0, 0, 255, 1)">new</span><span style="color: rgba(0, 0, 0, 1)"> I2cConnectionSettings(i2cBusid, devAddress);
+            _device </span>=<span style="color: rgba(0, 0, 0, 1)"> I2cDevice.Create(cs);
         }
-        // ���߶�
-        var ADHeight = 90;
 
-        getFormWrap(function(wrap){
-            if(hasAD){
-                new ScrollFix(adWrap,{
-                    fixedClz:fixedClz
-                });
-            }else{
-                ADHeight = 0;
+        </span><span style="color: rgba(0, 0, 255, 1)">public</span> <span style="color: rgba(0, 0, 255, 1)">void</span> Dispose() =&gt; _device?<span style="color: rgba(0, 0, 0, 1)">.Dispose();
+
+        </span><span style="color: rgba(0, 0, 255, 1)">#region</span> 私有方法
+        <span style="color: rgba(0, 0, 255, 1)">private</span> <span style="color: rgba(0, 0, 255, 1)">void</span> WriteReg(<span style="color: rgba(0, 0, 255, 1)">byte</span> reg, <span style="color: rgba(0, 0, 255, 1)">byte</span><span style="color: rgba(0, 0, 0, 1)"> val)
+        {
+            Span</span>&lt;<span style="color: rgba(0, 0, 255, 1)">byte</span>&gt; data = <span style="color: rgba(0, 0, 255, 1)">stackalloc</span> <span style="color: rgba(0, 0, 255, 1)">byte</span>[<span style="color: rgba(128, 0, 128, 1)">2</span><span style="color: rgba(0, 0, 0, 1)">]
+            {
+                reg,
+                val
+            };
+            _device.Write(data);
+        }
+        </span><span style="color: rgba(0, 0, 255, 1)">private</span> <span style="color: rgba(0, 0, 255, 1)">byte</span> ReadReg(<span style="color: rgba(0, 0, 255, 1)">byte</span><span style="color: rgba(0, 0, 0, 1)"> reg)
+        {
+            _device.WriteByte(reg);
+            </span><span style="color: rgba(0, 0, 255, 1)">for</span>(<span style="color: rgba(0, 0, 255, 1)">int</span> i =<span style="color: rgba(128, 0, 128, 1)">0</span>; i&lt;<span style="color: rgba(128, 0, 128, 1)">13</span>; i++<span style="color: rgba(0, 0, 0, 1)">)
+            {
+                System.Threading.Thread.SpinWait(</span><span style="color: rgba(128, 0, 128, 1)">1</span><span style="color: rgba(0, 0, 0, 1)">);
             }
-            new ScrollFix(wrap,{
-                fixedClz:fixedClz,
-                getTop:function(){
-                    return ADHeight;
-                },
-                onFix:function(){
-                    changeFaceWrap('fix');
-                },
-                onUnFix:function(){
-                    changeFaceWrap('reset');
-                }
-            });
-        });
-      })();
-
-//        //2015-07-03 start{{{
-//        var slide_astro = new ScrollPic();
-//        slide_astro.scrollContId = "hd_slider";
-//        slide_astro.arrLeftId  = "SP_ad_20150703_left";
-//        slide_astro.arrRightId = "SP_ad_20150703_right";
-//        //��������ID
-//        slide_astro.frameWidth = 928;
-//        //��ʾ����
-//        slide_astro.pageWidth = 116;
-//        //��ҳ���
-//        slide_astro.speed = 5;
-//        slide_astro.space = 3;
-//        slide_astro.autoPlay = false;
-//        //�Զ�����
-//        slide_astro.autoPlayTime = 3;
-//        //�Զ����ż��ʱ��(��)
-//        slide_astro.circularly = true;
-//        slide_astro.initialize();
-//        //2015-07-03 end}}}
-    </script>
+            </span><span style="color: rgba(0, 0, 255, 1)">return</span><span style="color: rgba(0, 0, 0, 1)"> _device.ReadByte();
+        }
+        </span><span style="color: rgba(0, 0, 255, 1)">private</span> <span style="color: rgba(0, 0, 255, 1)">void</span> ReadBytes(<span style="color: rgba(0, 0, 255, 1)">byte</span> reg, Span&lt;<span style="color: rgba(0, 0, 255, 1)">byte</span>&gt;<span style="color: rgba(0, 0, 0, 1)"> data)
+        {
+            _device.WriteByte(reg);
+            </span><span style="color: rgba(0, 0, 255, 1)">for</span>(<span style="color: rgba(0, 0, 255, 1)">int</span> x = <span style="color: rgba(128, 0, 128, 1)">0</span>; x &lt; data.Length; x++<span style="color: rgba(0, 0, 0, 1)">)
+            {
+                data[x] </span>= <span style="color: rgba(128, 0, 128, 1)">0</span><span style="color: rgba(0, 0, 0, 1)">;
+            }
+            _device.Read(data);
+        }
+        </span><span style="color: rgba(0, 0, 255, 1)">#endregion</span>
     
-    <!-- ���۹��js end -->
+        <span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;summary&gt;</span>
+        <span style="color: rgba(128, 128, 128, 1)">///</span><span style="color: rgba(0, 128, 0, 1)"> 唤醒
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;/summary&gt;</span>
+        <span style="color: rgba(0, 0, 255, 1)">public</span> <span style="color: rgba(0, 0, 255, 1)">void</span><span style="color: rgba(0, 0, 0, 1)"> WakeUp()
+        {
+            </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 或者写入 0x08（禁用温度计输出）</span>
+            WriteReg(REG_POWER_MGR, <span style="color: rgba(128, 0, 128, 1)">0x00</span><span style="color: rgba(0, 0, 0, 1)">);
+        }
 
-    <!-- cheny start-->
-    <div class="sc_success_tit">
-        <span class="sp fl">�ղسɹ�</span>
-        <a href="//my.sina.com.cn/#location=fav" target="_blank" class="a fl"  suda-uatrack="key=content_collect&value=hdphoto_myfav_click">�鿴�ҵ��ղ�</a>
-        <span class="sp2 png24"></span>
-    </div>
-    <div class="sc_success_alert">
-        <div class="top clearfix">
-            <div class="bg fl"></div>
-            <div class="txt fl">
-                <p class="fir">���ղ�!</p>
-                <p class="sec">����ͨ��������ҳ<a href="//www.sina.com.cn/" target="_blank">(www.sina.com.cn)</a>���� ��<a href="//my.sina.com.cn/#location=fav" target="_blank">�ҵ��ղ�</a>���� �鿴�����ղع������¡�</p>
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;summary&gt;</span>
+        <span style="color: rgba(128, 128, 128, 1)">///</span><span style="color: rgba(0, 128, 0, 1)"> 进入休眠
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;/summary&gt;</span>
+        <span style="color: rgba(0, 0, 255, 1)">public</span> <span style="color: rgba(0, 0, 255, 1)">void</span><span style="color: rgba(0, 0, 0, 1)"> Sleep()
+        {
+            WriteReg(REG_POWER_MGR, </span><span style="color: rgba(128, 0, 128, 1)">0x40</span><span style="color: rgba(0, 0, 0, 1)">);
+        }
+
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;summary&gt;</span>
+        <span style="color: rgba(128, 128, 128, 1)">///</span><span style="color: rgba(0, 128, 0, 1)"> 重力加速度的量程
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;/summary&gt;</span>
+        <span style="color: rgba(0, 0, 255, 1)">public</span><span style="color: rgba(0, 0, 0, 1)"> AcclRange AccelerRange
+        {
+            </span><span style="color: rgba(0, 0, 255, 1)">get</span><span style="color: rgba(0, 0, 0, 1)">
+            {
+                </span><span style="color: rgba(0, 0, 255, 1)">byte</span> v =<span style="color: rgba(0, 0, 0, 1)"> ReadReg(REG_ACCEL_CONFIG);
+                </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 由于测量范围的配置在第4、5位，所以读出来的值要右移三位</span>
+                <span style="color: rgba(0, 0, 255, 1)">return</span> (AcclRange)(<span style="color: rgba(0, 0, 255, 1)">byte</span>)((v &gt;&gt; <span style="color: rgba(128, 0, 128, 1)">3</span>) &amp; <span style="color: rgba(128, 0, 128, 1)">0x03</span><span style="color: rgba(0, 0, 0, 1)">);
+            }
+            </span><span style="color: rgba(0, 0, 255, 1)">set</span><span style="color: rgba(0, 0, 0, 1)">
+            {
+                </span><span style="color: rgba(0, 0, 255, 1)">byte</span> x = (<span style="color: rgba(0, 0, 255, 1)">byte</span><span style="color: rgba(0, 0, 0, 1)">)value;
+                </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 存入时要左移三位</span>
+                WriteReg(REG_ACCEL_CONFIG, (<span style="color: rgba(0, 0, 255, 1)">byte</span>)(x &lt;&lt; <span style="color: rgba(128, 0, 128, 1)">3</span><span style="color: rgba(0, 0, 0, 1)">));
+            }
+        }
+
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;summary&gt;</span>
+        <span style="color: rgba(128, 128, 128, 1)">///</span><span style="color: rgba(0, 128, 0, 1)"> 陀螺仪的量程
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;/summary&gt;</span>
+        <span style="color: rgba(0, 0, 255, 1)">public</span><span style="color: rgba(0, 0, 0, 1)"> GyroRange GyroRange
+        {
+            </span><span style="color: rgba(0, 0, 255, 1)">get</span><span style="color: rgba(0, 0, 0, 1)">
+            {
+                </span><span style="color: rgba(0, 0, 255, 1)">byte</span> v =<span style="color: rgba(0, 0, 0, 1)"> ReadReg(REG_GYRO_CONFIG);
+                </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 同样，要右移三位</span>
+                <span style="color: rgba(0, 0, 255, 1)">return</span> (GyroRange)(<span style="color: rgba(0, 0, 255, 1)">byte</span>)((v &gt;&gt; <span style="color: rgba(128, 0, 128, 1)">3</span>) &amp; <span style="color: rgba(128, 0, 128, 1)">0x03</span><span style="color: rgba(0, 0, 0, 1)">);
+            }
+            </span><span style="color: rgba(0, 0, 255, 1)">set</span><span style="color: rgba(0, 0, 0, 1)">
+            {
+                </span><span style="color: rgba(0, 0, 255, 1)">byte</span> c = (<span style="color: rgba(0, 0, 255, 1)">byte</span><span style="color: rgba(0, 0, 0, 1)">)value;
+                </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 左移三位</span>
+                WriteReg(REG_GYRO_CONFIG,  (<span style="color: rgba(0, 0, 255, 1)">byte</span>)(c &lt;&lt; <span style="color: rgba(128, 0, 128, 1)">3</span><span style="color: rgba(0, 0, 0, 1)">));
+            }
+        }
+
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;summary&gt;</span>
+        <span style="color: rgba(128, 128, 128, 1)">///</span><span style="color: rgba(0, 128, 0, 1)"> 读取加速度值
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;/summary&gt;</span>
+        <span style="color: rgba(0, 0, 255, 1)">public</span> (<span style="color: rgba(0, 0, 255, 1)">float</span> ax, <span style="color: rgba(0, 0, 255, 1)">float</span> ay, <span style="color: rgba(0, 0, 255, 1)">float</span><span style="color: rgba(0, 0, 0, 1)"> az) GetAccelerometer()
+        {
+            </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 可以以 0x3b 为基址，批量读取
+            </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 因为地址是连续的</span>
+            Span&lt;<span style="color: rgba(0, 0, 255, 1)">byte</span>&gt; buffer = <span style="color: rgba(0, 0, 255, 1)">stackalloc</span> <span style="color: rgba(0, 0, 255, 1)">byte</span>[<span style="color: rgba(128, 0, 128, 1)">6</span><span style="color: rgba(0, 0, 0, 1)">];
+            ReadBytes(REG_ACCL_MS_BASE, buffer);
+            </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 合成读数</span>
+            <span style="color: rgba(0, 0, 255, 1)">short</span> x =<span style="color: rgba(0, 0, 0, 1)"> BinaryPrimitives.ReadInt16BigEndian(buffer);
+            </span><span style="color: rgba(0, 0, 255, 1)">short</span> y = BinaryPrimitives.ReadInt16BigEndian(buffer[<span style="color: rgba(128, 0, 128, 1)">2</span><span style="color: rgba(0, 0, 0, 1)">..]);
+            </span><span style="color: rgba(0, 0, 255, 1)">short</span> z = BinaryPrimitives.ReadInt16BigEndian(buffer[<span style="color: rgba(128, 0, 128, 1)">4</span><span style="color: rgba(0, 0, 0, 1)">..]);
+            </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 转换倍数</span>
+            <span style="color: rgba(0, 0, 255, 1)">float</span> fac = AccelerRange <span style="color: rgba(0, 0, 255, 1)">switch</span><span style="color: rgba(0, 0, 0, 1)">
+            {
+                AcclRange.x2g       </span>=&gt; <span style="color: rgba(128, 0, 128, 1)">2.0f</span><span style="color: rgba(0, 0, 0, 1)">,
+                AcclRange.x4g       </span>=&gt; <span style="color: rgba(128, 0, 128, 1)">4.0f</span><span style="color: rgba(0, 0, 0, 1)">,
+                AcclRange.x8g       </span>=&gt; <span style="color: rgba(128, 0, 128, 1)">8.0f</span><span style="color: rgba(0, 0, 0, 1)">,
+                AcclRange.x16g      </span>=&gt; <span style="color: rgba(128, 0, 128, 1)">16.0f</span><span style="color: rgba(0, 0, 0, 1)">,
+                _                   </span>=&gt; <span style="color: rgba(128, 0, 128, 1)">0.0f</span><span style="color: rgba(0, 0, 0, 1)">
+            };
+            </span><span style="color: rgba(0, 0, 255, 1)">return</span><span style="color: rgba(0, 0, 0, 1)"> (
+                fac </span>* G / 32768f *<span style="color: rgba(0, 0, 0, 1)"> x,
+                fac </span>* G / 32768f *<span style="color: rgba(0, 0, 0, 1)"> y,
+                fac </span>* G / 32768f *<span style="color: rgba(0, 0, 0, 1)"> z
+            );
+        }
+
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;summary&gt;</span>
+        <span style="color: rgba(128, 128, 128, 1)">///</span><span style="color: rgba(0, 128, 0, 1)"> 读取陀螺仪数据
+        </span><span style="color: rgba(128, 128, 128, 1)">///</span> <span style="color: rgba(128, 128, 128, 1)">&lt;/summary&gt;</span>
+        <span style="color: rgba(0, 0, 255, 1)">public</span> (<span style="color: rgba(0, 0, 255, 1)">float</span> gx, <span style="color: rgba(0, 0, 255, 1)">float</span> gy, <span style="color: rgba(0, 0, 255, 1)">float</span><span style="color: rgba(0, 0, 0, 1)"> gz) GetGyroscope()
+        {
+            Span</span>&lt;<span style="color: rgba(0, 0, 255, 1)">byte</span>&gt; buffer = <span style="color: rgba(0, 0, 255, 1)">stackalloc</span> <span style="color: rgba(0, 0, 255, 1)">byte</span>[<span style="color: rgba(128, 0, 128, 1)">6</span><span style="color: rgba(0, 0, 0, 1)">];
+            ReadBytes(REG_GYRO_MS_BASE, buffer);
+            </span><span style="color: rgba(0, 0, 255, 1)">short</span> x =<span style="color: rgba(0, 0, 0, 1)"> BinaryPrimitives.ReadInt16BigEndian(buffer[..]);
+            </span><span style="color: rgba(0, 0, 255, 1)">short</span> y = BinaryPrimitives.ReadInt16BigEndian(buffer[<span style="color: rgba(128, 0, 128, 1)">2</span><span style="color: rgba(0, 0, 0, 1)">..]);
+            </span><span style="color: rgba(0, 0, 255, 1)">short</span> z = BinaryPrimitives.ReadInt16BigEndian(buffer[<span style="color: rgba(128, 0, 128, 1)">4</span><span style="color: rgba(0, 0, 0, 1)">..]);
+            </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 转换倍数</span>
+            <span style="color: rgba(0, 0, 255, 1)">float</span> rf = GyroRange <span style="color: rgba(0, 0, 255, 1)">switch</span><span style="color: rgba(0, 0, 0, 1)">
+            {
+                GyroRange.x250dps       </span>=&gt;<span style="color: rgba(0, 0, 0, 1)"> 250f,
+                GyroRange.x500dps       </span>=&gt;<span style="color: rgba(0, 0, 0, 1)"> 500f,
+                GyroRange.x1000dps      </span>=&gt;<span style="color: rgba(0, 0, 0, 1)"> 1000f,
+                GyroRange.x2000dps      </span>=&gt;<span style="color: rgba(0, 0, 0, 1)"> 2000f,
+                _                       </span>=&gt;<span style="color: rgba(0, 0, 0, 1)"> 0f
+            };
+            </span><span style="color: rgba(0, 0, 255, 1)">return</span><span style="color: rgba(0, 0, 0, 1)"> (
+                rf </span>* x /<span style="color: rgba(0, 0, 0, 1)"> 32768f,
+                rf </span>* y /<span style="color: rgba(0, 0, 0, 1)"> 32768f,
+                rf </span>* z /<span style="color: rgba(0, 0, 0, 1)">32768f
+            );
+        }
+    }
+
+    </span><span style="color: rgba(0, 0, 255, 1)">public</span> <span style="color: rgba(0, 0, 255, 1)">enum</span> AcclRange : <span style="color: rgba(0, 0, 255, 1)">byte</span><span style="color: rgba(0, 0, 0, 1)">
+    {
+        x2g </span>= <span style="color: rgba(128, 0, 128, 1)">0</span><span style="color: rgba(0, 0, 0, 1)">,
+        x4g </span>= <span style="color: rgba(128, 0, 128, 1)">1</span><span style="color: rgba(0, 0, 0, 1)">,
+        x8g </span>= <span style="color: rgba(128, 0, 128, 1)">2</span><span style="color: rgba(0, 0, 0, 1)">,
+        x16g </span>= <span style="color: rgba(128, 0, 128, 1)">3</span><span style="color: rgba(0, 0, 0, 1)">
+    }
+
+    </span><span style="color: rgba(0, 0, 255, 1)">public</span> <span style="color: rgba(0, 0, 255, 1)">enum</span> GyroRange : <span style="color: rgba(0, 0, 255, 1)">byte</span><span style="color: rgba(0, 0, 0, 1)">
+    {
+        x250dps </span>= <span style="color: rgba(128, 0, 128, 1)">0</span><span style="color: rgba(0, 0, 0, 1)">,
+        x500dps </span>= <span style="color: rgba(128, 0, 128, 1)">1</span><span style="color: rgba(0, 0, 0, 1)">,
+        x1000dps </span>= <span style="color: rgba(128, 0, 128, 1)">2</span><span style="color: rgba(0, 0, 0, 1)">,
+        x2000dps </span>= <span style="color: rgba(128, 0, 128, 1)">3</span><span style="color: rgba(0, 0, 0, 1)">
+    }</span></pre>
+</div>
+<p>两个枚举类型：AcclRange 表示重力加速度的量程，即 2g、4g等；GyroRange 表示陀螺仪的量程，像 500 度/秒。</p>
+<p>这里重点看看计数的读取。在读取加速度时，要把读到的 16 位有符号整数进行处理。实际上就是读数除以量程，比如，±2g，就用 32768 / 2 = 16384。假设读数为x，就用x除以16384，这样就知道是多少个 g 了。通用公式是：</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210511163910379-397177401.png" alt="" width="101" height="46" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;其中，r 是读数，g 是重力加速度，一般取值 9.8。量程就是前面说的2、4、8、16。所以才有这个代码：</p>
+<div class="cnblogs_code">
+<pre>            <span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 转换倍数
+            </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 获取倍数（量程）</span>
+            <span style="color: rgba(0, 0, 255, 1)">float</span> fac = AccelerRange <span style="color: rgba(0, 0, 255, 1)">switch</span><span style="color: rgba(0, 0, 0, 1)">
+            {
+                AcclRange.x2g       </span>=&gt; <span style="color: rgba(128, 0, 128, 1)">2.0f</span><span style="color: rgba(0, 0, 0, 1)">,
+                AcclRange.x4g       </span>=&gt; <span style="color: rgba(128, 0, 128, 1)">4.0f</span><span style="color: rgba(0, 0, 0, 1)">,
+                AcclRange.x8g       </span>=&gt; <span style="color: rgba(128, 0, 128, 1)">8.0f</span><span style="color: rgba(0, 0, 0, 1)">,
+                AcclRange.x16g      </span>=&gt; <span style="color: rgba(128, 0, 128, 1)">16.0f</span><span style="color: rgba(0, 0, 0, 1)">,
+                _                   </span>=&gt; <span style="color: rgba(128, 0, 128, 1)">0.0f</span><span style="color: rgba(0, 0, 0, 1)">
+            };
+            </span><span style="color: rgba(0, 0, 255, 1)">return</span><span style="color: rgba(0, 0, 0, 1)"> (
+                fac </span>* G / 32768f *<span style="color: rgba(0, 0, 0, 1)"> x,
+                fac </span>* G / 32768f *<span style="color: rgba(0, 0, 0, 1)"> y,
+                fac </span>* G / 32768f *<span style="color: rgba(0, 0, 0, 1)"> z
+            );</span></pre>
+</div>
+<p>陀螺仪的原理也一样，可以看上面贴的完整代码。</p>
+<p>&nbsp;</p>
+<p>最后，做个测试。</p>
+<div class="cnblogs_code">
+<pre>    <span style="color: rgba(0, 0, 255, 1)">class</span><span style="color: rgba(0, 0, 0, 1)"> Program
+    {
+        </span><span style="color: rgba(0, 0, 255, 1)">static</span> <span style="color: rgba(0, 0, 255, 1)">void</span> Main(<span style="color: rgba(0, 0, 255, 1)">string</span><span style="color: rgba(0, 0, 0, 1)">[] args)
+        {
+            </span><span style="color: rgba(0, 0, 255, 1)">using</span> Devices.Mpu6050 mpudev = <span style="color: rgba(0, 0, 255, 1)">new</span>(i2cBusid: <span style="color: rgba(128, 0, 128, 1)">4</span><span style="color: rgba(0, 0, 0, 1)">,
+                                         devAddress: Devices.Mpu6050.DEFAULT_ADDR);
+            </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 唤醒</span>
+<span style="color: rgba(0, 0, 0, 1)">            mpudev.WakeUp();
+            </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 设定重力加速度量程为 4g</span>
+            mpudev.AccelerRange =<span style="color: rgba(0, 0, 0, 1)"> Devices.AcclRange.x4g;
+            </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 设定陀螺仪的量程为 500 d/s</span>
+            mpudev.GyroRange =<span style="color: rgba(0, 0, 0, 1)"> Devices.GyroRange.x500dps;
+            </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 输出验证</span>
+            Console.WriteLine(<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">加速度量程：{0}\n角速度量程：{1}</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">,
+                        mpudev.AccelerRange </span><span style="color: rgba(0, 0, 255, 1)">switch</span><span style="color: rgba(0, 0, 0, 1)">
+                        {
+                            Devices.AcclRange.x2g   </span>=&gt; <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">+/- 2g</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">,
+                            Devices.AcclRange.x4g   </span>=&gt; <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">+/- 4g</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">,
+                            Devices.AcclRange.x8g   </span>=&gt; <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">+/- 8g</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">,
+                            Devices.AcclRange.x16g  </span>=&gt; <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">+/- 16g</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">,
+                            _                       </span>=&gt; <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">未知</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">
+                        },
+                        mpudev.GyroRange </span><span style="color: rgba(0, 0, 255, 1)">switch</span><span style="color: rgba(0, 0, 0, 1)">
+                        {
+                            Devices.GyroRange.x250dps       </span>=&gt; <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">+/- 250dps</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">,
+                            Devices.GyroRange.x500dps       </span>=&gt; <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">+/- 500dps</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">,
+                            Devices.GyroRange.x1000dps      </span>=&gt; <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">+/- 1000dps</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">,
+                            Devices.GyroRange.x2000dps      </span>=&gt; <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">+/- 2000dps</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">,
+                            _                               </span>=&gt; <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">未知</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">
+                        });
+            Console.WriteLine(</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">------------------------</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">);
+            </span><span style="color: rgba(0, 0, 255, 1)">bool</span> looping=<span style="color: rgba(0, 0, 255, 1)">true</span><span style="color: rgba(0, 0, 0, 1)">;
+            Console.CancelKeyPress </span>+= (_,_)=&gt; looping = <span style="color: rgba(0, 0, 255, 1)">false</span><span style="color: rgba(0, 0, 0, 1)">;
+
+            Console.WriteLine(</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">每一输输出后会暂停，以方便观察数据，可按任意键继续。</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">);
+
+            </span><span style="color: rgba(0, 0, 255, 1)">while</span><span style="color: rgba(0, 0, 0, 1)">(looping)
+            {
+                </span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)"> 分别读出加速度和角速度</span>
+                <span style="color: rgba(0, 0, 255, 1)">float</span><span style="color: rgba(0, 0, 0, 1)"> acc_x, acc_y, acc_z;
+                (acc_x, acc_y, acc_z) </span>=<span style="color: rgba(0, 0, 0, 1)"> mpudev.GetAccelerometer();
+                </span><span style="color: rgba(0, 0, 255, 1)">float</span><span style="color: rgba(0, 0, 0, 1)"> gy_x, gy_y, gy_z;
+                (gy_x, gy_y, gy_z) </span>=<span style="color: rgba(0, 0, 0, 1)"> mpudev.GetGyroscope();
+                </span><span style="color: rgba(0, 0, 255, 1)">string</span> output = $<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">加速度：x={acc_x}, y={acc_y}, z={acc_z}</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">;
+                output </span>+= $<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">\n角速度：x={gy_x}, y={gy_y}, z={gy_z}</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">;
+                Console.WriteLine(output);
+                Console.Write(</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">\n</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">);
+                Console.ReadKey(</span><span style="color: rgba(0, 0, 255, 1)">true</span><span style="color: rgba(0, 0, 0, 1)">);
+            }
+        }
+    }</span></pre>
+</div>
+<p>随即 build 源码，上传到树莓派上运行一下。</p>
+<p><img src="https://img2020.cnblogs.com/blog/367389/202105/367389-20210511164550808-132499784.png" height="300" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>&nbsp;数据是读出来了，至于怎么去用，那得看你的用途了。多数时候，MPU6050会用在无人机上，不过，姿态运算的算法真的太复杂了，老周也没弄明白，所以这里也没办法跟大伙聊了。不过要判断是不是有人拿模块在做“摇一摇”运动还是好办的，因为剧烈晃动时陀螺仪的读数会增大，加速度x、y的读数也会增大。</p>
+<p>&nbsp;</p>
+<p>========================================================</p>
+<p>&nbsp;最后，咱们聊聊给大草莓添加开机按钮的事。很简单，因为这是硬件上设定好的，你也不用改什么配置（根本没法配置），方法就是：<strong><span style="color: rgba(0, 0, 128, 1)">向 GPIO3 引脚输出低电平</span></strong>，树莓派就会开机。树莓派在上电后会自动开机的，这里加开机按钮的用途是当你关机后想再开机，如果不加个按钮，你就要拔掉电源线再接上，重新上电，或者关掉插座再通电。如果加了按钮，按一下就会开机了。</p>
+<p>那按钮怎么接呢？最简单方案就是 GPIO3 -- 按钮 -- GND，即在 GPIO3 和 GND 之间接个按钮。原理就是 GND 是相对 0V，它就是输出低电平的最简单方案。只要和 GPIO3 接通，GPIO3 读到的就是低电平，所以就会开机。当然了，你用两根线把 GPIO3 和 GND 短接一下也可以开机的。</p>
+<p>如果想用关机键，就要配置了。开机是硬件层定义的，但关机是系统驱动集成的，应该算是软件层定义的。所以，给草莓派加关机按钮就要配置了。打开 /boot/config.txt</p>
+<p>sudo nano /boot/config.txt</p>
+<p>加上：</p>
+<div class="cnblogs_code">
+<pre>dtoverlay=gpio-shutdown, gpio_pin=<span style="color: rgba(128, 0, 128, 1)">11</span></pre>
+</div>
+<p>gpio_pin 指定用哪个引脚来触发关机，默认是 GPIO3，这里我配置了11。如果省略 gpio_pin 参数，就是3。于是，如果你打算用一个按钮来完成关机和开机动作，那就保持默认。这样一来，在开机状态下按一下按钮，就会关机；关机后再按一下就开机。</p>
+<p>关机信号默认也是低电平触发，所以你把用来关机的引脚和 GND 短接一下也能关机的。如果希望高电平触发，可以用&nbsp;active_low 参数来配置，如果为1，表明低电平触发，在高电平向低电平跳转（过渡，下降沿）的时候发送关机命令；如果配置为0，表示高电平触发，当电平从低跳转到高时发送关机命令。</p>
+<div class="cnblogs_code">
+<pre>dtoverlay=gpio-shutdown, gpio_pin=<span style="color: rgba(128, 0, 128, 1)">11</span>, active_low=<span style="color: rgba(128, 0, 128, 1)">0</span></pre>
+</div>
+<p>&nbsp;</p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
             </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2021-05-11 17:12</span>&nbsp;
+<a href="https://www.cnblogs.com/tcjiaan/">东邪独孤</a>&nbsp;
+阅读(<span id="post_view_count">87</span>)&nbsp;
+评论(<span id="post_comment_count">1</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14751964" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(14751964);return false;">收藏</a></div>
         </div>
-        <img src="//www.sinaimg.cn/ent/deco/2014/0311/images/sc_img.png"/>
-        <div class="clearfix"><p class="sure fr">֪����</p></div>
-        <span class="close"></span>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/10.3.1/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 113198, cb_blogApp = 'tcjiaan', cb_blogUserGuid = '9874e16f-6837-e111-b988-842b2b196315';
+    var cb_entryId = 14751964, cb_entryCreatedDate = '2021-05-11 17:12', cb_postType = 1;
+    updatePostStats(
+        [cb_entryId],
+        function(id, count) { $("#post_view_count").text(count) },
+        function(id, count) { $("#post_comment_count").text(count) })
+    zoomManager.apply("#cnblogs_post_body img:not(.code_img_closed):not(.code_img_opened)");
+</script>
+<a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <div id="cnblogs_c1" class="under-post-card">
+        <div id='div-gpt-ad-1592365906576-0' style='width: 300px; height: 250px;'></div>
     </div>
-    <div style="display:none;">
-        <iframe name="scChCreateForm" style="display:none;"></iframe>
-        <form id="sc_ch_form" action="" target="scChCreateForm" method="post" style="display:none;">
-            <input id="scdocid" type="hidden" name="docid" value=""/>
-            <input type="hidden" name="category" value="2"/>
-            <input type="hidden" name="source" value="1"/>
-            <input id="sc_ch_form_id" type="hidden" name="id" value=""/>
-            <input id="scChCreateFormSub" type="submit"/>
-        </form>
-        <span id="sc_ch_total">0</span>
+    <div id="under_post_card1"></div>
+    <div id="cnblogs_c2" class="under-post-card">
+        <div id='div-gpt-ad-1592366332455-0' style='width: 468px; height: 60px;'></div>
     </div>
-
-    <!-- cheny end-->
-
-
-
-    <!--v3--><div id="eData" style="display:none;">
-	<dl>
-		<dt>ȫ�������׳�������ͨ��������</dt>
-		<dd>http://n.sinaimg.cn/news/1_img/upload/2b0c102b/w800h600/20180303/ONxu-fwnpcnt6785989.jpg</dd>
-        		<dd>http://k.sinaimg.cn/n/news/1_ori/upload/2b0c102b/w800h600/20180303/ONxu-fwnpcnt6785989.jpg/w160h120hdp.jpg</dd>
-		<dd>http://k.sinaimg.cn/n/news/1_ori/upload/2b0c102b/w800h600/20180303/ONxu-fwnpcnt6785989.jpg/w50hdp.jpg</dd>
-		<dd>2018��03��03�� 17:38</dd>
-		<dd>2018��ȫ�������׳�������ͨ������3��3������ȫ����Эʮ����һ�λ��鿪Ļ���������ʽ�������Դ���й���</dd>
-		<dd><a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=slidenews-89356-1673941">����</a></dd>
-        		<dd>1673941</dd>
-	</dl>
-	<dl>
-		<dt>ȫ�������׳�������ͨ��������</dt>
-		<dd>http://n.sinaimg.cn/news/1_img/upload/2b0c102b/w800h600/20180303/m4af-fwnpcnt6731780.jpg</dd>
-        		<dd>http://k.sinaimg.cn/n/news/1_ori/upload/2b0c102b/w800h600/20180303/m4af-fwnpcnt6731780.jpg/w160h120hdp.jpg</dd>
-		<dd>http://k.sinaimg.cn/n/news/1_ori/upload/2b0c102b/w800h600/20180303/m4af-fwnpcnt6731780.jpg/w50hdp.jpg</dd>
-		<dd>2018��03��03�� 17:27</dd>
-		<dd>�����������±������ܼ��߲ɷá�</dd>
-		<dd><a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=slidenews-89356-1673899">����</a></dd>
-        		<dd>1673899</dd>
-	</dl>
-	<dl>
-		<dt>ȫ�������׳�������ͨ��������</dt>
-		<dd>http://n.sinaimg.cn/news/1_img/upload/2b0c102b/w800h600/20180303/bu6G-fwnpcnt6731788.jpg</dd>
-        		<dd>http://k.sinaimg.cn/n/news/1_ori/upload/2b0c102b/w800h600/20180303/bu6G-fwnpcnt6731788.jpg/w160h120hdp.jpg</dd>
-		<dd>http://k.sinaimg.cn/n/news/1_ori/upload/2b0c102b/w800h600/20180303/bu6G-fwnpcnt6731788.jpg/w50hdp.jpg</dd>
-		<dd>2018��03��03�� 17:27</dd>
-		<dd>����Ժ����칫��������Ԯƽ���ܲɷá�</dd>
-		<dd><a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=slidenews-89356-1673900">����</a></dd>
-        		<dd>1673900</dd>
-	</dl>
-	<dl>
-		<dt>ȫ�������׳�������ͨ��������</dt>
-		<dd>http://n.sinaimg.cn/news/1_img/upload/2b0c102b/w800h600/20180303/RYAw-fwnpcnt6731799.jpg</dd>
-        		<dd>http://k.sinaimg.cn/n/news/1_ori/upload/2b0c102b/w800h600/20180303/RYAw-fwnpcnt6731799.jpg/w160h120hdp.jpg</dd>
-		<dd>http://k.sinaimg.cn/n/news/1_ori/upload/2b0c102b/w800h600/20180303/RYAw-fwnpcnt6731799.jpg/w50hdp.jpg</dd>
-		<dd>2018��03��03�� 17:27</dd>
-		<dd>˾���������ž����ܲɷá�</dd>
-		<dd><a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=slidenews-89356-1673901">����</a></dd>
-        		<dd>1673901</dd>
-	</dl>
-	<dl>
-		<dt>ȫ�������׳�������ͨ��������</dt>
-		<dd>http://n.sinaimg.cn/news/1_img/upload/2b0c102b/w800h600/20180303/H0ZK-fwnpcnt6731810.jpg</dd>
-        		<dd>http://k.sinaimg.cn/n/news/1_ori/upload/2b0c102b/w800h600/20180303/H0ZK-fwnpcnt6731810.jpg/w160h120hdp.jpg</dd>
-		<dd>http://k.sinaimg.cn/n/news/1_ori/upload/2b0c102b/w800h600/20180303/H0ZK-fwnpcnt6731810.jpg/w50hdp.jpg</dd>
-		<dd>2018��03��03�� 17:27</dd>
-		<dd>������ҽҩ����־ֳ�����ǿ���ܲɷá�</dd>
-		<dd><a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=slidenews-89356-1673902">����</a></dd>
-        		<dd>1673902</dd>
-	</dl>
-	<dl>
-		<dt>ȫ�������׳�������ͨ��������</dt>
-		<dd>http://n.sinaimg.cn/news/1_img/upload/2b0c102b/w800h600/20180303/nIlw-fwnpcnt6786006.jpg</dd>
-        		<dd>http://k.sinaimg.cn/n/news/1_ori/upload/2b0c102b/w800h600/20180303/nIlw-fwnpcnt6786006.jpg/w160h120hdp.jpg</dd>
-		<dd>http://k.sinaimg.cn/n/news/1_ori/upload/2b0c102b/w800h600/20180303/nIlw-fwnpcnt6786006.jpg/w50hdp.jpg</dd>
-		<dd>2018��03��03�� 17:38</dd>
-		<dd>��������־ֳ���������ܲɷá�</dd>
-		<dd><a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=slidenews-89356-1673942">����</a></dd>
-        		<dd>1673942</dd>
-	</dl>
+    <div id="under_post_card2"></div>
+    <div id="HistoryToday" class="under-post-card"></div>
+    <script type="text/javascript">
+       var commentManager = new blogCommentManager();
+       commentManager.renderComments(0);
+       fixPostBody();
+       deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);       deliverT2();
+       deliverC1C2();
+       loadNewsAndKb();
+       loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);       LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+       GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+       loadOptUnderPost();
+       GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
 </div>
 
-    <div class="footer" id="sina_footer">
-          <div class="footer-inner">
-              <p><a href="//comment4.news.sina.com.cn/comment/skin/feedback.html" target="_blank">������������������԰�</a></p>
-              <p><a href="//corp.sina.com.cn/chn/">���˼��</a> | <a href="//corp.sina.com.cn/eng/">About Sina</a> | <a href="//emarketing.sina.com.cn/">������</a> | <a href="//www.sina.com.cn/contactus.html">��ϵ����</a> | <a href="//corp.sina.com.cn/chn/sina_job.html">��Ƹ��Ϣ</a> | <a href="//www.sina.com.cn/intro/lawfirm.shtml">��վ��ʦ</a> | <a href="//english.sina.com">SINA English</a> | <a href="https://login.sina.com.cn/signup/signup.php">ͨ��֤ע��</a> | <a href="//help.sina.com.cn/">��Ʒ����</a></p>
-              <p>Copyright &copy; 1996-2021 SINA Corporation, All Rights Reserved</p>
-              <p>���˹�˾ <a href="//www.sina.com.cn/intro/copyright.shtml">��Ȩ����</a></p>
-          </div>
-    </div>
-    
-    
-    <!-- ΢���Ƽ�css��js start -->
-    <!-- styles -->
-    <link rel="stylesheet" href="//news.sina.com.cn/css/268/2011/1110/17/weibo-all.css" />
-    <link rel="stylesheet" href="//tech.sina.com.cn/css/717/20131127/content/weibocard2013.css">
-    <!-- lib -->
-    <script src="//news.sina.com.cn/js/87/20110714/205/sinalib.js"></script>
-    <!-- Weibo -->
-    <script src="//news.sina.com.cn/js/268/2011/1110/16/weibo-all.js"></script>
-    <!-- weibocard -->
-    <!-- script type="text/javascript" src="//tech.sina.com.cn/js/717/20131127/content/weibocard2013.js"></script -->
-    <script type="text/javascript" src="//photo.sina.com.cn/js/18/2014/0728/weibocard2013.js"></script>
-    <!-- weibocard end -->
-    <!-- script type="text/javascript" src="//slide.news.sina.com.cn/js/v1/default/wbRecommender.js?t=20140703"></script-->
-    
-        <!--script type="text/javascript">
-            (function(){
-                var wrap = document.getElementById('SI_WBRE_Wrap');
-                var complete = function(data){
-                    if(data&&data.uids&&data.uids.length>0){
-                        wrap.style.display = 'block';
-                    }
-                };
-                var BF1 = new sinabAtchfOllow('SI_WBRE_1',35,{
-                    num:8,
-                    complete:complete
-                });
-            })();
-        </script-->
-    
-    <!-- ΢���Ƽ� end -->
-    <!-- ΢���Ƽ�css��js end -->
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+	<div id="sideBar">
+		<div id="sideBarMain">
+			<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+<div id="sidebar_c3"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2021 东邪独孤
+<br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
 
-     <!-- ��¼���ղ� js start -->
-     <!-- <script src="//i.sso.sina.com.cn/js/sinaSSOManager.js"></script> -->
-     <script type="text/javascript" src="//i.sso.sina.com.cn/js/user_panel.js" charset="utf-8"></script>
-     <script type="text/javascript" src="//slide.news.sina.com.cn/js/v1/default/sc_tp.js?t=20141217"></script>
-     <!-- ��¼���ղ� js end -->
-    
-    <!-- Baidu Button BEGIN -->
-    <script>
-    $(function() {
 
-        var shareData = $('#bdshare').attr('data');
-        var obj = eval('(' + shareData + ')');
-        window._bd_share_config = {
-            common: {
-                bdText: obj.text,
-                bdUrl: obj.url,
-                bdPic: obj.pic,
-                bdPopupOffsetLeft: -210
-            },
-            share: [{
-                "tag": "share_1",
-                "bdSize": 16
-            }]
-        }
-        with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = '//bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
-    })
-    </script>
-    <!-- Baidu Button END -->
-    <!-- ΢����עjs start -->
-    <script type="text/javascript" src="//n.sinaimg.cn/news/photos/weibofollow.js"></script>
-    <!-- ΢����עjs end -->
-    <!-- ��� start -->
-    <script async charset="utf-8" src="//d9.sina.com.cn/litong/zhitou/sinaads/release/sinaads.js"></script>
-    <!-- ��� end -->
-    
 
-                        <iframe width="1" height="0" frameborder="0" scrolling="no" src="//news.sina.com.cn/iframe/hdphoto/lltj.html?date=2018-03-03&url=http%3A%2F%2Fslide.news.sina.com.cn%2Fslide_1_89356_246217.html&sub_ch=&ch_id=1&sid=89356&album_id=246217"></iframe>
-                <!-- ͳ��ÿ���õƵ�һ��ͼƬ���� -->
-    <iframe width="1" height="0" frameborder="0" scrolling="no" src="//eladies.sina.com.cn/hdphoto/interface/lltj_shouye_manual.html?p=http://n.sinaimg.cn/news/1_img/upload/2b0c102b/w800h600/20180303/RYAw-fwnpcnt6731799.jpg&c=news&r=246217"></iframe>
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
 
     
 
-<!--����ͼ�ĵ����ͼ����-�������� -->
-<script type="text/javascript" src="//www.sinaimg.cn/unipro/pub/suda_m_v629.js"></script>
-
-<script type="text/javascript">suds_init(2291,1.0000,1015,2);</script>
- 
-<script type="text/javascript" > 
-(function(){
-    if (window.top !== window.self) {
-        return;
-    }
-    if (window.seajs) {
-        seajs.use('product.guess.slide'); 
-    } else {
-           (function(cb){
-            ;(function(m, o, d, u, l, a, r) {
-              if(m[d]) {(typeof cb === 'function') && cb(); return}
-              function f(n, t) { return function() { r.push(n, arguments); return t } }
-              m[d] = a = { args: (r = []), config: f(0, a), use: f(1, a) }
-              m.udvDefine = f(2)
-              u = o.createElement('script')
-              u.id = d + 'node'
-              u.src = '//i2.sinaimg.cn/jslib/modules2/seajs/1.3.0/sea.js'
-              l = o.getElementsByTagName('head')[0]
-              a = o.getElementsByTagName('base')[0]
-              a ? l.insertBefore(u, a) : l.appendChild(u)
-            })(window, document, 'seajs');
-
-            //config
-            seajs.use('//n.sinaimg.cn/slide-news/js/config.1.1.x.js', function(){
-                (typeof cb === 'function') && cb();
-            });
-        })(function(){
-            seajs.use('product.guess.slide'); 
-        }); 
-    }
-})();
-(function(d, s) {
-var j = d.createElement('script'),
-h = d.getElementsByTagName('head')[0];
-j.charset = 'utf-8';
-j.async = true;
-j.src = s;
-h.appendChild(j);
-})(document, '//n.sinaimg.cn/slide-news/js/collect.js');
-</script> 
-
-
-<!-- ������ begin -->
-<div id="screen1280"></div>
-<script>
-    (function () {
-        if (window.screen.width >=1280) {
-            var screen1280 = document.getElementById("screen1280");
-            screen1280.innerHTML = ["<ins class='sinaads' data-ad-pdps='PDPS000000057475'></","ins>"].join("");
-        }
-    })();
-    (sinaads = window.sinaads || []).push({
-        params:{
-            sinaads_ad_delay: 5,
-            sinaads_pop_position:"right bottom"
-        }
-    });
-</script>
-<!-- ������ end -->
-
-
-<!-- SUDA_CODE_START -->
-<script type="text/javascript" src="//www.sinaimg.cn/unipro/pub/suda_s_v851c.js"></script>
-<script type="text/javascript" > 
-_S_pSt(_S_PID_); 
-</script> 
-<noScript>
-<div style='position:absolute;top:0;left:0;width:0;height:0;visibility:hidden'><img width=0 height=0 src='//beacon.sina.com.cn/a.gif?noScript' border='0' alt='' /></div>
-</noScript>
-<!-- SUDA_CODE_END --> 
-
-
-
-
-
-<script type="text/javascript" >
-	n = window.location.href.search(/.html\/r\/([0-9_]+)$/);
-	if(n <= 0) {
-		(new Image()).src='/interface/api_stat_click.php?ch=1&sid=89356&id=246217';
-	}
-</script>
-
-
-<script>
-    ('undefined' !== SINAADS_CONFIG_POS_PDPS)
-        && SINAADS_CONFIG_POS_PDPS['couplet']
-        && SINAADS_CONFIG_POS_PDPS['couplet'][__ch_id__ + '']
-        && (
-            document.write('<ins class="sinaads" data-ad-pdps="' + SINAADS_CONFIG_POS_PDPS['couplet'][__ch_id__ + ''] + '"></ins>')
-            , (sinaads = window.sinaads || []).push({params:{
-                sinaads_float_top:65,
-                sinaads_ad_follow:1
-            }})
-        );
-</script>
-
-
-
-<script>
-    ('undefined' !== SINAADS_CONFIG_POS_PDPS)
-        && SINAADS_CONFIG_POS_PDPS['motu']
-        && SINAADS_CONFIG_POS_PDPS['motu'][__ch_id__ + '']
-        && (
-            document.write('<ins class="sinaads" data-ad-pdps="' + SINAADS_CONFIG_POS_PDPS['motu'][__ch_id__ + ''] + '"></ins>')
-            , (sinaads = window.sinaads || []).push({})
-        );
-</script>
-
-
-<script type="text/javascript">
-(function(d, s, id) {
-    var n = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    s = d.createElement(s);
-    s.id = id;
-    s.setAttribute('charset', 'utf-8');
-    s.src = '//d' + Math.floor(0 + Math.random() * (8 - 0 + 1)) + '.sina.com.cn/litong/zhitou/sinaads/src/spec/sinaads_ck.js';
-    n.parentNode.insertBefore(s, n);
-})(document, 'script', 'sinaads-ck-script');
-</script>
-
+    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAju3syv-1HDIzUhRv1m-_n_gM8gyhiMETg37eZi5bKCL53W0gHBm-lI3h1cFhSgktcAV_2umZotuUmkxr1NK3xjLjxza_mWt2Id-rVGW81DCbK6OnFPVgla3fjFqcmOaUao" />
 </body>
 </html>

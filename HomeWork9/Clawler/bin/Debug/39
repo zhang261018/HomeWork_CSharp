@@ -1,712 +1,656 @@
-﻿
-<!DOCTYPE html>
-<!-- [ published at 2019-10-15 11:37:33 ] -->
-<html>
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>“共和国勋章”和“国家荣誉称号”获得者名单全收录|勋章|荣誉称号|屠呦呦_新浪新闻</title>
-<meta name="keywords" content="勋章,荣誉称号,屠呦呦" />
-
-<meta name="description" content="袁隆平屠呦呦等被授予“共和国勋章”。" />
-<link rel="mask-icon" sizes="any" href="//www.sina.com.cn/favicon.svg" color="red">
-
-<meta name="mobile-agent" content="format=html5; url=http://doc.sina.cn/?id=comos:icezzrq6538126">
-<meta name="mobile-agent" content="format=xhtml; url=http://doc.sina.cn/?id=comos:icezzrq6538126">
-<meta name="mobile-agent" content="format=wml; url=http://doc.sina.cn/?id=comos:icezzrq6538126">
-
-<meta name=jspreload content="jspreload">
-
-<script type="text/javascript" src="http://i1.sinaimg.cn/home/sinaflash.js"></script>
-
-<link rel="stylesheet" href="//n2.sinaimg.cn/news/tjtx_pc/lqf_tjtx-0.1.1.20190114.css" />
-<script src="http://i.sso.sina.com.cn/js/ssologin.js" charset="gbk"></script>
-<link href="http://news.sina.com.cn/css/268/2011/1110/17/weibo-all.css" rel="stylesheet" type="text/css"/>
-<script src="//n.sinaimg.cn/news/libs/jquery-1.11.1.min.js"></script>
-<style type="text/css">
-.right .weibo-card .action {
-	width: 72px !important;
-}
-.blkContainerCommentblk .J_Comment_Face img {
-	width: 50px !important;
-	height: 50px !important;
-}
-</style>
-<script type="text/javascript">
-~function(){
-	var isIpad = navigator.userAgent.toLowerCase().match(/ipad/i) == "ipad";
-	var isTouchDevice = 'ontouchstart' in window;
-	var _doc = document;
-	var head, meta;
-	if(isTouchDevice){
-		head = _doc.querySelector('head');
-		meta = document.createElement('meta');
-		meta.setAttribute('name', 'viewport');
-		meta.setAttribute('content', 'initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no');
-		head.appendChild(meta);
-
-		if(isIpad){
-			_doc.write('<style>@media all and (orientation:portrait){html,body{overflow:hidden;}.header .wrap{background:url("http://i2.sinaimg.cn/dy/2013/1223/U8360P1DT20131223170953.jpg") no-repeat 0px 0px;}}</style>');
-		}
-
-	}
-}();
-</script>
-<link href="http://n0.sinaimg.cn/news/tjtx/zhengwen-20190227.css" rel="stylesheet">
-<script type="text/javascript" src="http://pfp.sina.com.cn/dcs/js/dc_video_svv.js" charset="utf-8"></script>
-
-<meta name="sudameta" content="dataid:comos:icezzrq6538126" /></head>
-<body><!-- body code begin -->
-
-<!-- SUDA_CODE_START --> 
-<script type="text/javascript"> 
-//<!--
-(function(){var an="V=2.1.16";var ah=window,F=document,s=navigator,W=s.userAgent,ao=ah.screen,j=ah.location.href;var aD="https:"==ah.location.protocol?"https://s":"http://",ay="beacon.sina.com.cn";var N=aD+ay+"/a.gif?",z=aD+ay+"/g.gif?",R=aD+ay+"/f.gif?",ag=aD+ay+"/e.gif?",aB=aD+"beacon.sinauda.com/i.gif?";var aA=F.referrer.toLowerCase();var aa="SINAGLOBAL",Y="FSINAGLOBAL",H="Apache",P="ULV",l="SUP",aE="UOR",E="_s_acc",X="_s_tentry",n=false,az=false,B=(document.domain=="sina.com.cn")?true:false;var o=0;var aG=false,A=false;var al="";var m=16777215,Z=0,C,K=0;var r="",b="",a="";var M=[],S=[],I=[];var u=0;var v=0;var p="";var am=false;var w=false;function O(){var e=document.createElement("iframe");e.src=aD+ay+"/data.html?"+new Date().getTime();e.id="sudaDataFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function k(){var e=document.createElement("iframe");e.src=aD+ay+"/ckctl.html";e.id="ckctlFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function q(){var e=document.createElement("script");e.src=aD+ay+"/h.js";document.getElementsByTagName("head")[0].appendChild(e)}function h(aH,i){var D=F.getElementsByName(aH);var e=(i>0)?i:0;return(D.length>e)?D[e].content:""}function aF(){var aJ=F.getElementsByName("sudameta");var aR=[];for(var aO=0;aO<aJ.length;aO++){var aK=aJ[aO].content;if(aK){if(aK.indexOf(";")!=-1){var D=aK.split(";");for(var aH=0;aH<D.length;aH++){var aP=aw(D[aH]);if(!aP){continue}aR.push(aP)}}else{aR.push(aK)}}}var aM=F.getElementsByTagName("meta");for(var aO=0,aI=aM.length;aO<aI;aO++){var aN=aM[aO];if(aN.name=="tags"){aR.push("content_tags:"+encodeURI(aN.content))}}var aL=t("vjuids");aR.push("vjuids:"+aL);var e="";var aQ=j.indexOf("#");if(aQ!=-1){e=escape(j.substr(aQ+1));aR.push("hashtag:"+e)}return aR}function V(aK,D,aI,aH){if(aK==""){return""}aH=(aH=="")?"=":aH;D+=aH;var aJ=aK.indexOf(D);if(aJ<0){return""}aJ+=D.length;var i=aK.indexOf(aI,aJ);if(i<aJ){i=aK.length}return aK.substring(aJ,i)}function t(e){if(undefined==e||""==e){return""}return V(F.cookie,e,";","")}function at(aI,e,i,aH){if(e!=null){if((undefined==aH)||(null==aH)){aH="sina.com.cn"}if((undefined==i)||(null==i)||(""==i)){F.cookie=aI+"="+e+";domain="+aH+";path=/"}else{var D=new Date();var aJ=D.getTime();aJ=aJ+86400000*i;D.setTime(aJ);aJ=D.getTime();F.cookie=aI+"="+e+";domain="+aH+";expires="+D.toUTCString()+";path=/"}}}function f(D){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;return i.get(D)}catch(aH){return false}}function ar(D,aH){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;i.set(D,aH);return true}catch(aI){return false}}function L(){var aJ=15;var D=window.SUDA.etag;if(!B){return"-"}if(u==0){O();q()}if(D&&D!=undefined){w=true}ls_gid=f(aa);if(ls_gid===false||w==false){return false}else{am=true}if(ls_gid&&ls_gid.length>aJ){at(aa,ls_gid,3650);n=true;return ls_gid}else{if(D&&D.length>aJ){at(aa,D,3650);az=true}var i=0,aI=500;var aH=setInterval((function(){var e=t(aa);if(w){e=D}i+=1;if(i>3){clearInterval(aH)}if(e.length>aJ){clearInterval(aH);ar(aa,e)}}),aI);return w?D:t(aa)}}function U(e,aH,D){var i=e;if(i==null){return false}aH=aH||"click";if((typeof D).toLowerCase()!="function"){return}if(i.attachEvent){i.attachEvent("on"+aH,D)}else{if(i.addEventListener){i.addEventListener(aH,D,false)}else{i["on"+aH]=D}}return true}function af(){if(window.event!=null){return window.event}else{if(window.event){return window.event}var D=arguments.callee.caller;var i;var aH=0;while(D!=null&&aH<40){i=D.arguments[0];if(i&&(i.constructor==Event||i.constructor==MouseEvent||i.constructor==KeyboardEvent)){return i}aH++;D=D.caller}return i}}function g(i){i=i||af();if(!i.target){i.target=i.srcElement;i.pageX=i.x;i.pageY=i.y}if(typeof i.layerX=="undefined"){i.layerX=i.offsetX}if(typeof i.layerY=="undefined"){i.layerY=i.offsetY}return i}function aw(aH){if(typeof aH!=="string"){throw"trim need a string as parameter"}var e=aH.length;var D=0;var i=/(\u3000|\s|\t|\u00A0)/;while(D<e){if(!i.test(aH.charAt(D))){break}D+=1}while(e>D){if(!i.test(aH.charAt(e-1))){break}e-=1}return aH.slice(D,e)}function c(e){return Object.prototype.toString.call(e)==="[object Array]"}function J(aH,aL){var aN=aw(aH).split("&");var aM={};var D=function(i){if(aL){try{return decodeURIComponent(i)}catch(aP){return i}}else{return i}};for(var aJ=0,aK=aN.length;aJ<aK;aJ++){if(aN[aJ]){var aI=aN[aJ].split("=");var e=aI[0];var aO=aI[1];if(aI.length<2){aO=e;e="$nullName"}if(!aM[e]){aM[e]=D(aO)}else{if(c(aM[e])!=true){aM[e]=[aM[e]]}aM[e].push(D(aO))}}}return aM}function ac(D,aI){for(var aH=0,e=D.length;aH<e;aH++){aI(D[aH],aH)}}function ak(i){var e=new RegExp("^http(?:s)?://([^/]+)","im");if(i.match(e)){return i.match(e)[1].toString()}else{return""}}function aj(aO){try{var aL="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var D="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";var aQ=function(e){var aR="",aS=0;for(;aS<e.length;aS++){aR+="%"+aH(e[aS])}return decodeURIComponent(aR)};var aH=function(e){var i="0"+e.toString(16);return i.length<=2?i:i.substr(1)};var aP=function(aY,aV,aR){if(typeof(aY)=="string"){aY=aY.split("")}var aX=function(a7,a9){for(var a8=0;a8<a7.length;a8++){if(a7[a8]==a9){return a8}}return -1};var aS=[];var a6,a4,a1="";var a5,a3,a0,aZ="";if(aY.length%4!=0){}var e=/[^A-Za-z0-9\+\/\=]/g;var a2=aL.split("");if(aV=="urlsafe"){e=/[^A-Za-z0-9\-_\=]/g;a2=D.split("")}var aU=0;if(aV=="binnary"){a2=[];for(aU=0;aU<=64;aU++){a2[aU]=aU+128}}if(aV!="binnary"&&e.exec(aY.join(""))){return aR=="array"?[]:""}aU=0;do{a5=aX(a2,aY[aU++]);a3=aX(a2,aY[aU++]);a0=aX(a2,aY[aU++]);aZ=aX(a2,aY[aU++]);a6=(a5<<2)|(a3>>4);a4=((a3&15)<<4)|(a0>>2);a1=((a0&3)<<6)|aZ;aS.push(a6);if(a0!=64&&a0!=-1){aS.push(a4)}if(aZ!=64&&aZ!=-1){aS.push(a1)}a6=a4=a1="";a5=a3=a0=aZ=""}while(aU<aY.length);if(aR=="array"){return aS}var aW="",aT=0;for(;aT<aS.lenth;aT++){aW+=String.fromCharCode(aS[aT])}return aW};var aI=[];var aN=aO.substr(0,3);var aK=aO.substr(3);switch(aN){case"v01":for(var aJ=0;aJ<aK.length;aJ+=2){aI.push(parseInt(aK.substr(aJ,2),16))}return decodeURIComponent(aQ(aP(aI,"binnary","array")));break;case"v02":aI=aP(aK,"urlsafe","array");return aQ(aP(aI,"binnary","array"));break;default:return decodeURIComponent(aO)}}catch(aM){return""}}var ap={screenSize:function(){return(m&8388608==8388608)?ao.width+"x"+ao.height:""},colorDepth:function(){return(m&4194304==4194304)?ao.colorDepth:""},appCode:function(){return(m&2097152==2097152)?s.appCodeName:""},appName:function(){return(m&1048576==1048576)?((s.appName.indexOf("Microsoft Internet Explorer")>-1)?"MSIE":s.appName):""},cpu:function(){return(m&524288==524288)?(s.cpuClass||s.oscpu):""},platform:function(){return(m&262144==262144)?(s.platform):""},jsVer:function(){if(m&131072!=131072){return""}var aI,e,aK,D=1,aH=0,i=(s.appName.indexOf("Microsoft Internet Explorer")>-1)?"MSIE":s.appName,aJ=s.appVersion;if("MSIE"==i){e="MSIE";aI=aJ.indexOf(e);if(aI>=0){aK=window.parseInt(aJ.substring(aI+5));if(3<=aK){D=1.1;if(4<=aK){D=1.3}}}}else{if(("Netscape"==i)||("Opera"==i)||("Mozilla"==i)){D=1.3;e="Netscape6";aI=aJ.indexOf(e);if(aI>=0){D=1.5}}}return D},network:function(){if(m&65536!=65536){return""}var i="";i=(s.connection&&s.connection.type)?s.connection.type:i;try{F.body.addBehavior("#default#clientCaps");i=F.body.connectionType}catch(D){i="unkown"}return i},language:function(){return(m&32768==32768)?(s.systemLanguage||s.language):""},timezone:function(){return(m&16384==16384)?(new Date().getTimezoneOffset()/60):""},flashVer:function(){if(m&8192!=8192){return""}var aK=s.plugins,aH,aL,aN;if(aK&&aK.length){for(var aJ in aK){aL=aK[aJ];if(aL.description==null){continue}if(aH!=null){break}aN=aL.description.toLowerCase();if(aN.indexOf("flash")!=-1){aH=aL.version?parseInt(aL.version):aN.match(/\d+/);continue}}}else{if(window.ActiveXObject){for(var aI=10;aI>=2;aI--){try{var D=new ActiveXObject("ShockwaveFlash.ShockwaveFlash."+aI);if(D){aH=aI;break}}catch(aM){}}}else{if(W.indexOf("webtv/2.5")!=-1){aH=3}else{if(W.indexOf("webtv")!=-1){aH=2}}}}return aH},javaEnabled:function(){if(m&4096!=4096){return""}var D=s.plugins,i=s.javaEnabled(),aH,aI;if(i==true){return 1}if(D&&D.length){for(var e in D){aH=D[e];if(aH.description==null){continue}if(i!=null){break}aI=aH.description.toLowerCase();if(aI.indexOf("java plug-in")!=-1){i=parseInt(aH.version);continue}}}else{if(window.ActiveXObject){i=(new ActiveXObject("JavaWebStart.IsInstalled")!=null)}}return i?1:0}};var ad={pageId:function(i){var D=i||r,aK="-9999-0-0-1";if((undefined==D)||(""==D)){try{var aH=h("publishid");if(""!=aH){var aJ=aH.split(",");if(aJ.length>0){if(aJ.length>=3){aK="-9999-0-"+aJ[1]+"-"+aJ[2]}D=aJ[0]}}else{D="0"}}catch(aI){D="0"}D=D+aK}return D},sessionCount:function(){var e=t("_s_upa");if(e==""){e=0}return e},excuteCount:function(){return SUDA.sudaCount},referrer:function(){if(m&2048!=2048){return""}var e=/^[^\?&#]*.swf([\?#])?/;if((aA=="")||(aA.match(e))){var i=V(j,"ref","&","");if(i!=""){return escape(i)}}return escape(aA)},isHomepage:function(){if(m&1024!=1024){return""}var D="";try{F.body.addBehavior("#default#homePage");D=F.body.isHomePage(j)?"Y":"N"}catch(i){D="unkown"}return D},PGLS:function(){return(m&512==512)?h("stencil"):""},ZT:function(){if(m&256!=256){return""}var e=h("subjectid");e.replace(",",".");e.replace(";",",");return escape(e)},mediaType:function(){return(m&128==128)?h("mediaid"):""},domCount:function(){return(m&64==64)?F.getElementsByTagName("*").length:""},iframeCount:function(){return(m&32==32)?F.getElementsByTagName("iframe").length:""}};var av={visitorId:function(){var i=15;var e=t(aa);if(e.length>i&&u==0){return e}else{return}},fvisitorId:function(e){if(!e){var e=t(Y);return e}else{at(Y,e,3650)}},sessionId:function(){var e=t(H);if(""==e){var i=new Date();e=Math.random()*10000000000000+"."+i.getTime()}return e},flashCookie:function(e){if(e){}else{return p}},lastVisit:function(){var D=t(H);var aI=t(P);var aH=aI.split(":");var aJ="",i;if(aH.length>=6){if(D!=aH[4]){i=new Date();var e=new Date(window.parseInt(aH[0]));aH[1]=window.parseInt(aH[1])+1;if(i.getMonth()!=e.getMonth()){aH[2]=1}else{aH[2]=window.parseInt(aH[2])+1}if(((i.getTime()-e.getTime())/86400000)>=7){aH[3]=1}else{if(i.getDay()<e.getDay()){aH[3]=1}else{aH[3]=window.parseInt(aH[3])+1}}aJ=aH[0]+":"+aH[1]+":"+aH[2]+":"+aH[3];aH[5]=aH[0];aH[0]=i.getTime();at(P,aH[0]+":"+aH[1]+":"+aH[2]+":"+aH[3]+":"+D+":"+aH[5],360)}else{aJ=aH[5]+":"+aH[1]+":"+aH[2]+":"+aH[3]}}else{i=new Date();aJ=":1:1:1";at(P,i.getTime()+aJ+":"+D+":",360)}return aJ},userNick:function(){if(al!=""){return al}var D=unescape(t(l));if(D!=""){var i=V(D,"ag","&","");var e=V(D,"user","&","");var aH=V(D,"uid","&","");var aJ=V(D,"sex","&","");var aI=V(D,"dob","&","");al=i+":"+e+":"+aH+":"+aJ+":"+aI;return al}else{return""}},userOrigin:function(){if(m&4!=4){return""}var e=t(aE);var i=e.split(":");if(i.length>=2){return i[0]}else{return""}},advCount:function(){return(m&2==2)?t(E):""},setUOR:function(){var aL=t(aE),aP="",i="",aO="",aI="",aM=j.toLowerCase(),D=F.referrer.toLowerCase();var aQ=/[&|?]c=spr(_[A-Za-z0-9]{1,}){3,}/;var aK=new Date();if(aM.match(aQ)){aO=aM.match(aQ)[0]}else{if(D.match(aQ)){aO=D.match(aQ)[0]}}if(aO!=""){aO=aO.substr(3)+":"+aK.getTime()}if(aL==""){if(t(P)==""){aP=ak(D);i=ak(aM)}at(aE,aP+","+i+","+aO,365)}else{var aJ=0,aN=aL.split(",");if(aN.length>=1){aP=aN[0]}if(aN.length>=2){i=aN[1]}if(aN.length>=3){aI=aN[2]}if(aO!=""){aJ=1}else{var aH=aI.split(":");if(aH.length>=2){var e=new Date(window.parseInt(aH[1]));if(e.getTime()<(aK.getTime()-86400000*30)){aJ=1}}}if(aJ){at(aE,aP+","+i+","+aO,365)}}},setAEC:function(e){if(""==e){return}var i=t(E);if(i.indexOf(e+",")<0){i=i+e+","}at(E,i,7)},ssoInfo:function(){var D=unescape(aj(t("sso_info")));if(D!=""){if(D.indexOf("uid=")!=-1){var i=V(D,"uid","&","");return escape("uid:"+i)}else{var e=V(D,"u","&","");return escape("u:"+unescape(e))}}else{return""}},subp:function(){return t("SUBP")}};var ai={CI:function(){var e=["sz:"+ap.screenSize(),"dp:"+ap.colorDepth(),"ac:"+ap.appCode(),"an:"+ap.appName(),"cpu:"+ap.cpu(),"pf:"+ap.platform(),"jv:"+ap.jsVer(),"ct:"+ap.network(),"lg:"+ap.language(),"tz:"+ap.timezone(),"fv:"+ap.flashVer(),"ja:"+ap.javaEnabled()];return"CI="+e.join("|")},PI:function(e){var i=["pid:"+ad.pageId(e),"st:"+ad.sessionCount(),"et:"+ad.excuteCount(),"ref:"+ad.referrer(),"hp:"+ad.isHomepage(),"PGLS:"+ad.PGLS(),"ZT:"+ad.ZT(),"MT:"+ad.mediaType(),"keys:","dom:"+ad.domCount(),"ifr:"+ad.iframeCount()];return"PI="+i.join("|")},UI:function(){var e=["vid:"+av.visitorId(),"sid:"+av.sessionId(),"lv:"+av.lastVisit(),"un:"+av.userNick(),"uo:"+av.userOrigin(),"ae:"+av.advCount(),"lu:"+av.fvisitorId(),"si:"+av.ssoInfo(),"rs:"+(n?1:0),"dm:"+(B?1:0),"su:"+av.subp()];return"UI="+e.join("|")},EX:function(i,e){if(m&1!=1){return""}i=(null!=i)?i||"":b;e=(null!=e)?e||"":a;return"EX=ex1:"+i+"|ex2:"+e},MT:function(){return"MT="+aF().join("|")},V:function(){return an},R:function(){return"gUid_"+new Date().getTime()}};function ax(){var aK="-",aH=F.referrer.toLowerCase(),D=j.toLowerCase();if(""==t(X)){if(""!=aH){aK=ak(aH)}at(X,aK,"","weibo.com")}var aI=/weibo.com\/reg.php/;if(D.match(aI)){var aJ=V(unescape(D),"sharehost","&","");var i=V(unescape(D),"appkey","&","");if(""!=aJ){at(X,aJ,"","weibo.com")}at("appkey",i,"","weibo.com")}}function d(e,i){G(e,i)}function G(i,D){D=D||{};var e=new Image(),aH;if(D&&D.callback&&typeof D.callback=="function"){e.onload=function(){clearTimeout(aH);aH=null;D.callback(true)}}SUDA.img=e;e.src=i;aH=setTimeout(function(){if(D&&D.callback&&typeof D.callback=="function"){D.callback(false);e.onload=null}},D.timeout||2000)}function x(e,aH,D,aI){SUDA.sudaCount++;if(!av.visitorId()&&!L()){if(u<3){u++;setTimeout(x,500);return}}var i=N+[ai.V(),ai.CI(),ai.PI(e),ai.UI(),ai.MT(),ai.EX(aH,D),ai.R()].join("&");G(i,aI)}function y(e,D,i){if(aG||A){return}if(SUDA.sudaCount!=0){return}x(e,D,i)}function ab(e,aH){if((""==e)||(undefined==e)){return}av.setAEC(e);if(0==aH){return}var D="AcTrack||"+t(aa)+"||"+t(H)+"||"+av.userNick()+"||"+e+"||";var i=ag+D+"&gUid_"+new Date().getTime();d(i)}function aq(aI,e,i,aJ){aJ=aJ||{};if(!i){i=""}else{i=escape(i)}var aH="UATrack||"+t(aa)+"||"+t(H)+"||"+av.userNick()+"||"+aI+"||"+e+"||"+ad.referrer()+"||"+i+"||"+(aJ.realUrl||"")+"||"+(aJ.ext||"");var D=ag+aH+"&gUid_"+new Date().getTime();d(D,aJ)}function aC(aK){var i=g(aK);var aI=i.target;var aH="",aL="",D="";var aJ;if(aI!=null&&aI.getAttribute&&(!aI.getAttribute("suda-uatrack")&&!aI.getAttribute("suda-actrack")&&!aI.getAttribute("suda-data"))){while(aI!=null&&aI.getAttribute&&(!!aI.getAttribute("suda-uatrack")||!!aI.getAttribute("suda-actrack")||!!aI.getAttribute("suda-data"))==false){if(aI==F.body){return}aI=aI.parentNode}}if(aI==null||aI.getAttribute==null){return}aH=aI.getAttribute("suda-actrack")||"";aL=aI.getAttribute("suda-uatrack")||aI.getAttribute("suda-data")||"";sudaUrls=aI.getAttribute("suda-urls")||"";if(aL){aJ=J(aL);if(aI.tagName.toLowerCase()=="a"){D=aI.href}opts={};opts.ext=(aJ.ext||"");aJ.key&&SUDA.uaTrack&&SUDA.uaTrack(aJ.key,aJ.value||aJ.key,D,opts)}if(aH){aJ=J(aH);aJ.key&&SUDA.acTrack&&SUDA.acTrack(aJ.key,aJ.value||aJ.key)}}if(window.SUDA&&Object.prototype.toString.call(window.SUDA)==="[object Array]"){for(var Q=0,ae=SUDA.length;Q<ae;Q++){switch(SUDA[Q][0]){case"setGatherType":m=SUDA[Q][1];break;case"setGatherInfo":r=SUDA[Q][1]||r;b=SUDA[Q][2]||b;a=SUDA[Q][3]||a;break;case"setPerformance":Z=SUDA[Q][1];break;case"setPerformanceFilter":C=SUDA[Q][1];break;case"setPerformanceInterval":K=SUDA[Q][1]*1||0;K=isNaN(K)?0:K;break;case"setGatherMore":M.push(SUDA[Q].slice(1));break;case"acTrack":S.push(SUDA[Q].slice(1));break;case"uaTrack":I.push(SUDA[Q].slice(1));break}}}aG=(function(D,i){if(ah.top==ah){return false}else{try{if(F.body.clientHeight==0){return false}return((F.body.clientHeight>=D)&&(F.body.clientWidth>=i))?false:true}catch(aH){return true}}})(320,240);A=(function(){return false})();av.setUOR();var au=av.sessionId();window.SUDA=window.SUDA||[];SUDA.sudaCount=SUDA.sudaCount||0;SUDA.log=function(){x.apply(null,arguments)};SUDA.acTrack=function(){ab.apply(null,arguments)};SUDA.uaTrack=function(){aq.apply(null,arguments)};U(F.body,"click",aC);window.GB_SUDA=SUDA;GB_SUDA._S_pSt=function(){};GB_SUDA._S_acTrack=function(){ab.apply(null,arguments)};GB_SUDA._S_uaTrack=function(){aq.apply(null,arguments)};window._S_pSt=function(){};window._S_acTrack=function(){ab.apply(null,arguments)};window._S_uaTrack=function(){aq.apply(null,arguments)};window._S_PID_="";if(!window.SUDA.disableClickstream){y()}try{k()}catch(T){}})();
-//-->
-</script> 
-<noScript> 
-<div style='position:absolute;top:0;left:0;width:0;height:0;visibility:hidden'><img width=0 height=0 src='//beacon.sina.com.cn/a.gif?noScript' border='0' alt='' /></div> 
-</noScript> 
-<!-- SUDA_CODE_END -->
-
-<!-- SSO_GETCOOKIE_START -->
-<script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.getSinaCookie=function(){function dc(u){if(u==undefined){return""}var decoded=decodeURIComponent(u);return decoded=="null"?"":decoded}function ps(str){var arr=str.split("&");var arrtmp;var arrResult={};for(var i=0;i<arr.length;i++){arrtmp=arr[i].split("=");arrResult[arrtmp[0]]=dc(arrtmp[1])}return arrResult}function gC(name){var Res=eval("/"+name+"=([^;]+)/").exec(document.cookie);return Res==null?null:Res[1]}var sup=dc(gC("SUP"));if(!sup){sup=dc(gC("SUR"))}if(!sup){return null}return ps(sup)};</script>
-<!-- SSO_GETCOOKIE_END -->
-
-<script type="text/javascript">new function(r,s,t){this.a=function(n,t,e){if(window.addEventListener){n.addEventListener(t,e,false);}else if(window.attachEvent){n.attachEvent("on"+t,e);}};this.b=function(f){var t=this;return function(){return f.apply(t,arguments);};};this.c=function(){var f=document.getElementsByTagName("form");for(var i=0;i<f.length;i++){var o=f[i].action;if(this.r.test(o)){f[i].action=o.replace(this.r,this.s);}}};this.r=r;this.s=s;this.d=setInterval(this.b(this.c),t);this.a(window,"load",this.b(function(){this.c();clearInterval(this.d);}));}(/http:\/\/www\.google\.c(om|n)\/search/, "http://keyword.sina.com.cn/searchword.php", 250);</script>
-<!-- body code end -->
-
-		<script type="text/javascript">
-				      /**
-					   * 全局数据
-					   * video_url 视频链接
-					   * channel 频道
-					   * newsid 新闻id
-					   * group 默认为0
-					   */
-					  var ARTICLE_DATA = {
-					    //评论微博转发视频地址
-					    video_url:'',
-					    //评论微博转发图片地址，可置空会自动取图
-					    pic_url:[],
-					    //频道
-					    channel:'gn',
-					    //新闻id
-					    newsid:'comos-icezzrq6538126',
-					    //组，默认为0
-					    group:'0',
-
-					    //是否显示评论列表,为1隐藏，为0显示
-					    hideCMNTList:0,
-					    source: '新浪新闻中心',
-					    sourceUrl: 'http://news.sina.com.cn/',
-					    uid: '2699180811',
-					    //是否固定评论框，默认为1固定,ipad,iphone不固定
-					    cmntFix:0,
-					    channelId: 1,
-    autoLogin:1,
-    // 最新评论第一页评论数
-    firstPageNum:5,
-    //分页评论数
-    pageNum:20,
-    //热帖评论数
-    hotPageNum:5,
-    // 最多点击“更多”次数
-    clickMoreNum:1,
-	encoding : "utf-8"
-					  };
-				 </script>
-<!-- header -->
-<div class="header">
-	<div class="wrap">
-	</div>
-</div>
-<!-- header end -->
-
-<!-- nav -->
-<div class="nav">
-	<div class="wrap">
-		<!-- breadcrumbs begin -->
-		<div class="breadcrumbs">
-		  <div class="breadcrumbs-container udv-clearfix">
-			<div class="bc-logo">
-			  <a href="http://news.sina.com.cn/"><img src="http://i3.sinaimg.cn/dy/main/tujie2013/news_pic_0408_mqm_logo.png" alt=""/></a>
-			</div>
-			<div class="bc-link">
-			  <a href="http://news.sina.com.cn/">新闻中心</a> &gt; <a href="http://roll.news.sina.com.cn/chart/index.shtml">图解天下</a> &gt; 正文
-			</div>
-			<div class="blkBreadcrumbSearch" data-sudaclick="blkBreadcrumbSearch">
-			  <script type="text/javascript">
-				if(!sina) var sina = {};sina.addEvent = function(o, type, fn) {o.attachEvent ? o.attachEvent('on' + type, fn) : o.addEventListener(type, fn, false)};sina.delEvent = function(o, type, fn) {o.detachEvent ? o.detachEvent('on' + type, fn) : o.removeEventListener(type, fn, false)};sina.$ = function(o) {return document.getElementById(o)};function sim_select(o) {o = document.getElementById(o);o.style.display = 'none';var opts = o.options,parent = o.parentNode,self = this;this.isShow = false;this.div = document.createElement('div');this.ul = document.createElement('ul');this.h3 = document.createElement('h3');this.div.className = 'sim_select';parent.replaceChild(this.div, o);this.div.appendChild(o);this.ul.style.display = 'none';this.ul.style.top = this.h3.offsetHeight;this.h3.innerHTML = opts[o.selectedIndex].innerHTML;for(var i = 0, l = o.length; i < l; i++) {var li = document.createElement('li');li.innerHTML = opts[i].innerHTML;this.ul.appendChild(li);li.onmouseover = function() {this.className += ' over'};li.onmouseout = function() {this.className = this.className.replace(/over/gi, '')};li.onclick = (function(i) {return function() {self.hide();self.h3.innerHTML = this.innerHTML;o.selectedIndex = i;if(o.onchange) {o.onchange()}}})(i)};this.div.appendChild(this.h3);this.div.appendChild(this.ul);this.ul.style.top = this.h3.offsetHeight + 'px';this.ul.style.width = (this.h3.offsetWidth > 2 ? (this.h3.offsetWidth - 2) : this.h3.offsetWidth) + 'px';this.init()};sim_select.prototype = {init: function() {var self = this;sina.addEvent(document.documentElement, 'click', function(e) {self.close(e)});this.h3.onclick = function() {self.toggles()}},show: function() {this.ul.style.display = 'block';this.isShow = true},hide: function() {this.ul.style.display = 'none';this.isShow = false},close: function(e) {var t = window.event ? window.event.srcElement : e.target;do {if(t == this.div) {return} else if(t == document.documentElement) {this.hide();return} else {t = t.parentNode;if(!t){break;}}} while (t.parentNode)},toggles: function() {this.isShow ? this.hide() : this.show()}}
-			  </script>
-			  <script language="javascript" type="text/javascript">
-				<!--//--><![CDATA[//><!--
-				function SearchSubmit(){
-				  var key = document.SearchEcho.SerchKey.value;
-				  if(key == "请输关键词" || key == "请输入关键字"){key = ""};
-				  switch(document.SearchEcho.SerchType.value){
-					case "新闻" :
-					  document.hform_02.q.value = key;
-					  document.hform_02.submit();
-					  break;
-					case "视频" :
-					  document.hform_03.q.value = key;
-					  document.hform_03.submit();
-					  break;
-					case "图片" :
-					  document.hform_05.q.value = key;
-					  document.hform_05.submit();
-					  break;
-					case "博客" :
-					  document.hform_08.q.value = key;
-					  document.hform_08.submit();
-					  break;
-					case "微博" :
-					  window.open('http://s.weibo.com/'+ (key?'weibo/' + key+'&Refer=sina_news':'') );
-					  break;
-					default : //网页
-					  document.hform_01.q.value = key;
-					  document.hform_01.channel.value = "contentsearch";
-					  document.hform_01.submit();
-				  }
-				  return false;
-				}
-				function GoogleImgClick(){
-				  var key = document.SearchEcho.SerchKey.value;
-				  if(key == "请输关键词" || key == "请输入关键字"){key = ""};
-				  document.hform_01.channel.value = "contentlogo";
-				  document.hform_01.q.value = key;
-				  document.hform_01.submit();
-				}
-				//点击检测
-				function kwCount(el){
-				  var kwValue = decodeURI(el.innerText || el.textContent);
-				  var urlValue = decodeURI(el.getAttribute("href", 2));
-				  (new Image()).src = "http://mark.sina.com.cn/v2/hot.php?keyword="+kwValue+"&hwfrom=TopGoogleBar&tag=1&url="+urlValue;
-				};
-				//--><!]]>
-			  </script>
-
-			  <!-- 搜索css start -->
-					<style type="text/css">
-                                        .nav{position:relative;z-index:10;}
-					.inp-txt-wrap{position: relative;}
-					.top-suggest-wrap{top:24px; position: absolute;border: 1px solid #E1E1E1;background: #fff;width:188px;margin:0 0 0 51px;z-index:99999;filter:Alpha(Opacity=99); zoom:1; left: -1px;font-family: "Arial","SimSun","宋体";overflow: hidden;}
-					.top-suggest-wrap .top-suggest-item,.top-suggest-wrap .top-suggest-tip,.top-suggest-wrap .top-suggest-more{height: 26px;line-height: 26px;padding-left: 14px;overflow: hidden;}
-					.top-suggest-wrap .top-suggest-item{cursor: pointer;}
-					.top-suggest-wrap .top-suggest-mover{background-color: #ddd;color: #000;}
-					.top-suggest-wrap .top-suggest-tip{color: #000;line-height: 30px;height: 30px;border-bottom: 1px dashed #eee;}
-					.top-suggest-wrap .top-suggest-more{font-size: 12px;border-top: 1px dashed #eee;height: 30px;line-height: 30px;}
-					.top-suggest-more a{display: inline;line-height: 30px;}
-					/*.top-suggest-more a:link, .top-suggest-more a:visited{color: #000;}
-					.top-suggest-more a:hover, .top-suggest-more a:active, .top-suggest-more a:focus{color: #ff8400}*/
-					.top-suggest-more .top-suggest-hotAll{float: left;margin-left: 0px;}
-					.top-suggest-more .top-suggest-toHomePage{float:right;margin-right: 10px;}
-					</style>
-					<!-- 搜索css end -->
-
-			  <form name="SearchEcho" onSubmit="return SearchSubmit()">
-				<select name="SerchType" id="slt_01">
-				  <option value="新闻" selected="selected">新闻</option>
-				  <option value="图片">图片</option>
-				  <option value="微博">微博</option>
-				  <option value="博客">博客</option>
-				  <option value="视频">视频</option>
-				</select>
-				<input type="text" value="请输入关键字" name="SerchKey" class="inp_txt" onfocus="if(this.value=='请输入关键字'){this.value='';this.className='inp_txt inp_txt_active'}" onblur="if(this.value==''){this.value='请输入关键字';this.className='inp_txt'}" />
-				<input type="submit" name="SearchSubButton" class="submit_second_btn" value="" onmouseover="this.className='submit_second_btn submit_second_btn_hover'" onmouseout="this.className='submit_second_btn'" />
-			  </form>
-			  <script type="text/javascript">new sim_select("slt_01");</script>
-			  <div style="display:none">
-
-				<!-- 新闻 -->
-				<form name="hform_02" action="http://search.sina.com.cn/" method="get" target="_blank">
-				  <input type="hidden" name="range" value="all"/>
-				  <input type="hidden" name="c" value="news"/>
-				  <input type="hidden" name="q" value="" />
-				  <input  type="hidden" name="from" value="top"/>
-				  <input  type="hidden" name="ie" value="utf-8"/>
-
-				</form>
-
-			        <!-- 视频 -->
-				<form action="http://search.sina.com.cn/" name="hform_03" target="_blank">
-				  <input name="c" type="hidden" value="video" />
-				  <input name="range" type="hidden" value="title" />
-				  <input type="hidden" name="q" value="" />
-				  <input  type="hidden" name="ie" value="utf-8"/>
-
-				</form>
-
-				<!-- 图片 -->
-				<form action="http://search.sina.com.cn/" name="hform_05" target="_blank">
-				  <input type="hidden" name="q" value="" />
-				  <input type="hidden" name="c" value="img" />
-				  <input  type="hidden" name="from" value="top"/>
-				  <input  type="hidden" name="ie" value="utf-8"/>
-
-				</form>
-
-				<!-- 博客 -->
-				<form action="http://search.sina.com.cn/" name="hform_08" target="_blank">
-				  <input type="hidden" name="c" value="blog" />
-				  <input type="hidden" name="from" value="top" />
-				  <input type="hidden" name="q" value="" />
-				  <input  type="hidden" name="ie" value="utf-8"/>
-
-				</form>
-			  </div>
-			</div>
-		  </div>
-		</div>
-
-		 <!-- 搜索js start -->
-					<script src="http://ent.sina.com.cn/470/2014/0328/search_suggest.js"></script>
-					<script type="text/javascript">
-					(function(){
-							// 表单
-							var frm = document.SearchEcho;
-							var frm2=document.hform_02;
-							// 下拉选择
-							var select = frm.SerchType;
-							// 输入框
-							var input = frm.SerchKey;
-							// 提交按钮
-							var submit = function(){
-							frm2.q.value = input.value;
-								frm2.submit();
-							};
-							// 是否新闻
-							var isNews = function(){
-								return select.value==='新闻';
-							};
-							// 提交
-							new searchsUggest({
-						        input : input,
-						        maxLen : 10,
-						        placeholderStr:'请输入关键词',
-						        showHotList:isNews,
-						        showSuggestList:isNews,
-								onSelect: submit
-						    });
-					})();
-					</script>
-					<!-- 搜索js end -->
-
-		<!-- breadcrumbs end -->
-	</div>
-</div>
-<!-- nav end -->
-
-<!-- content -->
-<div class="content">
-	<div class="wrap clearfix">
-    	<!-- left begin -->
-		<div class="left">
-        	<!-- news begin -->
-			<div class="box news">
-				<div class="news-rank"><span class="mwlt-lable">第 299 期</span></div>
-				<h1 id="artibodyTitle"  cid="151026" docid="icezzrq6538126">“共和国勋章”和“国家荣誉称号”获得者名单全收录</h1>
-				<div class="news-info">
-                	<div class="time">2019年09月17日22:46</div>
-                    <div class="comment"><a id="media_comment" href="#J_Comment_Wrap" rel="我有话说">我有话说</a></div>
-                </div>
-				<div class="news-detail">
-<span style="">
-
-</span>
-
-					<div class="news-image">
-						<img src="http://n.sinaimg.cn/news/183/w750h8233/20190917/5019-ietnfsq1887701.jpg" alt="“共和国勋章”和“国家荣誉称号”获得者名单全收录" width="600" />
-					</div>
-
-
-<p class="art_keywords" data-sudaclick="art_keywords">
-  <span class="art_keywords_tt">文章关键词：</span>
-			  <a href="http://tags.news.sina.com.cn/勋章" target="_blank">勋章</a> <a href="http://tags.news.sina.com.cn/荣誉称号" target="_blank">荣誉称号</a> <a href="http://tags.news.sina.com.cn/屠呦呦" target="_blank">屠呦呦</a> 
-
-</p>
-
-
-      <div class="news-nav">
-<a href="http://news.sina.com.cn/c/t/2019-08-15/doc-ihytcern1074320.shtml" class="mwlp-normal prev">上一期</a><a href="http://news.sina.com.cn/c/t/2019-09-29/doc-iicezzrq9214369.shtml" class="mwlp-normal next">下一期</a>      </div>
-
-				</div>
-
-			</div>
-            <!-- news end -->
-		</div>
-        <!-- left end -->
-
-        <!-- right begin -->
-		<div class="right">
-			<div class="box weibo-card" id="weibo-card" data-uid="2699180811">
-				<h2>微博推荐</h2>
-				<div class="portrait">
-					<a href="http://weibo.com/2699180811"><img src="http://i1.sinaimg.cn/dy/main/tujie2013/tujie1223/0819_lqf_newsWeiboIcon.jpg" alt="新浪图解天下" title="新浪图解天下" /></a>
-				</div>
-				<div class="info">
-					<div class="name"><a href="http://weibo.com/2699180811">新浪图解天下</a><a target="_blank" href="http://verified.weibo.com/verify"><i title="新浪机构认证" class="W_ico16 approve_co"></i></a></div>
-					<div class="local"><span class="male m_icon"></span>北京</div>
-					<div class="detail">
-						<span>关注</span><span class="v-line">|</span>
-						<span>粉丝</span><span class="v-line">|</span>
-						<span>微博</span>
-					</div>
-					<div class="action">
-						<a href="javascript:;"><span>+</span>加关注</a>
-					</div>
-				</div>
-				<div class="intro">
-					<span>媒体简介：</span>
-                    新浪网新闻中心《图解天下》栏目，致力于新闻视觉化，以图达意，提供轻松直观的阅读体验。
-				</div>
-			</div>
-            <script src="http://news.sina.com.cn/js/87/20110714/205/sinalib.js" charset="gbk"></script>
-            <script src="http://news.sina.com.cn/js/268/2011/1110/16/weibo-all.js"></script>
-            <script type="text/javascript" src="http://news.sina.com.cn/js/87/20131223/tujie1223/Communication-0.1.0.js" charset="gbk"></script>
-            <script type="text/javascript">
-			(function(){
-				var _reIE = /MSIE\s([^;]*)/;
-				var requestExtension = _reIE.test(navigator.userAgent) ? 'xml' : 'json';
-
-				var addEvent = document.addEventListener ?
-    				function(elem, type, callback){
-				        elem.addEventListener(type, callback, false);
-				    } : function(elem, type, callback){
-				        elem.attachEvent('on' + type, callback);
-				    };
-
-				function postRequest(obj){
-					var url = obj.url;
-					var encoding = obj.encoding;
-
-					var onerror = obj.onerror || NOOP;
-					var onsuccess;
-					var oldOnsuccess = obj.onsuccess;
-
-					if(window.postMessage){
-						onsuccess = function(ret){
-							ret = JSON.parse(ret);
-							var status = ret && ret.result && ret.result.status;
-							if(status && status.code === 0){
-								oldOnsuccess(ret.result.data);
-							} else {
-								if(status){
-									onerror(status);
-								} else {
-									onerror({
-										code : -10000001,
-										msg : 'Unkonw error'});
-								}
-							}
-						};
-					} else {
-						onsuccess = function(ret){
-							ret = JSON.parse(ret);
-							var status = ret && ret.result && ret.result.status;
-							if(status && status.code === 0){
-								oldOnsuccess(ret.result.data);
-							} else {
-								if(status){
-									onerror(status);
-								} else {
-									onerror({
-										code : -10000001,
-										msg : 'Unkonw error'});
-								}
-							}
-						};
-
-						if(encoding){
-							obj.data.ie = encoding;
-						} else if(d.charset === 'gb2312'){
-							obj.data.ie = 'gbk';
-						}
-					}
-
-					communication.xd_post({
-						url : obj.url,
-						data : obj.data,
-						onsuccess : onsuccess,
-						onerror : obj.onerror
-					});
-				};
-
-				var JSON = window.JSON ? window.JSON : {
-					parse : function(str){
-						// alert('JSON:' + typeof(str));
-						if(typeof(str) === 'object') {
-							return str;
-						}
-						return eval('(' + str + ')');
-					}
-				};
-
-				var container = document.getElementById('weibo-card');
-				var uid = container.getAttribute('data-uid');
-
-				communication.jsonp({
-					url: 'http://api.sina.com.cn/weibo/2/statuses/user_timeline.json',
-					data: {
-						source: 4526198296,
-						uid: uid,
-						count: 1
-					},
-					onsuccess: function(result){
-						var user = result.result.data.statuses[0].user;
-
-						var html = [];
-						html.push('<h2>微博推荐</h2><div class="portrait"><a href="http://weibo.com/');
-						html.push(user.id);
-						html.push('" target="_blank"><img src="');
-						html.push(user.avatar_large);
-						html.push('" width="76" height="76" />');
-						html.push('</a></div><div class="info"><div class="name"><a href="http://weibo.com/');
-						html.push(user.id);
-						html.push('" target="_blank">');
-						html.push(user.screen_name);
-						html.push('</a>');
-						if(user.verified){
-							html.push('<a target="_blank" href="http://verified.weibo.com/verify"><i title="新浪机构认证" class="W_ico16 approve_co"></i></a>');	
-						}
-						html.push('</div><div class="local">');
-						if(user.gender === 'm'){
-							html.push('<span class="male m_icon"></span>');
-						}
-						html.push(user.location);
-						html.push('</div><div class="detail">');
-						html.push('<span>关注<a href="http://weibo.com/');
-						html.push(user.id);
-						html.push('" target="_blank">');
-						html.push(user.friends_count);
-						html.push('</a></span><span class="v-line">|</span><span>粉丝<a href="http://weibo.com/');
-						html.push(user.id);
-						html.push('" target="_blank">');
-						html.push(user.followers_count > 10000 ? Math.floor(user.followers_count / 10000) + '万' : user.followers_count);
-						html.push('</a></span><span class="v-line">|</span><span>微博<a href="http://weibo.com/');
-						html.push(user.id);
-						html.push('" target="_blank">');						
-						html.push(user.statuses_count);
-						html.push('</a></span>');
-						html.push('</div><div class="action" id="follow-action-w"><a href="javascript:;" id="follow-action"><span>+</span>加关注</a></div></div><div class="intro"><span>媒体简介：</span>');
-						html.push(user.description);
-						html.push('</div>');
-
-						container.innerHTML = html.join('');
-
-						var isLogin = Weibo.Login.check();
-						var loginUID = null;
-						if(isLogin){
-							loginUID = isLogin.uid;
-						}
-
-						function follow(param){
-							postRequest(param);
-						}
-
-						function weiboFollow(){
-							var param = {
-								url: 'http://api.sina.com.cn/weibo/2/friendships/create.' + requestExtension,
-								data: {
-									source: 4526198296,
-									uid: uid
-								},
-								onsuccess: function(obj){
-									document.getElementById('follow-action-w').innerHTML = '<span class="followed">已关注</span>';
-								},
-								onerror: function(obj){
-									if(obj && obj.code === 20506){
-										document.getElementById('follow-action-w').innerHTML = '<span class="followed">已关注</span>';
-									} else {
-										alert('关注失败');
-									}
-								}
-							};
-
-							if(!Weibo.Login.check()){
-								var loginDlg = Weibo.Widgets.getLoginDialog();
-			                    loginDlg.loginCallbackOnce = function() {
-			                    	follow(param);
-			                    };
-			                    loginDlg.show();
-			                    return;
-							}
-							follow(param);
-						}
-
-						addEvent(document.getElementById('follow-action'), 'click', function(){
-							weiboFollow();
-						});
-
-						if(loginUID){
-							communication.jsonp({
-								url: 'http://api.sina.com.cn/weibo/2/friendships/exists_batch_internal.json',
-								data: {
-									source: 4526198296,
-									uid: loginUID,
-									uids: uid
-								},
-								onsuccess: function(result){
-									if(result.result.data){
-										document.getElementById('follow-action-w').innerHTML = '<span class="followed">已关注</span>';
-									}
-								}
-							});
-						}
-					}
-				});
-
-			})();
-			</script>
-
-
-
-<div class="box old-recommand">
- <div class="mwrb-title"><h2>往期推荐</h2></div>
-  <div class="item item1">
-    <a href="http://news.sina.com.cn/c/t/2019-04-30/doc-ihvhiqax5884387.shtml" target="_blank">
-      <img src="http://n.sinaimg.cn/news/250/w600h450/20190430/-XSX-hwfpcxn0835188.jpg" alt="" width="100%" height="auto"/>
-    </a>
-    <a href="http://news.sina.cn/zt_d/tjtx290" target="_blank">
-      <img src="http://n.sinaimg.cn/news/tjtx/290450.jpg" alt="" width="100%" height="auto"/>
-    </a>
-    <a href="http://news.sina.cn/zt_d/tjtx289" target="_blank">
-      <img src="http://n.sinaimg.cn/news/tjtx/289450.jpg" alt="" width="100%" height="auto"/>
-    </a>
-    <a href="http://news.sina.cn/zt_d/tjtx288" target="_blank">
-      <img src="http://n.sinaimg.cn/news/tjtx/288450.jpg" alt="" width="100%" height="auto"/>
-    </a>
-
-    <a href="http://news.sina.cn/zt_d/tjtx287" target="_blank">
-      <img src="http://n.sinaimg.cn/news/tjtx/287450.jpg" alt="" width="100%" height="auto"/>
-    </a>
-
-    <a href="http://news.sina.cn/zt_d/tjtx286" target="_blank">
-      <img src="http://n.sinaimg.cn/news/tjtx/286450.jpg" alt="" width="100%" height="auto"/>
-    </a>
-
-    <a href="http://news.sina.com.cn/chart/" target="_blank">
-      <img src="http://n.sinaimg.cn/news/tjtjwq/0.jpg" alt="" width="100%" height="auto"/>
-    </a>
-  </div>
-</div>
-
-        <!-- right end -->
-	</div>
-    <!-- wrap end -->
-		<div class="wrap clearfix">
-			<div class="left blk1">
-				<div class="box">
-					<div class="content_shareto clearfix">
-						<div style="float:left; width:260px; height:40px; font-size:16px; ">
-						</div>
-						<!-- Share begin -->
-						<div id="sinashareto">
-							<div style="float:left;" data-sudaclick="weibo_share_03">
-								<div class="share_t">分享到:</div>
-								<div class="share_container" id="share_container" data-sudaclick="">
-									<ul class="clearfix">
-										<li>
-											<a href="javascript:;" class="share_wb" data-share="weibo" title="分享到微博" target="_blank">
-												<!-- <span class="share_wb icon" date-share="微博"></span> -->
-											</a>
-										</li>
-										<li>
-											<a href="javascript:;" class="share_wx" data-share="weixin" title="分享到微信">
-												<!-- <span class="share_wx icon" date-share="微信"></span> -->
-											</a>
-										</li>
-										<li>
-											<a href="javascript:;" class="share_qq" title="分享到QQ" data-share="qq" target="_blank">
-												<!-- <span class="share_qq icon" date-share="QQ"></span> -->
-											</a>
-										</li>
-										<li>
-											<a href="javascript:;" class="share_qqzone"  data-share="qzone" title="分享到QQ空间" target="_blank">
-												<!-- <span class="share_qqzone icon" date-share="QQ空间"></span> -->
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- Share end -->
-					</div>
-				</div>
-			</div>
-		</div>
-<script type="text/javascript" src="http://n.sinaimg.cn/news/components/wx_share.min.js?v=201902025"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin-when-crossorigin" />
+    <meta name="description" content="作者 冉昕，腾讯云服务网格TCM产品经理，现负责云原生流量接入网关与应用通信可观测性等产品特性策划与设计工作。 刘旭，腾讯云高级工程师，专注容器云原生领域，有多年大规模 Kubernetes 集群管理" />
+    <meta property="og:description" content="作者 冉昕，腾讯云服务网格TCM产品经理，现负责云原生流量接入网关与应用通信可观测性等产品特性策划与设计工作。 刘旭，腾讯云高级工程师，专注容器云原生领域，有多年大规模 Kubernetes 集群管理" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Getting Started and Beyond｜云原生应用负载均衡选型指南 - 腾讯云原生 - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
+    <link id="MainCss" rel="stylesheet" href="/skins/simpleblue/bundle-simpleblue.min.css?v=2hjghzSZyhYA1HxvSxKnXih3JbC120DBjeO9V9T_nSs" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/simpleblue/bundle-simpleblue-mobile.min.css?v=3tvwgOOqUo3RpS6gGzEdK0LbptOPv4Bx7M85_UAnFGs" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/tencent-cloud-native/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/tencent-cloud-native/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/tencent-cloud-native/wlwmanifest.xml" />
     <script>
-            //全局分享对象配置：
-            window.shareTitle = "“共和国勋章”和“国家荣誉称号”获得者名单全收录" || document.getElementsByTagName("h1")[0].innerHTML || document.title ; //分享标题
-            var shareImg = "http://n.sinaimg.cn/news/0/w400h400/20190917/98ad-ietnfsq1913792.jpg" ; //分享图片
-            var shareDesc = "袁隆平屠呦呦等被授予“共和国勋章”。" ; //'微信分享描述' 分享描述
-            var shareObj = {
-                url: window.location.href , //页面链接 
-                wxurl: window.location.href ,
-                img: shareImg , //编辑手动在CMS位置录入 ，cms打印到页面中
-                title: window.shareTitle ,
-                desc : shareDesc
-            };
-
-            wxShare.init({
-                link: window.location.href.split('#')[0] , //分享链接
-                title: window.shareTitle || document.title , //分享标题
-                desc: shareDesc , //分享描述（分享给好友时会显示）
-                imgUrl: shareImg , //分享图片路径
-                type: '' ,
-                success: function(e) {
-                    console.log("分享成功", e);
-                } ,
-                cancel: function(e) {
-                    console.log("取消分享:", e);
-                } ,
-                cb: function() {}
-            });
+        var currentBlogId = 625070;
+        var currentBlogApp = 'tencent-cloud-native';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var isBlogOwner = false;
+        var skinName = 'SimpleBlue';
+        var visitorUserId = '';
     </script>
-	<div class="wrap clearfix">
-		<div class="left">
-			<link rel="stylesheet" type="text/css" href="http://news.sina.com.cn/css/87/20131223/tujie1223/comment.css" />
+        <script>
+            var currentPostDateAdded = '2021-05-11 06:52';
+        </script>
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=2Mic1VLeHXarpdzASbXqFMIMVLEBiWXNO5yiTHUcmhw"></script>
+    
+    
+    
+</head>
+<body class="has-navbar">
+    <a name="top"></a>
+        <div id="bannerbar" class="bannerbar-mobile formobile">
+            <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-blog-bannerbar-mobile')">
+                <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
+            </a>
+        </div>
+    <div id="top_nav" class="navbar forpc">
+        <nav id="nav_main" class="navbar-main">
+            <ul id="nav_left" class="navbar-list navbar-left">
+                <li class="navbar-branding"><a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a></li>
+                <li><a href="/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-sitehome')">首页</a></li>
+                <li><a href="https://news.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-news')">新闻</a></li>
+                <li><a href="https://q.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-q')">博问</a></li>
+                <li><a id="nav_brandzone" href="https://brands.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-brands')">专区</a></li>
+                <li><a href="https://ing.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-ing')">闪存</a></li>
+                <li><a href="https://edu.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-edu')">班级</a></li>
+            </ul>
+            <ul id="nav_right" class="navbar-list navbar-right">
+                <li>
+                    <form id="zzk_search" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
+                        <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="text" tabindex="3" />
+                        <button type="submit" id="zzk_search_button">
+                            <img src="/images/aggsite/search.svg" alt="搜索" />
+                        </button>
+                    </form>
+                </li>
+                <li id="navbar_login_status" class="navbar-list">
+                    <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
+                        <img id="new_post_icon" class="navbar-icon" src="/images/aggsite/newpost.svg" alt="写随笔" />
+                    </a>
+                    <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
+                        <img id="myblog_icon" class="navbar-icon" src="/images/aggsite/myblog.svg" alt="我的博客" />
+                    </a>
+                    <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
+                        <img id="msg_icon" class="navbar-icon" src="/images/aggsite/message.svg?v=J0WS2P2iPgaIVgXxcAhliw4AFZIpaTWxtdoNAv9eiCA" alt="短消息" />
+                        <span id="msg_count" style="display: none"></span>
+                    </a>
+                    <div id="user_info" class="navbar-user-info dropdown">
+                        <a class="dropdown-button" href="https://home.cnblogs.com/">
+                            <img id="user_icon" class="navbar-avatar" src="/images/aggsite/avatar-default.svg" alt="用户头像" />
+                        </a>
+                        <div class="dropdown-menu">
+                            <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
+                            <a href="https://home.cnblogs.com/">我的园子</a>
+                            <a href="https://account.cnblogs.com/settings/account">账号设置</a>
+                            <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
+    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
+</a>
+                            <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
+                        </div>
+                    </div>
+                    <a class="navbar-anonymous" href="https://account.cnblogs.com/signup/">注册</a>
+                    <a class="navbar-anonymous" href="javascript:void(0);" onclick="account.login()">登录</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-<script src="http://ent.sina.com.cn/js/470/20130123/comment.js" charset="gbk"></script>
-
-			<div id="J_Comment_Wrap" class="blkContainerCommentblk"></div>
-		</div>
-	</div>
+    
+    <div id="home">
+    <div id="header">
+        <div id="blogTitle">
+            <div class="title"><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/tencent-cloud-native/">腾讯云原生</a>
 </div>
-<!-- content end -->
+<div class="subtitle"></div>
 
-<script type="text/javascript" src="http://i1.sinaimg.cn/unipro/pub/suda_m_v629.js"></script>
-<script type="text/javascript">suds_init(2152,100.0000,1015,2);</script>
+        </div>
+        <div id="navigator">
+            
+<ul id="navList">
+    <li id="nav_sitehome"><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+    <li id="nav_myhome">
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/tencent-cloud-native/">
+首页</a>
+</li>
+    <li id="nav_newpost">
 
-<!-- footer -->
-<div class="footer">
-<p><a href="http://corp.sina.com.cn/chn/" target="_blank">新浪简介</a>┊<a href="http://corp.sina.com.cn/eng/" target="_blank">About Sina</a>┊<a href="http://emarketing.sina.com.cn/" target="_blank">广告服务</a>┊<a href="http://www.sina.com.cn/contactus.html" target="_blank">联系我们</a>┊<a href="http://corp.sina.com.cn/chn/sina_job.html" target="_blank">招聘信息</a>┊<a href="http://www.sina.com.cn/intro/lawfirm.shtml" target="_blank">网站律师</a>┊<a href="http://english.sina.com/" target="_blank">SINA English</a>┊<a href="https://login.sina.com.cn/signup/signup.php" target="_blank">注册</a>┊<a href="http://help.sina.com.cn/" target="_blank">产品答疑</a></p>
- <p>Copyright <span style="font-family:arial;">&copy; </span>1996-2015 SINA Corporation, All Rights Reserved</p>  
- <p>新浪公司 <a href="http://www.sina.com.cn/intro/copyright.shtml" target="_blank">版权所有</a></p>
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+    <li id="nav_contact">
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%8E%9F%E7%94%9F">
+联系</a></li>
+    <li id="nav_rss">
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/tencent-cloud-native/rss/">
+订阅</a></li>
+    <li id="nav_admin">
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+            <div class="blogStats">
+                <div id="blog_stats_place_holder"><script>loadBlogStats();</script></div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainContent">
+            <div class="forFlow">
+                <div id="post_detail">
+    <div id="topics">
+        <div class="post">
+            <h1 class="postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2 vertical-middle" href="https://www.cnblogs.com/tencent-cloud-native/p/14756816.html">
+    <span>Getting Started and Beyond｜云原生应用负载均衡选型指南</span>
+    
+
+
+
+</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                <div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+<h2 id="作者">作者</h2>
+<p>冉昕，腾讯云服务网格TCM产品经理，现负责云原生流量接入网关与应用通信可观测性等产品特性策划与设计工作。</p>
+<p>刘旭，腾讯云高级工程师，专注容器云原生领域，有多年大规模 Kubernetes 集群管理及微服务治理经验，现负责腾讯云服务网格 TCM 数据面产品架构设计和研发工作。</p>
+<h2 id="引言">引言</h2>
+<p>应用的入口流量管理一直是开发运维关注的焦点之一，随业务部署的计算资源、网络环境、应用架构的发展变更，接入层流量管理方案的发展可大致分为传统架构、云原生容器化两个阶段。为满足应用交付的效率和诉求，各阶段都涌现了不同的接入层解决方案，从最初的简单负载均衡，到后来的 HAProxy、Nginx 等反向代理，再到如今的容器化环境下的各类 Kubernetes Ingress Controller。每个发展阶段有哪些特点？面临什么挑战？都有什么解决方案？</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>应用部署资源粒度</th>
+<th>应用架构</th>
+<th>应用访问寻址</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>传统架构</td>
+<td>物理/虚拟机（资源利用率低）</td>
+<td>单体或简单拆分模块</td>
+<td>基于较固定的 IP 地址管理</td>
+</tr>
+<tr>
+<td>云原生容器化</td>
+<td>容器（资源利用率高）</td>
+<td>服务化</td>
+<td>容器 IP 动态变化，通过动态服务注册更新</td>
+</tr>
+</tbody>
+</table>
+<p>传统架构阶段，业务为单体应用，三层架构；部署于物理机/虚拟机；网络环境基于 IP 地址管理，相对固定，基本不会变化；业务更新迭代的速度较慢，接入层的主要需求是具备 4 层和 7 层的负载均衡能力，用传统负载均衡器支持即可。随着应用架构演进（应用做了一定模块拆分）和迭代效率的提升，出现了一些更复杂的接入层诉求：按流量内容特征路由、灰度发布、限流、鉴权等，一般通过在负载均衡器后增加一层网络代理（e.g. Nginx）支持，网络代理 Nginx 具备更多的 7 层流量处理的能力，可通过 OpenResty 社区的 Lua 扩展上述内容路由、灰度发布、鉴权限流等高级功能。</p>
+<p>云原生容器化阶段的理想状态是业务开发者只需专注实现业务逻辑，无需关心资源调度和运维管理，可真正做到按需使用，按量计费。虚拟机/物理机资源粒度粗糙，利用效率较低，需提前规划计算、存储、网络资源，与理想状态有较大差距。云原生阶段，容器资源的粒度更细，利用率高，启动/销毁速度达到秒级，可灵活弹性伸缩（Kubernetes 已成为容器编排调度的业界标准，以下容器环境均代指 Kubernetes 集群）；网络管理环境也发生了变更，出现 Service 的概念，一个微服务往往是由一组弹性伸缩、动态调度的容器（Pod）承载，Pod 的 IP 地址动态变化，这一组 Pod 一般以 Service 对外提供访问，流量管理是以 Service 为单位。服务化拆分业务模块构建应用更容易，加上容器环境良好的弹性伸缩能力，DevOps 理念得以很好的实施，微服务的迭代步伐加快，经常需要滚动更新。此时的入口流量管理面临如下新挑战：</p>
+<ol>
+<li>需要与 Kubernetes 集成，支持转发流量到指定 Pod。</li>
+<li>更新迭代速度加快，对服务新版本灰度发布的诉求更加强烈。</li>
+<li>出现集群概念，集群之间的服务发现是隔离的，接入层需支持跨集群的服务发现（即接入层可选择 backend 为多个集群的 Pod ）；这区别于传统物理机/虚拟机阶段，没有集群隔离，只需保证网络联通性，即可配置接入层后端为任意对应服务的 IP 地址。</li>
+<li>传统阶段到云原生阶段的迁移过程中，出现 VM、容器环境混布的情况。</li>
+</ol>
+<p>基于上述挑战，出现了以下容器环境的接入层流量管理解决方案：</p>
+<ol>
+<li>Kubernetes 官方定义的 Ingress API：老牌网络代理（e.g. Nginx，HAProxy）或云厂商的负载均衡产品（e.g. AWS Elastic Load Balancer，腾讯云 CLB）都实现了各自的 Ingress Controller，作为单个集群的入口流量管理解决方案。灰度发布、鉴权限流等能力，视 Ingress Controller 的能力，可通过 Annotation 扩展，部分 Ingress Controller 还设计了自己的流量管理模型和语法。</li>
+<li>Service Mesh Ingress：服务网格的服务发现和管理界限大于集群纬度，以 Istio Ingress Gateway 为例，基于 Istio 跨集群的服务发现能力，backend 可以来自不同集群的服务，同时还支持注册在网格内运行在虚拟机上的服务。Istio 也设计了自己的管理模型和语法，声明式支持配置一致的南北 + 东西向流量管理。</li>
+<li>沿用原有 VM 上部署的网络代理，转发流量至 VM 服务或 Kubernetes 集群的服务。</li>
+</ol>
+<p>下面本文将从云原生容器化环境入口流量管理使用场景切入，带您了解云原生接入层流量管理的各类解决方案及优劣对比。</p>
+<h2 id="云原生接入层流量管理场景与解决方案">云原生接入层流量管理场景与解决方案</h2>
+<h3 id="场景一：基础流量管理">场景一：基础流量管理</h3>
+<blockquote>
+<p>入口流量管理的首个使用场景是需要将服务暴露给外部，供客户端调用。常见的方式是将服务按 URL 暴露，例如一个电商网站，需要将 /login 的请求路由到登陆服务，将 /product 的请求路由到商品服务等，该场景要求接入层具备基于流量内容路由的能力。</p>
+</blockquote>
+<p><img src="https://main.qcloudimg.com/raw/24e0a4d09a603994d9e51dbd7bd7abd1.png" alt="" loading="lazy"></p>
+<h4 id="方案：load-balancer--nodeport">方案：Load Balancer + NodePort</h4>
+<p><img src="https://main.qcloudimg.com/raw/26c814d8d49dad283e230858ed6eff26.png" alt="" loading="lazy"></p>
+<p>在容器化的早期阶段，应用同时部署在虚拟机和 Kubernetes 集群上，很多用户会使用原有负载均衡（e.g. Nginx, 腾讯云 CLB）将请求分别转发到虚拟机和容器，同时受限于容器网络方案，原有负载均衡不能直接访问 Pod IP，因此需要通过 NodePort 暴露集群内的服务。</p>
+<p>但是该方案存在以下问题：</p>
+<ol>
+<li>NodePort 端口数量有限（默认 30000-32767）</li>
+<li>随着集群规模的扩大，Nginx 配置文件越来越复杂，不易管理</li>
+<li>用户将应用发布到 Kubernetes 集群后，需要再单独修改 Nginx 配置，体验不够云原生</li>
+</ol>
+<h4 id="方案：kubernetes-ingress">方案：Kubernetes Ingress</h4>
+<p>Kubernetes 提供了 Ingress API [1] 用于暴露集群内的 HTTP 服务，Ingress 支持基于 Host 和 Path 将请求路由到不同 Service。为了让 Ingress 工作，集群必须有一个正在运行的 Ingress 控制器（e.g. Nginx Ingress Controller）。原生 Ingress 语法提供简单的基于 Host，Path 路由，以及配置 TLS 的能力。</p>
+<p><strong>1. 基于 Host 路由</strong></p>
+<p><img src="https://main.qcloudimg.com/raw/d40311918bf0f27c965b29ecc311e704.png" alt="" loading="lazy"></p>
+<pre><code>apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: public-services
+  namespace: default
+spec:
+  rules:
+  - host: service1.tencent.com
+    http:
+      paths:
+      - backend:
+          serviceName: service1
+          servicePort: 80
+        path: /
+  - host: service2.tencent.com
+    http:
+      paths:
+      - backend:
+          serviceName: service2
+          servicePort: 80
+        path: /
+</code></pre>
+<p><strong>2. 基于 Path 路由</strong></p>
+<p><img src="https://main.qcloudimg.com/raw/605ea7dfac2e05ef291b2f164aa80f94.png" alt="" loading="lazy"></p>
+<pre><code>apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: public-services
+  namespace: default
+spec:
+  rules:
+  - host: services.tencent.com
+    http:
+      paths:
+      - backend:
+          serviceName: service1
+          servicePort: 80
+        path: /service1
+      - backend:
+          serviceName: service2
+          servicePort: 80
+        path: /service2
+</code></pre>
+<p><strong>3. TLS 配置</strong></p>
+<p><img src="https://main.qcloudimg.com/raw/9b86e52a72f86459806d2528f2d8b388.png" alt="" loading="lazy"></p>
+<p>Ingress 也提供了 TLS 支持，可以将集群内的 HTTP 服务对外暴露为 HTTPS，我们需要先将 SSL 证书以 Secret 的形式保存在集群中，再使用 Ingress 引用刚刚创建的 Secret。</p>
+<pre><code>apiVersion: v1
+kind: Secret
+metadata:
+  name: public-services-tls
+  namespace: default
+data:
+  tls.crt: base64 encoded cert
+  tls.key: base64 encoded key
+type: kubernetes.io/tls
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: services-with-tls
+  namespace: default
+spec:
+  tls:
+  - hosts:
+      - services.tencent.com
+    secretName: public-services-tls
+  rules:
+    http:
+      paths:
+      - backend:
+          serviceName: service1
+          servicePort: 80
+        path: /service1
+      - backend:
+          serviceName: service2
+          servicePort: 80
+        path: /service2
+</code></pre>
+<p><strong>Kubernetes Ingress 小结</strong>：对于简单的 HTTP 流量的路由，使用 Ingress 配置非常容易，这也是当前 Ingress 受欢迎的原因（据 CNCF 2020 云原生调查报告 [2]，50% 的用户正在或即将使用第三方代理做应用流量转发，其中 Nginx 和 Envoy [3] 是最受欢迎的 Ingress provider）。</p>
+<p><img src="https://main.qcloudimg.com/raw/e22a0a30882cfa20b29804bc1984bc63.png" alt="" loading="lazy"></p>
+<p>但是另一方面原生 Ingress 的功能十分有限，不能满足很多复杂场景的需求。许多第三方的 Ingress Controller [4] 通过 annotation 或新的配置模型和语法扩展了原生 Ingress 的功能，但仍然受限于集群间服务发现隔离的问题，只能作为单集群入口流量管理方案。</p>
+<h3 id="场景二：灰度发布">场景二：灰度发布</h3>
+<blockquote>
+<p>服务可暴露给外部访问后，还需要考虑如何做版本发布，做平滑、无风险地迭代。常见的两种做法是按权重或流量内容切部分流量至新版本验证稳定性，无问题后逐渐过渡至新版本，即我们熟知的灰度发布、AB test。</p>
+</blockquote>
+<p>Kubernetes Ingress API 原生并没有灰度发布的功能，Nginx ingress controller 通过 annotation 的方式扩展了原生 Ingress API 的功能，实现了灰度发布，但这种方式并不能很好地支撑控制应用流量的发布策略，相比之下，Istio CRD 配置更灵活易用，下面介绍如何使用 Istio VirtualService 配置灰度发布路由规则。</p>
+<p><strong>1. 基于权重</strong></p>
+<p><img src="https://main.qcloudimg.com/raw/d72564825abce96f2b30a17e398baaf6.png" alt="" loading="lazy"></p>
+<p>Istio 可通过 Virtual Service 配置基于权重的灰度发布，以下是配置来自 {namespace}/{gateway} 的入口流量 95% 路由到 {service} 的 current 版本，5% 路由到 canary 版本的示例：</p>
+<pre><code>apiVersion: ...
+kind: VirtualService
+metadata:
+  name: canary-weight
+spec:
+  hosts:
+    - '*'
+  gateways:
+    - {namespace}/{gateway}
+  http:
+    - route:
+        - destination:
+            host: {service}
+            subset: current
+          weight: 95
+        - destination:
+            host: {service}
+            subset: canary
+          weight: 5
+</code></pre>
+<p><strong>2. 基于请求内容</strong></p>
+<p><img src="https://main.qcloudimg.com/raw/b2d7686bdb52f57edd6020c487058217.png" alt="" loading="lazy"></p>
+<p>VirtualService 也支持配置基于内容的灰度发布路由规则，以下是配置来自 {namespace}/{gateway} 的入口流量 header cookie "version=stable" 时路由到 {service} 的 current 版本，"version=canary" 时路由到 {service} 的 canary 版本的示例：</p>
+<pre><code>apiVersion: ...
+kind: VirtualService
+metadata:
+  name: canary-content
+spec:
+  hosts:
+    - '*'
+  gateways:
+    - {namespace}/{gateway}
+  http:
+    - match:
+        - headers:
+            cookie:
+              exact: version=stable
+      route:
+        - destination:
+            host: {service}
+            subset: current
+    - match:
+        - headers:
+            cookie:
+              exact: version=canary
+      route:
+        - destination:
+            host: {service}
+            subset: canary
+</code></pre>
+<h3 id="场景三：应用流量鉴权与限流">场景三：应用流量鉴权与限流</h3>
+<blockquote>
+<p>鉴权与限流，是保证南北流量的安全性与健壮性的两个重要能力。</p>
+</blockquote>
+<p>接入层是访问后端服务的统一入口，保证接入层的安全是接入层流量管理的一个重要场景，一般在入口处需要配置认证与授权规则，传统架构下认证授权功能一般通过代码逻辑实现，Istio 自 1.5 之后提供了 AuthorizationPolicy 和 RequestAuthentication CRD [5]，可灵活配置入口层的认证和授权规则。</p>
+<p><strong>1. 请求身份认证（JWT）</strong></p>
+<p>入口处认证请求携带的 Json Web Token，放通携带合法令牌的请求，拒绝携带非法令牌的请求。</p>
+<p><img src="https://main.qcloudimg.com/raw/a2cf227e515cde3df3e1f94f9bf13b63.png" alt="" loading="lazy"></p>
+<p>以下是使用 Istio RequestAuthentication 配置 Ingress Gateway 放通携带合法 JWT 请求的配置示例：</p>
+<pre><code>apiVersion: ..
+kind: RequestAuthentication
+metadata:
+  name: jwt-example
+  namespace: istio-system
+spec:
+  selector:
+    matchLabels:
+      istio: ingressgateway
+  jwtRules:
+  - issuer: {issuer that issued the JWT}
+    jwksUri: {URL of the provider’s public key set to validate signature of the JWT}
+</code></pre>
+<p><strong>2. 授权</strong></p>
+<p>在入口处配置授权策略，根据流量内容特征，允许/拒绝流量访问，例如在入口处配置 IP 黑/白名单；或有外部鉴权服务，希望入口组件可对接外部鉴权服务，按照其返回的鉴权结果放通/拒绝流量。</p>
+<p><img src="https://main.qcloudimg.com/raw/58259b80ac5e3c1a1537f91c292d933d.png" alt="" loading="lazy"></p>
+<p>以下是使用 Istio AuthorizationPolicy 为 Ingress Gateway 配置 IP block 白名单的示例：</p>
+<pre><code>apiVersion: ...
+kind: AuthorizationPolicy
+metadata:
+  name: white-list
+  namespace: istio-system
+spec:
+  selector:
+    matchLabels:
+      app: istio-ingressgateway
+  action: ALLOW
+  rules:
+  - from:
+    - source:
+        ipBlocks: {single IP or CIDR}
+</code></pre>
+<p>Istio 1.9 增强了对 AuthorizationPolicy 对于对接外部鉴权系统的支持，可配置 Ingress Gateway 按照外部鉴权系统返回的结果放通或拒绝流量。</p>
+<pre><code>apiVersion: ...
+kind: AuthorizationPolicy
+metadata:
+  name: ext-authz
+  namespace: istio-system
+spec:
+  selector:
+    matchLabels:
+      app: istio-ingressgateway
+  action: CUSTOM
+  provider:
+    name: "my-ext-authz-service"
+  rules: ...
+</code></pre>
+<p><strong>3. 限流</strong><br>
+业务规模较大，后端服务提供给众多租户使用时，需要在入口处控制请求的速率，例如限制每个 User ID 每分钟只能请求 “/product” 接口 100 次。<br>
+为了使用 Istio Ingress Gateway 的限流功能，首先需要安装 Ratelimit service，可以自行实现或直接使用社区的 ratelimit [6]，然后使用 Envoyfilter 配置限流规则，具体配置方法可参考官方文档[7]。<br>
+<img src="https://main.qcloudimg.com/raw/bf9810f679dd1e1869dbcb5eab268b47.png" alt="" loading="lazy"></p>
+<h3 id="场景四：多集群异构场景入口流量管理">场景四：多集群异构场景入口流量管理</h3>
+<blockquote>
+<p>随着业务规模的增加，或对容灾、数据合规性、业务之间隔离要求的提升，业务会考虑与实施部署多个 Kubernetes 集群，甚至会出现容器化环境与非容器化环境异构混布的情况，给入口流量管理又带来了一系列新的挑战。</p>
+</blockquote>
+<p>多 Kubernetes 集群一般是基于容灾和业务隔离两方面的考虑：</p>
+<p>（1）容灾。Kubernetes 集群有地域属性，根据应用交付提供服务的访问时效和容灾诉求，同一应用可能分布在多个不同的地理区域。多（公有）云、混合云（IDC + 公有云）架构的容灾，也需部署多个集群。跨地域多集群容灾与就近接入可通过 DNS 解析提供，但 DNS 有缓存，故障转移实际生效时间可能较长，并且无法视服务健康程度切部分流量到备份地域，只能全部切换。</p>
+<p>Istio 基于以下能力：1. 多集群服务发现能力；2. 地域感知、故障感知、容灾流量容量规划，可实现：1. 当所有集群的服务都健康时，按照请求来源地就近路由至对应服务；2. 某个集群的服务出现部分故障时，视服务的健康程度转移一定比例的流量到其他集群的备份服务。</p>
+<p><img src="https://main.qcloudimg.com/raw/37044584730a94738d690d94def5b499.png" alt="" loading="lazy"></p>
+<p>（2）业务隔离。据 CNCF 2020 云原生调查报告显示 [2]，用多个集群做应用隔离是仅次于用 namespace 隔离的使用方式，使用率从 2019 年的 47% 上升到了2020年的 50%。多个业务仍共用一个流量入口时，接入层需具备多集群服务发现的能力，将流量按指定策略路由至指定集群的服务。</p>
+<p><img src="https://main.qcloudimg.com/raw/86f8995f50c06a2991a2de85fc35d68b.png" alt="" loading="lazy"></p>
+<p><strong>方案：Service Mesh Ingress</strong></p>
+<p>Kubernetes Ingress Controller 遇到的一个挑战是，Kubernetes 集群隔离了集群间的服务发现，Ingress Controller 只能作为集群级别的流量入口。而 Service Mesh 技术借助于控制面服务发现的能力，可发现或注册多个集群的服务甚至异构服务，打通集群间的服务发现壁垒，不受应用部署平台限制，天然提供一致的接入流量转发管理能力。</p>
+<p>Istio 作为最受欢迎的 Service Mesh 开源项目，它的接入层 Istio Ingress Gateway 同样提供了对 Ingress API 的支持，但是不建议使用 Ingress 去配置 Ingress Gateway，这大大削弱了 Istio 的能力。Istio 对流量管理模型提供了更高程度的抽象，可以直接使用 Istio API 实现更灵活的流量管理能力，实现灰度发布，跨集群路由，地域感知等高级特性。</p>
+<p><img src="https://main.qcloudimg.com/raw/d74c1a3a8e754d051fcb98a2757d0c3c.png" alt="" loading="lazy"></p>
+<p>Istio Ingress Gateway 基于 Envoy [3] 实现，Envoy 最初由 Lyft 创建，是一款为云原生场景设计的高性能服务代理软件，后由 Lyft 捐献到了 CNCF 社区，并已从 CNCF 毕业。</p>
+<p><strong>1. 多 Kubernetes 集群服务管理</strong></p>
+<p><img src="https://main.qcloudimg.com/raw/6c5d18b7e6b47e0382db42e7b9fc6ae8.png" alt="" loading="lazy"></p>
+<p>Istiod 可以通过网格内所有集群的 API Server 来获取 endpoints 信息，聚合多个集群的信息后，将最终生成的配置推送到 Ingress Gateway，Ingress Gateway 可以将请求按需转发至网格内所有 Pod。</p>
+<p><strong>2. 地域感知负载均衡</strong></p>
+<blockquote>
+<p>在服务网格中，一个 Pod 的地理信息包括以下 3 个部分 [8]：</p>
+<ul>
+<li><strong>Region（地域）</strong>： 通常代表一个较大的地理区域（e.g 北京 上海），在 Kubernetes 中，节点的地域由标签 <code>topology.kubernetes.io/region</code> 决定</li>
+<li><strong>Zone（可用区）</strong>：一个地域通常包含多个可用区（e.g. 北京一区 北京二区），在 Kubernetes 中，节点的可用区由标签 <code>topology.kubernetes.io/zone</code> 决定</li>
+<li><strong>Sub-zone</strong> ：允许对可用区做进一步划分实现更细粒度的控制，例如可以按照 rack（机架）划分，在 Kubernetes 中不存在 sub-zone 的概念，Istio 使用节点的 <code>topology.istio.io/subzone</code> 标签来定义 sub-zone</li>
+</ul>
+<p>如果使用云厂商托管的 Kubernetes 服务，节点的 Region 和 Zone 标签已由云厂商配置，例如在 TKE 集群中，上海二区的节点会有以下标签：</p>
+<ul>
+<li><code>topology.kubernetes.io/region: sh</code></li>
+<li><code>topology.kubernetes.io/zone: "200002"</code></li>
+</ul>
+</blockquote>
+<p>网格内的集群可能分布在不同地域不同可用区，大多数情况下，我们希望尽量减少跨地域/跨可用区的请求调用，因为这会增加请求时延。因此接入层需具备感知 endpoints 地理信息的能力，并支持根据地理信息配置负载均衡及故障转移策略。</p>
+<p><strong>（1）地域故障转移</strong></p>
+<p>在开启地域负载均衡的情况下，Istio 会告知 Ingress Gateway 将请求就近转发。 当所有实例都正常时，请求将保持在同一地点，当实例异常时，流量会分发到下一优先地域的实例。</p>
+<p><img src="https://main.qcloudimg.com/raw/b1e397da139f833dcbef0be78a79f20a.png" alt="" loading="lazy"></p>
+<p>例如，位于 bj.bj-01 的 Ingress Gateway 转发请求的优先级如下：</p>
+<table>
+<thead>
+<tr>
+<th>优先级</th>
+<th>地理位置</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>bj.bj-01</td>
+<td>Region Zone 完全匹配</td>
+</tr>
+<tr>
+<td>2</td>
+<td>bj.bj-02</td>
+<td>Region 匹配 Zone 不匹配</td>
+</tr>
+<tr>
+<td>3</td>
+<td>sh.sh-01/sh-02</td>
+<td>Region Zone 都不匹配</td>
+</tr>
+</tbody>
+</table>
+<p><strong>（2）地域加权负载均衡</strong></p>
+<p>地域加权负载均衡可以将用户定义的一定百分比的流量分发到某些地域，例如我们可以使用如下配置分发流量：</p>
+<pre><code>global:
+  localityLbSetting:
+    enabled: true
+    distribute:
+    - from: bj/bj-01/*
+      to:
+        "bj/bj-01/*": 70
+        "bj/bj-02/*": 20
+        "sh/sh-01/*": 10
+</code></pre>
+<p><img src="https://main.qcloudimg.com/raw/f0d5eadf9a3f345a411081788cc9a5a0.png" alt="" loading="lazy"></p>
+<p><strong>3. 异构服务入口流量管理</strong></p>
+<p>除了多集群，用户在云原生改造的过程中，常常会面临部分服务已经做了容器化改造，运行在 Kubernetes 集群，部分不便改造的服务仍在虚拟机的情况，甚至会有部分使用的是云厂商 serverless 云函数服务（e.g. AWS lambda）。接入层需具备异构服务注册/发现的能力，以管理异构部署服务的南北向流量。</p>
+<p><img src="https://main.qcloudimg.com/raw/ef7768a8e14fbd2e63992902545c82f5.png" alt="" loading="lazy"></p>
+<p>可以通过 Istio 提供的 WorkloadGroup 和 WorkloadEntry 将虚拟机上的服务注册到网格内，同一个服务可以同时运行在 Kubernetes 集群和虚拟机上。</p>
+<p><img src="https://main.qcloudimg.com/raw/7a415920d51d9ae7c7d878f3aedf1842.png" alt="" loading="lazy"></p>
+<p><strong>Istio Ingress Gateway 小结</strong>：Istio Ingress Gateway 在入口灰度发布、安全、多集群异构流量管理等场景提供了多集群服务发现、地域感知、流量容量规划，以及更强大灵活的流量管理 API 的支持，但与此同时，用户也不得不面对 Istio 的复杂性。需要投入资源和人力成本运维 Istiod 和 Istio Ingress Gateway，集成 metric，trace，log 等可观测性及证书管理周边系统成本较高，还需要正确配置各种 CRD（Gateway VirtualService DestinationRule 等）。</p>
+<h3 id="接入层解决方案功能对比">接入层解决方案功能对比</h3>
+<p>以下是腾讯云容器环境下常见的接入层解决方案功能对比。</p>
+<p><img src="https://main.qcloudimg.com/raw/8f2c7ba8c289bd120d0867f576643473.png" alt="" loading="lazy"></p>
+<h2 id="多集群灰度发布跨集群容灾-demo">多集群灰度发布/跨集群容灾 Demo</h2>
+<p>下面将使用腾讯云服务网格 TCM 控制台演示 Service Mesh Ingress 做多 Kubernetes 集群环境下的灰度发布和容灾。</p>
+<ol>
+<li>创建服务网格，添加两个部署服务的服务发现集群（基础监控指标自动对接到云监控，可在控制台查看，可视情况开启云原生监控，满足自定义监控诉求），勾选启用 Ingress Gateway<br>
+<img src="https://main.qcloudimg.com/raw/d62ae0cce5497f493ff9bd1e6c5da55b.png" alt="" loading="lazy"></li>
+<li>使用 Destination Rule 定义 frontend 服务的版本（frontend 服务在两个集群均有同样的部署）<br>
+<img src="https://main.qcloudimg.com/raw/951179999708f83f464805f48e046362.png" alt="" loading="lazy"></li>
+<li>使用 Gateway 配置 ingress gateway 监听规则，开启 443 端口 https 访问，使用腾讯云 SSL 平台服务器证书<br>
+<img src="https://main.qcloudimg.com/raw/4c2449b0aea911c5a7664e3c9ca9f4ec.png" alt="" loading="lazy"></li>
+<li>使用 VirtualService 配置路由规则，50% 流量路由至 v1 版本，50% 路由至 v2 版本<br>
+<img src="https://main.qcloudimg.com/raw/0be73e7e5291b0d9423f4c553e735698.png" alt="" loading="lazy"></li>
+<li>有访问请求后，查看工作负载（frontend，frontend-canary）监控，两个版本均有流量，比例大致 1:1<br>
+<img src="https://main.qcloudimg.com/raw/dd969ed4a55612d85cf7dc5b90c1a570.png" alt="" loading="lazy"></li>
+<li>灰度结束，更改权重，100% 的流量均路由至 v2 版本，再次查看工作负载的监控数据，发现所有流量都已请求至 frontend-canary<br>
+<img src="https://main.qcloudimg.com/raw/12f5a52c34ebb51fca7d2348cae9be65.png" alt="" loading="lazy"><br>
+<img src="https://main.qcloudimg.com/raw/b2fe814833f6bad9c9c7bf6160d3dcf2.png" alt="" loading="lazy"></li>
+<li>下面我们通过调整其中一个集群的 frontend 服务工作负载 Pod 数量为 0 来模拟其中一个集群 frontend 服务故障情况，发现其中一个集群 frontend 服务故障后，仍可以正常访问该服务，查看另一集群的 frontend 服务的工作负载监控，会发现入带宽增加了一倍，表明其中一个集群的服务故障后，流量容灾切到了另一集群。<br>
+<img src="https://main.qcloudimg.com/raw/1cc22693ce585e9dce37a742fc2c2021.png" alt="" loading="lazy"><br>
+<img src="https://main.qcloudimg.com/raw/92bcf27af4523cc390d3612e2e5dad6b.png" alt="" loading="lazy"><br>
+<img src="https://main.qcloudimg.com/raw/b8930facb7461180f867408c8a781c5f.png" alt="" loading="lazy"></li>
+<li>如有扩展东西向流量管理的需要，可以给业务注入 envoy sidecar，即可使用同一套 Istio API 实现南北东西向流量一致性管理，开箱即用网络拓扑、调用追踪等可观测性功能。<br>
+<img src="https://main.qcloudimg.com/raw/6ffb71ebf508bb46a328e9c011f6c82c.png" alt="" loading="lazy"><br>
+<img src="https://main.qcloudimg.com/raw/e2fba0a3039e2793838e9a9884a986b2.png" alt="" loading="lazy"></li>
+</ol>
+<p>腾讯云服务网格 TCM，是腾讯云完全兼容 Istio 的 Service Mesh 产品，目前已实现了控制面组件托管，使用 TCM Ingress Gateway 只需要部署一组数据面 envoy pod 在业务集群，即可开箱即用上述 Istio Ingress Gateway 的所有入口流量管理能力。同时，TCM 集成了腾讯云监控、证书周边产品，提供开箱即用的可观测能力和证书配置功能。</p>
+<p><img src="https://main.qcloudimg.com/raw/1389e223f78af74848f314203dd1a2d9.png" alt="" loading="lazy"></p>
+<h2 id="结语">结语</h2>
+<p>本文由业务部署发展的两个阶段引入，介绍了：</p>
+<ol>
+<li>云原生容器化环境下接入层流量管理的典型场景。</li>
+<li>入口流量管理的解决方案及优劣对比。</li>
+<li>以腾讯云服务网格 TCM 为例，演示 Service Mesh Ingress 多集群环境下灰度发布及服务跨集群容灾的能力。</li>
+</ol>
+<p>主要结论有：</p>
+<ol>
+<li>对于简单的 HTTP 流量的路由，使用 Kubernetes 原生 Ingress 配置非常容易，一些 Ingress Controller （e.g. Nginx, Traefik）也通过 annotation 或 CRD 扩展了原生 Ingress 的功能，但仍是集群级别的流量入口。</li>
+<li>Service Mesh 级别的接入层，借助控制面服务发现的能力，可作为多集群/异构环境下的统一流量入口，可具备跨集群路由，地域感知等高级特性；后续也可平滑扩展一致语法管理东西向流量。</li>
+</ol>
+<p>本文是云原生接入层流量管理系列文章的第一篇，后续我们将会推出一系列文章详细介绍入口流量管理、安全、可观测性、多集群异构入口流量管理等场景下的最佳实践。</p>
+<h2 id="reference">Reference</h2>
+<p>[1] <a href="https://kubernetes.io/docs/concepts/services-networking/ingress/" target="_blank">https://kubernetes.io/docs/concepts/services-networking/ingress/</a></p>
+<p>[2] <a href="https://www.cncf.io/wp-content/uploads/2020/12/CNCF_Survey_Report_2020.pdf" target="_blank">https://www.cncf.io/wp-content/uploads/2020/12/CNCF_Survey_Report_2020.pdf</a></p>
+<p>[3] <a href="https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy" target="_blank">https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy</a></p>
+<p>[4] <a href="https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/" target="_blank">https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/</a></p>
+<p>[5] <a href="https://istio.io/latest/docs/reference/config/security/" target="_blank">https://istio.io/latest/docs/reference/config/security/</a></p>
+<p>[6] <a href="https://github.com/envoyproxy/ratelimit" target="_blank">https://github.com/envoyproxy/ratelimit</a></p>
+<p>[7] <a href="https://istio.io/latest/docs/tasks/policy-enforcement/rate-limit/" target="_blank">https://istio.io/latest/docs/tasks/policy-enforcement/rate-limit/</a></p>
+<p>[8] <a href="https://istio.io/latest/docs/tasks/traffic-management/locality-load-balancing/" target="_blank">https://istio.io/latest/docs/tasks/traffic-management/locality-load-balancing/</a></p>
+
 </div>
-<!-- footer end -->
-
-<!-- Fix Action -->
-<!--
-<div class="fix-action" id="fixAction">
-	<a class="to-top" href="javascript:;" id="fixAction-toTop"><span>回首屏</span></a>
-	<a class="forward" href="javascript:;" id="fixAction-forward"><span>转 发</span></a>
-	<a class="follow" href="#J_Comment_Wrap" id="fixAction-follow"><span>评 论</span></a>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
 </div>
--->
-<!-- Fix Action end -->
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2021-05-11 18:52</span>&nbsp;
+<a href="https://www.cnblogs.com/tencent-cloud-native/">腾讯云原生</a>&nbsp;
+阅读(<span id="post_view_count">25</span>)&nbsp;
+评论(<span id="post_comment_count">0</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14756816" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(14756816);return false;">收藏</a></div>
+        </div>
+        <script src="https://common.cnblogs.com/highlight/10.3.1/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 625070, cb_blogApp = 'tencent-cloud-native', cb_blogUserGuid = '234ee4ac-f280-4e99-6724-08d7f668918e';
+    var cb_entryId = 14756816, cb_entryCreatedDate = '2021-05-11 18:52', cb_postType = 1;
+    updatePostStats(
+        [cb_entryId],
+        function(id, count) { $("#post_view_count").text(count) },
+        function(id, count) { $("#post_comment_count").text(count) })
+    zoomManager.apply("#cnblogs_post_body img:not(.code_img_closed):not(.code_img_opened)");
+</script>
+        <a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <div id="cnblogs_c1" class="under-post-card">
+        <div id='div-gpt-ad-1592365906576-0' style='width: 300px; height: 250px;'></div>
+    </div>
+    <div id="under_post_card1"></div>
+    <div id="cnblogs_c2" class="under-post-card">
+        <div id='div-gpt-ad-1592366332455-0' style='width: 468px; height: 60px;'></div>
+    </div>
+    <div id="under_post_card2"></div>
+    <div id="HistoryToday" class="under-post-card"></div>
+    <script type="text/javascript">
+       var commentManager = new blogCommentManager();
+       commentManager.renderComments(0);
+       fixPostBody();
+       deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);       deliverT2();
+       deliverC1C2();
+       loadNewsAndKb();
+       loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);       LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+       GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+       loadOptUnderPost();
+       GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
 
-<script type="text/javascript" src="http://news.sina.com.cn/js/87/20131223/tujie1223/lqf_tjtx.js"></script>
-<script type="text/javascript" src="http://n.sinaimg.cn/news/tjtx/zhengwen-20190305201134.js"></script>
+    </div>
+</div>
+            </div>
+        </div>
 
-<!-- body code begin -->
+        <div id="sideBar">
+            <div id="sideBarMain">
+                <div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+<div id="sidebar_c3"></div>
+                <div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                <script>loadBlogDefaultCalendar();</script>
+                <div id="leftcontentcontainer">
+                    <!-- begin:SingleColumn -->
+                    <div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+                    <!-- end:  SingleColumn -->
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <!--done-->
+Copyright &copy; 2021 腾讯云原生
+<br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
 
-<!-- SSO_UPDATECOOKIE_START -->
-<script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.q=function(b){if(typeof b!="object"){return""}var a=new Array();for(key in b){a.push(key+"="+encodeURIComponent(b[key]))}return a.join("&")};sinaSSOManager.es=function(f,d,e){var c=document.getElementsByTagName("head")[0];var a=document.getElementById(f);if(a){c.removeChild(a)}var b=document.createElement("script");if(e){b.charset=e}else{b.charset="gb2312"}b.id=f;b.type="text/javascript";d+=(/\?/.test(d)?"&":"?")+"_="+(new Date()).getTime();b.src=d;c.appendChild(b)};sinaSSOManager.doCrossDomainCallBack=function(a){sinaSSOManager.crossDomainCounter++;document.getElementsByTagName("head")[0].removeChild(document.getElementById(a.scriptId))};sinaSSOManager.crossDomainCallBack=function(a){if(!a||a.retcode!=0){return false}var d=a.arrURL;var b,f;var e={callback:"sinaSSOManager.doCrossDomainCallBack"};sinaSSOManager.crossDomainCounter=0;if(d.length==0){return true}for(var c=0;c<d.length;c++){b=d[c];f="ssoscript"+c;e.scriptId=f;b=b+(/\?/.test(b)?"&":"?")+sinaSSOManager.q(e);sinaSSOManager.es(f,b)}};sinaSSOManager.updateCookieCallBack=function(c){var d="ssoCrossDomainScriptId";var a="http://login.sina.com.cn/sso/crossdomain.php";if(c.retcode==0){var e={scriptId:d,callback:"sinaSSOManager.crossDomainCallBack",action:"login",domain:"sina.com.cn"};var b=a+"?"+sinaSSOManager.q(e);sinaSSOManager.es(d,b)}else{}};sinaSSOManager.updateCookie=function(){var g=1800;var p=7200;var b="ssoLoginScript";var h=3600*24;var i="sina.com.cn";var m=1800;var l="http://login.sina.com.cn/sso/updatetgt.php";var n=null;var f=function(e){var r=null;var q=null;switch(e){case"sina.com.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"sina.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"51uc.com":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break}return r};var j=function(){try{return f(i)}catch(e){return null}};try{if(g>5){if(n!=null){clearTimeout(n)}n=setTimeout("sinaSSOManager.updateCookie()",g*1000)}var d=j();var c=(new Date()).getTime()/1000;var o={};if(d==null){o={retcode:6102}}else{if(d<c){o={retcode:6203}}else{if(d-h+m>c){o={retcode:6110}}else{if(d-c>p){o={retcode:6111}}}}}if(o.retcode!==undefined){return false}var a=l+"?callback=sinaSSOManager.updateCookieCallBack";sinaSSOManager.es(b,a)}catch(k){}return true};sinaSSOManager.updateCookie();</script>
-<!-- SSO_UPDATECOOKIE_END -->
+    </div>
+</div>
 
-<!-- body code end -->
+    
 
+    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjt26Cm050SOjqCN7jY_qfTl9kBnOTOHiJGLwhFBL5rCRtu913_ElmZNG-vvHybv7P8U6H5Y7gi3NMsLtggIF0tfpSvuRIpGIOvfM-QuuTZ-mKlbDhwHs2QD_1wEQHWIJ0Q" />
 </body>
 </html>

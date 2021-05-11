@@ -30,20 +30,16 @@
         var visitorUserId = '';
     </script>
     <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
-    <script src="/js/blog-common.min.js?v=yJQaJ16S00coMfzvh-NgF2zm2J87f5VfNamFdsnKHrc"></script>
+    <script src="/js/blog-common.min.js?v=2Mic1VLeHXarpdzASbXqFMIMVLEBiWXNO5yiTHUcmhw"></script>
     
     
     
 </head>
-<body class="has-navbar has-bannerbar">
+<body class="has-navbar">
     <a name="top"></a>
-        <a target="_blank" href="https://www.aliyun.com/minisite/goods?userCode=swh7dvlt" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-cps-blog-bannerbar-pc')">
-            <div class="bannerbar aliyun forpc" style="background-size: contain;background-image: url(https://img2020.cnblogs.com/blog/35695/202104/35695-20210428221933214-737067094.jpg)">
-            </div>
-        </a>
         <div id="bannerbar" class="bannerbar-mobile formobile">
-            <a href="https://www.aliyun.com/minisite/goods?userCode=swh7dvlt" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-cps-blog-bannerbar-mobile')">
-                <img src="https://img2020.cnblogs.com/blog/35695/202104/35695-20210428213541700-642740375.jpg" alt="" />
+            <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-blog-bannerbar-mobile')">
+                <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
             </a>
         </div>
     <div id="top_nav" class="navbar forpc">
@@ -151,7 +147,7 @@
         <p class="postfoot">
             posted @ 2005-03-05 14:45
 拓荒者
-<span data-post-id="113513" class="post-view-count">阅读(2655)</span> 
+<span data-post-id="113513" class="post-view-count">阅读(2657)</span> 
 <span data-post-id="113513" class="post-comment-count">评论(5)</span> 
 <span data-post-id="113513" class="post-digg-count">推荐(1)</span> 
 <a href="https://i.cnblogs.com/EditPosts.aspx?postid=113513" rel="nofollow">
@@ -242,6 +238,6 @@
 
     
 
-    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjsgKaI_zCDveTXNVEFxCuC7yqgupr5YTlMn1vJCbe1PwJqzP2oLavpufoeTjGq83fT2qdoWlHiy7n8hXShUS76gd1S7RpXwZ4FuIGV_H7XJtc7Y6HRIHsGdh5W9jPLoRXU" />
+    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjsxj0cWbXhIkSCYIwQPZ9cfZCRWXwBM1ytaAlTn8E_np-hcON5b1ImiTqSuMC6vjzZUNER_My95A6ng2Xb-hrIVVzpyDtRwJKP1ZLJhcw8jnTpdf0PwzURXWWo_i61xTMw" />
 </body>
 </html>

@@ -4,49 +4,48 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="origin-when-crossorigin" />
-    
-    
+    <meta name="description" content="一、about centos7.3 &#x2B; mysql5.7.20 MySQL多实例的本质在一台机器上开启多个不同的MySQL实例，也就是各实例监听不同的端口，提供不同的服务。多个实例公用一套MySQL安" />
+    <meta property="og:description" content="一、about centos7.3 &#x2B; mysql5.7.20 MySQL多实例的本质在一台机器上开启多个不同的MySQL实例，也就是各实例监听不同的端口，提供不同的服务。多个实例公用一套MySQL安" />
     <meta http-equiv="Cache-Control" content="no-transform" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>2010 年 11月 2 日 随笔档案 - 拓荒者 - 博客园</title>
+    <title>MySQL - 单机中的单实例和多实例 - 讷言敏行~ - 博客园</title>
     <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
     
     <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
-    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=9x2ZP2K8SSBJowZA6xv0D5FvOmlvd5g21u0NBEAEwfQ" />
+    <link id="MainCss" rel="stylesheet" href="/skins/simplememory/bundle-simplememory.min.css?v=uknaX_hejnSu-njQgx4Hj1R0JiPLwUhFPUlwWNmWyB4" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/yj0405/custom.css?v=JO8K&#x2B;N13owVV2ju2dFPB74&#x2B;WoEg=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
     
-    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=xFiYH0_zTHqf_pk9Nf2PvR4VdQ1qJnJcRVcot-VdM-8" />
-    
-    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/dstang2000/rss" />
-    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/dstang2000/rsd.xml" />
-    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/dstang2000/wlwmanifest.xml" />
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/yj0405/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/yj0405/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/yj0405/wlwmanifest.xml" />
     <script>
-        var currentBlogId = 9986;
-        var currentBlogApp = 'dstang2000';
+        var currentBlogId = 647209;
+        var currentBlogApp = 'yj0405';
         var cb_enable_mathjax = false;
         var isLogined = false;
         var isBlogOwner = false;
-        var skinName = 'AnotherEon001';
+        var skinName = 'SimpleMemory';
         var visitorUserId = '';
     </script>
+        <script>
+            var currentPostDateAdded = '2021-05-10 07:14';
+        </script>
     <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
-    <script src="/js/blog-common.min.js?v=yJQaJ16S00coMfzvh-NgF2zm2J87f5VfNamFdsnKHrc"></script>
+    <script src="/js/blog-common.min.js?v=2Mic1VLeHXarpdzASbXqFMIMVLEBiWXNO5yiTHUcmhw"></script>
     
     
     
 </head>
-<body class="has-navbar has-bannerbar">
+<body class="no-navbar">
     <a name="top"></a>
-        <a target="_blank" href="https://www.aliyun.com/minisite/goods?userCode=swh7dvlt" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-cps-blog-bannerbar-pc')">
-            <div class="bannerbar aliyun forpc" style="background-size: contain;background-image: url(https://img2020.cnblogs.com/blog/35695/202104/35695-20210428221933214-737067094.jpg)">
-            </div>
-        </a>
         <div id="bannerbar" class="bannerbar-mobile formobile">
-            <a href="https://www.aliyun.com/minisite/goods?userCode=swh7dvlt" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-cps-blog-bannerbar-mobile')">
-                <img src="https://img2020.cnblogs.com/blog/35695/202104/35695-20210428213541700-642740375.jpg" alt="" />
+            <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-blog-bannerbar-mobile')">
+                <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
             </a>
         </div>
-    <div id="top_nav" class="navbar forpc">
+    <div id="top_nav" class="navbar forpc navbar-custom">
         <nav id="nav_main" class="navbar-main">
             <ul id="nav_left" class="navbar-list navbar-left">
                 <li class="navbar-branding"><a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a></li>
@@ -98,150 +97,707 @@
         </nav>
     </div>
 
-    
-    <div id="wrapper">
+    <div id="page_begin_html">
+        <script>loadPageBeginHtml();</script>
+    </div>
+    <!--done-->
+<div id="home">
 <div id="header">
-
-<div id="top">
-<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/dstang2000/">拓荒者 dstang2000 <a href="http://www.dstang.com"><font size=-1 color=red>http://www.dstang.com</font></a>
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/yj0405/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/yj0405/">讷言敏行</a>
 </h1>
-<div id="subtitle">KISS：Keeping things that work，Improve systems procedures styles，Start things of value，Stop things of no value </div>
-</div>
-<div id="sub"><div id="blog_stats_place_holder"><script>loadBlogStats();</script></div></div>
+<h2></h2>
 
 
 
 
-</div>
-<div id="main_container">
-<div id="main_content">
-<div id="content">
-	
-        <!--done-->
-
-<p class="date">
-	<span>		  
-	<a>2010年11月2日</a>
-	</span>
-</p>
-
-    <div class="post">
-        <h2>
-            
-
-<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/dstang2000/archive/2010/11/02/1867406.html">
-    <span>
-        实测:xml与json速度约差4倍
-    </span>
-    
-
-
-
-</a>
-
-        </h2>
-        <div class="postbody">
-            
-
-    <div class="c_b_p_desc">
-摘要：xml与json在javascript中解析并使用，速度大约相差4倍。（在IE中测试的结果）。其中主要不在于eval,与xml parse的时间差别，主要在于属性访问上的差别：xml中使用这样的方式 markers[i].getAttribute("info") 与json中使用这样的方式 var info = markers[i].info;相比， xml要慢不少。以下为测试的详情：代码Code...        <a href="https://www.cnblogs.com/dstang2000/archive/2010/11/02/1867406.html" class="c_b_p_desc_readmore">阅读全文</a>
-    </div>
-
-        </div>
-        <p class="postfoot">
-            posted @ 2010-11-02 17:43
-拓荒者
-<span data-post-id="1867406" class="post-view-count">阅读(970)</span> 
-<span data-post-id="1867406" class="post-comment-count">评论(0)</span> 
-<span data-post-id="1867406" class="post-digg-count">推荐(0)</span> 
-<a href="https://i.cnblogs.com/EditPosts.aspx?postid=1867406" rel="nofollow">
-    编辑
-</a>
-
-        </p>
-    </div>
-
-
-
-
-</div>
-</div>
-<div id="leftmenu">
-
-
-<h3>导航</h3>
-<ul>
-    <li>
-        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
 博客园</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/dstang2000/">
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/yj0405/">
 首页</a>
-
-    </li>
-    <li>
-        
+</li>
+<li>
 
 <a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
 新随笔</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%8B%93%E8%8D%92%E8%80%85">
-联系</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/dstang2000/rss/">
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E8%AE%B7%E8%A8%80%E6%95%8F%E8%A1%8C~">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/yj0405/rss/">
 订阅</a>
-        
-<a id="blog_nav_rss_image" href="https://www.cnblogs.com/dstang2000/rss/">
-    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
-</a>
-    </li>
-    <li>
-        
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
 <a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
 管理</a>
-
-    </li>
+</li>
 </ul>
 
 
-<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
-<div id="sidebar_news" class="newsItem">
+		<div class="blogStats">
+			<div id="blog_stats_place_holder"><script>loadBlogStats();</script></div>
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2 vertical-middle" href="https://www.cnblogs.com/yj0405/p/14752218.html">
+    <span>MySQL - 单机中的单实例和多实例</span>
+    
+
+
+
+</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                <div id="cnblogs_post_body" class="blogpost-body blogpost-body-html">
+<h2 id="about">一、about</h2>
+<p>centos7.3 + mysql5.7.20</p>
+<p>MySQL多实例的本质<br>在一台机器上开启多个不同的MySQL实例，也就是各实例监听不同的端口，提供不同的服务。<br>多个实例公用一套MySQL安装程序，启动程序和配置文件可以是一个也可以是多个(推荐多个)；各自的数据文件隔离；逻辑上各实例彼此隔离。</p>
+<p>为什么要使用多实例？优缺点？</p>
+<ul>
+<li>物理机性能强大，单个实例无法充分利用硬件资源</li>
+<li>资源隔离，减少相互影响</li>
+<li>分担连接数，MySQL随着连接数的上升，性能会下降</li>
+<li>更充分的利用资源，不同业务错高峰混跑</li>
+<li>有优点，也有缺点，比如多个实例会存在资源相互抢占的问题，当某个实例的并发较高或者存在慢查询时，它会消耗更多的硬件资源，这就可能影响到别的实例的性能</li>
+
+
+
+
+</ul>
+<p>多实例的应用场景</p>
+<ul>
+<li>资金比较紧张的公司</li>
+<li>并发访问不大的业务</li>
+
+
+
+
+</ul>
+<p>MySQL多实例常见配置方案</p>
+<ul>
+<li>(推荐)通过多个配置文件及多个启动程序来实现多实例。</li>
+<li>单一配置文件方案，即一个配置文件中写多个实例的配置。</li>
+
+
+
+</ul>
+<h2 id="必要的准备">二、必要的准备</h2>
+<p>目录规划</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)">1</span> /opt/software/<span style="color: rgba(0, 0, 0, 1)">mysql   # MySQL的安装目录
+</span><span style="color: rgba(0, 128, 128, 1)">2</span> /data/mysql/<span style="color: rgba(0, 0, 0, 1)">    # 所有的MySQL实例的数据目录、备份目录、日志目录，都在该目录下，各个实例以端口号命名
+</span><span style="color: rgba(0, 128, 128, 1)">3</span> /etc/my.conf    # MySQL 3306实例的默认配置文件</pre>
+</div>
+<p>依赖下载</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)">1</span> <span style="color: rgba(0, 0, 0, 1)"># 如果你的系统曾经安装过mariadb，请先卸载
+</span><span style="color: rgba(0, 128, 128, 1)">2</span> <span style="color: rgba(0, 0, 255, 1)">yum</span> remove -y mariadb* 
+<span style="color: rgba(0, 128, 128, 1)">3</span> <span style="color: rgba(0, 0, 255, 1)">yum</span> <span style="color: rgba(0, 0, 255, 1)">install</span> -y epel-<span style="color: rgba(0, 0, 0, 1)">release
+</span><span style="color: rgba(0, 128, 128, 1)">4</span> <span style="color: rgba(0, 0, 255, 1)">yum</span> update -<span style="color: rgba(0, 0, 0, 1)">y
+</span><span style="color: rgba(0, 128, 128, 1)">5</span> <span style="color: rgba(0, 0, 255, 1)">yum</span> <span style="color: rgba(0, 0, 255, 1)">install</span> -y cmake <span style="color: rgba(0, 0, 255, 1)">gcc</span>-c++ ncurses-devel <span style="color: rgba(0, 0, 255, 1)">perl</span>-Data-Dumper boost-doc boost-devel libaio-<span style="color: rgba(0, 0, 0, 1)">devel
+</span><span style="color: rgba(0, 128, 128, 1)">6</span> <span style="color: rgba(0, 0, 255, 1)">yum</span> <span style="color: rgba(0, 0, 255, 1)">install</span> -y net-tools tree bash-completion lrzsz</pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="单实例配置">三、单实例配置</h2>
+<h3>3.1、下载安装mysql</h3>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)">1</span> [root@cs ~]# <span style="color: rgba(0, 0, 255, 1)">mkdir</span> -p /opt/software &amp;&amp; cd /opt/<span style="color: rgba(0, 0, 0, 1)">software
+</span><span style="color: rgba(0, 128, 128, 1)">2</span> [root@cs software]# <span style="color: rgba(0, 0, 255, 1)">pwd</span>
+<span style="color: rgba(0, 128, 128, 1)">3</span> /opt/<span style="color: rgba(0, 0, 0, 1)">software
+</span><span style="color: rgba(0, 128, 128, 1)">4</span> [root@cs software]# <span style="color: rgba(0, 0, 255, 1)">wget</span> https:<span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">downloads.mysql.com/archives/get/p/23/file/mysql-5.7.20-linux-glibc2.12-x86_64.tar.gz</span>
+<span style="color: rgba(0, 128, 128, 1)">5</span> [root@cs software]# <span style="color: rgba(0, 0, 255, 1)">tar</span> -xvf mysql-<span style="color: rgba(128, 0, 128, 1)">5.7</span>.<span style="color: rgba(128, 0, 128, 1)">20</span>-linux-glibc2.<span style="color: rgba(128, 0, 128, 1)">12</span>-x86_64.<span style="color: rgba(0, 0, 255, 1)">tar</span><span style="color: rgba(0, 0, 0, 1)">.gz
+</span><span style="color: rgba(0, 128, 128, 1)">6</span> [root@cs software]# <span style="color: rgba(0, 0, 255, 1)">mv</span> mysql-<span style="color: rgba(128, 0, 128, 1)">5.7</span>.<span style="color: rgba(128, 0, 128, 1)">20</span>-linux-glibc2.<span style="color: rgba(128, 0, 128, 1)">12</span>-<span style="color: rgba(0, 0, 0, 1)">x86_64 mysql
+</span><span style="color: rgba(0, 128, 128, 1)">7</span> [root@cs software]# <span style="color: rgba(0, 0, 255, 1)">rm</span> -rf mysql-<span style="color: rgba(128, 0, 128, 1)">5.7</span>.<span style="color: rgba(128, 0, 128, 1)">20</span>-linux-glibc2.<span style="color: rgba(128, 0, 128, 1)">12</span>-x86_64.<span style="color: rgba(0, 0, 255, 1)">tar</span>.gz &amp;&amp; <span style="color: rgba(0, 0, 255, 1)">ls</span>
+<span style="color: rgba(0, 128, 128, 1)">8</span> mysql</pre>
+</div>
+<h3>3.2&nbsp; 添加环境变量</h3>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)">1</span> [root@cs software]# vim /etc/<span style="color: rgba(0, 0, 0, 1)">profile
+</span><span style="color: rgba(0, 128, 128, 1)">2</span> 
+<span style="color: rgba(0, 128, 128, 1)">3</span> export PATH=/opt/software/mysql/<span style="color: rgba(0, 0, 0, 1)">bin:$PATH
+</span><span style="color: rgba(0, 128, 128, 1)">4</span> 
+<span style="color: rgba(0, 128, 128, 1)">5</span> [root@cs software]# source /etc/profile</pre>
+</div>
+<h3>3.3 创建相关目录和MySQL用户</h3>
+<p>MySQL服务运行在非root用户环境，所以，我们先创建一个mysql用户，然后在创建相关的数据目录：</p>
+<p>创建数据目录，并且授权更改用户属组，MySQL的安装目录授权</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)"> 1</span> <span style="color: rgba(0, 0, 0, 1)">[root@cs software]# useradd mysql
+</span><span style="color: rgba(0, 128, 128, 1)"> 2</span> [root@cs software]# <span style="color: rgba(0, 0, 255, 1)">mkdir</span> -p /data/mysql/<span style="color: rgba(128, 0, 128, 1)">330</span>{<span style="color: rgba(128, 0, 128, 1)">6</span>,<span style="color: rgba(128, 0, 128, 1)">7</span>,<span style="color: rgba(128, 0, 128, 1)">8</span>,<span style="color: rgba(128, 0, 128, 1)">9</span>}/<span style="color: rgba(0, 0, 0, 1)">{data,logs,backup}
+</span><span style="color: rgba(0, 128, 128, 1)"> 3</span> [root@cs software]# tree /data/mysql/<span style="color: rgba(128, 0, 128, 1)">330</span>*
+<span style="color: rgba(0, 128, 128, 1)"> 4</span> /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3306</span>
+<span style="color: rgba(0, 128, 128, 1)"> 5</span> <span style="color: rgba(0, 0, 0, 1)">├── backup
+</span><span style="color: rgba(0, 128, 128, 1)"> 6</span> <span style="color: rgba(0, 0, 0, 1)">├── data
+</span><span style="color: rgba(0, 128, 128, 1)"> 7</span> <span style="color: rgba(0, 0, 0, 1)">└── logs
+</span><span style="color: rgba(0, 128, 128, 1)"> 8</span> /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>
+<span style="color: rgba(0, 128, 128, 1)"> 9</span> <span style="color: rgba(0, 0, 0, 1)">├── backup
+</span><span style="color: rgba(0, 128, 128, 1)">10</span> <span style="color: rgba(0, 0, 0, 1)">├── data
+</span><span style="color: rgba(0, 128, 128, 1)">11</span> <span style="color: rgba(0, 0, 0, 1)">└── logs
+</span><span style="color: rgba(0, 128, 128, 1)">12</span> /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3308</span>
+<span style="color: rgba(0, 128, 128, 1)">13</span> <span style="color: rgba(0, 0, 0, 1)">├── backup
+</span><span style="color: rgba(0, 128, 128, 1)">14</span> <span style="color: rgba(0, 0, 0, 1)">├── data
+</span><span style="color: rgba(0, 128, 128, 1)">15</span> <span style="color: rgba(0, 0, 0, 1)">└── logs
+</span><span style="color: rgba(0, 128, 128, 1)">16</span> /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3309</span>
+<span style="color: rgba(0, 128, 128, 1)">17</span> <span style="color: rgba(0, 0, 0, 1)">├── backup
+</span><span style="color: rgba(0, 128, 128, 1)">18</span> <span style="color: rgba(0, 0, 0, 1)">├── data
+</span><span style="color: rgba(0, 128, 128, 1)">19</span> <span style="color: rgba(0, 0, 0, 1)">└── logs
+</span><span style="color: rgba(0, 128, 128, 1)">20</span> 
+<span style="color: rgba(0, 128, 128, 1)">21</span> <span style="color: rgba(128, 0, 128, 1)">12</span> directories, <span style="color: rgba(128, 0, 128, 1)">0</span><span style="color: rgba(0, 0, 0, 1)"> files
+</span><span style="color: rgba(0, 128, 128, 1)">22</span> [root@cs software]# <span style="color: rgba(0, 0, 255, 1)">chown</span> -R mysql:mysql /opt/software/mysql<span style="color: rgba(0, 128, 0, 1)">/*</span>
+<span style="color: rgba(0, 128, 128, 1)">23</span> <span style="color: rgba(0, 128, 0, 1)">[root@cs software]# chown -R mysql:mysql /data/mysql/*</span></pre>
+</div>
+<h3>3.4 初始化数据库</h3>
+<p>进行初始化，初始化完成后，会默认创建一个本地的root用户，且无密码</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 0, 0, 1)"># 保证存放数据的目录是空的，避免不必要的问题
+[root@cs software]# </span><span style="color: rgba(0, 0, 255, 1)">rm</span> -rf /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3306</span>/data<span style="color: rgba(0, 128, 0, 1)">/*</span><span style="color: rgba(0, 128, 0, 1)">
+[root@cs software]# mysqld --initialize-insecure  --user=mysql --basedir=/opt/software/mysql --datadir=/data/mysql/3306/data<br>
+2021-05-09T09:41:30.343576Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2021-05-09T09:41:30.557948Z 0 [Warning] InnoDB: New log files created, LSN=45790
+2021-05-09T09:41:30.587516Z 0 [Warning] InnoDB: Creating foreign key constraint system tables.
+2021-05-09T09:41:30.655073Z 0 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: bbcbb587-b0aa-11eb-a2ce-000c295ead38.
+2021-05-09T09:41:30.656498Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+2021-05-09T09:41:30.656990Z 1 [Warning] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.</span></pre>
+</div>
+<p>一堆"Warning"，不要管它。</p>
+<h3>3.5 添加配置文件</h3>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)"> 1</span> <span style="color: rgba(0, 0, 255, 1)">cat</span>  &gt; /etc/my.cnf &lt;&lt;<span style="color: rgba(0, 0, 0, 1)">EOF
+</span><span style="color: rgba(0, 128, 128, 1)"> 2</span> <span style="color: rgba(0, 0, 0, 1)">[mysqld]
+</span><span style="color: rgba(0, 128, 128, 1)"> 3</span> user=<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)"> 4</span> basedir=/opt/software/<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)"> 5</span> datadir=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3306</span>/<span style="color: rgba(0, 0, 0, 1)">data
+</span><span style="color: rgba(0, 128, 128, 1)"> 6</span> server_id=<span style="color: rgba(128, 0, 128, 1)">6</span>
+<span style="color: rgba(0, 128, 128, 1)"> 7</span> port=<span style="color: rgba(128, 0, 128, 1)">3306</span>
+<span style="color: rgba(0, 128, 128, 1)"> 8</span> socket=/tmp/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)"> 9</span> log_error=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3306</span>/logs/<span style="color: rgba(0, 0, 0, 1)">mysql_error.log
+</span><span style="color: rgba(0, 128, 128, 1)">10</span> <span style="color: rgba(0, 0, 0, 1)">[mysql]
+</span><span style="color: rgba(0, 128, 128, 1)">11</span> socket=/tmp/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)">12</span> EOF</pre>
+</div>
+<h3>&nbsp;3.6 使用systemctl管理MySQL服务</h3>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)"> 1</span> <span style="color: rgba(0, 0, 255, 1)">cat</span>  &gt; /etc/systemd/system/mysqld.service &lt;&lt;<span style="color: rgba(0, 0, 0, 1)">EOF
+</span><span style="color: rgba(0, 128, 128, 1)"> 2</span> <span style="color: rgba(0, 0, 0, 1)">[Unit]
+</span><span style="color: rgba(0, 128, 128, 1)"> 3</span> Description=<span style="color: rgba(0, 0, 0, 1)">MySQL Server
+</span><span style="color: rgba(0, 128, 128, 1)"> 4</span> Documentation=<span style="color: rgba(0, 0, 255, 1)">man</span>:mysqld(<span style="color: rgba(128, 0, 128, 1)">8</span><span style="color: rgba(0, 0, 0, 1)">)
+</span><span style="color: rgba(0, 128, 128, 1)"> 5</span> Documentation=http:<span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">dev.mysql.com/doc/refman/en/using-systemd.html</span>
+<span style="color: rgba(0, 128, 128, 1)"> 6</span> After=<span style="color: rgba(0, 0, 0, 1)">network.target
+</span><span style="color: rgba(0, 128, 128, 1)"> 7</span> After=<span style="color: rgba(0, 0, 0, 1)">syslog.target
+</span><span style="color: rgba(0, 128, 128, 1)"> 8</span> <span style="color: rgba(0, 0, 0, 1)">[Install]
+</span><span style="color: rgba(0, 128, 128, 1)"> 9</span> WantedBy=multi-<span style="color: rgba(0, 0, 0, 1)">user.target
+</span><span style="color: rgba(0, 128, 128, 1)">10</span> <span style="color: rgba(0, 0, 0, 1)">[Service]
+</span><span style="color: rgba(0, 128, 128, 1)">11</span> User=<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)">12</span> Group=<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)">13</span> ExecStart=/opt/software/mysql/bin/mysqld --defaults-<span style="color: rgba(0, 0, 255, 1)">file</span>=/etc/<span style="color: rgba(0, 0, 0, 1)">my.cnf
+</span><span style="color: rgba(0, 128, 128, 1)">14</span> LimitNOFILE = <span style="color: rgba(128, 0, 128, 1)">5000</span>
+<span style="color: rgba(0, 128, 128, 1)">15</span> EOF</pre>
+</div>
+<h3>3.7 systemctl命令来管理MySQL服务</h3>
+<div class="cnblogs_code">
+<pre>systemctl start/restart/stop/status/enable/disable mysqld</pre>
+</div>
+<p>测试下：</p>
+<div class="cnblogs_code">
+<pre>[root@cs software]# <span style="color: rgba(0, 0, 255, 1)">find</span> / -<span style="color: rgba(0, 0, 0, 1)">name mysql.sock
+[root@cs software]# systemctl start mysqld
+[root@cs software]# </span><span style="color: rgba(0, 0, 255, 1)">find</span> / -<span style="color: rgba(0, 0, 0, 1)">name mysql.sock
+</span>/tmp/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+[root@cs software]# netstat </span>-lnp|<span style="color: rgba(0, 0, 255, 1)">grep</span> <span style="color: rgba(128, 0, 128, 1)">330</span><span style="color: rgba(0, 0, 0, 1)">
+tcp6       </span><span style="color: rgba(128, 0, 128, 1)">0</span>      <span style="color: rgba(128, 0, 128, 1)">0</span> :::<span style="color: rgba(128, 0, 128, 1)">3306</span>                 :::*                    LISTEN      <span style="color: rgba(128, 0, 128, 1)">8131</span>/mysqld</pre>
+</div>
+<p>启动之后，<code>/tmp</code>下就有了<code>mysql.sock</code>文件，后续我们可以通过这个socket文件来连接数据了。如果使用<code>systemctl</code>停止数据库，这个文件也没了。<br>ok，单台实例创建完毕。</p>
+<h3>3.8、<strong>创建用户并且授权</strong></h3>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)">1</span> grant all on *.* to root@<span style="color: rgba(128, 0, 0, 1)">'</span><span style="color: rgba(128, 0, 0, 1)">localhost</span><span style="color: rgba(128, 0, 0, 1)">'</span> identified by <span style="color: rgba(128, 0, 0, 1)">'</span><span style="color: rgba(128, 0, 0, 1)">123</span><span style="color: rgba(128, 0, 0, 1)">'</span><span style="color: rgba(0, 0, 0, 1)">;
+</span><span style="color: rgba(0, 128, 128, 1)">2</span> grant all on *.* to root@<span style="color: rgba(128, 0, 0, 1)">'</span><span style="color: rgba(128, 0, 0, 1)">%</span><span style="color: rgba(128, 0, 0, 1)">'</span> identified by <span style="color: rgba(128, 0, 0, 1)">'</span><span style="color: rgba(128, 0, 0, 1)">123</span><span style="color: rgba(128, 0, 0, 1)">'</span><span style="color: rgba(0, 0, 0, 1)">;
+</span><span style="color: rgba(0, 128, 128, 1)">3</span> flush privileges;</pre>
+</div>
+<h2>四、<span class="md-plain md-expand">单机多实例</span>配置</h2>
+<h3>4.1 必要的准备</h3>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)">1</span> <span style="color: rgba(0, 0, 0, 1)">[root@cs software]# systemctl stop mysqld
+</span><span style="color: rgba(0, 128, 128, 1)">2</span> [root@cs software]# <span style="color: rgba(0, 0, 255, 1)">mv</span> /etc/my.cnf /etc/my.cnf.bak</pre>
+</div>
+<p>&nbsp;</p>
+<h3>4.2 准备多实例的数据目录</h3>
+<p>由于多实例的数据目录已经在单实例那里创建成功了，这一步就可以略过：<br>每台实例以端口命名，端口名目录下存放配置文件，其中的data目录存放各自的数据。</p>
+<p>&nbsp;</p>
+<h3>4.3 为每个实例创建配置文件</h3>
+<p>我们将每个实例（3306的可配置也可不配置，因为它默认使用的是/etc/my.cnf）的配置文件都放在各自端口目录的下面，视情况修改下面参数，然后直接拷贝运行即可：</p>
+<p>&nbsp;</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)"> 1</span> <span style="color: rgba(0, 0, 255, 1)">cat</span> &gt; /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/my.cnf &lt;&lt;<span style="color: rgba(0, 0, 0, 1)">EOF
+</span><span style="color: rgba(0, 128, 128, 1)"> 2</span> <span style="color: rgba(0, 0, 0, 1)">[mysqld]
+</span><span style="color: rgba(0, 128, 128, 1)"> 3</span> basedir=/opt/software/<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)"> 4</span> datadir=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/<span style="color: rgba(0, 0, 0, 1)">data
+</span><span style="color: rgba(0, 128, 128, 1)"> 5</span> socket=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)"> 6</span> log_error=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/logs/<span style="color: rgba(0, 0, 0, 1)">mysql_error.log
+</span><span style="color: rgba(0, 128, 128, 1)"> 7</span> port=<span style="color: rgba(128, 0, 128, 1)">3307</span>
+<span style="color: rgba(0, 128, 128, 1)"> 8</span> server_id=<span style="color: rgba(128, 0, 128, 1)">7</span>
+<span style="color: rgba(0, 128, 128, 1)"> 9</span> <span style="color: rgba(0, 0, 0, 1)">[client]
+</span><span style="color: rgba(0, 128, 128, 1)">10</span> socket=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)">11</span> <span style="color: rgba(0, 0, 0, 1)">EOF
+</span><span style="color: rgba(0, 128, 128, 1)">12</span> 
+<span style="color: rgba(0, 128, 128, 1)">13</span> <span style="color: rgba(0, 0, 255, 1)">cat</span> &gt; /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3308</span>/my.cnf &lt;&lt;<span style="color: rgba(0, 0, 0, 1)">EOF
+</span><span style="color: rgba(0, 128, 128, 1)">14</span> <span style="color: rgba(0, 0, 0, 1)">[mysqld]
+</span><span style="color: rgba(0, 128, 128, 1)">15</span> basedir=/opt/software/<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)">16</span> datadir=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3308</span>/<span style="color: rgba(0, 0, 0, 1)">data
+</span><span style="color: rgba(0, 128, 128, 1)">17</span> socket=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3308</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)">18</span> log_error=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3308</span>/logs/<span style="color: rgba(0, 0, 0, 1)">mysql_error.log
+</span><span style="color: rgba(0, 128, 128, 1)">19</span> port=<span style="color: rgba(128, 0, 128, 1)">3308</span>
+<span style="color: rgba(0, 128, 128, 1)">20</span> server_id=<span style="color: rgba(128, 0, 128, 1)">8</span>
+<span style="color: rgba(0, 128, 128, 1)">21</span> <span style="color: rgba(0, 0, 0, 1)">[client]
+</span><span style="color: rgba(0, 128, 128, 1)">22</span> socket=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3308</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)">23</span> <span style="color: rgba(0, 0, 0, 1)">EOF
+</span><span style="color: rgba(0, 128, 128, 1)">24</span> 
+<span style="color: rgba(0, 128, 128, 1)">25</span> <span style="color: rgba(0, 0, 255, 1)">cat</span> &gt; /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3309</span>/my.cnf &lt;&lt;<span style="color: rgba(0, 0, 0, 1)">EOF
+</span><span style="color: rgba(0, 128, 128, 1)">26</span> <span style="color: rgba(0, 0, 0, 1)">[mysqld]
+</span><span style="color: rgba(0, 128, 128, 1)">27</span> basedir=/opt/software/<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)">28</span> datadir=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3309</span>/<span style="color: rgba(0, 0, 0, 1)">data
+</span><span style="color: rgba(0, 128, 128, 1)">29</span> socket=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3309</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)">30</span> log_error=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3309</span>/logs/<span style="color: rgba(0, 0, 0, 1)">mysql_error.log
+</span><span style="color: rgba(0, 128, 128, 1)">31</span> port=<span style="color: rgba(128, 0, 128, 1)">3309</span>
+<span style="color: rgba(0, 128, 128, 1)">32</span> server_id=<span style="color: rgba(128, 0, 128, 1)">9</span>
+<span style="color: rgba(0, 128, 128, 1)">33</span> <span style="color: rgba(0, 0, 0, 1)">[client]
+</span><span style="color: rgba(0, 128, 128, 1)">34</span> socket=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3309</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)">35</span> EOF</pre>
+</div>
+<p>完事之后，各自的数据目录下就有了配置文件了：</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)"> 1</span> [root@cs software]# <span style="color: rgba(0, 0, 255, 1)">ls</span> /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/
+<span style="color: rgba(0, 128, 128, 1)"> 2</span> <span style="color: rgba(0, 0, 0, 1)">backup  data  logs  my.cnf
+</span><span style="color: rgba(0, 128, 128, 1)"> 3</span> root@cs software]#  <span style="color: rgba(0, 0, 255, 1)">cat</span> /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/<span style="color: rgba(0, 0, 0, 1)">my.cnf
+</span><span style="color: rgba(0, 128, 128, 1)"> 4</span> <span style="color: rgba(0, 0, 0, 1)">[mysqld]
+</span><span style="color: rgba(0, 128, 128, 1)"> 5</span> basedir=/opt/software/<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)"> 6</span> datadir=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/<span style="color: rgba(0, 0, 0, 1)">data
+</span><span style="color: rgba(0, 128, 128, 1)"> 7</span> socket=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)"> 8</span> log_error=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/logs/<span style="color: rgba(0, 0, 0, 1)">mysql_error.log
+</span><span style="color: rgba(0, 128, 128, 1)"> 9</span> port=<span style="color: rgba(128, 0, 128, 1)">3307</span>
+<span style="color: rgba(0, 128, 128, 1)">10</span> server_id=<span style="color: rgba(128, 0, 128, 1)">7</span>
+<span style="color: rgba(0, 128, 128, 1)">11</span> <span style="color: rgba(0, 0, 0, 1)">[client]
+</span><span style="color: rgba(0, 128, 128, 1)">12</span> socket=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/mysql.sock</pre>
+</div>
+<h3>4.4 授权</h3>
+<div class="cnblogs_code">
+<pre>[root@cs software]# <span style="color: rgba(0, 0, 255, 1)">chown</span> -R mysql.mysql /data/mysql<span style="color: rgba(0, 128, 0, 1)">/*</span></pre>
+</div>
+<p>现在，配置文件完事了，就可以着手进行初始化了。</p>
+<h3>4.5 多实例的初始化</h3>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)">1</span> mysqld --initialize-insecure  --user=mysql --datadir=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/data --basedir=/opt/software/<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)">2</span> mysqld --initialize-insecure  --user=mysql --datadir=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3308</span>/data --basedir=/opt/software/<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)">3</span> mysqld --initialize-insecure  --user=mysql --datadir=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3309</span>/data --basedir=/opt/software/mysql</pre>
+</div>
+<p>上面的命令执行时，会有Warning提示，这里不要管它。注意，如果你的服务器内存较小的话，可能后续启不起来3台实例，不过有个2G内存也差不多了。</p>
+<h3>4.6&nbsp; 配置systemctl</h3>
+<p>实际上，下面这几个配置文件内容都是来自于<code>mysqld.service</code>文件，然后修改了各自实例的配置文件路径：</p>
+<div class="cnblogs_code"><img src="https://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" id="code_img_closed_38fc9ce1-8fd9-4517-aac5-a37e3894b8a9" class="code_img_closed"><img src="https://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" id="code_img_opened_38fc9ce1-8fd9-4517-aac5-a37e3894b8a9" class="code_img_opened" style="display: none">
+<div id="cnblogs_code_open_38fc9ce1-8fd9-4517-aac5-a37e3894b8a9" class="cnblogs_code_hide">
+<pre><span style="color: rgba(0, 128, 128, 1)"> 1</span> <span style="color: rgba(0, 0, 255, 1)">cat</span>  &gt; /etc/systemd/system/mysqld3307.service &lt;&lt;<span style="color: rgba(0, 0, 0, 1)">EOF
+</span><span style="color: rgba(0, 128, 128, 1)"> 2</span> <span style="color: rgba(0, 0, 0, 1)">[Unit]
+</span><span style="color: rgba(0, 128, 128, 1)"> 3</span> Description=<span style="color: rgba(0, 0, 0, 1)">MySQL Server
+</span><span style="color: rgba(0, 128, 128, 1)"> 4</span> Documentation=<span style="color: rgba(0, 0, 255, 1)">man</span>:mysqld(<span style="color: rgba(128, 0, 128, 1)">8</span><span style="color: rgba(0, 0, 0, 1)">)
+</span><span style="color: rgba(0, 128, 128, 1)"> 5</span> Documentation=http:<span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">dev.mysql.com/doc/refman/en/using-systemd.html</span>
+<span style="color: rgba(0, 128, 128, 1)"> 6</span> After=<span style="color: rgba(0, 0, 0, 1)">network.target
+</span><span style="color: rgba(0, 128, 128, 1)"> 7</span> After=<span style="color: rgba(0, 0, 0, 1)">syslog.target
+</span><span style="color: rgba(0, 128, 128, 1)"> 8</span> <span style="color: rgba(0, 0, 0, 1)">[Install]
+</span><span style="color: rgba(0, 128, 128, 1)"> 9</span> WantedBy=multi-<span style="color: rgba(0, 0, 0, 1)">user.target
+</span><span style="color: rgba(0, 128, 128, 1)">10</span> <span style="color: rgba(0, 0, 0, 1)">[Service]
+</span><span style="color: rgba(0, 128, 128, 1)">11</span> User=<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)">12</span> Group=<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)">13</span> ExecStart=/opt/software/mysql/bin/mysqld --defaults-<span style="color: rgba(0, 0, 255, 1)">file</span>=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/<span style="color: rgba(0, 0, 0, 1)">my.cnf
+</span><span style="color: rgba(0, 128, 128, 1)">14</span> LimitNOFILE = <span style="color: rgba(128, 0, 128, 1)">5000</span>
+<span style="color: rgba(0, 128, 128, 1)">15</span> <span style="color: rgba(0, 0, 0, 1)">EOF
+</span><span style="color: rgba(0, 128, 128, 1)">16</span> 
+<span style="color: rgba(0, 128, 128, 1)">17</span> <span style="color: rgba(0, 0, 255, 1)">cat</span>  &gt; /etc/systemd/system/mysqld3308.service &lt;&lt;<span style="color: rgba(0, 0, 0, 1)">EOF
+</span><span style="color: rgba(0, 128, 128, 1)">18</span> <span style="color: rgba(0, 0, 0, 1)">[Unit]
+</span><span style="color: rgba(0, 128, 128, 1)">19</span> Description=<span style="color: rgba(0, 0, 0, 1)">MySQL Server
+</span><span style="color: rgba(0, 128, 128, 1)">20</span> Documentation=<span style="color: rgba(0, 0, 255, 1)">man</span>:mysqld(<span style="color: rgba(128, 0, 128, 1)">8</span><span style="color: rgba(0, 0, 0, 1)">)
+</span><span style="color: rgba(0, 128, 128, 1)">21</span> Documentation=http:<span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">dev.mysql.com/doc/refman/en/using-systemd.html</span>
+<span style="color: rgba(0, 128, 128, 1)">22</span> After=<span style="color: rgba(0, 0, 0, 1)">network.target
+</span><span style="color: rgba(0, 128, 128, 1)">23</span> After=<span style="color: rgba(0, 0, 0, 1)">syslog.target
+</span><span style="color: rgba(0, 128, 128, 1)">24</span> <span style="color: rgba(0, 0, 0, 1)">[Install]
+</span><span style="color: rgba(0, 128, 128, 1)">25</span> WantedBy=multi-<span style="color: rgba(0, 0, 0, 1)">user.target
+</span><span style="color: rgba(0, 128, 128, 1)">26</span> <span style="color: rgba(0, 0, 0, 1)">[Service]
+</span><span style="color: rgba(0, 128, 128, 1)">27</span> User=<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)">28</span> Group=<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)">29</span> ExecStart=/opt/software/mysql/bin/mysqld --defaults-<span style="color: rgba(0, 0, 255, 1)">file</span>=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3308</span>/<span style="color: rgba(0, 0, 0, 1)">my.cnf
+</span><span style="color: rgba(0, 128, 128, 1)">30</span> LimitNOFILE = <span style="color: rgba(128, 0, 128, 1)">5000</span>
+<span style="color: rgba(0, 128, 128, 1)">31</span> <span style="color: rgba(0, 0, 0, 1)">EOF
+</span><span style="color: rgba(0, 128, 128, 1)">32</span> 
+<span style="color: rgba(0, 128, 128, 1)">33</span> <span style="color: rgba(0, 0, 255, 1)">cat</span>  &gt; /etc/systemd/system/mysqld3309.service &lt;&lt;<span style="color: rgba(0, 0, 0, 1)">EOF
+</span><span style="color: rgba(0, 128, 128, 1)">34</span> <span style="color: rgba(0, 0, 0, 1)">[Unit]
+</span><span style="color: rgba(0, 128, 128, 1)">35</span> Description=<span style="color: rgba(0, 0, 0, 1)">MySQL Server
+</span><span style="color: rgba(0, 128, 128, 1)">36</span> Documentation=<span style="color: rgba(0, 0, 255, 1)">man</span>:mysqld(<span style="color: rgba(128, 0, 128, 1)">8</span><span style="color: rgba(0, 0, 0, 1)">)
+</span><span style="color: rgba(0, 128, 128, 1)">37</span> Documentation=http:<span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">dev.mysql.com/doc/refman/en/using-systemd.html</span>
+<span style="color: rgba(0, 128, 128, 1)">38</span> After=<span style="color: rgba(0, 0, 0, 1)">network.target
+</span><span style="color: rgba(0, 128, 128, 1)">39</span> After=<span style="color: rgba(0, 0, 0, 1)">syslog.target
+</span><span style="color: rgba(0, 128, 128, 1)">40</span> <span style="color: rgba(0, 0, 0, 1)">[Install]
+</span><span style="color: rgba(0, 128, 128, 1)">41</span> WantedBy=multi-<span style="color: rgba(0, 0, 0, 1)">user.target
+</span><span style="color: rgba(0, 128, 128, 1)">42</span> <span style="color: rgba(0, 0, 0, 1)">[Service]
+</span><span style="color: rgba(0, 128, 128, 1)">43</span> User=<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)">44</span> Group=<span style="color: rgba(0, 0, 0, 1)">mysql
+</span><span style="color: rgba(0, 128, 128, 1)">45</span> ExecStart=/opt/software/mysql/bin/mysqld --defaults-<span style="color: rgba(0, 0, 255, 1)">file</span>=/data/mysql/<span style="color: rgba(128, 0, 128, 1)">3309</span>/<span style="color: rgba(0, 0, 0, 1)">my.cnf
+</span><span style="color: rgba(0, 128, 128, 1)">46</span> LimitNOFILE = <span style="color: rgba(128, 0, 128, 1)">5000</span>
+<span style="color: rgba(0, 128, 128, 1)">47</span> EOF</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<h3>4.7 启动</h3>
+<p>到这里，多实例的配置基本完毕，可以尝试启动了</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)">1</span> <span style="color: rgba(0, 0, 0, 1)">systemctl start mysqld3307.service
+</span><span style="color: rgba(0, 128, 128, 1)">2</span> <span style="color: rgba(0, 0, 0, 1)">systemctl start mysqld3308.service
+</span><span style="color: rgba(0, 128, 128, 1)">3</span> systemctl start mysqld3309.service</pre>
+</div>
+<p>&nbsp;</p>
+<p>验证下：</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)"> 1</span> [root@cs software]# <span style="color: rgba(0, 0, 255, 1)">find</span> / -<span style="color: rgba(0, 0, 0, 1)">name mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)"> 2</span> /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)"> 3</span> /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3308</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)"> 4</span> /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3309</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)"> 5</span> [root@cs software]# netstat -lnp|<span style="color: rgba(0, 0, 255, 1)">grep</span> <span style="color: rgba(128, 0, 128, 1)">330</span>
+<span style="color: rgba(0, 128, 128, 1)"> 6</span> tcp6       <span style="color: rgba(128, 0, 128, 1)">0</span>      <span style="color: rgba(128, 0, 128, 1)">0</span> :::<span style="color: rgba(128, 0, 128, 1)">3307</span>                 :::*                    LISTEN      <span style="color: rgba(128, 0, 128, 1)">8361</span>/<span style="color: rgba(0, 0, 0, 1)">mysqld         
+</span><span style="color: rgba(0, 128, 128, 1)"> 7</span> tcp6       <span style="color: rgba(128, 0, 128, 1)">0</span>      <span style="color: rgba(128, 0, 128, 1)">0</span> :::<span style="color: rgba(128, 0, 128, 1)">3308</span>                 :::*                    LISTEN      <span style="color: rgba(128, 0, 128, 1)">8368</span>/<span style="color: rgba(0, 0, 0, 1)">mysqld         
+</span><span style="color: rgba(0, 128, 128, 1)"> 8</span> tcp6       <span style="color: rgba(128, 0, 128, 1)">0</span>      <span style="color: rgba(128, 0, 128, 1)">0</span> :::<span style="color: rgba(128, 0, 128, 1)">3309</span>                 :::*                    LISTEN      <span style="color: rgba(128, 0, 128, 1)">8636</span>/<span style="color: rgba(0, 0, 0, 1)">mysqld         
+</span><span style="color: rgba(0, 128, 128, 1)"> 9</span> unix  <span style="color: rgba(128, 0, 128, 1)">2</span>      [ ACC ]     STREAM     LISTENING     <span style="color: rgba(128, 0, 128, 1)">55795</span>    <span style="color: rgba(128, 0, 128, 1)">8361</span>/mysqld          /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)">10</span> unix  <span style="color: rgba(128, 0, 128, 1)">2</span>      [ ACC ]     STREAM     LISTENING     <span style="color: rgba(128, 0, 128, 1)">30540</span>    <span style="color: rgba(128, 0, 128, 1)">8368</span>/mysqld          /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3308</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)">11</span> unix  <span style="color: rgba(128, 0, 128, 1)">2</span>      [ ACC ]     STREAM     LISTENING     <span style="color: rgba(128, 0, 128, 1)">74758</span>    <span style="color: rgba(128, 0, 128, 1)">8636</span>/mysqld          /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3309</span>/mysql.sock</pre>
+</div>
+<p>&nbsp;</p>
+<p>恢复单实例的配置文件</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)">1</span> [root@cs software]# <span style="color: rgba(0, 0, 255, 1)">mv</span> /etc/my.cnf.bak /etc/my.cnf</pre>
+</div>
+<p>然后启动3306这台实例，注意，3306的跟其他的实例不太一样：</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)"> 1</span> <span style="color: rgba(0, 0, 0, 1)">[root@cs software]# systemctl start mysqld.service
+</span><span style="color: rgba(0, 128, 128, 1)"> 2</span> [root@cs software]# <span style="color: rgba(0, 0, 255, 1)">find</span> / -<span style="color: rgba(0, 0, 0, 1)">name mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)"> 3</span> /tmp/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)"> 4</span> /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)"> 5</span> /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3308</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)"> 6</span> /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3309</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)"> 7</span> [root@cs software]# netstat -lnp|<span style="color: rgba(0, 0, 255, 1)">grep</span> <span style="color: rgba(128, 0, 128, 1)">330</span>
+<span style="color: rgba(0, 128, 128, 1)"> 8</span> tcp6       <span style="color: rgba(128, 0, 128, 1)">0</span>      <span style="color: rgba(128, 0, 128, 1)">0</span> :::<span style="color: rgba(128, 0, 128, 1)">3306</span>                 :::*                    LISTEN      <span style="color: rgba(128, 0, 128, 1)">8748</span>/<span style="color: rgba(0, 0, 0, 1)">mysqld         
+</span><span style="color: rgba(0, 128, 128, 1)"> 9</span> tcp6       <span style="color: rgba(128, 0, 128, 1)">0</span>      <span style="color: rgba(128, 0, 128, 1)">0</span> :::<span style="color: rgba(128, 0, 128, 1)">3307</span>                 :::*                    LISTEN      <span style="color: rgba(128, 0, 128, 1)">8361</span>/<span style="color: rgba(0, 0, 0, 1)">mysqld         
+</span><span style="color: rgba(0, 128, 128, 1)">10</span> tcp6       <span style="color: rgba(128, 0, 128, 1)">0</span>      <span style="color: rgba(128, 0, 128, 1)">0</span> :::<span style="color: rgba(128, 0, 128, 1)">3308</span>                 :::*                    LISTEN      <span style="color: rgba(128, 0, 128, 1)">8368</span>/<span style="color: rgba(0, 0, 0, 1)">mysqld         
+</span><span style="color: rgba(0, 128, 128, 1)">11</span> tcp6       <span style="color: rgba(128, 0, 128, 1)">0</span>      <span style="color: rgba(128, 0, 128, 1)">0</span> :::<span style="color: rgba(128, 0, 128, 1)">3309</span>                 :::*                    LISTEN      <span style="color: rgba(128, 0, 128, 1)">8636</span>/<span style="color: rgba(0, 0, 0, 1)">mysqld         
+</span><span style="color: rgba(0, 128, 128, 1)">12</span> unix  <span style="color: rgba(128, 0, 128, 1)">2</span>      [ ACC ]     STREAM     LISTENING     <span style="color: rgba(128, 0, 128, 1)">55795</span>    <span style="color: rgba(128, 0, 128, 1)">8361</span>/mysqld          /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)">13</span> unix  <span style="color: rgba(128, 0, 128, 1)">2</span>      [ ACC ]     STREAM     LISTENING     <span style="color: rgba(128, 0, 128, 1)">30540</span>    <span style="color: rgba(128, 0, 128, 1)">8368</span>/mysqld          /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3308</span>/<span style="color: rgba(0, 0, 0, 1)">mysql.sock
+</span><span style="color: rgba(0, 128, 128, 1)">14</span> unix  <span style="color: rgba(128, 0, 128, 1)">2</span>      [ ACC ]     STREAM     LISTENING     <span style="color: rgba(128, 0, 128, 1)">74758</span>    <span style="color: rgba(128, 0, 128, 1)">8636</span>/mysqld          /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3309</span>/mysql.sock</pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="连接管理">五、连接管理</h2>
+<p>现在4个实例都能正常运行后，摆在我们面前的是怎么连接到指定的实例？<br>有以下两种方式可以连接到指定数据库：</p>
+<p>&nbsp;</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)"> 1</span> <span style="color: rgba(0, 0, 0, 1)"># 注意，此时的登录密码都为空，直接回车即可
+</span><span style="color: rgba(0, 128, 128, 1)"> 2</span> [root@cs software]# mysql -uroot -p -S /tmp/mysql.sock -e <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">select @@server_id</span><span style="color: rgba(128, 0, 0, 1)">"</span>
+<span style="color: rgba(0, 128, 128, 1)"> 3</span> <span style="color: rgba(0, 0, 0, 1)">Enter password: 
+</span><span style="color: rgba(0, 128, 128, 1)"> 4</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)"> 5</span> | @@server_id |
+<span style="color: rgba(0, 128, 128, 1)"> 6</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)"> 7</span> |           <span style="color: rgba(128, 0, 128, 1)">6</span> |
+<span style="color: rgba(0, 128, 128, 1)"> 8</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)"> 9</span> [root@cs software]# mysql -uroot -p -S /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3307</span>/mysql.sock -e <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">select @@server_id</span><span style="color: rgba(128, 0, 0, 1)">"</span>
+<span style="color: rgba(0, 128, 128, 1)">10</span> <span style="color: rgba(0, 0, 0, 1)">Enter password: 
+</span><span style="color: rgba(0, 128, 128, 1)">11</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">12</span> | @@server_id |
+<span style="color: rgba(0, 128, 128, 1)">13</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">14</span> |           <span style="color: rgba(128, 0, 128, 1)">7</span> |
+<span style="color: rgba(0, 128, 128, 1)">15</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">16</span> [root@cs software]# mysql -uroot -p -S /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3308</span>/mysql.sock -e <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">select @@server_id</span><span style="color: rgba(128, 0, 0, 1)">"</span>
+<span style="color: rgba(0, 128, 128, 1)">17</span> <span style="color: rgba(0, 0, 0, 1)">Enter password: 
+</span><span style="color: rgba(0, 128, 128, 1)">18</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">19</span> | @@server_id |
+<span style="color: rgba(0, 128, 128, 1)">20</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">21</span> |           <span style="color: rgba(128, 0, 128, 1)">8</span> |
+<span style="color: rgba(0, 128, 128, 1)">22</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">23</span> [root@cs software]# mysql -uroot -p -S /data/mysql/<span style="color: rgba(128, 0, 128, 1)">3309</span>/mysql.sock -e <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">select @@server_id</span><span style="color: rgba(128, 0, 0, 1)">"</span>
+<span style="color: rgba(0, 128, 128, 1)">24</span> <span style="color: rgba(0, 0, 0, 1)">Enter password: 
+</span><span style="color: rgba(0, 128, 128, 1)">25</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">26</span> | @@server_id |
+<span style="color: rgba(0, 128, 128, 1)">27</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">28</span> |           <span style="color: rgba(128, 0, 128, 1)">9</span> |
+<span style="color: rgba(0, 128, 128, 1)">29</span> +-------------+</pre>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;以上是通过不同的<code>mysql.sock</code>来来接指定的数据库实例，除此之外，还可以通过<code>-h -P</code>参数来连接到指定的数据库实例</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)"> 1</span> [root@cs software]# mysql -uroot -p -h127.<span style="color: rgba(128, 0, 128, 1)">0.0</span>.<span style="color: rgba(128, 0, 128, 1)">1</span> -P3306 -e <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">select @@server_id</span><span style="color: rgba(128, 0, 0, 1)">"</span>
+<span style="color: rgba(0, 128, 128, 1)"> 2</span> <span style="color: rgba(0, 0, 0, 1)">Enter password: 
+</span><span style="color: rgba(0, 128, 128, 1)"> 3</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)"> 4</span> | @@server_id |
+<span style="color: rgba(0, 128, 128, 1)"> 5</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)"> 6</span> |           <span style="color: rgba(128, 0, 128, 1)">6</span> |
+<span style="color: rgba(0, 128, 128, 1)"> 7</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)"> 8</span> [root@cs software]# mysql -uroot -p -h127.<span style="color: rgba(128, 0, 128, 1)">0.0</span>.<span style="color: rgba(128, 0, 128, 1)">1</span> -P3307 -e <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">select @@server_id</span><span style="color: rgba(128, 0, 0, 1)">"</span>
+<span style="color: rgba(0, 128, 128, 1)"> 9</span> <span style="color: rgba(0, 0, 0, 1)">Enter password: 
+</span><span style="color: rgba(0, 128, 128, 1)">10</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">11</span> | @@server_id |
+<span style="color: rgba(0, 128, 128, 1)">12</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">13</span> |           <span style="color: rgba(128, 0, 128, 1)">7</span> |
+<span style="color: rgba(0, 128, 128, 1)">14</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">15</span> [root@cs software]# mysql -uroot -p -h127.<span style="color: rgba(128, 0, 128, 1)">0.0</span>.<span style="color: rgba(128, 0, 128, 1)">1</span> -P3308 -e <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">select @@server_id</span><span style="color: rgba(128, 0, 0, 1)">"</span>
+<span style="color: rgba(0, 128, 128, 1)">16</span> <span style="color: rgba(0, 0, 0, 1)">Enter password: 
+</span><span style="color: rgba(0, 128, 128, 1)">17</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">18</span> | @@server_id |
+<span style="color: rgba(0, 128, 128, 1)">19</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">20</span> |           <span style="color: rgba(128, 0, 128, 1)">8</span> |
+<span style="color: rgba(0, 128, 128, 1)">21</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">22</span> [root@cs software]# mysql -uroot -p -h127.<span style="color: rgba(128, 0, 128, 1)">0.0</span>.<span style="color: rgba(128, 0, 128, 1)">1</span> -P3309 -e <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">select @@server_id</span><span style="color: rgba(128, 0, 0, 1)">"</span>
+<span style="color: rgba(0, 128, 128, 1)">23</span> <span style="color: rgba(0, 0, 0, 1)">Enter password: 
+</span><span style="color: rgba(0, 128, 128, 1)">24</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">25</span> | @@server_id |
+<span style="color: rgba(0, 128, 128, 1)">26</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">27</span> |           <span style="color: rgba(128, 0, 128, 1)">9</span> |
+<span style="color: rgba(0, 128, 128, 1)">28</span> +-------------+</pre>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 id="用户管理">六 、用户管理</h2>
+<p>&nbsp;默认的，上面使用root用户只有本地的访问权限，远程无法使用，且初始化时，我们将初始密码也设置为空了：</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)">1</span> [root@cs software]# mysql -uroot -p -h127.<span style="color: rgba(128, 0, 128, 1)">0.0</span>.<span style="color: rgba(128, 0, 128, 1)">1</span> -P3306 -e <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">select user,host from mysql.user</span><span style="color: rgba(128, 0, 0, 1)">"</span>
+<span style="color: rgba(0, 128, 128, 1)">2</span> <span style="color: rgba(0, 0, 0, 1)">Enter password: 
+</span><span style="color: rgba(0, 128, 128, 1)">3</span> +---------------+-----------+
+<span style="color: rgba(0, 128, 128, 1)">4</span> | user          | host      |
+<span style="color: rgba(0, 128, 128, 1)">5</span> +---------------+-----------+
+<span style="color: rgba(0, 128, 128, 1)">6</span> | mysql.session | localhost |
+<span style="color: rgba(0, 128, 128, 1)">7</span> | mysql.sys     | localhost |
+<span style="color: rgba(0, 128, 128, 1)">8</span> | root          | localhost |
+<span style="color: rgba(0, 128, 128, 1)">9</span> +---------------+-----------+</pre>
+</div>
+<p>&nbsp;</p>
+<p>所以，这里我们创建远程用户和创建密码再配置相关权限：</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)">1</span> --<span style="color: rgba(0, 0, 0, 1)"> 分别登录到各自的实例中，此时密码还未空，直接回车，然后执行下面命令，进行创建用户并授权
+</span><span style="color: rgba(0, 128, 128, 1)">2</span> -- mysql -uroot -p -h127.<span style="color: rgba(128, 0, 128, 1)">0.0</span>.<span style="color: rgba(128, 0, 128, 1)">1</span> -<span style="color: rgba(0, 0, 0, 1)">P3306
+</span><span style="color: rgba(0, 128, 128, 1)">3</span> -- mysql -uroot -p -h127.<span style="color: rgba(128, 0, 128, 1)">0.0</span>.<span style="color: rgba(128, 0, 128, 1)">1</span> -<span style="color: rgba(0, 0, 0, 1)">P3307
+</span><span style="color: rgba(0, 128, 128, 1)">4</span> -- mysql -uroot -p -h127.<span style="color: rgba(128, 0, 128, 1)">0.0</span>.<span style="color: rgba(128, 0, 128, 1)">1</span> -<span style="color: rgba(0, 0, 0, 1)">P3308
+</span><span style="color: rgba(0, 128, 128, 1)">5</span> -- mysql -uroot -p -h127.<span style="color: rgba(128, 0, 128, 1)">0.0</span>.<span style="color: rgba(128, 0, 128, 1)">1</span> -<span style="color: rgba(0, 0, 0, 1)">P3309
+</span><span style="color: rgba(0, 128, 128, 1)">6</span> 
+<span style="color: rgba(0, 128, 128, 1)">7</span> grant all on *.* to root@<span style="color: rgba(128, 0, 0, 1)">'</span><span style="color: rgba(128, 0, 0, 1)">localhost</span><span style="color: rgba(128, 0, 0, 1)">'</span> identified by <span style="color: rgba(128, 0, 0, 1)">'</span><span style="color: rgba(128, 0, 0, 1)">123</span><span style="color: rgba(128, 0, 0, 1)">'</span><span style="color: rgba(0, 0, 0, 1)">;
+</span><span style="color: rgba(0, 128, 128, 1)">8</span> grant all on *.* to root@<span style="color: rgba(128, 0, 0, 1)">'</span><span style="color: rgba(128, 0, 0, 1)">%</span><span style="color: rgba(128, 0, 0, 1)">'</span> identified by <span style="color: rgba(128, 0, 0, 1)">'</span><span style="color: rgba(128, 0, 0, 1)">123</span><span style="color: rgba(128, 0, 0, 1)">'</span><span style="color: rgba(0, 0, 0, 1)">;
+</span><span style="color: rgba(0, 128, 128, 1)">9</span> flush privileges;</pre>
+</div>
+<p>&nbsp;</p>
+<p>注意，上面的创建用户和授权命令仅适用于MySQL8.0一下，因为从MySQL8.0开始，创建用户和授权分为两步操作，这点需要注意。<br>创建完成后，就可以通过密码进行登录了：</p>
+<div class="cnblogs_code">
+<pre><span style="color: rgba(0, 128, 128, 1)"> 1</span> [root@cs software]# mysql -uroot -p123 -h127.<span style="color: rgba(128, 0, 128, 1)">0.0</span>.<span style="color: rgba(128, 0, 128, 1)">1</span> -P3306 -e <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">select @@server_id</span><span style="color: rgba(128, 0, 0, 1)">"</span>
+<span style="color: rgba(0, 128, 128, 1)"> 2</span> <span style="color: rgba(0, 0, 0, 1)">mysql: [Warning] Using a password on the command line interface can be insecure.
+</span><span style="color: rgba(0, 128, 128, 1)"> 3</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)"> 4</span> | @@server_id |
+<span style="color: rgba(0, 128, 128, 1)"> 5</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)"> 6</span> |           <span style="color: rgba(128, 0, 128, 1)">6</span> |
+<span style="color: rgba(0, 128, 128, 1)"> 7</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)"> 8</span> [root@cs software]# mysql -uroot -p123 -h127.<span style="color: rgba(128, 0, 128, 1)">0.0</span>.<span style="color: rgba(128, 0, 128, 1)">1</span> -P3307 -e <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">select @@server_id</span><span style="color: rgba(128, 0, 0, 1)">"</span>
+<span style="color: rgba(0, 128, 128, 1)"> 9</span> <span style="color: rgba(0, 0, 0, 1)">mysql: [Warning] Using a password on the command line interface can be insecure.
+</span><span style="color: rgba(0, 128, 128, 1)">10</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">11</span> | @@server_id |
+<span style="color: rgba(0, 128, 128, 1)">12</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">13</span> |           <span style="color: rgba(128, 0, 128, 1)">7</span> |
+<span style="color: rgba(0, 128, 128, 1)">14</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">15</span> [root@cs software]# mysql -uroot -p123 -h127.<span style="color: rgba(128, 0, 128, 1)">0.0</span>.<span style="color: rgba(128, 0, 128, 1)">1</span> -P3308 -e <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">select @@server_id</span><span style="color: rgba(128, 0, 0, 1)">"</span>
+<span style="color: rgba(0, 128, 128, 1)">16</span> <span style="color: rgba(0, 0, 0, 1)">mysql: [Warning] Using a password on the command line interface can be insecure.
+</span><span style="color: rgba(0, 128, 128, 1)">17</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">18</span> | @@server_id |
+<span style="color: rgba(0, 128, 128, 1)">19</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">20</span> |           <span style="color: rgba(128, 0, 128, 1)">8</span> |
+<span style="color: rgba(0, 128, 128, 1)">21</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">22</span> [root@cs software]# mysql -uroot -p123 -h127.<span style="color: rgba(128, 0, 128, 1)">0.0</span>.<span style="color: rgba(128, 0, 128, 1)">1</span> -P3309 -e <span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">select @@server_id</span><span style="color: rgba(128, 0, 0, 1)">"</span>
+<span style="color: rgba(0, 128, 128, 1)">23</span> <span style="color: rgba(0, 0, 0, 1)">mysql: [Warning] Using a password on the command line interface can be insecure.
+</span><span style="color: rgba(0, 128, 128, 1)">24</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">25</span> | @@server_id |
+<span style="color: rgba(0, 128, 128, 1)">26</span> +-------------+
+<span style="color: rgba(0, 128, 128, 1)">27</span> |           <span style="color: rgba(128, 0, 128, 1)">9</span> |
+<span style="color: rgba(0, 128, 128, 1)">28</span> +-------------+</pre>
+</div>
+<p>&nbsp;</p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2021-05-10 19:14</span>&nbsp;
+<a href="https://www.cnblogs.com/yj0405/">讷言敏行~</a>&nbsp;
+阅读(<span id="post_view_count">6</span>)&nbsp;
+评论(<span id="post_comment_count">0</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14752218" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(14752218);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/10.3.1/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 647209, cb_blogApp = 'yj0405', cb_blogUserGuid = '17f01bdd-8495-48cc-2239-08d886dbd26e';
+    var cb_entryId = 14752218, cb_entryCreatedDate = '2021-05-10 19:14', cb_postType = 1;
+    updatePostStats(
+        [cb_entryId],
+        function(id, count) { $("#post_view_count").text(count) },
+        function(id, count) { $("#post_comment_count").text(count) })
+    zoomManager.apply("#cnblogs_post_body img:not(.code_img_closed):not(.code_img_opened)");
+</script>
+<a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <div id="cnblogs_c1" class="under-post-card">
+        <div id='div-gpt-ad-1592365906576-0' style='width: 300px; height: 250px;'></div>
+    </div>
+    <div id="under_post_card1"></div>
+    <div id="cnblogs_c2" class="under-post-card">
+        <div id='div-gpt-ad-1592366332455-0' style='width: 468px; height: 60px;'></div>
+    </div>
+    <div id="under_post_card2"></div>
+    <div id="HistoryToday" class="under-post-card"></div>
+    <script type="text/javascript">
+       var commentManager = new blogCommentManager();
+       commentManager.renderComments(0);
+       fixPostBody();
+       deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);       deliverT2();
+       deliverC1C2();
+       loadNewsAndKb();
+       loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);       LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+       GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+       loadOptUnderPost();
+       GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+	<div id="sideBar">
+		<div id="sideBarMain">
+			<div id="sidebar_news" class="newsItem">
             <script>loadBlogNews();</script>
 </div>
 <div id="sidebar_c3"></div>
-<div id="blog-sidecolumn"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
                     <script>loadBlogSideColumn();</script>
-
-</div>
-</div>
-<div class="clear"></div>
-<div id="footer">
-<p id="footer">
-	Powered by: 
-	<br />
-	
-	<a href="https://www.cnblogs.com/" id="footer_site_link">博客园</a>
-	<br />
-	Copyright &copy; 2021 拓荒者
+			</div>			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2021 讷言敏行~
 <br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
 
-</p>
 
 
-</div>
-</div>
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
 
 
-    
+    <div id="page_end_html">
+        
+<script type="text/javascript">
+    // 生成目录索引列表
+    // ref: http://www.cnblogs.com/wangqiguo/p/4355032.html
+    // modified by: zzq
+    function GenerateContentList() {
+        var mainContent = $('#cnblogs_post_body');
+        var h2_list = $('#cnblogs_post_body h2');//如果你的章节标题不是h2,只需要将这里的h2换掉即可
 
-    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjtjH3O7xxcINdz-KMRIziFpikxvrPEv0rNVkVGa8TAJ0cLyQgVpGcZGn1Lp0Mx1maSBTN46o6czM3cQiFh2ONKAkTiuSx3xsHUpmJB5rbe9mNfFRZC_YG1QVWR0h6eWIbk" />
+        if (mainContent.length < 1) 
+            return;
+
+        if (h2_list.length > 0) {
+            var content = '<a name="_labelTop"></a>';
+            content += '<div id="navCategory" style="color:#152e97;">';
+            content += '<p style="font-size:18px;"><b>目录</b></p>';
+            content += '<ul>';
+            for (var i = 0; i < h2_list.length; i++) {
+                var go_to_top = '<div style="text-align: right;"><a href="#_labelTop" style="color:#f68a33">回到顶部</a><a name="_label' + i + '"></a></div>';
+                $(h2_list[i]).before(go_to_top);
+
+                var h3_list = $(h2_list[i]).nextAll("h3");
+                var li3_content = '';
+                for (var j = 0; j < h3_list.length; j++) {
+                    var tmp = $(h3_list[j]).prevAll('h2').first();
+                    if (!tmp.is(h2_list[i]))
+                        break;
+                    var li3_anchor = '<a name="_label' + i + '_' + j + '"></a>';
+                    $(h3_list[j]).before(li3_anchor);
+                    li3_content += '<li><a href="#_label' + i + '_' + j + '">' + $(h3_list[j]).text() + '</a></li>';
+                }
+
+                var li2_content = '';
+                if (li3_content.length > 0)
+                    li2_content = '<li><a href="#_label' + i + '">' + $(h2_list[i]).text() + '</a><ul>' + li3_content + '</ul></li>';
+                else
+                    li2_content = '<li><a href="#_label' + i + '">' + $(h2_list[i]).text() + '</a></li>';
+                content += li2_content;
+            }
+            content += '</ul>';
+            content += '</div><p>&nbsp;</p>';
+            content += '<hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>';
+            if ($('#cnblogs_post_body').length != 0) {
+                $($('#cnblogs_post_body')[0]).prepend(content);
+            }
+        }
+    }
+
+    GenerateContentList();
+
+    var content = 'width=device-width, initial-scale=1 user-scalable=no';
+    var viewport = document.createElement('meta');
+    viewport.setAttribute('name', 'viewport');
+    viewport.setAttribute('content', content);
+    document.head.appendChild(viewport);
+</script>
+
+
+
+
+
+    </div>
+
+    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjuAnu5M6gQ4orVH3WkBDpI2xWfS3Iff74q4PXSz76WwYFYfmpy0ynKa-dETP7d4Z_hmTsmxokPYfmTN1entUs83rl7luC62VWLXA8EgdaRWdXifft-pcQzZOOQ1ptnE-b4" />
 </body>
 </html>

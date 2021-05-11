@@ -1,2527 +1,603 @@
-﻿<!doctype html>
-<!-- [ published at 2019-09-07 19:35:06 ] -->
-
-<html>
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>2019七夕_新浪网</title>
-		<meta name="Keywords" content="七夕" />
-				<meta name="Description" content="" />
-		<meta name="subjectid" content="hytcerm7589575">
-		
-		<link href="http://sjs2.sinajs.cn/video/theme/cms_widget/css/common/public.css?v=1.0" rel="stylesheet" type="text/css"/>
-		<link href="http://sjs2.sinajs.cn/video/theme/cms_widget/css/theme/theme01.css?v=1.0" rel="stylesheet" type="text/css" />
-		<style>
-			/*通栏样式*/
-			 
-			.CC-wrapper{ width:980px; margin:0 auto;}
-			@media (min-width:1360px) and (max-width: 1599px){
-				.CC-wrapper{ width:1180px;}
-			}
-			@media screen and (min-width: 1600px){
-				.CC-wrapper{ width:1380px;}
-			}
-			.CM-topics-head .banner{ width:100%; height:320px; position:relative;}
-			.CM-topics-head .sina15-top-bar-inner { width:100%; margin:0 auto;}
-			.CM-topics-head .banner-shadow{ width:100%; height:100%; background:url(http://n.sinaimg.cn/shadow/simple_subject/bg-shadow.png) repeat-x; position:absolute; top:0; left:0;}
-			.CM-topics-head .banner-des{ width:980px; margin:0 auto; color:#fff; position: absolute; z-index:1; left:50%; margin-left:-490px;}
-			.CM-topics-head .banner-des h2{ font-size:60px; line-height:80px; padding:50px 0 20px; font-weight:700;}
-			.CM-topics-head .banner-info{ font-size:18px;}
-			.CM-topics-head .banner-info span{ margin-right:40px;}
-			.CM-topics-head .banner-main{ position: relative; z-index:2;  width:920px; padding:30px; margin:0 auto; background:#f7f7f7; box-shadow:0 0 8px #9fa4ac; overflow:hidden; zoom:1; *padding-bottom:0; margin-top:-90px;}
-			.CM-topics-head .abstract{ float:left; margin-right:320px; padding-right:20px; border-right:1px solid #e9e9e9;}
-			.CM-topics-head .abstract .title{ font-size:18px; margin-bottom:10px; font-weight:700;}
-			.CM-topics-head .abstract p{ font-size:14px; line-height:24px; min-height:96px; min-width:579px;}
-			.CM-topics-head .sea-sha{ float:right; width:300px; margin-left:-320px; *margin-left:-300px;}
-			.CM-topics-head .search{ margin-bottom:38px;}
-			.CM-topics-head .search input{ width:180px; padding:14px 15px 14px 14px; border:1px solid #e9e9e9; border-right:0 none;  font-size:15px; line-height:20px; vertical-align:middle;}
-			.CM-topics-head .search .default{ color:#bababa;}
-			.CM-topics-head .search input::-webkit-input-placeholder {color:#bababa;}
-			.CM-topics-head .search input::-moz-placeholder { color:#bababa;}
-			.CM-topics-head .search input:-ms-input-placeholder {color:#bababa;}
-			.CM-topics-head .search .btn{ display:inline-block; height:50px; line-height:50px; width:90px; text-align:center; color:#fff; font-size:18px; text-decoration:none;vertical-align:middle;}
-			.CM-topics-head .share-txt{ font-size:18px; float:left; height:32px; line-height:32px;}
-			.CM-topics-head .website{ float:left; width:190px; height:32px;}
-			/*专题头部分享*/
-			.CM-topics-head .bshare-custom a{width: 5px!important;height: 32px!important; padding-left:27px!important; margin:0 0 0 6px!important;background:url(http://n.sinaimg.cn/shadow/simple_subject/share.png) no-repeat 0 0!important;display:inline-block;}
-			.CM-topics-head .bshare-custom .bshare-sinaminiblog {background-position:0 0!important;}
-			.CM-topics-head .bshare-custom .bshare-renren {background-position:-38px 0!important;}
-			.CM-topics-head .bshare-custom .bshare-qqmb {background-position:-76px 0!important;}
-			.CM-topics-head .bshare-custom .bshare-douban {background-position:-114px 0!important;}
-			.CM-topics-head .bshare-custom .bshare-weixin {background:url(http://n.sinaimg.cn/shadow/simple_subject/weixin.gif) no-repeat 0 0!important;}
-			.CM-topics-head .bshare-custom a.bshare-more.more-style-addthis {background-position:-152px 0!important;}
-			@media (min-width:1360px) and (max-width: 1599px){
-				.CM-topics-head .banner-des{ width:1180px;}
-				.CM-topics-head .banner-main{ width:1120px;}
-				.CM-topics-head .abstract p{ min-width:779px;}
-			}
-			@media screen and (min-width: 1600px){
-				.CM-topics-head .banner-des{ width:1380px;}
-				.CM-topics-head .banner-main{ width:1320px;}
-				.CM-topics-head .abstract p{ min-width:979px;}
-			}
-			.CM-topics-headimg .banner,.CM-topics-headimg .banner .banner-shadow { background:none;}
-			.theme02 .CM-topics-headimg .banner,.theme01 .CM-topics-headimg .banner{background:none;}
-			.CM-topics-headimg .banner{ min-height:160px; max-height:360px;overflow:hidden; height:auto;}
-			.CM-topics-headimg .banner .banner-shadow{ text-align:center; position:static;}
-			.CM-topics-headimg .banner-main{ margin-top:5px;}
-			.CM-topics-headimg .sina15-top-bar-inner{min-height:160px; max-height:360px;}
-		</style>
-		<!--基础数据配置 begin-->
-		<script type="text/javascript">
-			/*****************模块加载控制器定义*******************/
-			window.$widget = [];
-			window.$widgetconfig = {
-				jspath: 'http://sjs2.sinajs.cn/video/theme/cms_widget/js/',
-				csspath: 'http://sjs2.sinajs.cn/video/theme/cms_widget/css/',
-				jsversion: '1.1', //js版本号
-				cssversion: '1.0' //css版本号
-			};
-			window.$widget_single = function(id) {
-				var r = [];
-				for(var i in window.$widget) {
-					if(id == window.$widget[i].id) {
-						r.push(window.$widget[i]);
-					}
-				}
-				return r;
-			};
-			window.$widgetids = [];
-			window.$widgetadd = function(obj){
-				var flag = false;
-				var idx = -1;
-				for(var i in window.$widgetids) {
-					if(window.$widgetids[i] == obj.id) {
-						flag = true; 
-						idx = i;
-						break;
-					}
-				}
-				if(flag) {
-					window.$widgetids.splice(idx,1,obj.id);
-					window.$widget.splice(idx,1,obj);               
-				}
-				if(!flag) {
-					window.$widgetids.push(obj.id);
-					window.$widget.push(obj);
-				}
-			};  
-			/**************php打印到页面上的数据*****************/
-			//有些数据php可直接打印到页面上方便读取。所有打印的数据都在命名空间_SINANEWSDATA下
-			window._SINANEWSDATA = {
-				subjectName: 'shadow_simple_subject'
-			};
-		</script>
-		<!--基础数据配置 end-->
-				<style>.CM-focus {border:1px solid #ededed; overflow:hidden;  }
-.CM-focus .slide-img{position:relative;width:100%; }
-.span6 .CM-focus{max-width:600px; max-height:326px;}
-.span8 .CM-focus{max-width:906px; max-height:510px;}
-.CM-focus .slide-arrow-left,.CM-focus .slide-arrow-right,.CM-focus .txt,.CM-focus .icon_del,.CM-focus .icon_video{ position:absolute;}
-.CM-focus .slide-arrow-left{left:0;top:50%; margin-top:-37px; display:block; width:48px; height:74px;  }
-.CM-focus .slide-arrow-right{ right:0; top:50%; margin-top:-37px; display:block; width:48px; height:74px;}
-.CM-focus .slide-ul{ width:100%;overflow: hidden;}
-.CM-focus .slide-ul ul{ overflow: hidden;background:#f5f5f5;  }
-.CM-focus .slide-ul ul .photo_k a{ display: inline-block;}
-.CM-focus .slide-ul li{width:auto; position:relative;float:left;  }
-.CM-focus .slide-ul .photo_k{width:100%; overflow: hidden; text-align:center;*font-family:Arial;*font-size:655px;}
-.CM-focus .slide-ul .photo_k .W100{ width:100%;}
-.CM-focus .slide-arrow-left .icon-slide-arrow,.CM-focus .slide-arrow-right .icon-slide-arrow{ position:absolute; top:50%; margin-top:-37px; display:block; width:48px; height:74px; background:url(http://sjs2.sinajs.cn/video/theme/cms_widget/images/arrow.png) no-repeat;  }
-.CM-focus .slide-arrow-left .icon-slide-arrow{background-position:0 0; left:0;}
-.CM-focus .slide-arrow-left .icon-slide-arrow:hover{background-position:0 -105px;}
-.CM-focus .slide-arrow-left .icon-slide-arrow:active{background-position:0 -210px;}
-.CM-focus .slide-arrow-left .icon-slide-arrow.disable{background-position:0 -316px; cursor:default;}
-.CM-focus .slide-arrow-right .icon-slide-arrow{background-position:-62px 0; right:0;}
-.CM-focus .slide-arrow-right .icon-slide-arrow:hover{background-position:-62px -105px;}
-.CM-focus .slide-arrow-right .icon-slide-arrow:active{background-position:-62px -210px;}
-.CM-focus .slide-arrow-right .icon-slide-arrow.disable{background-position:-62px -316px; cursor:default;}
-.CM-focus .txt{ margin-left:1px; bottom:0; left:0; height:50px; background:#666;background: rgba(0, 0, 0, .6); width:99.8%; }
-.CM-focus .txt h2{ font-size:20px; color:#fff; line-height:50px; text-indent:20px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;}
-.CM-focus .txt h2 a{ color:#fff;}
-.CM-focus .icon_del{ display:block; top:0; right:0; width:50px; height:50px; background:url(http://sjs2.sinajs.cn/video/theme/cms_widget/images/icon_del.png) 0 0 no-repeat;}
-.CM-focus .icon_del:hover{ background-position:-71px 0;text-indent:-9999px;z-index:100;}
-.CM-focus .icon_video{ background:url(http://sjs2.sinajs.cn/video/theme/cms_widget/images/play.png) 0 0 no-repeat; width:44px; height:44px; left:50%; top:50%; margin:-22px 0 0 -22px;}
-.CM-focus .icon_video:hover{ background-position:0 -50px;}
-.CM-focus .slide-video{position:absolute;left:0;top:0; width:100%;background:#F5F5F5;}
-.CM-focus .carousel{ position:absolute;right:0;bottom:0;padding:0 20px; line-height:50px;}
-.CM-focus .carousel a{ display:inline-block; width:8px; height:8px; border-radius:4px; background:#a8a8a8; margin-left:5px;} .darkRed .CM-focus .carousel a.cur{background-color: #cc0000!important;}
-.darkBlue .CM-focus .carousel a.cur{background-color: #3366cc!important}
-.lightBlue .CM-focus .carousel a.cur{background-color: #02A7EA!important}
-.gray .CM-focus .carousel a.cur{background-color: #454545!important} /* 大标题+说明 */
-.CM-BIG-TITLE {padding:5px;zoom:1;}
-.CM-BIG-TITLE h1{font-size:20px;font-family:"黑体";font-weight:normal;text-align:center;line-height:36px;color:#cc2e2f;}
-.CM-BIG-TITLE h1 a:link,.CM-BIG-TITLE h1 a:visited{text-decoration:none;font-size: 20px}
-.darkBlue .CM-BIG-TITLE h1 a:hover{text-decoration:underline;color:#3366cc;}
-.darkRed .CM-BIG-TITLE h1 a:hover{text-decoration:underline;color:#cc0000;}
-.lightBlue .CM-BIG-TITLE h1 a:hover{text-decoration:underline;color:#02A7EA;}
-.gray .CM-BIG-TITLE h1 a:hover{text-decoration:underline;color:#454545;}
-.CM-BIG-TITLE p {line-height:23px;text-indent:2em;font-size:14px;}
-.CM-BIG-TITLE c_memo{line-height:22px;font-size:14px;color:#444;}
-/* 常用链接 begin */
-.linkRed,a.linkRed:link,a.linkRed:visited{color:#f00!important;}/* 红色 */
-a.linkRed:hover{color:#c00!important;}
-.linkRed01,a.linkRed01:link,a.linkRed01:visited{color:#f00!important;}/* 红色 */
-a.linkRed01:hover{color:#c00!important;}
-.linkBlack,a.linkBlack:link,a.linkBlack:visited{color:#000!important;}/* 黑色 */
-a.linkBlack:hover{color:#f00!important;}
-.linkWhite,a.linkWhite:link,a.linkWhite:visited{color:#fff!important;}/* 白色 */
-a.linkWhite:hover{color:#f00!important;}
-.videoNews,a.videoNews{background:url(http://i1.sinaimg.cn/dy/deco/2007/1211/yocc/unfcn_mj_01.gif) no-repeat 100% 50%; padding-right:18px;}
-.videoNewsLeft,a.videoNewsLeft{background:url(http://i1.sinaimg.cn/dy/deco/2007/1211/yocc/unfcn_mj_01.gif) no-repeat -19982px 50%; padding-left:18px;}
-.liveNewsLeft,a.liveNewsLeft{background:url(http://i3.sinaimg.cn/video/deco/2010/0525/liveNewsLeft.gif) no-repeat 0px 50%;padding-left:22px;}
-.linkStrong,a.linkStrong{font-weight:bold;}
-/* 常用链接 end */ .darkRed .icon_line{border-color: #cc0000!important}
-.darkBlue .icon_line{border-color: #3366cc!important}
-.lightBlue .icon_line{border-color: #02A7EA!important}
-.gray .icon_line{border-color: #454545!important} .CM-leftimage-righttxt .leftimage-img{ border:1px solid #eee; background:#f5f5f5; float:left; margin:5px 20px 0 0;overflow: hidden; text-align:center; *font-family:Arial;*font-size:655px;}
-.CM-leftimage-righttxt .righttxt-txt{ overflow:hidden; word-break:break-all;word-wrap:break-word;}
-.CM-leftimage-righttxt .righttxt-txt .title-txt{font-size:24px; line-height:34px; margin-bottom:10px; max-height:68px; overflow:hidden;}
-.CM-leftimage-righttxt .righttxt-txt .txt-txt{font-size:14px; line-height:24px;}
-.CM-leftimage-righttxt-list li{ margin-bottom:25px; width:100%; float:left;} .FinanceForum-Switch-News dl{ margin-bottom:1px;}
-.FinanceForum-Switch-News dt{ background:#e8e8e8; line-height:35px; height:35px; font-size:14px; color:#7d7d7d; padding-left:11px;}
-.FinanceForum-Switch-News dd{display:none;}
-.FinanceForum-Switch-News dd .pic{ float:left; margin: 0 23px 0 0;}
-.FinanceForum-Switch-News dd .txt{overflow:hidden; zoom:1; min-height: 175px}
-.FinanceForum-Switch-News dd .txt p{ font-size: 16px;color:#8e8d8d; line-height: 24px; text-indent:2em; padding-top: 6px;}
-.darkRed .FinanceForum-Switch-News dl.current dt{ background:url(http://n.sinaimg.cn/finance/forum/davos/darkRed-apec.png) no-repeat; height:42px; line-height:42px; color:#fff; font-size:18px;background-color:#cc0000; }
-.darkBlue .FinanceForum-Switch-News dl.current dt{background:url(http://n.sinaimg.cn/finance/forum/davos/darkBlue-apec.png) no-repeat; height:42px; line-height:42px; color:#fff; font-size:18px;background-color:#3366cc;}
-.lightBlue .FinanceForum-Switch-News dl.current dt{background:url(http://n.sinaimg.cn/finance/forum/davos/lightBlue-apec.png) no-repeat;height:42px; line-height:42px; color:#fff; font-size:18px;background-color:#02A7EA;}
-.gray .FinanceForum-Switch-News dl.current dt{ background:url(http://n.sinaimg.cn/finance/forum/davos/gray-apec.png) no-repeat; height:42px; line-height:42px; color:#fff; font-size:18px;background-color:#454545;}
-.FinanceForum-Switch-News dl.current dd{display:block;padding: 9px;background: #f8f8f8;} /*专题--最新新闻2015.01.22*/
-.CM-newest-news .news-des{margin-left:200px;}
-.CM-newest-news .CC-title h2{ float:left; margin-right:0px;}
-.CM-newest-news .title-tab{ float:right; margin-top:-29px;}
-.CM-newest-news .title-tab li{ float:left;}
-.CM-newest-news .title-tab li a{ display:block; font-size:20px; padding:0 12px; line-height:89px; color:#bababa;}
-.CM-newest-news .title-tab li a:hover{ text-decoration:none;}
-.CM-newest-news .title-tab li .cur{ border-width:0 0 2px 0; border-style:solid;}
-.CM-newest-news .content{ width:100%;margin-top:30px; padding-bottom:30px; border-bottom:1px solid #f3f3f3;}
-.CM-newest-news .news-tit{ font-size:26px; font-weight:700; margin-bottom:20px; line-height:30px;}
-.CM-newest-news .news-tit a:visited {color:#996698;} 
-.CM-newest-news .focus-news{ display:inline-block; width:50px; height:24px; line-height:24px; color:#fff; text-align:center; margin-right:10px;
- vertical-align:3px; font-size:15px;}
-.CM-newest-news .new-info{ overflow:hidden; zoom:1; font-size:14px;}
-.CM-newest-news .labels{ float:left; max-width:400px; overflow:hidden;}
-.CM-newest-news .labels span{ margin:0 15px; vertical-align:-1px;}
-.CM-newest-news .labels .date{ margin-left:0;}
-.CM-newest-news .oper{ float:right;}
-.CM-newest-news .oper a{ margin-left:20px;}
-.CM-newest-news .oper a:hover{ text-decoration:none;}
-.CM-newest-news .CC-page{ padding:40px 0;}
-.CM-newest-news .news-con {margin-bottom: 25px;overflow: hidden;}
-.CM-newest-news .news-img {background: none repeat scroll 0 0 #fff;display: block;float: left;height: 135px;margin-right: 20px;width: 180px;}
-.CM-newest-news .news-img img {height: 135px;width: 180px;}
-.CM-newest-news .news-des p {font-size: 15px;line-height: 28px;margin: -6px 0 0 0;max-height: 84px;overflow: hidden;}
-.CM-newest-news .news-des p {font-size: 15px;line-height: 28px;}
-.darkRed .CM-newest-news .title-tab li .cur {border-color: #cc0000; color: #cc0000;}
-.darkBlue .CM-newest-news .title-tab li .cur {border-color: #3366cc; color: #3366cc;}
-.lightBlue .CM-newest-news .title-tab li .cur {border-color: #02A7EA; color: #02A7EA;}
-.gray .CM-newest-news .title-tab li .cur {border-color: #454545; color: #454545;}
-.darkRed .CM-newest-news .title-tab li a:hover{ color: #9b0000;}
-.darkBlue .CM-newest-news .title-tab li a:hover{ color: #02A7EA;}
-.lightBlue .CM-newest-news .title-tab li a:hover{ color: #3366cc;}
-.gray .CM-newest-news .title-tab li a:hover{ color: #000000;}
-.zt_news_end{padding:10px 0;width: 100%;line-height:30px;font-size: 16px;text-align: center;}</style>
-	<meta name="sudameta" content="dataid:comos:hytcerm7589575" /></head>
-	<body class="theme01 darkRed"><!-- body code begin -->
-
-<!-- SUDA_CODE_START --> 
-<script type="text/javascript"> 
-//<!--
-(function(){var an="V=2.1.16";var ah=window,F=document,s=navigator,W=s.userAgent,ao=ah.screen,j=ah.location.href;var aD="https:"==ah.location.protocol?"https://s":"http://",ay="beacon.sina.com.cn";var N=aD+ay+"/a.gif?",z=aD+ay+"/g.gif?",R=aD+ay+"/f.gif?",ag=aD+ay+"/e.gif?",aB=aD+"beacon.sinauda.com/i.gif?";var aA=F.referrer.toLowerCase();var aa="SINAGLOBAL",Y="FSINAGLOBAL",H="Apache",P="ULV",l="SUP",aE="UOR",E="_s_acc",X="_s_tentry",n=false,az=false,B=(document.domain=="sina.com.cn")?true:false;var o=0;var aG=false,A=false;var al="";var m=16777215,Z=0,C,K=0;var r="",b="",a="";var M=[],S=[],I=[];var u=0;var v=0;var p="";var am=false;var w=false;function O(){var e=document.createElement("iframe");e.src=aD+ay+"/data.html?"+new Date().getTime();e.id="sudaDataFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function k(){var e=document.createElement("iframe");e.src=aD+ay+"/ckctl.html";e.id="ckctlFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function q(){var e=document.createElement("script");e.src=aD+ay+"/h.js";document.getElementsByTagName("head")[0].appendChild(e)}function h(aH,i){var D=F.getElementsByName(aH);var e=(i>0)?i:0;return(D.length>e)?D[e].content:""}function aF(){var aJ=F.getElementsByName("sudameta");var aR=[];for(var aO=0;aO<aJ.length;aO++){var aK=aJ[aO].content;if(aK){if(aK.indexOf(";")!=-1){var D=aK.split(";");for(var aH=0;aH<D.length;aH++){var aP=aw(D[aH]);if(!aP){continue}aR.push(aP)}}else{aR.push(aK)}}}var aM=F.getElementsByTagName("meta");for(var aO=0,aI=aM.length;aO<aI;aO++){var aN=aM[aO];if(aN.name=="tags"){aR.push("content_tags:"+encodeURI(aN.content))}}var aL=t("vjuids");aR.push("vjuids:"+aL);var e="";var aQ=j.indexOf("#");if(aQ!=-1){e=escape(j.substr(aQ+1));aR.push("hashtag:"+e)}return aR}function V(aK,D,aI,aH){if(aK==""){return""}aH=(aH=="")?"=":aH;D+=aH;var aJ=aK.indexOf(D);if(aJ<0){return""}aJ+=D.length;var i=aK.indexOf(aI,aJ);if(i<aJ){i=aK.length}return aK.substring(aJ,i)}function t(e){if(undefined==e||""==e){return""}return V(F.cookie,e,";","")}function at(aI,e,i,aH){if(e!=null){if((undefined==aH)||(null==aH)){aH="sina.com.cn"}if((undefined==i)||(null==i)||(""==i)){F.cookie=aI+"="+e+";domain="+aH+";path=/"}else{var D=new Date();var aJ=D.getTime();aJ=aJ+86400000*i;D.setTime(aJ);aJ=D.getTime();F.cookie=aI+"="+e+";domain="+aH+";expires="+D.toUTCString()+";path=/"}}}function f(D){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;return i.get(D)}catch(aH){return false}}function ar(D,aH){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;i.set(D,aH);return true}catch(aI){return false}}function L(){var aJ=15;var D=window.SUDA.etag;if(!B){return"-"}if(u==0){O();q()}if(D&&D!=undefined){w=true}ls_gid=f(aa);if(ls_gid===false||w==false){return false}else{am=true}if(ls_gid&&ls_gid.length>aJ){at(aa,ls_gid,3650);n=true;return ls_gid}else{if(D&&D.length>aJ){at(aa,D,3650);az=true}var i=0,aI=500;var aH=setInterval((function(){var e=t(aa);if(w){e=D}i+=1;if(i>3){clearInterval(aH)}if(e.length>aJ){clearInterval(aH);ar(aa,e)}}),aI);return w?D:t(aa)}}function U(e,aH,D){var i=e;if(i==null){return false}aH=aH||"click";if((typeof D).toLowerCase()!="function"){return}if(i.attachEvent){i.attachEvent("on"+aH,D)}else{if(i.addEventListener){i.addEventListener(aH,D,false)}else{i["on"+aH]=D}}return true}function af(){if(window.event!=null){return window.event}else{if(window.event){return window.event}var D=arguments.callee.caller;var i;var aH=0;while(D!=null&&aH<40){i=D.arguments[0];if(i&&(i.constructor==Event||i.constructor==MouseEvent||i.constructor==KeyboardEvent)){return i}aH++;D=D.caller}return i}}function g(i){i=i||af();if(!i.target){i.target=i.srcElement;i.pageX=i.x;i.pageY=i.y}if(typeof i.layerX=="undefined"){i.layerX=i.offsetX}if(typeof i.layerY=="undefined"){i.layerY=i.offsetY}return i}function aw(aH){if(typeof aH!=="string"){throw"trim need a string as parameter"}var e=aH.length;var D=0;var i=/(\u3000|\s|\t|\u00A0)/;while(D<e){if(!i.test(aH.charAt(D))){break}D+=1}while(e>D){if(!i.test(aH.charAt(e-1))){break}e-=1}return aH.slice(D,e)}function c(e){return Object.prototype.toString.call(e)==="[object Array]"}function J(aH,aL){var aN=aw(aH).split("&");var aM={};var D=function(i){if(aL){try{return decodeURIComponent(i)}catch(aP){return i}}else{return i}};for(var aJ=0,aK=aN.length;aJ<aK;aJ++){if(aN[aJ]){var aI=aN[aJ].split("=");var e=aI[0];var aO=aI[1];if(aI.length<2){aO=e;e="$nullName"}if(!aM[e]){aM[e]=D(aO)}else{if(c(aM[e])!=true){aM[e]=[aM[e]]}aM[e].push(D(aO))}}}return aM}function ac(D,aI){for(var aH=0,e=D.length;aH<e;aH++){aI(D[aH],aH)}}function ak(i){var e=new RegExp("^http(?:s)?://([^/]+)","im");if(i.match(e)){return i.match(e)[1].toString()}else{return""}}function aj(aO){try{var aL="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var D="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";var aQ=function(e){var aR="",aS=0;for(;aS<e.length;aS++){aR+="%"+aH(e[aS])}return decodeURIComponent(aR)};var aH=function(e){var i="0"+e.toString(16);return i.length<=2?i:i.substr(1)};var aP=function(aY,aV,aR){if(typeof(aY)=="string"){aY=aY.split("")}var aX=function(a7,a9){for(var a8=0;a8<a7.length;a8++){if(a7[a8]==a9){return a8}}return -1};var aS=[];var a6,a4,a1="";var a5,a3,a0,aZ="";if(aY.length%4!=0){}var e=/[^A-Za-z0-9\+\/\=]/g;var a2=aL.split("");if(aV=="urlsafe"){e=/[^A-Za-z0-9\-_\=]/g;a2=D.split("")}var aU=0;if(aV=="binnary"){a2=[];for(aU=0;aU<=64;aU++){a2[aU]=aU+128}}if(aV!="binnary"&&e.exec(aY.join(""))){return aR=="array"?[]:""}aU=0;do{a5=aX(a2,aY[aU++]);a3=aX(a2,aY[aU++]);a0=aX(a2,aY[aU++]);aZ=aX(a2,aY[aU++]);a6=(a5<<2)|(a3>>4);a4=((a3&15)<<4)|(a0>>2);a1=((a0&3)<<6)|aZ;aS.push(a6);if(a0!=64&&a0!=-1){aS.push(a4)}if(aZ!=64&&aZ!=-1){aS.push(a1)}a6=a4=a1="";a5=a3=a0=aZ=""}while(aU<aY.length);if(aR=="array"){return aS}var aW="",aT=0;for(;aT<aS.lenth;aT++){aW+=String.fromCharCode(aS[aT])}return aW};var aI=[];var aN=aO.substr(0,3);var aK=aO.substr(3);switch(aN){case"v01":for(var aJ=0;aJ<aK.length;aJ+=2){aI.push(parseInt(aK.substr(aJ,2),16))}return decodeURIComponent(aQ(aP(aI,"binnary","array")));break;case"v02":aI=aP(aK,"urlsafe","array");return aQ(aP(aI,"binnary","array"));break;default:return decodeURIComponent(aO)}}catch(aM){return""}}var ap={screenSize:function(){return(m&8388608==8388608)?ao.width+"x"+ao.height:""},colorDepth:function(){return(m&4194304==4194304)?ao.colorDepth:""},appCode:function(){return(m&2097152==2097152)?s.appCodeName:""},appName:function(){return(m&1048576==1048576)?((s.appName.indexOf("Microsoft Internet Explorer")>-1)?"MSIE":s.appName):""},cpu:function(){return(m&524288==524288)?(s.cpuClass||s.oscpu):""},platform:function(){return(m&262144==262144)?(s.platform):""},jsVer:function(){if(m&131072!=131072){return""}var aI,e,aK,D=1,aH=0,i=(s.appName.indexOf("Microsoft Internet Explorer")>-1)?"MSIE":s.appName,aJ=s.appVersion;if("MSIE"==i){e="MSIE";aI=aJ.indexOf(e);if(aI>=0){aK=window.parseInt(aJ.substring(aI+5));if(3<=aK){D=1.1;if(4<=aK){D=1.3}}}}else{if(("Netscape"==i)||("Opera"==i)||("Mozilla"==i)){D=1.3;e="Netscape6";aI=aJ.indexOf(e);if(aI>=0){D=1.5}}}return D},network:function(){if(m&65536!=65536){return""}var i="";i=(s.connection&&s.connection.type)?s.connection.type:i;try{F.body.addBehavior("#default#clientCaps");i=F.body.connectionType}catch(D){i="unkown"}return i},language:function(){return(m&32768==32768)?(s.systemLanguage||s.language):""},timezone:function(){return(m&16384==16384)?(new Date().getTimezoneOffset()/60):""},flashVer:function(){if(m&8192!=8192){return""}var aK=s.plugins,aH,aL,aN;if(aK&&aK.length){for(var aJ in aK){aL=aK[aJ];if(aL.description==null){continue}if(aH!=null){break}aN=aL.description.toLowerCase();if(aN.indexOf("flash")!=-1){aH=aL.version?parseInt(aL.version):aN.match(/\d+/);continue}}}else{if(window.ActiveXObject){for(var aI=10;aI>=2;aI--){try{var D=new ActiveXObject("ShockwaveFlash.ShockwaveFlash."+aI);if(D){aH=aI;break}}catch(aM){}}}else{if(W.indexOf("webtv/2.5")!=-1){aH=3}else{if(W.indexOf("webtv")!=-1){aH=2}}}}return aH},javaEnabled:function(){if(m&4096!=4096){return""}var D=s.plugins,i=s.javaEnabled(),aH,aI;if(i==true){return 1}if(D&&D.length){for(var e in D){aH=D[e];if(aH.description==null){continue}if(i!=null){break}aI=aH.description.toLowerCase();if(aI.indexOf("java plug-in")!=-1){i=parseInt(aH.version);continue}}}else{if(window.ActiveXObject){i=(new ActiveXObject("JavaWebStart.IsInstalled")!=null)}}return i?1:0}};var ad={pageId:function(i){var D=i||r,aK="-9999-0-0-1";if((undefined==D)||(""==D)){try{var aH=h("publishid");if(""!=aH){var aJ=aH.split(",");if(aJ.length>0){if(aJ.length>=3){aK="-9999-0-"+aJ[1]+"-"+aJ[2]}D=aJ[0]}}else{D="0"}}catch(aI){D="0"}D=D+aK}return D},sessionCount:function(){var e=t("_s_upa");if(e==""){e=0}return e},excuteCount:function(){return SUDA.sudaCount},referrer:function(){if(m&2048!=2048){return""}var e=/^[^\?&#]*.swf([\?#])?/;if((aA=="")||(aA.match(e))){var i=V(j,"ref","&","");if(i!=""){return escape(i)}}return escape(aA)},isHomepage:function(){if(m&1024!=1024){return""}var D="";try{F.body.addBehavior("#default#homePage");D=F.body.isHomePage(j)?"Y":"N"}catch(i){D="unkown"}return D},PGLS:function(){return(m&512==512)?h("stencil"):""},ZT:function(){if(m&256!=256){return""}var e=h("subjectid");e.replace(",",".");e.replace(";",",");return escape(e)},mediaType:function(){return(m&128==128)?h("mediaid"):""},domCount:function(){return(m&64==64)?F.getElementsByTagName("*").length:""},iframeCount:function(){return(m&32==32)?F.getElementsByTagName("iframe").length:""}};var av={visitorId:function(){var i=15;var e=t(aa);if(e.length>i&&u==0){return e}else{return}},fvisitorId:function(e){if(!e){var e=t(Y);return e}else{at(Y,e,3650)}},sessionId:function(){var e=t(H);if(""==e){var i=new Date();e=Math.random()*10000000000000+"."+i.getTime()}return e},flashCookie:function(e){if(e){}else{return p}},lastVisit:function(){var D=t(H);var aI=t(P);var aH=aI.split(":");var aJ="",i;if(aH.length>=6){if(D!=aH[4]){i=new Date();var e=new Date(window.parseInt(aH[0]));aH[1]=window.parseInt(aH[1])+1;if(i.getMonth()!=e.getMonth()){aH[2]=1}else{aH[2]=window.parseInt(aH[2])+1}if(((i.getTime()-e.getTime())/86400000)>=7){aH[3]=1}else{if(i.getDay()<e.getDay()){aH[3]=1}else{aH[3]=window.parseInt(aH[3])+1}}aJ=aH[0]+":"+aH[1]+":"+aH[2]+":"+aH[3];aH[5]=aH[0];aH[0]=i.getTime();at(P,aH[0]+":"+aH[1]+":"+aH[2]+":"+aH[3]+":"+D+":"+aH[5],360)}else{aJ=aH[5]+":"+aH[1]+":"+aH[2]+":"+aH[3]}}else{i=new Date();aJ=":1:1:1";at(P,i.getTime()+aJ+":"+D+":",360)}return aJ},userNick:function(){if(al!=""){return al}var D=unescape(t(l));if(D!=""){var i=V(D,"ag","&","");var e=V(D,"user","&","");var aH=V(D,"uid","&","");var aJ=V(D,"sex","&","");var aI=V(D,"dob","&","");al=i+":"+e+":"+aH+":"+aJ+":"+aI;return al}else{return""}},userOrigin:function(){if(m&4!=4){return""}var e=t(aE);var i=e.split(":");if(i.length>=2){return i[0]}else{return""}},advCount:function(){return(m&2==2)?t(E):""},setUOR:function(){var aL=t(aE),aP="",i="",aO="",aI="",aM=j.toLowerCase(),D=F.referrer.toLowerCase();var aQ=/[&|?]c=spr(_[A-Za-z0-9]{1,}){3,}/;var aK=new Date();if(aM.match(aQ)){aO=aM.match(aQ)[0]}else{if(D.match(aQ)){aO=D.match(aQ)[0]}}if(aO!=""){aO=aO.substr(3)+":"+aK.getTime()}if(aL==""){if(t(P)==""){aP=ak(D);i=ak(aM)}at(aE,aP+","+i+","+aO,365)}else{var aJ=0,aN=aL.split(",");if(aN.length>=1){aP=aN[0]}if(aN.length>=2){i=aN[1]}if(aN.length>=3){aI=aN[2]}if(aO!=""){aJ=1}else{var aH=aI.split(":");if(aH.length>=2){var e=new Date(window.parseInt(aH[1]));if(e.getTime()<(aK.getTime()-86400000*30)){aJ=1}}}if(aJ){at(aE,aP+","+i+","+aO,365)}}},setAEC:function(e){if(""==e){return}var i=t(E);if(i.indexOf(e+",")<0){i=i+e+","}at(E,i,7)},ssoInfo:function(){var D=unescape(aj(t("sso_info")));if(D!=""){if(D.indexOf("uid=")!=-1){var i=V(D,"uid","&","");return escape("uid:"+i)}else{var e=V(D,"u","&","");return escape("u:"+unescape(e))}}else{return""}},subp:function(){return t("SUBP")}};var ai={CI:function(){var e=["sz:"+ap.screenSize(),"dp:"+ap.colorDepth(),"ac:"+ap.appCode(),"an:"+ap.appName(),"cpu:"+ap.cpu(),"pf:"+ap.platform(),"jv:"+ap.jsVer(),"ct:"+ap.network(),"lg:"+ap.language(),"tz:"+ap.timezone(),"fv:"+ap.flashVer(),"ja:"+ap.javaEnabled()];return"CI="+e.join("|")},PI:function(e){var i=["pid:"+ad.pageId(e),"st:"+ad.sessionCount(),"et:"+ad.excuteCount(),"ref:"+ad.referrer(),"hp:"+ad.isHomepage(),"PGLS:"+ad.PGLS(),"ZT:"+ad.ZT(),"MT:"+ad.mediaType(),"keys:","dom:"+ad.domCount(),"ifr:"+ad.iframeCount()];return"PI="+i.join("|")},UI:function(){var e=["vid:"+av.visitorId(),"sid:"+av.sessionId(),"lv:"+av.lastVisit(),"un:"+av.userNick(),"uo:"+av.userOrigin(),"ae:"+av.advCount(),"lu:"+av.fvisitorId(),"si:"+av.ssoInfo(),"rs:"+(n?1:0),"dm:"+(B?1:0),"su:"+av.subp()];return"UI="+e.join("|")},EX:function(i,e){if(m&1!=1){return""}i=(null!=i)?i||"":b;e=(null!=e)?e||"":a;return"EX=ex1:"+i+"|ex2:"+e},MT:function(){return"MT="+aF().join("|")},V:function(){return an},R:function(){return"gUid_"+new Date().getTime()}};function ax(){var aK="-",aH=F.referrer.toLowerCase(),D=j.toLowerCase();if(""==t(X)){if(""!=aH){aK=ak(aH)}at(X,aK,"","weibo.com")}var aI=/weibo.com\/reg.php/;if(D.match(aI)){var aJ=V(unescape(D),"sharehost","&","");var i=V(unescape(D),"appkey","&","");if(""!=aJ){at(X,aJ,"","weibo.com")}at("appkey",i,"","weibo.com")}}function d(e,i){G(e,i)}function G(i,D){D=D||{};var e=new Image(),aH;if(D&&D.callback&&typeof D.callback=="function"){e.onload=function(){clearTimeout(aH);aH=null;D.callback(true)}}SUDA.img=e;e.src=i;aH=setTimeout(function(){if(D&&D.callback&&typeof D.callback=="function"){D.callback(false);e.onload=null}},D.timeout||2000)}function x(e,aH,D,aI){SUDA.sudaCount++;if(!av.visitorId()&&!L()){if(u<3){u++;setTimeout(x,500);return}}var i=N+[ai.V(),ai.CI(),ai.PI(e),ai.UI(),ai.MT(),ai.EX(aH,D),ai.R()].join("&");G(i,aI)}function y(e,D,i){if(aG||A){return}if(SUDA.sudaCount!=0){return}x(e,D,i)}function ab(e,aH){if((""==e)||(undefined==e)){return}av.setAEC(e);if(0==aH){return}var D="AcTrack||"+t(aa)+"||"+t(H)+"||"+av.userNick()+"||"+e+"||";var i=ag+D+"&gUid_"+new Date().getTime();d(i)}function aq(aI,e,i,aJ){aJ=aJ||{};if(!i){i=""}else{i=escape(i)}var aH="UATrack||"+t(aa)+"||"+t(H)+"||"+av.userNick()+"||"+aI+"||"+e+"||"+ad.referrer()+"||"+i+"||"+(aJ.realUrl||"")+"||"+(aJ.ext||"");var D=ag+aH+"&gUid_"+new Date().getTime();d(D,aJ)}function aC(aK){var i=g(aK);var aI=i.target;var aH="",aL="",D="";var aJ;if(aI!=null&&aI.getAttribute&&(!aI.getAttribute("suda-uatrack")&&!aI.getAttribute("suda-actrack")&&!aI.getAttribute("suda-data"))){while(aI!=null&&aI.getAttribute&&(!!aI.getAttribute("suda-uatrack")||!!aI.getAttribute("suda-actrack")||!!aI.getAttribute("suda-data"))==false){if(aI==F.body){return}aI=aI.parentNode}}if(aI==null||aI.getAttribute==null){return}aH=aI.getAttribute("suda-actrack")||"";aL=aI.getAttribute("suda-uatrack")||aI.getAttribute("suda-data")||"";sudaUrls=aI.getAttribute("suda-urls")||"";if(aL){aJ=J(aL);if(aI.tagName.toLowerCase()=="a"){D=aI.href}opts={};opts.ext=(aJ.ext||"");aJ.key&&SUDA.uaTrack&&SUDA.uaTrack(aJ.key,aJ.value||aJ.key,D,opts)}if(aH){aJ=J(aH);aJ.key&&SUDA.acTrack&&SUDA.acTrack(aJ.key,aJ.value||aJ.key)}}if(window.SUDA&&Object.prototype.toString.call(window.SUDA)==="[object Array]"){for(var Q=0,ae=SUDA.length;Q<ae;Q++){switch(SUDA[Q][0]){case"setGatherType":m=SUDA[Q][1];break;case"setGatherInfo":r=SUDA[Q][1]||r;b=SUDA[Q][2]||b;a=SUDA[Q][3]||a;break;case"setPerformance":Z=SUDA[Q][1];break;case"setPerformanceFilter":C=SUDA[Q][1];break;case"setPerformanceInterval":K=SUDA[Q][1]*1||0;K=isNaN(K)?0:K;break;case"setGatherMore":M.push(SUDA[Q].slice(1));break;case"acTrack":S.push(SUDA[Q].slice(1));break;case"uaTrack":I.push(SUDA[Q].slice(1));break}}}aG=(function(D,i){if(ah.top==ah){return false}else{try{if(F.body.clientHeight==0){return false}return((F.body.clientHeight>=D)&&(F.body.clientWidth>=i))?false:true}catch(aH){return true}}})(320,240);A=(function(){return false})();av.setUOR();var au=av.sessionId();window.SUDA=window.SUDA||[];SUDA.sudaCount=SUDA.sudaCount||0;SUDA.log=function(){x.apply(null,arguments)};SUDA.acTrack=function(){ab.apply(null,arguments)};SUDA.uaTrack=function(){aq.apply(null,arguments)};U(F.body,"click",aC);window.GB_SUDA=SUDA;GB_SUDA._S_pSt=function(){};GB_SUDA._S_acTrack=function(){ab.apply(null,arguments)};GB_SUDA._S_uaTrack=function(){aq.apply(null,arguments)};window._S_pSt=function(){};window._S_acTrack=function(){ab.apply(null,arguments)};window._S_uaTrack=function(){aq.apply(null,arguments)};window._S_PID_="";if(!window.SUDA.disableClickstream){y()}try{k()}catch(T){}})();
-//-->
-</script> 
-<noScript> 
-<div style='position:absolute;top:0;left:0;width:0;height:0;visibility:hidden'><img width=0 height=0 src='//beacon.sina.com.cn/a.gif?noScript' border='0' alt='' /></div> 
-</noScript> 
-<!-- SUDA_CODE_END -->
-
-<!-- SSO_GETCOOKIE_START -->
-<script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.getSinaCookie=function(){function dc(u){if(u==undefined){return""}var decoded=decodeURIComponent(u);return decoded=="null"?"":decoded}function ps(str){var arr=str.split("&");var arrtmp;var arrResult={};for(var i=0;i<arr.length;i++){arrtmp=arr[i].split("=");arrResult[arrtmp[0]]=dc(arrtmp[1])}return arrResult}function gC(name){var Res=eval("/"+name+"=([^;]+)/").exec(document.cookie);return Res==null?null:Res[1]}var sup=dc(gC("SUP"));if(!sup){sup=dc(gC("SUR"))}if(!sup){return null}return ps(sup)};</script>
-<!-- SSO_GETCOOKIE_END -->
-
-<script type="text/javascript">new function(r,s,t){this.a=function(n,t,e){if(window.addEventListener){n.addEventListener(t,e,false);}else if(window.attachEvent){n.attachEvent("on"+t,e);}};this.b=function(f){var t=this;return function(){return f.apply(t,arguments);};};this.c=function(){var f=document.getElementsByTagName("form");for(var i=0;i<f.length;i++){var o=f[i].action;if(this.r.test(o)){f[i].action=o.replace(this.r,this.s);}}};this.r=r;this.s=s;this.d=setInterval(this.b(this.c),t);this.a(window,"load",this.b(function(){this.c();clearInterval(this.d);}));}(/http:\/\/www\.google\.c(om|n)\/search/, "http://keyword.sina.com.cn/searchword.php", 250);</script>
-<!-- body code end -->
-
-		<!--top nav-->
-		<!--主导航 begin-->
-    <link rel="stylesheet" type="text/css" href="//tech.sina.com.cn/css/717/20140827/index2014/top.css">
-    <!-- 登录 css -->
-    <link rel="stylesheet" type="text/css" href="//i.sso.sina.com.cn/css/userpanel/v1/top_account.css">
-    <!-- 登录皮肤css -->
-    <div class="sina-top-bar-wrap sina-top-bar-blue" id="SI_TopBar" top-data="auto">
-      <div class="sina-top-bar-inner" top-node-type="inner">
-      <div class="sina-top-bar-nav " top-node-type="nav">
-            <ul class="sina-top-bar-nav-list" top-node-type="main">
-                <li class="sina-top-bar-nav-guide" top-node-type="guide"><a top-node-type="guideLnk" href="javascript:;"><i class="sina-top-bar-ico sina-top-bar-ico-list"></i><span class="sina-top-bar-nav-txt">导航</span></a></li>
-                <li class="sina-top-bar-nav-first"><a href="http://www.sina.com.cn/">新浪首页</a></li>
-                <li><a href="http://news.sina.com.cn/">新闻</a></li>
-                <li><a href="http://sports.sina.com.cn/">体育</a></li>
-                <li><a href="http://finance.sina.com.cn/">财经</a></li>
-                <li><a href="http://ent.sina.com.cn/">娱乐</a></li>
-                <li><a href="http://tech.sina.com.cn/">科技</a></li>
-                <li><a href="http://blog.sina.com.cn/">博客</a></li>
-                <li><a href="http://photo.sina.com.cn/">图片</a></li>
-                <li><a href="http://zhuanlan.sina.com.cn/">专栏</a></li>
-                <li class="sina-top-bar-nav-last sina-top-bar-nav-more" top-node-type="more">
-                    <a top-node-type="moreLnk" href="javascript:;"><span class="sina-top-bar-nav-txt">更多</span><i class="sina-top-bar-ico sina-top-bar-ico-down"></i></a>
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin-when-crossorigin" />
+    
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>临江仙我亦是行人 - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
+    <link id="MainCss" rel="stylesheet" href="/skins/simplememory/bundle-simplememory.min.css?v=uknaX_hejnSu-njQgx4Hj1R0JiPLwUhFPUlwWNmWyB4" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/wysxr/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/wysxr/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/wysxr/wlwmanifest.xml" />
+    <script>
+        var currentBlogId = 674521;
+        var currentBlogApp = 'wysxr';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var isBlogOwner = false;
+        var skinName = 'SimpleMemory';
+        var visitorUserId = '';
+    </script>
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=2Mic1VLeHXarpdzASbXqFMIMVLEBiWXNO5yiTHUcmhw"></script>
+    
+    
+    
+</head>
+<body class="has-navbar">
+    <a name="top"></a>
+        <div id="bannerbar" class="bannerbar-mobile formobile">
+            <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-blog-bannerbar-mobile')">
+                <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
+            </a>
+        </div>
+    <div id="top_nav" class="navbar forpc">
+        <nav id="nav_main" class="navbar-main">
+            <ul id="nav_left" class="navbar-list navbar-left">
+                <li class="navbar-branding"><a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a></li>
+                <li><a href="/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-sitehome')">首页</a></li>
+                <li><a href="https://news.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-news')">新闻</a></li>
+                <li><a href="https://q.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-q')">博问</a></li>
+                <li><a id="nav_brandzone" href="https://brands.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-brands')">专区</a></li>
+                <li><a href="https://ing.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-ing')">闪存</a></li>
+                <li><a href="https://edu.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-edu')">班级</a></li>
+            </ul>
+            <ul id="nav_right" class="navbar-list navbar-right">
+                <li>
+                    <form id="zzk_search" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
+                        <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="text" tabindex="3" />
+                        <button type="submit" id="zzk_search_button">
+                            <img src="/images/aggsite/search.svg" alt="搜索" />
+                        </button>
+                    </form>
+                </li>
+                <li id="navbar_login_status" class="navbar-list">
+                    <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
+                        <img id="new_post_icon" class="navbar-icon" src="/images/aggsite/newpost.svg" alt="写随笔" />
+                    </a>
+                    <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
+                        <img id="myblog_icon" class="navbar-icon" src="/images/aggsite/myblog.svg" alt="我的博客" />
+                    </a>
+                    <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
+                        <img id="msg_icon" class="navbar-icon" src="/images/aggsite/message.svg?v=J0WS2P2iPgaIVgXxcAhliw4AFZIpaTWxtdoNAv9eiCA" alt="短消息" />
+                        <span id="msg_count" style="display: none"></span>
+                    </a>
+                    <div id="user_info" class="navbar-user-info dropdown">
+                        <a class="dropdown-button" href="https://home.cnblogs.com/">
+                            <img id="user_icon" class="navbar-avatar" src="/images/aggsite/avatar-default.svg" alt="用户头像" />
+                        </a>
+                        <div class="dropdown-menu">
+                            <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
+                            <a href="https://home.cnblogs.com/">我的园子</a>
+                            <a href="https://account.cnblogs.com/settings/account">账号设置</a>
+                            <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
+    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
+</a>
+                            <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
+                        </div>
+                    </div>
+                    <a class="navbar-anonymous" href="https://account.cnblogs.com/signup/">注册</a>
+                    <a class="navbar-anonymous" href="javascript:void(0);" onclick="account.login()">登录</a>
                 </li>
             </ul>
-            <ul class="sina-top-bar-nav-other" top-node-type="sub">
-                <!-- sina-top-bar-nav-mlnk链接会在顶通固定时显示 -->
-                <li class="sina-top-bar-nav-mlnk"><a href="http://news.sina.com.cn/">新闻</a></li>
-                <li class="sina-top-bar-nav-mlnk"><a href="http://sports.sina.com.cn/">体育</a></li>
-                <li class="sina-top-bar-nav-mlnk"><a href="http://finance.sina.com.cn/">财经</a></li>          
-                <li class="sina-top-bar-nav-mlnk"><a href="http://ent.sina.com.cn/">娱乐</a></li>                
-                <li class="sina-top-bar-nav-mlnk"><a href="http://tech.sina.com.cn/">科技</a></li>
-                <li class="sina-top-bar-nav-mlnk"><a href="http://blog.sina.com.cn/">博客</a></li>
-                <li class="sina-top-bar-nav-mlnk"><a href="http://photo.sina.com.cn/">图片</a></li>
-                <li class="sina-top-bar-nav-mlnk"><a href="http://video.sina.com.cn/">视频</a></li>
-                <li class="sina-top-bar-nav-mlnk"><a href="http://auto.sina.com.cn/">汽车</a></li>
-                <li class="sina-top-bar-nav-mlnk"><a href="http://edu.sina.com.cn/">教育</a></li>
-                <li class="sina-top-bar-nav-mlnk"><a href="http://fashion.sina.com.cn/">时尚</a></li>
-                <li class="sina-top-bar-nav-mlnk"><a href="http://eladies.sina.com.cn/">女性</a></li>
-                <li class="sina-top-bar-nav-mlnk"><a href="http://astro.sina.com.cn/">星座</a></li>
-                <li class="sina-top-bar-nav-mlnk"><a href="http://health.sina.com.cn/">健康</a></li>
-                <li class="sina-top-bar-nav-mlnk"><a href="http://house.sina.com.cn/">房产</a></li>
-                <li class="sina-top-bar-nav-mlnk"><a href="http://history.sina.com.cn/">历史</a></li>
-                <!-- sina-top-bar-nav-slnk链接会在顶通固定时隐藏 -->
-                <li class="sina-top-bar-nav-slnk"><a href="http://auto.sina.com.cn/">汽车</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://edu.sina.com.cn/">教育</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://fashion.sina.com.cn/">时尚</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://eladies.sina.com.cn/">女性</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://astro.sina.com.cn/">星座</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://health.sina.com.cn/">健康</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://house.sina.com.cn/">房产</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://history.sina.com.cn/">历史</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://video.sina.com.cn/">视频</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://collection.sina.com.cn/">收藏</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://baby.sina.com.cn/">育儿</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://book.sina.com.cn/">读书</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://fo.sina.com.cn/">佛学</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://games.sina.com.cn/">游戏</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://travel.sina.com.cn/">旅游</a></li>
-                <li class="sina-top-bar-nav-slnk"><a href="http://mail.sina.com.cn/">邮箱</a></li>
-                <li><a href="http://news.sina.com.cn/guide/">导航</a></li>
-            </ul>
-        </div>
-        <div class="sina-top-bar-user TAP14 TAP14-logined" top-node-type="user" top-data="auto" id="SI_User">
-			<div class="ac-rgst">
-				<a target="_blank" href="https://login.sina.com.cn/signup/signup?entry=ent" class="msg-link" suda-uatrack="key=index_top&value=login_click">注册</a>
-			</div>
-			<div class="ac-login">
-				<div node-type="outer" class="ac-login-cnt">
-					<a href="#0" node-type="login_btn" class="ac-login-cnt"><span class="thumb"><img src="http://i.sso.sina.com.cn/images/login/thumb_default.png"></span><span class="log-links">登录</span></a>
-				</div>
-			</div>
-			<div class="msg-dropdown" node-type="outer" style="display:none;">
-			</div>
-		</div>
-     </div>
-   </div>
-   <script type="text/javascript">
-    $widgetadd({
-      isDepend: true,
-      loadTime: 'DOMContentLoaded',
-      require: [
-      'http://i.sso.sina.com.cn/js/outlogin_layer.js',
-      'http://i.sso.sina.com.cn/js/user_panel_new_version.js',
-      'http://tech.sina.com.cn/js/717/20140827/index2014/top.js',
-      'http://sjs1.sinajs.cn/video/sports/js/page/head.js'
-      ],
-      requireParams: [{scriptCharset:'utf-8'},{scriptCharset:'utf-8'}]
-    });
-   </script>
-<!--/主导航 end-->
-		<!--top nav-->
-							<!--banner-->
-		<div class="CM-topics-head  CM-topics-headimg " >
-			<div class="banner-des">
-																<div class="banner-info">
-														</div>
-			</div>
-			<div class="banner">
-								<div class="banner-shadow ">
-																<img class="sina15-top-bar-inner" style="width:100%!important;max-width:1920!important" src="http://n.sinaimg.cn/news/680/w1920h360/20190731/2667-iaqfzyv3297984.png" />
-															</div>
-			</div>
-						<div class="banner-main">
-				<div class="abstract">
-					<div class="title">专题摘要:</div>
-					<p>
-																		农历七月初七是七夕节，又名乞巧节、七巧节或七姐诞。七夕始于汉朝，是流行于中国及汉字文化圈诸国的传统文化节日。相传农历七月七日夜或七月六日夜妇女在庭院向织女星乞求智巧，故称为“乞巧”。其起源于对自然的崇拜及妇女穿针乞巧，后被赋予了牛郎织女的传说使其成为象征爱情的节日。七夕节妇女穿针乞巧、祈祷福禄寿、礼拜七姐、陈列花果、女红（gōng）等诸多习俗影响至日本、朝鲜半岛、越南等汉字文化圈国家 。2006年5月20日，七夕节被中华人民共和国国务院列入第一批国家级非物质文化遗产名录。											</p>
-				</div>
-				<div class="sea-sha">
-					<div class="search">
-						<form action="http://search.sina.com.cn/" target="_blank" id="pl_search">
-							<input type="text" name="q" placeholder="专题内搜索" placeclass="default" enter verify="verifytype=string&require=true"/><a href="javascript:;" id="pl_search_submit" class="btn">搜索</a>
-							<!--下面是搜索方面提交的数据 ，看是否对于不同的专题给不同的值 begin-->
-							<input type="hidden" name="c" value="news" />
-							<input type="hidden" name="ie" value="utf-8" />
-							<input type="hidden" name="SL2" value="qx2019">
-							<input type="hidden" name="PID" value="1">
-							<input type="hidden" name="range" value="all">
-							<!--end-->
-						</form>
-					</div>
-					<div class="share">
-						<span class="share-txt">分享专题至：</span>
-						<div class="website">
-							<div id="pl_share" class="bshare-custom icon-medium">
-								<a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a class="bshare-weixin" title="分享到微信"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-					</div>
-						<script type="text/javascript">
-			window.bShareOpt = {
-				style:'-1',
-				uuid:'2c330a9c-c99a-4bb0-8919-7ea66c5025cc',
-				pophcol:'2',
-				lang:'zh'
-			};
-
-			$widgetadd({
-				id: 'pl_search',
-				loadTime: 'DOMContentLoaded',
-				require: ['pl.banner']
-			});
-			$widgetadd({
-				id: 'pl_share',
-				loadTime: 'onVisibleReady',
-				isDepend: true,
-				require: [
-					'http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=2c330a9c-c99a-4bb0-8919-7ea66c5025cc&amp;pophcol=2&amp;lang=zh',
-					'http://static.bshare.cn/b/bshareC0.js'
-				],
-				exports: function(){
-					bShare.addEntry({
-						title: '',
-						summary: '我正在看专题：《2019七夕》', //分享文案，需php控制
-						pic: 'http://n.sinaimg.cn/news/transform/640/w320h320/20180809/rqX--hhnunsq1165989.png'
-					});
-				}
-			});
-		</script>
-				<!--banner-->
-		<!-- SUDA_CODE_START --> 
-<script type="text/javascript"> 
-//<!--
-(function(){var an="V=2.1.15";var ah=window,F=document,s=navigator,W=s.userAgent,ao=ah.screen,j=ah.location.href;var aD="https:"==ah.location.protocol?"https://s":"http://",ay="beacon.sina.com.cn";var N=aD+ay+"/a.gif?",z=aD+ay+"/g.gif?",R=aD+ay+"/f.gif?",ag=aD+ay+"/e.gif?",aB=aD+"beacon.sinauda.com/i.gif?";var aA=F.referrer.toLowerCase();var aa="SINAGLOBAL",Y="FSINAGLOBAL",H="Apache",P="ULV",l="SUP",aE="UOR",E="_s_acc",X="_s_tentry",n=false,az=false,B=(document.domain=="sina.com.cn")?true:false;var o=0;var aG=false,A=false;var al="";var m=16777215,Z=0,C,K=0;var r="",b="",a="";var M=[],S=[],I=[];var u=0;var v=0;var p="";var am=false;var w=false;function O(){var e=document.createElement("iframe");e.src=aD+ay+"/data.html?"+new Date().getTime();e.id="sudaDataFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function k(){var e=document.createElement("iframe");e.src=aD+ay+"/ckctl.html";e.id="ckctlFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function q(){var e=document.createElement("script");e.src=aD+ay+"/h.js";document.getElementsByTagName("head")[0].appendChild(e)}function h(aH,i){var D=F.getElementsByName(aH);var e=(i>0)?i:0;return(D.length>e)?D[e].content:""}function aF(){var aJ=F.getElementsByName("sudameta");var aR=[];for(var aO=0;aO<aJ.length;aO++){var aK=aJ[aO].content;if(aK){if(aK.indexOf(";")!=-1){var D=aK.split(";");for(var aH=0;aH<D.length;aH++){var aP=aw(D[aH]);if(!aP){continue}aR.push(aP)}}else{aR.push(aK)}}}var aM=F.getElementsByTagName("meta");for(var aO=0,aI=aM.length;aO<aI;aO++){var aN=aM[aO];if(aN.name=="tags"){aR.push("content_tags:"+encodeURI(aN.content))}}var aL=t("vjuids");aR.push("vjuids:"+aL);var e="";var aQ=j.indexOf("#");if(aQ!=-1){e=escape(j.substr(aQ+1))}aR.push("hashtag:"+e);return aR}function V(aK,D,aI,aH){if(aK==""){return""}aH=(aH=="")?"=":aH;D+=aH;var aJ=aK.indexOf(D);if(aJ<0){return""}aJ+=D.length;var i=aK.indexOf(aI,aJ);if(i<aJ){i=aK.length}return aK.substring(aJ,i)}function t(e){if(undefined==e||""==e){return""}return V(F.cookie,e,";","")}function at(aI,e,i,aH){if(e!=null){if((undefined==aH)||(null==aH)){aH="sina.com.cn"}if((undefined==i)||(null==i)||(""==i)){F.cookie=aI+"="+e+";domain="+aH+";path=/"}else{var D=new Date();var aJ=D.getTime();aJ=aJ+86400000*i;D.setTime(aJ);aJ=D.getTime();F.cookie=aI+"="+e+";domain="+aH+";expires="+D.toUTCString()+";path=/"}}}function f(D){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;return i.get(D)}catch(aH){return false}}function ar(D,aH){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;i.set(D,aH);return true}catch(aI){return false}}function L(){var aJ=15;var D=window.SUDA.etag;if(!B){return"-"}if(u==0){O();q()}if(D&&D!=undefined){w=true}ls_gid=f(aa);if(ls_gid===false||w==false){return false}else{am=true}if(ls_gid&&ls_gid.length>aJ){at(aa,ls_gid,3650);n=true;return ls_gid}else{if(D&&D.length>aJ){at(aa,D,3650);az=true}var i=0,aI=500;var aH=setInterval((function(){var e=t(aa);if(w){e=D}i+=1;if(i>3){clearInterval(aH)}if(e.length>aJ){clearInterval(aH);ar(aa,e)}}),aI);return w?D:t(aa)}}function U(e,aH,D){var i=e;if(i==null){return false}aH=aH||"click";if((typeof D).toLowerCase()!="function"){return}if(i.attachEvent){i.attachEvent("on"+aH,D)}else{if(i.addEventListener){i.addEventListener(aH,D,false)}else{i["on"+aH]=D}}return true}function af(){if(window.event!=null){return window.event}else{if(window.event){return window.event}var D=arguments.callee.caller;var i;var aH=0;while(D!=null&&aH<40){i=D.arguments[0];if(i&&(i.constructor==Event||i.constructor==MouseEvent||i.constructor==KeyboardEvent)){return i}aH++;D=D.caller}return i}}function g(i){i=i||af();if(!i.target){i.target=i.srcElement;i.pageX=i.x;i.pageY=i.y}if(typeof i.layerX=="undefined"){i.layerX=i.offsetX}if(typeof i.layerY=="undefined"){i.layerY=i.offsetY}return i}function aw(aH){if(typeof aH!=="string"){throw"trim need a string as parameter"}var e=aH.length;var D=0;var i=/(\u3000|\s|\t|\u00A0)/;while(D<e){if(!i.test(aH.charAt(D))){break}D+=1}while(e>D){if(!i.test(aH.charAt(e-1))){break}e-=1}return aH.slice(D,e)}function c(e){return Object.prototype.toString.call(e)==="[object Array]"}function J(aH,aL){var aN=aw(aH).split("&");var aM={};var D=function(i){if(aL){try{return decodeURIComponent(i)}catch(aP){return i}}else{return i}};for(var aJ=0,aK=aN.length;aJ<aK;aJ++){if(aN[aJ]){var aI=aN[aJ].split("=");var e=aI[0];var aO=aI[1];if(aI.length<2){aO=e;e="\$nullName"}if(!aM[e]){aM[e]=D(aO)}else{if(c(aM[e])!=true){aM[e]=[aM[e]]}aM[e].push(D(aO))}}}return aM}function ac(D,aI){for(var aH=0,e=D.length;aH<e;aH++){aI(D[aH],aH)}}function ak(i){var e=new RegExp("^http(?:s)?://([^/]+)","im");if(i.match(e)){return i.match(e)[1].toString()}else{return""}}function aj(aO){try{var aL="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var D="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";var aQ=function(e){var aR="",aS=0;for(;aS<e.length;aS++){aR+="%"+aH(e[aS])}return decodeURIComponent(aR)};var aH=function(e){var i="0"+e.toString(16);return i.length<=2?i:i.substr(1)};var aP=function(aY,aV,aR){if(typeof(aY)=="string"){aY=aY.split("")}var aX=function(a7,a9){for(var a8=0;a8<a7.length;a8++){if(a7[a8]==a9){return a8}}return -1};var aS=[];var a6,a4,a1="";var a5,a3,a0,aZ="";if(aY.length%4!=0){}var e=/[^A-Za-z0-9\+\/\=]/g;var a2=aL.split("");if(aV=="urlsafe"){e=/[^A-Za-z0-9\-_\=]/g;a2=D.split("")}var aU=0;if(aV=="binnary"){a2=[];for(aU=0;aU<=64;aU++){a2[aU]=aU+128}}if(aV!="binnary"&&e.exec(aY.join(""))){return aR=="array"?[]:""}aU=0;do{a5=aX(a2,aY[aU++]);a3=aX(a2,aY[aU++]);a0=aX(a2,aY[aU++]);aZ=aX(a2,aY[aU++]);a6=(a5<<2)|(a3>>4);a4=((a3&15)<<4)|(a0>>2);a1=((a0&3)<<6)|aZ;aS.push(a6);if(a0!=64&&a0!=-1){aS.push(a4)}if(aZ!=64&&aZ!=-1){aS.push(a1)}a6=a4=a1="";a5=a3=a0=aZ=""}while(aU<aY.length);if(aR=="array"){return aS}var aW="",aT=0;for(;aT<aS.lenth;aT++){aW+=String.fromCharCode(aS[aT])}return aW};var aI=[];var aN=aO.substr(0,3);var aK=aO.substr(3);switch(aN){case"v01":for(var aJ=0;aJ<aK.length;aJ+=2){aI.push(parseInt(aK.substr(aJ,2),16))}return decodeURIComponent(aQ(aP(aI,"binnary","array")));break;case"v02":aI=aP(aK,"urlsafe","array");return aQ(aP(aI,"binnary","array"));break;default:return decodeURIComponent(aO)}}catch(aM){return""}}var ap={screenSize:function(){return(m&8388608==8388608)?ao.width+"x"+ao.height:""},colorDepth:function(){return(m&4194304==4194304)?ao.colorDepth:""},appCode:function(){return(m&2097152==2097152)?s.appCodeName:""},appName:function(){return(m&1048576==1048576)?((s.appName.indexOf("Microsoft Internet Explorer")>-1)?"MSIE":s.appName):""},cpu:function(){return(m&524288==524288)?(s.cpuClass||s.oscpu):""},platform:function(){return(m&262144==262144)?(s.platform):""},jsVer:function(){if(m&131072!=131072){return""}var aI,e,aK,D=1,aH=0,i=(s.appName.indexOf("Microsoft Internet Explorer")>-1)?"MSIE":s.appName,aJ=s.appVersion;if("MSIE"==i){e="MSIE";aI=aJ.indexOf(e);if(aI>=0){aK=window.parseInt(aJ.substring(aI+5));if(3<=aK){D=1.1;if(4<=aK){D=1.3}}}}else{if(("Netscape"==i)||("Opera"==i)||("Mozilla"==i)){D=1.3;e="Netscape6";aI=aJ.indexOf(e);if(aI>=0){D=1.5}}}return D},network:function(){if(m&65536!=65536){return""}var i="";i=(s.connection&&s.connection.type)?s.connection.type:i;try{F.body.addBehavior("#default#clientCaps");i=F.body.connectionType}catch(D){i="unkown"}return i},language:function(){return(m&32768==32768)?(s.systemLanguage||s.language):""},timezone:function(){return(m&16384==16384)?(new Date().getTimezoneOffset()/60):""},flashVer:function(){if(m&8192!=8192){return""}var aK=s.plugins,aH,aL,aN;if(aK&&aK.length){for(var aJ in aK){aL=aK[aJ];if(aL.description==null){continue}if(aH!=null){break}aN=aL.description.toLowerCase();if(aN.indexOf("flash")!=-1){aH=aL.version?parseInt(aL.version):aN.match(/\d+/);continue}}}else{if(window.ActiveXObject){for(var aI=10;aI>=2;aI--){try{var D=new ActiveXObject("ShockwaveFlash.ShockwaveFlash."+aI);if(D){aH=aI;break}}catch(aM){}}}else{if(W.indexOf("webtv/2.5")!=-1){aH=3}else{if(W.indexOf("webtv")!=-1){aH=2}}}}return aH},javaEnabled:function(){if(m&4096!=4096){return""}var D=s.plugins,i=s.javaEnabled(),aH,aI;if(i==true){return 1}if(D&&D.length){for(var e in D){aH=D[e];if(aH.description==null){continue}if(i!=null){break}aI=aH.description.toLowerCase();if(aI.indexOf("java plug-in")!=-1){i=parseInt(aH.version);continue}}}else{if(window.ActiveXObject){i=(new ActiveXObject("JavaWebStart.IsInstalled")!=null)}}return i?1:0}};var ad={pageId:function(i){var D=i||r,aK="-9999-0-0-1";if((undefined==D)||(""==D)){try{var aH=h("publishid");if(""!=aH){var aJ=aH.split(",");if(aJ.length>0){if(aJ.length>=3){aK="-9999-0-"+aJ[1]+"-"+aJ[2]}D=aJ[0]}}else{D="0"}}catch(aI){D="0"}D=D+aK}return D},sessionCount:function(){var e=t("_s_upa");if(e==""){e=0}return e},excuteCount:function(){return SUDA.sudaCount},referrer:function(){if(m&2048!=2048){return""}var e=/^[^\?&#]*.swf([\?#])?/;if((aA=="")||(aA.match(e))){var i=V(j,"ref","&","");if(i!=""){return escape(i)}}return escape(aA)},isHomepage:function(){if(m&1024!=1024){return""}var D="";try{F.body.addBehavior("#default#homePage");D=F.body.isHomePage(j)?"Y":"N"}catch(i){D="unkown"}return D},PGLS:function(){return(m&512==512)?h("stencil"):""},ZT:function(){if(m&256!=256){return""}var e=h("subjectid");e.replace(",",".");e.replace(";",",");return escape(e)},mediaType:function(){return(m&128==128)?h("mediaid"):""},domCount:function(){return(m&64==64)?F.getElementsByTagName("*").length:""},iframeCount:function(){return(m&32==32)?F.getElementsByTagName("iframe").length:""}};var av={visitorId:function(){var i=15;var e=t(aa);if(e.length>i&&u==0){return e}else{return}},fvisitorId:function(e){if(!e){var e=t(Y);return e}else{at(Y,e,3650)}},sessionId:function(){var e=t(H);if(""==e){var i=new Date();e=Math.random()*10000000000000+"."+i.getTime()}return e},flashCookie:function(e){if(e){}else{return p}},lastVisit:function(){var D=t(H);var aI=t(P);var aH=aI.split(":");var aJ="",i;if(aH.length>=6){if(D!=aH[4]){i=new Date();var e=new Date(window.parseInt(aH[0]));aH[1]=window.parseInt(aH[1])+1;if(i.getMonth()!=e.getMonth()){aH[2]=1}else{aH[2]=window.parseInt(aH[2])+1}if(((i.getTime()-e.getTime())/86400000)>=7){aH[3]=1}else{if(i.getDay()<e.getDay()){aH[3]=1}else{aH[3]=window.parseInt(aH[3])+1}}aJ=aH[0]+":"+aH[1]+":"+aH[2]+":"+aH[3];aH[5]=aH[0];aH[0]=i.getTime();at(P,aH[0]+":"+aH[1]+":"+aH[2]+":"+aH[3]+":"+D+":"+aH[5],360)}else{aJ=aH[5]+":"+aH[1]+":"+aH[2]+":"+aH[3]}}else{i=new Date();aJ=":1:1:1";at(P,i.getTime()+aJ+":"+D+":",360)}return aJ},userNick:function(){if(al!=""){return al}var D=unescape(t(l));if(D!=""){var i=V(D,"ag","&","");var e=V(D,"user","&","");var aH=V(D,"uid","&","");var aJ=V(D,"sex","&","");var aI=V(D,"dob","&","");al=i+":"+e+":"+aH+":"+aJ+":"+aI;return al}else{return""}},userOrigin:function(){if(m&4!=4){return""}var e=t(aE);var i=e.split(":");if(i.length>=2){return i[0]}else{return""}},advCount:function(){return(m&2==2)?t(E):""},setUOR:function(){var aL=t(aE),aP="",i="",aO="",aI="",aM=j.toLowerCase(),D=F.referrer.toLowerCase();var aQ=/[&|?]c=spr(_[A-Za-z0-9]{1,}){3,}/;var aK=new Date();if(aM.match(aQ)){aO=aM.match(aQ)[0]}else{if(D.match(aQ)){aO=D.match(aQ)[0]}}if(aO!=""){aO=aO.substr(3)+":"+aK.getTime()}if(aL==""){if(t(P)==""){aP=ak(D);i=ak(aM)}at(aE,aP+","+i+","+aO,365)}else{var aJ=0,aN=aL.split(",");if(aN.length>=1){aP=aN[0]}if(aN.length>=2){i=aN[1]}if(aN.length>=3){aI=aN[2]}if(aO!=""){aJ=1}else{var aH=aI.split(":");if(aH.length>=2){var e=new Date(window.parseInt(aH[1]));if(e.getTime()<(aK.getTime()-86400000*30)){aJ=1}}}if(aJ){at(aE,aP+","+i+","+aO,365)}}},setAEC:function(e){if(""==e){return}var i=t(E);if(i.indexOf(e+",")<0){i=i+e+","}at(E,i,7)},ssoInfo:function(){var D=unescape(aj(t("sso_info")));if(D!=""){if(D.indexOf("uid=")!=-1){var i=V(D,"uid","&","");return escape("uid:"+i)}else{var e=V(D,"u","&","");return escape("u:"+unescape(e))}}else{return""}},subp:function(){return t("SUBP")}};var ai={CI:function(){var e=["sz:"+ap.screenSize(),"dp:"+ap.colorDepth(),"ac:"+ap.appCode(),"an:"+ap.appName(),"cpu:"+ap.cpu(),"pf:"+ap.platform(),"jv:"+ap.jsVer(),"ct:"+ap.network(),"lg:"+ap.language(),"tz:"+ap.timezone(),"fv:"+ap.flashVer(),"ja:"+ap.javaEnabled()];return"CI="+e.join("|")},PI:function(e){var i=["pid:"+ad.pageId(e),"st:"+ad.sessionCount(),"et:"+ad.excuteCount(),"ref:"+ad.referrer(),"hp:"+ad.isHomepage(),"PGLS:"+ad.PGLS(),"ZT:"+ad.ZT(),"MT:"+ad.mediaType(),"keys:","dom:"+ad.domCount(),"ifr:"+ad.iframeCount()];return"PI="+i.join("|")},UI:function(){var e=["vid:"+av.visitorId(),"sid:"+av.sessionId(),"lv:"+av.lastVisit(),"un:"+av.userNick(),"uo:"+av.userOrigin(),"ae:"+av.advCount(),"lu:"+av.fvisitorId(),"si:"+av.ssoInfo(),"rs:"+(n?1:0),"dm:"+(B?1:0),"su:"+av.subp()];return"UI="+e.join("|")},EX:function(i,e){if(m&1!=1){return""}i=(null!=i)?i||"":b;e=(null!=e)?e||"":a;return"EX=ex1:"+i+"|ex2:"+e},MT:function(){return"MT="+aF().join("|")},V:function(){return an},R:function(){return"gUid_"+new Date().getTime()}};function ax(){var aK="-",aH=F.referrer.toLowerCase(),D=j.toLowerCase();if(""==t(X)){if(""!=aH){aK=ak(aH)}at(X,aK,"","weibo.com")}var aI=/weibo.com\/reg.php/;if(D.match(aI)){var aJ=V(unescape(D),"sharehost","&","");var i=V(unescape(D),"appkey","&","");if(""!=aJ){at(X,aJ,"","weibo.com")}at("appkey",i,"","weibo.com")}}function d(e,i){G(e,i)}function G(i,D){D=D||{};var e=new Image(),aH;if(D&&D.callback&&typeof D.callback=="function"){e.onload=function(){clearTimeout(aH);aH=null;D.callback(true)}}SUDA.img=e;e.src=i;aH=setTimeout(function(){if(D&&D.callback&&typeof D.callback=="function"){D.callback(false);e.onload=null}},D.timeout||2000)}function x(e,aH,D){SUDA.sudaCount++;if(!av.visitorId()&&!L()){if(u<3){u++;setTimeout(x,500);return}}var i=N+[ai.V(),ai.CI(),ai.PI(e),ai.UI(),ai.MT(),ai.EX(aH,D),ai.R()].join("&");G(i);}function y(e,D,i){if(aG||A){return}if(SUDA.sudaCount!=0){return}x(e,D,i)}function ab(e,aH){if((""==e)||(undefined==e)){return}av.setAEC(e);if(0==aH){return}var D="AcTrack||"+t(aa)+"||"+t(H)+"||"+av.userNick()+"||"+e+"||";var i=ag+D+"&gUid_"+new Date().getTime();d(i)}function aq(aI,e,i,aJ){aJ=aJ||{};if(!i){i=""}else{i=escape(i)}var aH="UATrack||"+t(aa)+"||"+t(H)+"||"+av.userNick()+"||"+aI+"||"+e+"||"+ad.referrer()+"||"+i+"||"+(aJ.realUrl||"")+"||"+(aJ.ext||"");var D=ag+aH+"&gUid_"+new Date().getTime();d(D,aJ)}function aC(aK){var i=g(aK);var aI=i.target;var aH="",aL="",D="";var aJ;if(aI!=null&&aI.getAttribute&&(!aI.getAttribute("suda-uatrack")&&!aI.getAttribute("suda-actrack")&&!aI.getAttribute("suda-data"))){while(aI!=null&&aI.getAttribute&&(!!aI.getAttribute("suda-uatrack")||!!aI.getAttribute("suda-actrack")||!!aI.getAttribute("suda-data"))==false){if(aI==F.body){return}aI=aI.parentNode}}if(aI==null||aI.getAttribute==null){return}aH=aI.getAttribute("suda-actrack")||"";aL=aI.getAttribute("suda-uatrack")||aI.getAttribute("suda-data")||"";sudaUrls=aI.getAttribute("suda-urls")||"";if(aL){aJ=J(aL);if(aI.tagName.toLowerCase()=="a"){D=aI.href}opts={};opts.ext=(aJ.ext||"");aJ.key&&SUDA.uaTrack&&SUDA.uaTrack(aJ.key,aJ.value||aJ.key,D,opts)}if(aH){aJ=J(aH);aJ.key&&SUDA.acTrack&&SUDA.acTrack(aJ.key,aJ.value||aJ.key)}}if(window.SUDA&&Object.prototype.toString.call(window.SUDA)==="[object Array]"){for(var Q=0,ae=SUDA.length;Q<ae;Q++){switch(SUDA[Q][0]){case"setGatherType":m=SUDA[Q][1];break;case"setGatherInfo":r=SUDA[Q][1]||r;b=SUDA[Q][2]||b;a=SUDA[Q][3]||a;break;case"setPerformance":Z=SUDA[Q][1];break;case"setPerformanceFilter":C=SUDA[Q][1];break;case"setPerformanceInterval":K=SUDA[Q][1]*1||0;K=isNaN(K)?0:K;break;case"setGatherMore":M.push(SUDA[Q].slice(1));break;case"acTrack":S.push(SUDA[Q].slice(1));break;case"uaTrack":I.push(SUDA[Q].slice(1));break}}}aG=(function(D,i){if(ah.top==ah){return false}else{try{if(F.body.clientHeight==0){return false}return((F.body.clientHeight>=D)&&(F.body.clientWidth>=i))?false:true}catch(aH){return true}}})(320,240);A=(function(){return false})();av.setUOR();var au=av.sessionId();window.SUDA=window.SUDA||[];SUDA.sudaCount=SUDA.sudaCount||0;SUDA.log=function(){x.apply(null,arguments)};SUDA.acTrack=function(){ab.apply(null,arguments)};SUDA.uaTrack=function(){aq.apply(null,arguments)};U(F.body,"click",aC);window.GB_SUDA=SUDA;GB_SUDA._S_pSt=function(){};GB_SUDA._S_acTrack=function(){ab.apply(null,arguments)};GB_SUDA._S_uaTrack=function(){aq.apply(null,arguments)};window._S_pSt=function(){};window._S_acTrack=function(){ab.apply(null,arguments)};window._S_uaTrack=function(){aq.apply(null,arguments)};window._S_PID_="";y();try{k()}catch(T){}})();
-//-->
-</script> 
-<noScript> 
-<div style='position:absolute;top:0;left:0;width:0;height:0;visibility:hidden'><img width=0 height=0 src='http://beacon.sina.com.cn/a.gif?noScript' border='0' alt='' /></div> 
-</noScript> 
-<!-- SUDA_CODE_END -->
-
-<!-- SSO_GETCOOKIE_START -->
-<script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.getSinaCookie=function(){function dc(u){if(u==undefined){return""}var decoded=decodeURIComponent(u);return decoded=="null"?"":decoded}function ps(str){var arr=str.split("&");var arrtmp;var arrResult={};for(var i=0;i<arr.length;i++){arrtmp=arr[i].split("=");arrResult[arrtmp[0]]=dc(arrtmp[1])}return arrResult}function gC(name){var Res=eval("/"+name+"=([^;]+)/").exec(document.cookie);return Res==null?null:Res[1]}var sup=dc(gC("SUP"));if(!sup){sup=dc(gC("SUR"))}if(!sup){return null}return ps(sup)};</script>
-<!-- SSO_GETCOOKIE_END -->
-
-<script type="text/javascript">new function(r,s,t){this.a=function(n,t,e){if(window.addEventListener){n.addEventListener(t,e,false);}else if(window.attachEvent){n.attachEvent("on"+t,e);}};this.b=function(f){var t=this;return function(){return f.apply(t,arguments);};};this.c=function(){var f=document.getElementsByTagName("form");for(var i=0;i<f.length;i++){var o=f[i].action;if(this.r.test(o)){f[i].action=o.replace(this.r,this.s);}}};this.r=r;this.s=s;this.d=setInterval(this.b(this.c),t);this.a(window,"load",this.b(function(){this.c();clearInterval(this.d);}));}(/http:\/\/www\.google\.c(om|n)\/search/, "http://keyword.sina.com.cn/searchword.php", 250);</script>
-<!-- body code end -->
-						<div class="CC-wrapper">
-			<div id='__liveLayoutContainer'>
-<div class="-live-layout-container row-fuild" data-layout-seq="__component_1" data-layout-type="layoutContainer">
-	<div class="-live-layout-row" data-layout-seq="__component_2" data-layout-type="layoutRow">
-	<div class="row-fluid">
-		<div class="-live-layout-column span12" data-layout-seq="__component_3" data-layout-type="layoutColumn">
-	<div class="-live-layout-row" data-layout-seq="__component_4" data-layout-type="layoutRow">
-	<div class="row-fluid">
-		<div class="-live-layout-column span6" data-layout-seq="__component_5" data-layout-type="layoutColumn">
-			<div class="-live-page-widget">
-                                                                                                    
-<!-- 150921 冀萌调整 如果小标题为空，需要添加30px的留白 -->
-<div class="CC-margin30"></div>
-<div class="CM-focus">
-  <div class="slide-img" id="pl_slide_conf_92">
-    <div class="slide-ul" slide-type="imgWrap">
-      <ul>
-        <li slide-type="item"><div class="photo_k"><a href="http://slide.news.sina.com.cn/s/slide_1_86058_386611.html" target="_blank"><img slide-image-size=""  src="http://n.sinaimg.cn/news/transform/310/w710h400/20190808/4e80-iaxiufn8016827.jpg" style="width: 100%;height: 100%;"/></a></div><div class="txt"><h2 slide-type="txt"><a href="http://slide.news.sina.com.cn/s/slide_1_86058_386611.html" target="_blank">“鹊桥”飞跨海峡：两岸婚恋新图景</a></h2></div></li><li slide-type="item"><div class="photo_k"><a href="http://slide.news.sina.com.cn/s/slide_1_2841_386360.html" target="_blank"><img slide-image-size=""  src="http://n.sinaimg.cn/news/transform/310/w710h400/20190808/f200-iaxiufn8030585.jpg" style="width: 100%;height: 100%;"/></a></div><div class="txt"><h2 slide-type="txt"><a href="http://slide.news.sina.com.cn/s/slide_1_2841_386360.html" target="_blank">七夕节到 新人可刷脸领电子结婚证</a></h2></div></li><li slide-type="item"><div class="photo_k"><a href="http://slide.news.sina.com.cn/slide_1_86058_386192.html" target="_blank"><img slide-image-size=""  src="http://n.sinaimg.cn/news/transform/310/w710h400/20190808/821a-iaxiufn8033140.jpg" style="width: 100%;height: 100%;"/></a></div><div class="txt"><h2 slide-type="txt"><a href="http://slide.news.sina.com.cn/slide_1_86058_386192.html" target="_blank">河北黄骅：浪漫七夕结良缘 集体婚礼倡节俭</a></h2></div></li><li slide-type="item"><div class="photo_k"><a href="http://slide.news.sina.com.cn/s/slide_1_86058_386630.html" target="_blank"><img slide-image-size=""  src="http://n.sinaimg.cn/news/transform/310/w710h400/20190808/12e0-iaxiufn7823745.jpg" style="width: 100%;height: 100%;"/></a></div><div class="txt"><h2 slide-type="txt"><a href="http://slide.news.sina.com.cn/s/slide_1_86058_386630.html" target="_blank">这是七夕最甜的表情</a></h2></div></li><li slide-type="item"><div class="photo_k"><a href="http://slide.news.sina.com.cn/slide_1_86058_386040.html" target="_blank"><img slide-image-size=""  src="http://n.sinaimg.cn/news/transform/310/w710h400/20190807/b8f8-iaxiufn2906579.jpg" style="width: 100%;height: 100%;"/></a></div><div class="txt"><h2 slide-type="txt"><a href="http://slide.news.sina.com.cn/slide_1_86058_386040.html" target="_blank">河北百名新人举行传统汉式婚礼</a></h2></div></li><li slide-type="item"><div class="photo_k"><a href="https://news.sina.com.cn/o/2019-08-07/doc-ihytcerm9035201.shtml" target="_blank"><img slide-image-size=""  src="http://n.sinaimg.cn/news/transform/310/w710h400/20190807/d165-iaxiufn2947623.jpg" style="width: 100%;height: 100%;"/></a></div><div class="txt"><h2 slide-type="txt"><a href="https://news.sina.com.cn/o/2019-08-07/doc-ihytcerm9035201.shtml" target="_blank">颐和园：穿针“斗巧”乐趣多</a></h2></div></li>      </ul>
-    </div>
-    <a title="上一张" href="javascript:;" class="slide-arrow-left" slide-type="prev"> <i class="icon-slide-arrow"></i>
-    </a>
-    <a title="下一张" href="javascript:;" class="slide-arrow-right" slide-type="next"> <i class="icon-slide-arrow"></i>
-    </a>
-    <div class="carousel" slide-type="dotsWrap"></div>
-    <div class="slide-video" slide-type="videoWrap" style="visibility:hidden;"></div>
-  </div>
-</div>
-<!-- / 焦点图HTML -->
-<!-- 焦点图JS初始化 -->
-<script type="text/javascript">
-	// 没有登录组件的话，页面一般不会定义$SCOPE，这里定义否则played.js会报错
-	if(!$SCOPE) {
-		var $SCOPE = {};	
-	}
-  $widgetadd({
-     id: 'pl_slide_conf_92',
-     loadTime: 'DOMContentLoaded',
-     initialize: true,
-     isDepend: true,
-     // 依赖视频组件
-     require: ['http://sjs0.sinajs.cn/video/sinaplayer/js/page/player.js','widget.focusSlide.index'],
-     exports:function(node, widget){
-       var Slide = $.widget.focusSlide.index;
-       new Slide(node[0],{
-        // 滚动速度，必须大于0，速度越小滚动越快，默认为6
-        speed:6,
-        // 是否循环滚动，默认为true
-        isLoop:false,
-        // 是否自动滚动，默认为true
-        autoPlay:false,
-        // 图片比例
-        imgAspectRatio:"16/9",
-        // 图片最大高度
-        imgMaxHeight:750,
-        // 视频关闭按钮css class
-        videoCloseClz: 'icon_del',
-        // 视频播放器窗口css class
-        videoPlayerClz: 'slide-video-player'
-       });
-     }
-   });
-    </script>
-<!-- / 焦点图JS初始化 -->
-			</div>
-		</div>
-		<div class="-live-layout-column span6" data-layout-seq="__component_7" data-layout-type="layoutColumn">
-			<div class="-live-page-widget">
-	<div class="single-image-row_conf_168">
-			<img src="http://n.sinaimg.cn/test/w710h10/20180305/UlC7-fxipenn1423276.jpg" width="100%" />
-		</div>
-
-			</div>
-			<div class="-live-page-widget">
-
-<div class="CM-BIG-TITLE">
-                    <h1><a href="https://news.sina.com.cn/s/2019-08-06/doc-ihytcerm8846810.shtml" class="" target="_blank">全国5省市上线电子结婚证 今年七夕可刷脸领证</a></h1>
-        <p class="c_memo">据介绍，领取很简单，已经登记结婚的夫妻，上支付宝搜“电子结婚证”，进入当地一网通办小程序，选择电子证件，刷脸就能领取到和实体证相对应的电子结婚证。同时也可办理补领婚姻证预约、婚姻登记信息核验等服务。福建、江西、江苏、浙江、重庆5省市首批支持。</p>
+        </nav>
     </div>
 
-			</div>
-			<div class="-live-page-widget">
-	<div class="single-image-row_conf_167">
-			<img src="http://n.sinaimg.cn/test/w710h10/20180305/UlC7-fxipenn1423276.jpg" width="100%" />
-		</div>
-
-			</div>
-			<div class="-live-page-widget">
-<style>
-	.list-1{font-family:"Microsoft Yahei","微软雅黑","SimSun","宋体","Arial Narrow",HELVETICA;}
-	.list-1 .content{padding:0;}
-	.list-1 h3{padding:0 0 15px;}
-	.list-1 h3 a:link,
-	.list-1 h3 a:visited,
-	.list-1 h3 a:hover,
-	.list-1 h3 a:active{font-weight:normal;font-size:20px;color:#3c3c3c;padding-bottom:15px;}
-	.list-1 .line{height:1px;overflow:hidden;background:#ededed;margin-bottom:15px;display:block}
-	@media (min-width: 1360px) and (max-width: 1599px) {
-		.list-1 h3{padding:0 0 9px;}
-		.list-1 h3 a:link,
-		.list-1 h3 a:visited,
-		.list-1 h3 a:hover,
-		.list-1 h3 a:active{font-weight:normal;font-size:17px;color:#3c3c3c;padding-bottom:10px;}	
-	}
-
-	@media (max-width: 1359px) {
-		.list-1 h3{padding:0 0 4px;}
-		.list-1 h3 a:link,
-		.list-1 h3 a:visited,
-		.list-1 h3 a:hover,
-		.list-1 h3 a:active{font-weight:normal;font-size:16px;color:#3c3c3c;padding-bottom:10px;}
-	}
-</style>
-<div class="list-1 clearfix">
-		 
-		<h3><a href="https://news.sina.com.cn/o/2019-08-07/doc-ihytcitm7414404.shtml" target="_blank">全国七夕拥抱指数出炉 Get你的约会最佳姿势</a></h3>
-		<h3><a href="https://news.sina.com.cn/c/2019-08-05/doc-ihytcerm8538522.shtml" target="_blank">穿针折纸画伞 仙女们快来园子里“进修”</a></h3>
-		<h3><a href="https://news.sina.com.cn/o/2019-08-04/doc-ihytcerm8363667.shtml" target="_blank">圆明园办“七夕巧市” 市民体验仿古游戏</a></h3>
-		<h3><a href="https://news.sina.com.cn/o/2019-08-04/doc-ihytcitm6789242.shtml" target="_blank">相濡以沫30余年 白大褂穿成情侣装</a></h3>
-		<h3><a href="https://news.sina.com.cn/c/2019-08-04/doc-ihytcerm8484986.shtml" target="_blank">七夕将至 节日当天大家都会吃点什么呢</a></h3>
-		<h3><a href="https://news.sina.com.cn/c/2019-08-04/doc-ihytcerm8373612.shtml" target="_blank">国内首个星空预报出炉 看星空再也不用“撞日子”</a></h3>
-			<div class="line"></div>
-</div>
-			</div>
-		</div>
-	</div>
-	</div>
-			<div class="-live-page-widget">
-	<div class="single-image-row_conf_109">
-			<img src="http://n.sinaimg.cn/test/w710h10/20180305/UlC7-fxipenn1423276.jpg" width="100%" />
-		</div>
-
-			</div>
-			<div class="-live-page-widget">
-<div class="contBox">
-	<div class="CC-title clearfix">
-		<h2><span class="icon_line"></span>七夕习俗</h2>
-		<em class="vline"></em>
-	</div>
-</div>
-
-
-			</div>
-			<div class="-live-page-widget">
-	<div class="single-image-row_conf_125">
-			<img src="http://n.sinaimg.cn/test/w710h10/20180305/UlC7-fxipenn1423276.jpg" width="100%" />
-		</div>
-
-			</div>
-	<div class="-live-layout-row" data-layout-seq="__component_15" data-layout-type="layoutRow">
-	<div class="row-fluid">
-		<div class="-live-layout-column span6" data-layout-seq="__component_16" data-layout-type="layoutColumn">
-			<div class="-live-page-widget">
-																<div id="pl_imgTxtList_conf_135">
-								<div class="CM-leftimage-righttxt" >
-						<div class="leftimage-img" node-type="imgBox">
-							<a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8764895.shtml" target="_blank"><img node-type="img" action-data="width=450&height=300" _src="http://n.sinaimg.cn/news/crawl/750/w450h300/20180813/YBy2-hhqtawx8764242.jpg"/></a>			
-						</div>
-						<div class="righttxt-txt" node-type="txt">
-						  <div class="title-txt"><a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8764895.shtml" target="_blank">牛郎织女鹊桥会</a></div>
-						  <div class="txt-txt">七夕节始终和牛郎织女的传说相连，这是一个很美丽的，千古流传的爱情故事，成为我国四大民间爱情传说之一 。</div>
-						</div>
-					 </div>		</div>
-	
-<script type="text/javascript">
-	window._SINANEWSDATA['pl_imgTxtList_conf_135'] = {
-		ratio:'3_2'//'1_1','3_4','4_3','16_9','9_16'，必选
-	};
-
-	$widgetadd({
-		id: 'pl_imgTxtList_conf_135',
-		loadTime: 'DOMContentLoaded',
-		initialize: true, 
-		require: ['pl.imgTxtList']
-	});
-	</script>
-			</div>
-			<div class="-live-page-widget">
-																<div id="pl_imgTxtList_conf_136">
-								<div class="CM-leftimage-righttxt" >
-						<div class="leftimage-img" node-type="imgBox">
-							<a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8777694.shtml" target="_blank"><img node-type="img" action-data="width=450&height=300" _src="http://n.sinaimg.cn/news/transform/750/w450h300/20180813/Mau6-hhqtawx9935948.jpg"/></a>			
-						</div>
-						<div class="righttxt-txt" node-type="txt">
-						  <div class="title-txt"><a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8777694.shtml" target="_blank">七夕节的习俗：种生求子</a></div>
-						  <div class="txt-txt">种生求子是七夕节期间的中国传统习俗，实际上是生育信仰之一种。寄托着中国劳动人民朴素的审美情趣和对美好生活的追求。</div>
-						</div>
-					 </div>		</div>
-	
-<script type="text/javascript">
-	window._SINANEWSDATA['pl_imgTxtList_conf_136'] = {
-		ratio:'3_2'//'1_1','3_4','4_3','16_9','9_16'，必选
-	};
-
-	$widgetadd({
-		id: 'pl_imgTxtList_conf_136',
-		loadTime: 'DOMContentLoaded',
-		initialize: true, 
-		require: ['pl.imgTxtList']
-	});
-	</script>
-			</div>
-			<div class="-live-page-widget">
-																<div id="pl_imgTxtList_conf_137">
-								<div class="CM-leftimage-righttxt" >
-						<div class="leftimage-img" node-type="imgBox">
-							<a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8941896.shtml" target="_blank"><img node-type="img" action-data="width=450&height=300" _src="http://n.sinaimg.cn/news/transform/750/w450h300/20180813/cyV2-hhqtawx9942325.jpg"/></a>			
-						</div>
-						<div class="righttxt-txt" node-type="txt">
-						  <div class="title-txt"><a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8941896.shtml" target="_blank">读书人的七夕：拜魁星</a></div>
-						  <div class="txt-txt">间传七月七日是魁星的生日。魁星文事，想求取功名的读书人特别崇敬魁星，所以一定在七夕这天祭拜，祈求他保佑自己考运亨通。</div>
-						</div>
-					 </div>		</div>
-	
-<script type="text/javascript">
-	window._SINANEWSDATA['pl_imgTxtList_conf_137'] = {
-		ratio:'3_2'//'1_1','3_4','4_3','16_9','9_16'，必选
-	};
-
-	$widgetadd({
-		id: 'pl_imgTxtList_conf_137',
-		loadTime: 'DOMContentLoaded',
-		initialize: true, 
-		require: ['pl.imgTxtList']
-	});
-	</script>
-			</div>
-		</div>
-		<div class="-live-layout-column span6" data-layout-seq="__component_20" data-layout-type="layoutColumn">
-			<div class="-live-page-widget">
-																<div id="pl_imgTxtList_conf_138">
-								<div class="CM-leftimage-righttxt" >
-						<div class="leftimage-img" node-type="imgBox">
-							<a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8517353.shtml" target="_blank"><img node-type="img" action-data="width=450&height=300" _src="http://n.sinaimg.cn/news/transform/750/w450h300/20180813/WYTP-hhqtawx9933150.jpg"/></a>			
-						</div>
-						<div class="righttxt-txt" node-type="txt">
-						  <div class="title-txt"><a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8517353.shtml" target="_blank">七夕节古代女子忙比“巧”</a></div>
-						  <div class="txt-txt">在古代，这一天所有的活动都是以女人为中心，其中“乞巧”是主要内容，形成了丰富多彩的“穿针乞巧”、“喜蛛应巧”、“投针验巧”等活动，女子们围在一起比谁心灵手巧。另外，还有拜织女、逛街等活动，一派欢乐的景象。</div>
-						</div>
-					 </div>		</div>
-	
-<script type="text/javascript">
-	window._SINANEWSDATA['pl_imgTxtList_conf_138'] = {
-		ratio:'3_2'//'1_1','3_4','4_3','16_9','9_16'，必选
-	};
-
-	$widgetadd({
-		id: 'pl_imgTxtList_conf_138',
-		loadTime: 'DOMContentLoaded',
-		initialize: true, 
-		require: ['pl.imgTxtList']
-	});
-	</script>
-			</div>
-			<div class="-live-page-widget">
-																<div id="pl_imgTxtList_conf_139">
-								<div class="CM-leftimage-righttxt" >
-						<div class="leftimage-img" node-type="imgBox">
-							<a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8863556.shtml" target="_blank"><img node-type="img" action-data="width=450&height=300" _src="http://n.sinaimg.cn/news/transform/750/w450h300/20180813/KoI6-hhqtawx9938810.jpg"/></a>			
-						</div>
-						<div class="righttxt-txt" node-type="txt">
-						  <div class="title-txt"><a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8863556.shtml" target="_blank">晒书晒衣</a></div>
-						  <div class="txt-txt">古代，“七夕”节还有晒书、晒衣的习俗，据说是可以避免虫蛀。</div>
-						</div>
-					 </div>		</div>
-	
-<script type="text/javascript">
-	window._SINANEWSDATA['pl_imgTxtList_conf_139'] = {
-		ratio:'3_2'//'1_1','3_4','4_3','16_9','9_16'，必选
-	};
-
-	$widgetadd({
-		id: 'pl_imgTxtList_conf_139',
-		loadTime: 'DOMContentLoaded',
-		initialize: true, 
-		require: ['pl.imgTxtList']
-	});
-	</script>
-			</div>
-			<div class="-live-page-widget">
-																<div id="pl_imgTxtList_conf_140">
-								<div class="CM-leftimage-righttxt" >
-						<div class="leftimage-img" node-type="imgBox">
-							<a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8913752.shtml" target="_blank"><img node-type="img" action-data="width=450&height=300" _src="http://n.sinaimg.cn/news/transform/750/w450h300/20180813/zoXU-hhqtawx9945188.jpg"/></a>			
-						</div>
-						<div class="righttxt-txt" node-type="txt">
-						  <div class="title-txt"><a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8913752.shtml" target="_blank">拜织女</a></div>
-						  <div class="txt-txt">“拜织女”纯是少女、少妇们的事。她们大都是预先和自己朋友或邻里们约好五六人，多至十来人，联合举办。</div>
-						</div>
-					 </div>		</div>
-	
-<script type="text/javascript">
-	window._SINANEWSDATA['pl_imgTxtList_conf_140'] = {
-		ratio:'3_2'//'1_1','3_4','4_3','16_9','9_16'，必选
-	};
-
-	$widgetadd({
-		id: 'pl_imgTxtList_conf_140',
-		loadTime: 'DOMContentLoaded',
-		initialize: true, 
-		require: ['pl.imgTxtList']
-	});
-	</script>
-			</div>
-		</div>
-	</div>
-	</div>
-			<div class="-live-page-widget">
-	<div class="single-image-row_conf_126">
-			<img src="http://n.sinaimg.cn/test/w710h10/20180305/UlC7-fxipenn1423276.jpg" width="100%" />
-		</div>
-
-			</div>
-	<div class="-live-layout-row" data-layout-seq="__component_25" data-layout-type="layoutRow">
-	<div class="row-fluid">
-		<div class="-live-layout-column span12" data-layout-seq="__component_26" data-layout-type="layoutColumn">
-			<div class="-live-page-widget">
-<div class="contBox">
-	<div class="CC-title clearfix">
-		<h2><span class="icon_line"></span>七夕文化</h2>
-		<em class="vline"></em>
-	</div>
-</div>
-
-
-			</div>
-		</div>
-	</div>
-	</div>
-	<div class="-live-layout-row" data-layout-seq="__component_28" data-layout-type="layoutRow">
-	<div class="row-fluid">
-		<div class="-live-layout-column span6" data-layout-seq="__component_29" data-layout-type="layoutColumn">
-			<div class="-live-page-widget">
-<div class="FinanceForum-Switch-News" id="FinanceForum-Switch-News_conf_158">
-                <dl class="current">
-        <dt>中国古代七夕诗词赏析</dt>
-        <dd class="clearfix">
-            <div class="pic"><img src="http://k.sinaimg.cn/n/news/crawl/163/w616h347/20180813/qq63-hhqtawx9170483.jpg/w303h168l0t0e24.jpg" width="235" height="175" /></div>
-            <div class="txt">
-                <p>传统七夕“情人节”来临，人们又开始用各种方式表达爱意。在大数据时代，已鲜有人写传统意义上的情诗。传统情诗虽然失传，却并不妨碍部年轻人对它的怀念……<a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9157374.shtml" target="_blank" class="fred">[全文]</a></p>
-            </div>
-        </dd>
-    </dl>
-                <dl >
-        <dt>七夕对联赏趣</dt>
-        <dd class="clearfix">
-            <div class="pic"><img src="http://k.sinaimg.cn/n/news/transform/245/w140h105/20180813/H2fv-hhqtawx9752058.jpg/w303h168l0t00b6.jpg" width="235" height="175" /></div>
-            <div class="txt">
-                <p>农历七月初七，是我国最具浪漫色彩的传统节日，也是一个象征着美好爱情的节日。在浩瀚的联海中，有不少七夕对联别有几分情趣。<a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9659378.shtml" target="_blank" class="fred">[全文]</a></p>
-            </div>
-        </dd>
-    </dl>
-                <dl >
-        <dt>南瓜棚下听悄悄话</dt>
-        <dd class="clearfix">
-            <div class="pic"><img src="http://k.sinaimg.cn/n/news/crawl/11/w450h361/20180813/0U9O-hhqtawx9334260.jpg/w303h168l0t07e7.jpg" width="235" height="175" /></div>
-            <div class="txt">
-                <p>一道鹊桥横渺渺，千声玉佩过玲玲。 别离还有经年客，怅望不如河鼓星。<a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9324306.shtml" target="_blank" class="fred">[全文]</a></p>
-            </div>
-        </dd>
-    </dl>
-                <dl >
-        <dt>民间传说：汉武帝与西王母</dt>
-        <dd class="clearfix">
-            <div class="pic"><img src="http://k.sinaimg.cn/n/news/crawl/685/w1280h1005/20180813/fUnf-hhqtawx9536396.png/w303h168l0t04d7.jpg" width="235" height="175" /></div>
-            <div class="txt">
-                <p>七夕今宵看碧霄，牵牛织女渡河桥。家家乞巧望秋月，穿尽红丝几万条。<a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9353887.shtml" target="_blank" class="fred">[全文]</a></p>
-            </div>
-        </dd>
-    </dl>
-                <dl >
-        <dt>七夕节的由来：古人对天象的崇拜而得来的</dt>
-        <dd class="clearfix">
-            <div class="pic"><img src="http://n.sinaimg.cn/news/transform/20170817/BJVc-fykcpru7762319.jpg" width="235" height="175" /></div>
-            <div class="txt">
-                <p>七夕”最早来源于人们对自然天象的崇拜。早在《诗经》时代，人们就对牛郎织女的天象有所认识，在东汉时就出现了人格化的描写：“织女七夕当渡河，使鹊为桥。<a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9786490.shtml" target="_blank" class="fred">[全文]</a></p>
-            </div>
-        </dd>
-    </dl>
-                <dl >
-        <dt>七夕节 那些戏曲里的牛郎织女</dt>
-        <dd class="clearfix">
-            <div class="pic"><img src="http://n.sinaimg.cn/news/transform/20170817/x9ly-fykcpru7761916.jpg" width="235" height="175" /></div>
-            <div class="txt">
-                <p>从古至今，牛郎织女这对国民CP的地位，从未改变。他们的爱情故事纯真美好又曲折动人，在不知不觉中为七夕这个传统节日增添了好些浪漫的佐料。所以，向往爱并心中有爱的中国人，总喜欢把他们的故事写进传统戏曲里，含蓄地表达心向往之的爱情。<a href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9821463.shtml" target="_blank" class="fred">[全文]</a></p>
-            </div>
-        </dd>
-    </dl>
-        </div>
-<script type="text/javascript">
-$widgetadd({
-    id:'FinanceForum-Switch-News_conf_158',
-    loadTime: 'DOMContentLoaded',
-    isDepend: true,
-    exports: function() {
-        $('#FinanceForum-Switch-News_conf_158').on('mouseenter','dl',function(){
-            $('#FinanceForum-Switch-News_conf_158 dl').removeClass('current');
-            $(this).addClass('current');   
-        });
-    }
-});
-</script>
-
-			</div>
-		</div>
-		<div class="-live-layout-column span6" data-layout-seq="__component_31" data-layout-type="layoutColumn">
-			<div class="-live-page-widget">
-	<div class="single-image-row_conf_154">
-			<a href="http://news.sina.com.cn/s/2018-08-16/doc-ihhtfwqr9932336.shtml" target="_blank"><img src="http://n.sinaimg.cn/news/crawl/20170818/_P9j-fykcppx9173322.jpg" width="100%" /></a>
-		</div>
-
-			</div>
-	<div class="-live-layout-row" data-layout-seq="__component_33" data-layout-type="layoutRow">
-	<div class="row-fluid">
-		<div class="-live-layout-column span12" data-layout-seq="__component_34" data-layout-type="layoutColumn">
-		</div>
-	</div>
-	</div>
-		</div>
-	</div>
-	</div>
-			<div class="-live-page-widget">
-	<div class="single-image-row_conf_157">
-			<img src="http://n.sinaimg.cn/test/w710h10/20180305/UlC7-fxipenn1423276.jpg" width="100%" />
-		</div>
-
-			</div>
-		</div>
-	</div>
-	</div>
-	<div class="-live-layout-row" data-layout-seq="__component_37" data-layout-type="layoutRow">
-	<div class="row-fluid">
-		<div class="-live-layout-column span8" data-layout-seq="__component_38" data-layout-type="layoutColumn">
-			<div class="-live-page-widget">
-
-
-
-<div class="CM-newest-news" id="pl_newsList">
-  <div class="CC-title CC-margin30">
-    <h2><span class="icon_line"></span>最新新闻</h2>
-    <!--需要将子栏目类型字段值填写到type=中-->
-    <ul class="title-tab">
-     <li><a href="javascript:;" class="cur" node-type="tab" action-data="subjectID=249158&cat=249159">相约七夕</a></li>    </ul>
-  </div>
-  <div class="tab-box">
-    <div class="tab-con">
-      <div node-type="contentbox" >
-    <!--只打印第一页全部tab的数据即可，评论数请加cmnt_id="xxxx",示例如下-->
-        <dl did="hytcitm7552989" class="content">
-      <dt class="news-tit ellipsis" data-level=""><a target="_blank" href="https://news.sina.com.cn/gov/2019-08-07/doc-ihytcitm7552989.shtml">七夕 洋溢着爱与暖的中国节</a></dt>
-	  
-      
-      <dd class="new-info">
-      <div class="labels col2"><span class="date">中国网</span> | <span class="time">2019年08月07日 17:48</span></div>
-      <div class="oper"><a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=comos-hytcitm7552989" target="_blank" class="review col2"><i class="CC-icon-review"></i><span class="num" cmnt_id="gn:comos-hytcitm7552989:0" name="cmnt_count"></span></a></div>        
-      </dd>
-    </dl>    <dl did="hytcitm7493515" class="content">
-      <dt class="news-tit ellipsis" data-level=""><a target="_blank" href="https://news.sina.com.cn/gov/2019-08-07/doc-ihytcitm7493515.shtml">和你谈谈“爱情”：关于绵长坚韧的爱情</a></dt>
-	  
-      
-      <dd class="new-info">
-      <div class="labels col2"><span class="date">中国文明网</span> | <span class="time">2019年08月07日 14:03</span></div>
-      <div class="oper"><a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=comos-hytcitm7493515" target="_blank" class="review col2"><i class="CC-icon-review"></i><span class="num" cmnt_id="gn:comos-hytcitm7493515:0" name="cmnt_count"></span></a></div>        
-      </dd>
-    </dl>    <dl did="hytcerm9066700" class="content">
-      <dt class="news-tit ellipsis" data-level=""><a target="_blank" href="https://news.sina.com.cn/gov/2019-08-07/doc-ihytcerm9066700.shtml">浪漫七夕节 北京市商家各出新招营造节日商机</a></dt>
-	  
-      
-      <dd class="new-info">
-      <div class="labels col2"><span class="date">北京青年报</span> | <span class="time">2019年08月07日 09:45</span></div>
-      <div class="oper"><a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=comos-hytcerm9066700" target="_blank" class="review col2"><i class="CC-icon-review"></i><span class="num" cmnt_id="gn:comos-hytcerm9066700:0" name="cmnt_count"></span></a></div>        
-      </dd>
-    </dl>    <dl did="hytcerm9035201" class="content">
-      <dt class="news-tit ellipsis" data-level=""><a target="_blank" href="https://news.sina.com.cn/o/2019-08-07/doc-ihytcerm9035201.shtml">颐和园：穿针“斗巧”乐趣多</a></dt>
-	  
-      
-      <dd class="new-info">
-      <div class="labels col2"><span class="date">北青网</span> | <span class="time">2019年08月07日 07:08</span></div>
-      <div class="oper"><a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=comos-hytcerm9035201" target="_blank" class="review col2"><i class="CC-icon-review"></i><span class="num" cmnt_id="gn:comos-hytcerm9035201:0" name="cmnt_count"></span></a></div>        
-      </dd>
-    </dl>    <dl did="hytcerm8912660" class="content">
-      <dt class="news-tit ellipsis" data-level=""><a target="_blank" href="https://news.sina.com.cn/gov/2019-08-06/doc-ihytcerm8912660.shtml">七夕：中华传统文化的“高光时刻”</a></dt>
-	  
-      
-      <dd class="new-info">
-      <div class="labels col2"><span class="date">中国新闻网</span> | <span class="time">2019年08月06日 16:13</span></div>
-      <div class="oper"><a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=comos-hytcerm8912660" target="_blank" class="review col2"><i class="CC-icon-review"></i><span class="num" cmnt_id="gn:comos-hytcerm8912660:0" name="cmnt_count"></span></a></div>        
-      </dd>
-    </dl>    
-      </div>
-	  <p class="zt_news_end" data-action="zt_news_end_tips" style="display:none;"></p>
-      <div class="CC-page" node-type="horizontalpage"></div>
-     </div>
-  </div>
-</div>
-<script type="text/javascript">
-  /**
-   * 最新新闻模块数据
-   */
-  window._SINANEWSDATA['init_subjectID'] = "249158";//默认显示的tab的专题sbjectID,必填
-  window._SINANEWSDATA['init_cat'] = 'all';//默认显示的tab的类型,不填默认为空(即请求时候不传cat)
-
-  window._SINANEWSDATA['page_size'] = 5;//每页显示的条数,默认30,不改可删
-  window._SINANEWSDATA['pre_page_times'] = 3;//每页分几次加载,默认3,不改可删
-  
-
-  window.$widgetadd({
-     id: 'pl_newsList',
-     require: [
-       'http://n.sinaimg.cn/ent/sddt/newsList_r.js'
-     ],
-     loadTime: 'onVisibleReady',
-     initialize: true,
-     exports: function(node, widget) {
-        $.pl.newsList.init(node, widget);
-    }
-})
-</script>
-<!--最新新闻 end-->
-
-<!-- seo -->
-<div style="display:none!important;">
-<dl>
-  <dt><a target="_blank" href="https://news.sina.com.cn/gov/2019-08-07/doc-ihytcitm7552989.shtml">七夕 洋溢着爱与暖的中国节</a></dt>
-  <dd>
-    <a target="_blank" href="https://news.sina.com.cn/gov/2019-08-07/doc-ihytcitm7552989.shtml">
-      <img alt="七夕 洋溢着爱与暖的中国节" data-src="http://k.sinaimg.cn/n/default/transform/116/w550h366/20180409/KRZu-fyvtmxe2861187.png/w180h135l50t13eb.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：七夕，洋溢着爱与暖的中国节
-邓海建&amp;nbsp;中国网时事评论员
-“迢迢牵牛星，皎皎河汉女。”今夕何夕，七夕佳节。
-商家的“限量版”、公园的“红粉系”……连消费主义都不忘提醒，这是个浪漫而唯美的传统节日。今年七夕节当天，首都博物馆延长开馆至20点，并推出“携手相伴和合美美——七夕约会博物馆”活动，通过一系列展览及体验活动与观众共度佳节。在更多的城市，与七夕有关的民俗活动同样鲜活生动起来。2019年的七夕，洋溢着爱与暖的“中国味”。
-七夕是传统文化的低吟浅唱。
-千百年来，中国民俗之节往往扎根于泥土而勃兴于生活。有人说，七夕发轫于先人对自然的原始崇拜。早在先秦，《大戴礼记》中的《夏小正》就记载了华夏民族对织女星的观察，并将其作为七月来临的标志。断乎季节、应乎农候，进而发展到后来，妇女祈求“巧智”以走向社会。东晋葛洪的《西京杂记》有“汉彩女常以七月七日穿七孔针于开襟楼，人俱习之”的记载，这是古代文献中最早关于乞巧的记载。可见，七夕自古以来就洋溢着“天人之和”、“巧智之美”。
-七夕是传统婚恋的价值和弦。
-一个牛郎织女的传说，世代相传着中国人对婚恋家庭的淳朴价值。“天阶夜色凉如水，卧看牵牛织女星”“鹊驾成桥事有无，年年今夕会星娥”……执子之手，鹊桥相会。自古以来，国人摒弃传说真伪之辩，而生生不息地传扬着忠贞浪漫的爱情。这种坚守与美好，恰恰是汉文化最注重家庭情结的精神根源。国人伦理观念构建在家庭基础之上，所谓“家国天下”，家事虽小，却是“国”和“天下”的细胞单元。于是，有流传千载的爱情故事、有赓续不绝的浩荡家风，方有了有情有义、有礼有仁的民族。
-越是民族的，越是世界的。历史而言，七夕节起源于中国，却在世界上曲高和众。尤其在部分受中华文化影响的日本、朝鲜半岛、越南等地，欢度七夕亦是渊源流传的历史传统。真挚热烈的爱情、家和万事兴的理念，和热热闹闹的七夕民俗一道，深深融入华人的精神血脉与文化信仰之中。
-七夕的美好与诗意，大约就是洋溢着爱与暖的“中国味”。2006年5月20日，七夕节被中华人民共和国国务院列入第一批国家级非物质文化遗产名录。2017年1月，中共中央办公厅、国务院办公厅印发《关于实施中华优秀传统文化传承发展工程的意见》，首次将七夕节写进顶层设计。“让收藏在禁宫里的文物、陈列在广阔大地上的遗产、书写在古籍里的文字都活起来。”而我们的传统节日，亦当从民间传说与消费主义中走出来，走进新时代的天地，走进年轻人的心里。
-我们的七夕，是风流如斯的七夕，是“人间值得”的七夕。</span><a target="_blank" href="https://news.sina.com.cn/gov/2019-08-07/doc-ihytcitm7552989.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="https://news.sina.com.cn/gov/2019-08-07/doc-ihytcitm7493515.shtml">和你谈谈“爱情”：关于绵长坚韧的爱情</a></dt>
-  <dd>
-    <a target="_blank" href="https://news.sina.com.cn/gov/2019-08-07/doc-ihytcitm7493515.shtml">
-      <img alt="和你谈谈“爱情”：关于绵长坚韧的爱情" data-src="http://k.sinaimg.cn/n/news/crawl/156/w550h406/20190807/d8e7-iaxiufn4214711.jpg/w180h135l50t171b.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：七夕，和你谈谈“爱情”，关于绵长坚韧的爱情
-今天是七夕
-这一天
-我们总是难免谈起牛郎织女
-谈起爱情
-有人说
-现代人爱情就是激情
-短暂易破碎
-但，我想和你谈谈这些人的爱情
-他们把儿女之情融入了对祖国和人民的大爱中
-这份爱
-分外绵长
-无比坚韧
-也许这才是真正的“爱情”
-有一种爱叫不忘初心
-一位是从大山走出来的老红军
-一位是来自胶东半岛、奔赴延安的知识青年
-两条相隔千里的生命轨迹
-神奇地交织在了一起
-成为相守一生的伴侣
-
-得知家乡还没有摆脱贫穷
-他决心回到魂牵梦绕的家乡
-和乡亲们一起改变家乡的落后面貌
-她义无反顾地跟随丈夫一起
-
-他们不恋高位而选择奉献
-不图享受而甘于奋斗
-只为让乡亲们脱贫致富
-这就是甘祖昌将军与他的老伴龚全珍
-龚全珍老人说：
-“我始终坚信跟着共产党走
-国家才有希望
-民族才能复兴
-人生才有意义”
-这就是他们的爱情
-不忘初心相互依偎
-有一种爱叫共同坚守
-一座在地图上
-几乎无法看到的小岛
-有两个人
-
-王继才和他的爱人王仕花
-他们无怨无悔坚守付出
-只为守好祖国的边疆
-家就是岛，岛就是国
-他们用32年的坚守
-守护着自己的小家
-也守护着祖国这个大家
-王继才说：
-我们中国的国土湖水
-都是先辈们用鲜血染红的
-我坚决不让一寸土、一滴水被人侵犯
-我要用生命的代价护卫好
-王继才妻子王仕花说：
-守岛不仅守的是我们的小家
-守的更是组织的信任，民兵的责任
-守的是人民的幸福，祖国的安宁
-
-这就是他们的爱情
-心意相通
-共同坚守
-你在哪
-我就在哪
-有一种爱叫相濡以沫
-47年如一日践行
-守护英雄的承诺
-精心照顾护理一级伤残军人麦贤得
-为英雄撑起了一个家
-
-李玉枝的悉心照顾下，
-麦贤得从一名一级伤残病人
-到能够像正常人一样生活
-创造了医疗护理史上的奇迹
-
-谈起这些李玉枝老人说：
-“我只是做了一名党员该做的事。
-这是我该做的，
-我们中华传统美德，
-每个人都有一颗善良的心，
-都能够做好的。”
-这就是他们的爱情
-简单朴素却充满温情
-有一种爱叫默默奉献
-2019年4月8日
-湖北省军区离休老干部马旭和老伴儿
-将1000万元分几次汇往自己的家乡
-给家乡用于公益事业
-了却一直以来心中的愿望
-他们很平凡
-只是普通的耄耋夫妻
-他们又不平凡
-马旭老人在军内外发表了100多篇学术论文
-先后获得许多国家专利
-
-他们很富有
-30余年攒下了千万积蓄
-他们又很“拮据”
-居住在一个极其简陋的小院里
-家里没有几件像样的家具
-但是却捐出巨款建设家乡
-
-这就是他们的爱情
-平凡普通却又无私奉献
-有一种爱叫心系未来
-94岁的包斌和88岁的陆一军夫妇
-跨越将近40年
-帮助多名贫困学子继续学业
-2018年5月
-一次性捐出100万设立助学基金
-只为那份“常愿寒门多学士”的家国情怀
-当被问到捐款原因时
-包斌、陆一军说：
-“党和国家给予我们的，
-远远超过我们所贡献的。
-这笔钱是国家给的，
-人民给的，
-应当回归国家和人民，
-它或许能改变一些孩子的命运，
-为国家和民族培养人才。”
-闲暇时间就写写诗
-和喜欢摄影的朋友聚聚会
-修修身边小物件
-在自己园子里种些花花草草
-两位老人乐观优雅地经营着晚年生活
-这就是他们的爱情
-无私援手善行无疆
-却又有滋有味
-七夕
-愿你拥有美丽的“爱情”</span><a target="_blank" href="https://news.sina.com.cn/gov/2019-08-07/doc-ihytcitm7493515.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="https://news.sina.com.cn/gov/2019-08-07/doc-ihytcerm9066700.shtml">浪漫七夕节 北京市商家各出新招营造节日商机</a></dt>
-  <dd>
-    <a target="_blank" href="https://news.sina.com.cn/gov/2019-08-07/doc-ihytcerm9066700.shtml">
-      <img alt="浪漫七夕节 北京市商家各出新招营造节日商机" data-src="http://k.sinaimg.cn/n/default/transform/116/w550h366/20180418/QO_Y-fzihnep5214913.png/w180h135l50t1036.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：今天是传统节日七夕 全市商家各出新招营造节日商机——爱情广场千纸鹤 玫瑰点心上餐桌
-本报讯（记者&amp;nbsp;&amp;nbsp;李佳）今天是浪漫七夕节，京城也掀起了一股甜蜜爱意，近期各大商超、餐饮等场所早已做足准备，除相应折扣降价促销外，今年不少商家都竞相玩出新花样，增强情侣间互动体验，老字号还推出了“示爱”菜。作为中国传统最具浪漫色彩的节日,七夕也正在被越来越多的年轻人推崇。
-由市商务局主办的2019妇女儿童消费月恰逢七夕，在此期间西单商场老字号精品荟将举办时尚老字号内购会及老字号甜蜜打卡赠礼活动；石景山万达广场为七夕准备了浪漫气球雨，每个气球中都有不同的礼品，在浪漫婚纱秀现场还能体验不同的婚纱风格；华润五彩城七夕优惠来袭，香水、服饰、美食、潮玩体验馆，让“现男友”心动；华联武夷购物中心推出情歌对唱、恰恰舞、DIY千纸鹤、购物满送甜蜜礼物等多项活动吸引周边社区和广大市民参与；城西的五棵松华熙购物中心打造了浪漫与甜蜜的爱情广场，用爱情同心锁留下约定，已经成为很多年轻人示爱的打卡圣地。
-在七夕情人节来临之际，菜百首饰布置了七夕主题专区。消费者除了近距离地体验爱恋系列珍贵饰品，活动现场还设置最美承诺区、爱情银行区、照片打印区……在菜百主题活动现场，只要现场购买任意菜百首饰铂金首饰，均可进入“爱情银行区”领取“爱情存折”，写下对爱情的承诺。
-今年七夕，鲁菜泰斗同和居、八大春之首的同春园饭店、华天二友居肉饼、惠丰饺子楼等各大老字号准备了各式各样的“表白”“示爱”菜品。
-日坛同和居、月坛同和居和什刹海同和居会在七夕当天准备面点制作的“蓝色妖姬”、“红玫瑰”等。同时，店里还会为到店消费的情侣送上好吃好看的“心心相印”菜品一道。华天二友居肉饼会在七夕当天为到店消费的情侣们送上银耳莲子羹一份。惠丰涮肉馆则会为消费满287元的情侣们送上炒红果两份，通过送甜品、送实惠的方式来祝福情侣们日后生活甜甜蜜蜜。</span><a target="_blank" href="https://news.sina.com.cn/gov/2019-08-07/doc-ihytcerm9066700.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="https://news.sina.com.cn/o/2019-08-07/doc-ihytcerm9035201.shtml">颐和园：穿针“斗巧”乐趣多</a></dt>
-  <dd>
-    <a target="_blank" href="https://news.sina.com.cn/o/2019-08-07/doc-ihytcerm9035201.shtml">
-      <img alt="颐和园：穿针“斗巧”乐趣多" data-src="http://k.sinaimg.cn/n/sinacn20190807s/649/w400h249/20190807/01dc-iatixpn0966263.jpg/w180h135l50t116f.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：颐和园：穿针“斗巧”乐趣多
-
-本报讯（记者 武文娟）巧手引针、投针验巧、制作巧果……颐和园“慧心巧手伴七夕”活动昨天在贵寿无极院内拉开序幕。昨天上午九点半，北京青年报记者在活动现场看到，“巧手引针”比赛正在进行，只见3位女童手拿五色彩线正目不转睛地将其穿入排列整齐的10根银针针孔中，现场“斗巧”。
-据颐和园相关负责人介绍，除6日当天，在七夕节至8月底，颐和园贵寿无极院内将持续保留“穿针引巧”和“投针验巧”两个项目，游客可以现场参与七夕乞巧，感受传统民俗趣味。
-摄影/本报记者 汪震龙</span><a target="_blank" href="https://news.sina.com.cn/o/2019-08-07/doc-ihytcerm9035201.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="https://news.sina.com.cn/gov/2019-08-06/doc-ihytcerm8912660.shtml">七夕：中华传统文化的“高光时刻”</a></dt>
-  <dd>
-    <a target="_blank" href="https://news.sina.com.cn/gov/2019-08-06/doc-ihytcerm8912660.shtml">
-      <img alt="七夕：中华传统文化的“高光时刻”" data-src="http://k.sinaimg.cn/n/news/crawl/762/w500h262/20190806/7acf-iatixpm9404571.jpg/w180h135l50t18cc.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：七夕，中华传统文化的“高光时刻”
-“银烛秋光冷画屏，轻罗小扇扑流萤。”这是柔情似水的七夕，这是佳期如梦的七夕。
-
-这是一个有关爱与暖的传统节日。在商家眼里，这是中国情人节；在社区眼里，这是中国家庭节；在学者眼里，这是中国民俗节……这个传承千年的“乞巧节”“女儿节”“双星节”，绵延着中国农耕文化中最温柔与浪漫的那一页。
-民俗之魅，民族之美。2006年，七夕节被国务院列入第一批国家级非物质文化遗产名录。此后，“牛郎织女”传说列入第二批国家级非物质文化遗产名录。2018年，为推进中华优秀传统文化创新性发展，文化和旅游部非遗司首次在山东、广东、甘肃三地统筹开展七夕节体验式活动。在浓郁的商业氛围和爱情渲染之下，七夕正洗去浮华、回归本真，展现民族节日最走心的气质与灵魂。
-回头望去，早在西汉时期，牛郎织女便由星名变成了男耕女织的神话人物，且被注入节日内涵之中。在《淮南子》《风俗通》中，出现了“鸟鸦填河桥而渡织女”和“织女七夕当渡河，使鹊为桥”的传说。民间随之产生了七夕夜外出看牛郎织女相会的活动，宫廷亦有“穿七孔针”“跳于阖舞”之俗。自此以后，七夕越发温婉动人，承载文化、演变传统，成为民族心理认同的一部分。
-它是创造之节。《西京杂记》有言：“汉彩女常以七月七日穿七孔针于开襟楼，人具习之。”我国广东、乃至香港地区等，过七夕节仍保留着“乞巧”的核心传统。乞巧的本意，便在于创造与创新。中华民族勤则不匮、自强不息，在节日文化中都洋溢着推动生产力与社会进步之美。它是婚恋之节。“在天愿作比翼鸟，在地愿为连理枝”“两情若是久长时，又岂在朝朝暮暮”，这是中华民族最淳朴而真挚的爱情观。牛郎织女的故事，传扬的是忠贞与坚守。举案齐眉、家和事兴，快意人生、追求幸福，千百年来，这恰恰是中华民族婚恋家庭观的核心要素。
-更重要的是，七夕传承了中华传统文化中“圆满”与“和合”的精髓。这是粗放却质朴的中华民族价值观与世界观，贯穿中华传统文化的所有领域和全部历程——祭拜祈福里“天人合一”的宇宙观、爱情悲剧中“和而不同”的社会观、民俗活动中“人心和善”的道德观……沉淀为文化的“初心”，培厚为民族的根本。
-或因如此，2017年1月，中共中央办公厅、国务院办公厅印发《关于实施中华优秀传统文化传承发展工程的意见》，首次将七夕节写进顶层设计。今年全国两会期间，亦有全国人大代表提交《关于延长和增加中华传统文化特色节假日的建议》，呼吁增设七夕节等为法定节假日。凡此种种，皆说明各界已然认识到七夕佳节的重要意义，重拾“遗失的美好”、重温七夕的浪漫。
-这份美好、这份浪漫，是文化自信之源，亦是文化软实力之彰显。年年七夕、今又七夕，不妨让这个洋溢爱与暖的日子，成为中华传统文化的“高光时刻”，声彻寰宇、泽流遐裔。（邓海建）
-来源：光明网</span><a target="_blank" href="https://news.sina.com.cn/gov/2019-08-06/doc-ihytcerm8912660.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="https://news.sina.com.cn/o/2019-08-05/doc-ihytcitm6910250.shtml">上海350余名单身青年职工黄浦江畔觅良缘</a></dt>
-  <dd>
-    <a target="_blank" href="https://news.sina.com.cn/o/2019-08-05/doc-ihytcitm6910250.shtml">
-      <img alt="上海350余名单身青年职工黄浦江畔觅良缘" data-src="http://k.sinaimg.cn/n/news/transform/500/w300h200/20190805/8173-iatixpm3256667.jpg/w180h135l50t1f5f.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：浪漫夏夜 相会七夕!上海350余名单身青年职工黄浦江畔觅良缘
-新民晚报讯（记者 鲁哲）七夕是中国“情人节”，传说中牛郎织女鹊桥相会的日子。在七夕来临前夕，4日晚上，350多名单身青年职工相聚黄浦江畔寻觅良缘。
-这场名为“四季恋歌•浪漫夏夜 相会七夕”上海工会青年职工交友活动由上海市总工会主办，中智上海工会联合会承办，上海市运输工会协办。
-图说：“四季恋歌•浪漫夏夜 相会七夕”上海工会青年职工交友活动现场。上海市总工会供图
-为帮助单身青年职工“遇见爱”，上海市总工会推出“四季恋歌”服务职工实事项目，让各行各业青年职工在工会红娘的帮助下，相识结缘，解决婚姻大事。
-线上，市总工会自主开发了“四季恋歌·会缘”小程序，以工会会员的实名认证信息为依托，搭建一个安全、可靠、免费的公益性交友平台。小程序自今年3月上线以来，已吸引8400多名单身青年职工注册，平均每周有340多对开展互动。市总工会女工部的工作人员告诉记者，自3月上线以来，已经有20多对注册的工会会员处于热恋当中了。
-线下，各级工会积极协调各方资源，上半年举办50多场形式多样的主题交友活动，为大家创造了增进沟通的机会。市总工会女工部的工作人员说，这次参加“相会七夕”的青年朋友都是在“会缘”小程序中报名成功的。
-活动现场还请来了两对通过“会缘”小程序相爱的恋人。小刘在本市绿化环卫部门工作，经单位工会干部推荐，他今年3月成为“会缘”小程序会员，之后认识了在水务部门工作的小李，经过近5个月的交往，两人相爱了，打算下个月领取结婚证书。小陈也是在“会缘”小程序上认识小万的。小陈说，近4个月交往下来，发现两人很有共同语言。小万则认为，小陈善良、有责任感，“是她理想中的另一半”。</span><a target="_blank" href="https://news.sina.com.cn/o/2019-08-05/doc-ihytcitm6910250.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="https://news.sina.com.cn/c/2019-08-05/doc-ihytcerm8538522.shtml">穿针折纸画伞 仙女们快来园子里“进修”</a></dt>
-  <dd>
-    <a target="_blank" href="https://news.sina.com.cn/c/2019-08-05/doc-ihytcerm8538522.shtml">
-      <img alt="穿针折纸画伞 仙女们快来园子里“进修”" data-src="http://k.sinaimg.cn/n/news/transform/500/w300h200/20190805/e764-iatixpm3262372.jpg/w180h135l50t150d.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：七夕│穿针、折纸、画伞……仙女们快来园子里“进修”！
-乞巧变益智，看圆明园如何演绎七夕乞巧的当代版本。
-此时走进圆明园，在饱览夏日皇家御园风荷胜景之外，还可以去春泽斋的古风千伞长廊下，参加“爱满京城，相约幸福”为主题的七夕巧市活动，体验别具一格的七夕乞巧习俗。
-
-
-又是一年乞巧时
-农历七月初七，是传说中牛郎和织女在鹊桥相会的日子，也是魁星的生日。古时人们相信，织女是心灵手巧的仙女，魁星则是主宰文章兴衰的神。古人们有“拜织女”、“拜魁星”的习俗。女性向织女祈求巧手、祈愿美好姻缘，而书生则向魁星祈求考运亨通、金榜题名。这些活动许多在晚上举行，因此，七月初七的节日就被称为“七夕”了。
-
-传统的七夕节有穿针乞巧、投针验巧、吃巧果、拜魁星等习俗，而这届圆明园七夕巧市共设7个趣味活动，以仿古游戏为主，把传统的祈求心灵手巧和婚恋顺利的民间信仰仪式转化为益智修心的文化活动。
-
-韩佳宁 摄
-
-
-游客们完成每个游戏任务之后，就能得到一枚打卡印章，集齐7个项目的印章之后，可以去工作人员那里领取今年圆明园文创为七夕节特别设计的限定礼品——荷花宝宝夏日透扇。
-
-荷花宝宝夏日透扇。图/圆明园供图
-另类穿针乞巧
-“佳节女儿约诸邻，迭将水碗丢巧针。日光照得龙梭影，绣出鸳鸯如意君。”小诗《丢巧针》记录的正是流行于清代的七夕丢针游戏和女孩们对姻缘的美好祈愿。
-
-一碗静置很久的水，水面会形成水膜，细针可漂浮于水面，是“丢针”的物理学基础。传统的丢针游戏的标准非常复杂，要观察针在碗底的投影形状来判断乞巧的女性是否能够得巧。
-
-在圆明园的七夕巧市，也有丢针游戏，但目的不同。这个当代版本的规则是，只要参与者能够让针悬浮于水面就算成功，意图用此活动来检验参与者的心态是否平静。
-
-“穿针”是最早形成的乞巧活动，在汉代就有“对月穿针”的记载。女子们用五彩丝线穿过九孔细针，最先穿针成功的人才算得巧。由于穿针活动的广泛流行，以至于七夕节的别名是“穿针节”。
-
-圆明园的巧穿针游戏与汉代的穿针有较大区别：用一根纫好线的木质针，按照规定顺序，在一分钟之内把16块色彩、形状各异的积木珠子串联起来。虽然传统七夕乞巧活动大都是“女性专利”，但是京蜜发现，在圆明园有许多男性也在积极地参与巧市的各项活动，平心静气地穿针引线、掷针入水。
-千伞廊与“画巧伞”
-“伞”是圆明园乞巧市布置的一个重要主题。玲珑精巧的骨架体现出乞巧之“巧”意，而伞面丰富的绘画空间则显示出画师的“灵”气。把它们聚集排列在一起，视觉效果不止于“美”。
-在泽春斋，近一千把绘制着各种中国风画卷的绢伞拼成伞墙和伞屋顶，仿佛散发着“快来把我拍下来晒到朋友圈”的召唤，吸引着无数游客前来打卡留念。
-
-
-爱好摄影的佳仁女士就是其中一位。这个周末，她像往常一样来到圆明园收集荷花的照片，却意外发现了一座色彩缤纷的花伞长廊。与素不相识的游客之间互相帮忙，在伞墙前拍照留念，互相分享美丽的照片，是佳仁女士本次游园的额外收获，她还专门为自己起了一个作为摄影师的艺名——“燕山家人”。
-
-图/燕山家人供图
-
-图/燕山家人供图
-这个令人驻足流连的千伞廊，其实也是一个“巧市打卡”的游戏道具。在千伞长廊前拍照留念之后，在微博或微信朋友圈打卡“圆明园七夕巧市”或关注圆明园官方微信公众号，就可以索要“巧市打卡”印章。
-
-韩佳宁 摄
-京城七月，晴雨无定。以伞挡雨，以伞遮阳。作为圆明园根据《雍正十二月令图》举办的系列传统文化月主题活动之一，七夕巧市展现了圆明园农历七月的节令风俗和风土物候。同时物尽其用，“伞”也成为了巧市七项活动的重要元素之一。游客们可以在游戏点免费获得白色小纸伞和各色颜料，当场绘制纸伞，画好的伞可以带走。这就是“画巧伞”游戏。以伞作为活动的主题元素，体现着圆明园文创部门的设计用心。
-
-
-韩佳宁 摄
-拿着亲手绘制的雨伞，仿佛拿着从七夕巧市收获的灵巧与美感，冼小姐感叹称不虚此行。
-
-韩佳宁 摄
-复刻《雍正十二月令图》
-雍正三年(1725年)八月，圆明园修缮一新。而后雍正皇帝经常在园中居住并办理公务，他明谕百官“每日办理政事与宫中无异”。值此期间，宫廷画师郎世宁为雍正帝创作了《雍正十二月令图》。以12个月份来表现雍正皇帝在圆明园生活的各个场景，也展现了盛时圆明园在一年当中的不同节令风俗。
-
-网络图片《雍正十二月令图·七月乞巧》。
-目前，圆明园据此画作已举办了正月观灯、二月踏青、三月赏桃、四月流觞、五月竞舟、六月纳凉等活动，未来还将举办九月赏菊、腊6月赏雪等系列文化活动，力图把12个月的节令风俗全部“复现”，成为按月轮替、贯穿全年的圆明园品牌文化活动。
-“圆明园这次的活动和布景都很有传统的中国味道，我很喜欢。”冯女士检查着刚刚用自拍设备拍出的照片，恬淡的表情下透着欣喜，一身碎花布裙在花伞的衬托下显得十分美丽。
-七夕就在眼前！想体验传统的乞巧风俗、想挑战自己的动手能力、想得到精巧的工艺品、想拍摄美妙的风景人物、想度过一个美好的七夕节……你想要的这一切，圆明园七夕巧市都为你准备好了。京蜜还要告诉大家，此时正逢第二十四届圆明园荷花节，园内247种风姿绰约的荷花竞相盛放。还有今年夏天绽放的“网红”古莲花和并蒂莲，也都正在圆明园多稼如云荷花基地迎接游客，它们会与大家一起度过这个美好的七夕佳节。
-
-【京蜜贴士】
-圆明园七夕巧市
-活动项目：巧市打卡、巧穿针、巧诗树、丢巧针、巧折纸、画巧伞 、七巧板&amp;nbsp;
-活动时间：8月3日、4日、7日（七夕）、10日及11日，7:00—19:00
-地点：北京市海淀区清华西路28号圆明园春泽园
-公交：地铁十号线圆明园站，南门进入北行700米
-门票：成人门票：10元/人次，半价门票：5元/人次
-撰文 宁小玲
-摄影 见习记者 丛帅宇</span><a target="_blank" href="https://news.sina.com.cn/c/2019-08-05/doc-ihytcerm8538522.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="https://news.sina.com.cn/c/2019-08-04/doc-ihytcerm8484986.shtml">七夕将至 节日当天大家都会吃点什么呢</a></dt>
-  <dd>
-    <a target="_blank" href="https://news.sina.com.cn/c/2019-08-04/doc-ihytcerm8484986.shtml">
-      <img alt="七夕将至 节日当天大家都会吃点什么呢" data-src="http://k.sinaimg.cn/n/default/transform/116/w550h366/20180517/2uns-harvfhu4568971.png/w180h135l50t1219.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：七夕将至 节日当天大家都会吃点什么呢丨小乡聊天
-新京报讯（记者 李傲）夜里下了一场雨，给白天的北京带来了些许凉意，这一个星期的雨水相对较多，而明日还是有中雨，最高气温28℃，最低气温23℃，中雨转雷阵雨。
-七夕很快就要到了，牛郎和织女的爱情故事在中国家喻户晓，他们对爱情的坚贞和信守令人感动，所以七夕节充满了浪漫的气息。在这一天，女人们都会祈求自己的真挚爱情，于是就相应诞生了一些关于女人们在这一天乞巧的习俗。而在七夕我国有哪些饮食习俗呢？下面小乡就给大家介绍一下。
-七夕节的饮食习俗，各地不尽相同，一般都称其为吃巧食。一个“巧”字形象地道出了七夕食俗的独特之处，表达出了人们追求心灵手巧、合家安康、生活美满的美好愿望。
-七夕乞巧的应节食品为，以巧果最为有名。巧果又叫“乞巧果子”，款式极多。“乞巧果子”是七夕节的传统祭品和美点。七夕晚上人们把“乞巧果子”端到庭院，全家人围坐，品尝做“巧果”人的手艺。现在这种习俗在许多地方都已经不流传了，“乞巧果子”这种传统食品，也演变成多种花色糕点。巧果款式极多，主要的材料是油、面、糖、蜜。此外，乞巧时用的瓜果也有多种变化：或将瓜果雕成奇花异鸟，或在瓜皮表面浮雕图案；此种瓜果称为“花瓜”。
-除此之外，在我国一些地方的糕点铺，这一天还要制作一些织女形象的酥糖，俗称“巧人”“巧酥”，出售时又称为“送巧人”，民间认为，吃了这种“酥糖”的人会变得心灵手巧。
-而在我国山东，七夕这一天是要吃巧巧饭，乞巧的习俗十分有趣：七个要好的姑娘集粮集菜包饺子，把一枚铜钱、一根针和一个红枣分别包到三个水饺里，乞巧活动以后，她们聚在一起吃水饺，传说吃到钱的有福，吃到针的手巧，吃到枣的早婚。
-在福建，七夕节时要让织女欣赏、品尝瓜果，以求她保佑来年瓜果丰收。供品包括茶、酒、新鲜水果、五子（桂圆、红枣、榛子、花生、瓜子）、鲜花和妇女化妆用的花粉。一般是斋戒沐浴后，大家轮流在供桌前焚香祭拜，默祷心愿。
-看完七夕的饮食习俗，我们再来看看全国的天气情况。据中国天气网称，8月4日20时至5日20时，华北中北部、内蒙古中部、辽宁西部、黄淮中部、苏皖北部以及青藏高原东南部、四川盆地北部和西部、华南南部、云南南部等地有中到大雨，其中，河北中部、北京东北部、山东中南部、江苏北部、四川盆地西部等地部分地区有暴雨或大暴雨（100～120毫米）。内蒙古中部、辽东半岛、山东半岛、江苏东部、江南东北部等地部分地区有4～5级及以上风。
-七夕将至，大家不妨跟伴侣一起去感受下七夕节的传统习俗，并品尝七夕节的传统美食。新京报乡村频道愿与您一起，了解风俗，共度佳节。
-&amp;nbsp;</span><a target="_blank" href="https://news.sina.com.cn/c/2019-08-04/doc-ihytcerm8484986.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="https://news.sina.com.cn/o/2019-08-04/doc-ihytcitm6789242.shtml">相濡以沫30余年 白大褂穿成情侣装</a></dt>
-  <dd>
-    <a target="_blank" href="https://news.sina.com.cn/o/2019-08-04/doc-ihytcitm6789242.shtml">
-      <img alt="相濡以沫30余年 白大褂穿成情侣装" data-src="http://k.sinaimg.cn/n/news/transform/500/w300h200/20190805/7d9a-iatixpm3292451.jpg/w180h135l50t12b1.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：这对夫妻几乎没过过七夕，但相濡以沫30余年，白大褂穿成情侣装
-虽在同一家医院上班，却一天也说不上几句；在其他夫妻共进晚餐之时，他们还在医院忙着；孩子生病，两人都不在身边，那是常事儿；想一家三口出去旅个游，那就是奢求……这就是夫妻医生的日常。
-虽然苦、累，但他们从未放弃过自己热爱的医生工作，不忘初心，在自己的专业领域深耕细作。中国传统的七夕节在即，让记者带着你，走近扬中市人民医院的这对夫妻医生：普外科主任医师耿兴荣&amp;amp;麻醉科主任医师金静芬，了解他们的生活，向他们致敬。
-
-
-
-浪漫！大学同窗成为医生夫妻
-一年一度七夕节，就在眼前。这个中国的情人节，对于没有节假日概念的医务人员来说，这一天将与其他节日一样，都只是平常的一天。
-耿兴荣，扬中市人民医院普外科主任医师；金静芬，扬中市人民医院麻醉科主任医师。工作中，他们是并肩作战的同事，生活中，他们是一对相濡以沫的夫妻。更难得的是，30多年前，他们就读于同一所大学，一起学医，一起遵守最初的约定，走上医生的岗位。
-1981年，他们一起考入徐州医学院临床医学系（今徐州医科大学）。当时他俩一个班，耿兴荣是班长，并且在大学时就很努力，优秀。毕业时，为了能和他一起来到扬中工作，金静芬放弃了回苏州的机会，选择留在徐州当了一名卫校老师。经过两年的分离，1988年底，金静芬终于调回扬中。
-
-
-
-辛酸！顾了患者就欠了家人
-对金静芬来说，耿兴荣工作的忙碌和辛苦，她常常看在眼里疼在心里。作为外科医生，手术和加班是耿兴荣的工作常态。他似乎永远有处理不完的工作，常常是白天工作一天后，晚上回到家还有接不完的电话。
-凌晨一两点钟，当大家都在睡梦中时，耿兴荣突然接到医院120急诊电话。有外伤、车祸病人需要紧急手术，然后抢救到凌晨五六点，这都是常有的事。再然后，在医生值班室或者办公室稍微躺一下，早饭都是妻子金静芬带过去给他。此后，就到了早上上班，又是组织专家会诊，又是查房、门诊、手术……
-“从普通的外科医生一直到大外科主任，这么多年了，我最多在家度过两三个完整的的除夕”，耿兴荣简简单单的一句话，就勾勒出这名医务工作者的不平凡。
-然而，作为医生夫妻档，两人对患者的坚守和付出，无疑让他们在面对家庭时多了一份亏欠和辛酸。随着儿子的出生，由于家中父母，身体不好，带孩子的重任只能落在耿兴荣奶奶的身上，老太太就这么把重孙照顾到了初中。
-“儿子的作业全部都是我辅导，耿兴荣基本没有时间来管他，家长会就别提了，一般都是我去，实在没时间了，我们就给老师打电话。但是到了高中后，我再忙，也要抽出时间去，因为我们亏欠孩子的太多…...”说道这些，夫妻俩不约而同，既心酸又无奈。
-儿子懂事、独立、勤奋，很理解我们的工作，最后顺利地考入了东南大学，提及已经成家的儿子时，金静芬还是满脸地欣慰。
-认可！10前胃癌手术患者来看他
-从业三十余年，无悔的付出，耿兴荣也获得了同事和患者的高度认同和信任，与许多患者及其家属甚至成了朋友。
-作为扬中西来桥人的他，只要老家有人找他，耿兴荣都尽力帮助。2017年夏天，他带领31名医疗专家回乡义诊，体检完的村民都爱拉着他，让他再帮看看体检单。77岁的李秀芳说，从小看着耿兴荣长大的，请他看放心。
-就在采访中，一名老人来到耿兴荣的办公室，与他交谈起来。“气色不错，你要注意饮食，不能喝酒，定期复查。”面对老人的到访，耿兴荣与他耐心的交流。在交流中得知，10年前，耿兴荣为他做的胃癌手术，老人来办公室其实就是看看他，拉拉家常。
-与此同时，作为学科带头人，耿兴荣针对近端胃大部切除+倒I式吻合术后，存在胆汁返流多、生活质量差、病人痛苦大等缺陷，他和团队开创性地采取了双-Rorx-en-Y空肠间置手术方式，并成功解决上述问题。
-此外，他还带领科室团队学习、消化、吸收国内外普外科领域的先进技术，在腹腔镜微创手术上不断探索，从常规开展腹腔镜胆囊切除术，到现在开展腹腔镜下胆总管切开取石术、腹腔镜下胃肠肿瘤根治术及腹腔镜下甲状腺部分切除术等，得到同事和广大群众的认可。
-幸福！再忙也记得彼此的生日
-对于夫妻而言，最幸福的，莫过于她时刻在他心里。
-1987年，苏州姑娘金静芬随耿兴荣一起来到扬中。“当时，真的很穷，我们结婚的时候，在扬中西来办的酒，很简单。物质要求不高，只要他对我好就行，其他的真的没什么要求。”
-在金静芬的眼里，丈夫耿兴荣性格很好。对于每年的生日那天，他都记得，以前会发短信、打电话，有时也会送花，现在都发红包。
-“再忙生日那天，我们都会收到彼此的祝福。对于结婚纪念日，只要有时间，我们也一定会约着一起去看场电影......”金静芬幸福地说道。
-这个七夕节，对这对医生夫妻来说，注定仍会像工作日一样普通平常。他在病房这头，她在手术室那头，不是在值班，就是在抢救病人。
-然而，对他们来说，在同样的岗位上并肩战斗，是他们选择的浪漫。相濡以沫30余年，他们把白大褂穿成永远的情侣装。
-彼此相知，一切都是幸福的模样。
-通讯员&amp;nbsp; 刘耀&amp;nbsp; 扬子晚报/扬眼记者&amp;nbsp; &amp;nbsp;万凌云</span><a target="_blank" href="https://news.sina.com.cn/o/2019-08-04/doc-ihytcitm6789242.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="https://news.sina.com.cn/o/2019-08-04/doc-ihytcerm8363667.shtml">圆明园办“七夕巧市” 市民体验仿古游戏</a></dt>
-  <dd>
-    <a target="_blank" href="https://news.sina.com.cn/o/2019-08-04/doc-ihytcerm8363667.shtml">
-      <img alt="圆明园办“七夕巧市” 市民体验仿古游戏" data-src="http://k.sinaimg.cn/n/news/transform/500/w300h200/20190805/4490-iatixpm3303368.jpg/w180h135l50t1a60.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：圆明园办“七夕巧市” 市民体验仿古游戏
-
-本报讯（记者 武文娟）穿针乞巧、投针验巧、画巧伞……七夕节将至，圆明园昨起在春泽斋举办“爱满京城 相约幸福”七夕巧市，让市民们感受中华传统文化。
-昨天上午，北青报记者在现场看到，700多把绢伞将春泽斋装扮一新，古色古香。数百平方米的场地被分成不同的互动区域，游客们在其中拍照留念、参与互动，玩得不亦乐乎。
-据介绍，七夕节素有穿针乞巧、投针验巧、拜织女、吃巧果等习俗。圆明园七夕巧市也相应推出七个趣味活动，都以仿古游戏为主。巧市活动共举办5天，时间为8月3日、4日、7日（七夕）、10日及11日。游客只要以集章打卡的形式完成园内设计的七个活动，即可获得限定礼品——荷花宝宝夏日透扇。“七夕正值圆明园第二十四届荷花节，游客来园可以一边欣赏夏日御园美景，一边感受七夕氛围，体验传统七夕节游戏。”摄影/本报记者 袁艺
-责任编辑：杨雅琳(EN051)</span><a target="_blank" href="https://news.sina.com.cn/o/2019-08-04/doc-ihytcerm8363667.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="https://news.sina.com.cn/o/2019-08-03/doc-ihytcerm8338692.shtml">七夕节烟花秀台北上演 数万人共唱情歌</a></dt>
-  <dd>
-    <a target="_blank" href="https://news.sina.com.cn/o/2019-08-03/doc-ihytcerm8338692.shtml">
-      <img alt="七夕节烟花秀台北上演 数万人共唱情歌" data-src="http://k.sinaimg.cn/n/default/transform/116/w550h366/20180517/Ak-v-harvfhu4569175.png/w180h135l50t18e3.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：七夕节烟花秀台北上演数万人共唱情歌
-新华社台北8月3日电（记者王爱华何自力）3日晚，一年一度的大稻埕七夕节庆祝活动在台北上演。在《新不了情》《很爱很爱你》等歌曲的伴奏下，加入“LOVE”字样以及“爱心”和“音符”花色的烟花点亮淡水河上空，时长8分钟的表演赢得现场观众的阵阵喝彩和掌声。
-据介绍，活动吸引了约8万人到场。记者看到，到场的多为情侣或带着孩子的家庭。很多观众席地而坐，在欣赏烟花表演的同时，纷纷拿出手机拍照留念，共同哼唱脍炙人口的情歌。
-台北市民王先生特地携女友来到现场看烟花秀。他对记者说，七夕节是中华文化中的传统节日，选择在这一天与情人共同庆祝是很有意义的。
-活动现场请来了歌手、乐团表演助兴，并且设有爱情文创市集、爱情涂鸦墙和浪漫花墙，吸引观众购物、拍照留念。
-除了台北，台湾多地都推出七夕节庆祝活动，包括3日起在高雄举办的“爱河水漾嘉年华”等。各地商家也推出多种多样的促销活动。
-据了解，有文字记述的七夕始于春秋中期，农历七月七日夜或七月六日夜，妇女相传会在庭院向织女星乞求智巧，故又称为“乞巧节”。七夕也早已与爱情、浪漫结缘，如今更成为众多情侣期待的“中国情人节”。</span><a target="_blank" href="https://news.sina.com.cn/o/2019-08-03/doc-ihytcerm8338692.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="https://news.sina.com.cn/gov/xlxw/2019-08-01/doc-ihytcitm6157032.shtml">七夕约会博物馆 首都博物馆七夕将开夜场</a></dt>
-  <dd>
-    <a target="_blank" href="https://news.sina.com.cn/gov/xlxw/2019-08-01/doc-ihytcitm6157032.shtml">
-      <img alt="七夕约会博物馆 首都博物馆七夕将开夜场" data-src="http://k.sinaimg.cn/n/news/transform/500/w300h200/20190801/5b2a-iaqfzyv7625123.jpg/w180h135l50t154e.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：七夕约会博物馆 首都博物馆七夕将开夜场
-央广网北京8月1日消息（记者王子衿）七夕又称“乞巧节”，在古代传说中是牛郎织女一年一度相会的时日，也被称为中国的“情人节”。记者从首都博物馆官方微信获悉，今年七夕节当天（8月7日），首都博物馆将延长开馆至20点，并推出“携手相伴 和合美美——七夕约会博物馆”活动，通过一系列展览及体验活动与观众共度佳节。
-8月7日当天，首都博物馆将在《京城旧事·老北京民俗展》《古代瓷器艺术精品展》《古代玉器艺术精品展》三大展览的展厅中配备专场讲解员为观众介绍北京七夕乞巧民俗，带领观众欣赏寓意爱情的馆藏瓷器、玉器精品等精品展品。
-此外，七夕节当天，报名参加首都博物馆“七夕约会博物馆”活动的情侣夫妻观众还可在活动现场，以该博物馆藏品“白玉鸳鸯柄圆盒”中的爱情元素为切入点和创作源泉，共同制作创意彩色沙画。
-白玉鸳鸯柄圆盒白玉质地润洁，盒上立雕一对鸳鸯，口、胸部相连。盒为子母口，鸳鸯却是平剖为二，打开时分为两对鸳鸯，是宋代玉器的上乘之作。（央广网发 首都博物馆供图）
-据悉，首都博物馆“七夕约会博物馆”活动需提前报名，人数限额为100对成人情侣或夫妻（即200人），预约报名成功后即可在七夕节当天17:30开始集合参观。</span><a target="_blank" href="https://news.sina.com.cn/gov/xlxw/2019-08-01/doc-ihytcitm6157032.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw8176829.shtml">没有巧克力和玫瑰花 古人怎样过七夕？</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw8176829.shtml">
-      <img alt="没有巧克力和玫瑰花 古人怎样过七夕？" data-src="http://k.sinaimg.cn/n/news/crawl/666/w400h266/20180817/lP2f-hhvciiw8168677.jpg/w180h135l50t1e48.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：没有巧克力和玫瑰花，古人怎样过七夕？
-今天是农历七月七日，现代人热捧为“情人节”，古代却不是这样。古时候的此日，女子乞巧，娘家接闺女，文人晒书，所以又称为“乞巧节”“女儿节”“晒书节”。
-身着汉服的年轻人在参加乞巧活动中的“穿针引线”游戏。&amp;nbsp; &amp;nbsp;新华社发（汝涛 摄）
-家家乞巧望秋月
-乞巧习俗起源于汉代，东晋葛洪《西京杂记》有“汉彩女常以七月七日穿七孔针于开襟楼，人俱习之”的记载。七夕之夜，女子手执五色丝线和连续排列的九孔针（或五孔针、七孔针），借助月光，连续穿针引线，将线快速全部穿过针孔者称为“得巧”，即获胜者。反之就是输家。输家还要准备奖品或礼物，颁发给胜者。
-《荆楚岁时记》记载：“七月七日为牛郎织女聚会之夜。是夕，人家妇女结彩楼，穿七孔针，或以金银瑜石为针，陈几筵酒脯瓜果于庭中，以乞巧，有喜子网于瓜上，则以为符应。”
-《开元天宝遗事》中说：“七夕，宫中以锦结成楼殿，高百尺，上可以胜数十人，陈以瓜果酒炙，设坐具，以祀牛女二星，妃嫔各以九孔针、五色线向月穿之，过者为得巧之侯。动清商之曲，宴乐达旦。土民之家皆效之。”
-南朝梁时的诗人刘遵有《七夕穿针》诗：“步月如有意，情来不自禁。向花抽一缕，举袖弄双针。”描写了穿针女子于花前月下，以穿双针争强斗巧的情景。
-唐人林杰也有《乞巧》诗云：“七夕今宵看碧霄，牵手织女渡河桥。家家乞巧望秋月，穿尽红丝几万条。”
-明清时期更加流行的是投针验巧，即在水盆中放入缝衣针，以盆底针影形状判断是否“得巧”。
-《燕京岁时记》记载：“京师闺阁，于七月七日以碗水暴日下，各投小针，浮之水面，徐视水底日影，或散如花，动如云，细如线，粗如椎，因以卜女之巧拙。俗谓之丢针儿。”
-在七月六日，就把一个水盆放在院子里，倒入“鸳鸯水”。“鸳鸯水”是指把白天取的水和夜间取的水混合，或者是把河水和井水混合。露天过夜，第二天，再晒一上午，通过阳光的照射，水的表面依稀生成薄膜。到了下午，取出缝衣针轻轻地平放在水面上，针不会下沉，在水底下折射出针影。如果针影形成各种各样的形状，便是胜者；如果针影是笔直的一条线，就是败者。
-《帝京景物略》说：“七月七日之午丢巧针。妇女曝盎水日中，顷之，水膜生面，绣针投之则浮，看水底针影。有成云物花头鸟兽影者，有成鞋及剪刀水茄影者，谓乞得巧；其影粗如槌、细如丝、直如轴蜡，此拙征矣。妇或叹，女有泣者。”
-“七夕”民俗体验活动上，青年们正在画扇。新华社发 （徐培钦 摄）
-万家闺艳求此时
-唐代诗人刘言史《七夕歌》有“人间不见因谁知，万家闺艳求此时”的诗句。唐人祖咏在《七夕》诗中说：“闺女求天女，更阑意未阑。”古代的七夕活动以少女少妇为中心，所以又称为“女儿节”。
-古代女子要在七夕拜祭纺织高手、女红大师织女，由一个有威望的女子牵头，邀上左邻右舍的姐妹们，少则五六人，多则十几人，团拜织女。
-七月初七这天，要斋戒一天，沐浴净身，打扮的既庄重又漂亮。到了晚上，都来到主办人的家里。此时，月光融融，清辉尽洒，初秋的夜风袭来，凉爽怡人。在庭院中安上一张供桌，上面摆上茶、酒、水果、五子（桂圆、红枣、榛子、花生、瓜子）等祭品。因为织女是个美女，所以还要在瓶子里插上几枝鲜花和几束红纸，前面放置一个小香炉，插上几炷香。大家在案前焚香礼拜，面向织女星座，神情严肃，虔诚祷告，心情专注，默念着想的心事，向她许愿：“乞手巧，乞貌巧；乞心通，乞颜容；乞我爹娘千百岁；乞我姊妹千万年。”祭拜完毕，大家一起围坐在桌前，一面吃花生、瓜子，一面家长里短地闲聊，交流针线活。
-清代诗人蔡云有诗曰：“几多女伴拜前庭，艳说银河驾鹊翎。巧果堆盘卿负腹，年年乞巧靳双星。”
-明代《帝京午目》说：“七夕女儿节，角黍展榴裙。”七夕这天，年轻的女子们穿红戴花，佩戴着用五彩绫线结成的樱桃、桑葚、角黍、葫芦等形状的饰品，打扮得花枝招展，成群结队逛街市。北京各个庙会和街市上，自七月一日起就专门设置乞巧物品专卖市场，即乞巧市，主要有牛郎织女年画、乞巧楼、七巧针、乞巧果和祭拜织女用的蜡烛、香以及各种妇女用的粉、胭脂等化妆品。居民在家中还要准备丰盛的食物供女儿们享用。初六、初七晚上，富贵之家大多在庭院中扎起彩楼，叫作“乞巧楼”，在庭院中陈列磨喝乐、花果、酒菜、笔砚、针线等物，或由儿童作诗，或由女郎呈现制作的精巧物件。
-元朝京城一带在这天要将嫁出的女儿接回娘家过七夕节。元末有“松云道人”之称的熊梦祥在《析津志》中记载：“宫廷、宰辅、士庶之家，咸作大棚，张挂七夕牵牛织女图，盛陈瓜果、酒、饼、蔬菜、肉脯，邀请女流作巧节会，称曰女孩儿节。占卜贞咎，饮宴尽欢，次日馈送还家。”
-晒书。新华社发（徐晖 摄）
-连年每晒腹中书
-“遥怜弄针妇，空嫁晒书人”，这是清代诗人孙枝蔚《七夕忆内》的诗句。农历的七月七日，正直天高云淡、气候干燥之际，此时晒书既可避免虫蛀，又能防潮。
-东汉崔寔《四民月令》云：“七月七日，曝经书及衣裳，不蠹。”这说明在东汉时期就有了七夕晒书的习俗。
-唐宋时期，七月七晒书更是蔚然成风。唐韩鄂《岁华纪丽》称民间七月七有“暴书策，晒衣裳”的风俗。唐杜牧《西山草堂》云：“晒书秋日晚，洗药石泉香。”《宋会要》也有记载，宋朝仪制以七月七日为“晒书节”，当天三省六部以下，各由皇帝赐钱开筵举宴，为晒书会。
-七夕晒书历史上还有很多故事。
-建安六年（201年），22岁的司马懿在家乡河内郡为官。曹操唯才是举，他听说司马懿有才学，就想征召他到自己的司空府任职。而司马懿看到东汉风雨飘摇、国运凋零，不愿在曹操手下为官，但曹操此时炙手可热，又不敢得罪他，便以自己患风痹症，生活不能自理为由拒绝了曹操的好意。
-曹操认为可能有诈，就派人夜里到司马懿家中察看，果然发现司马懿躺在那里一动不动，于是就信以为真。可是因为晒书司马懿露出了马脚。七夕这天，司马懿在院子里晒书，午后突然来了暴雨，司马懿一着急，忘了自己是在装病，起身跑出去收书，恰巧被一个婢女看到了。曹操得知后大怒，下令司马懿立即前来任职，否则即刻收押。司马懿只好乖乖赴任。
-东晋名士郝隆，生性诙谐，年轻时无书不读，有博学之名。在大司马桓温帐下做南蛮参军，后来辞官回乡隐居。七夕这天，他见富裕人家暴晒绫罗绸缎炫富，他就仰躺在太阳下，露出腹部。人家问他干什么，他回答：“我晒书”。既显示他对富家炫富的不屑，又夸耀自己满腹经纶，才学横溢。
-清道光举人曾省《漳州四时竹枝词》说：“此日天门开好晒，郝隆惟晒腹中书。”宋人刘筠也在《戊申年七夕》中说：“岂惟蜀客知踪迹，更问庭中晒腹人。”
-康熙年间，浙江嘉兴饱学之士朱彝尊，怀才不遇。有一次，他得知康熙皇帝微服出巡，于是模仿郝隆，在康熙必经之地袒胸露肚，躺在烈日下暴晒，康熙看见后奇怪地问道：“你这是东施效颦吗？”朱彝尊回答说：“我一肚子学问派不上用场，快发霉了，今天晒一晒。”于是引起了康熙的注意，恰巧在这一年（1679年），五十岁的他又高中博学鸿词科，被朝廷封为翰林院检讨，负责撰修明史。
-清代文学家唐孙华有诗曰：“从今腹笥防窥瞰，莫向人前卧晒书。”同时期的诗人毛奇龄《七夕》云：“向夕陈庭尝下果，连年每晒腹中书。”（作者：&amp;nbsp;郑学富）
-首发：8月17日《新华每日电讯》草地周刊</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw8176829.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw8142250.shtml">这才是爱情真正的模样</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw8142250.shtml">
-      <img alt="这才是爱情真正的模样" data-src="http://k.sinaimg.cn/n/news/transform/109/w550h359/20180817/zU9k-hhvciiw8136203.jpg/w180h135l50t1654.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：这才是爱情真正的模样
-今日七夕
-这个节日流传了数千年
-还被无数有情人挂在心头
-也许正因为它映射出爱情真正的模样：
-真实的爱情，从不是坦途
-就像牛郎织女，两情相悦却天各一方
-正因如此，才显出爱情之可贵
-01
-有人曾说：
-军人和他们的爱人
-就像现实版的牛郎织女
-别离是长久的基调
-匆匆相聚，再见又不知何期
-
-这辆大巴就像一座鹊桥
-拉来了他，又拉走了他
-相见时难别亦难
-
-这艘军舰也像一座鹊桥
-孩子难舍着远去的父亲
-妻子目送着远去的丈夫
-
-这条高原上的山路同样是一座鹊桥
-她跋涉到5300米海拔上的喜马拉雅腹地
-只为了见上丈夫一面
-
-为了见你一面
-我甘愿冒尽一生所有的险
-普通人的爱情里
-也有逃不过的别离与等待
-02
-河南平顶山
-一位身材瘦弱的老奶奶打着雨伞
-坐在马路牙子上打瞌睡
-
-她在风雨中等待老伴归来一起下班
-
-身为环卫工人的老伴
-结束了一天的工作
-满心欢喜地撑着伞走过来
-面对镜头，老爷爷说：
-“可幸福了，她总是在等着我”
-
-
-
-最长情的告白，是等待。
-
-
-03
-江西南昌
-有一对公交车司机夫妻档
-两人从事这份职业已有20年
-早出晚归，相聚时间非常少
-
-每天只有在下罗这一站上
-夫妻俩的行车路线会有相交
-
-
-路上擦肩而过的一瞬
-成了夫妻俩最幸福的时刻
-
-只要看你一眼，
-知你平安，再无他求。
-擦肩而过的一瞥
-平凡无奇的一物
-在有情人眼中皆是深情
-04
-对于76岁的唐益丰老人来说
-妻子捡来的一根竹竿是他最好的礼物
-“因为竹竿的一头是我，另一头是你。”
-
-原来，他因患病失明已八年
-妻子每天都用竹竿牵着他散步
-走在小区里，不时悄悄耳语几句……
-
-你是我的眼睛，
-我的手脚，我的导航，我的全部。
-05
-前阵子，有一组照片火遍网络
-那是路人拍下的街边一幕：
-一位老奶奶腿脚不太利索
-
-腿脚也不太灵便的老大爷
-却毫不犹豫蹲下身子把爱人背起来
-
-一步步向马路对面走去
-
-因为是你，即使困难重重，
-我也毫不犹豫。
-06
-陕西有位小伙
-在火中救了13人
-历经磨难挽回性命
-全身却烧伤64%，惨遭毁容
-
-昔日俊朗的面容
-如今遍布伤痕
-但在妻子眼中，这都是英雄的“功勋章”
-
-她辞职陪他流浪卖唱
-走在街头大方挽着他的手
-一起过着平淡幸福的日子
-
-水会流逝，火会熄灭，
-而爱情却能和命运抗衡。
-07
-陕西西安
-一位83岁老人在街头迷路
-坐在早餐店旁
-一直念叨着“寻俺老伴儿”
-
-老人说不清楚老伴儿去哪了
-只是掏出一个月饼
-喃喃自语“老伴儿”“月饼”……
-原来，他拄着拐杖走了四五公里
-就为了带给老伴儿一块儿月饼
-可他却不记得
-老伴儿早在三年前就已离世
-
-生命虽短，爱却绵长
-即使忘记了回家的路
-我也不会忘记爱你
-08
-意大利有位老人
-妻子于2011年去世
-他一直将妻子的照片带在身边
-带着她去两人常去的海边看海
-日日如此，已持续七年
-
-每次，
-他都要温柔地把相框放在身侧
-就像妻子活生生地坐在身边一样
-
-死亡能让我们分离，
-却无法停止我的爱。
-我们总在问
-什么才是最好的爱情
-其实爱情未必多么轰轰烈烈
-最好的爱情
-是执子之手的温暖
-和细水流长的陪伴！
-来源：北京日报</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw8142250.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw7313252.shtml">这里有一幅会动的长江画卷 快点来看</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw7313252.shtml">
-      <img alt="这里有一幅会动的长江画卷 快点来看" data-src="http://k.sinaimg.cn/n/news/transform/352/w415h737/20180817/RclG-hhvciiw7268410.jpg/w180h135l50t1f68.jpg">
-    </a>
-    <div>
-       <p><span>　　</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw7313252.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw6696099.shtml">爱情节？女儿节？小人节？一图看懂“百变七夕”</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw6696099.shtml">
-      <img alt="爱情节？女儿节？小人节？一图看懂“百变七夕”" data-src="http://k.sinaimg.cn/n/news/crawl/495/w550h6345/20180817/mhCr-hhvciiw6691232.jpg/w180h135l50t13a1.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：[文脉颂中华]爱情节？女儿节？小人节？一图看懂“百变七夕”
-中国青年网北京8月17日电（记者 叶婉莹）农历七月初七俗称“七夕节”，又叫“乞巧节”或“女儿节”。提起“七夕”，人们总免不了第一时间想起牛郎和织女凄美的爱情故事，畅想忠贞的爱情和美满的家庭。其实，七夕不仅与爱情相关，也是植根于华夏先民对于星象的崇拜和对农耕社会的传承，世代流传后，逐渐被加入了爱情等元素。在其发展过程中，不同时期、不同地区的七夕风俗和寓意也各有差别。又是一年七夕至，快跟着小编一起来了解“百变七夕”吧！&amp;nbsp;
-</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw6696099.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw4985822.shtml">这是七夕节最残忍的礼物 很多人还不知道</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw4985822.shtml">
-      <img alt="这是七夕节最残忍的礼物 很多人还不知道" data-src="http://k.sinaimg.cn/n/news/crawl/84/w550h334/20180817/dwfa-hhvciiw4970545.jpg/w180h135l50t1f46.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：这是七夕节最残忍的礼物，很多人还不知道！
-又到七夕节
-男孩为女孩
-买来一罐萤火虫作为礼物
-开盖的瞬间
-漫漫微光博得佳人莞尔一笑
-但后来女孩才知道
-在城市里放飞萤火虫
-并不是“放生”
-它们将无法生存全部死亡！
-这样的“良辰美景”
-换来的竟是一场残忍的浪漫……
-我叫小莹，一只对这个世界充满期许的新生萤火虫。
-别看我只有一年的寿命，可我要干许多大事儿呢！
-
-在长大的过程中，我经历了狂风暴雨、家园砍伐、农药毒气、天敌威胁后，妈妈说生命中最后这半个月，是我们萤火虫繁衍后代最重要的时刻！
-然而，一张网改变了我的命运……
-
-听抓我的村民说，一个城市里的男孩儿准备用我向喜欢的女孩儿表白。
-想想还有些小激动呢！我喜欢浪漫，喜欢看到他们在一起的甜蜜~
-
-一路上摇摇晃晃、缺粮断水，待在一个密闭瓶子里。周围好多小伙伴逐渐死去。。。但我努力挣扎着，我知道，就快到男孩儿家里了……
-七夕这天终于来了，看着男孩儿紧张地对女孩儿表达着心意，虽然已经没有力气，但我还是要努力发光，为他加油！
-
-女孩答应了，我也坚持不住了……
-在这里无论是食物、水源、空气都不适合我，渐渐地连张开翅膀的力气都没有了。
-我知道，我将永远地离开我曾热爱的世界了。
-
-你所不知道的萤火虫
-萤火虫是益虫，其幼虫专吃螺类、蜗牛等对农作物有害的物种，但繁殖能力却十分低弱。
-作为生态环境指标昆虫，有萤火虫生活的地方，才是最适合人类居住的。
-
-由于体内有荧光素和荧光素酶两种特殊物质，萤火虫可以在夜晚发光，看起来十分梦幻。
-表白、求婚、商业活动、展销会……特殊的身体构造成为它们被捕捉的主要目的。
-
-“虫头”获暴利
-购买成为萤火虫背后“杀手”
-近几年，售卖萤火虫已经形成了一条暴利产业链，贩卖者（虫头）每年获利60-100万元。
-据统计，某宝网2016年至少600余万只萤火虫被贩卖，价格在2-3元/只；而人工养殖1只萤火虫成本20元左右，所以基本可以确定这些被贩卖的100%为野生萤火虫。
-
-目前，海南、云南、江西、广西这四个主产区，已沦为商业捕捉的重灾区。而萤火虫离开原有生存地，由于光污染、水污染、化学污染等影响，根本无法在异地存活，更严重的是影响它们繁衍后代。
-尽管许多公益组织呼吁人们抵制这类商业活动，但遗憾的是，由于萤火虫并不受法律保护，因此仍有不少商业展出还在进行。
-
-中科院昆明动物研究所副研究员、博士李学燕说：“萤火虫发光主要是交配求偶，一般就是7-15天，之后便会死掉。被贩卖后，实际上是把它最关键的繁衍后代的时间错过了，它就没有下一代了……”
-你可还记得 已离开的它们
-
-
-
-
-
-这些只能出现在屏幕上的动物
-一次次地敲打着人类的警钟
-网友说
-
-拒绝购买萤火虫，救救它们！
-别再让萤火虫
-成为下一个消失的物种
-不要用死亡成全你的爱
-不要让浪漫变得残忍</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw4985822.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/xlxw/2018-08-17/doc-ihhvciiw4865723.shtml">七夕里的文化 习近平在国际上这么推介</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/xlxw/2018-08-17/doc-ihhvciiw4865723.shtml">
-      <img alt="七夕里的文化 习近平在国际上这么推介" data-src="http://k.sinaimg.cn/n/news/crawl/59/w550h309/20180817/W3zF-hhvciiw4855741.jpg/w180h135l50t1ff2.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：七夕里的文化，习主席在国际上这么推介
-七夕节仰望星空，大家最想看的两颗星，恐怕就是牛郎星和织女星。传说织女有超群的绣花技术，凡间的女子都希望像她那样有一双巧手，很多地方的人们通过缝纫、刺绣比赛乞巧。
-
-说到刺绣，它在中国已经有2000多年历史了，还常被作为国礼用在外交场合。2017年1月，习近平主席出访瑞士时，曾送给国际奥委会一幅苏绣作品《仕女蹴鞠图》。
-
-西方人过情人节，喜欢红酒玫瑰，中国的七夕夜晚，男男女女和星星月亮相伴，淡淡的一杯茶里，连接着两个人深深的感情。精通中国文化的习近平主席在外交场合经常以茶待客、以茶交友，还用茶和酒的联系，告诉世界我们“和而不同”的哲学思想。
-
-七夕还有配药来防病治病，煎汤洗发等习俗，因为七夕处于季节交替时节，五脏养生应顺应四时，这都是中医理论。中医是中国古代科学的瑰宝。习近平主席一直重视中医药振兴发展，他还用中医理念和语汇来讲治国理政。
-
-茶、刺绣、中医是七夕节的元素，也蕴含着中国的文化内涵。中国的文化符号走向世界，让我们的传统文化与世界对话。
-</span><a target="_blank" href="http://news.sina.com.cn/gov/xlxw/2018-08-17/doc-ihhvciiw4865723.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw4732567.shtml">七夕：来看看这些“夫妻档”</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw4732567.shtml">
-      <img alt="七夕：来看看这些“夫妻档”" data-src="http://k.sinaimg.cn/n/news/crawl/162/w550h412/20180817/52gF-hhvciiw4725495.jpg/w180h135l50t1eef.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：七夕|来看看这些“夫妻档”
-她陪他守望林海，他从她手中接过病人；他们把绿色种进沙窝，他们为科学奉献一生……民兵、哨员、医生、院士，他们既是同事又是夫妻。“夫妻档”纵然令人羡慕，但他们为国为家做出的这一种生活选择更值得尊敬。
-孤岛夫妻哨
-开山岛，位于我国黄海前哨。“石多水土少，台风四季扰。飞鸟不做窝，渔民不上岛。”在当地人眼中，开山岛是一座荒无人烟的“水牢”。1986年7月，只有26岁的王继才，被派到岛上，担起守岛重任。王继才瞒着家人上了岛。独自上岛48天后，王继才的爱人王仕花也辞掉了小学教师工作，以哨员的身份，陪伴丈夫一同守卫海岛，一守就是30多年。王继才和王仕花夫妇也被称为“孤岛夫妻哨”。
-治沙夫妻
-把家搬进沙窝里，卖牛买树苗，一步一步挺进沙丘，一棵一棵绿化沙地……家住内蒙古浑善达克沙地南缘马云平和王长荣夫妇的这些行为，曾不被人理解。18年过去，风沙肆虐的沙地被20多万棵树木覆盖，生机盎然。如今，马云平和妻子开始种植林下经济作物，建设生物饲料加工厂，一幅幸福美好生活的图景正在这绿意之中绘制。
-夫妻“望海楼”
-塞罕坝机械林场，碧空如洗，层林如海。在海拔1900多米的塞罕坝最高点上，矗立着刘军、齐淑艳夫妇的“望海楼”。白天每隔15分钟、晚上每隔1小时，登楼顶，用一个老旧的奥林巴斯望远镜眺望周围方圆20公里的火情，并加以记录。日复一日，年复一年，夫妻二人已在此守望十余年。
-麻风卫士、天使夫妻
-在贵州武陵山区深处的德江县，有一对夫妻奔走在县城乡间，和麻风病人打了30年交道。1984年，21岁的何爱民从毕节市撒拉溪卫校毕业，分配到荆角乡角口麻风村，和父亲并肩在麻风医院工作。后来，何爱民的恋人、同班同学黄琼，也跟了过来。“同事换了一茬又一茬，就我俩还在。”黄琼说，如果没有何爱民，他俩也坚持不到今天。
-夫妻家庭医生
-今年38岁的费云峰是浙江省德清县乾元镇新区社区卫生服务站的医生，他的妻子严红芳是乾元镇联合村社区卫生服务站医生。费云峰也曾在联合村工作过，许多费云峰看过的病人，如今成了严红芳的病人。夫妻俩在当地农村行医十多年，和居民建立起了深厚的感情。
-夫妻院士
-中华人民共和国成立之初，周廷冲和黄翠芬历经千难万苦回国。他们毅然放弃在美国的优厚待遇。在导师李普曼教授的帮助下，周廷冲携黄翠芬购买了由美国旧金山开往天津的货船散票，冒着被移民局搜捕的危险，漂洋过海历时56天才回到祖国。他们投身于我国医疗卫生教育事业，是军中第一对院士夫妻。
-来源：中国日报网</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw4732567.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw4714293.shtml">七夕：一个有诗意的节日 才能触及人们精神深处</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw4714293.shtml">
-      <img alt="七夕：一个有诗意的节日 才能触及人们精神深处" data-src="">
-    </a>
-    <div>
-       <p><span>　　原标题：[网络中国节]七夕：一个有诗意的节日 才能触及人们精神深处
-作者：易之
-七夕又至，如今这个节日在人们印象中似乎就是中国版“情人节”。这种印象没错，“七夕”当然是和爱情有关的。
-“牛郎织女”的传说如何变成了今天的样子
-“七夕”起源，并不一开始就是个爱情故事，而是古人在走近科学的时候，发现的天文奥秘。初秋之夜，仰望夜空，古人发现在银河两端，各有一颗星：织女星位于银河之西的天琴座中，牵牛星则位于天河之东的天鹰座内，和织女星遥遥相对。两颗星难以相聚，于是被附会成了自古以来、人人有感而发的爱情悲剧。
-大概在东汉末，有一首古诗：
-迢迢牵牛星，皎皎河汉女。纤纤擢素手，札札弄机杼。终日不成章，泣涕零如雨。河汉清且浅，相去复几许？盈盈一水间，脉脉不得语。
-这首诗写的是牵牛星和织女星遥遥相望。两颗星已经化身为人，碰不到面，于是就以泪洗面。然后，就变成了牛郎织女的故事。
-南朝梁武帝时殷芸在《小说》里记载了这个故事：
-天河之东有织女，天帝之子也。年年机杼劳役，织成云锦天衣，容貌不暇整。帝怜其独处，许嫁河西牵牛郎，嫁后遂废织紝。天帝怒，责令归河东，但使一年一度会。
-故事情节比较简单，但大致的轮廓已经出来了：牛郎织女，各在天涯，一年一聚。
-顾颉刚先生有个观点——“层累地造成中国古史”，即一个原型故事，然后一层一层、一代一代的“添油加醋”，变成了今天的模样。这个思路在神话领域也适用，从星宿的观察现象，再拟人，再出现故事情节，再到“七月七日织女嫁牵牛”的节日敲定，再到鹊桥、七仙女的细节添加等等，通过不断的层叠堆积，最后成了一个曲折离奇又动人的爱情故事。
-自古文人多情圣 七夕诗可编“诗三百”
-于是，七夕浓缩成了一个经典故事，也成了古诗的经典题材。
-据蔡镇楚先生的《宋词文化学研究》统计，七夕诗蔚为大观：
-据欧阳询《艺文类聚》所录，自《古诗十九首•迢迢牵牛星》以下至唐，七夕诗有 24 位作者 25 首作品；《全唐诗》以七夕为题者，有 54 位作者 82 首诗（无题者未计入内）；《全宋词》中以七夕为题者有 62 位作者 108 首词，若计入无题者，则在 300 首以上。
-白居易在《长恨歌》里，就写了一段唐明皇和杨贵妃的七夕誓言：
-七月七日长生殿，夜半无人私语时。
-在天愿作比翼鸟，在地愿为连理枝。
-李、杨二人在七夕宣誓爱情，大概是唐朝人尽皆知的掌故。李商隐在《马嵬》一诗中调侃：“此日六军同驻马，当时七夕笑牵牛。”当年在七夕时笑牛郎织女不能相会，又拿想得到后来的马嵬之变呢？
-如果说李、杨二人笑牛郎织女，其实还有人羡慕牛郎织女。比如杜牧的《七夕》：
-银烛秋光冷画屏，轻罗小扇扑流萤。
-天阶夜色凉如水，卧看牵牛织女星。
-诗里就写了一个女子，在秋意渐起的七夕夜晚，看着牵牛织女。虽然没写她在想什么，恰恰给了读者想象的空间：她应当在羡慕牵牛织女，虽然分离，尚且可以一年一会，然而自己，恐怕一年一会的机会都没有。
-说起七夕，也有做翻案文章的，认为这谈不上悲剧，比如宋代秦观的《鹊桥仙》：
-纤云弄巧，飞星传恨，银汉迢迢暗度。金风玉露一相逢，便胜却人间无数。
-柔情似水，佳期如梦，忍顾鹊桥归路。两情若是久长时，又岂在朝朝暮暮。
-秦观一反悲苦之情，认为爱情“质量”比“时间”更重要，倘若感情不谐，一天一天苦捱着又有什么意思，倒不如短暂相逢来的快乐。
-七夕之际吟咏爱情，以上几首只是代表。翻开中国诗词，浪漫随处可见。
-七夕不只是“情人节”，也是“劳动节”
-从牛郎织女的故事开始演化，慢慢的七夕就有了“乞巧”的意思，女孩子祈祷自己心灵手巧，手艺进步。
-据梁朝宗懔《荆楚岁时记》载当时风俗云：
-“七月七日，为牵牛、织女聚会之夜。 ……是夕，妇人结彩缕，穿七巧针，或以金银、鍮石为针，陈瓜果于庭中以乞巧。”
-七夕，从爱情的吟咏，变成了手艺的乞巧，进而演化出了游戏、欢会的节日内容。
-七夕的劳动内涵，同样进入了诗人的笔调。如唐代林杰的《乞巧》：
-七夕今宵看碧霄，牛郎织女渡河桥。家家乞巧望秋月，穿尽红丝几万条。
-这首诗刻画了七夕节日的风俗，即穿针乞巧。能看出来，七夕在唐代已经是广受欢迎的节日，以至于“穿尽红丝几万条”。
-晚唐诗人罗隐有一首《七夕》，意思格外有趣：
-月帐星房次第开，两情唯恐曙光催。时人休用金针待，没得心情送巧来。
-诗把乞巧的重任安在了牛郎织女身上，同时认为他们一年一会，在这一天忙着相聚，生怕天亮再度分离，又哪有时间给人间的百姓送巧呢，大家还是收拾收拾洗洗睡吧。
-当然，诗里的“劳动节”，同样也有唱反调的，比如宋代杨朴的《七夕》：
-未会牵牛意若何，须邀织女弄金梭。
-年年乞与人间巧，不道人间巧已多。
-这是诗人在“偷换概念”，他把女孩们“手巧”偷换成了“工于心计”，认为人间“巧”已经够多了，还去乞巧干什么呢？诗人在节日里唱唱反调，发发惊人之言可以理解，毕竟乞巧的题材千百年来写了无数遍，当然也翻出新意。由此乞巧也就脱离了七夕的本意，带有了更广阔的时代意义，变成了诗人对当时社会风气的批判。
-想在一篇文章里，把七夕的诗词梳理通透，其实分量是不够的。这也体现了七夕本身的丰富内涵，我们今天只把它理解为“情人节”，其实是窄化了它。它是包括爱情、劳动、游戏、祈祷在内的“节日综合体”，它既有文本基础，也有诗意阐发，还有仪式规范。
-当然，今天我们想全面重现七夕的种种仪式，完全复原它的面貌，已经失去了它的时代条件。但它的精神其实也流传到了现在，诸如对爱情的信念，对生活的企盼，对文化的接续。
-在七夕这天，除了商业营销塑造种种当代“仪式”之外，也不妨开卷读诗，感受了一下文化绵延的诗意。其实，一个有诗意的节日，才是有生命力的节日，才是能触及人们精神深处的节日。
-来源：光明网</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-17/doc-ihhvciiw4714293.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/c/2018-08-17/doc-ihhvciiw3295359.shtml">原来这就是爱情的模样</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/c/2018-08-17/doc-ihhvciiw3295359.shtml">
-      <img alt="原来这就是爱情的模样" data-src="">
-    </a>
-    <div>
-       <p><span>　　原标题：原来，这就是爱情的模样！
-在汉代才女卓文君心里，爱情是——愿得一心人，白头不相离；
-在张爱玲笔下，爱情是——于千万人之中遇见你所要遇见的人，于千万年之中，时间的无涯的荒野里，没有早一步，也没有晚一步，刚巧赶上了，那也没有别的话可说，惟有轻轻地问一声：“噢，你也在这里吗？”
-在钱钟书的夫人、著名作家杨绛先生看来，男女结合最最重要的是感情、双方互相理解的程度，理解深才能互相欣赏、吸引、支持和鼓励，两情相悦。
-七夕将至，66岁的王琴香收到了一份情人节礼物——她自己的肖像画。
-这是老伴王庆民趁她去儿子家的时候，花了2天时间，悄悄画的。
-画老伴，王庆民不用对着照片。他说，老伴在他心中的形象比照片更清晰、立体。
-年轻时，两人刚相识，有着大眼睛和漂亮双眼皮的王琴香让王庆民一见钟情。
-而今画眼睛时，眼角的皱纹和眼袋让王庆民眼眶湿润，“时间过得真快啊，原来已经有这么多皱纹了，她为这个家付出太多啦！”
-热恋时，你说一句我想去看世界，他定说那不论多远我都陪你走。
-2014年，王效民的妻子余永花被诊断为渐冻症。
-发病后，余永花从生活能基本自理到现在四肢不能动弹、话也不能说。
-“老伴以前就想出去玩，一直没有兑现。我考虑到这个病治不好，就想着抓紧时间带她多出去看看，不想她留什么遗憾。”
-就这样，王效民背着妻子踏上了旅途。去过黄山、绩溪徽杭古道、大明山、开封府……最远还到过西藏。
-外出旅行，他们沿途自己搭帐篷、做饭。
-被问到旅行中最大的感受是什么，王效民说“虽然苦，但也很快乐”。
-8月12日，河南省肿瘤医院5号病房楼5层，一场特殊的婚礼即将举行。
-杨枫与小慧两年前相识并相恋。小慧患有白血病，杨枫一边打工，一边陪伴，从没说过放弃。
-8月10日，小慧的病情急转直下，医院下发病危通知书。
-为了不让女友留下遗憾，杨枫决定在8月12日给小慧在病房中办婚礼。
-12日下午3点左右，婚礼筹备妥当；4点30分左右，小慧身体突然变差，开始紧急抢救；5点18分，小慧带着爱意离开人间。
-婚戒还没来得及交换，头纱也还没来得及戴，婚纱静静的挂在床头还没有来得及穿。
-穿着礼服的杨枫满是伤痛：我要是能早点认识她就好了。
-绍兴嵊州，仙人坑村。
-坐在家门口长满青果的核桃树下，74岁的王贤琴身体健朗。
-那年，丈夫王荣浩从四川回老家探亲，带回了三个核桃。
-在走的那天，两人把核桃埋在土里。
-生根，发芽，挂果……而今，她已经守护这棵树快半个世纪。
-丈夫大半辈子献给了核工业，为我国第一颗原子弹的成功爆炸作出了贡献。
-13年前，他因病去世。
-两人没有孩子，门口的那棵核桃树，就像丈夫和孩子，每天陪伴着王贤琴。
-化疗半年后，妻子一头秀发全部掉光，眉毛也逐渐稀疏。
-病榻前，丈夫每天早上为她画眉梳妆。
-这一幕，发生在四川省肿瘤医院的病房里。
-十年前，何女士被诊断为“视网膜色素变性”。去年初夏，她又被确诊为乳腺癌。
-虽然手术很顺利，但何女士必须面对一次又一次的化疗。
-从此，丈夫郭先生便成为了妻子的专职化妆师。
-画完眉毛，他还要为妻子整理衣装。虽然生病了，他也希望妻子能保持好心情，去与病魔抗争。
-在病友眼里，何女士和郭先生是一对恩爱夫妻。“他对她太好了，不仅画眉毛，出门散步一直牵着手，逛了4个小时才回来。”</span><a target="_blank" href="http://news.sina.com.cn/c/2018-08-17/doc-ihhvciiw3295359.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/c/2018-08-16/doc-ihhvciiw1428773.shtml">七夕节三代人话爱情：爱情是什么？</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/c/2018-08-16/doc-ihhvciiw1428773.shtml">
-      <img alt="七夕节三代人话爱情：爱情是什么？" data-src="http://k.sinaimg.cn/n/default/transform/116/w550h366/20180517/Ak-v-harvfhu4569175.png/w180h135l50t18e3.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：爱情是什么？——七夕节三代人话爱情
-新华社北京8月16日电&amp;nbsp;题：爱情是什么？——七夕节三代人话爱情
-新华社记者
-“七夕今宵看碧霄，牵牛织女渡河桥。”8月17日是七夕（农历七月初七），这个中国本土“情人节”的到来再次让人们聚焦“关于爱情”。
-无论哪个年龄段，每个人都憧憬美好的爱情，梦想有一位陪伴终生的爱人。但总会有人问，爱情是什么？是怦然心动的执着追求？是相互依托的幸福？还是温馨从容的夕阳红？
-青年：爱是遇见的怦然心动
-“账单、菜单、床单这三个单子能合到一起，两人才能过到一起。”“90后”北京姑娘“王小胖”是一名大数据公司白领，虽说还待字闺中，但她的业余爱好却是在志愿组织“红爹之家”当红娘。
-“王小胖”说：“‘70后’谈恋爱还是一个‘一对一’的时代，追求一个人花上几年不稀奇”。在当红娘的过程中，“王小胖”发现“90后”更加勇敢，也更加自我。“自己喜欢的，愿意执着地去追求，不太介意世俗的目光。”
-与“王小胖”披荆斩棘、勇往直前地追求爱情不同，经历几次恋爱后，28岁的小刘姑娘更向往稳定、舒适的婚姻生活。“有稳定的家庭，有一定的经济基础，再要一个孩子。”小刘在北京大学毕业工作后逐渐改变了自己的爱情观。“见过一些人、遇到一些事以后，我对《致橡树》这首爱情诗感触更深。女方不是男方的附属品，我希望找一个更加优秀的人做伴侣。相互督促，共同进步，可以让感情更加坚固。”
-2016年底，小刘遇到了现在的男友，经过两年相处，俩人进入谈婚论嫁阶段。与甜蜜的恋爱不同，婚姻家庭需要长期相处。“结婚后，如何在现实生活中和另外一个人保持亲密关系？这是一种能力的培养，双方需要用心经营，我还是蛮期待的。”小刘说。
-中年：期盼再次与爱情相遇
-任毓在南京市鼓楼区民政局婚姻登记处窗口工作多年。“每年七夕，婚姻登记处就充满浪漫的气氛，许多人都是穿着情侣装过来，手捧鲜花，拿着结婚证自拍发朋友圈，还有人拿着喜糖过来分发，和大家一起分享喜悦。”
-七夕是一个浪漫和喜悦的日子，对于许多单身的中年男女来说，也充满了期盼和向往，他们也梦想着能成双成对的过这个“爱情节”。40多岁的武汉市民熊女士一直单身，宁缺毋滥是她的择偶标准。虽然有车有房有一定积蓄，不用为生活操心，但她还是希望找到另一半。“单了这么多年，我依旧相信爱情，希望找到一个适合的人。”熊女士说。
-离婚三年、花了大概一年多时间，40岁的梅琪才走出上一段失败婚姻的阴影。“离婚让我变得更加独立，我也想再谈场恋爱。但是，如果再次踏入婚姻的河流，我会更加谨慎。”梅琪说。
-“北京地区高校众多，许多高学历的年轻人毕业后，没几年就进入了大龄甚至中年，但感情经历却很简单，依旧向往纯粹的爱情。”北京大学校友高攀峰在工作之余开设了一个“北清缘”网站，帮高校校友牵线搭桥。他告诉记者，来这里登记的有很多硕士以上学历、40岁左右的中年群体，“成熟女性对物质条件看得比较淡，更看重学历、潜力和精神沟通。而成熟男性对女性外貌的要求也不是太突出，更看重内涵。”
-老年：岁月湮灭不了爱的追求
-已故日本著名作家渡边淳一曾多次造访上海。他在晚年创作中集中体现了对中老年人情感世界的探索。他曾表示自己人到晚年后，一直关注老年人的情感追求，包括心理和生理等多方面的追求。“我要告诉大家，六七十岁的老人也有爱的追求。”
-今年70岁的徐淑珍是北京通州区漷县镇漷县村农民，她给自己微信号取的名字叫“最牛红娘”。从30多岁给人说媒起，因为热心和“靠谱”出了名，总有来自全国各地的人找她帮忙。近年来，越来越多的老年人找她说媒。
-说起最近的一对，她印象很深。有一位82岁的老先生，身体挺好，就是耳朵不太好，他有儿有女，都已经结婚了，想给自己找一个伴儿。“我左挑右选，发现了一个72岁的老太太，两个人的共同爱好是打麻将，他们就这样谈起了恋爱。”徐淑珍认为，现在越来越多的老年人愿意走出来，为了自己的快乐生活努力一把，这也是社会的进步。
-上海的高龄独居老人已超过20万，其中单身及离异老人是一个特殊族群。61岁的朱先生，被上海人称为单身“老克勒”。他住在上海市中心的老式洋房里，平时深居简出、待人和善。朱先生一直没有结婚，按他自己的说法，年轻时相亲“挑花眼”，所以至今“单着”。“我没有放弃继续相亲的想法。还是想找一个年龄合适，各方面合得来的老伴。”朱先生说。
-专家认为，随着经济发展、时代变化，爱情这个永恒的主题也在发生变化。变化的是沟通方式和节奏，不变的是对美好爱情的向往与期盼。无论多大年龄都憧憬美好的爱情，无论什么年龄段的单身男女，都不要被动“等待”，而应该主动寻找。（执笔记者：廖君，参与记者：赵琬微、许晓青、沈汝发）</span><a target="_blank" href="http://news.sina.com.cn/c/2018-08-16/doc-ihhvciiw1428773.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/o/2018-08-16/doc-ihhvciiv9291887.shtml">七夕 听文物讲古人爱情故事</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/o/2018-08-16/doc-ihhvciiv9291887.shtml">
-      <img alt="七夕 听文物讲古人爱情故事" data-src="http://k.sinaimg.cn/n/default/transform/116/w550h366/20180418/sAXi-fzihnep5214947.png/w180h135l50t1c2e.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：七夕，听文物讲古人爱情故事
-新华社北京8月16日电 题：七夕，听文物讲古人爱情故事
-新华社记者施雨岑、童芳
-当第一缕秋意弥漫在呼吸之间，“迢迢牵牛星”和“皎皎河汉女”的相会之日——七夕又将来临。
-河汉清且浅，相去复几许。盈盈一水间，脉脉不得语。古人们向往怎样的爱恋，又如何表达内心的深情？说不完的传奇和数不尽的悲欢，都已消逝在历史长河之中。大浪淘沙般留下一件件精美文物，无声诉说着当年的相思与忠贞。
-在西汉江都王刘非的第12号陪葬墓，一枚不起眼的银带钩暗藏着隐秘的誓言。它像兵符一样，自中间一分为二。两个半扇的内壁分别以阴阳文刻着“长毋相忘”四个字。它的主人——江都王刘非的妃子淳于婴儿选择让这动人的情话隐在钩身之间，随身而佩，只有自己与丈夫二人知晓。
-长相思，勿相忘。汉朝，既诞生了霍去病这样在战场上张扬书写光荣与梦想的英雄少年，也包容了淳于婴儿低调含蓄的情真意切。在2000多年后，当小小的银带钩成为纪录片《如果国宝会说话》的主角之一时，一下唤起观众心底的柔情。
-时间的脚步来到唐朝，我们看到不一样的爱情表达。藏于故宫博物院的一面真子飞霜镜直白地以铭文表达爱情：“凤凰双镜南金装，阴阳各为配，日月恒相会，白玉芙蓉匣，翠羽琼瑶带，同心人，心相亲，照心照胆保千春。”每当主人揽镜自照，镜子背面的心事便昭然于世。
-更加热烈直接的爱情表白，在长沙博物馆的唐长沙窑青釉褐彩“君生我未生”诗词壶上——“君生我未生，我生君以（已）老。君恨我生迟，我恨君生早。”一份爱而不得、相见恨晚的遗憾表达得淋漓尽致，令今人感叹复感动。
-古往今来，爱带给人们的，不尽是惆怅。
-共牢而食，合卺而酳。这是古代夫妇新婚之夜最重要的仪式之一，成都市青白江区大弯镇双元村战国船棺墓出土的“合卺杯”就见证了这样甜蜜而美好的时刻。
-这件“合卺杯”是一件木质双联耳杯，用朱、黑二色绘成。与数百件精美的彩绘漆器、青铜器等一起成为陪葬品。据考证，墓主人是一位古蜀国贵族妇女，人骨测定身高160公分左右，面容美丽。通过这件“合卺杯”，我们不难勾勒出一个美丽的爱情故事。
-在神秘而遥远的古蜀国中，这位姿容绰约的女子不仅出身高贵、安逸顺遂，而且拥有美满的婚姻和爱情。因此，她才会在人生的尽头，选择将“合卺杯”带往生命的彼岸，让见证自己一生中最甜蜜幸福时刻的信物生生世世陪伴左右。
-无论是缠绵缱绻，还是张扬炽烈，不同时代的文物和风格各异的表达背后，是真挚而赤诚的情意相通。跨过千年光阴，这些情意依旧让你我心向往之——
-时光可老，愿爱情恒新！</span><a target="_blank" href="http://news.sina.com.cn/o/2018-08-16/doc-ihhvciiv9291887.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-16/doc-ihhvciiv8621806.shtml">七夕将至 看诗词佳话里的鹊桥故事</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-16/doc-ihhvciiv8621806.shtml">
-      <img alt="七夕将至 看诗词佳话里的鹊桥故事" data-src="http://k.sinaimg.cn/n/news/crawl/300/w550h550/20180816/lgFG-hhvciiv8617597.jpg/w180h135l50t1e85.jpg">
-    </a>
-    <div>
-       <p><span>　　这周五就是一年一度的七夕节，作为我国传统节日，七夕一直被称作中国“情人节”。七夕的美丽传说和人们对爱情的向往，促使一代一代的文人都为之泼墨作诗。
-相传，每逢七月初七，人间的喜鹊就要飞上天去，在银河为牛郎织女搭鹊桥相会。和西方国家有所不同，中国人较为含蓄，有些话或许不好意思说出口，那不如就借着七夕这浪漫的节日，用一句寓意深刻的古诗词把“爱意”大声说出来吧！
-
-七夕节由来
-说到七夕，人们的第一反应是牛郎织女鹊桥相会，把七夕等同于中国的情人节。在古代，七夕的确和牛郎织女传说关系密切，但它是以女性为主体的综合性节日，这一日女子会访闺中密友、祭拜织女、切磋女红、乞巧祈福，因此七夕又有“女儿节”的称谓。女性欢天喜地竞技娱乐的日子，男子也凑个热闹在一旁欣赏，男女定情只是“女儿节”盛会中的副产品。
-“七夕”最早来源于人们对自然天象的崇拜。早在《诗经》时代，人们就对牛郎织女的天象有所认识，在东汉时就出现了人格化的描写：“织女七夕当渡河，使鹊为桥。”
-七夕乞巧，这个节日起源于汉代，东晋葛洪的《西京杂记》有“汉彩女常以七月七日穿七孔针于开襟楼，人俱习之”的记载，这便是我们于古代文献中所见到的最早的关于乞巧的记载。
-2006年5月20日，七夕节被中华人民共和国国务院列入第一批国家级非物质文化遗产名录 。&amp;nbsp;
-
-牛郎织女的传说
-相传织女是王母的孙女，她心灵手巧，善织，能用一双灵巧的手织出五彩缤纷的云朵。而牛郎是一个孤儿，他勤劳但贫穷，与老牛相依为伴。
-一次，在老牛的指点下，牛郎取走了在湖中洗澡的织女的衣裳，织女也喜爱牛郎，两人就结成了夫妻。从此，男耕女织，生下一儿一女，过上了幸福美满的生活。
-然而此事被王母知道，她大发雷霆，派天兵将织女捉回天宫。牛郎在老牛的帮助下，用箩筐装着儿女，挑着追到天上。王母见牛郎追来，就用头上的金钗在织女和牛郎之间划出一道大河，这就是银河。
-银河水无情地把牛郎和织女隔在两岸，他们只能隔河痛哭相望。王母见他们哭得伤心，动了恻隐之心，命喜鹊传话让他们每隔七日相见一次。谁知喜鹊传错了话，说成每年七月七日相见一次。于是王母就罚喜鹊给牛郎织女搭桥。
-农历七月七日夜晚，仰望群星闪烁的夜空，人们能看到银河两岸有着两颗遥遥相对的亮星——即牛郎星和织女星。
-牛郎织女的爱情故事融入乞巧节，民间姑娘信以为真，于是每到农历七月初七，在牛郎织女“鹊桥会”时，姑娘们就会来到花前月下，抬头仰望星空，寻找银河两边的牛郎星和织女星，希望能看到他们一年一度的相会，乞求上天让自己也能像织女那样心灵手巧，祈祷自己也能有个称心如意的美满婚姻，久而久之便形成了七夕节。
-七夕节风俗
-穿针乞巧
-这是最早的乞巧方式，始于汉，流于后世。《西京杂记》说：“汉彩女常以七月七日穿七孔针于开襟楼，人具习之。”南朝梁宗谋《荆楚岁时记》说：“七月七日，是夕人家妇女结彩楼穿七孔外，或以金银愉石为针。”
-喜蛛应巧
-这也是较早的一种乞巧方式，其俗稍晚于穿针乞巧，大致起于南北朝之时。南朝梁宗懔《荆楚岁时记》说；“是夕，陈瓜果于庭中以乞巧。有喜子网于瓜上则以为符应。”
-投针验巧
-这是七夕穿针乞巧风俗的变体，源于穿针，又不同于穿针，是明清两代的盛行的七夕节俗。明刘侗、于奕正的《帝京景物略》说：“七月七日之午丢巧针。妇女曝盎水日中，顷之，水膜生面，绣针投之则浮，看水底针影。有成云物花头鸟兽影者，有成鞋及剪刀水茄影者，谓乞得巧；其影粗如锤、细如丝、直如轴蜡，此拙征矣。”
-磨喝乐
-磨喝乐是旧时民间七夕节的儿童玩物，即小泥偶，其形象多为传荷叶半臂衣裙，手持荷叶。每年七月七日，在开封的“潘楼街东宋门外瓦子、州西梁门外瓦子、北门外、南朱雀门外街及马行街内，皆卖磨喝乐，乃小塑土偶耳”。
-拜魁星
-俗传七月七日是魁星的生日。魁星文事，想求取功名的读书人特别崇敬魁星，所以一定在七夕这天祭拜，祈求他保佑自己考运亨通。
-吃巧果
-七夕乞巧的应节食品，以巧果最为出名。巧果又名“乞巧果子”，款式极多。主要的材料是油、面、糖、蜜。巧果的做法是：先将白糖放在锅中熔为糖浆，然后和入面粉、芝麻，拌匀后摊在案上捍薄，晾凉后用刀切为长方块，最后折为梭形巧果胚，入油炸至金黄即成。
-
-古人的七夕爱意
-十首七夕诗词，体验一下，那个没有手机的时代，人们对于爱情的告白：
-《鹊桥仙·纤云弄巧》
-宋·秦观
-纤云弄巧，飞星传恨，银汉迢迢暗度。
-金风玉露一相逢，便胜却、人间无数。
-柔情似水，佳期如梦，忍顾鹊桥归路。
-两情若是久长时，又岂在、朝朝暮暮。
-[品读]牛郎织女的传说几乎是中国爱情文学中一个典型的母题。从《诗经》开始，到《汉乐府》，到《古诗十九首》里的《迢迢牵牛星》，到曹丕的《燕歌行》，到柳永，到欧阳修，到苏轼，很多人都写过这个题材，但多不脱欢少离多的窠臼。所谓“盈盈一水间，脉脉不得语”，所谓“牵牛织女遥相望，尔独何辜限河梁”……唯有秦观却道出，“纤云弄巧，飞星传恨，银汉迢迢暗度”。终于盼到了一年一度的七七相会，这样一个夜晚，“金风玉露一相逢，便胜却、人间无数”。
-《秋夕》
-唐·杜牧
-银烛秋光冷画屏，
-轻罗小扇扑流萤。
-天阶夜色凉如水，
-坐看牵牛织女星。
-[品读]杜牧这首诗，宛如一幅秋夜深宫小景。宫中秋夜，银白色的蜡烛发出微弱的光，给屏风的画面抹上了冷冷的色彩；一个宫女正手持轻罗小扇扑打飞来飞去的萤虫。“银烛秋光冷画屏，轻罗小扇扑流萤”，少女花一样的年华，被幽禁在深宫之中，没有温暖，没有自由，只有孤凄阴冷。在这样的气氛中，她百无聊赖，便拿起扇子扑打飞萤，一只又一只，仿佛又回到了童年，也许只有这才能使她暂时忘却忧愁。然而，扑打累了，夜已深了，“天阶夜色凉如水”，她仍不想入眠，“坐看牵牛织女星”——含情脉脉地凝视那银河两岸遥遥相对的牛郎织女星。
-《七夕》
-唐·白居易
-烟霄微月澹长空，
-银汉秋期万古同。
-几许欢情与离恨，
-年年并在此宵中。
-[品读]诗人以咏叹的抒情笔调写道：“几许欢情与离恨，年年并在此宵中。”每年七夕，苦苦等待的有情人终于相聚在一起，说不尽绵绵情话，道不完思念爱慕之意。遗憾的是短暂的欢聚后，留给他们更多的则是无尽的相思和难耐的凄寂。相会的欢乐，离别的痛苦，这一切都发生在七月七，由牛郎和织女来品味。
-《鹊桥仙·七夕》
-宋·苏轼
-缑山仙子，高清云渺，不学痴牛騃女。凤箫声断月明中，举手谢时人欲去。
-客槎曾犯，银河波浪，尚带天风海雨。相逢一醉是前缘，风雨散、飘然何处？
-[品读]上阕写七夕之事，紧贴词牌之意，为友人离别之愁思开怀。下阕以晋人遇仙的典故人词，写和友人欢聚的快乐及离别的感慨。全词格调上用飘逸超旷取代缠绵悱恻之风，读起来清晰明快，韵味十足。全词不但摆脱了儿女艳情的旧套，借以抒写送别的友情，而且用事上紧扣七夕，格调上用飘逸超旷取代缠绵悱恻之风，读来深感词人的超凡脱俗以及卓而不群的姿态。
-《沉醉东风·七夕》
-元·卢挚
-银烛冷秋光画屏，
-碧天晴夜静闲亭。
-蛛丝度绣针，
-龙麝焚金鼎。
-庆人间七夕佳令。
-卧看牵牛织女星，
-月转过梧桐树影。
-[品读]在这支小令中，作者化用唐杜牧《秋夕》，绘制成一幅静夜（望天河）图，并赋予新的内容、新的意境。七夕之夜，月明风清，人们焚起香来庆贺节日。渴望着心灵手巧的女子也拿出了针钱在梧桐树影下乞巧，看牛郎织女相会。因此此曲具有一定的民俗学价值。
-《辛未七夕》
-唐·李商隐
-恐是仙家好别离，
-故教迢递作佳期。
-由来碧落银河畔，
-可要金风玉露时。
-清漏渐移相望久，
-微云未接过来迟。
-岂能无意酬乌鹊，
-惟与蜘蛛乞巧丝。
-[品读]碧落银河之畔，正是“牛郎”与“织女”相会的良好场所，何必一定要待金风玉露之七夕才相会呢？大约正是由于仙家之好别离吧？疑而不解，正反映出诗人苦闷难释的孤寂心态，语意感伤，心境难堪。本诗从猜测仙家的心思入手，指出有离别之苦，才有佳期之乐。然后转到描写佳期的喜庆气氛，以及期盼团圆的心情。最后想到民间风俗，问：“既奉出食品，让蜘蛛代为乞巧，那又如何答谢搭鹊桥的乌鹊呢？”
-《二郎神·炎光谢》
-北宋·柳永
-炎光谢。过暮雨、芳尘轻洒。乍露冷风清庭户爽，天如水、玉钩遥挂。应是星娥嗟久阻，叙旧约、飚轮欲驾。极目处、微云暗度，耿耿银河高泻。
-闲雅。须知此景，古今无价。运巧思穿针楼上女，抬粉面、云鬟相亚。钿合金钗私语处，算谁在、回廊影下。愿天上人间，占得欢娱，年年今夜。
-[品读]这是一首咏七夕佳期的作品。作者一反以往七夕诗词的伤感情调，把天上牛郎织女鹊桥相会的美丽传说和人间李隆基杨玉环马嵬死别的动人故事，演绎、融汇为一个纯情浪漫、晶莹剔透的意境，抒发了对纯真爱情的美好祝愿和热烈向往。全词语言通俗易懂，形象鲜明生动，情调闲雅欢娱，给人以充分的艺术享受。
-《他乡·七夕》
-唐·孟浩然
-他乡逢七夕，旅馆益羁愁。
-不见穿针妇，空怀故国楼。
-绪风初减热，新月始登秋。
-谁忍窥河汉，迢迢问斗牛。
-[品读]在异地他乡适逢七夕佳节，更增加旅人的思乡思亲的情怀。可是远离家乡，看不见妻子在月下穿针乞巧，对月怀人，诗人生起无限羁旅穷愁、去国怀乡之感。孟浩然诗歌大胆抒发个人的理想愿望，给开元诗风注入了清新浓郁的生活气息。
-《行香子·七夕》
-宋·李清照
-草际鸣蛩，惊落梧桐，正人间、天上愁浓。云阶月地，关锁千重。
-纵浮槎来，浮槎去，不相逢。
-星桥鹊驾，经年才见，想离情、别恨难穷。牵牛织女，莫是离中。
-甚霎儿晴，霎儿雨，霎儿风。
-[品读]牛郎和织女一年只有一度的短暂相会之期，其余时光则有如浩渺星河中的浮槎，游来荡去，终不得相会聚首。此词在艺术造诣上很有特色。词中托出牛郎织女爱情悲剧之生生不已，实为匪夷所思。以嫦娥风姨之相妒情节，反衬、凸出、深化牛郎织女之爱情悲剧，则是独具匠心的。
-《迢迢牵牛星》
-迢迢牵牛星，皎皎河汉女。
-纤纤擢素手，札札弄机杼。
-终日不成章，泣涕零如雨；
-河汉清且浅，相去复几许！
-盈盈一水间，脉脉不得语。
-[品读]《迢迢牵牛星》是产生于汉代的一首文人五言诗，是《古诗十九首》之一。此诗借神话传说中牛郎、织女被银河阻隔而不得会面的悲剧，抒发了女子离别相思之情，写出了人间夫妻不得团聚的悲哀。诗人抓住银河、机杼这些和牛郎织女神话相关的物象，借写织女有情思亲、无心织布、隔河落泪、对水兴叹的心态，来比喻人间的离妇对辞亲去远的丈夫的相思之情。全诗想象丰富，感情缠绵，用语婉丽，境界奇特，是相思怀远诗中的新格高调。&amp;nbsp;</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-16/doc-ihhvciiv8621806.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-16/doc-ihhvciiv6628314.shtml">北京七夕文化节通州开幕 将举办七夕民俗艺术展等活动</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-16/doc-ihhvciiv6628314.shtml">
-      <img alt="北京七夕文化节通州开幕 将举办七夕民俗艺术展等活动" data-src="http://k.sinaimg.cn/n/news/crawl/666/w400h266/20180816/BdPc-fzrwica0981500.jpg/w180h135l50t17d5.jpg">
-    </a>
-    <div>
-       <p><span>　　北京七夕文化节通州开幕
-活动为期5天 将在大运河畔举办相亲交友会、七夕民俗艺术展等活动
-
-本报讯（记者&amp;nbsp;&amp;nbsp;武文娟）昨日，“情定运河&amp;nbsp;圆梦七夕”第六届北京七夕文化节开幕式暨首都文明最美家庭评选表彰活动在通州区开幕。据悉，此次七夕文化节为期5天，将举办包括相亲大会、经典爱情电影展映、优秀家风故事展示、七夕民俗艺术展、七夕文化讲堂等板块文化活动，将以不同的主题活动，展示七夕传统文化内涵，展现运河文化特质和城市副中心的独特魅力，传承和发扬中国传统文化。
-开幕式上，以5组“首都文明（最美）家庭”的家风家训故事为脉络，通过电视纪实的艺术手段展现了优秀家风故事，同时通过精心编排的文艺节目和文明（最美）家庭的才艺展示，积极倡导七夕传统节日忠贞爱情、勤劳乞巧、执子之手与子偕老的婚姻家庭观念。
-据了解，8月17日、18日，还将在大运河畔运河文化广场举办“刚好遇见你”鹊桥会大型交友活动。期间，将有千余名来自社会各界的青年男女参加“走红毯”“游戏互动”“座位轮换”“互相传情”等丰富新颖的互动游戏。经典爱情电影展映也将在今天至8月19日于通州区电影院、通州区农村数字影厅和通州区运河文化广场同时进行。据了解，今年七夕文化节经典爱情影片展播活动包括“示爱宣言&amp;nbsp;情动影城”区电影院七夕观影活动、“情系七夕情人节&amp;nbsp;光影聚焦数字厅”爱情影片展映活动和“巧过七夕&amp;nbsp;幸福通州”电影展映活动三个板块。
-8月18日上午，运河文化广场还将举办“巧匠在民间”七夕民俗艺术展。艺术展利用网络向社会各界征集民俗手工艺品、&amp;nbsp;书画和摄影作品以及文艺作品等，并以线下展示和互动活动相结合的方式，多空间、多维度地展现七夕文化。8月16日、17日，通州区文化活动中心也将分两场举办七夕文化讲堂系列活动。另外，本次活动，在张家湾镇、潞城镇、于家务回族乡设立了三个七夕分会场。
-据活动负责人介绍，通州区积极挖掘中华传统节日文化和运河文化内涵，并赋予活动积极的时代特征，吸引广大市民特别是年轻人踊跃参与，共同传承和弘扬中华民族优秀传统文化，努力把七夕文化节打造成为展现城市副中心幸福和谐美好形象的文化名片。摄影/本报记者&amp;nbsp;&amp;nbsp;魏彤</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-16/doc-ihhvciiv6628314.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/c/2018-08-16/doc-ihhtfwqs0707416.shtml">“京津冀”旅游班列七夕首发</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/c/2018-08-16/doc-ihhtfwqs0707416.shtml">
-      <img alt="“京津冀”旅游班列七夕首发" data-src="">
-    </a>
-    <div>
-       <p><span>　　原标题：“京津冀”旅游班列七夕首发
-（记者刘潇 通讯员李溢春 华夏 李睿）记者从中国铁路北京局集团有限公司了解到，8月17日（农历七夕节）23点43分，首趟北京至承德塞罕坝方向的“京津冀”旅游班列将从北京站始发。
-据悉，首趟班列以塞罕坝为目的地，全程运行4天时间，期间广大游客在塞罕坝可以游览太阳湖、七星湖、泰丰湖等风景秀丽的景区，举办特色篝火晚会，切身体验塞罕坝美景。同时，装饰一新的旅游班列还配备两节多功能车厢，设置有书吧、茶吧、酒吧，提供KTV、茶艺展示、歌舞表演等个性化服务，让旅客享受到高品质的旅游体验，通过列车内饰、人员服饰、卧具备品、品牌标识、服务设施等深入了解京津冀区域内厚重的人文及历史旅游资源和元素，真正实现京津冀旅游“一列一主题、一车一城市、一包一景区”全方位、立体式、互动式出行新感受、新享受。
-据了解，中国铁道旅行社集团有限公司还将继续定期开行北京至张家口方向的草原冰雪冬奥游；北京至邯郸、石家庄、保定等方向的历史文化体验游；北京至衡水、沧州等方向的休闲度假欢乐游等“一趟精品列车、十条精品线路、多种特色主题”为内容的“京津冀”旅游班列。</span><a target="_blank" href="http://news.sina.com.cn/c/2018-08-16/doc-ihhtfwqs0707416.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-16/doc-ihhvciiv8640442.shtml">“中国情人节”七夕的三重意象</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-16/doc-ihhvciiv8640442.shtml">
-      <img alt="“中国情人节”七夕的三重意象" data-src="http://k.sinaimg.cn/n/news/transform/500/w300h200/20180816/DwrR-hhvciiv8633927.jpg/w180h135l50t1082.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：“中国情人节”七夕的三重意象
-七夕节，有人称其为“中国情人节”。在渐行渐远的农业文明中，牛郎织女的故事可谓家喻户晓、妇孺皆知。在漫长的农业社会，这个故事是作为我们民族的文化密码，在口头和典籍间代代流传。“我奶奶告诉我……”“很久很久以前……”这种口述的方式我们曾经很熟悉。后一种方式就是这个故事足以引起某个文人的重视，将其录入一本书，或者写入一篇作品中。如今，它被现代人赋予了更多内涵。一到这个时候，商家推出的各种活动吸引了年轻人，消费成为节日主调。然而追溯源流，七夕节意蕴深厚内敛，民间庆祝形式多样，绝非只有爱情可以言说。
-溯牛郎织女故事的源流，我们可以到远古农业文明产生的初期看看。
-秋风初起，白日暑热未消，入夜却能得到一丝清凉。那时的夜晚，星空灿烂，银河淼淼。《尚书·尧典》有云“历象日月星辰，敬授民时”。漫漫夜空中的点点繁星昭示着岁月的流逝和季节的轮回，也标志着节令的转换和农时的到来。远古农耕社会文明中一项重要的内容就是观测天象以预测时令。这时候，银河两岸比较明亮的星星成为他们要寻找的目标。织女星和牵牛星进入了人们的视野。织女牵牛，顾名思义，纺织业和畜牧业祭祀收获的时候到了。七月，是如此美好。田野里稻子正待收割，瓜果成熟欲落，女子们开始抽丝剥茧拿起纺锤在织机上飞舞。春天繁育蓄养的家畜也已经长成，男人们在张罗着将最好的牺牲献给神祇。
-这样甜美馨悦的日子怎能没有节日庆祝，七夕，应时而生，应运而生。
-万物有灵，人类社会和外在自然界能够产生任意的相似性的联想。人间的喜怒哀乐被寄托于天上的星宿，昭示季节转换的牵牛星和织女星便成为一对配偶神。
-随着农业社会经济结构逐渐完善，天上的星辰神性衰减，人成为故事的主角。牛郎织女由星辰神话变成爱情传说，经历了千年嬗变。然而，这个故事的内核——离别，却从未改变。因为天上双星相隔星汉的事实，引发人们对大地之上有情男女的分别生发出无限惆怅。《诗经·小雅·大东》：“维天有汉，监亦有光。跂彼织女，终日七襄。虽则七襄，不成报章。睆彼牵牛，不以服箱。”&amp;nbsp;织女星，终日愁苦思念清浅的银河对岸的牵牛星，以致织布不成，泪流潸然。汉代以后，儒生们将社会秩序情感都归属在了伦常范畴，织女牵牛神话的官方版本就是夫妇之情、夫妻之爱，在“发乎情，止乎礼义”的范围内，在不影响耕织的情况下才予以肯定。士大夫们更是附会，认定双星分离的原因是织女贪恋夫妻欢爱而“遂废织经”，于是被罚在天河两旁，只有一年见一次面。七夕诗中最有名的当属《故事十九首》中的一首。“迢迢牵牛星，皎皎河汉女。纤纤擢素手，札札弄机杼。终日不成章，泣涕零如雨。河汉清且浅，相去复几许。盈盈一水间，脉脉不得语。”
-有情人不能相守，其中苦楚也只有当事人才能道得出。在诗的国度里，这种带着甜蜜而又痛苦的情感，是诗人们歌咏的最佳题材。据不完全统计，唐宋时期七夕主题的诗词达近400首。有杜甫的《牵牛织女》：“牵牛出河西，织女处其东。万古永相望，七夕谁见同。”宋代的秦观那一句“金风玉露一相逢，便胜却人间无数”，更是道出了男女相思离别的人间苦乐。明清以降，这种七夕相思主题的文学作品更是不胜枚举。不管是爱人的分别还是亲人、朋友的分离，在这些七夕主题作品中都化作怅惘的诗句表达着一颗颗敏感而多情的心。
-七夕诗词是一种叙事方式，民间欢庆又是另一种表达。抛开作为农耕文明的时序节令指示功能不说，魏晋以后，七夕节的女性色彩开始鲜明起来。从民俗角度看，织女星所具有的神性，皆是人间女子愿望的体现——乞巧、乞富、乞子、乞寿、佑儿童、祈婚姻美满、祈遂私愿。古老华夏文明在母系氏族社会渐渐消失后，以男性为主导的社会结构确立至今。好在七夕节为女性保留了一个属于自己的节日。
-除却离别的意象，七夕的第二重意象应该是女性，它所表达的是中国古代女性的情和爱。南北朝时期，南方政权相对安定，经济繁荣，思想活跃，民俗活动日渐盛大，七夕节日更是盛况空前。南朝宗懔在《荆楚岁时记》中记录了当时的七夕节习俗：“七月七日为牵牛织女聚会之夜。是夕，人家妇女结彩楼，穿七孔针，或以金、银、瑜、石为针，陈瓜果于庭中以乞巧，有喜子网于瓜上，则以为符应。”元代杜仁杰散曲《七夕》，借助一整套乐曲将七夕佳节和牛女故事从各个方面进行了完整的描述。这首曲子开篇描画了一幅秋天的景象，斗转星移、梧桐叶落、晚风轻拂、鹊桥高悬，接着又极力铺陈了七夕佳节的各种民俗活动，有金盆种生、高楼乞巧、拜摩诃罗、穿针斗巧、蛛丝浮巧。随后写了一批庆祝的女子，一个个都是金钗玳瑁、彩衣轻纱，欢天喜地的神态；写瓜果珍馐、声乐震天的祥和喜庆。于是诗人不禁抒发出“人生愿得同欢会，把四季良辰须记，乞巧年年庆七夕”的感慨。以女性为主的七夕节，时序指示功能消减了，情爱暗示意味增多。元明清时期的一些叙事文学作品，将牛郎织女相会不再局限在夫妇伦理的框架中，而是作为男女性爱的隐晦表达。一方面，魏晋时期仙女织女因其爱与美的特质成为高唐神女的幻影；另一方面织女作为性爱之神的功能在叙事文学中得以表现。特别是明代中后期，社会思潮开放，艳情小说盛行市井。比如冯梦龙的《警世通言》和凌蒙初的《二刻拍案惊奇》中都有以牛郎织女相会隐喻性爱的情节。清代洪昇在他名曲《长生殿·密誓》中以生花妙笔将人间男女至诚至真的爱情描写到极致。帝妃的山盟海誓被天上的双星见证，并由此让他们做了人间情场的管领。
-当然，在全世界的民间故事中，“仙女下嫁穷汉”的主题几乎随处可见。这是底层男子慰藉心灵的幻想。在牛郎织女的传说中，牛郎彻底从天上的牵牛星的神坛下降，成为人世间一个孤苦无依，与老牛为伴的少年。此时此刻，形而上是夫妻美满爱情永恒，形而下的是人间的男欢女爱柔情蜜意。七夕节的第三重意象人间男女情爱，是这个节日和牛郎织女的故事得以流传的重要原因。
-来源：北京日报</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-16/doc-ihhvciiv8640442.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/s/2018-08-16/doc-ihhtfwqr9932336.shtml">工地上 迎七夕</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/s/2018-08-16/doc-ihhtfwqr9932336.shtml">
-      <img alt="工地上 迎七夕" data-src="http://k.sinaimg.cn/n/translate/702/w400h302/20180816/xIYN-hhtfwqr9932315.jpg/w180h135l50t1457.jpg">
-    </a>
-    <div>
-       <p><span>　　
-8月15日，4对一线劳动者夫妇用拍摄婚纱照的形式，在长沙中建二局某工地迎接即将到来的“七夕”佳节。
-此次活动中征集了长沙、衡阳等工地项目的夫妻，为他们拍摄婚纱照片，送上节日的祝福。
-图为摄影师在为万家聪（中）和张桥钦拍摄婚纱照。
-新华社记者&amp;nbsp;&amp;nbsp;张笑宇摄</span><a target="_blank" href="http://news.sina.com.cn/s/2018-08-16/doc-ihhtfwqr9932336.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9821463.shtml">七夕节 那些戏曲里的牛郎织女</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9821463.shtml">
-      <img alt="七夕节 那些戏曲里的牛郎织女" data-src="http://k.sinaimg.cn/n/news/crawl/5/w503h302/20180813/fmFO-hhqtawx9813667.jpg/w180h135l50t1a90.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：七夕节，那些戏曲里的牛郎织女
-七夕节的国民CP，没错，就是他俩！
-
-从古至今，牛郎织女这对国民CP的地位，从未改变。他们的爱情故事纯真美好又曲折动人，在不知不觉中为七夕这个传统节日增添了好些浪漫的佐料。
-
-所以，向往爱并心中有爱的中国人，总喜欢把他们的故事写进传统戏曲里，含蓄地表达心向往之的爱情
-有他们自己当主角的——
-黄梅戏 牛郎织女
-
-唱词：情字成天地，真爱安可欺。千古鹊桥在，心动七月七。
-翻译：我们是一对儿，为什么要分开？！
-秦腔 天河配
-
-唱词：说什么富贵与贫贱，但愿到比翼双飞得百年。
-翻译：我们是一对儿，为什么要分开？！
-有去别家戏里“客串”的——
-昆曲 长生殿
-
-两人在七夕会面那天正巧瞧见了唐明皇和杨玉环在长生殿里盟誓。萌萌哒织女因为帮助唐明皇和杨玉环月中“重圆”，耽误了和情郎诉衷肠的时间。
-织女有点“气急败坏”：“没来由将他人情事闲评议，把这良宵虚废。”
-花鼓戏 刘海砍樵
-两情相悦的胡秀英和刘海，谈情说爱的时候，也不忘拉这对国民CP出来比较比较：甜蜜的小样仿佛那年的织女和牛郎。
-
-
-刘胡两口子唱：“我把你比牛郎不差毫分”，“我把你比织女不差毫分”。
-戏曲里有节日
-也藏着生活
-多年以后，已经习惯了大胆说出爱的
-中国人
-依然忘不了千年前这个传说
-或许就因为，
-它寄托了中国人对“爱”最浪漫的情感
-让人们相信爱情经得起跋山涉水
-让人们懂得珍惜，懂得包容，懂得相守</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9821463.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9786490.shtml">七夕节的由来：古人对天象的崇拜而得来的</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9786490.shtml">
-      <img alt="七夕节的由来：古人对天象的崇拜而得来的" data-src="http://k.sinaimg.cn/n/news/transform/500/w300h200/20180813/LaSj-hhqtawy0076827.jpg/w180h135l50t10b0.jpg">
-    </a>
-    <div>
-       <p><span>　　七夕节，又名乞巧节、七巧节或七姐诞。发源地是中国，是汉族人的传统节日，在农历七月初七庆祝。我们一直知道七夕节关于牛郎与织女的传说，但是这并不是节日的真正起因，七夕节的兴起是因为古人对天象的崇拜。
-由于过往女子的命运只能嫁作人妇、相夫教子，因此不少女子都相信牛郎织女的传说，并希望以织女为榜样。所以每逢七姐诞，她们都会向七姐献祭，祈求自己能够心灵手巧、获得美满姻缘的节日。这也就是“乞巧”这名称的来源。妇女亦会结彩楼，预备黄铜制成的细针（七孔针），以五色细线对月迎风穿针。久而久之，七夕也成为了“女儿节”。2012年，乌丙安、叶舒宪等专家共同倡议将七夕节列为国家法定节假日。农历七月初七，是中国传统节日“七夕节”。那么，古人为何选择这一天作为节日呢？民俗专家表示，选择七月初七绝非偶然，它源于古人对天象、数字和时间的崇拜。&amp;nbsp;
-“七夕”最早来源于人们对自然天象的崇拜。早在《诗经》时代，人们就对牛郎织女的天象有所认识，在东汉时就出现了人格化的描写：“织女七夕当渡河，使鹊为桥。”“当然，人们对星星的崇拜远不止牵牛星和织女星，先民们甚至把天上的每一颗星星都想象为一位神仙，对人们的生活能起到支配作用，并且和人们的自身生活都有关联。”
-“七夕”还来源于古代人们对时间的崇拜。王来华介绍说，“七夕”月逢七、日逢七。在古代，中国人把日、月与水、火、木、金、土五大行星合在一起叫“七曜”。“七”在民间表现为时间的阶段性，在计算时间时往往以“七七”为终结。以“七曜”计算现在的“星期”，在日语中尚有保留。“七”又与“吉”谐音，“七七”又有双吉之意，是个吉利的日子。
-“七夕”还体现出古人对数字的崇拜。王来华介绍说，古代民间把正月正、三月三、五月五、七月七、九月九等预示成双的日子均列为吉庆日。“七”又是算盘每列的珠数，浪漫而又严谨，给人以神秘的美感。“七”与“妻”同音，于是七夕在很大程度上成了与女人相关的节日。&amp;nbsp;
-尽管“七夕节”的习俗在各地表现形式多种多样，但都有一个共同的特点，就是人们祈求生活幸福快乐。直到今日，“七夕节”仍是我国一个富有浪漫色彩的传统节日，尤其为年轻人所喜爱，但遗憾的是，不少习俗活动已弱化或消失，只有象征忠贞爱情的牛郎织女的传说和民间故事广为流传。
-这些传统文化是我国重要的非物质文化遗产，其中的意义深远。我们只知七夕节背后的爱情故事，却不知道七夕节的真正起因。古人一直都对天象有着异常崇拜之心，所以为此发明个节日也不足为奇。</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9786490.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9659378.shtml">七夕对联赏趣</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9659378.shtml">
-      <img alt="七夕对联赏趣" data-src="http://k.sinaimg.cn/n/news/transform/500/w300h200/20180813/eNUy-hhqtawx9992249.jpg/w180h135l50t1253.jpg">
-    </a>
-    <div>
-       <p><span>　　农历七月初七，是我国最具浪漫色彩的传统节日，也是一个象征着美好爱情的节日。在浩瀚的联海中，有不少七夕对联别有几分情趣。
-明末清初著名戏曲理论家李笠翁有一好友，名为宋建三，宋建三生于七夕节，所居之地名为百花巷。有一年七夕，李笠翁触景生情撰就一寿联：“七夕是生辰，喜事业功名从心，处处带来天上巧；百花来寿域，羡玉树芝兰绕膝，人人占却眼前春。”联语道出了宋建三事业有成、家庭美满，都因占天时（出生七夕节）、地利（居住百花巷），可谓立意见巧，想象奇特，匠心独运。
-传说每年农历七月初七，牛郎织女都会在天河相会，民间有联云：“牛女二星河左右；参商两曜斗西东。”联中既有星星名称“牛女”（牛郎星和织女星）对“参商”（参星和商星），又有数字“二”对“两”，还有方位“左右”对“西东”，可谓对仗工整，意趣盎然。
-明代诗人高启、杨基为至交好友，常作对互娱。相传有一天，两人徘徊月下，高启触景吟道：“玉兔捣药，嫦娥许我十五圆。”杨基应声对道：“喜鹊成桥，织女约郎初七渡。”上下联巧用神话“嫦娥奔月”“鹊桥相会”，流畅自然。
-民间流传着一副描写七夕的对联，联云：“云汉秋高，凉生七夕；天街夜永，光耀双星。”此联有的人认为源自唐代杜牧《秋夕》中的“天街夜色凉如水，坐看牛郎织女星”两句诗，作者拈诗撰联，蕴含深意，浑然成趣。
-从前，随州一祝氏财主请一先生为其儿子祝小叶当塾师，并许诺每逢七夕为先生加几道荤菜。祝财主平时十分吝啬，一连数载均未践诺。又一年七夕，三餐依然粗茶淡饭，先生传学生祝小叶作对道：“客舍凄清，恰似今宵七夕。”祝小叶不能对，问其父，祝财主对道：“寒林寂寞，可移下月中秋。”到了中秋祝财主又失信，先生再传祝小叶作对：“绿竹本无心，遇节即时挨不过。”祝财主听了，又代其子对道：“黄花如有约，重阳以后待何迟。”到了重阳节，客舍依然冷清，先生又作对：“汉三杰，张良韩信狄仁杰。”祝财主听了笑道：“先生谬矣！狄仁杰乃唐人也。”先生答道：“前唐后汉记得烂熟，为何一顿饭却如此健忘？”祝财主自知理亏，悻悻离去。（缪士毅）
-来源：福建日报</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9659378.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9353887.shtml">民间传说：汉武帝与西王母</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9353887.shtml">
-      <img alt="民间传说：汉武帝与西王母" data-src="http://k.sinaimg.cn/n/news/crawl/187/w447h540/20180813/8fZ5-hhqtawx9349077.jpg/w180h135l50t183f.jpg">
-    </a>
-    <div>
-       <p><span>　　
-这个故事与浪漫的牵牛织女相比就相形见绌多了，虽然也有仙人，不过没感觉到缥缈的空灵感觉，世俗的浊气也多了一些——《博物志》卷三记载：西王母于七月七夜见汉武帝，还带了七枚仙桃与帝分食。
-泰山脚下有个王母池，里面供奉的是王母娘娘。王母娘娘不单在这里受人间香火，还要每年三月初三在这里过生日，宴请天上地下各路的神仙，开瑶池蟠桃大会。可是有人就要问了，王母娘娘也就是西王母，那她应该住在西边啊，怎么就把个瑶池安在东岳泰山上了呢？这事可说来话长，据说啊，这是汉武帝给她修。
-汉武帝是历史上有名的喜欢求仙访道的皇帝，他不光是做皇子的时候经常到道观里去烧香拜神仙，就是后来做了皇帝，不能整天往外跑了，他还在皇宫里单独辟出承平殿来供奉神仙天上的王母娘娘是神仙中专管赏罚的，如果她看到世上的人都不敬重神仙，不孝顺友爱，就会将下瘟疫灾荒做为惩罚。这时候，她看到人间打从皇帝开始就这么虔诚，这么敬重神仙，心里头很高兴，就真的显灵七月初七这天晚上，汉武帝又到承平殿祭祀供奉的神仙，这时候就有青色的鸟从西方飞来。这鸟长得神采奕奕的，不同于平常的鸟雀，也不怕人，就在承平殿里落着，也不离开。汉武帝就不明白了，这是怎么回事呢？这只谁也不认得的鸟飞来是个什么兆头呢？
-东方朔
-汉武帝手下有个大臣名叫东方朔，是个奇人，天文地理无所不晓，天下就没有他不知道的事。汉武帝赶紧派人去把东方朔找来让他认认。东方朔来了一看就说，这是青鸟啊，非清泉不饮，非柏子不食，是西王母的使者，它既然飞来了，那不久西王母也就要来了。汉武帝一听，又惊又喜，赶紧一边让人安排清泉柏子款待青鸟，一边就等着王母降临。果然过了没多久王母娘娘就来了，还有两只青鸟跟在她两旁。汉武帝可高兴坏了，天天拜神仙求神仙保佑，这份诚心总算让神仙知道了，居然还亲自降临，那么从此以后一定是江山永固福寿绵长了。王母娘娘对汉武帝虔心敬神十分欢喜，于是当面就许给他开疆扩土、文治武功、江山一统的功业，保佑他江山永固。
-从那以后，汉武帝果然是百战百胜。不但打败了南边那些不服气他当皇帝看不起他年轻的叔叔伯伯们，还把这些叔伯王爷们在各自封国的权力都收回到自己手里，让他们服从皇帝的命令，完成了他父亲、爷爷当年想做却没做成的事。在北边，又打败了几百年前一直在边境骚扰的匈奴人，把他们远远地赶到沙漠尽北边去了汉武帝的功绩越来越大，权力越来越大，也就越来越骄傲起来，好大喜功，骄奢淫逸，兴建华美的宫殿修筑浩大的陵墓，宠信美人外戚，搜罗奇珍异宝。国家本来已经四海安宁边疆安定，他偏偏又要为了得到一匹马去攻打更远的国家，为了美人高兴让美人的哥哥领兵打仗，把民间的青年壮丁都征去打仗了，弄得老百姓妻离子散，民怨沸腾。百姓们的怨气越积越重，一直冲到了天上，把天上的神仙都惊动了。神仙们纷纷把汉武帝的所作所为报告给王母娘娘，王母一听就生气了，本来看他是个虔诚恭谨敬天惜民的皇帝，才保佑他的，可没想到他竟然借着上天的恩惠这么为所欲为，这样的人怎么还能继续受到上天的护佑呢？所以王母不但不再保佑汉武帝，而且降下灾难，还把派去帮他的天上的神将都召了回来。于是汉武帝的好运就到头了，他跟前能征惯战的将军一个个都去世了，而靠着裙带关系爬上去的将军本来就不会打仗这下更是败仗连连，连宫里他最宠爱的美人也生病死了。
-这下汉武帝可就慌了，他知道这是上天降下的惩罚，是天上的神仙生他的气了，就赶紧想办法补救。他打听到，泰山这个地方是神仙居住的处所，在这里可以上达天听，当年秦始皇在这里封禅就是对上天说话的所以汉武帝也就紧忙着去泰山封禅祭天。在宫中最受宠的美人病故后的第二年，汉武帝就跑到泰山上来封禅了，可是封过之后，却不见上天有任何表示，这一来汉武帝心里可犯嘀咕了，是天上的神仙没听见，还是自己的诚心不够？那就第二年再去吧。所以，他第二年就又上了泰山，而且为了以后常来常往住得方便，他就在山下修建了行宫，来封禅的时候做为皇帝行宫，平时就做为供奉泰山神的东岳神庙汉武帝还命人在泰山上探寻水源，终于在山南向阳的山坡上找到一处水质甘冽的泉眼，于是在这里依照传说中王母瑶池的样子，为王母修了一处殿宇，与山下的行宫遥遥相望，做为王母在凡间的居所，希望王母能够显灵临凡，在这里居住。
-后来，汉武帝前前后后一共来了泰山八次，但再也没有见过王母，不过有人在泰山上拾到王母所遗的玉钗，献给汉武帝，于是知道王母不再接受了他修的瑶池，不再怪罪他了，他的江山算是保住了，但却也再不肯见他，于是汉武帝把玉钗收藏在宫中。后来到了赵飞燕时候，打开放玉钗的木匣，玉钗化为一只白燕飞走了，不久，汉朝也就亡了。所以民间都知道泰山瑶池中当真住着王母娘娘，对诚心的人有求必应十分的灵验，就把这里叫做王母池。
-从汉朝至今，虽朝代更迭，但王母池的香火却是世世代代延绵不绝。直到如今，台湾和港澳还不断有人年年春节千里迢迢赶到这里给王母娘娘上一柱香，祈求全家一年平安。</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9353887.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9324306.shtml">南瓜棚下听悄悄话</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9324306.shtml">
-      <img alt="南瓜棚下听悄悄话" data-src="http://k.sinaimg.cn/n/news/transform/500/w300h200/20180813/-RP8-hhqtawy0056518.jpg/w180h135l50t1dc5.jpg">
-    </a>
-    <div>
-       <p><span>　　绍兴农村七夕节风俗，这一夜会有许多少女一个人偷偷躲在生长得茂盛的南瓜棚下，在夜深人静之时如能听到牛郎织女相会时的悄悄话，这待嫁的少女日后便能得到这千年不渝的爱情。
-每年的七月初七，是牛郎和织女相会的日子，在这一天，好事的喜鹊们纷纷奋力飞向银河，给牛郎和织女这对苦苦相恋的恋人搭起鹊桥，为她们创造一种非常浪漫的氛围。
-每当牛郎和织女相会鹊桥，她们已经有一年没有相见了，因此会有很多的话需要说给恋人，同时也会静心的来倾听恋人的倾诉。
-牛郎和织女之间这样悄悄的情话，据说凡间的人们往往也能够听得到，在七夕这天晚上，只要女人们独自一个人偷偷的躲在生长得茂盛的南瓜棚下，在夜深人静之时如就能听到牛郎织女相会时的悄悄话，如果还是待嫁的少女，那么只要听到牛郎织女的情话，悄悄的许下自己的爱情愿望，往往就能够得到应验，即找到如意郎君，能得到这千年不渝的爱情。
-南瓜棚下倾听牛郎织女的悄悄话，事实上是不可能的，因为牛郎织女本身就只是一个美好的传说，因此人们之所以有这样的一个习俗，往往反映出了姑娘们对于美好生活，美好人生，美好爱情的一种渴望，希望能够苍天保佑，如愿以偿。</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9324306.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9157374.shtml">中国古代七夕诗词赏析</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9157374.shtml">
-      <img alt="中国古代七夕诗词赏析" data-src="http://k.sinaimg.cn/n/news/transform/59/w550h309/20180813/x-xW-hhqtawx9156922.jpg/w180h135l50t17b0.jpg">
-    </a>
-    <div>
-       <p><span>　　古诗十九首之一（汉）佚名
-迢迢牵牛星，皎皎河汉女。
-纤纤摸素手，札札弄机杼。
-终日不成章，泣涕零如雨。
-河汉清且浅，相去复几许。
-盈盈一水间，脉脉不得语。
-七夕夜女歌（晋）无名氏
-婉娈不终夕，
-一别周年期。
-桑蚕不作茧，
-尽夜长悬丝。
-七夕（唐）白居易
-烟霄微月澹长空，
-银汉秋期万古同。
-几许欢情与离恨，
-年年并在此宵中。
-秋夕（唐）杜牧
-红烛秋光冷画屏，
-轻罗小扇扑流萤。
-天阶夜色凉如水，
-坐看牵牛织女星。
-七夕词（唐）崔颢
-长安城中月如练，家家此夜持针线。
-仙裙玉佩空自知，天上人间不相见。
-长信深阴夜转幽，瑶阶金阁数萤流。
-班姬此夕愁无限，河汉三更看斗牛。
-鹊桥仙（宋）秦观
-纤云弄巧，飞星传恨，银汉迢迢暗渡。
-金风玉露一相逢，便胜却人间无数。
-柔情似水，佳期如梦，忍顾鹊桥归路！
-两情若是长久时，又岂在朝朝暮暮！
-
-七夕 （唐）徐凝
-一道鹊桥横渺渺，
-千声玉佩过玲玲。
-别离还有经年客，
-怅望不如河鼓星。
-七夕醉答君东（明）汤显祖
-玉名堂开春翠屏，
-新词传唱《牡丹亭》。
-伤心拍遍无人会，
-自掐檀痕教小伶。</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx9157374.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8941896.shtml">读书人的七夕：拜魁星</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8941896.shtml">
-      <img alt="读书人的七夕：拜魁星" data-src="http://k.sinaimg.cn/n/news/transform/553/w550h803/20180813/0kTB-hhqtawx8936832.jpg/w180h135l50t12f2.jpg">
-    </a>
-    <div>
-       <p><span>　　
-民间传七月七日是魁星的生日。魁星文事，想求取功名的读书人特别崇敬魁星，所以一定在七夕这天祭拜，祈求他保佑自己考运亨通。魁星爷就是魁斗星，廿八宿中的奎星，为北斗七星的第一颗星，也魁星或魁首。古代士子中状元时称“大魁天下士”或“一举夺魁”，都是因为魁星主掌考运的缘故。</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8941896.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8913752.shtml">拜织女</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8913752.shtml">
-      <img alt="拜织女" data-src="http://k.sinaimg.cn/n/news/crawl/570/w350h220/20180813/5Bb--hhqtawx8912525.jpg/w180h135l50t1182.jpg">
-    </a>
-    <div>
-       <p><span>　　
-“拜织女”纯是少女、少妇们的事。她们大都是预先和自己朋友或邻里们约好五六人，多至十来人，联合举办。举行的仪式，是于月光下摆一张桌子，桌子上置茶、酒、水果、五子（桂圆、红枣、榛子、花生，瓜子）等祭品；又有鲜花几朵，束红纸，插瓶子里，花前置一个小香炉。那么，约好参加拜织女的少妇、少女们，斋戒一天，沐浴停当，准时都到主办的家里来，于案前焚香礼拜后，大家一起围坐在桌前，一面吃花生，瓜子，一面朝着织女星座，默念自己的心事。如少女们希望长得漂亮或嫁个如意郎、少妇们希望早生贵子等，都可以向织女星默祷。玩到半夜始散。</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8913752.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8777694.shtml">七夕节的习俗：种生求子</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8777694.shtml">
-      <img alt="七夕节的习俗：种生求子" data-src="http://k.sinaimg.cn/n/news/transform/39/w550h289/20180813/p1tt-hhqtawx8775588.jpg/w180h135l50t1d1b.jpg">
-    </a>
-    <div>
-       <p><span>　　
-旧时习俗，在七夕前几天，先在小木板上敷一层土，播下粟米的种子，让它生出绿油油的嫩苗，再摆一些小茅屋、花木在上面，做成田舍人家小村落的模样，称为“壳板”，或将绿豆、小豆、小麦等浸于瓷碗中，等它长出敷寸的芽，再以红、蓝丝绳扎成一束，称为“种生”，又称为“五生盆”或“生花盆”。南方各地也称为“泡巧”，将长出的豆芽称为巧芽，甚至以巧芽取代针，抛在水面乞巧。还用蜡塑各种形象，如牛郎、织女故事中的人物，或秃鹰、鸳鸯、等动物之形，放在水上浮游，称之为“水上浮”。又有蜡制的婴儿玩偶，让妇女买回家浮于水土，以为宜子之祥，称为“化生”。</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8777694.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8764895.shtml">牛郎织女鹊桥会</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8764895.shtml">
-      <img alt="牛郎织女鹊桥会" data-src="http://k.sinaimg.cn/n/news/crawl/750/w450h300/20180813/YBy2-hhqtawx8764242.jpg/w180h135l50t1a98.jpg">
-    </a>
-    <div>
-       <p><span>　　七夕节始终和牛郎织女的传说相连，这是一个很美丽的，千古流传的爱情故事，成为我国四大民间爱情传说之一 。
-
-相传在很早以前，南阳城西牛家庄里有个聪明。忠厚的小伙子，父母早亡，只好跟着哥哥嫂子度日，嫂子马氏为人狠毒，经常虐待他，逼他干很多的活，一年秋天，嫂子逼他去放牛，给他九头牛，却让他等有了十头牛时才能回家，牛郎无奈只好赶着牛出了濉？
-牛郎独自一人赶着牛进了山，在草深林密的山上，他坐在树下伤心，不知道何时才能赶着十头牛回家，这时，有位须发皆白的老人出现在他的面前，问他为何伤心，当得知他的遭遇后，笑着对他说：“别难过，在伏牛山里有一头病倒的老牛，你去好好喂养它，等老牛病好以后，你就可以赶着它回家了。
-牛郎翻山越岭，走了很远的路，终于找到了那头有病的老牛，他看到老牛病得厉害，就去给老牛打来一捆捆草，一连喂了三天，老牛吃饱了，才抬起头告诉他：自己本是天上的灰牛大仙，因触犯了天规被贬下天来，摔坏了腿，无法动弹。自己的伤需要用百花的露水洗一个月才能好，牛郎不畏辛苦，细心地照料了老牛一个月，白天为老牛采花接露水治伤，晚上依偎在老年身边睡觉，到老牛病好后，牛郎高高兴兴赶着十头牛回了家。
-回家后，嫂子对他仍旧不好，曾几次要加害他，都被老牛设法相救，嫂子最后恼羞成怒把牛郎赶出家门，牛郎只要了那头老牛相随。
-一天，天上的织女和诸仙女一起下凡游戏，在汉江里洗澡，牛郎在老牛的帮助下认识了织女，二人互生情意，后来织女便偷偷下凡，来到人间，做了牛郎的妻子。织女还把从天上带来的天蚕分给大家，并教大家养蚕，抽丝，织出又光又亮的绸缎。
-牛郎和织女结婚后，男耕女织，情深意重，他们生了一男一女两个孩子，一家人生活得很幸福。但是好景不长，这事很快便让天帝知道，王母娘娘亲自下凡来，强行把织女带回天上，恩爱夫妻被拆散。
-牛郎上天无路，还是老牛告诉牛郎，在它死后，可以用它的皮做成鞋，穿着就可以上天。牛郎按照老牛的话做了，穿上牛皮做的鞋，拉着自己的儿女，一起腾云驾雾上天去追织女，眼见就要追到了，岂知王母娘娘拔下头上的金簪一挥，一道波涛汹涌的天河就出现了，牛郎和织女被隔在两岸，只能相对哭泣流泪。他们的忠贞爱情感动了喜鹊，千万只喜鹊飞来，搭成鹊桥，让牛郎织女走上鹊桥相会，王母娘娘对此也无奈，只好允许两人在每年七月七日于鹊桥相会。
-后来，每到农历七月初七，相传牛郎织女鹊桥相会的日子，姑娘们就会来到花前月下，抬头仰望星空，寻找银河两边的牛郎星和织女星，希望能看到他们一年一度的相会，乞求上天能让自己能似织女那样心灵手巧，祈祷自己能有如意称心的美满婚姻，由此形成了七夕节，又名爱情节。
-在我国汉水地带，七夕节又叫情人节、爱情节，是天下所有情侣们的节日。</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8764895.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8517353.shtml">七夕节古代女子忙比“巧”</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8517353.shtml">
-      <img alt="七夕节古代女子忙比“巧”" data-src="http://k.sinaimg.cn/n/news/crawl/750/w400h350/20180813/ne67-hhqtawx8509142.jpg/w180h135l50t142b.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：七夕节古代女子忙比“巧”
-清代绘制的《八月桐荫乞巧》，描绘了七月初七京城仕女“乞巧”的场面。
-今天的农历为七月七日，是中国传统的节日：七夕节。现在很多人把七夕节作为中国的情人节，其实，传统的七夕节，内容非常丰富，远非“情人节”能概括的。
-在古代，这一天所有的活动都是以女人为中心，其中“乞巧”是主要内容，形成了丰富多彩的“穿针乞巧”、“喜蛛应巧”、“投针验巧”等活动，女子们围在一起比谁心灵手巧。另外，还有拜织女、逛街等活动，一派欢乐的景象。
-在古代，无论是大家闺秀，还是穷人家的女孩，都要精通女红。农历七月初七的晚上，女子们都有一个共同的活动：祭拜织女，是为“乞巧”。为什么要拜织女呢？因为在传说中，织女是一位女红大师。女子们祭拜她，就是希望能有好的纺织技术，以后生活幸福美满。据《荆楚岁时记》记载：“是夕，人家妇女结彩楼，穿七孔针，或以金银石为针，陈几筵酒脯瓜果于庭中，以乞巧。”
-拜织女时，大多是由一个有威望的女子牵头，邀上左邻右舍的姐妹们，少则五六人，多则十几人，团在一起拜织女。当时，庭院中安上一张供桌，上面摆上茶、水果、五子（桂圆、红枣、榛子、花生，瓜子）等祭品，还要在瓶子里插上几枝鲜花和几束红纸。祭拜完毕，大家一起围坐在桌前，一面吃花生，瓜子，一面家长里短地闲聊，交流针线活。
-后来，在“乞巧”时，衍生出多种游戏，女子们围在一起，比谁更“巧”。
-最常见的比赛是“穿针乞巧”。七夕之夜，女子手执五色丝线和连续排列的九孔针（或五孔针、七孔针），借助月光，穿针引线，将线快速全部穿过针孔者称为“得巧”，即获胜者。反之就是输家，输家给赢家要送奖品或礼物。五代十国时期的王仁裕在笔记小说《开元天宝遗事》中说：“七夕，宫中以锦结成楼殿，高百尺，上可以胜数十人，陈以瓜果酒炙，设坐具，以祀牛女二星，妃嫔各以九孔针、五色线向月穿之，过者为得巧之侯。”
-除此之外，还有“蛛丝乞巧”，这个游戏是把小蜘蛛放在盒子中，次日早晨看其结网的疏密来定巧拙。杜甫在《牵牛织女》诗中曰：“蛛丝小人态，曲缀瓜果中。”《开元天宝遗事》中也有“蛛丝卜巧”的记载：“帝与贵妃，每至七月七日夜，在华清宫游宴。时宫女辈陈瓜花酒馔，列于庭中，求恩于牵牛、织女星也。又各捉蜘蛛于小合中，至晓开视，蛛网稀密，以为得巧之候。密者言巧多，稀者言巧少。”
-明清时期，逐渐流行“投针验巧”，即在水盆中放入缝衣针，以盆底针影形状判断是否“得巧”。七夕前一天晚上，把一个水盆放在院子里，倒入“鸳鸯水”（白天取的水和夜间取的水混合，或者是河水和井水混合）。水放置一夜后，第二天，也就是七夕节当天，水的表面生成一层薄膜。到了下午，女子们取出缝衣针轻轻地放在水面上，此时针不会下沉，在水底下折射出针影。如果针影形成各种各样的形状，便是获胜者；如果针影是笔直的一条线，就是失败者。明朝刘侗和于奕正合著的《帝京景物略》记载：“七月七日之午丢巧针。妇女曝盎水日中，顷之，水膜生面，绣针投之则浮，看水底针影。有成云物花头鸟兽影者，有成鞋及剪刀水茄影者，谓乞得巧；其影粗如锤、细如丝、直如轴蜡，此拙征矣。”
-另外还有其他比“巧”的方式，比如比厨艺、比做糕点、比绣花等。
-七夕节也是女子们尽情玩耍的一天，除了比巧，还有各种游戏以及购物、聚餐等活动，应接不暇。《孔雀东南飞》中写到的诗句“初七及下九，嬉戏莫相忘”说的就是七夕这天的欢乐场面。
-七夕这天，平日深居在绣楼里的大家闺秀、富家小姐，打扮的花枝招展，到田园乡野游玩，逛街市。这一天，女子们穿红戴花，佩戴着用五彩绫线结成的樱桃、桑葚、角黍、葫芦等形状的饰品，成群结队地来到大街上。
-宋代，在京城汴梁，还有为女子购买乞巧物品而专设的市场，即乞巧市。宋人罗烨、金盈之编撰的《醉翁谈录》记载：“七夕，潘楼前买卖乞巧物。自七月一日，车马嗔咽，至七夕前三日，车马不通行，相次壅遏，不复得出，至夜方散。”《东京梦华录》也有介绍，七夕前，身穿罗绮者充斥街市，随即有尚未盛开的荷花出售，京城中人擅做假的双头莲，赏玩一时，然后又带回家去，路人见了，纷纷流露出赞叹喜爱的神情。
-当然，为了配合这种欢乐的气氛，家中还要准备丰盛的食物供她们享用。在元代，京城一带有在七夕这天将嫁出的女儿接回娘家的习俗。元末的熊梦祥在《析津志》中记载：“宫廷、宰辅、士庶之家，咸作大棚，张挂七夕牵牛织女图，盛陈瓜果、酒、饼、蔬菜、肉脯，邀请女流作巧节会，称曰女孩儿节。占卜贞咎，饮宴尽欢，次日馈送还家。” 郑学富
-来源：&amp;nbsp;北京晚报</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8517353.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-
-<dl>
-  <dt><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8438985.shtml">七夕要来了 送心爱的她一片花海吧</a></dt>
-  <dd>
-    <a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8438985.shtml">
-      <img alt="七夕要来了 送心爱的她一片花海吧" data-src="http://k.sinaimg.cn/n/news/crawl/10/w517h293/20180813/JXNP-hhqtawx8435266.png/w180h135l50t174a.jpg">
-    </a>
-    <div>
-       <p><span>　　原标题：七夕要来了 送心爱的她一片花海吧
-立秋之后马上就迎来最甜蜜的七夕节了，小情侣们应该正在为情人节送礼物发愁了吧。情人节的标配那就是鲜花加巧克力，不过新潮的小伙伴们，应该早就不想拘泥于旧俗了。来来来，小编为你推荐妙招。
-一朵花、一束花什么的，怎么能有一大片花海够瞧。虽说春季已远，但小编总能觅得良景，为了能瞧见恋人兴奋幸福的笑颜，花儿们又怎会吝啬绽放它的娇艳。
-横山凤凰谷
-八月的凤凰谷是一年中最芬芳的时候，可爱的太阳花、傲娇的紫薇、粉嘟嘟的树状月季、五彩斑斓的时令花卉争相夺艳。八月的凤凰谷是一年中最甜蜜的时候，浪漫的七夕如约将至，在这里，花儿们与云朵伴舞，她一定能绽放最美的笑颜。
-走进凤凰谷，蓝天白云相映成趣，簇簇繁花，和着阵阵香甜的清风，好鸟不时相鸣让恋人们恍若浸润在蜜糖罐子般，让爱情愈发浓厚……
-花海
-八月的凤凰谷，生如夏花，灿烂夺目。浪漫的八月带着芳香的旖旎，弥漫在凤凰谷的清凉里，勾勒出莫奈般的油画。徜徉在花海里，享受藏匿的夏，久别重逢的春。纯净的月露湖，配上岸边随风摇曳的鲜花，尤为迷人。那蓝锦缎似的湖面上，起伏着微微的涟漪，成群结队的锦鲤，在五彩鲜花的包裹下，似乎更加愉悦欢脱。纵情在凤凰谷花的世界里，做一个惜花的人，在凤凰谷的盛夏季节里，享受一段清凉的闲暇时光。
-云朵
-八月的凤凰谷，除了鲜花，就数云朵最美了。清晨的日出给了云朵霓裳，傍晚的日落给了云朵红妆。天空高远通透，白云、蓝天格外分明，最适合穿梭在松涛间，望向天边的云朵……
-凤凰谷的云，应该是一群婉约的姑娘，温柔的衣着是可爱的马卡龙的色系，粉红色、淡绿色、浅紫色在天边一近一远，空气中也渐渐弥漫着丝丝甜意。&amp;nbsp;
-旅行小贴士：
-1。凤凰谷花期：7-8月最盛
-2。交通路线
-乘车路线：线路1龙头寺/陈家坪/沙坪坝/南坪四公里交通枢纽站—綦江长途汽车站—503公交车—巨龙（横山）—步行至横山凤凰谷景区线路2南坪四公里交通枢纽站—巨龙（横山）—步行至横山凤凰谷景区
-自驾线路：线路1重庆内/外环高速—渝黔高速—綦万高速—通惠下道口—横山凤凰谷景区线路2 重庆内/外环高速—渝黔高速—一品路口—横山凤凰谷景区
-3。注意天气最近横山天气较多雨天，雨后的凤凰谷白天温度在25°左右，可以带上雨具以及防晒用品。</span><a target="_blank" href="http://news.sina.com.cn/gov/2018-08-13/doc-ihhqtawx8438985.shtml">[详情]</a></p>
-    </div>
-  </dd>
-</dl>
-</div><!-- seo end -->
-			</div>
-		</div>
-		<div class="-live-layout-column span4" data-layout-seq="__component_40" data-layout-type="layoutColumn">
-			<div class="-live-page-widget">
-<div class="CM-weibo-recommend" id="pl_weibotopic_conf_159">
-  <!--更多的链接需打相应的参数-->
-  <div class="CC-title CC-margin30">
-    <h2><span class="icon_line"></span>微博推荐</h2><a href="http://s.weibo.com/weibo/七夕?topnav=1&wvr=5&b=1" target="_blank" class="more">更多</a></div>
-  <div class="content" node-type="content">
     
-  </div>
-</div>
-<script>
-    window._SINANEWSDATA.weibo = {
-        ptopic : '七夕', //发布框里的话题主题，必选
-        atopic : '七夕', //大家在说的话题主题，必选
-        appkey : '1671520477', //appkey，必选
-        refer :1, //是否发微博携带直播来源页链接
-        titlebar : 0,//显示标题栏
-        border : 0, //显示边框
-        publish : 1, //显示发布框
-        atalk : 1, //显示大家在说
-        recomm : 0,//分组
-        at : 0, //分组
-        dpc :1,
-        pic:0,//显示为缩略图
-        skin:1,//皮肤
-        color:'cccccc,f0f0f0,333333,CC0000,FFFFFF,F7F7F7',//边框，标题栏，文字，链接，主背景，背景移上颜色，顺序必要。
-        colordiy:1,//自定义颜色
-        height: 600,
-        width:0//自适应的宽度填0
-    };
+    <!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/wysxr/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/wysxr/">临江仙我亦是行人</a>
+</h1>
+<h2></h2>
 
-    /*
-      详细参数配置参见：http://open.weibo.com/livestreamset.php
-    */
 
-    $widgetadd({
-      id: 'pl_weibotopic_conf_159',
-      isDepend: true,
-      loadTime: 'onVisibleReady',
-      require: [],
-      exports: function(node){
-        var GLOBLE =  window._SINANEWSDATA.weibo;
-        var config = '';
-        for(var key in GLOBLE){
-          config += '&'+key+'='+GLOBLE[key];
-        }
-        var iframe_width = !!GLOBLE.width ? GLOBLE.width : '100%';
-        $('[node-type=content]',node).html('<iframe width="'+iframe_width+'" height="'+GLOBLE.height+'"  frameborder="0" scrolling="no" src="http://widget.weibo.com/livestream/listlive.php?language=zh_cn'+config+'"></iframe>')
-      }
-    });
-	
-	</script>
 
-			</div>
-		</div>
-	</div>
-	</div>
-</div>
-<style>
-.row-fluid {
-  width: 100%;
-  *zoom: 1;
-}
-.row-fluid:before,
-.row-fluid:after {
-  display: table;
-  content: "";
-}
-.row-fluid:after {
-  clear: both;
-}
-.row-fluid > [class*="span"] {
-  float: left;
-  margin-left: 2.127659574%;
-}
-.row-fluid > [class*="span"]:first-child {
-  margin-left: 0;
-}
-.row-fluid > .span12 {
-  width: 99.99999998999999%;
-}
-.row-fluid > .span11 {
-  width: 91.489361693%;
-}
-.row-fluid > .span10 {
-  width: 82.97872339599999%;
-}
-.row-fluid > .span9 {
-  width: 74.468085099%;
-}
-.row-fluid > .span8 {
-  width: 65.95744680199999%;
-}
-.row-fluid > .span7 {
-  width: 57.446808505%;
-}
-.row-fluid > .span6 {
-  width: 48.93617020799999%;
-}
-.row-fluid > .span5 {
-  width: 40.425531911%;
-}
-.row-fluid > .span4 {
-  width: 31.914893614%;
-}
-.row-fluid > .span3 {
-  width: 23.404255317%;
-}
-.row-fluid > .span2 {
-  width: 14.89361702%;
-}
-.row-fluid > .span1 {
-  width: 6.382978723%;
-}
-.-live-layout-column {min-height:1px;}
-.-live-page-widget {
-  *zoom: 1;
-}
-.-live-page-widget:before,
-.-live-page-widget:after {
-  display: table;
-  content: "";
-}
-.-live-page-widget:after {
-  clear: both;
-}
-</style>
 
-</div>		</div>
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/wysxr/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E4%B8%B4%E6%B1%9F%E4%BB%99%E6%88%91%E4%BA%A6%E6%98%AF%E8%A1%8C%E4%BA%BA">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/wysxr/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			<div id="blog_stats_place_holder"><script>loadBlogStats();</script></div>
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
 		
 
-		<div class="CM-foot CC-wrapper">
-			<p><a href="http://comment5.news.sina.com.cn/comment/skin/feedback.html?channel=ly&newsid=5" target="_blank">新浪意见反馈留言板 欢迎批评指正</a></p>
-			<a href="http://corp.sina.com.cn/chn/">新浪简介</a> | <a href="http://corp.sina.com.cn/eng/">About Sina</a> | <a href="http://emarketing.sina.com.cn/">广告服务</a> | <a href="http://www.sina.com.cn/contactus.html">联系我们</a> | <a href="http://corp.sina.com.cn/chn/sina_job.html">招聘信息</a> | <a href="http://www.sina.com.cn/intro/lawfirm.shtml">网站律师</a> | <a href="http://english.sina.com">SINA English</a> | <a href="https://login.sina.com.cn/signup/signup.php">通行证注册</a> | <a href="http://help.sina.com.cn/">产品答疑</a>
-			<p>Copyright © 1996-2019 SINA Corporation, All Rights Reserved</p>
-			<p>新浪公司 版权所有</p>
-		</div>
-		<script type="text/javascript" src="http://sjs2.sinajs.cn/video/lib/js/core.js"></script>
-		<script type="text/javascript" src="http://sjs2.sinajs.cn/video/theme/cms_widget/js/page/page.js?v=1.0"></script>
-		<!-- body code begin -->
-<script type="text/javascript" src="https://mjs.sinaimg.cn/umd/base-tools-SUDA/1.1.0/index.min.js"></script>
 
 
-	<!-- body code begin -->
 
-<!-- SSO_UPDATECOOKIE_START -->
-<script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.q=function(b){if(typeof b!="object"){return""}var a=new Array();for(key in b){a.push(key+"="+encodeURIComponent(b[key]))}return a.join("&")};sinaSSOManager.es=function(f,d,e){var c=document.getElementsByTagName("head")[0];var a=document.getElementById(f);if(a){c.removeChild(a)}var b=document.createElement("script");if(e){b.charset=e}else{b.charset="gb2312"}b.id=f;b.type="text/javascript";d+=(/\?/.test(d)?"&":"?")+"_="+(new Date()).getTime();b.src=d;c.appendChild(b)};sinaSSOManager.doCrossDomainCallBack=function(a){sinaSSOManager.crossDomainCounter++;document.getElementsByTagName("head")[0].removeChild(document.getElementById(a.scriptId))};sinaSSOManager.crossDomainCallBack=function(a){if(!a||a.retcode!=0){return false}var d=a.arrURL;var b,f;var e={callback:"sinaSSOManager.doCrossDomainCallBack"};sinaSSOManager.crossDomainCounter=0;if(d.length==0){return true}for(var c=0;c<d.length;c++){b=d[c];f="ssoscript"+c;e.scriptId=f;b=b+(/\?/.test(b)?"&":"?")+sinaSSOManager.q(e);sinaSSOManager.es(f,b)}};sinaSSOManager.updateCookieCallBack=function(c){var d="ssoCrossDomainScriptId";var a="http://login.sina.com.cn/sso/crossdomain.php";if(c.retcode==0){var e={scriptId:d,callback:"sinaSSOManager.crossDomainCallBack",action:"login",domain:"sina.com.cn"};var b=a+"?"+sinaSSOManager.q(e);sinaSSOManager.es(d,b)}else{}};sinaSSOManager.updateCookie=function(){var g=1800;var p=7200;var b="ssoLoginScript";var h=3600*24;var i="sina.com.cn";var m=1800;var l="http://login.sina.com.cn/sso/updatetgt.php";var n=null;var f=function(e){var r=null;var q=null;switch(e){case"sina.com.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"sina.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"51uc.com":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break}return r};var j=function(){try{return f(i)}catch(e){return null}};try{if(g>5){if(n!=null){clearTimeout(n)}n=setTimeout("sinaSSOManager.updateCookie()",g*1000)}var d=j();var c=(new Date()).getTime()/1000;var o={};if(d==null){o={retcode:6102}}else{if(d<c){o={retcode:6203}}else{if(d-h+m>c){o={retcode:6110}}else{if(d-c>p){o={retcode:6111}}}}}if(o.retcode!==undefined){return false}var a=l+"?callback=sinaSSOManager.updateCookieCallBack";sinaSSOManager.es(b,a)}catch(k){}return true};sinaSSOManager.updateCookie();</script>
-<!-- SSO_UPDATECOOKIE_END -->
 
-<!-- body code end -->
+		
 
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/wysxr/archive/2021/05/11.html">2021年5月11日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/wysxr/p/14757054.html">
+    <span>
+        一文带你学懂iptables命令（含扩展命令）
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1 iptables 用法说明 格式 iptables [-t table] {-A|-C|-D} chain rule-specification iptables [-t table] -I chain [rulenum] rule-specification iptables [-t tabl        <a href="https://www.cnblogs.com/wysxr/p/14757054.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-05-11 19:43
+临江仙我亦是行人
+<span data-post-id="14757054" class="post-view-count">阅读(3)</span> 
+<span data-post-id="14757054" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14757054" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14757054" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/wysxr/p/14757044.html">
+    <span>
+        8张图带你了解iptables的前世今生
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1 安全技术和防火墙 1 安全技术和防火墙 入侵检测系统(Intrusion Detection Systems):特点是不阻断任何网络访问，量化、定位来自内 外网络的威胁情况，主要以提供报警和事后监督为主，提供有针对性的指导措施和安全决策依据,类 似于监控系统一般采用旁路部署方式 入侵防御系统(I        <a href="https://www.cnblogs.com/wysxr/p/14757044.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-05-11 19:41
+临江仙我亦是行人
+<span data-post-id="14757044" class="post-view-count">阅读(21)</span> 
+<span data-post-id="14757044" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14757044" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14757044" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/wysxr/archive/2021/05/07.html">2021年5月7日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/wysxr/p/14737665.html">
+    <span>
+        18张图带你入门最新版JumpServer
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：环境要求 docker-ce Python3+ mysql5.6+ Redis 1 Ubuntu 安装 docker-ce 环境 参考文档 https://docs.docker.com/engine/install/debian/ https://mirrors.tuna.tsinghua.edu        <a href="https://www.cnblogs.com/wysxr/p/14737665.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-05-07 08:50
+临江仙我亦是行人
+<span data-post-id="14737665" class="post-view-count">阅读(208)</span> 
+<span data-post-id="14737665" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14737665" class="post-digg-count">推荐(2)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14737665" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/wysxr/archive/2021/04/17.html">2021年4月17日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/wysxr/p/14669819.html">
+    <span>
+        使用QQ邮箱接收邮件报警设置步骤
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1. 登录 QQ 邮箱，点击“设置”--&gt;“账户”选项 2. 找到 “POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务”，点击“开启”按钮 3. 使用手机发送短信到 1069 0700 69，短信内容就是“配置邮件客户端” 注意：发送完短信后，记得点击“我已发送”按钮        <a href="https://www.cnblogs.com/wysxr/p/14669819.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-04-17 11:09
+临江仙我亦是行人
+<span data-post-id="14669819" class="post-view-count">阅读(17)</span> 
+<span data-post-id="14669819" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14669819" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14669819" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/wysxr/archive/2021/04/14.html">2021年4月14日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/wysxr/p/14659495.html">
+    <span>
+        Linux 特殊权限详解
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1. 特殊权限：SUID，SGID，STICKY 特殊权限 SUID 作用于二进制可执行文件上,用户将继承此程序所有者的权限 SGID 作用于二进制可执行文件上,用户将继承此程序所有组的权限 作于于目录上, 此目录中新建的文件的所属组将自动从此目录继承 STICKY 作用于目录上,此目录中的文件只能        <a href="https://www.cnblogs.com/wysxr/p/14659495.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-04-14 19:12
+临江仙我亦是行人
+<span data-post-id="14659495" class="post-view-count">阅读(9)</span> 
+<span data-post-id="14659495" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14659495" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14659495" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/wysxr/archive/2021/04/13.html">2021年4月13日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/wysxr/p/14652313.html">
+    <span>
+        Ubuntu 20X 版软件管理
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Redhat系列与Debian系列的区别 Redhat系列 Debian系列 说明 yum clean all;yum makecache apt update 刷新存储库索引 yum list apt list 列出包含条件的包(已安装，可升级等) yum provides apt-file se        <a href="https://www.cnblogs.com/wysxr/p/14652313.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-04-13 11:15
+临江仙我亦是行人
+<span data-post-id="14652313" class="post-view-count">阅读(18)</span> 
+<span data-post-id="14652313" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14652313" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14652313" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/wysxr/archive/2021/04/09.html">2021年4月9日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/wysxr/p/14638869.html">
+    <span>
+        Ubuntu 20.10设置静态IP地址
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1. 前言 今天有同学发现 Ubuntu 20.10 设置静态 IP 后没有生效 于是我就在虚拟机上试验了一把，发现完全不起作用（网络上还有很多误人子弟的文章如此写...不求甚解很可怕呀） root@ubuntu20:~# cat /etc/network/interfaces auto enpos        <a href="https://www.cnblogs.com/wysxr/p/14638869.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-04-09 21:26
+临江仙我亦是行人
+<span data-post-id="14638869" class="post-view-count">阅读(60)</span> 
+<span data-post-id="14638869" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14638869" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14638869" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/wysxr/p/14638722.html">
+    <span>
+        shell使用read命令来接受输入
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1. 使用read命令来接受输入 shell变量除了可以直接赋值或脚本传参外，还可以使用read命令从标准输入获得 使用read来把输入值分配给一个或多个shell变量，read从标准输入中读取值，给每个单词分配一个变 量，所有剩余单词都被分配给最后一个变量，如果变量名没有指定，默认标准输入的值赋值        <a href="https://www.cnblogs.com/wysxr/p/14638722.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-04-09 20:39
+临江仙我亦是行人
+<span data-post-id="14638722" class="post-view-count">阅读(16)</span> 
+<span data-post-id="14638722" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14638722" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14638722" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/wysxr/p/14638710.html">
+    <span>
+        shell数组
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1. 数组介绍 变量:存储单个元素的内存空间 数组:存储多个元素的连续的内存空间，相当于多个变量的集合 简单的说，数组就是相同数据类型的元素按一定的顺序排列的集合 数组就是把有限个类型相同的变量用一个名字命名，然后用编号区分他们的变量的集合，这个名字为数组名，编号为数组的下标 组成数组的各个变量成为        <a href="https://www.cnblogs.com/wysxr/p/14638710.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-04-09 20:35
+临江仙我亦是行人
+<span data-post-id="14638710" class="post-view-count">阅读(15)</span> 
+<span data-post-id="14638710" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14638710" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14638710" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/wysxr/archive/2021/04/08.html">2021年4月8日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/wysxr/p/14634612.html">
+    <span>
+        生产中自己动手制作zabbix_agent的rpm安装包实战
+    </span>
+    
+
+
+
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：生产中使用 Zabbix 监控，有可能因为环境的特殊性需要，根据操作系统的版本来动手制作 zabbix_agent 的软件安装包，故以我们生产中使用的自制 rpm 包给大家做一个参考，希望能帮助到需要的同学~ 1.打包工具FPM简介 FPM功能简单说就是将一种类型的包转换为另一种类型 1.1 支持的        <a href="https://www.cnblogs.com/wysxr/p/14634612.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2021-04-08 20:26
+临江仙我亦是行人
+<span data-post-id="14634612" class="post-view-count">阅读(22)</span> 
+<span data-post-id="14634612" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14634612" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14634612" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/wysxr/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+<script>
+    updatePostStats(
+        $(".post-view-count").map(function () { return this.dataset.postId }).get(),
+        function(id, count) { $(".post-view-count[data-post-id=" + id + "]").text("阅读(" + count + ")") },
+        function(id, count) { $(".post-comment-count[data-post-id=" + id + "]").text("评论(" + count + ")") },
+        function(id, count) { $(".post-digg-count[data-post-id=" + id + "]").text("推荐(" + count + ")") });
+</script>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+	<div id="sideBar">
+		<div id="sideBarMain">
+			<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+<div id="sidebar_c3"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2021 临江仙我亦是行人
+<br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+
+    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjtnGP0bFVQTQVjpGH5kgRovP5AXMRSn_V5tZUSFszPX0J7gdeD3iI1F1e6BCv_0Uttjv6ZILxXRkxAUDRilV3vrSd08V4F6X7ztjSMIVB8mrQZhPgfqxbGgh5mwj7C1x3A" />
 </body>
-		<script>
-		(function(){
-			var bp = document.createElement('script');
-			bp.src = '//push.zhanzhang.baidu.com/push.js';
-			var s = document.getElementsByTagName("script")[0];
-			s.parentNode.insertBefore(bp, s);
-		})();
-	</script>
-	</html>
+</html>

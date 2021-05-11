@@ -1,2 +1,375 @@
-﻿/* 2015-07-15 11:27:05 */
-.ad0{width:1000px;margin:20px auto 0;height:90px}.wrap-inner{width:1000px;margin:0 auto}.site-header{margin-top:15px;position:relative;z-index:1000;}.site-header h2{width:137px;float:left;}.site-header h2 a{display:block;width:137px;height:36px;background:url("http://i2.sinaimg.cn/dy/deco/2012/0613/yocc20120613img01/news_logo.png") no-repeat;text-indent:-9999em}.site-header .bread{float:left;display:inline;margin:10px 0 0 20px;line-height:20px;font-size:14px}.site-header .bread-spliter{margin:0 5px}.page-tools{float:right;*margin-top:-20px}.page-tool-i{height:20px;float:left;padding:0 20px;border-left:1px solid #d0d0d0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;position:relative;}.page-tool-i .bottom-border{position:absolute;left:0;height:2px;right:0;background-color:#ff8500;bottom:-20px;z-index:100;*bottom:-19px;display:none}.page-tool-i:hover .bottom-border{display:block}.page-tool-i a{display:block;width:30px;height:40px;position:relative;margin-top:-10px;background:url("http://n.sinaimg.cn/news/content2014/main_desktop.png") no-repeat;text-indent:-9999em}.first-page-tool{border-left:none}.page-tool-c{cursor:pointer;}.page-tool-c:hover a{background-position:0 -44px}.page-tool-c:hover span{color:#ff8500}.page-tool-c a{background-position:0 7px;float:left}.page-tool-c span{float:left;position:relative;margin:-10px 0 0 10px;line-height:40px;color:#333;font-size:14px}.page-tool-s a{background-position:-40px 7px;}.page-tool-s a:hover{background-position:-40px -43px}.page-tool-f a{background-position:-80px 7px;}.page-tool-f a:hover{background-position:-80px -44px}.page-tool-f .favorited{background-position:-80px -44px}.page-tool-p a{background-position:-120px 7px;}.page-tool-p a:hover{background-position:-120px -44px}.page-tool-u a{background-position:-160px -44px;}.page-tool-u a.enable{background-position:-160px 7px;}.page-tool-u a.enable:hover{background-position:-160px -97px}.page-tool-d a{background-position:-200px -44px;}.page-tool-d a.enable{background-position:-200px 7px;}.page-tool-d a.enable:hover{background-position:-200px -94px}.page-tool-bshare{float:left;display:inline;margin:8px 4px 0 0}.bottom-tool{margin-top:25px;}.bottom-tool .page-tools{float:left;*margin-top:0}.bottom-tool .page-tool-i{height:40px;padding:0 17px;}.bottom-tool .page-tool-i a{margin-top:0}.bottom-tool .page-tool-c span{width:50px;margin:0 0 0 10px;overflow:hidden}.bottom-tool .page-tool-s{padding:0 10px 0 20px}.bottom-tool-fixed{position:fixed;bottom:0;padding:7px 0;background-color:#f4f4f4;border:1px solid #dcdcdc;border-bottom:none;width:658px;z-index:1000;left:50%;margin-left:-500px}.page-content{border-top:1px solid #d0d0d0;margin-top:20px;position:relative;overflow:hidden;}.page-content .left{width:660px;padding-top:15px;float:left;_overflow:hidden}.page-content .right{width:300px;float:right;padding-top:15px;_overflow:hidden}.sina-comment-wrap{border-top:none}.comment-wrap{display:none;position:absolute;top:0;right:-380px;width:380px;}.comment-wrap .comment-close{display:none;position:absolute;width:30px;height:30px;left:-30px;border:1px solid #d0d0d0;border-top:none;border-right:none;z-index:10;top:0;background:url("http://n.sinaimg.cn/news/content2014/main_desktop.png") no-repeat -240px 9px #fcfcfb;text-indent:-9999em;border-radius:3px 0 0 3px}.show-comment .page-content .left{width:580px}.show-comment .comment-close{display:block}.show-comment .comment-wrap{-webkit-animation:showComment .5s forwards;-moz-animation:showComment .5s forwards;-ms-animation:showComment .5s forwards;-o-animation:showComment .5s forwards;animation:showComment .5s forwards;right:0;display:block}.show-comment .comment-wrap-fixed{position:fixed;right:auto;left:50%;margin-left:120px;z-index:1000}.show-comment .bottom-tool-fixed{width:578px}.show-comment .bottom-tool .page-tool-i{padding:0 10px}.show-comment .page-tool-c a{background-position:0 -44px}.show-comment .page-tool-c span{color:#ff8500}.show-comment .page-tool-c .bottom-border{display:block}.article-info{margin-top:20px}.article-keywords{float:left;line-height:30px;font-size:14px;}.article-keywords span{color:#ed5900}.article-feedback{float:right;}.article-feedback a{float:right;margin-left:10px;width:80px;line-height:30px;font-size:15px;color:#000;background:#f4f4f4;border:1px solid #d0d0d0;border-radius:2px;text-align:center}.desktop-side-tool{position:fixed;left:50%;margin-left:520px;bottom:0;_position:absolute;_top:expression(documentElement.scrollTop + documentElement.clientHeight);}.desktop-side-tool .side-tool{display:block;width:75px;height:75px;margin-bottom:10px}.desktop-side-tool .side-tool-small{width:65px;height:65px;}.desktop-side-tool .side-tool-small .icon{background-image:url("http://n.sinaimg.cn/news/content2014/desktop_sideIcons1.jpg");background-repeat:no-repeat}.desktop-side-tool .icon{display:block;height:100%;background:url("http://n.sinaimg.cn/news/content2014/desktop_sideIcons.jpg") no-repeat;cursor:pointer}.desktop-side-tool .comment a:hover{background-position:-97px 0}.desktop-side-tool .feedback a{background-position:0 -94px;}.desktop-side-tool .feedback a:hover{background-position:-97px -94px}.desktop-side-tool .related-news a{background-position:-1px -188px;}.desktop-side-tool .related-news a:hover{background-position:-97px -188px}.desktop-side-tool .to-top a{background-position:0 -280px;}.desktop-side-tool .to-top a:hover{background-position:-96px -279px}.desktop-side-tool .comment-small a:hover{background-position:-95px 1px}.desktop-side-tool .comment2-small a{background-position:0 -74px;}.desktop-side-tool .comment2-small a:hover{background-position:-95px -74px}.desktop-side-tool .related-news-small a{background-position:0 -146px;}.desktop-side-tool .related-news-small a:hover{background-position:-96px -146px}.desktop-side-tool .to-top-small a{background-position:0 -220px;}.desktop-side-tool .to-top-small a:hover{background-position:-96px -221px}.side-c{margin-bottom:30px}.side-c0{margin-top:10px}.tb-ad0{width:640px;margin:0 auto}.page-footer{font-size:14px;border-top:1px solid #d0d0d0;padding-top:10px;margin-top:20px;}.page-footer p{text-align:center;line-height:30px}.page-footer .spliter{font-size:12px;margin:0 5px}.sina-comment-list{background-color:#fff;overflow-y:auto}.sina-comment-wrap{overflow-y:auto}.outlogin_layerbox_bylx{z-index:2000}.sina-comment-form{border-top:none}.sina-comment-form .bd .user .name{padding:0 5px;height:20px;overflow:hidden;word-break:break-all}.right_fixed_area{position:fixed;top:0;_position:absolute;_top:expression(documentElement.scrollTop)}.page-1260 .sina-top-bar-inner{width:1260px}.page-1260 .wrap-outer{width:1260px;margin:0 auto}.page-1260 .wrap-inner{margin:0;float:right}.page-1260 .comment-wrap{width:560px;right:-560px}.page-1260 .show-comment .page-content .left{width:660px}.page-1260 .show-comment .comment-close{display:block}.page-1260 .show-comment .site-recommend{display:none}.page-1260 .show-comment .wrap-inner{width:1260px}.page-1260 .show-comment .comment-wrap{-webkit-animation:showComment .6s forwards;-moz-animation:showComment .6s forwards;-ms-animation:showComment .6s forwards;-o-animation:showComment .6s forwards;animation:showComment .6s forwards;right:0;display:block}.page-1260 .show-comment .comment-wrap-fixed{position:fixed;right:auto;left:50%;margin-left:70px}.page-1260 .show-comment .bottom-tool-fixed{margin-left:-630px}.page-1260 .show-comment .bottom-tool .page-tool-i{padding:0 16px}.page-1260 .desktop-side-tool{margin-left:650px}.page-1260 .left-comment{margin-left:-600px}.page-1260 .bottom-tool-fixed{margin-left:-370px;width:658px}@-moz-keyframes showComment{0%{right:-560px}60%{right:20px}80%{right:-10px}100%{right:0}}@-webkit-keyframes showComment{0%{right:-560px}60%{right:20px}80%{right:-10px}100%{right:0}}@-o-keyframes showComment{0%{right:-560px}60%{right:20px}80%{right:-10px}100%{right:0}}@keyframes showComment{0%{right:-560px}60%{right:20px}80%{right:-10px}100%{right:0}}.page-1000 .sina-comment-list .list .item .head{width:30px;height:30px;padding:10px 0 0 10px}.page-1000 .sina-comment-list .list .item .head img{border-radius:15px;width:30px;height:30px}.page-1000 .sina-comment-list .list .item .cont{margin:-26px 20px 0 55px}.page-1000 .sina-comment-list .list .cont .info{margin-bottom:15px}.page-1000 .sina-comment-list .list .cont .txt{margin-left:-45px}.page-1000 .sina-comment-list .list .cont .action{margin:5px 0 5px -45px}.page-1000 .sina-comment-form .bd .user .form-head img{width:40px;height:40px}.page-1000 .sina-comment-form .bd .editor{padding-left:76px}.page-1000 .sina-comment-form .bd .arrow{left:67px;top:25px}.page-1000 .sina-comment-form .bd .user{width:66px}.page-1000 .sina-comment-form .ft{padding-left:76px}.page-1000 .sina-comment-list .list .reply-form .ft{padding-left:20px}.page-1000 .sina-comment-list .list .reply-form .bd .user,.page-1000 .sina-comment-list .list .reply-form .bd .arrow{display:none}.page-1000 .sina-comment-list .list .reply-form .bd .editor{padding-left:20px}.page-1000 .sina-comment-form .hd{padding-top:20px}.ad_cont_03{padding-left:13px !important}#ccont04 .clist li{width:296px}#PublicRelation5{text-align:left;width:640px;margin:15px auto}#PublicRelation5{border-top:1px solid #e5e5e5 !important}.ad_06{border:solid 1px #e5e5e5}.cmenu01{border-top:solid 1px #fff;background:#fafafa;border-bottom:solid 1px #dfdfdf;height:32px}.cmenu01 span{float:left;cursor:default;border-right:solid 1px #dfdfdf;color:#666;font-size:14px;padding:0 13px;line-height:32px;height:32px}.cmenu01 span.selected{background:#fff;color:#010101;margin-bottom:-1px;padding-bottom:1px;position:relative}.ad_cont_03{padding:8px 0 10px 27px}.ad_cont_03 .clist li{line-height:23px;height:23px;float:left;width:144px;overflow:hidden;background-position:-47px -140px;padding-left:8px}.ad_cont_03 .clist li a:link,.ad_cont_03 .clist li a:visited{color:#666}.ad_cont_03 .clist li a:hover{color:#c00}.ad_07{border:solid 1px #e5e5e5;overflow:hidden;width:638px;margin:0 auto;line-height:20px;height:20px}.M_Menu_01 .selected{color:#010101;font-size:14px;height:32px;line-height:32px;padding-left:14px;float:left}.newAddtit2{float:left;line-height:32px;padding-left:20px;color:#626262}.conBlk{border-bottom:1px dotted #ccc;border-top:1px dotted #ccc}.qyfwBlk .zyconBlk{width:300px}.color666 a,.botSxBlk li a,.botSxBlk li{color:#666 !important}.color666 a:hover,.botSxBlk li a:hover{color:#c00 !important}.botSxBlk{padding-left:20px}.botSxBlk li{width:150px !important;display:inline;padding-left:2px;float:left}.qyfwBlk .zyconBlk{padding-left:11px !important}.ad_07 .M_Menu_01 .newAddtit2{padding-top:4px;float:left;padding-left:22px}.ad_07 .M_Menu_01 .selected{border-right:1px solid #e5e5e5;padding-right:10px}.search{float:right;margin-top:5px;color:#666;position:relative;width:280px;height:30px;z-index:1000}#search_type{width:79px;height:30px;border:1px solid #fff;border-right:none;position:absolute;left:0;top:0}#search_type_div{line-height:27px;height:27px;font-size:14px;cursor:pointer;z-index:100;}#search_type_div .ds_cont{border:solid 1px #bbb;border-radius:2px 0 0 2px;border-right:none}#search_type_div .ds_title{padding:0 5px;background:url("http://n.sinaimg.cn/news/content2014/main_desktop.png") no-repeat -229px -105px;}#search_type_div .ds_title:hover{background-position:-229px -158px}#search_type_div .dsl_cont{border:solid 1px #d2d2d2;border-top:none;}#search_type_div .dsl_cont p{border-top:solid 1px #d2d2d2;padding:0 5px;background-color:#fff;}#search_type_div .dsl_cont p:hover,#search_type_div .dsl_cont p.selected{background-color:#ddd}#search_input{position:absolute;top:0;right:0;width:189px;height:17px;border:solid 1px #bbb;padding:5px;border-radius:0 2px 2px 0;font:13px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1","Arial","SimSun","\5B8B\4F53";color:#666}#search_submit{width:40px;height:25px;background:url("http://n.sinaimg.cn/news/content2014/main_desktop.png") no-repeat -313px -107px;border:none;margin-left:-42px;cursor:pointer;position:absolute;right:2px;top:2px;}#search_submit:hover{background-position:-314px -158px}.top-suggest-wrap{position:absolute;background-color:#fff;opacity:.95;_filter:opacity(95);top:28px;left:79px;cursor:pointer;width:199px;border:solid 1px #d2d2d2;border-radius:0 0 2px 2px;z-index:100}.top-suggest-wrap .top-suggest-item{line-height:27px;padding:0 10px;font-size:13px}.top-suggest-wrap .top-suggest-tip{padding:5px;border-bottom:dashed 1px #d2d2d2}.top-suggest-wrap .top-suggest-more{padding:5px;border-top:dashed 1px #d2d2d2}.top-suggest-wrap .top-suggest-mover{background-color:#ddd}
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin-when-crossorigin" />
+    <meta name="description" content="常见的关键字有以下4种 与声明有关的关键字：class、deinit、enum、extension、func、import、init、let、protocol、static、struct、subscr" />
+    <meta property="og:description" content="常见的关键字有以下4种 与声明有关的关键字：class、deinit、enum、extension、func、import、init、let、protocol、static、struct、subscr" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Swift 关键字汇总 - 肖品 - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
+    
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/xiaopin/custom.css?v=HyOHRCNMalpv47REK2JE&#x2B;XrmJ9Y=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/xiaopin/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/xiaopin/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/xiaopin/wlwmanifest.xml" />
+    <script>
+        var currentBlogId = 65882;
+        var currentBlogApp = 'xiaopin';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var isBlogOwner = false;
+        var skinName = 'SimpleMemory';
+        var visitorUserId = '';
+    </script>
+        <script>
+            var currentPostDateAdded = '2016-09-02 10:53';
+        </script>
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=2Mic1VLeHXarpdzASbXqFMIMVLEBiWXNO5yiTHUcmhw"></script>
+    
+    
+    
+</head>
+<body class="no-navbar">
+    <a name="top"></a>
+        <div id="bannerbar" class="bannerbar-mobile formobile">
+            <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-blog-bannerbar-mobile')">
+                <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
+            </a>
+        </div>
+    <div id="top_nav" class="navbar forpc navbar-custom">
+        <nav id="nav_main" class="navbar-main">
+            <ul id="nav_left" class="navbar-list navbar-left">
+                <li class="navbar-branding"><a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a></li>
+                <li><a href="/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-sitehome')">首页</a></li>
+                <li><a href="https://news.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-news')">新闻</a></li>
+                <li><a href="https://q.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-q')">博问</a></li>
+                <li><a id="nav_brandzone" href="https://brands.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-brands')">专区</a></li>
+                <li><a href="https://ing.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-ing')">闪存</a></li>
+                <li><a href="https://edu.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-edu')">班级</a></li>
+            </ul>
+            <ul id="nav_right" class="navbar-list navbar-right">
+                <li>
+                    <form id="zzk_search" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
+                        <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="text" tabindex="3" />
+                        <button type="submit" id="zzk_search_button">
+                            <img src="/images/aggsite/search.svg" alt="搜索" />
+                        </button>
+                    </form>
+                </li>
+                <li id="navbar_login_status" class="navbar-list">
+                    <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
+                        <img id="new_post_icon" class="navbar-icon" src="/images/aggsite/newpost.svg" alt="写随笔" />
+                    </a>
+                    <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
+                        <img id="myblog_icon" class="navbar-icon" src="/images/aggsite/myblog.svg" alt="我的博客" />
+                    </a>
+                    <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
+                        <img id="msg_icon" class="navbar-icon" src="/images/aggsite/message.svg?v=J0WS2P2iPgaIVgXxcAhliw4AFZIpaTWxtdoNAv9eiCA" alt="短消息" />
+                        <span id="msg_count" style="display: none"></span>
+                    </a>
+                    <div id="user_info" class="navbar-user-info dropdown">
+                        <a class="dropdown-button" href="https://home.cnblogs.com/">
+                            <img id="user_icon" class="navbar-avatar" src="/images/aggsite/avatar-default.svg" alt="用户头像" />
+                        </a>
+                        <div class="dropdown-menu">
+                            <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
+                            <a href="https://home.cnblogs.com/">我的园子</a>
+                            <a href="https://account.cnblogs.com/settings/account">账号设置</a>
+                            <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
+    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
+</a>
+                            <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
+                        </div>
+                    </div>
+                    <a class="navbar-anonymous" href="https://account.cnblogs.com/signup/">注册</a>
+                    <a class="navbar-anonymous" href="javascript:void(0);" onclick="account.login()">登录</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="page_begin_html">
+        <style type="text/css">
+    .Abstract
+    {
+        padding: 15px;
+        border: dotted 2px #999;
+        color: #999;
+        font-family: 'Microsoft Yahei';
+        border-radius: 4px;
+    }
+        
+    .First
+    {
+        margin: 10px 0;
+        font-family: 'Microsoft Yahei';
+        text-align: left;
+        padding: 6px 20px;
+        color: #fff;
+        background: #55895B;
+        font-size: 20px;
+        border-radius: 4px;
+        clear: both;
+    }
+        
+        
+    .Second
+    {
+        margin: 10px 0;
+        font-family: 'Microsoft Yahei';
+        padding: 6px 20px;
+        background: #93C8A2;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 4px;
+        clear: both;
+    }
+        
+        
+    .Third
+    {
+        margin: 10px 0;
+        padding: 6px 20px;
+        font-family: 'Microsoft Yahei';
+        margin: 15px 0;
+        font-size: 16px;
+        color: fff;
+        background: #C6EFD2;
+        color: #999;
+        border-radius: 4px;
+        clear: both;
+    }
+    .note
+    {
+        margin: 10px 0;
+        padding: 15px 20px 15px 60px;
+        background: #FCFAA9 url('http://images.cnblogs.com/cnblogs_com/libaoheng/305804/o_yellow-pin.png') no-repeat 20px 0;
+        font-size: 15px;
+        font-family: 'Microsoft Yahei';
+        box-shadow: 0 0 8px #aaa;
+        clear: both;
+    }
+        
+    .demo
+    {
+        text-align: left;
+        padding: 6px 20px;
+        overflow: auto;
+        border-radius: 4px;
+        background: orange;
+        color: #fff;
+        font-size: 16px;
+        clear: both;
+    }
+        
+    .cnblogs_Highlighter
+    {
+        border: solid 1px #ccc;
+        clear: both;
+    }
+        
+    .cnblogs_code
+    {
+        background: #EFFFF4;
+        border: solid 0px #939393;
+        font-size: 14px;
+        clear: both;
+        padding: 10px 20px;
+    }
+    .cnblogs_code pre
+    {
+        font-size: 14px;
+    }
+    .cnblogs_code span
+    {
+        font-family: Courier New;
+        font-size: 14px;
+    }
+</style>
+    </div>
+    <!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/xiaopin/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/xiaopin/">专注iOS、Anroid、Java、Golang、项目架构和管理</a>
+</h1>
+<h2>学习是一种信仰，进步是一种幸福！</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/xiaopin/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E8%82%96%E5%93%81">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/xiaopin/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			<div id="blog_stats_place_holder"><script>loadBlogStats();</script></div>
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2 vertical-middle" href="https://www.cnblogs.com/xiaopin/p/5832641.html">
+    <span>Swift 关键字汇总</span>
+    
+
+
+
+</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                <div id="cnblogs_post_body" class="blogpost-body blogpost-body-html">
+<p><span style="font-size: 14pt">常见的关键字有以下4种</span></p>
+<p>与声明有关的关键字：class、deinit、enum、extension、func、import、init、let、protocol、static、struct、subscript、typealias和var。</p>
+<p>与语句有关的关键字：break、case、continue、default、do、else、fallthrough、if、in、for、return、switch、where和while。</p>
+<p>表达式和类型关键字：as、dynamicType、is、new、super、self、Self、Type、__COLUMN__、__FILE__、__FUNCTION__和__LINE__。</p>
+<p>在特定上下文中使用的关键字：associativity、didSet、get、infix、inout、left、mutating、none、nonmutating、operator、override、postfix、precedence、prefix、rightset、unowned、unowned(safe)、unowned(unsafe)、weak和willSet。</p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2016-09-02 10:53</span>&nbsp;
+<a href="https://www.cnblogs.com/xiaopin/">肖品</a>&nbsp;
+阅读(<span id="post_view_count">400</span>)&nbsp;
+评论(<span id="post_comment_count">0</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=5832641" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(5832641);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/10.3.1/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 65882, cb_blogApp = 'xiaopin', cb_blogUserGuid = '1879a4b6-b8d4-de11-ba8f-001cf0cd104b';
+    var cb_entryId = 5832641, cb_entryCreatedDate = '2016-09-02 10:53', cb_postType = 1;
+    updatePostStats(
+        [cb_entryId],
+        function(id, count) { $("#post_view_count").text(count) },
+        function(id, count) { $("#post_comment_count").text(count) })
+    zoomManager.apply("#cnblogs_post_body img:not(.code_img_closed):not(.code_img_opened)");
+</script>
+<a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <div id="cnblogs_c1" class="under-post-card">
+        <div id='div-gpt-ad-1592365906576-0' style='width: 300px; height: 250px;'></div>
+    </div>
+    <div id="under_post_card1"></div>
+    <div id="cnblogs_c2" class="under-post-card">
+        <div id='div-gpt-ad-1592366332455-0' style='width: 468px; height: 60px;'></div>
+    </div>
+    <div id="under_post_card2"></div>
+    <div id="HistoryToday" class="under-post-card"></div>
+    <script type="text/javascript">
+       var commentManager = new blogCommentManager();
+       commentManager.renderComments(0);
+       fixPostBody();
+       deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);       deliverT2();
+       deliverC1C2();
+       loadNewsAndKb();
+       loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);       LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+       GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+       loadOptUnderPost();
+       GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+	<div id="sideBar">
+		<div id="sideBarMain">
+			<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+<div id="sidebar_c3"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2021 肖品
+<br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+
+    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjsUFYipzhNgEt9BWUx7nwUIrXC7dT09httIMdvVQnJZqfIt8Nd38eUmX4IhV1bC2Fmq9m4dO9caDtRUinxkwvVzbs64vR8cSd2uu1jQbOWTt3tbhaU4NAJ73LrkeKYi-SQ" />
+</body>
+</html>

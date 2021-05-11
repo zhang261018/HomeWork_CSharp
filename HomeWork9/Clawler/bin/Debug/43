@@ -1,91 +1,558 @@
-﻿@charset "gb2312";
-/* Ĭ������ */
-a{color:#009;text-decoration:none;}
-a:visited{color:#800080;text-decoration:none;}
-a:hover{color:#c00;text-decoration:none;}
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin-when-crossorigin" />
+    <meta name="description" content="官方汇总 What&amp;#39;s News in iOS iOS 9.3 to iOS 10.0 API Differences Objective-C /usr/include Accelerate " />
+    <meta property="og:description" content="官方汇总 What&amp;#39;s News in iOS iOS 9.3 to iOS 10.0 API Differences Objective-C /usr/include Accelerate " />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>iOS各个版本的新特性介绍 - 肖品 - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
+    
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/xiaopin/custom.css?v=HyOHRCNMalpv47REK2JE&#x2B;XrmJ9Y=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/xiaopin/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/xiaopin/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/xiaopin/wlwmanifest.xml" />
+    <script>
+        var currentBlogId = 65882;
+        var currentBlogApp = 'xiaopin';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var isBlogOwner = false;
+        var skinName = 'SimpleMemory';
+        var visitorUserId = '';
+    </script>
+        <script>
+            var currentPostDateAdded = '2016-09-09 11:33';
+        </script>
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=2Mic1VLeHXarpdzASbXqFMIMVLEBiWXNO5yiTHUcmhw"></script>
+    
+    
+    
+</head>
+<body class="no-navbar">
+    <a name="top"></a>
+        <div id="bannerbar" class="bannerbar-mobile formobile">
+            <a href="https://developer.aliyun.com/learning/trainingcamp/realtime/1?utm_content=g_1000268661" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-realtime-blog-bannerbar-mobile')">
+                <img src="https://img2020.cnblogs.com/blog/35695/202105/35695-20210509221214222-438425324.png" alt="" />
+            </a>
+        </div>
+    <div id="top_nav" class="navbar forpc navbar-custom">
+        <nav id="nav_main" class="navbar-main">
+            <ul id="nav_left" class="navbar-list navbar-left">
+                <li class="navbar-branding"><a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a></li>
+                <li><a href="/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-sitehome')">首页</a></li>
+                <li><a href="https://news.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-news')">新闻</a></li>
+                <li><a href="https://q.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-q')">博问</a></li>
+                <li><a id="nav_brandzone" href="https://brands.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-brands')">专区</a></li>
+                <li><a href="https://ing.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-ing')">闪存</a></li>
+                <li><a href="https://edu.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-edu')">班级</a></li>
+            </ul>
+            <ul id="nav_right" class="navbar-list navbar-right">
+                <li>
+                    <form id="zzk_search" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
+                        <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="text" tabindex="3" />
+                        <button type="submit" id="zzk_search_button">
+                            <img src="/images/aggsite/search.svg" alt="搜索" />
+                        </button>
+                    </form>
+                </li>
+                <li id="navbar_login_status" class="navbar-list">
+                    <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
+                        <img id="new_post_icon" class="navbar-icon" src="/images/aggsite/newpost.svg" alt="写随笔" />
+                    </a>
+                    <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
+                        <img id="myblog_icon" class="navbar-icon" src="/images/aggsite/myblog.svg" alt="我的博客" />
+                    </a>
+                    <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
+                        <img id="msg_icon" class="navbar-icon" src="/images/aggsite/message.svg?v=J0WS2P2iPgaIVgXxcAhliw4AFZIpaTWxtdoNAv9eiCA" alt="短消息" />
+                        <span id="msg_count" style="display: none"></span>
+                    </a>
+                    <div id="user_info" class="navbar-user-info dropdown">
+                        <a class="dropdown-button" href="https://home.cnblogs.com/">
+                            <img id="user_icon" class="navbar-avatar" src="/images/aggsite/avatar-default.svg" alt="用户头像" />
+                        </a>
+                        <div class="dropdown-menu">
+                            <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
+                            <a href="https://home.cnblogs.com/">我的园子</a>
+                            <a href="https://account.cnblogs.com/settings/account">账号设置</a>
+                            <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
+    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
+</a>
+                            <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
+                        </div>
+                    </div>
+                    <a class="navbar-anonymous" href="https://account.cnblogs.com/signup/">注册</a>
+                    <a class="navbar-anonymous" href="javascript:void(0);" onclick="account.login()">登录</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-.VBody{background:#dce4eb url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_bg.gif) repeat-x left top;color:#000;}
-#wrap{width:950px;text-align:left;margin:0 auto;padding:10px 5px 0; background:#fff}
-#topWrap{padding:5px 0 0;width:950px;margin:0 auto;}
-.Banner{width:950px;margin:5px auto 0;}
+    <div id="page_begin_html">
+        <style type="text/css">
+    .Abstract
+    {
+        padding: 15px;
+        border: dotted 2px #999;
+        color: #999;
+        font-family: 'Microsoft Yahei';
+        border-radius: 4px;
+    }
+        
+    .First
+    {
+        margin: 10px 0;
+        font-family: 'Microsoft Yahei';
+        text-align: left;
+        padding: 6px 20px;
+        color: #fff;
+        background: #55895B;
+        font-size: 20px;
+        border-radius: 4px;
+        clear: both;
+    }
+        
+        
+    .Second
+    {
+        margin: 10px 0;
+        font-family: 'Microsoft Yahei';
+        padding: 6px 20px;
+        background: #93C8A2;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 4px;
+        clear: both;
+    }
+        
+        
+    .Third
+    {
+        margin: 10px 0;
+        padding: 6px 20px;
+        font-family: 'Microsoft Yahei';
+        margin: 15px 0;
+        font-size: 16px;
+        color: fff;
+        background: #C6EFD2;
+        color: #999;
+        border-radius: 4px;
+        clear: both;
+    }
+    .note
+    {
+        margin: 10px 0;
+        padding: 15px 20px 15px 60px;
+        background: #FCFAA9 url('http://images.cnblogs.com/cnblogs_com/libaoheng/305804/o_yellow-pin.png') no-repeat 20px 0;
+        font-size: 15px;
+        font-family: 'Microsoft Yahei';
+        box-shadow: 0 0 8px #aaa;
+        clear: both;
+    }
+        
+    .demo
+    {
+        text-align: left;
+        padding: 6px 20px;
+        overflow: auto;
+        border-radius: 4px;
+        background: orange;
+        color: #fff;
+        font-size: 16px;
+        clear: both;
+    }
+        
+    .cnblogs_Highlighter
+    {
+        border: solid 1px #ccc;
+        clear: both;
+    }
+        
+    .cnblogs_code
+    {
+        background: #EFFFF4;
+        border: solid 0px #939393;
+        font-size: 14px;
+        clear: both;
+        padding: 10px 20px;
+    }
+    .cnblogs_code pre
+    {
+        font-size: 14px;
+    }
+    .cnblogs_code span
+    {
+        font-family: Courier New;
+        font-size: 14px;
+    }
+</style>
+    </div>
+    <!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/xiaopin/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/xiaopin/">专注iOS、Anroid、Java、Golang、项目架构和管理</a>
+</h1>
+<h2>学习是一种信仰，进步是一种幸福！</h2>
 
-.NavMenu{background:url(http://www.sinaimg.cn/dy/2009/1207/tz_mj_001.png) no-repeat 0 0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=image, src='http://www.sinaimg.cn/dy/2009/1207/tz_mj_001.png');_background:none;height:36px;width:960px;margin:0 -5px;_position:fixed;text-align:center;color:#000;line-height:32px;font-size:14px;}
-.NavMenu a:link,.NavMenu a:visited{color:#000;text-decoration:none;margin:0 5px;_position:relative;zoom:1;}
-.NavMenu a:hover{color:#000;text-decoration:underline;}
-
-
-/* ---------- ȫ�ֹ�����ʽ begin ---------- */
-.w_title a:link,.w_title a:visited{color:#000;text-decoration:none;}
-.w_title a:hover{color:#f00;text-decoration:underline;}
-
-.sp_h10{height:10px;overflow:hidden;clear:both;}
-.c_memo{color:#494949;}
-img{border-color:#000;border-style:solid;}
-/* ---------- ȫ�ֹ�����ʽ end ---------- */
-
-/* ---------- ������ʽ begin ---------- */
-/* ���д�����ʽ */
-.w_01{background:#f2f2f2;}
-.w_01 .w_title{height:28px;border:1px solid #ccc;color:#274a78;overflow:hidden;}
-.w_01 .w_title .w_name{font-size:14px;float:left;padding-left:26px;background:url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_006.gif) no-repeat 9px 12px #f2f2f2;line-height:28px;height:28px;overflow:hidden;white-space:nowrap;}
-.w_01 .w_title .w_more{float:right;padding-right:10px;line-height:28px;font-size:12px; height:28px;font-weight:normal;}
-.w_01 .w_title .w_more a{ color:#274a78}
-.w_01 .w_cont{background:#f2f2f2;padding:0 4px;border:1px solid #ccc; border-width:0 1px}
-.w_01 .w_cont .w_cont_bg{}
-.w_01 .w_bot{border:1px solid #ccc;border-top:none;height:4px;font-size:0; overflow:hidden; clear:both;}
-.w_01 .w_bot .w_bot_bg{}
 
 
 
-/* ���д�����ʽ */
-.w_02{background:#fff;}
-.w_02 .w_title{ height:30px;color:#000;overflow:hidden;background:url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_005.gif) repeat-x 0 100%;}
-.w_02 .w_title .w_name{font-size:14px;padding-left:26px;float:left;background:url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_006.gif) no-repeat 9px 12px;line-height:29px;height:29px;overflow:hidden;white-space:nowrap;}
-.w_02 .w_title .w_more{float:right;padding-right:10px;line-height:30px;font-size:12px; height:30px;font-weight:normal;}
-.w_02 .w_title .w_more a{ color:#000}
-.w_02 .w_cont{padding:0 5px; }
-.w_02 .w_cont .w_cont_bg{}
-.w_02 .w_bot{}
-.w_02 .w_bot .w_bot_bg{}
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/xiaopin/">
+首页</a>
+</li>
+<li>
 
-/* ����ͼ���� */
-.w_03{height:241px;width:320px;background:url(http://www.sinaimg.cn/dy/deco/2008/0414/images10/s01_mj_008.gif) no-repeat 0 0;}
-.w_03 .w_cont{}
-.w_03 .w_cont .w_cont_bg{padding:5px;text-align:center;}
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E8%82%96%E5%93%81">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/xiaopin/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
 
-/* ��ǩ�б��ߴ��� */
-.w_04{}
 
-/* ���д�����ʽ */
-.w_05{background:#f2f2f2;}
-.w_05 .w_title{height:28px;border:1px solid #ccc;color:#274a78;overflow:hidden;}
-.w_05 .w_title .w_name{font-size:14px;float:left;padding-left:26px;background:url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_006.gif) no-repeat 9px 12px #f2f2f2;line-height:28px;height:28px;overflow:hidden;white-space:nowrap;}
-.w_05 .w_title .w_more{float:right;padding-right:10px;line-height:28px;font-size:12px; height:28px;font-weight:normal;}
-.w_05 .w_title .w_more a{ color:#274a78}
-.w_05 .w_cont{background:#f2f2f2;padding:0 4px;border:1px solid #ccc; border-width:0 1px}
-.w_05 .w_cont .w_cont_bg{}
-.w_05 .w_bot{border:1px solid #ccc;border-top:none;height:4px;font-size:0; overflow:hidden; clear:both;}
-.w_05 .w_bot .w_bot_bg{}
+		<div class="blogStats">
+			<div id="blog_stats_place_holder"><script>loadBlogStats();</script></div>
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2 vertical-middle" href="https://www.cnblogs.com/xiaopin/p/5858425.html">
+    <span>iOS各个版本的新特性介绍</span>
+    
 
-/* �ޱ��ⴰ��1 */
-.w_06{background:#f3f3f5;zoom:1;}
-.w_06 .w_cont{padding:5px;}
-.w_06 .w_cont .w_cont_bg{}
 
-/* �ޱ��ⴰ��2 */
-.w_07{border:1px solid #dbdbdb;zoom:1;}
-.w_07 .w_cont{padding:4px;}
-.w_07 .w_cont .w_cont_bg{}
-.w_07 .w_bot{ }
-.w_07 .w_bot .w_bot_bg{}
-/* ---------- ������ʽ end ---------- */
 
-/* ---------- �Զ��б� begin ---------- */
-.p_r3_06{background:url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_007.gif) repeat-y 0 0;}
-.p_r3_06 .p_bottom{background:url(http://www.sinaimg.cn/dy/2009/1123/style74/tz_zxh_007.gif) repeat-x -950px 0;}
-.p_r3_06 .sp_h10{background:#fff;}
-/* ---------- �Զ��б� end ---------- */
+</a>
 
-.footer{color:#000;}
-.footer a:link,.footer a:visited{color:#000;}
-.footer a:hover{color:#000;}
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                <div id="cnblogs_post_body" class="blogpost-body blogpost-body-html">
+<h1><span style="font-size: 14pt">官方汇总</span></h1>
+<h1><span style="font-size: 14pt"><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/WhatsNewIniOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008246" target="_blank">What's News in iOS</a></span></h1>
+<h1><span style="font-size: 14pt"><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/index.html" target="_blank">iOS 9.3 to iOS 10.0 API Differences</a></span></h1>
+<h3>Objective-C</h3>
+<ul>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/usr_include.html">/usr/include</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/Accelerate.html">Accelerate</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/AudioToolbox.html">AudioToolbox</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/AudioUnit.html">AudioUnit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/AVFoundation.html">AVFoundation</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/AVKit.html">AVKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CallKit.html">CallKit</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CFNetwork.html">CFNetwork</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CloudKit.html">CloudKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/Contacts.html">Contacts</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CoreBluetooth.html">CoreBluetooth</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CoreData.html">CoreData</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CoreFoundation.html">CoreFoundation</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CoreGraphics.html">CoreGraphics</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CoreImage.html">CoreImage</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CoreLocation.html">CoreLocation</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CoreMedia.html">CoreMedia</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CoreMotion.html">CoreMotion</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CoreSpotlight.html">CoreSpotlight</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CoreTelephony.html">CoreTelephony</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CoreText.html">CoreText</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/CoreVideo.html">CoreVideo</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/EventKit.html">EventKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/EventKitUI.html">EventKitUI</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/ExternalAccessory.html">ExternalAccessory</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/Foundation.html">Foundation</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/GameController.html">GameController</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/GameKit.html">GameKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/GameplayKit.html">GameplayKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/GLKit.html">GLKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/HealthKit.html">HealthKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/HomeKit.html">HomeKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/iAd.html">iAd</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/ImageIO.html">ImageIO</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/Intents.html">Intents</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/IntentsUI.html">IntentsUI</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/JavaScriptCore.html">JavaScriptCore</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/LocalAuthentication.html">LocalAuthentication</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/MapKit.html">MapKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/MediaPlayer.html">MediaPlayer</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/Messages.html">Messages</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/MessageUI.html">MessageUI</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/Metal.html">Metal</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/MetalKit.html">MetalKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/MetalPerformanceShaders.html">MetalPerformanceShaders</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/ModelIO.html">ModelIO</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/NetworkExtension.html">NetworkExtension</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/NotificationCenter.html">NotificationCenter</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/OpenGLES.html">OpenGLES</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/PassKit.html">PassKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/Photos.html">Photos</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/PushKit.html">PushKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/QuartzCore.html">QuartzCore</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/QuickLook.html">QuickLook</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/ReplayKit.html">ReplayKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/SafariServices.html">SafariServices</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/SceneKit.html">SceneKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/Security.html">Security</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/Speech.html">Speech</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/SpriteKit.html">SpriteKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/SystemConfiguration.html">SystemConfiguration</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/UIKit.html">UIKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/UserNotifications.html">UserNotifications</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/UserNotificationsUI.html">UserNotificationsUI</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/VideoSubscriberAccount.html">VideoSubscriberAccount</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/VideoToolbox.html">VideoToolbox</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/WatchConnectivity.html">WatchConnectivity</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/WatchKit.html">WatchKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/WebKit.html">WebKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Objective-C/XCTest.html">XCTest</a></li>
+</ul>
+<h3>Swift</h3>
+<ul>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Accelerate.html">Accelerate</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Accounts.html">Accounts</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/AddressBook.html">AddressBook</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/AddressBookUI.html">AddressBookUI</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/AdSupport.html">AdSupport</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/AssetsLibrary.html">AssetsLibrary</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/AudioToolbox.html">AudioToolbox</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/AudioUnit.html">AudioUnit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/AVFoundation.html">AVFoundation</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/AVKit.html">AVKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CallKit.html">CallKit</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CFNetwork.html">CFNetwork</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CloudKit.html">CloudKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Contacts.html">Contacts</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/ContactsUI.html">ContactsUI</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreAudio.html">CoreAudio</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreAudioKit.html">CoreAudioKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreBluetooth.html">CoreBluetooth</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreData.html">CoreData</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreFoundation.html">CoreFoundation</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreGraphics.html">CoreGraphics</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreImage.html">CoreImage</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreLocation.html">CoreLocation</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreMedia.html">CoreMedia</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreMIDI.html">CoreMIDI</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreMotion.html">CoreMotion</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreSpotlight.html">CoreSpotlight</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreTelephony.html">CoreTelephony</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreText.html">CoreText</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/CoreVideo.html">CoreVideo</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Darwin.html">Darwin</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Dispatch.html">Dispatch</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/EventKit.html">EventKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/EventKitUI.html">EventKitUI</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/ExternalAccessory.html">ExternalAccessory</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Foundation.html">Foundation</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/GameController.html">GameController</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/GameKit.html">GameKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/GameplayKit.html">GameplayKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/GLKit.html">GLKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/GSS.html">GSS</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/HealthKit.html">HealthKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/HealthKitUI.html">HealthKitUI</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/HomeKit.html">HomeKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/iAd.html">iAd</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/iAdJS.html">iAdJS</a>&nbsp;<span class="removed"><span class="diffStatus">(Removed)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/ImageIO.html">ImageIO</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Intents.html">Intents</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/IntentsUI.html">IntentsUI</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/JavaScriptCore.html">JavaScriptCore</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/libkern.html">libkern</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/LocalAuthentication.html">LocalAuthentication</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/MachO.html">MachO</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/MapKit.html">MapKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/MediaAccessibility.html">MediaAccessibility</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/MediaPlayer.html">MediaPlayer</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/MediaToolbox.html">MediaToolbox</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Messages.html">Messages</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/MessageUI.html">MessageUI</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Metal.html">Metal</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/MetalKit.html">MetalKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/MetalPerformanceShaders.html">MetalPerformanceShaders</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/ModelIO.html">ModelIO</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/MultipeerConnectivity.html">MultipeerConnectivity</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/NetworkExtension.html">NetworkExtension</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/NewsstandKit.html">NewsstandKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/NotificationCenter.html">NotificationCenter</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/ObjectiveC.html">ObjectiveC</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/OpenAL.html">OpenAL</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/OpenGLES.html">OpenGLES</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/os.html">os</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/PassKit.html">PassKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Photos.html">Photos</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/PhotosUI.html">PhotosUI</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/PushKit.html">PushKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/QuartzCore.html">QuartzCore</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/QuickLook.html">QuickLook</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/ReplayKit.html">ReplayKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/SafariServices.html">SafariServices</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/SceneKit.html">SceneKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Security.html">Security</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/simd.html">simd</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Social.html">Social</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Speech.html">Speech</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/SpriteKit.html">SpriteKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/StoreKit.html">StoreKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Swift.html">Swift</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/SystemConfiguration.html">SystemConfiguration</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/Twitter.html">Twitter</a>&nbsp;<span class="removed"><span class="diffStatus">(Removed)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/UIKit.html">UIKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/UserNotifications.html">UserNotifications</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/UserNotificationsUI.html">UserNotificationsUI</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/VideoSubscriberAccount.html">VideoSubscriberAccount</a>&nbsp;<span class="added"><span class="diffStatus">(Added)</span></span></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/VideoToolbox.html">VideoToolbox</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/WatchConnectivity.html">WatchConnectivity</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/WatchKit.html">WatchKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/WebKit.html">WebKit</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/Swift/XCTest.html">XCTest</a>&nbsp; &nbsp;&nbsp;</li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-size: 18pt">历史查看</span></p>
+<p>&nbsp;</p>
+<h1><span style="font-size: 14pt"><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS93APIDiffs/index.html" target="_blank">iOS 9.2 to iOS 9.3 API Differences</a></span></h1>
+<h1><span style="font-size: 14pt"><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS92APIDiffs/index.html" target="_blank">iOS 9.1 to iOS 9.2 API Differences</a></span></h1>
+<h1><span style="font-size: 14pt"><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS91APIDiffs/index.html" target="_blank">iOS 9.0 to iOS 9.1 API Differences</a></span></h1>
+<h1><span style="font-size: 14pt"><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS90APIDiffs/index.html#//apple_ref/doc/uid/TP40016222" target="_blank">iOS 8.3 to iOS 9.0 API Differences</a></span></h1>
+<h1><span style="font-size: 14pt"><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS83APIDiffs/index.html#//apple_ref/doc/uid/TP40015150" target="_blank">iOS 8.2 to iOS 8.3 API Differences</a></span></h1>
+<h1><span style="font-size: 14pt"><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS82APIDiffs/index.html#//apple_ref/doc/uid/TP40015021" target="_blank">iOS 8.1 to iOS 8.2 API Differences</a></span></h1>
+<h1><span style="font-size: 14pt"><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS81APIDiffs/index.html#//apple_ref/doc/uid/TP40014994" target="_blank">iOS 8.0 to 8.1 API Differences</a></span></h1>
+<h1><span style="font-size: 14pt"><a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS80APIDiffs/index.html#//apple_ref/doc/uid/TP40014455" target="_blank">iOS 7.1 to iOS 8.0 API Differences</a></span></h1>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2016-09-09 23:33</span>&nbsp;
+<a href="https://www.cnblogs.com/xiaopin/">肖品</a>&nbsp;
+阅读(<span id="post_view_count">2877</span>)&nbsp;
+评论(<span id="post_comment_count">0</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=5858425" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(5858425);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/10.3.1/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 65882, cb_blogApp = 'xiaopin', cb_blogUserGuid = '1879a4b6-b8d4-de11-ba8f-001cf0cd104b';
+    var cb_entryId = 5858425, cb_entryCreatedDate = '2016-09-09 23:33', cb_postType = 1;
+    updatePostStats(
+        [cb_entryId],
+        function(id, count) { $("#post_view_count").text(count) },
+        function(id, count) { $("#post_comment_count").text(count) })
+    zoomManager.apply("#cnblogs_post_body img:not(.code_img_closed):not(.code_img_opened)");
+</script>
+<a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <div id="cnblogs_c1" class="under-post-card">
+        <div id='div-gpt-ad-1592365906576-0' style='width: 300px; height: 250px;'></div>
+    </div>
+    <div id="under_post_card1"></div>
+    <div id="cnblogs_c2" class="under-post-card">
+        <div id='div-gpt-ad-1592366332455-0' style='width: 468px; height: 60px;'></div>
+    </div>
+    <div id="under_post_card2"></div>
+    <div id="HistoryToday" class="under-post-card"></div>
+    <script type="text/javascript">
+       var commentManager = new blogCommentManager();
+       commentManager.renderComments(0);
+       fixPostBody();
+       deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);       deliverT2();
+       deliverC1C2();
+       loadNewsAndKb();
+       loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);       LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+       GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+       loadOptUnderPost();
+       GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+	<div id="sideBar">
+		<div id="sideBarMain">
+			<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+<div id="sidebar_c3"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2021 肖品
+<br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+
+    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjvtdoCUwcWQbvdG8KDMPZBxnjU-pmEQeyK1611KJRMG09zF-DbFEQ5ZkHB4a8kfm2Mil_hciyzZvCB5gONwHRxQPNL2TGi_3bt0fYvOUeVgyivp8sJcP4SW27716vA9lbs" />
+</body>
+</html>
