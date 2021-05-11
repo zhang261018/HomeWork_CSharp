@@ -1,0 +1,1198 @@
+﻿<div class="module" ><style>
+
+body #content{width:100%;}
+body #footer{margin-top: 0;}
+.cod_page {
+    margin:0 auto;
+    background:#EEE0B3 url(//img.alicdn.com/tps/i1/T1rvK4XmxvXXXXXXXX-1600-1162.jpg) no-repeat center;
+}
+
+
+a:focus {
+    outline:none;
+    -moz-outline:none;
+}
+
+.cod_content {
+    width: 1012px;
+    height: 1190px;
+    margin:0 auto;
+    background: #fbf5e3;
+}
+
+.cod_left_nav {
+    width: 190px;
+    height: 675px;
+    margin: 10px 10px 10px 10px;
+    background-color: #D7CBA6;
+    float: left;
+    display:inline;
+}
+
+.J_cod_slider {
+    width: 790px;
+    height: 200px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    _margin-right: 5px;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+
+
+.J_cod_slider ul {
+    z-index: 10;
+    position: relative;
+    display: inline;
+    list-style:none;
+    list-style-type:none;
+    float: right;
+    margin: 177px 4px;
+    _margin: 177px 4px 0px 0px;
+
+}
+
+.J_cod_slider ul li{
+    background-color: #bcada8;
+    opacity: .7;
+    color: #2e180d;
+    height: 20px;
+    line-height: 20px;
+    margin-top: -2px;
+    width: 20px;
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    margin-left: 4px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -khtml-border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: visible;
+    z-index: 10;
+
+}
+
+
+.J_cod_slider ul li.ks-active {
+    font-weight: bold;
+    background-color: #443a35;
+    filter: none;
+    opacity: 1;
+    color: white;
+}
+
+
+.cod_notice {
+    width: 788px;
+    height: 25px;
+    margin-right: 10px;
+    _margin-right: 2px;
+    _margin-left: -2px;
+    margin-bottom: 10px;
+    background-color: white;
+    float: left;
+    display: inline;
+    position: relative;
+    border-width: 1px;
+    border-color: #DFD8D3;
+    border-style: solid;
+
+}
+
+
+.cod_left_nav_parent {
+    width: 190px;
+    height: 40px;
+    _height: 34px;
+    _width: 193px;
+    background-color: #E8DDB9;
+    margin: 0px 0px 0px 0px;
+    color: #533F2F;
+}
+
+
+.cod_left_nav_parent span {
+    margin-left: 20px;
+    margin-top: 8px;
+    position: absolute;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.cod_left_nav_parent span img{
+    vertical-align:middle;
+}
+
+
+
+
+
+.cod_lef_nav_children {
+    width: 190px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+
+.cod_lef_nav .cod_lef_nav_children  ul {
+    display:inline;
+    list-style:none;
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+
+
+.cod_left_nav .cod_lef_nav_children  li.cod_lef_nav_children_have_line {
+    margin-left:0px;
+    margin-bottom: 0px;
+    padding:0px;
+    list-style-type:none;
+    background:url(//img.alicdn.com/tps/i1/T1_gy4Xb0uXXXXXXXX-173-2.jpg) no-repeat center bottom;
+}
+
+.cod_left_nav .cod_lef_nav_children li.cod_lef_nav_children_no_line {
+    margin-left:0px;
+    margin-bottom: 0px;
+    padding:0px;
+    list-style-type:none;
+}
+
+
+.cod_left_nav .cod_lef_nav_children li span {
+    line-height: 40px;
+    height: 40px;
+    width: 86%;
+    display: block;
+    background:url(//img.alicdn.com/tps/i2/T1wg94XbFtXXXXXXXX-4-7.jpg) no-repeat center right;
+    blur:expression(this.onFocus=this.blur());
+}
+
+.cod_left_nav li span a {
+    line-height: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    margin-left: 34px;
+    color: #2E180D;
+    blur:expression(this.onFocus=this.blur());
+}
+
+.cod_left_nav li span a:hover {
+    text-decoration: underline;
+    color: #2E180D;
+}
+
+
+
+.cod_notice_title {
+    float: left;
+    margin-top: 2px;
+    margin-left: 15px;
+    vertical-align:middle;
+}
+
+.cod_notice_title a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #090500;
+}
+
+.cod_notice_content {
+    float: left;
+    position: relative;
+
+}
+
+.cod_notice ul {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+.cod_notice li {
+    float: left;
+    list-style:none;
+    margin-left: 12px;
+    position: relative;
+    martin-top: 2px;
+    _margin-top: 3px;
+
+}
+
+.cod_notice li img {
+    vertical-align:middle;
+}
+
+.cod_notice li a {
+    text-decoration: none;
+    color:#8d8180;
+    vertical-align:middle;
+}
+
+
+
+
+
+.J_cod_tabs {
+    width:  788px;
+    height: 425px;
+    background-color: #ffffff;
+    float: left;
+    position: relative;
+    display: inline;
+    _margin-left: -2px;
+}
+
+
+.J_cod_tabs ul {
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    list-style:none;
+    list-style-type:none;
+
+}
+
+
+
+
+.J_cod_tabs ul li {
+    list-style: none;
+    float: left;
+    width: 263px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
++margin-right: -1px;
+    _margin-right: -1px;
+    outline:none;
+    -moz-outline:none;
+    margin-left: expression(this.previousSibling==null?'0px':'1px');
+}
+
+
+
+.cod_tabs_nav {
+    background-color: #E8DDB9;
+    width: 790px;
+    _width: 791px;
+    height: 42px;
+    border-top: 1px solid #cbbc9a;
+
+}
+
+
+
+.J_cod_tabs ul li:first-child {
+    list-style: none;
+    float: left;
+    width: 260px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    outline:none;
+    -moz-outline:none;
+}
+
+
+.J_cod_tabs ul li .cod_tab_text{
+    background-color: #E8DDB9;
+    width: 261px;
+    height: 38px;
+    line-height: 38px;
+    color: #8a7060;
+    font-size: 14px;
+    font-family: \5b8b\4f53;
+    background: url(//img.alicdn.com/tps/i2/T1sLq4Xf4wXXXXXXXX-2-29.jpg) no-repeat right;
+    outline:none;
+    -moz-outline:none;
+    blur:expression(this.onFocus=this.blur());
++width:expression(this.nextSibling==null?'261px':'266px');
+_width:expression(this.nextSibling==null?'261px':'263px');
+
+    }
+
+
+
+
+.J_cod_tabs ul li:last-child .cod_tab_text {
+    width: 266px;
+    height: 38px;
+    line-height: 38px;
+    color: #8a7060;
+    font-size: 14px;
+    font-family: \5b8b\4f53;
+    background: #E8DDB9;
+    outline:none;
+    -moz-outline:none;
+    blur:expression(this.onFocus=this.blur());
+}
+
+
+.J_cod_tabs ul li .cod_tab_icon{
+    height: 4px;
+    outline:none;
+    line-height: 4px;
+    font-size:3px;
++margin-right: -1px;
+    _margin-right: -1px;
+    -moz-outline:none;
+    blur:expression(this.onFocus=this.blur());
+    background-color: #ffffff;
++width: 266px;
+    _width:expression(this.nextSibling==null?'263px':'267px');
+
+}
+
+
+
+.J_cod_tabs ul li:last-child .cod_tab_icon {
+    height: 4px;
+    line-height: 4px;
+    font-size:3px;
+    width: 266px;
+    outline:none;
+    -moz-outline:none;
+    blur:expression(this.onFocus=this.blur());
+    background-color: #ffffff;
+
+}
+
+
+
+
+
+#cod_tab_icon_first {
+    border-left: 1px solid #DEDACF;
+}
+
+#cod_tab_icon_last {
+    border-right: 1px solid #DEDACF;
+}
+
+
+#cod_tab_text_first {
+    border-left: 1px solid #cbbc9a;
+}
+
+#cod_tab_text_last {
+    border-right: 1px solid #cbbc9a;
+}
+
+
+
+.J_cod_tabs ul li.ks-active .cod_tab_text {
+    height: 38px;
+    line-height: 38px;
+    outline:none;
+    color: #ffffff;
+    font-weight: bold;
+    -moz-outline:none;
+    blur:expression(this.onFocus=this.blur());
+    background:#b9a285;
+}
+
+.J_cod_tabs ul li.ks-active {
+    cursor: pointer;
+    outline:none;
+    -moz-outline:none;
+    color:#ffffff;
+    blur:expression(this.onFocus=this.blur());
+}
+
+
+.J_cod_tabs ul li.ks-active .cod_tab_icon {
+    height: 4px;
+    background: url(//img.alicdn.com/tps/i2/T1l3K4XodtXXXXXXXX-7-4.jpg) no-repeat center;
+    display: block;
+    outline:none;
+    line-height: 4px;
+    font-size:3px;
+    -moz-outline:none;
+    blur:expression(this.onFocus=this.blur());
+    background-color: #ffffff;
+}
+
+
+.ks-switchable-content div,a,img{
+    blur:expression(this.onFocus=this.blur());
+    outline:none;
+    -moz-outline:none;
+}
+
+
+.J_cod_tabs .ks-switchable-content img {
+    width: 788px;
+    _width: 789px;
+    height: 384px;
+    _margin-top: -1px;
+    border-left: 1px #DEDACF solid;
+    border-bottom: 1px #DEDACF solid;
+    border-right: 1px #DEDACF solid;
+}
+
+
+
+.cod_flow {
+    width: 784px;
+    height: 56px;
+    display: inline;
+    float: left;
+
+}
+
+.cod_partner {
+    width: 784px;
+    height: 55px;
+    margin-left: 3px;
+    margin-right: 2px;
+    margin-top:5px;
+    display: inline;
+    float: left;
+}
+
+
+
+.cod_left_nav_header {
+    width: 190px;
+    height: 228px;
+}
+
+
+.cod_left_nav_header img {
+    margin:0 auto;
+    vertical-align: middle;
+}
+
+.cod_lef_nav_header_p1 {
+    width: 173px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px;
+
+}
+
+.cod_lef_nav_header_p11 {
+    width: 153px;
+    margin-left: 20px;
+
+
+}
+
+
+.cod_lef_nav_header_p11 .cod_text {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.cod_lef_nav_header_p12 {
+    width: 153px;
+    margin-left: 20px;
+}
+
+
+.cod_lef_nav_header_p13{
+    width: 173px;
+}
+
+
+.cod_icon_shadow,.cod_left_nav_line {
+    float: left;
+}
+
+.cod_lef_nav_header_p2 {
+    width: 156px;
+    height: 36px;
+    margin-top: 36px;
+    margin-left: 18px;
+    margin-right: 18px;
+    color:#665a4f;
+}
+
+
+.cod_lef_nav_header_p3 {
+    width: 153px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.cod_lef_nav_header_p3 img {
+    margin-bottom: 10px;
+}
+
+
+
+.cod_faq_usersaying {
+    width: 990px;
+    overflow:hidden;
+    *zoom:1;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    display: inline;
+    float: left;
+
+    background-color: #ffffff;
+}
+
+.cod_faq_usersaying img {
+    margin:0 auto;
+    vertical-align: middle;
+    _margin-bottom: 2px;
+    *margin-bottom: 2px !important;
+}
+
+.cod_faq {
+    float: left;
+    width: 558px;
+    height: 406px;
+    margin-top: 16px;
+    margin-left: 20px;
+    float: left;
+    display: inline;
+}
+
+
+.cod_faq_more {
+    float: right;
+    padding-top: 2px;
+    padding-right: 2px;
+    display: inline;
+}
+
+
+.cod_faq_usersaying_p1 {
+    margin-bottom: 26px;
+}
+
+.cod_img_float{
+    float: left;
+}
+
+
+.cod_faq_three_questions {
+    width: 558px;
+    height: 300px;
+    margin-top: 60px;
+    _margin-top: 30px;
+    *margin-top: 30px !important;
+}
+
+.cod_faq_question {
+    width: 555px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    float: left;
+    display: inline;
+}
+.cod_faq_question img{
+    display: inline;
+    float: left;
+}
+
+.cod_faq_question_text {
+    float: left;
+    color: #9a5e43;
+    font-weight:bold;
+
+}
+
+.cod_faq_answer {
+    margin-top: 24px;
+    font: 12px \5b8b\4f53;
+    color:#8d8180;
+    line-height: 20px;
+}
+
+
+.cod_faq_user_centerline {
+    float: left;
+    position: relative;
+    margin-top: 16px;
+    margin-left: 20px;
+    width: 1px;
+    height: 406px;
+
+}
+
+
+.cod_user_saying {
+    float: left;
+    margin-top: 16px;
+    margin-left: 20px;
+    width: 352px;
+    display: inline;
+}
+
+
+
+.cod_user_saying_content {
+    width: 350px;
+    height: 320px;
+    margin-top: 60px;
+    _margin-top: 30px;
+    *margin-top: 30px !important;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+#cod_user_saying_s1 {
+    padding-left: 4px;
+    padding-top: 2px;
+    display: inline;
+}
+
+
+#cod_user_saying_s2 {
+    _margin-top: 6px;
+    *margin-top: 6px !important;
+}
+
+
+.cod_user_saying_list {
+    width: 350px;
+    height: 100px;
+    background-color: #ffffff;
+    margin-top: 6px;
+}
+
+
+.cod_user_saying_base_photo {
+    float: left;
+    margin-top: 4px;
+}
+
+.cod_user_saying_base_content {
+    margin-top: 6px;
+    margin-left: 10px;
+    float: left;
+    position: relative;
+
+
+}
+
+.cod_user_saying_base_name {
+    color:#9a5e43;
+    font-weight:bold;
+}
+
+.cod_user_saying_base_info {
+    color:#8d8180;
+}
+
+.cod_user_saying_info {
+    width: 350px;
+    float: left;
+    margin-top: 4px;
+
+}
+
+
+
+.cod_user_saying_info_text_p1 {
+    float: left;
+    margin-top: 0px;
+    margin-left: 14px;
+    _margin-left: 12px;
+    _margin-bottom: -10px;
+    padding: 0px;
+    display: block;
+    position:relative;
+}
+
+.cod_user_saying_info_text_p1 img {
+    float: left;
+    position:relative;
+    display: block;
+}
+
+
+
+.cod_user_saying_info_text_p2 {
+    background-color:#f8f5ea;
+    float: left;
+    *float: none !important;
+    _float: none;
+    margin-left: 2px;
+    _margin-top: 6px;
+    *margin-top: 6px !important;
+    font: 12px \5b8b\4f53;
+    color:#8d8180;
+    line-height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+</style>
+<script>
+KISSY.use('switchable', function(S, Switchable){
+	var Slide,Tabs;
+if(KISSY.version == "1.1.6"){
+  
+   Slide = S.Slide,
+    Tabs = S.Tabs;
+}else{
+	Slide = Switchable.Slide,
+   Tabs = Switchable.Tabs;
+}
+    KISSY.ready( function(S) {
+		var lastTab = document.getElementById("cod_tab_text_last");
+		var DOM = S.DOM;
+		var E = S.Event;
+		lastTab.style.backgroundImage = "none";
+        var slide = new Slide('.J_cod_slider', {
+			delay : .2,
+			effect : 'fade',
+			easing : 'easeBoth',
+			duration : .8,
+			autoplay : true
+		});
+		var tabs = new Tabs('#J_cod_tabs', {
+			switchTo: 0,
+			autoplay: true,
+			delay:  .1
+		});
+
+		tabs.on('switch', function(ev) {
+			var secondTab = document.getElementById("cod_tab_text_second");
+			var firstTab = document.getElementById("cod_tab_text_first");
+			
+	     if ( ev.currentIndex === 0) {
+			 firstTab.style.backgroundImage = "none";
+			 secondTab.style.backgroundImage = "url(//img.alicdn.com/tps/i2/T1sLq4Xf4wXXXXXXXX-2-29.jpg)";
+			 secondTab.style.backgroundPosition = "right";
+			 secondTab.style.backgroundRepeat = "no-repeat";
+	     }
+			
+		 if (ev.currentIndex === 1) {
+			firstTab.style.backgroundImage = "none";
+			secondTab.style.backgroundImage = "none";
+		 }
+
+		 else if (ev.currentIndex === 2) {
+			 secondTab.style.backgroundImage = "none";
+			 firstTab.style.backgroundImage = "url(//img.alicdn.com/tps/i2/T1sLq4Xf4wXXXXXXXX-2-29.jpg)";
+			 firstTab.style.backgroundPosition = "right";
+			 firstTab.style.backgroundRepeat = "no-repeat";
+		 }
+
+		
+		});
+
+	});
+});
+
+</script>
+
+<div class="cod_page">
+		<!-- codҳ�����ݿ�ʼ -->
+		<div class="cod_content">
+			<!-- ��ർ�� -->
+			<div class="cod_left_nav">
+				<!-- ��ർ���ϲ� -->
+				<div class="cod_left_nav_header">
+					<div class="cod_lef_nav_header_p1">
+						
+							<div class="cod_lef_nav_header_p11">
+								<img src="//img.alicdn.com/tps/i3/T1_XS5XeBaXXXXXXXX-36-36.jpg"/>
+								<img src="//img.alicdn.com/tps/i3/T123K4Xm0tXXXXXXXX-64-16.jpg" class="cod_text"/>
+							</div>
+							<div class="cod_lef_nav_header_p12">
+								<img src="//img.alicdn.com/tps/i4/T15v14Xc0vXXXXXXXX-36-12.jpg" class="cod_icon_shadow"/>
+							</div>
+							<div class="cod_lef_nav_header_p13">
+								<img src="//img.alicdn.com/tps/i1/T1_gy4Xb0uXXXXXXXX-173-2.jpg" class="cod_left_nav_line" />
+							</div>
+					</div>
+
+					<div class="cod_lef_nav_header_p2">	
+					
+						�÷���30���ڱ����4.9��Σ�Լ12.8������ʹ��
+					
+					</div>
+					<div class="cod_lef_nav_header_p3">
+				
+						
+						    <a href="//fuwu.taobao.com/serv/detail.htm?spm=3.225979.243518.1&service_id=13915" target="_blank"><img src="//img.alicdn.com/tps/i4/T1fFW5XehaXXXXXXXX-153-35.jpg" /></a>
+						
+						
+							<a href="//www.taobao.com/go/act/sale/tsyxh.php?spm=3.225979.243518.2" target="_blank"><img src="//img.alicdn.com/tps/i3/T1bVW5XelaXXXXXXXX-153-27.jpg" /></a>
+						
+					</div>
+					
+				</div>  
+				<!-- ��ർ���ϲ����� -->
+
+
+				<!-- ��ർ���²������˵� -->
+				<div class="cod_left_nav_content">
+				     
+					<h3 class="cod_left_nav_parent"><span>
+<img src="//img.alicdn.com/tps/i2/T1gXW5XehaXXXXXXXX-88-14.jpg"  height="14">
+</span></h3>
+					
+					<div class="cod_lef_nav_children">
+						<ul>
+							<li class="cod_lef_nav_children_have_line">
+							   <span>
+								  
+								    	<a href="//fuwu.taobao.com/serv/detail.htm?spm=3.225979.243518.3&service_id=13915" target="_blank">���Ż�������</a>
+								  	
+								</span>
+							</li>
+
+							<li class="cod_lef_nav_children_have_line">
+								<span>
+									
+								       <a href="//fuwu.taobao.com/serv/detail.htm?spm=3.225979.243518.4&service_id=13915" target="_blank">�ֽ��������</a>
+								    
+								</span>
+							</li>
+							<li class="cod_lef_nav_children_no_line">
+							    <span>
+									
+									    <a href="//fuwu.taobao.com/ser/detail.htm?spm=3.225979.243518.5&service_id=28628" target="_blank">���������ǩ�˷���</a>
+									
+								</span>
+							</li>
+						</ul>
+					</div>
+
+
+					<h3 class="cod_left_nav_parent"><span>
+
+<img src="//img.alicdn.com/tps/i3/T1uai5XflXXXXXXXXX-56-14.jpg" height="14">
+
+</span></h3>
+					
+					<div class="cod_lef_nav_children">
+						<ul>
+							<li class="cod_lef_nav_children_have_line">
+							   <span>
+							     
+								     <a href="//www.tmall.com/go/act/sale/paymoney.php?spm=3.225979.243518.6" target="_blank">�ֽ������������׼</a>
+								 
+							   </span>
+							</li>
+							<li class="cod_lef_nav_children_no_line">
+							   <span>
+							      
+								      <a href="//www.tmall.com/go/act/sale/paymoney.php?spm=3.225979.243518.7" target="_blank">���Ż�����������׼</a>
+								  
+							   </span>
+							</li>
+						</ul>
+					</div>
+					
+
+					<h3 class="cod_left_nav_parent"><span>
+
+<img src="//img.alicdn.com/tps/i1/T1dFW5XehaXXXXXXXX-98-14.jpg"  height="14">
+
+</span></h3>
+
+					<div class="cod_lef_nav_children">
+						<ul>
+							<li class="cod_lef_nav_children_have_line">
+							    <span>
+								   
+								      <a href="//www.taobao.com/go/act/sale/mjtj.php?spm=3.225979.243518.8" target="_blank">��������ȫ����</a>
+								   
+								</span>
+							</li>
+							   
+								   
+						</ul>	
+					</div>
+
+				</div>
+				<!-- ��ർ���²������˵����� -->
+			</div>
+
+			<!-- �ϱߵ�12345���� -->
+			<div class="J_cod_slider">
+				<div class="ks-switchable-content">
+					
+					    <a href="//fuwu.taobao.com/serv/detail.htm?spm=3.225979.243518.9&service_id=13915" target="_blank"><img src="//img.alicdn.com/tps/i3/T1GVzXXapjXXbwZ96B-790-200.jpg" width="790px" height="200px"></a>
+					
+					
+						 <a href="//fuwu.taobao.com/serv/detail.htm?spm=3.225979.243518.10&service_id=14371&tracelog=other_serv" target="_blank"><img src="//img.alicdn.com/tps/i3/T1HU9.XmNjXXbwZ96B-790-200.jpg" width="790px" height="200px"></a>
+
+					
+						 <a href="//www.tmall.com/go/act/sale/zwwlzdcj.php?spm=3.225979.243518.11" target="_blank"><img src="//img.alicdn.com/tps/i4/T1tFmbFihXXXbwZ96B-790-200.jpg" width="790px" height="200px"></a>
+
+
+						 <a href="//fuwu.taobao.com/serv/detail.htm?spm=3.225979.243518.12&service_id=13915" target="_blank"><img src="//img.alicdn.com/tps/i3/T1GVzXXapjXXbwZ96B-790-200.jpg" width="790px" height="200px"></a>
+
+
+						 <a href="//fuwu.taobao.com/serv/detail.htm?spm=3.225979.243518.13&service_id=14371&tracelog=other_serv" target="_blank"><img src="//img.alicdn.com/tps/i3/T1HU9.XmNjXXbwZ96B-790-200.jpg" width="790px" height="200px"></a>
+
+				</div>
+				<!-- <div id="cod_slider_num"> -->
+					<ul class="ks-switchable-nav">
+						 <li class="ks-active">1</li>
+						 <li>2</li>
+						 <li>3</li>
+						 <li>4</li>
+						 <li>5</li>
+					</ul>
+				<!-- </div> -->
+			</div>
+           
+		   <!-- ���� -->
+			<div class="cod_notice">
+				<div class="cod_notice_title"> 
+					<a href="#" target="_blank"> ���棺</a>
+				</div>
+				<div class="cod_notice_content">
+					<ul>
+						<li> <a href="//bangpai.taobao.com/group/thread/78022-278639338.htm?spm=3.225979.243518.14" target="_blank">����Ʒ�����������������ϵ���ߣ�</a></li>
+						<li><img src="//img.alicdn.com/tps/i4/T13Ge5XflXXXXXXXXX-1-16.jpg" /></li>
+						<li> <a href="//bangpai.taobao.com/group/thread/78022-277210442.htm?spm=3.225979.243518.15" target="_blank">����è�����ԶԵ�Ʒ���û�����������</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- ��������3��tabs����-->
+			<div id="J_cod_tabs" class="J_cod_tabs">
+				<div class="cod_tabs_nav">
+				   <ul class="ks-switchable-nav">
+						<li class="ks-active">
+							<div class="cod_tab_text" id="cod_tab_text_first">
+								�ֽ��������
+							</div>
+							<div class="cod_tab_icon"  id="cod_tab_icon_first"></div>
+						</li>
+
+						<li>
+							<div class="cod_tab_text" id="cod_tab_text_second">
+								���Ż�������
+							</div>
+							<div class="cod_tab_icon"></div>
+						</li>
+
+						<li>
+							<div class="cod_tab_text" id="cod_tab_text_last">
+								��ǩ�˷���
+							</div>
+							<div class="cod_tab_icon" id="cod_tab_icon_last"></div>
+						</li>
+				   </ul>
+				</div>
+				  <div class="ks-switchable-content"> 
+					
+					  <div>
+						 
+					       <a href="//fuwu.taobao.com/serv/detail.htm?spm=3.225979.243518.16&service_id=13915" target="_blank"><img src="//img.alicdn.com/tps/i3/T17maBXBNaXXc5FLjE-788-384.jpg" /></a>
+       					 
+					  </div>
+			
+
+					  <div style="display: none">
+					     
+							<a href="//fuwu.taobao.com/serv/detail.htm?spm=3.225979.243518.17&service_id=13915" target="_blank"><img src="//img.alicdn.com/tps/i4/T1h8uzXsJfXXc5FLjE-788-384.jpg" /></a>
+						 
+					  </div>
+
+
+					
+					  <div style="display: none">
+						 
+							<a href="//fuwu.taobao.com/ser/detail.htm?spm=3.225979.243518.18&service_id=28628" target="_blank"><img src="//img.alicdn.com/tps/i3/T1Zg94XaVtXXXXXXXX-788-384.jpg" /></a>
+						 
+					  </div>
+
+				  </div>
+			</div>
+			
+			<!--faq���û����� -->
+			<div class="cod_faq_usersaying">
+				
+				<!-- faq -->
+				<div class="cod_faq">
+					<div class="cod_faq_usersaying_p1">
+						<img src="//img.alicdn.com/tps/i4/T1.gy4XcduXXXXXXXX-109-19.jpg" class="cod_img_float" class="cod_faq_s"/>
+						
+							<a href="#"><img src="//img.alicdn.com/tps/i3/T1OLO4XjNvXXXXXXXX-72-20.jpg" class="cod_faq_more"/></a>
+						
+					</div>
+					<div class="cod_faq_usersaying_p2">
+						<img src="//img.alicdn.com/tps/i3/T1U294XXRvXXXXXXXX-556-1.jpg" class="cod_img_float" />
+					</div>
+					<div class="cod_faq_three_questions">
+						<div class="cod_faq_question">
+							<img src="//img.alicdn.com/tps/i4/T1r3O4Xl0tXXXXXXXX-18-18.jpg" />
+							
+							<div class="cod_faq_question_text">
+								&nbsp; ������������֧����������
+							</div>
+							<div class="cod_faq_answer">
+								�𣺻�����������֧�������ף��һ�����������׳ɹ���Ҳ�뵣������һ��������֧�������׶ȫ��GMV�ڡ������̼Ҳ��赣����Ϊ���ѡ���˻�����������µ��̵�֧�����ɽ����½������⡣
+							</div>
+							
+						</div>
+						<div class="cod_faq_question">
+							<img src="//img.alicdn.com/tps/i1/T1tqi5XflXXXXXXXXX-18-18.jpg" />
+							
+							<div class="cod_faq_question_text">
+								&nbsp;ʲô�ǻ������������ÿ��Կ�ͨ��
+							</div>
+							<div class="cod_faq_answer">
+								�𣺻���������һ��ȫ�µ�����֧����ʽ�������ֽ��������Ϳ�ݻ�������������ʽ�������µ����㡢֧����ȫ�������ƣ���������������Ⱥ����Ȼ�����������������������Ǯ�����ҿ���ѡ���ֽ�ˢ�������֧���ȶ���֧����ʽ�������Ե��ҳ���ϡ�������Ѷ�������������������ϵͳ���ͨ����������ͨ��
+							</div>
+							
+						</div>
+						<div class="cod_faq_question">
+							<img src="//img.alicdn.com/tps/i1/T1kM94Xb0tXXXXXXXX-18-18.jpg" />
+							
+							<div class="cod_faq_question_text">
+								&nbsp;ʲô�Ƕ��Ż������
+							</div>
+							<div class="cod_faq_answer">
+								�𣺶��Ż����������ڴ�ͳ�ֽ��������Ļ����ϣ�����˿��֧�������Ƶ���������������Ʒ�����������֧������ȫ�����㣬�������֧�����Ļؿ��ٶ����̵���24Сʱ���ڣ���������ٵ����ʽ���������⡣
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				
+				<!-- faq���û�����֮��ķָ��� -->
+				<div class="cod_faq_user_centerline"> 
+					<img src="//img.alicdn.com/tps/i2/T1Ig54XdltXXXXXXXX-1-404.jpg" />
+				</div>
+
+
+				<!-- �û�����-->
+				<div class="cod_user_saying">
+					<div class="cod_faq_usersaying_p1">
+						<img src="//img.alicdn.com/tps/i3/T1Z3C4XaNuXXXXXXXX-72-16.jpg" class="cod_img_float" id="cod_user_saying_s1"/>
+					</div>
+					<div class="cod_faq_usersaying_p2">
+						<img src="//img.alicdn.com/tps/i1/T1av54XcRvXXXXXXXX-351-1.jpg" class="cod_img_float" id="cod_user_saying_s2"/>
+					</div>
+					<!-- �û���ͷ���û�˵�Ļ�-->
+					<div class="cod_user_saying_content">
+					
+						<div class="cod_user_saying_list">
+
+							<div class="cod_user_saying_base">
+								 <div class="cod_user_saying_base_photo">
+									
+										<img src="//img.alicdn.com/tps/i1/T1.Xy5XoVhXXXXXXXX.jpg" width="38px" height="38px" />
+									
+								 </div>
+								 
+								 <div class="cod_user_saying_base_content">
+									<div class="cod_user_saying_base_name"> 
+										��ͨ��Ѷ
+									</div>
+									<div class="cod_user_saying_base_info">
+										�������ͨʱ�䣺2010��12��
+									</div>
+								 </div>
+							</div>
+
+							<div class="cod_user_saying_info">
+								<div class="cod_user_saying_info_text">
+									<div class="cod_user_saying_info_text_p1">
+									  <img src="//img.alicdn.com/tps/i4/T1jM94Xb0tXXXXXXXX-11-6.jpg"/>
+									</div>
+									<div class="cod_user_saying_info_text_p2">
+									   �Դ�ʹ���˻���������񣬽��׶���������~~���������Ǳ���ģ��������Ų��ŷ��������ˣ������������棬��ƾ���ֺͼ���ͼƬ����ѡ��Ʒȷ������֧��������˲��ֳ������⣬���˻���������һ�о͸�Ϊ����ʵ��ݣ�
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+					
+						<div class="cod_user_saying_list">
+
+							<div class="cod_user_saying_base">
+								 <div class="cod_user_saying_base_photo">
+									
+										<img src="//img.alicdn.com/tps/i2/T1vW95XkNeXXXXXXXX.jpg" width="38px" height="38px" />
+									
+								 </div>
+
+								 
+								 <div class="cod_user_saying_base_content">
+									<div class="cod_user_saying_base_name"> 
+										�����콢��
+									</div>
+									<div class="cod_user_saying_base_info">
+										�������ͨʱ�䣺2011��6��
+									</div>
+								 </div>
+							</div>
+
+							<div class="cod_user_saying_info">
+								<div class="cod_user_saying_info_text">
+									<div class="cod_user_saying_info_text_p1">
+										<img src="//img.alicdn.com/tps/i4/T1jM94Xb0tXXXXXXXX-11-6.jpg"/>
+									</div>
+									<div class="cod_user_saying_info_text_p2"> 
+										�������������ĺܺã�����ҿ��Է��Ĺ��򣬼���ʵ���ֱ�������ٸ����������ҵ��û����飬ͬʱҲ�����������ֱ�ĳɽ�����
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					
+					
+						<div class="cod_user_saying_list">
+
+							<div class="cod_user_saying_base">
+								 <div class="cod_user_saying_base_photo">
+									
+										<img src="//img.alicdn.com/tps/i3/T1CsC5XglbXXXXXXXX.jpg" width="38px" height="38px" />
+									
+								 </div>
+								 
+								 <div class="cod_user_saying_base_content">
+									<div class="cod_user_saying_base_name"> 
+										and1llmt
+									</div>
+									<div class="cod_user_saying_base_info">
+										�������ͨʱ�䣺2010��10��
+									</div>
+								 </div>
+							</div>
+
+							<div class="cod_user_saying_info">
+								<div class="cod_user_saying_info_text">
+									<div class="cod_user_saying_info_text_p1">
+										<img src="//img.alicdn.com/tps/i4/T1jM94Xb0tXXXXXXXX-11-6.jpg"/>
+									</div>
+									<div class="cod_user_saying_info_text_p2">
+										��ȷ�����˷�ģ�塢�ḻ����������ע�����Ӫ������������������������º�����ת���ʵ�Ч�����Ƿǳ��õģ�
+									</div>
+								</div>
+							</div>
+							 
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		
+		</div>
+	</div></div>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">     
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>�������-����-�Ա���</title>
+<link href="http://www.taobao.com/home/css/sys/help.css" rel="stylesheet" type="text/css" />
+</head>
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&udpid=&&yunid=&&trid=3da8644216207391230953923e&asid=AQAAAAAzhJpgn+Z2NwAAAAAm71m7GDYriw==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&asid=AQAAAAAzhJpgTGhWfgAAAADMUVz11IPk6A==&sidx=a9lm/wKWBa/pEhNhAxYlY85UGq6H1z/Lhj607VOJefIPlEj9vyjtu/gHyC1yEwvYbzo1XhwGSAjSBFFsRYcgQOpUA60Qu9t3aaNEYuzevUGrlmMHR4I/w9YdsAUT5wBmKigccl/cXb4dByooVx1xHmEQFMjVS2gtSkJ16QkwkFE=",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+<div id="help" class="saler">
+	<div class="tab">
+    	<a href="buy_step1_01.html" class="tab-buyer">�������</a>
+        <a href="sell_step1_01.html" class="tab-saler">�������</a>
+		<a href="http://service.taobao.com/support/help.htm" class="back-home">������ҳ</a>
+    </div>
+    <div class="step">
+    	<a href="sell_step1_01.html" class="step1-on">�˻�ע��</a>
+        <a href="sell_verify_apply.php?step=step1" class="step1">��Ҫ����</a>
+        <div class="step2-box"><a href="sell_verify_apply.php?step=step1" class="step2">������֤</a><a href="sell_verify_pass.php?step=step1" class="step2">���Լ���������</a></div>
+  		<a href="sell_openshop.php?step=step1" class="step1">��������</a>
+        <a href="sell_step4_01.html" class="step1">��������</a>
+        <a href="sell_step5_01.html" class="step1">����&amp;����</a>
+  	</div>
+    <div class="sub-step">
+    	<a href="sell_step1_01.html">��1��</a>
+        <a href="sell_step1_02.html">��2��</a>
+        <a href="sell_step1_03.html">��3��</a>
+        <a href="sell_step1_04.html">��4��</a>
+        <a href="sell_step1_05.html" class="sub-step-last">��5��</a>
+    </div>
+    <div class="show-box"><img src="http://img04.taobaocdn.com/tps/i4/T16.pYXixAXXXXXXXX-900-687.gif" width="900" height="687" border="0" usemap="#Map" />
+        <map name="Map" id="Map">
+            <area shape="rect" coords="572,331,766,366" href="http://www.taobao.com/help/alipay_step1_01.html" />
+            <area shape="rect" coords="572,376,766,411" href="http://abc.alipay.com/show-how/regViaAlipay.html#s1-1-1" target="_blank" />
+        </map>
+    </div>
+<div class="go-top">
+    	<a href="#help">top</a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,592 @@
+﻿
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="gbk" />
+  <meta name="spm-id" content="a215z.1724907" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="��8�|�aƷ���������S�r�������롣�Ԍ��W�ṩ�������ݮaƷ���M�������������裬һվʽ�W��ُ���w򞣬�����֑a�X��">
+  <meta name="keywords" content="�Fُ���W��ُ��r�b���Y�� �����\����h�Ҿ���Ʒ��������Ʒ������">
+    <title>�Ա�����-�����ؼ�</title>
+    <base target="_blank">
+    <script>
+      var g_config = {
+        startTime: +new Date(), //����
+        supportLink:'//service.taobao.com/support/minerva/robot.htm?source_id=1431193651&init_ques=%E6%B5%B7%E5%A4%96%E4%BC%9A%E5%91%98%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98',
+        ap_mods:{
+           'poc':[0.01]//ѡ��˴��޸ĳ���������Ĭ����0.001 
+        }
+      }
+    </script>
+    <!--[if lt IE 9]><script src="//assets.alicdn.com/app/tms/others/global/css3-mediaqueries.js"></script><![endif]-->
+    <!-- assets���� -->
+    <!-- S GLOBAL CSS -->
+<link rel="stylesheet" href="//g.alicdn.com/tb/global/3.5.5/global-min.css">
+<!-- E GLOBAL CSS --><!-- S GLOBAL JS -->
+<script src="//g.alicdn.com/??kissy/k/1.4.4/seed-min.js,tb/global/3.5.5/global-min.js"></script>
+<!-- E GLOBAL JS -->    <meta property="og:image" content="//img.alicdn.com/tps/i1/TB1usOLHXXXXXbKXFXXfgMgNVXX-400-220.gif" />
+<meta property="og:description" content="������������գ����������͸��㣡�Ա�������ؼ���������ʵ�ݷ����㣬���һ��������ӭ���ˣ� " />
+    <meta property="og:title" content="������������գ����������͸��㣡�Ա�������ؼ���������ʵ�ݷ����㣬���һ��������ӭ���ˣ�" />
+    <meta property="og:url" content="//hk.ju.taobao.com" /> 
+    <link rel="stylesheet" href="//g.alicdn.com/tb/press/2.2.3/layouts/990-20-50-10.css" />
+<link rel="stylesheet" href="//atp.alicdn.com/tmse/1/dpl/??oversea-banner-overlay/v17/oversea-banner-overlay.css,oversea-banner-100/v6/oversea-banner-100.css,oversea-floor-item5-tejia/v13/oversea-floor-item5-tejia.css,oversea-sidebar-feedback/v13/oversea-sidebar-feedback.css" />
+
+<link rel="stylesheet" href="//atp.alicdn.com/tmse/1/dpl/??5538/oversea-banner-overlay/oversea-banner-overlay/v17/skin/default.css,5538/oversea-banner-100/oversea-banner-100/v6/skin/default.css,5538/oversea-floor-item5-tejia/oversea-floor-item5-tejia/v13/skin/default.css,5538/oversea-sidebar-feedback/oversea-sidebar-feedback/v13/skin/default.css" />
+
+<style>
+ #page {} 
+</style>  </head>
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&udpid=&&yunid=&&trid=3da8641a16207391168675819e&asid=AQAAAAAshJpgwhquFgAAAACUAuDilqESOA==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&asid=AQAAAAAshJpguzUuNgAAAABR7jclFimfKw==&sidx=DAKQGV7BD8nvOKHUBSuhuU03KxSpropmDM3zKn/oHFEIOFL+ICpwEej+YmUrKXjfh5lV0fgNe90jQYATCQPJVv6OixPb8ZGVbZyuCHAGUQhVjTyg4tMs2/CAFSMkWP4vMXr0fPOeOMb0IutJO4yNtTxs9fzNoAA2SY7uMo1WNas=",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script><!-- ����ȫ������ -->
+<!--TMS:761882-->
+<!-- S GLOBAL HTML -->
+<div id="J_SiteNav" class="site-nav">
+  <div id="J_SiteNavBd" class="site-nav-bd">
+    <ul id="J_SiteNavBdL" class="site-nav-bd-l"></ul>
+    <ul id="J_SiteNavBdR" class="site-nav-bd-r"></ul>
+  </div>
+</div>
+<!-- --><!-- ȫ����ͨ --><!-- E GLOBAL HTML -->   <!-- 20141212��ٶ�������ͷ -->
+  <!-- 20141212���banner -->
+    
+
+<script>
+  //�Ա����ⶨ����վ����
+  TB.Global.set('fn-site-map', {
+    url: '//www.taobao.com/go/rgn/global/site_nav_ajax.php'
+   });
+  
+  TB.Global.init();
+  
+    //����վ������ѡ��ͬ����д��thw��ȫ��cookie����
+   KISSY.use('node,event,cookie,dom',function(S, Node, Event, Cookie,Dom){
+      Event.delegate(document,'click','.mod-f',function(ev){
+        var value = Node.all(ev.target).attr('data-spm');
+        Cookie.set('thw', value, 30, '.taobao.com','/');
+        setThirdPartyCookie(value);
+      });
+
+     
+     function setThirdPartyCookie(ck){
+        var _frm = document.createElement("iframe");  
+                _frm.style.display = "none"; 
+        
+               // ͬ��д����è�򣬷�֮��Ȼ
+                _frm.src = "//www.tmall.com/go/app/sea/writecookie.php?ck="+ck;
+               document.body.appendChild(_frm);
+      }
+     
+
+
+
+  });
+
+  
+  </script>
+  
+ <!-- �����˵� -->
+ <style>
+   #J_Search{left:323px;top:18px;background:#fff;position:absolute}
+.search{padding:0}
+.search-panel{width:667px;position:relative;zoom:1}
+.search-item-panel button.btn-search,.search-item-panel button.btn-search-hover,.search-item-panel button.btn-search:hover,.search-list-panel-focused .search-panel-fields input,.search-panel button.btn-list,.search-panel button.btn-search,.search-panel button.btn-search-hover,.search-panel button.btn-search:hover,.search-panel button.btn-searchall,.search-panel button.btn-searchall-hover,.search-panel button.btn-searchall:hover,.search-panel button.btn-searchshop,.search-panel button.btn-searchshop-hover,.search-panel button.btn-searchshop:hover,.search-panel-focused .search-panel-fields input,.search-srp-panel .search-panel-focused .search-panel-fields input,.search-srp-panel button.btn-search,.search-srp-panel button.btn-search-hover,.search-srp-panel button.btn-search:hover{background-image:url(//img.alicdn.com/tps/i1/T1HM4.FalcXXbMnNTw-919-175.png);background-repeat:no-repeat}
+.search-panel-fields{height:33px;position:relative;zoom:1;background:#e6e6e6;overflow:hidden}
+.search-panel-fields label{position:absolute;left:15px;top:8px;z-index:1;color:#999;cursor:text}
+.search-panel-fields input{font-size:14px;position:absolute;left:3px;top:3px;height:18px;line-height:18px;padding:4px 0;background:#fff;vertical-align:middle;border:0 none;border-top:1px solid #f5f5f5}
+.search-panel .search-button{position:relative;z-index:1;float:right;background:#fff}
+.search-panel button{cursor:pointer;border:0;font-size:18px;text-indent:-999em;float:left;width:73px;height:33px}
+.search-status-focus .search-panel-fields s,.search-status-focus label{display:none}
+.search-combobox{margin-left:3px;margin-right:0}
+.search-panel-fields .search-combobox input{left:0}
+.search-panel-fields input{left:-3px;width:100%;outline:0;padding-right:3px;text-indent:5px;margin-left:6px}
+.search-combobox-input-wrap{position:relative;overflow:hidden}
+.search-panel-fields .search-combobox-input-wrap input{margin-left:0}
+.search-panel-two-buttons .search-panel-fields{margin-right:0}
+.search-panel button.btn-searchshop{background-position:-100px -76px;margin-left:3px}
+.search-panel button.btn-searchshop:hover{background-position:-100px -120px}
+.search-panel-hover .search-panel-fields{background:#f50}
+.search-list-panel-focused .search-panel-fields input,.search-panel-focused .search-panel-fields input{border-top:0;padding-top:5px;background-position:0 -40px;background-color:#fff}
+.search-panel button.btn-searchall{background-position:-260px -76px;margin-left:3px}
+.search-panel button.btn-searchall-hover,.search-panel button.btn-searchall:hover{background-position:-260px -120px}
+.search-panel button.btn-list{background-position:-420px -76px}
+.search-panel button.btn-search{background-position:-180px -76px}
+.search-panel button.btn-search-hover,.search-panel button.btn-search:hover{background-position:-180px -120px}
+.search-common-panel,.search-panel-focused .search-panel-fields{background:#f50}
+.search-sns-panel-field input{top:0}
+.search-sns-panel-field .search-combobox{margin-left:0}
+.search-sns-panel-field{width:322px;float:right;background:#fff;height:27px;margin-top:4px;margin-right:4px}
+.search-sns-panel-field .search-panel-fields{margin-right:0}
+.search-sns-panel-field label{top:5px}
+.search-sns-panel-field button.btn-search{text-indent:0;font-size:12px;color:#666;background:#f5f5f5;height:27px;width:72px;border-left:1px solid #d9d9d9}
+.search-sns-panel-field .search-panel-fields{height:27px}
+.search-sns-panel-field .search-combobox{margin-left:0}
+.search-sns-panel-field .search-combobox-input-wrap{height:27px}
+.search-sns-panel-field .search-combobox-input{top:0;background:#fff}
+.search-sns-panel-field button.btn-search:hover{background:#f5f5f5;color:#333}
+.search-srp-panel-fields{height:37px;margin-right:0}
+.search-srp-panel-fields label{top:10px}
+.search-srp-panel-fields input{height:22px;line-height:22px}
+.search-srp-panel-fields .search-combobox-input-wrap{height:34px}
+.search-srp-panel button.btn-search{width:93px;height:37px;background-position:0 -76px}
+.search-srp-panel button.btn-search-hover,.search-srp-panel button.btn-search:hover{background-position:0 -120px}
+.search-srp-panel .search-panel-focused .search-panel-fields input{background-position:0 0}
+.search-item-panel button.btn-search{background-position:-340px -76px}
+.search-item-panel button.btn-search:hover{background-position:-340px -120px}
+.search-faxian-panel .search-combobox{margin-left:3px}
+.search-panel-focused .search-hp-fields input,div.search-hp-panel button.btn-search,div.search-hp-panel button.btn-search-hover,div.search-hp-panel button.btn-search:hover{background-image:url(//img.alicdn.com/tps/i4/T1uqayFoleXXacpxYw-919-209.png)}
+.search-panel-focused .search-hp-fields input{background-position:0 -170px}
+.search-hp-panel button.btn-search{background-position:-553px -76px;height:45px;width:93px}
+div.search-hp-panel button.btn-search-hover,div.search-hp-panel button.btn-search:hover{background-position:-553px -76px}
+.search-panel .search-common-panel i{background-position:-380px -20px;background-image:url(//img.alicdn.com/tps/i4/T1OdGtFaxfXXXa78nI-400-200.png);background-repeat:no-repeat}
+.search-hp-fields{height:45px}
+.search-hp-fields input,.search-hp-fields label{margin-left:76px}
+.search-hp-fields .search-combobox{margin-left:79px}
+.search-hp-fields .search-combobox input{margin-left:0;text-indent:10px}
+.search-hp-fields label{top:13px;left:25px}
+.search-hp-fields .search-combobox-input-wrap{height:42px}
+.search-hp-fields input{padding:10px 0}
+.search-panel-focused .search-hp-fields input{padding:11px 0 10px}
+.search-triggers .ks-switchable-nav{width:74px;position:absolute;z-index:9999;left:3px;top:3px;height:39px;border-right:1px solid #e5e5e5;border-left:1px solid #f5f5f5}
+.triggers-hover .ks-switchable-nav{border-bottom:1px solid #e5e5e5;border-left:1px solid #e5e5e5;overflow:visible;height:auto}
+.search-triggers li{display:none;width:100%}
+.triggers-hover li{display:block}
+.search-triggers li a{height:100%;width:100%;padding:0;text-align:left;text-indent:15px;line-height:39px;color:#6b6b6b;background:#fff;font-weight:400;font-size:14px}
+.search-triggers{position:relative}
+.search-triggers li.selected{display:block}
+.search-triggers li.selected a{padding:0;background:#f5f5f5;border-radius:0;border:0 none;color:#6b6b6b;font-weight:400;font-size:14px}
+.search-triggers li a:hover,.search-triggers li.selected a:hover{color:#6b6b6b!important}
+.search-triggers s{line-height:0;border-width:4px;border-color:#666 transparent transparent;border-style:solid;height:0;position:absolute;top:19px;font-size:0;left:60px;z-index:10}
+.search-triggers s s{border-width:3px;border-color:#f6f6f6 transparent transparent;top:-4px;left:-3px;position:absolute}
+.search-panel .search-common-panel i{z-index:2;position:absolute;top:17px;left:86px;width:12px;height:12px;display:none}
+.search-hots{clear:both;font:12px/1.5 arial;padding:10px 5px 5px;color:#3e3e3e;+ padding-top:5 px}
+.search-hots a{color:#3e3e3e;margin-right:6px}
+.search-hots .more{margin-left:6px}
+                 /*����ȫ�ֵ���banner*/
+        #decSaleTopBanner{
+            display: none !important;
+                }
+   
+                 .tb-my1212-btn-look:link{
+    color: #9c9c9c;
+  }
+    .site-nav .site-nav-bd{
+      width:1190px;
+      min-width:990px;
+    }
+    #site-nav .quick-menu li.trans{
+      display:none;
+    }
+    .back-homeland{
+      display:inline !important;
+    }
+    /*������վ��������ʽ*/
+
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod .mod-wrap h4{
+      padding-top: 0;
+      height: 20px;
+      font-size:16px;
+      background-image: none;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod{
+      display: inline;
+        float: left;
+        width: 18%;
+        overflow: hidden;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-e,
+     .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-f{
+      width: 14%;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod .mod-wrap li{
+      width: 50%;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-e .mod-wrap li,
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-f .mod-wrap li{
+      width: 100%;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-d .mod-wrap{
+      border-right: 1px solid #eee;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-f .mod-wrap{
+      border-right: 0 none;
+    } 
+    
+    
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-a .mod-wrap h4{
+      color: #fd5500;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-b .mod-wrap h4{
+      color:#a0ba53;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-c .mod-wrap h4{
+      color:#e15eac;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-d .mod-wrap h4{
+      color:#51a0e8;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-e .mod-wrap h4{
+      color:#e39e20;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-f .mod-wrap h4{
+      color:#4b8a2c;
+    }
+     .search-hots{
+    position: absolute;
+    top: 30px;
+    left: 0px;
+  }
+   
+  .layout-hd .sea-header-ad{
+    position:absolute;
+            width:190px;
+    height: 88px;
+    right:0px;
+      background:url(//img.alicdn.com/tps/i1/TB1tcjJGVXXXXaaXXXXPeMDIXXX-190-88.gif) no-repeat;
+        top:15px;
+  }
+  
+ .layout-hd .sea-header-ad .countdown-1212{
+  display:block;
+  width:100%;
+  height: 100%;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+
+}
+
+.layout-hd .sea-header-ad .countdown{
+
+   height:22px;
+   position: absolute;
+   bottom: 0;
+   text-align: center;
+   background: #ffce23;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+             left:30px;
+    }
+
+.layout-hd .sea-header-ad .countdown .cd{
+  float: left;
+  height:18px;
+  line-height:18px;
+  margin:2px 1px 0 0;
+  color:#f8f7f7;
+  background: #550024;
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  font-family:Tahoma ;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+}
+  
+.layout-hd .sea-header-ad .countdown .doc{
+  margin-right: 2px;
+}
+
+.layout-hd .sea-header-ad .countdown .num{
+  width:12px;
+}
+
+.layout-hd .sea-header-ad .countdown .first{
+  margin-left: 2px;
+} 
+ 
+  </style>
+  
+
+  
+  <!-- ���ú���ͨ�� -->
+<!-- ��ҳ������ͨ+Flash��ͨ -->
+<div class="layout layout-hd" style="position:relative;">
+  <div class="logo" style="padding:13px 0 8px 0;">
+    <a href="//www.taobao.com/index_global.php" target="_self">
+      <img src="//img.alicdn.com/tps/i1/T1SwHiFnlkXXc.QAHh-202-55.png" width="202" height="55" alt="" title="Taobao.com ">
+    </a>
+  </div>  
+  <div class="search" id="J_Search" role="search">
+    <div class="search-panel search-srp-panel">
+        <form target="_top" data-defaultpage="nogo" action="//s.taobao.com/search" name="search" id="J_TSearchForm" class="search-panel-focused">
+            <div class="search-button">
+                <button class="btn-search" type="submit">�� ��</button>
+            </div>
+            <div class="search-panel-fields search-srp-panel-fields search-common-panel">
+                <input id="q" name="q" accesskey="s" autofocus="true" autocomplete="off" x-webkit-speech=""
+                       x-webkit-grammar="builtin:translate">
+            </div>
+            <input type="hidden" name="commend" value="all">
+            <input type="hidden" name="ssid" value="s5-e" autocomplete="off">
+            <input type="hidden" name="search_type" value="mall" autocomplete="off">
+            <input type="hidden" name="sourceId" value="tb.index">
+            <input type="hidden" name="spm" value="a215z.7106357.5803581.d4908513">
+            <!--[if lt IE 9]><s class="search-fix search-fix-panellt"></s><s class="search-fix search-fix-panellb"></s>
+            <![endif]-->
+        </form>
+    </div>
+    <div class="search-hots" data-spm="a214x9l"><a href="//world.taobao.com/search/search.htm?spm=a215z.1510359.a214x9l.1&_ksTS=1446622389916_21&_input_charset=utf-8&navigator=all&json=on&q=%E8%BF%9E%E8%A1%A3%E8%A3%99&callback=__jsonp_cb&cna=aWCrDjq8ZFsCASp4Slwt8ZyI&abtest=_AB-LR854-PV854_2100">����ȹ</a> <a href="//world.taobao.com/search/search.htm?spm=a215z.1510359.a214x9l.2&_ksTS=1446622414474_35&search_type=0&_input_charset=utf-8&navigator=all&json=on&q=iphone6%E6%89%8B%E6%9C%BA%E5%A3%B3&cna=aWCrDjq8ZFsCASp4Slwt8ZyI&callback=__jsonp_cb&abtest=_AB-LR854-PV854_2100">iphone6�ֻ���</a> <a href="//world.taobao.com/search/search.htm?spm=a215z.1510359.a214x9l.3&_ksTS=1446622509864_19&search_type=0&_input_charset=utf-8&navigator=all&json=on&q=%E5%A4%96%E8%B4%B8&cna=aWCrDjq8ZFsCASp4Slwt8ZyI&callback=__jsonp_cb&abtest=_AB-LR854-PV854_2100">��ó</a> <a href="//world.taobao.com/search/search.htm?spm=a215z.1510359.a214x9l.4&_ksTS=1446622533623_35&search_type=0&_input_charset=utf-8&navigator=all&json=on&q=%E5%A5%B3%E9%9E%8B&cna=aWCrDjq8ZFsCASp4Slwt8ZyI&callback=__jsonp_cb&abtest=_AB-LR854-PV854_2100">ŮЬ</a> <a href="//world.taobao.com/search/search.htm?spm=a215z.1510359.a214x9l.5&_ksTS=1446622571647_309&search_type=0&_input_charset=utf-8&navigator=all&json=on&q=%E9%99%B6%E7%93%B7%E6%9D%AF&cna=aWCrDjq8ZFsCASp4Slwt8ZyI&callback=__jsonp_cb&abtest=_AB-LR854-PV854_2100">�մɱ�</a> <a href="//world.taobao.com/search/search.htm?spm=a215z.1510359.a214x9l.6&_ksTS=1446622630103_35&search_type=0&_input_charset=utf-8&navigator=all&json=on&q=iphone6s%E6%89%8B%E6%9C%BA%E5%A3%B3&cna=aWCrDjq8ZFsCASp4Slwt8ZyI&callback=__jsonp_cb&abtest=_AB-LR854-PV854_2100">iphone6s�ֻ���</a> 
+<a class="more more-with-border" href="//top.taobao.com/index.php?from=tbsy">����</a>
+</div></div>
+  
+    
+</div>
+<script>
+  (function(){
+      var S = KISSY,
+               pre = ',tbc/search-suggest/'+'1.3.9/';
+        S.config({
+                packages: [
+                    {
+                        name: "tbc",
+                        path: "//g.alicdn.com/tbc/",
+                        ignorePackageNameInUri: true,
+                        debug: false
+                    }
+                ]}
+        );
+      
+    var mods = ['dom','index','plugin/history','new_suggest.css'],
+        sort = ['history','list'];
+      S.use(mods.join(pre),function(S,DOM,SearchSuggest,History){
+          var sug = new SearchSuggest({
+              plugins:[
+                  new History()
+              ],
+              "sugConfig": {
+                  sourceUrl: "//suggest.taobao.com/sug?k=1&area=ssrch",
+                  node: "#q",
+                  focused: true,
+                  "resultFormat":""
+              },
+              "mods":{
+                  "sort": sort
+              }
+           });
+        });
+        
+                 
+  })()
+</script>
+
+
+  
+<!-- �����˵�END --><!-- POWERED BY DPL -->
+<div id="page">
+<div id="content">
+<div class="J_Layout layout grid-m">
+	<div class="col-main">
+		<div class="main-wrap J_Region"><div class="J_Module skin-default" data-name="oversea-banner-overlay" data-skin="default" data-guid="14256291773490" id="guid-14256291773490" data-version="17" data-type="3"><div class="module"  data-spm="1998430082">
+<div class="tb-module oversea-banner-overlay">
+    <!-- �Զ���ģ������: start -->
+    <!-- // <script src="//yichen.taobao.com/parabola.js"></script> -->
+        <div class="bg-wrap" style="background:#FF0029 url(//img.alicdn.com/tps/i2/TB1eG3NHpXXXXXMXVXX4zOFLVXX-1920-273.png) no-repeat 50% 0;height:273px;display:block">
+    	<div class="oversea-wrap">
+    		<a href="javascript:;" target="_self" class="showtip J_show" data-spm-click="gostr=/tbos;locaid=d1232" style="top: 20px;right:0px;width: 110px;height: 40px;">�鿴�����+</a>
+            <!-- <div class="sheep-wrap shake shake-horizontal" data-spm-click="gostr=/tbos;locaid=d1111" id="boll"></div> -->
+    	</div>
+    	
+         
+    </div>
+    <div class="J_tip" style="display:none"><p style="text-align: center;"> <strong>������10Ԫ�����M��Ҏ�t</strong><br/> </p> <p> һ�� ����g�� </p> <p> ������10Ԫ�����������Ԍ������M�ߣ������ṩ��Ʒ��x�ă��|�ۿ���Ʒ����������Ʒ��߃r�񲻳��^10Ԫ�������Ʒÿ��10�c���£����л����Ʒ�İ��]����ֻ�޴�ꑣ��۰��_����������؅^���⣩������Ո�Ї���ۡ��_�����������Ї���ꑵ؅^���M��ُ�I�����Ʒ�r�x���Ԍ��ٷ��D�\���գ� </p> <p> ���� ���x </p> <p> ��ꑶΰ��]���H�޴�ꑶΰ��]��؛���_����ۡ��_�����������Ї���ꑵ؅^�Ķ����\�M��Ҫ���M�����гГ������漰���Pƫ�h�؅^�����w�؅^�����Ը�������˾Ҏ����ʣ������M��Ҫ���M��������Ǵ�ꑵ؅^���M�����H��؛��ַ��Ǵ�ꑵ؅^���t���x���D�\���\ݔ��ʽ�ſ����ܴ�ꑶΰ��]�� </p> <p> ���� ���M��؟�μ��x�� </p> <p> ���e�����Ʒ�п������⌍�H���Ʋ�֧���D�\��Ո�Ը��D�\�̌��H���\Ʒ�˜ʞ�ʣ��������M��ُ�I����Ʒ����뾳�؅^���P�����뾳��Ʒ�������M��δ����ṩ�o���P�C���ļ�������Ʒ�����P���L�U�������M�����гГ������h���M������ǰϵ�D�\����ԃ�� </p></div>
+
+</div>
+
+</div></div><div class="J_Module skin-default" data-name="oversea-banner-100" data-skin="default" data-guid="14253610553480" id="guid-14253610553480" data-version="6" data-type="3" data-hidden="true"><div class="tb-module oversea-banner-100 tb-finish" style="display:none"></div></div><div class="J_Module skin-default" data-name="oversea-floor-item5-tejia" data-skin="default" data-guid="14251151959420" id="guid-14251151959420" data-version="13" data-type="3"><div class="module"  data-spm="1998424494">
+<div class="tb-module oversea-floor-item5-tejia" data-url="//zhi.taobao.com/json/fantomasItems.htm?src=tb-global&pageSize=40&appId=9&blockId=9121&startRow=0&extQuery=tagId:1010121" data-pageurl="//www.taobao.com/market/global/tejia.php" data-tag="1010121" data-page="1" data-scroll="0">
+	<div class="o-nav">
+		<div class="nav-inner" id="J_navbar">
+			<div class="oversea-wrap clearfix">
+				<div class="navs">
+		            <dl>
+		                <dt>����</dt>
+		                <dd class=""><a class="default" href="//www.taobao.com/market/global/tejia.php" target="_self">ȫ��<s></s></a></dd>
+		                		                <dd class="">
+		                    <a href="//www.taobao.com/market/global/tejia.php?tagId=1010112" target="_self">�ӼҰٻ�<s></s></a>
+		                </dd>
+		                		                <dd class="">
+		                    <a href="//www.taobao.com/market/global/tejia.php?tagId=1010113" target="_self">��װ����<s></s></a>
+		                </dd>
+		                		                <dd class="">
+		                    <a href="//www.taobao.com/market/global/tejia.php?tagId=1010115" target="_self">ĸӤ��ͯ<s></s></a>
+		                </dd>
+		                		                <dd class="cur">
+		                    <a href="//www.taobao.com/market/global/tejia.php?tagId=1010121" target="_self">�������<s></s></a>
+		                </dd>
+		                		                <dd class="">
+		                    <a href="//www.taobao.com/market/global/tejia.php?tagId=1010118" target="_self">�������<s></s></a>
+		                </dd>
+		                		                <dd class="">
+		                    <a href="//www.taobao.com/market/global/tejia.php?tagId=1010120" target="_self">��Ʒ����<s></s></a>
+		                </dd>
+		                		                <dd class="">
+		                    <a href="//www.taobao.com/market/global/tejia.php?tagId=1010122" target="_self">������Ʒ<s></s></a>
+		                </dd>
+		                		            </dl>
+		        </div>
+		    </div>
+		</div>
+	</div>
+	<div class="itemwrap">
+		<div class="oversea-wrap">
+			<ul class="itemlist clearfix">
+			
+			</ul>
+			<script type="text/tpl" class="J_ItemTmpl">
+				{{#each data as item}}
+				<li class="par-item">
+		            <dl class="to-item{{#if (status==='2'&&currentQuantity==='0')}} has-sold-out{{/if}}" data-id="">
+		                <dt>
+		                	<a href="//item.taobao.com/item.htm?id={{itemId}}" target="_blank">
+		                    <img data-ks-lazyload="{{picServer}}/{{activityPicUrl}}_210x210.jpg" width="210" height="210" alt=""></a>
+		                    {{#if (currentQuantity<50&&currentQuantity>0)}}
+		                    <span class="remain">��ʣ<em>{{currentQuantity}}</em>��</span>
+		                    {{/if}}
+		                </dt>
+		                <dd class="title"><a href="//item.taobao.com/item.htm?id={{itemId}}" target="_blank">{{title}}</a></dd>
+		                <dd><strong><em class="tb-rmb">&yen;</em>{{discountPrice}}</strong>��ꑶΰ��]<span class="will-start">������ʼ</span><span class="sold-out">������</span></dd>
+		                <dd><del><em class="tb-rmb">&yen;</em>{{reservePrice}}</del>|<span>����<b>{{currentSellOut}}</b>��</span></dd>
+		            </dl>
+		        </li>
+				{{/each}}
+			</script>
+			<div class="paginator clearfix">
+				
+			</div>
+		</div>
+	</div>
+
+	
+</div>
+</div></div><div class="J_Module skin-default" data-name="oversea-sidebar-feedback" data-skin="default" data-guid="14254338520700" id="guid-14254338520700" data-version="13" data-type="3"><div class="module"  data-spm="1998426953">
+<div class="tb-module oversea-sidebar-feedback">
+	<div class="sea-sidebar-lift" id="J_SideLift">
+	
+		<ul>
+			<li class="totop">
+				<a id="J_ToTop" href="javascript:;" data-spm-click="gostr=/tbos;locaid=d1"><span class="icon-mask sea-icon">&#xe603;</span><span class="text-mask">�ص�픲�</span></a>
+			</li>
+								</ul>
+	
+	</div>
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div>
+<script src="//atp.alicdn.com/tmse/1/dpl/??oversea-banner-overlay/v17/oversea-banner-overlay.js,oversea-banner-100/v6/oversea-banner-100.js,oversea-floor-item5-tejia/v13/oversea-floor-item5-tejia.js,oversea-sidebar-feedback/v13/oversea-sidebar-feedback.js"></script>
+
+<script>KISSY.use("node",function(a){window.renderCallback=function(b,d){var c=a.one(b),e=c.attr("data-name");c.one(".tb-module").hasClass("tb-finish")||a.use(e,function(a,c){new c(b,d)})};a.each(a.all(".J_Module"),function(b){renderCallback(b,a.one(b).one(".tb-module")[0])})});</script> <!-- 20141212��ٶ�������ͷ -->
+<style>
+  .footer_2014{
+    width: 1190px;
+    margin: 0 auto;
+  }
+  .w990 .footer_2014{
+    width: 990px;
+  }
+
+</style>
+<div class="footer_2014">
+<style>
+.footer{position:relative;margin:0 auto;padding:7px 0 9px;border-top:1px solid #ddd}.footer .footer-bd p,.footer .footer-hd p{padding-bottom:8px;overflow:hidden;*zoom:1}.footer .footer-bd a,.footer .footer-hd a{display:inline;float:left;margin:0 4px;white-space:nowrap;color:#6c6c6c}.footer .footer-bd a:hover,.footer .footer-hd a:hover{color:#f40;text-decoration:none}.footer .footer-bd b,.footer .footer-hd b{display:inline;float:left;margin:0 3px;font-weight:400;color:#ddd}.footer .footer-bd em,.footer .footer-bd span,.footer .footer-hd em,.footer .footer-hd span{display:inline;float:left;white-space:nowrap;color:#9c9c9c}.footer .footer-bd em,.footer .footer-hd em{margin-left:30px}.footer .footer-bd span,.footer .footer-hd span{margin:0 4px}.footer .footer-bd span a,.footer .footer-hd span a{float:none}.footer .footer-hd p{margin-bottom:8px;line-height:27px;border-bottom:1px solid #ddd}.footer .foot-ft{display:none}
+</style><div class="footer" data-spm="1997523009">
+  <div class="footer-hd">
+    <p>
+      <a href="http://www.alibabagroup.com/cn/global/home">����Ͱͼ���</a>
+      <b>|</b>
+      <a href="//www.taobao.com">�Ա���</a>
+      <b>|</b>
+      <a href="//www.tmall.com">��è</a>
+      <b>|</b>
+      <a href="//ju.taobao.com">�ۻ���</a>
+      <b>|</b>
+      <a href="http://www.aliexpress.com">ȫ������ͨ</a>
+      <b>|</b>
+      <a href="http://www.alibaba.com/">����Ͱ͹��ʽ����г�</a>
+      <b>|</b>
+      <a href="http://www.1688.com">1688</a>
+      <b>|</b>
+      <a href="http://www.alimama.com">��������</a>
+      <b>|</b>
+      <a href="//www.alitrip.com">�������� �� ȥ��</a>
+      <b>|</b>
+      <a href="http://www.aliyun.com">�����Ƽ���</a>
+      <b>|</b>
+      <a href="http://www.yunos.com">YunOS</a>
+      <b>|</b>
+      <a href="http://www.aliqin.cn/">����ͨ��</a>
+      <b>|</b>
+      <a href="http://www.etao.com/">һ��</a>
+      <b>|</b>
+      <a href="http://www.net.cn">����</a>
+      <b>|</b>
+      <a href="http://www.autonavi.com/">�ߵ�</a>
+      <b>|</b>
+      <a href="http://www.uc.cn/">UC</a>
+      <b>|</b>
+      <a href="http://www.umeng.com/">����</a>
+      <br>
+      <a href="http://www.xiami.com">Ϻ��</a>
+      <b>|</b>
+      <a href="http://www.ttpod.com/">���춯��</a>
+      <b>|</b>
+      <a href="http://www.laiwang.com/">����</a>
+      <b>|</b>
+      <a href="http://www.dingtalk.com/?lwfrom=20150130160830727">����</a>
+      <b>|</b>
+      <a href="https://www.alipay.com">֧����</a>
+    </p>
+  </div>
+  <div class="footer-bd">
+    <p>
+      <a href="//www.taobao.com/about">�����Ա�</a>
+      <a href="//www.taobao.com/about/partners.php">�������</a>
+      <a href="//pro.taobao.com">Ӫ������</a>
+      <a href="http://jubao.alibaba.com" >�����ٱ�</a>
+      <a href="//service.taobao.com/support/main/service_route.htm">��ϵ�ͷ�</a>
+      <a href="//open.taobao.com">����ƽ̨</a>
+      <a href="//www.taobao.com/about/join.php">����Ӣ��</a>
+      <a href="//www.taobao.com/about/contact.php">��ϵ����</a>
+      <a href="//www.taobao.com/sitemap.php">��վ��ͼ</a>
+      <a href="//www.taobao.com/go/chn/tb-fp/2014/law.php">��������</a>
+      <em>&copy; 2003-2016 Taobao.com ��Ȩ����</em>
+    </p>
+    <p>
+      <span>�����Ļ���Ӫ���֤��<a href="//img.alicdn.com/tps/i2/TB1YFcPLpXXXXaiXFXXcaDpFFXX-803-473.png">������[2013]0268-027��</a></span>
+      <b>|</b>
+      <span data-spm-protocol="i">��ֵ����ҵ��Ӫ���֤��<a href="http://zcainfo.miitbeian.gov.cn/state/outPortal/loginPortal.action">��B2-20080224-1</a></span>
+      <b>|</b>
+      <span>��Ϣ���紫��������Ŀ���֤��1109364��</span>
+      <b>|</b>
+      <span> ������Υ���Ͳ�����Ϣ�ٱ��绰:0571-81683755 blxx@list.alibaba-inc.com </span>
+    </p>
+  </div>
+  <div class="footer-ft">
+    
+            <a href="http://www.pingpinganan.gov.cn/" class="mod " >
+                <img width="36" alt="��������" height="36" src="//img.alicdn.com/tps/i1/T1FeW3XXNfXXXXXXXX-36-36.gif">
+              </a>
+            <a href="http://idinfo.zjaic.gov.cn/bscx.do?spm=1.7274553.1997523009.28.alN7ce&method=hddoc&id=33018400000067" class="mod mod-a" >
+              </a>
+            <a href="http://idinfo.zjaic.gov.cn/bscx.do?spm=1.7274553.1997523009.29.alN7ce&method=hddoc&id=33018400000067" class="mod mod-b" >
+              </a>
+            <a href="http://www.theclimategroup.org.cn/about/friend?spm=1.7274553.1997523009.30.alN7ce" class="mod mod-c" >
+              </a>
+            <a href="https://ss.knet.cn/verifyseal.dll?spm=1.7274553.1997523009.31.alN7ce&&sn=2010062300100001357&pa=20100701" class="mod mod-d" >
+              </a>
+            <a href="http://www.ppaaol.com/verifySite.do?spm=1.7274553.1997523009.32.alN7ce&id=1051" class="mod mod-e" >
+              </a>
+            <a href="http://www.12377.cn/" class="mod mod-f" >
+              </a>
+            <a href="http://www.12377.cn/node_548446.htm" class="mod mod-h" >
+              </a>
+            <a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/2E7819FC84674D5980464916C24B7E3E" class="mod mod-g" >
+              </a>
+          
+  </div>
+</div></div>
+</html>

@@ -1,0 +1,10 @@
+E:\C#\HomeWork_CSharp\HomeWork10\Clawler\bin\Debug\Clawler.exe.config
+E:\C#\HomeWork_CSharp\HomeWork10\Clawler\bin\Debug\Clawler.exe
+E:\C#\HomeWork_CSharp\HomeWork10\Clawler\bin\Debug\Clawler.pdb
+E:\C#\HomeWork_CSharp\HomeWork10\Clawler\obj\Debug\HomeWork10.csprojAssemblyReference.cache
+E:\C#\HomeWork_CSharp\HomeWork10\Clawler\obj\Debug\Clawler.littleCrawler.resources
+E:\C#\HomeWork_CSharp\HomeWork10\Clawler\obj\Debug\Clawler.Properties.Resources.resources
+E:\C#\HomeWork_CSharp\HomeWork10\Clawler\obj\Debug\HomeWork10.csproj.GenerateResource.cache
+E:\C#\HomeWork_CSharp\HomeWork10\Clawler\obj\Debug\HomeWork10.csproj.CoreCompileInputs.cache
+E:\C#\HomeWork_CSharp\HomeWork10\Clawler\obj\Debug\Clawler.exe
+E:\C#\HomeWork_CSharp\HomeWork10\Clawler\obj\Debug\Clawler.pdb

@@ -1,0 +1,344 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="data-spm" content="a210m">
+    <meta charset="utf-8">
+    <title>淘宝论坛</title>
+    <link rel="shortcut icon" type="image/x-icon" href="//www.taobao.com/favicon.ico">
+    <link rel="stylesheet" href="//g.alicdn.com/tb/global/3.3.10/global-min.css">
+    <link rel="stylesheet" type="text/css" href="${assets}/css/deliver.css">
+    <script src="//g.alicdn.com/??kissy/k/1.4.14/seed-min.js,tb/global/3.3.10/global-min.js"></script>
+<link rel="stylesheet" href="//g.alicdn.com/??kg/global-util/1.0.6/index-min.css,kg/tb-nav/2.4.1/index-min.css">
+<script src="//g.alicdn.com/??kissy/k/1.4.16/seed-min.js,kg/kmd-adapter/0.1.5/index.js,kg/kmd-adapter/0.1.5/util.js,kg/global-util/1.0.7/index-min.js,tb/tracker/4.3.18/index.js,kg/tb-nav/2.5.4/index-min.js"></script></head>
+    <body  data-spm="$!spmb"><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&trid=210595d016207391089054182ebd37&asid=AQAAAAAkhJpgAUeXMwAAAAALLfN3oD/7sA==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+
+<div class="site-nav" id="J_SiteNav" data-component-config='{ "cart": "0.0.6","message": "3.4.6","umpp": "1.5.4","mini-login": "6.3.8","tb-ie-updater": "0.0.4","tbar": "2.1.0","tb-footer": "1.1.8","sidebar": "1.0.10" }' data-tbar='{ "show":true, "miniCart": "2.12.2","paramsBlackList": "_wt,seeyouagain1722","my_activity": "https:&#x2F;&#x2F;market.m.taobao.com&#x2F;apps&#x2F;abs&#x2F;5&#x2F;38&#x2F;my12?psId=58386&amp;pcPsId=58388", "venueUrl": "https:&#x2F;&#x2F;1212.taobao.com?wh_weex=true&amp;data_prefetch=true&amp;wx_navbar_transparent=true", "helpUrl": "https://consumerservice.taobao.com/online-help", "validTime":{"startTime": 1512057599, "endTime": 1513094400}, "style": {"name": "171212", "path": "kg/sidebar-style-171212/0.0.5/" }, "page":[],"blackList":[],"navDataId":{"tceSid":1182567,"tceVid":0},"pluginVersion":{ "cart":"0.2.0","history":"0.2.0","redpaper":"0.0.8","gotop":"0.2.5","help":"0.2.1","ww":"0.0.3","pagenav":"0.0.27","myasset":"0.0.9","my1212":"0.0.1","my1111":"0.2.2"}}'>
+    <div class="site-nav-bd" id="J_SiteNavBd">
+        
+        <ul class="site-nav-bd-l" id="J_SiteNavBdL" data-spm-ab="1">
+            
+            
+            <li class="site-nav-menu site-nav-login" id="J_SiteNavLogin" data-name="login" data-spm="754894437">
+                <div class="site-nav-menu-hd">
+                    <a href="//login.taobao.com/member/login.jhtml?f=top&redirectURL=https%3A%2F%2Fwww.taobao.com%2F" target="_top">
+                        
+                        <span>亲，请登录</span>
+                    </a>
+                    
+                </div>
+                
+            </li>
+            
+            
+            
+            
+            <li class="site-nav-menu site-nav-mobile" id="J_SiteNavMobile" data-name="mobile" data-spm="1997563273">
+                <div class="site-nav-menu-hd">
+                    <a href="https://market.m.taobao.com/app/fdilab/download-page/main/index.html" target="_top">
+                        
+                        <span>手机逛淘宝</span>
+                    </a>
+                    
+                </div>
+                
+            </li>
+            
+            
+            
+            
+            <li class="site-nav-menu site-nav-weekend site-nav-multi-menu J_MultiMenu" id="J_SiteNavWeekend" data-name="weekend" data-spm="201711111212">
+            </li>
+            
+            
+            
+        </ul>
+        
+        <ul class="site-nav-bd-r" id="J_SiteNavBdR" data-spm-ab="2">
+            
+            
+            <li class="site-nav-menu site-nav-home" id="J_SiteNavHome" data-name="home" data-spm="1581860521">
+                <div class="site-nav-menu-hd">
+                    <a href="//www.taobao.com/" target="_top">
+                        
+                        <span>淘宝网首页</span>
+                    </a>
+                    
+                </div>
+                
+            </li>
+            
+            
+            
+            
+            <li class="site-nav-menu site-nav-mytaobao site-nav-multi-menu J_MultiMenu" id="J_SiteNavMytaobao" data-name="mytaobao" data-spm="1997525045">
+                <div class="site-nav-menu-hd">
+                    <a href="//i.taobao.com/my_taobao.htm" target="_top">
+                        
+                        <span>我的淘宝</span>
+                    </a>
+                    
+                    <span class="site-nav-arrow"><span class="site-nav-icon">&#xe605;</span></span>
+                    
+                </div>
+                
+                <div class="site-nav-menu-bd site-nav-menu-list">
+                    <div class="site-nav-menu-bd-panel menu-bd-panel">
+                    
+                            <a href="//trade.taobao.com/trade/itemlist/list_bought_items.htm" target="_top">已买到的宝贝</a>
+                    
+                            <a href="//www.taobao.com/markets/footmark/tbfoot" target="_top">我的足迹</a>
+                    
+                    </div>
+                </div>
+                
+            </li>
+            
+            
+            
+            
+            <li class="site-nav-menu site-nav-cart site-nav-menu-empty site-nav-multi-menu J_MultiMenu" id="J_MiniCart" data-name="cart" data-spm="1997525049">
+                <div class="site-nav-menu-hd">
+                    <a href="//cart.taobao.com/cart.htm?from=mini&ad_id=&am_id=&cm_id=&pm_id=1501036000a02c5c3739" target="_top">
+                        <span class="site-nav-icon site-nav-icon-highlight">&#xe603;</span>
+                        <span>购物车</span>
+                        <strong class="h" id="J_MiniCartNum"></strong>
+                    </a>
+                    
+                    <span class="site-nav-arrow"><span class="site-nav-icon">&#xe605;</span></span>
+                    
+                </div>
+                <div class="site-nav-menu-bd">
+                    <div class="site-nav-menu-bd-panel menu-bd-panel">
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            <li class="site-nav-menu site-nav-favor site-nav-multi-menu J_MultiMenu" id="J_SiteNavFavor" data-name="favor" data-spm="1997525053">
+                <div class="site-nav-menu-hd">
+                    <a href="//shoucang.taobao.com/item_collect.htm" target="_top">
+                        <span class="site-nav-icon">&#xe604;</span>
+                        <span>收藏夹</span>
+                    </a>
+                    
+                    <span class="site-nav-arrow"><span class="site-nav-icon">&#xe605;</span></span>
+                    
+                </div>
+                
+                <div class="site-nav-menu-bd site-nav-menu-list">
+                    <div class="site-nav-menu-bd-panel menu-bd-panel">
+                    
+                            <a href="//shoucang.taobao.com/item_collect.htm" target="_top">收藏的宝贝</a>
+                    
+                            <a href="//shoucang.taobao.com/shop_collect_list.htm" target="_top">收藏的店铺</a>
+                    
+                    </div>
+                </div>
+                
+            </li>
+            
+            
+            
+            
+            <li class="site-nav-menu site-nav-catalog" id="J_SiteNavCatalog" data-name="catalog" data-spm="1997563209">
+                <div class="site-nav-menu-hd">
+                    <a href="//huodong.taobao.com/wow/tbhome/act/market-list" target="_top">
+                        
+                        <span>商品分类</span>
+                    </a>
+                    
+                </div>
+                
+            </li>
+            
+            
+            
+            
+            <li class="site-nav-menu site-nav-free" id="J_SiteNavFree" data-name="free" data-spm="1997525059">
+                <div class="site-nav-menu-hd">
+                    <a href="//ishop.taobao.com/openshop/tb_open_shop_landing.htm?accessCode=tbopenshop_personal" target="_top">
+                        
+                        <span>免费开店</span>
+                    </a>
+                    
+                </div>
+                
+            </li>
+            
+            
+            <li class="site-nav-pipe">|</li>
+            
+            
+            
+            <li class="site-nav-menu site-nav-seller site-nav-multi-menu J_MultiMenu" id="J_SiteNavSeller" data-name="seller" data-spm="1997525073">
+                <div class="site-nav-menu-hd">
+                    <a href="//myseller.taobao.com/home.htm" target="_top">
+                        
+                        <span>千牛卖家中心</span>
+                    </a>
+                    
+                    <span class="site-nav-arrow"><span class="site-nav-icon">&#xe605;</span></span>
+                    
+                </div>
+                
+                <div class="site-nav-menu-bd site-nav-menu-list">
+                    <div class="site-nav-menu-bd-panel menu-bd-panel">
+                    
+                            <a href="//ishop.taobao.com/openshop/tb_open_shop.htm?accessCode=tbopenshop_personal" target="_top">免费开店</a>
+                    
+                            <a href="//trade.taobao.com/trade/itemlist/list_sold_items.htm" target="_top">已卖出的宝贝</a>
+                    
+                            <a href="//sell.taobao.com/auction/goods/goods_on_sale.htm" target="_top">出售中的宝贝</a>
+                    
+                            <a href="//fuwu.taobao.com/?tracelog=tbdd" target="_top">卖家服务市场</a>
+                    
+                            <a href="//daxue.taobao.com/" target="_top">卖家培训中心</a>
+                    
+                            <a href="//healthcenter.taobao.com/home/health_home.htm" target="_top">体检中心</a>
+                    
+                            <a href="//infob.taobao.com/help" target="_top">问商友</a>
+                    
+                    </div>
+                </div>
+                
+            </li>
+            
+            
+            
+            
+            <li class="site-nav-menu site-nav-service site-nav-multi-menu J_MultiMenu" id="J_SiteNavService" data-name="service" data-spm="754895749">
+                <div class="site-nav-menu-hd">
+                    <a href="https://consumerservice.taobao.com" target="_top">
+                        
+                        <span>联系客服</span>
+                    </a>
+                    
+                    <span class="site-nav-arrow"><span class="site-nav-icon">&#xe605;</span></span>
+                    
+                </div>
+                
+                <div class="site-nav-menu-bd site-nav-menu-list">
+                    <div class="site-nav-menu-bd-panel menu-bd-panel">
+                    
+                            <a href="https://consumerservice.taobao.com/online-help" target="_top">消费者客服</a>
+                    
+                            <a href="//helpcenter.taobao.com/index?from=high" target="_top">卖家客服</a>
+                    
+                    </div>
+                </div>
+                
+            </li>
+            
+            
+            
+            
+            <li class="site-nav-menu site-nav-sitemap site-nav-multi-menu J_MultiMenu" id="J_SiteNavSitemap" data-name="sitemap" data-spm="1997525077">
+                <div class="site-nav-menu-hd">
+                    <a href="//huodong.taobao.com/wow/tbhome/act/sitemap" target="_top">
+                        <span class="site-nav-icon site-nav-icon-highlight">&#xe601;</span>
+                        <span>网站导航</span>
+                    </a>
+                    
+                    <span class="site-nav-arrow"><span class="site-nav-icon">&#xe605;</span></span>
+                    
+                </div>
+                
+            </li>
+            
+            
+            
+        </ul>
+        
+    </div>
+</div>
+
+<!--[if lt IE 9]>
+<style>html,body{overflow:hidden;height:100%}</style>
+<div class="tb-ie-updater-layer"></div>
+<div class="tb-ie-updater-box" data-spm="20161112">
+  <a href="https://www.google.cn/intl/zh-CN/chrome/browser/desktop/" class="tb-ie-updater-google" target="_blank" data-spm-click="gostr=/tbieupdate;locaid=d1;name=google">谷歌 Chrome</a>
+  <a href="http://www.uc.cn/ucbrowser/download/" class="tb-ie-updater-uc" target="_blank" data-spm-click="gostr=/tbieupdate20161112;locaid=d2;name=uc">UC 浏览器</a>"
+</div>
+<![endif]--><style>
+    .content {
+        background: url(http://gtms04.alicdn.com/tps/i4/TB1r.T_GVXXXXXCXpXXkeWo0VXX-1900-1200.jpg) 0px 0px / cover no-repeat fixed rgb(1, 158, 235);
+        position: absolute;
+        border-top: 1px solid #eee;
+        top: 30px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: 140px;
+        z-index: -1;
+    }
+
+    .area {
+        width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        border: 1px solid #fff;
+        -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.75);
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.75);
+    }
+
+    .retry-btn {
+        border-radius: 2px;
+        margin: 0 8px;
+        display: inline-block;
+        padding: 0 5px;
+        font-size: 12px;
+        line-height: 22px;
+        background: #F40;
+        color: #FFF;
+        cursor: pointer;
+    }
+
+    .bbs-fail {
+        margin: 45px 60px;
+    }
+
+    .bbs-fail li {
+        line-height: 36px;
+    }
+
+    .bbs-fail h4 {
+        margin: 18px 0;
+        line-height: 32px;
+    }
+</style>
+<div style="height: 44px;
+            line-height: 44px;
+            background-color: #fdfbe4;
+            font-size: 14px;
+            text-align: center;
+            position: relative;">
+        <div style="text-align: center;
+                    display: inline-block;
+                    vertical-align: middle;">
+        【重要公告】淘宝论坛将与千牛头条完成产品融合，我们将逐渐关闭论坛相关功能:
+            <a href="https://easetao.bbs.taobao.com/detail.html?postId=9372917" target="_blank" style="color: #ff4200">
+                公告详情
+            </a>，请大家移步<a href="https://market.m.taobao.com/app/qn/toutiao-h5/index.html?spm=a211vu.11758832.0.0.430849e2u7nNiH#!/pages/index/index" target="_self" style="color: #ff4200">千牛头条</a>
+        </div>
+    </div><div class="content">
+    <div class="area">
+        <div class="bbs-fail">
+  		<h4>404：该站点已经停止维护或者已经下线。</h4>
+  <ul>
+    <li>点击<a href="http://www.taobao.com" class="retry-btn">这里</a>去淘宝逛逛...</li>
+    <li>点击<a href="https://market.m.taobao.com/app/qn/toutiao-h5/index.html?spm=a211vu.11758832.0.0.430849e2u7nNiH#!/pages/index/index" class="retry-btn">这里</a>去千牛头条看看...</li>
+  </ul>
+</div>
+    </div>
+</div>
+</body>
+</html>

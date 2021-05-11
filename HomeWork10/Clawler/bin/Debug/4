@@ -1,0 +1,355 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?fb481430f1a5a6c7044229532823b9fd";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="baidu-site-verification" content="GaTo5YnIV9" />
+    <title>百度用户服务中心-首页</title>
+    <meta name="keywords" content="百度服务中心、百度意见反馈、百度投诉反馈、百度倾听、百度帮助中心、百度产品投诉、百度产品意见">
+    <meta name="description" content="百度服务中心是百度客服官方网站，为您解决使用百度产品过程中遇到的问题，帮助用户更了解百度，也让百度更懂用户。">
+    <link rel="shortcut icon" href="/resources/images/favicon.ico"/>
+    
+
+
+
+        <link type="text/css" rel="stylesheet" href="/resources/pc/css/normalize.min.css?timestamp=20181226" />
+    <link type="text/css" rel="stylesheet" href="/resources/pc/css/global.min.css?timestamp=20181226" />
+        
+  <link type="text/css" rel="stylesheet" href="/resources/pc/css/reset.min.css?timestamp=20181226" />
+<link type="text/css" rel="stylesheet" href="/resources/pc/css/indexnew.min.css?timestamp=20181226" />
+<link type="text/css" rel="stylesheet" href="/resources/pc/css/tabSwitch.min.css?timestamp=20181226">
+<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.layuicdn.com/layui-v2.5.5/css/layui.css">
+<link rel="stylesheet" href="/resources/pc/fontIcon/iconfont.m.css?timestamp=20181226" />
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/layui/2.5.5/layui.all.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/resources/pc/js/lib/tangram-2.0.2.1.min.js"></script>
+    <!--[if (!IE)|(gte IE 9)]><!-->
+    <!-- <script type="text/javascript" src="/resources/pc/js/lib/jquery-3.2.1.min.js"></script> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
+    
+        <script type="text/javascript" src="https://passport.baidu.com/passApi/js/uni_login_wrapper.js?cdnversion=202105112118"></script>
+            <script type="text/javascript" src="/resources/pc/js/dist/common.min.js?timestamp=20181226"></script>
+        <!--<![endif]-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/resources/js/lib/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="/resources/js/common.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        $(function () {
+            login.init('https://passport.baidu.com', 'http://help.baidu.com/resources/html/jump.html', 'service_feedback');
+        });
+    </script>
+</head>
+<body>
+
+    
+
+<div class="service" style="display: none;">
+    <div class="advice-box">
+        <img class="advice" src="/resources/pc/images/img/服务咨询静态.png"></img>
+        <p> 服务咨询 </p>
+        <!-- 百度热线 -->
+        <div class="hot-tip">
+            <p class="hot-line"> 百度热线 </p>
+            <p class="line"> 400-921-3900 </p>
+        </div>
+    </div>
+    
+</div>
+<div class="header-v">
+    <div class="header-first">
+        <div class="top-head clearfix">
+            <div class="top">
+                <div class="top-head-left">
+                    <img src="/resources/pc/images/img/百度彩色logo.png" alt="这是百度logo">
+
+                </div>
+                <div class="top-head-right">
+                                        <span class="notlogin" id="btnLogin" >登录</span>
+                    <a href="https://passport.baidu.com/v2/?reg&tpl=service_feedback&u=" class="register">注册</a>
+                                    </div>
+            </div>
+            <div class="content-back">
+                <div class="back">
+                    <div class="search">
+                        
+                        <form class="search-form" action="/search" name="f" id="searchForm">
+                            <div class="search-form-box">
+                                <input id="search_txt"
+                                       value=""
+                                       placeholder="请简单描述您遇到的问题" type="text" class="search-key" x-webkit-speech="true"
+                                       name="keywords" autocomplete="off" />
+                                <div class="btn">
+                                    <a id='submit'>
+                                        <img src="/resources/pc/images/img/search.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <ul id="searchSuggest" class="suggestion search-show" style="display: none;"></ul>
+                        </form>
+
+                    </div>
+                                                            <a href="/search?keywords=%E7%99%BE%E5%BA%A6%E5%B8%90%E5%8F%B7%E8%A2%AB%E7%9B%97"><button type="button"
+                            class="layui-btn layui-btn-radius layui-btn-normal firstBtn animated">百度帐号被盗</button></a>
+                                                                                                                                                                                                        <a href="/search?keywords=%E5%A6%82%E4%BD%95%E4%B8%BE%E6%8A%A5%E7%BD%91%E7%AB%99"><button type="button"
+                            class="layui-btn layui-btn-radius layui-btn-normal secondBtn animated">如何举报网站</button></a>
+                                                                                                                                                                                                        <a href="/search?keywords=%E6%8A%95%E8%AF%89%E4%BE%B5%E6%9D%83%E4%BF%A1%E6%81%AF"><button type="button"
+                            class="layui-btn layui-btn-radius layui-btn-normal threeBtn animated">投诉侵权信息</button></a>
+                                                                                                                                                                                                        <a href="/search?keywords=%E5%88%A0%E9%99%A4%2F%E6%9B%B4%E6%96%B0%E5%BF%AB%E7%85%A7"><button type="button"
+                            class="layui-btn layui-btn-radius layui-btn-normal fourBtn animated">删除/更新快照</button></a>
+                                                                                                                                                                                                        <a href="/search?keywords=%E7%BD%91%E7%9B%98%E5%88%86%E4%BA%AB%E8%A2%AB%E5%B1%8F%E8%94%BD"><button type="button"
+                            class="layui-btn layui-btn-radius layui-btn-normal fiveBtn animated">网盘分享被屏蔽</button></a>
+                                                                                                                                                                                                        <a href="/search?keywords=%E7%BD%91%E6%B0%91%E6%9D%83%E7%9B%8A%E4%BF%9D%E9%9A%9C%E8%AE%A1%E5%88%92"><button type="button"
+                            class="layui-btn layui-btn-radius layui-btn-normal sixBtn animated">网民权益保障计划</button></a>
+                                                                                                                                                                                    
+                    <img class="person" src="/resources/pc/images/img/人物.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="item item-weixin">
+    <div class="weixin-code"></div>
+</div>
+<div class="item item-weibo">
+    <div class="weibo-code"></div>
+</div>
+<a href="javascript:window.scroll(0,0);">
+    <div class="item item-zhiding"></div>
+</a>
+</div> 
+<div class="content-serve">
+    <div class="serve-head motion-serve scroll-hidden">
+        <h1>服务支持</h1>
+    </div>
+
+    <div class="serve-list">
+        <div class="serve-item">
+            <a href="https://passport.baidu.com/center" target="_blank">
+                <div class="imgText">
+                    <img src="/resources/pc/images/img/账号安全.svg" alt="" class="img">
+                    <p>账号安全</p>
+                </div>
+                <div class="text">
+                    <p>密码及密保工具管理</p>
+                    <p>身份认证及账户关联</p>
+                    <p>账户申诉及在线客服</p>
+                </div>
+            </a>
+        </div>
+        <div class="serve-item">
+            <a href="http://baozhang.baidu.com/guarantee/" target="_blank">
+                <div class="imgText">
+                    <img src="/resources/pc/images/img/权益保障.svg" alt="" class="img">
+                    <p>权益保障</p>
+                </div>
+                <div class="text">
+                    <p>假冒官网受经济损失</p>
+                    <p>申请保障金及维权支持</p>
+                    <p>保障网民的消费权益</p>
+                </div>
+            </a>
+        </div>
+        <div class="serve-item">
+            <a href="/zhifu" target="_blank">
+                <div class="imgText">
+                    <img src="/resources/pc/images/img/支付相关.svg" alt="" class="img">
+                    <p>支付相关</p>
+                </div>
+                <div class="text">
+                    <p>VIP用户问题反馈</p>
+                    <p>24小时客服查询</p>
+                    <p>VIP开通页面直达</p>
+                </div>
+
+            </a>
+        </div>
+        <div class="serve-item">
+            <a href="/jubao" target="_blank">
+                <div class="imgText">
+                    <img src="/resources/pc/images/img/不良信息.svg" alt="" class="img">
+                    <p>不良信息</p>
+                </div>
+                <div class="text">
+                    <p>垃圾广告信息举报</p>
+                    <p>色情反动有害信息举报</p>
+                    <p>危险品赌博信息举报</p>
+                </div>
+            </a>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div >
+
+<div id='pcindexall'>
+
+</div>
+
+
+<!-- 网络安全 -->
+<div class="content-save">
+    <div class="save-head motion scroll-hidden">   
+        <h1>网络安全</h1>
+    </div>
+   
+        <div class="save-content">
+            <div class="net-work clearfix">
+                <div class="man-grass"> <img src="/resources/pc/images/img/man-grass.png" alt=""></div>
+                <img src="/resources/pc/images/img/man.png" alt="" class="man">
+                <!-- <div class="video-play motion scroll-hidden">
+               
+                <!-- 警告 -->
+                <div class="content-alarm">
+                    <div class="alarm-item alarm-item-china motion scroll-hidden">
+                        <div class="left">
+                            <img src="/resources/pc/images/img/中国举报.svg" alt="中国互联网举报中心">
+                        </div>
+                        <div class="right">
+                            <a href="http://www.12377.cn/" target="_blank">
+                                <p class="title">中国互联网举报中心</p>
+                            </a>
+                            <p class="desc">中国互联网违法和不良信息举报中心是中央网络安全和信息化(国家互联网信息办公室)直属事业单位。<br />举报电话：12377</p>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <div class="alarm-item alarm-item-bj motion scroll-hidden">
+                        <div class="left">
+                            <img src="/resources/pc/images/img/北京举报.svg" alt="北京互联网举报中心">
+                        </div>
+                        <div class="right">
+                            <a href="http://www.bjjubao.org/" target="_blank">
+                                <p class="title">北京互联网举报中心</p>
+                            </a>
+                            <p class="desc">北京互联网举报中心举报电话：010-67196565/010-67196566</p>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <div class="alarm-item alarm-item-net motion scroll-hidden">
+                        <div class="left">
+                            <img src="/resources/pc/images/img/网络110.svg" alt="网络110报警服务">
+                        </div>
+                        <div class="right">
+                            <a href="http://www.cyberpolice.cn/wfjb/" target="_blank">
+                                <p class="title">网络110报警服务</p>
+                            </a>
+                            <p class="desc">网络违法犯罪举报网站不具备现场、紧急报警的受理功能，如您的情况紧急，请立即拨打报警电话"110"</p>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+                <div class="woman-grass"> <img src="/resources/pc/images/img/woman-grass.png" alt=""></div>
+                <img src="/resources/pc/images/img/woman.png" alt="" class="woman">
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    <!-- </div>  -->
+</div>
+
+<div class="content-contact">
+    <div class="contact-head motion scroll-hidden">
+        <h1>联系我们</h1>
+    </div>
+    <div class="contact-w motion scroll-hidden">
+        <div class="wx">
+            <a href="javascript:;" class="wxBox">
+                <img class="wxAccount" src="/resources/pc/images/img/微信码位图.png" alt="微信公众号">
+            </a>
+            <p class="wx-title">微信公众号</p>
+        </div>
+        <div class="wb">
+            <a href="javascript:;" class="wbBox">
+                <img class="wbAccount" src="/resources/pc/images/img/微博码位图.png" alt="微博公众号">
+            </a>
+            <p class="wb-title">官方微博</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="content-copy">
+    <ul class="copy-top">
+        <li>
+            <img src="/resources/pc/images/img/关于百度.svg" alt="这是一个图标">
+            <a href="http://home.baidu.com" target="_blank">关于百度</a>
+        </li>
+        <li>
+            <img src="/resources/pc/images/img/关于百度.svg" alt="这是一个图标">
+            <a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome"" target=" _blank">ABOUT BAIDU</a>
+        </li>
+        <li>
+            <img src="/resources/pc/images/img/使用百度前必读.svg" alt="这是一个图标">
+            <a href="http://www.baidu.com/duty/" target="_blank">使用百度前必读</a>
+        </li>
+        <li>
+            <img src="/resources/pc/images/img/举报受理声明.svg" alt="这是一个图标">
+            <a href="/statement">举报受理声明</a>
+        </li>
+        <li>
+            <img src="/resources/pc/images/img/个人信息咨询.svg" alt="这是一个图标">
+            <a href="/personalinformation">个人信息咨询</a>
+        </li>
+        <div style="clear: both;"></div>
+    </ul>
+    <div class="copy-bottom">
+        <ul>
+            <li>京ICP证030173号</li>
+            <li>京网文[2013]]0934-9833号</li>
+            <li>Copyright &copy;
+                <script>document.write((new Date()).getFullYear());</script> Baidu</li>
+            <div style="clear: both;"></div>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+<!--[if lt IE 9]>
+
+<script type="text/javascript" src="/resources/js/commonFankui.js"></script>
+<script>
+    var html = '<div class="browser-up-tip">您的<span style="color:red;">浏览器版本太低</span>，为了给您带来更好的体验，建议您的浏览器升级为<a href="http://rj.baidu.com/soft/detail/14744.html?ald" target="_blank">谷歌浏览器</a>或者<a href="http://rj.baidu.com/soft/detail/11843.html?ald" target="_blank">Firefox火狐浏览器</a>，如需<a href="/index2">继续访问</a>将前往低版本服务中心平台，谢谢!</div>';
+    Popup.init({
+        type: 'html',
+        content: html,
+        width: 560,
+        height: 350
+    });
+    Popup.overlay.unbind('click');
+    $('#popupTitle').find('.pop-ico-close').remove();
+</script>
+<![endif]-->
+
+<script src="/resources/pc/js/dist/indexnew.min.js?timestamp=20181226"></script>
+<script>var sugapi="http://"+window.location.host;</script>
+<script type="text/javascript" src="/resources/pc/js/src/sug.js"></script>
+
+</body>
+
+
+</html>

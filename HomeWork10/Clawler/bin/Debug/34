@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>�������-����-�Ա���</title>
+<link href="http://www.taobao.com/home/css/sys/help.css" rel="stylesheet" type="text/css" />
+</head>
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&udpid=&&yunid=&&trid=3da8641a16207391022504131e&asid=AQAAAAAehJpgVAEmNAAAAAAjXsiZ2+AmVA==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&asid=AQAAAAAehJpg9EdjdgAAAAAj37PKBUgp7w==&sidx=Y41RwjatUcTpo9Rx4FJH2lGepbu+3Txy3Uju9bZJWvWTBFzExMkj31B8NbvnKfiiwZC+HkOI6Pa7zQqlp1jm6QaAicmGlxSbx47FgpbuJcKqJZfQ+x3W1XsBi3VH7mxccfXdcHjtsXci18GxgQCUdimeihECORlfoRlmbXDXFyA=",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+
+
+
+<div id="help" class="saler">
+	<div class="tab">
+    	<a href="buy_step1_01.html" class="tab-buyer">�������</a>
+        <a href="sell_step1_01.html" class="tab-saler">�������</a>
+<a href="http://service.taobao.com/support/help.htm" class="back-home">������ҳ</a>
+    </div>
+    <div class="step">
+    	<a href="sell_step1_01.html" class="step1">�˻�ע��</a>
+        <a href="sell_verify_apply.php?step=step1" class="step1 step1-on">��Ҫ����</a>
+        <div class="step2-box"><a href="sell_verify_apply.php?step=step1" class="step2 step2-on">������֤</a><a href="sell_verify_pass.php?step=step1" class="step2">���Լ���������</a></div>
+  		<a href="sell_openshop.php?step=step1" class="step1">��������</a>
+        <a href="sell_step4_01.html" class="step1">��������</a>
+        <a href="sell_step5_01.html" class="step1">����&amp;����</a>
+  	</div>
+    <div class="sub-step" id="J_sub_step">
+		<span><a href="?step=step1" class="sub-step-on">��1��</a><a href="?step=step2">��2��</a><a href="?step=step3">��3��</a><a href="?step=step4">��4��</a><a href="?step=step5">��5��</a><a href="?step=step6">��6��</a></span><span><a href="?step=step7">��7��</a><a href="?step=step8">��8��</a><a href="?step=step9">��9��</a><a href="?step=step10">��10��</a><a href="?step=step11">��11��</a><a href="?step=step12">��12��</a></span><span><a href="?step=step13">��13��</a><a href="?step=step14">��14��</a><a href="?step=step15">��15��</a><a href="?step=step16" class="sub-step-last">��16��</a><span>    </div>
+    <div class="show-box">
+		
+		<img src="http://img03.taobaocdn.com/tps/i3/T1.bGuXapYXXXXXXXX-900-570.gif"  border="0" usemap="#Map1" /><map name="Map1" id="Map1"><area shape="rect" coords="563,3,637,23" href="?step=step2" /></map>
+		
+
+  </div>
+<div class="go-top">
+    	<a href="#help">top</a>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>

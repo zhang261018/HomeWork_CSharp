@@ -1,0 +1,748 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js"></script>
+
+    <!--[if lt IE 9]>
+	    <script src="./static/html5shiv.js"></script>
+    <![endif]-->
+
+    <link href="./index.css" rel="stylesheet" type="text/css" />
+    <link href="./static/normalize.css" rel="stylesheet" type="text/css" />
+
+    <title>隐私设置</title>
+
+</head>
+<body>
+    <div id="privacy-body">
+        <header>
+            <div class="privacy-mainHeader">
+                <div class="privacy-header-left">
+                    <a href="https://www.baidu.com">
+                        <img
+                        src="https://www.baidu.com/img/baidu_jgylogo3.gif"
+                        alt="百度"
+                        class="privacy-img"
+                        >
+                    </a>
+                </div>
+                <div class="privacy-header-right" id="privacy-feedback">
+                    <a href="#">反馈</a>
+                </div>
+                <div class="privacy-header-right">
+                    <a href="https://www.baidu.com/">百度首页</a>
+                </div>
+                <div class="privacy-header-right">
+                    <a href="http://home.baidu.com/">关于百度</a>
+                </div>
+            </div>
+        </header>
+
+        <div id="privacy-body">
+            <div id="mainContent">
+                <div class="privacy-main-container-settings">
+                    <div id="aboutToShow">
+                        <main>
+                            <a href="#">
+                                <h1 class="privacy-title privacy-title-gap" >
+                                    隐私设置
+                                    <div class="privacy-title-betamark-wrapper">Beta</div>
+                                </h1>
+                            </a>
+                            <div class="privacy-wrap">
+                                <div class="privacy-menu-settings" id="privacy-history">
+                                  <div class="privacy-menu-settings-topitem">
+                                      <!-- icon -->
+                                      <div class="privacy-icon-wrap">
+                                          <img src="img/privacy/journal.png"/>
+                                      </div>
+                                      <!-- 内容 -->
+                                      <div class="privacy-menu-settings-topitem-left">
+                                          <div class="privacy-menu-settings-title">
+                                              记录搜索行为日志
+                                          </div>
+                                          <div class="privacy-menu-settings-paragraph-light">
+                                              开启时，可获得更好搜索体验；关闭后，将不再继续记录您的搜索行为，这会降低搜索效率
+                                          </div>
+                                      </div>
+                                    <!-- button -->
+                                      <div class="privacy-menu-settings-togglebutton">
+                                          <span class="privacy-history-setting-switch">
+                                                  <label class="privacy-swtich-hide"></label>
+                                                  <label class="privacy-history-setting-switch-close">
+                                                  </label>
+                                                  <label class="privacy-switch-button privacy-switch-button-persoanl">
+                                                      <input type="checkbox" class="privacy-history-setting-checkbox-persoanl" data-type="record" checked="checked">
+                                                      <span></span>
+                                                  </label>
+                                          </span>
+                                      </div>
+
+                                  </div>
+                                  <!-- 分隔线 -->
+                                  <div class="privacy-line-wrap privacy-menu-settings-item-sug"></div>
+                                  <div class="privacy-menu-settings-topitem privacy-menu-settings-item-sug">
+                                      <!-- icon -->
+                                      <div class="privacy-icon-wrap">
+                                          <img src="img/privacy/history.png"/>
+                                      </div>
+                                      <!-- 内容 -->
+                                      <div class="privacy-menu-settings-topitem-left">
+                                          <div class="privacy-menu-settings-title privacy-menu-settings-title-sug">
+                                              展现搜索历史词
+                                          </div>
+                                          <div class="privacy-menu-settings-paragraph-light">
+                                              可通过此功能开启或关闭搜索下拉框中的搜索历史
+                                          </div>
+                                      </div>
+                                    <!-- button -->
+                                      <div class="privacy-menu-settings-togglebutton">
+                                          <span class="privacy-history-setting-switch">
+                                                  <label class="privacy-swtich-hide"></label>
+                                                  <label class="privacy-history-setting-switch-close">
+                                                  </label>
+                                                  <label class="privacy-switch-button privacy-switch-button-sug">
+                                                      <input type="checkbox" class="privacy-history-setting-checkbox-sug" data-type="record" checked="checked">
+                                                      <span></span>
+                                                  </label>
+                                          </span>
+                                      </div>
+                                  </div>
+                                  <!-- 分隔线 -->
+                                  <div class="privacy-line-wrap"></div>
+                                  <a href="http://i.baidu.com/my/history?from=ps">
+                                      <div class="privacy-menu-settings-topitem privacy-more">
+                                          <div class="privacy-menu-settings-title">
+                                              查看/清理搜索历史词
+                                              <div class="privacy-menu-settings-arrow">
+                                                  <svg width="15" height="15">
+                                                      <image xlink:href="./img/arrow.svg" src="./img/arrow.png" width="15" height="15" />
+                                                  </svg>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </a>
+                                </div>
+
+                                <div class="privacy-menu-settings">
+                                    <div class="privacy-menu-settings-topitem">
+                                        <!-- icon -->
+                                        <div class="privacy-icon-wrap">
+                                            <img src="img/privacy/phone.png"/>
+                                        </div>
+                                        <!-- 内容 -->
+                                        <div class="privacy-menu-settings-topitem-left">
+                                            <div class="privacy-menu-settings-title">
+                                                手机号搜索展现保护
+                                                <div class="privacy-tips-wrap">
+                                                    <div class="privacy-menu-settings-title-mark privacy-menu-settings-title-mark-tel">
+                                                        !
+                                                    </div>
+                                                    <div class="privacy-menu-settings-title-details privacy-hide">
+                                                        当您开启搜索展现保护后，所有人以您绑定的手机号码作为关键词搜索时，结果中将不会出现您的个人信息（号码标注特型结果除外，如百度手机卫士、电话邦等标注服务）。<strong>如您的号码绑定了多个账户，则有任何一个开启设置，号码都将受到保护</strong>。设置会在<strong>次日生效</strong>。
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="privacy-menu-settings-paragraph-light-tel">
+                                                开启后，搜索绑定的手机号时，结果中将不再展示您的个人信息
+                                            </div>
+                                        </div>
+                                        <!-- button -->
+                                        <div class="privacy-menu-settings-togglebutton">
+                                            <span class="privacy-history-setting-switch">
+                                                    <label class="privacy-swtich-hide"></label>
+                                                    <label class="privacy-history-setting-switch-close">
+                                                    </label>
+                                                    <label class="privacy-switch-button privacy-switch-button-tel">
+                                                        <input type="checkbox" class="privacy-history-setting-checkbox-tel" data-type="record" checked="checked">
+                                                        <span></span>
+                                                    </label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- 分隔线 -->
+                                    <div class="privacy-line-wrap"></div>
+                                    <div class="privacy-menu-settings-topitem">
+                                        <!-- icon -->
+                                        <div class="privacy-icon-wrap">
+                                            <img src="img/privacy/card.png"/>
+                                        </div>
+                                        <!-- 内容 -->
+                                        <div class="privacy-menu-settings-topitem-left">
+                                            <div class="privacy-menu-settings-title">
+                                                身份证号搜索展现保护
+                                                <div class="privacy-tips-wrap">
+                                                    <div class="privacy-menu-settings-title-mark privacy-menu-settings-title-mark-id">
+                                                        !
+                                                    </div>
+                                                    <div class="privacy-menu-settings-title-details privacy-hide">
+                                                      当您开启搜索展现保护后，所有人以您绑定的身份证号码作为关键词搜索时，搜索结果将不会出现您的个人信息。<strong>如您的号码绑定了多个账户，则有任何一个开启设置，号码都将受到保护</strong>。设置会在<strong>次日生效</strong>。
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="privacy-menu-settings-paragraph-light-tel">
+                                                开启后，搜索绑定的身份证号时，结果中将不再展示您的个人信息
+                                            </div>
+                                        </div>
+                                        <!-- button -->
+                                        <div class="privacy-menu-settings-togglebutton">
+                                            <span class="privacy-history-setting-switch">
+                                                    <label class="privacy-swtich-hide"></label>
+                                                    <label class="privacy-history-setting-switch-close">
+                                                    </label>
+                                                    <label class="privacy-switch-button privacy-switch-button-id">
+                                                        <input type="checkbox" class="privacy-history-setting-checkbox-id" data-type="record" checked="checked">
+                                                        <span></span>
+                                                    </label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- 分隔线 -->
+                                    <div class="privacy-line-wrap"></div>
+                                    <!-- 更多 -->
+                                    <a href="https://passport.baidu.com/center?tpl=sd_privacy_terms">
+                                        <div class="privacy-menu-settings-topitem privacy-more">
+                                            <div class="privacy-menu-settings-title">
+                                                访问百度账号设置中心
+                                                <div class="privacy-menu-settings-arrow">
+                                                    <svg width="15" height="15">
+                                                        <image xlink:href="./img/arrow.svg" src="./img/arrow.png" width="15" height="15" />
+                                                    </svg>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="privacy-error privacy-hide">
+                              <div class="error-con">
+                                  <div class="error-img"></div>
+                                  <div class="error-title">页面加载失败</div>
+                                  <div class="error-text">请尝试以下方法：刷新当前页面，<br />或关闭当前页面后重新访问页面</div>
+                                  <div class="error-btn" id="error-btn">重试</div>
+                                </div>
+                            </div>
+                            <div class="privacy-copyright">
+                                Baidu 京ICP证030173号
+                            </div>
+
+                            <div class="privacy-toast-popup-wrapper">
+                                <div class="privacy-toast-popup-wrapper-midcover-w">
+
+                                </div>
+                                <div class="privacy-toast-popup-wrapper-midcover-y">
+
+                                </div>
+                                <span class="privacy-toast-popup-exclamation-wrapper">
+                                    <span class="privacy-toast-popup-exclamation"> ! </span>
+                                </span>
+                                <div class="privacy-toast-content">
+                                    操作失败，请重试
+                                </div>
+                            </div>
+
+                            <div class="privacy-toast-popup-warn-wrapper">
+                                <div class="privacy-toast-popup-warn-prompt">
+                                    <div class="privacy-toast-popup-warn-title">
+                                        提示
+                                    </div>
+                                    <div class="privacy-toast-popup-warn-content">
+                                        此功能关闭后，将会影响您的搜索体验并使搜索效率降低，您确认要关闭吗
+                                    </div>
+                                    <button class="privacy-toast-popup-warn-bn">
+                                        取消
+                                    </button>
+                                    <button class="privacy-toast-popup-warn-by">
+                                        确认
+                                    </button>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+
+                    <div class="privacy-appendContainer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        var telTimer;
+        var idTimer;
+
+        // 控制板块的显示与隐藏
+        var urlParams = window.location.search;
+        if (urlParams && urlParams.indexOf('parameter') > -1) {
+            $('#privacy-history').addClass('privacy-hide');
+        }
+        handleMarkDetails();
+        var LoginUrl = '/ups/data/gettips?&product=ps&tips=["sugStoreSet", "personalSwitch", "switchPhoneNum", "switchIdCard"]';
+        // whether login or not
+        $.ajax({
+            url: LoginUrl,
+            type: 'GET',
+            success: function(data){
+                var content = JSON.parse(data);
+                if (content.errno === "0") {
+                    if (JSON.stringify(content.data) !== '{}'){
+                      // state check for the button
+                      var InitValues = content.data;
+                      InitButtonState(InitValues.sugStoreSet.value, InitValues.personalSwitch.value, InitValues.switchPhoneNum.value, InitValues.switchIdCard.value);
+                      // click the toggleButton and send request
+                      $('.privacy-switch-button-persoanl').on('click', function(e){
+                          e.stopPropagation();
+                          // whether login or not
+                          $.ajax({
+                              url: LoginUrl,
+                              type: 'GET',
+                              success: function(data){
+                                  var content = JSON.parse(data);
+                                  if(JSON.stringify(content.data) !== '{}') {
+                                      if(checkBoxStatus('persoanl')){
+                                          if(checkBoxStatus('sug')){
+                                              saveSugAndPer('1', '1', $('.privacy-history-setting-checkbox-persoanl'));
+                                          }else{
+                                              saveSugAndPer('0', '1', $('.privacy-history-setting-checkbox-persoanl'));
+                                          }
+                                      } else {
+                                          openDialog('此功能关闭后，将影响您的搜索体验并使搜索效率降低，您确认要关闭？', '提示', '确认', 1);
+                                      }
+
+                                  } else {
+
+                                  }
+                              },
+                              error: function() {
+                                  settingWarningToast();
+                              }
+                          })
+                      })
+                      $('.privacy-switch-button-sug').on('click', function(e){
+                          e.stopPropagation();
+                          // whether login or not
+                          $.ajax({
+                              url: LoginUrl,
+                              type: 'GET',
+                              success: function(data){
+                                  var content = JSON.parse(data);
+                                  if(JSON.stringify(content.data) !== '{}'){
+                                      if(checkBoxStatus('sug')){
+                                          saveSugAndPer("1", "1", $('.privacy-history-setting-checkbox-sug'));
+                                      } else {
+                                          saveSugAndPer("0", "1", $('.privacy-history-setting-checkbox-sug'));
+                                      }
+                                  } else {
+                                      redirectLogin();
+                                  }
+                              },
+                              error: function(){
+                                  settingWarningToast();
+                              }
+                          })
+                      })
+                      $('.privacy-switch-button-tel').on('click', function(e){
+                          e.stopPropagation();
+                          //whether login or not
+                          clearTimeout(telTimer);
+                          telTimer = setTimeout(function () {
+                            $.ajax({
+                              url: LoginUrl,
+                              type: 'GET',
+                              success: function(data){
+                                  var content = JSON.parse(data);
+                                  if(JSON.stringify(content.data) !== '{}') {
+                                      if(checkBoxStatus('tel')) {
+                                          saveIDandTel('switchphonenum', '1', $('.privacy-history-setting-checkbox-tel'));
+                                      } else {
+                                          saveIDandTel('switchphonenum', '0', $('.privacy-history-setting-checkbox-tel'));
+                                      }
+                                  } else {
+                                      redirectLogin();
+                                  }
+                              },
+                              error: function() {
+                                  settingWarningToast();
+                              }
+                            })
+                          }, 1000);
+                      })
+                      $('.privacy-switch-button-id').on('click', function(e){
+                          e.stopPropagation();
+                          // whether login or not
+                          clearTimeout(idTimer);
+                          idTimer = setTimeout(function () {
+                            $.ajax({
+                              url: LoginUrl,
+                              type: 'GET',
+                              success: function(data){
+                                  var content = JSON.parse(data);
+                                  if(JSON.stringify(content.data) !== '{}') {
+                                      if(checkBoxStatus('id')) {
+                                          saveIDandTel('switchidcard', '1', $('.privacy-history-setting-checkbox-id'));
+                                      } else {
+                                          saveIDandTel('switchidcard', '0', $('.privacy-history-setting-checkbox-id'));
+                                      }
+                                  } else {
+                                      redirectLogin();
+                                  }
+                              },
+                              error: function() {
+                                  settingWarningToast();
+                              }
+                            })
+                          }, 1000);
+                      })
+
+                    }
+                    else {
+                        // 显示报错页
+                        showError();
+                    }
+                }
+                else if (content.errno === "403") {
+                    redirectLogin();
+                }
+                else {
+                    // 显示报错页
+                    showError();
+                }
+            },
+            error: function() {
+                // 显示报错页
+                showError();
+            }
+        });
+        // 修改按钮状态
+        function saveSugAndPer(strNumSug, strNumPer, objElement) {
+            var urlTimestamp = new Date().getTime();
+            $.ajax({
+                url: '/ups/submit/addtips/?product=ps&tips='
+                + encodeURIComponent(JSON.stringify({sugStoreSet: strNumSug, personalSwitch: strNumPer}))
+                + '&_r=' + urlTimestamp,
+                type: 'GET',
+                success: function(data) {
+                    var content = JSON.parse(data);
+                    // handle error data in respond
+                    if (content.data.sugStoreSet !== 'SUCCESS') {
+                        restoreButton(objElement);
+                    } else {
+                        // 设置成功
+                        strNumPer === '1' ? disableSugSwitch(false) : disableSugSwitch(true);
+                    }
+                },
+                error: function() {
+                    restoreButton(objElement);
+                }
+            });
+        }
+        function settingWarningToast(content) {
+            content = typeof content !== 'undefined' ? content : '操作失败，请重试';
+            $('.privacy-toast-popup-wrapper').css({
+                'opacity':'1'
+            });
+            $('.privacy-toast-content').text(content);
+
+            setTimeout(function() {
+                $('.privacy-toast-popup-wrapper').css({
+                    'opacity':'0'
+                })
+            }, 1200);
+        }
+        // 默认设置
+        function InitButtonState(value, perValue, telValue, idValue) {
+            if (perValue !== '0') {
+                $('.privacy-history-setting-checkbox-persoanl').prop('checked', true);
+                if (value === '1') {
+                    $('.privacy-history-setting-checkbox-sug').prop('checked', true);
+                } else {
+                    $('.privacy-history-setting-checkbox-sug').prop('checked', false);
+                }
+            } else {
+                $('.privacy-history-setting-checkbox-persoanl').prop('checked', false);
+                disableSugSwitch(true);
+            }
+            if (telValue === '1') {
+                $('.privacy-history-setting-checkbox-tel').prop('checked', true);
+            } else {
+                $('.privacy-history-setting-checkbox-tel').prop('checked', false);
+            }
+            if (idValue === '1') {
+                $('.privacy-history-setting-checkbox-id').prop('checked', true);
+            } else {
+                $('.privacy-history-setting-checkbox-id').prop('checked', false);
+            }
+        }
+        function redirectLogin() {
+            // pc隐私页面 文字链 : ?from=yinsiwenzi or pc url直接访问: 无
+            if (location.search.match(/from=(.*)/)){
+                if (location.search.match(/from=(.*)/)[1] === "yinsiwenzi"){
+                    var loginSource = 'se_070001';
+                } else {
+                    var loginSource = "";
+                }
+            } else {
+                var loginSource = 'se_070003';
+            }
+
+            var loginSourceUrl = encodeURIComponent('{"l":"","s":"","src":"'+loginSource+'"}');
+            window.location.href = "https://passport.baidu.com/v2/?login&tpl=pc&extrajson=" + loginSourceUrl + "&u=" + encodeURIComponent(location.href);
+
+            $('.privacy-switch-button-sug').on('click', function(){
+                window.location.href = "https://passport.baidu.com/v2/?login&tpl=pc&extrajson=" + loginSourceUrl + "&u=" + encodeURIComponent(location.href);
+            });
+        }
+        function disableSugSwitch(status, instant) {
+            var time = instant ? 0 : 150;
+            if (status) {
+                // $('.privacy-switch-button-sug').fadeOut(time);
+                // $('.privacy-menu-settings-title-sug').css('color', '#999999');
+                $('.privacy-menu-settings-item-sug').slideUp('fast');
+            } else {
+                // $('.privacy-switch-button-sug').fadeIn(time);
+                // $('.privacy-menu-settings-title-sug').css('color', '#000000');
+                $('.privacy-menu-settings-item-sug').slideDown('fast');
+            }
+        }
+        // 设置按钮状态
+        function checkBoxStatus(module) {
+            if ($('.privacy-history-setting-checkbox-' + module).is(":checked")){
+                return true;
+            } else {
+                return false;
+            }
+        }
+        // 保存按钮文案
+        var buttonText = '';
+        function openDialog(content, title, button, code) {
+            buttonText = button;
+            $('.privacy-toast-popup-warn-wrapper').css({
+                'opacity':'1',
+                'z-index': '998',
+                'height': '100%',
+                'width': '1017px',
+                'padding': '100%',
+                'display': 'block'
+            });
+            $('.privacy-toast-popup-warn-prompt').css({
+                'display':'block'
+            });
+            $('.privacy-toast-popup-warn-content').text(content);
+            $('.privacy-toast-popup-warn-by').text(button);
+            $('.privacy-toast-popup-warn-title').text(title);
+
+            // when cancel clicked
+            $('.privacy-toast-popup-warn-bn').on('click', function(e){
+                e.stopPropagation();
+                closeDialog();
+                if (code === 1) {
+                    $('.privacy-history-setting-checkbox-persoanl').prop('checked', true);
+                    disableSugSwitch(false);
+                } else if (code === 1001) {
+                    $('.privacy-history-setting-checkbox-tel').prop('checked', false);
+                } else {
+                    //code = 1002
+                    $('.privacy-history-setting-checkbox-id').prop('checked', false);
+                }
+            });
+            $('.privacy-toast-popup-warn-wrapper').on('click', function(e){
+                e.stopPropagation();
+                closeDialog();
+                if (button === '确认') {
+                    $('.privacy-history-setting-checkbox-persoanl').prop('checked', true);
+                    disableSugSwitch(false);
+                }
+            });
+        }
+        // 弹窗确认
+        $('.privacy-toast-popup-warn-by').on('click', function(e){
+            e.stopPropagation();
+            if (buttonText === '确认') {
+                saveSugAndPer('0', '0', $('.privacy-history-setting-checkbox-persoanl'));
+            } else if($('.privacy-toast-popup-warn-content').text().indexOf('手机号码') !== -1) {
+                window.location.href = 'https://passport.baidu.com/v2/accountsecurity?tpl=sd_privacy_terms';
+            } else {
+                window.location.href = 'https://passport.baidu.com/v3/ucenter/main/certcenter?tpl=sd_privacy_terms';
+            }
+            closeDialog();
+        });
+        function closeDialog() {
+            $('.privacy-toast-popup-warn-wrapper').css({
+                'opacity':'0',
+                'z-index': '-1',
+                'height': '0',
+                'width': '0',
+                'display': 'none'
+            });
+        }
+        // 号码开关请求
+        function saveIDandTel(strName, strValue, objElement) {
+            $.ajax({
+                url: '/usrprofile?action=' + strName + '&open=' + strValue + '&ms=1',
+                type: 'GET',
+                success: function(data) {
+                    // handle error data in respond
+                    if (data.errno === 0) {
+                        // errno=0 无错误
+                    }
+                    else if (data.errno === 1001) {
+                        openDialog('您尚未绑定手机号码，是否前往百度账号设置中心进行认证', '号码认证', '去设置', data.errno);
+                    }
+                    else if (data.errno === 1002) {
+                        openDialog('您尚未绑定身份证号码，是否前往百度账号设置中心进行认证', '号码认证', '去设置', data.errno);
+                    }
+                    else if (data.errno === 1003 || data.errno === 1004) {
+                        settingWarningToast('抱歉，功能维护中，无法使用');
+                    }
+                    else {
+                        restoreButton(objElement);
+                    }
+                },
+                error: function() {
+                    restoreButton(objElement);
+                }
+            });
+        }
+        // 接口报错时按钮还原
+        function restoreButton(objElement) {
+            if (objElement.is(":checked")){
+                objElement.prop('checked', false);
+            } else {
+                objElement.prop('checked', true);
+            }
+            settingWarningToast();
+        }
+        function handleMarkDetails() {
+            $('.privacy-menu-settings-title-mark').hover(
+                function(e){
+                    e.stopPropagation();
+                    $(this).css({
+                        'color': '#3388FF',
+                        'border': '1.5px solid #3388FF'
+                    });
+                    $(this).next('.privacy-menu-settings-title-details').removeClass('privacy-hide');
+                },
+                function(e){
+                    e.stopPropagation();
+                    $(this).css({
+                        'color': '#666',
+                        'border': '1.5px solid #666'
+                    });
+                    $(this).next('.privacy-menu-settings-title-details').addClass('privacy-hide');
+                }
+            )
+        }
+        // 报错页面展现
+        function showError() {
+          $('.privacy-wrap').addClass("privacy-hide");
+          $('.privacy-error').removeClass("privacy-hide");
+        }
+        // 错误页 --- 点击重试
+        $("#error-btn").on('click', function(){
+            window.location.reload();
+        });
+        // 隐私反馈通用插件
+        (function () {
+            /**
+             * @function :第一次加载插件，之后调用插件
+             */
+            function init_feedback() {
+                if (bds && bds.qa && bds.qa.ShortCut && bds.qa.ShortCut.initRightBar) {
+                    //初始化反馈插件的样式参数
+
+                    var fb_options = {
+                        needImage: true,   //是否需要用户展示图片(截图，或者上传)
+                        upload_file: true,   //是否选择上传图片， true 表示上传图片，false表示截图
+                        appid: 215622,   //产品线的id
+                        productLine: 20018,   //
+                        wenjuanTitle: "",   //问卷调查标题
+                        wenjuanURL: "",   //问卷调查链接
+                        issuePlaceholder: "请输入问题描述",   //问题描述提示语
+                        contactPlaceholder: "请输入邮件、手机号码或QQ号码任意一种联系方式",   //联系方式提示语
+                        showPosition: "center",   //显示位置，中心：center，右下： bottom_right
+                        contactWayType: "contact_way",   //联系方式类型 contact_way，email，qq，tel
+                        needContactWay: true,   //是否显示联系方式
+                        needHotQuestion: false,   //是否显示常见问题
+                        needQuestionnaire: false,   //是否显示问卷调查
+                        needFeedbackType: false,   //是否显示反馈类型
+                        needProductType: false,   //是否显示问题类型
+                        needEvaluate: true,   //是否启用用户评价
+                        typeArray: [],   //下拉列表项
+                        titleBgColor: "#FFFFFF",   //标题栏背景色
+                        buttonColor: "#3582FA",   //按钮的颜色
+                        mainFontColor: "#151515",   //文字的主体颜色
+                        secondaryFontColor: "#999999",   //文字的辅助颜色(用于input textarea输入框的提示文本)
+                        titleColor: "#333333",   //标题栏颜色
+                        hotQuestionArray: []  //启用常见问题，列举常见的问题 <=5 个
+                    };
+
+                    bds.qa.ShortCut.initRightBar(fb_options);
+                    //产品线需要透传的参数，注意：json的标题必须是规范json写法，双引号，最后无逗号
+                    var pro_data = {
+                        "extend_feedback_channel": 33383  // 反馈来源
+                    };
+                    bds.qa.ShortCut._getProData(pro_data);
+                }
+            }
+
+            /**
+             * @function :校验js加载完成
+             * @returns :{boolean}
+             */
+            function loadRightBar() {
+                if (window.bds&&window.bds.qa&&window.bds.qa.ShortCut) {
+                    init_feedback();
+                } else {
+                    loadScript(
+                        "https://ufosdk.baidu.com/Public/feedback/js/dist/feedback_plugin_2.0.js",
+                        function () {
+                            init_feedback();
+                        }, {
+                            charset: "utf-8",
+                            id: "feedback_script"
+                        });
+                }
+                return false;
+            }
+            document
+                .getElementById("privacy-feedback")
+                .onclick = loadRightBar;
+        })();
+        // 页面加载脚本判定函数
+        function loadScript(url, callback, opt) {
+            var script = document.createElement("script");
+            var opt = opt || {};
+            script.type = "text/javascript";
+            if (opt.charset) {
+                script.charset = opt.charset;
+            }
+            if (opt.id) {
+                script.id = opt.id;
+            }
+
+            if (script.readyState) {
+                script.onreadystatechange = function () {
+                    if (script.readyState == "loaded" || script.readyState == "complete") {
+                        script.onreadystatechange = null;
+                        callback();
+                    }
+                };
+            } else {
+                script.onload = function () {
+                    callback();
+                };
+            }
+            script.src = url;
+            document.body.appendChild(script);
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,740 @@
+﻿
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="gbk" />
+  <meta name="spm-id" content="a215z.7715008" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="��8�|�aƷ���������S�r�������롣�Ԍ��W�ṩ�������ݮaƷ���M�������������裬һվʽ�W��ُ���w򞣬�����֑a�X��">
+  <meta name="keywords" content="�Fُ���W��ُ��r�b���Y�� �����\����h�Ҿ���Ʒ��������Ʒ������">
+    <title>�Ӽ�����</title>
+    <base target="_blank">
+    <script>
+      var g_config = {
+        startTime: +new Date(), //����
+        supportLink:'//service.taobao.com/support/minerva/robot.htm?source_id=1431193651&init_ques=%E6%B5%B7%E5%A4%96%E4%BC%9A%E5%91%98%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98',
+        ap_mods:{
+           'poc':[0.01]//ѡ��˴��޸ĳ���������Ĭ����0.001 
+        }
+      }
+    </script>
+    <!--[if lt IE 9]><script src="//assets.alicdn.com/app/tms/others/global/css3-mediaqueries.js"></script><![endif]-->
+    <!-- assets���� -->
+    <!-- S GLOBAL CSS -->
+<link rel="stylesheet" href="//g.alicdn.com/tb/global/3.5.5/global-min.css">
+<!-- E GLOBAL CSS --><!-- S GLOBAL JS -->
+<script src="//g.alicdn.com/??kissy/k/1.4.4/seed-min.js,tb/global/3.5.5/global-min.js"></script>
+<!-- E GLOBAL JS -->    <meta property="og:image" content="//img.alicdn.com/tps/i1/TB1usOLHXXXXXbKXFXXfgMgNVXX-400-220.gif" />
+<meta property="og:description" content="������������գ����������͸��㣡�Ա�������ؼ���������ʵ�ݷ����㣬���һ��������ӭ���ˣ� " />
+    <meta property="og:title" content="������������գ����������͸��㣡�Ա�������ؼ���������ʵ�ݷ����㣬���һ��������ӭ���ˣ�" />
+    <meta property="og:url" content="//hk.ju.taobao.com" /> 
+    <link rel="stylesheet" href="//g.alicdn.com/tb/press/2.2.3/layouts/990-20-50-10.css" />
+<link rel="stylesheet" href="//atp.alicdn.com/tmse/1/dpl/??oversea-tb-header/v40/oversea-tb-header.css,oversea-tb-category/v28/oversea-tb-category.css,oversea-tb-nz-list/v47/oversea-tb-nz-list.css" />
+
+<link rel="stylesheet" href="//atp.alicdn.com/tmse/1/dpl/??5538/oversea-tb-header/oversea-tb-header/v40/skin/default.css,5538/oversea-tb-category/oversea-tb-category/v28/skin/default.css,5538/oversea-tb-nz-list/oversea-tb-nz-list/v47/skin/default.css" />
+
+<style>
+ #page {} 
+</style>  </head>
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&udpid=&&yunid=&&trid=3da8641a16207391043997659e&asid=AQAAAAAghJpgOXHVWwAAAACPWZjq4FN2aQ==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&asid=AQAAAAAghJpgQBXLWQAAAAC9ydFb4GaB7A==&sidx=QUeZT5nAPhYvGzJByVi9KQawfXIf8jXmcumAPjP2GThWjjO/rGSKYTLh9c/5JqKe4N/L5S1pAjuPr+030/abT7duqESFzCyh+y11lMtRIxzkORyD8Zg5rsjS+6qcvUgLIvdvkJlKkaDj2G3yrcobXrVfHQFFCkXkAMhcXiQSbzE=",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script><!-- ����ȫ������ -->
+<!--TMS:761882-->
+<!-- S GLOBAL HTML -->
+<div id="J_SiteNav" class="site-nav">
+  <div id="J_SiteNavBd" class="site-nav-bd">
+    <ul id="J_SiteNavBdL" class="site-nav-bd-l"></ul>
+    <ul id="J_SiteNavBdR" class="site-nav-bd-r"></ul>
+  </div>
+</div>
+<!-- --><!-- ȫ����ͨ --><!-- E GLOBAL HTML -->   <!-- 20141212��ٶ�������ͷ -->
+  <!-- 20141212���banner -->
+    
+
+<script>
+  //�Ա����ⶨ����վ����
+  TB.Global.set('fn-site-map', {
+    url: '//www.taobao.com/go/rgn/global/site_nav_ajax.php'
+   });
+  
+  TB.Global.init();
+  
+    //����վ������ѡ��ͬ����д��thw��ȫ��cookie����
+   KISSY.use('node,event,cookie,dom',function(S, Node, Event, Cookie,Dom){
+      Event.delegate(document,'click','.mod-f',function(ev){
+        var value = Node.all(ev.target).attr('data-spm');
+        Cookie.set('thw', value, 30, '.taobao.com','/');
+        setThirdPartyCookie(value);
+      });
+
+     
+     function setThirdPartyCookie(ck){
+        var _frm = document.createElement("iframe");  
+                _frm.style.display = "none"; 
+        
+               // ͬ��д����è�򣬷�֮��Ȼ
+                _frm.src = "//www.tmall.com/go/app/sea/writecookie.php?ck="+ck;
+               document.body.appendChild(_frm);
+      }
+     
+
+
+
+  });
+
+  
+  </script>
+  
+ <!-- �����˵� -->
+ <style>
+   #J_Search{left:323px;top:18px;background:#fff;position:absolute}
+.search{padding:0}
+.search-panel{width:667px;position:relative;zoom:1}
+.search-item-panel button.btn-search,.search-item-panel button.btn-search-hover,.search-item-panel button.btn-search:hover,.search-list-panel-focused .search-panel-fields input,.search-panel button.btn-list,.search-panel button.btn-search,.search-panel button.btn-search-hover,.search-panel button.btn-search:hover,.search-panel button.btn-searchall,.search-panel button.btn-searchall-hover,.search-panel button.btn-searchall:hover,.search-panel button.btn-searchshop,.search-panel button.btn-searchshop-hover,.search-panel button.btn-searchshop:hover,.search-panel-focused .search-panel-fields input,.search-srp-panel .search-panel-focused .search-panel-fields input,.search-srp-panel button.btn-search,.search-srp-panel button.btn-search-hover,.search-srp-panel button.btn-search:hover{background-image:url(//img.alicdn.com/tps/i1/T1HM4.FalcXXbMnNTw-919-175.png);background-repeat:no-repeat}
+.search-panel-fields{height:33px;position:relative;zoom:1;background:#e6e6e6;overflow:hidden}
+.search-panel-fields label{position:absolute;left:15px;top:8px;z-index:1;color:#999;cursor:text}
+.search-panel-fields input{font-size:14px;position:absolute;left:3px;top:3px;height:18px;line-height:18px;padding:4px 0;background:#fff;vertical-align:middle;border:0 none;border-top:1px solid #f5f5f5}
+.search-panel .search-button{position:relative;z-index:1;float:right;background:#fff}
+.search-panel button{cursor:pointer;border:0;font-size:18px;text-indent:-999em;float:left;width:73px;height:33px}
+.search-status-focus .search-panel-fields s,.search-status-focus label{display:none}
+.search-combobox{margin-left:3px;margin-right:0}
+.search-panel-fields .search-combobox input{left:0}
+.search-panel-fields input{left:-3px;width:100%;outline:0;padding-right:3px;text-indent:5px;margin-left:6px}
+.search-combobox-input-wrap{position:relative;overflow:hidden}
+.search-panel-fields .search-combobox-input-wrap input{margin-left:0}
+.search-panel-two-buttons .search-panel-fields{margin-right:0}
+.search-panel button.btn-searchshop{background-position:-100px -76px;margin-left:3px}
+.search-panel button.btn-searchshop:hover{background-position:-100px -120px}
+.search-panel-hover .search-panel-fields{background:#f50}
+.search-list-panel-focused .search-panel-fields input,.search-panel-focused .search-panel-fields input{border-top:0;padding-top:5px;background-position:0 -40px;background-color:#fff}
+.search-panel button.btn-searchall{background-position:-260px -76px;margin-left:3px}
+.search-panel button.btn-searchall-hover,.search-panel button.btn-searchall:hover{background-position:-260px -120px}
+.search-panel button.btn-list{background-position:-420px -76px}
+.search-panel button.btn-search{background-position:-180px -76px}
+.search-panel button.btn-search-hover,.search-panel button.btn-search:hover{background-position:-180px -120px}
+.search-common-panel,.search-panel-focused .search-panel-fields{background:#f50}
+.search-sns-panel-field input{top:0}
+.search-sns-panel-field .search-combobox{margin-left:0}
+.search-sns-panel-field{width:322px;float:right;background:#fff;height:27px;margin-top:4px;margin-right:4px}
+.search-sns-panel-field .search-panel-fields{margin-right:0}
+.search-sns-panel-field label{top:5px}
+.search-sns-panel-field button.btn-search{text-indent:0;font-size:12px;color:#666;background:#f5f5f5;height:27px;width:72px;border-left:1px solid #d9d9d9}
+.search-sns-panel-field .search-panel-fields{height:27px}
+.search-sns-panel-field .search-combobox{margin-left:0}
+.search-sns-panel-field .search-combobox-input-wrap{height:27px}
+.search-sns-panel-field .search-combobox-input{top:0;background:#fff}
+.search-sns-panel-field button.btn-search:hover{background:#f5f5f5;color:#333}
+.search-srp-panel-fields{height:37px;margin-right:0}
+.search-srp-panel-fields label{top:10px}
+.search-srp-panel-fields input{height:22px;line-height:22px}
+.search-srp-panel-fields .search-combobox-input-wrap{height:34px}
+.search-srp-panel button.btn-search{width:93px;height:37px;background-position:0 -76px}
+.search-srp-panel button.btn-search-hover,.search-srp-panel button.btn-search:hover{background-position:0 -120px}
+.search-srp-panel .search-panel-focused .search-panel-fields input{background-position:0 0}
+.search-item-panel button.btn-search{background-position:-340px -76px}
+.search-item-panel button.btn-search:hover{background-position:-340px -120px}
+.search-faxian-panel .search-combobox{margin-left:3px}
+.search-panel-focused .search-hp-fields input,div.search-hp-panel button.btn-search,div.search-hp-panel button.btn-search-hover,div.search-hp-panel button.btn-search:hover{background-image:url(//img.alicdn.com/tps/i4/T1uqayFoleXXacpxYw-919-209.png)}
+.search-panel-focused .search-hp-fields input{background-position:0 -170px}
+.search-hp-panel button.btn-search{background-position:-553px -76px;height:45px;width:93px}
+div.search-hp-panel button.btn-search-hover,div.search-hp-panel button.btn-search:hover{background-position:-553px -76px}
+.search-panel .search-common-panel i{background-position:-380px -20px;background-image:url(//img.alicdn.com/tps/i4/T1OdGtFaxfXXXa78nI-400-200.png);background-repeat:no-repeat}
+.search-hp-fields{height:45px}
+.search-hp-fields input,.search-hp-fields label{margin-left:76px}
+.search-hp-fields .search-combobox{margin-left:79px}
+.search-hp-fields .search-combobox input{margin-left:0;text-indent:10px}
+.search-hp-fields label{top:13px;left:25px}
+.search-hp-fields .search-combobox-input-wrap{height:42px}
+.search-hp-fields input{padding:10px 0}
+.search-panel-focused .search-hp-fields input{padding:11px 0 10px}
+.search-triggers .ks-switchable-nav{width:74px;position:absolute;z-index:9999;left:3px;top:3px;height:39px;border-right:1px solid #e5e5e5;border-left:1px solid #f5f5f5}
+.triggers-hover .ks-switchable-nav{border-bottom:1px solid #e5e5e5;border-left:1px solid #e5e5e5;overflow:visible;height:auto}
+.search-triggers li{display:none;width:100%}
+.triggers-hover li{display:block}
+.search-triggers li a{height:100%;width:100%;padding:0;text-align:left;text-indent:15px;line-height:39px;color:#6b6b6b;background:#fff;font-weight:400;font-size:14px}
+.search-triggers{position:relative}
+.search-triggers li.selected{display:block}
+.search-triggers li.selected a{padding:0;background:#f5f5f5;border-radius:0;border:0 none;color:#6b6b6b;font-weight:400;font-size:14px}
+.search-triggers li a:hover,.search-triggers li.selected a:hover{color:#6b6b6b!important}
+.search-triggers s{line-height:0;border-width:4px;border-color:#666 transparent transparent;border-style:solid;height:0;position:absolute;top:19px;font-size:0;left:60px;z-index:10}
+.search-triggers s s{border-width:3px;border-color:#f6f6f6 transparent transparent;top:-4px;left:-3px;position:absolute}
+.search-panel .search-common-panel i{z-index:2;position:absolute;top:17px;left:86px;width:12px;height:12px;display:none}
+.search-hots{clear:both;font:12px/1.5 arial;padding:10px 5px 5px;color:#3e3e3e;+ padding-top:5 px}
+.search-hots a{color:#3e3e3e;margin-right:6px}
+.search-hots .more{margin-left:6px}
+                 /*����ȫ�ֵ���banner*/
+        #decSaleTopBanner{
+            display: none !important;
+                }
+   
+                 .tb-my1212-btn-look:link{
+    color: #9c9c9c;
+  }
+    .site-nav .site-nav-bd{
+      width:1190px;
+      min-width:990px;
+    }
+    #site-nav .quick-menu li.trans{
+      display:none;
+    }
+    .back-homeland{
+      display:inline !important;
+    }
+    /*������վ��������ʽ*/
+
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod .mod-wrap h4{
+      padding-top: 0;
+      height: 20px;
+      font-size:16px;
+      background-image: none;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod{
+      display: inline;
+        float: left;
+        width: 18%;
+        overflow: hidden;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-e,
+     .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-f{
+      width: 14%;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod .mod-wrap li{
+      width: 50%;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-e .mod-wrap li,
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-f .mod-wrap li{
+      width: 100%;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-d .mod-wrap{
+      border-right: 1px solid #eee;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-f .mod-wrap{
+      border-right: 0 none;
+    } 
+    
+    
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-a .mod-wrap h4{
+      color: #fd5500;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-b .mod-wrap h4{
+      color:#a0ba53;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-c .mod-wrap h4{
+      color:#e15eac;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-d .mod-wrap h4{
+      color:#51a0e8;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-e .mod-wrap h4{
+      color:#e39e20;
+    }
+    .site-nav-bd .site-map .menu-bd .menu-bd-panel .mod-f .mod-wrap h4{
+      color:#4b8a2c;
+    }
+     .search-hots{
+    position: absolute;
+    top: 30px;
+    left: 0px;
+  }
+   
+  .layout-hd .sea-header-ad{
+    position:absolute;
+            width:190px;
+    height: 88px;
+    right:0px;
+      background:url(//img.alicdn.com/tps/i1/TB1tcjJGVXXXXaaXXXXPeMDIXXX-190-88.gif) no-repeat;
+        top:15px;
+  }
+  
+ .layout-hd .sea-header-ad .countdown-1212{
+  display:block;
+  width:100%;
+  height: 100%;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+
+}
+
+.layout-hd .sea-header-ad .countdown{
+
+   height:22px;
+   position: absolute;
+   bottom: 0;
+   text-align: center;
+   background: #ffce23;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+             left:30px;
+    }
+
+.layout-hd .sea-header-ad .countdown .cd{
+  float: left;
+  height:18px;
+  line-height:18px;
+  margin:2px 1px 0 0;
+  color:#f8f7f7;
+  background: #550024;
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  font-family:Tahoma ;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+}
+  
+.layout-hd .sea-header-ad .countdown .doc{
+  margin-right: 2px;
+}
+
+.layout-hd .sea-header-ad .countdown .num{
+  width:12px;
+}
+
+.layout-hd .sea-header-ad .countdown .first{
+  margin-left: 2px;
+} 
+ 
+  </style>
+  
+
+  
+  <!-- ���ú���ͨ�� -->
+<!-- ��ҳ������ͨ+Flash��ͨ -->
+<div class="layout layout-hd" style="position:relative;">
+  <div class="logo" style="padding:13px 0 8px 0;">
+    <a href="//www.taobao.com/index_global.php" target="_self">
+      <img src="//img.alicdn.com/tps/i1/T1SwHiFnlkXXc.QAHh-202-55.png" width="202" height="55" alt="" title="Taobao.com ">
+    </a>
+  </div>  
+  <div class="search" id="J_Search" role="search">
+    <div class="search-panel search-srp-panel">
+        <form target="_top" data-defaultpage="nogo" action="//s.taobao.com/search" name="search" id="J_TSearchForm" class="search-panel-focused">
+            <div class="search-button">
+                <button class="btn-search" type="submit">�� ��</button>
+            </div>
+            <div class="search-panel-fields search-srp-panel-fields search-common-panel">
+                <input id="q" name="q" accesskey="s" autofocus="true" autocomplete="off" x-webkit-speech=""
+                       x-webkit-grammar="builtin:translate">
+            </div>
+            <input type="hidden" name="commend" value="all">
+            <input type="hidden" name="ssid" value="s5-e" autocomplete="off">
+            <input type="hidden" name="search_type" value="mall" autocomplete="off">
+            <input type="hidden" name="sourceId" value="tb.index">
+            <input type="hidden" name="spm" value="a215z.7106357.5803581.d4908513">
+            <!--[if lt IE 9]><s class="search-fix search-fix-panellt"></s><s class="search-fix search-fix-panellb"></s>
+            <![endif]-->
+        </form>
+    </div>
+    <div class="search-hots" data-spm="a214x9l"><a href="//world.taobao.com/search/search.htm?spm=a215z.1510359.a214x9l.1&_ksTS=1446622389916_21&_input_charset=utf-8&navigator=all&json=on&q=%E8%BF%9E%E8%A1%A3%E8%A3%99&callback=__jsonp_cb&cna=aWCrDjq8ZFsCASp4Slwt8ZyI&abtest=_AB-LR854-PV854_2100">����ȹ</a> <a href="//world.taobao.com/search/search.htm?spm=a215z.1510359.a214x9l.2&_ksTS=1446622414474_35&search_type=0&_input_charset=utf-8&navigator=all&json=on&q=iphone6%E6%89%8B%E6%9C%BA%E5%A3%B3&cna=aWCrDjq8ZFsCASp4Slwt8ZyI&callback=__jsonp_cb&abtest=_AB-LR854-PV854_2100">iphone6�ֻ���</a> <a href="//world.taobao.com/search/search.htm?spm=a215z.1510359.a214x9l.3&_ksTS=1446622509864_19&search_type=0&_input_charset=utf-8&navigator=all&json=on&q=%E5%A4%96%E8%B4%B8&cna=aWCrDjq8ZFsCASp4Slwt8ZyI&callback=__jsonp_cb&abtest=_AB-LR854-PV854_2100">��ó</a> <a href="//world.taobao.com/search/search.htm?spm=a215z.1510359.a214x9l.4&_ksTS=1446622533623_35&search_type=0&_input_charset=utf-8&navigator=all&json=on&q=%E5%A5%B3%E9%9E%8B&cna=aWCrDjq8ZFsCASp4Slwt8ZyI&callback=__jsonp_cb&abtest=_AB-LR854-PV854_2100">ŮЬ</a> <a href="//world.taobao.com/search/search.htm?spm=a215z.1510359.a214x9l.5&_ksTS=1446622571647_309&search_type=0&_input_charset=utf-8&navigator=all&json=on&q=%E9%99%B6%E7%93%B7%E6%9D%AF&cna=aWCrDjq8ZFsCASp4Slwt8ZyI&callback=__jsonp_cb&abtest=_AB-LR854-PV854_2100">�մɱ�</a> <a href="//world.taobao.com/search/search.htm?spm=a215z.1510359.a214x9l.6&_ksTS=1446622630103_35&search_type=0&_input_charset=utf-8&navigator=all&json=on&q=iphone6s%E6%89%8B%E6%9C%BA%E5%A3%B3&cna=aWCrDjq8ZFsCASp4Slwt8ZyI&callback=__jsonp_cb&abtest=_AB-LR854-PV854_2100">iphone6s�ֻ���</a> 
+<a class="more more-with-border" href="//top.taobao.com/index.php?from=tbsy">����</a>
+</div></div>
+  
+    
+</div>
+<script>
+  (function(){
+      var S = KISSY,
+               pre = ',tbc/search-suggest/'+'1.3.9/';
+        S.config({
+                packages: [
+                    {
+                        name: "tbc",
+                        path: "//g.alicdn.com/tbc/",
+                        ignorePackageNameInUri: true,
+                        debug: false
+                    }
+                ]}
+        );
+      
+    var mods = ['dom','index','plugin/history','new_suggest.css'],
+        sort = ['history','list'];
+      S.use(mods.join(pre),function(S,DOM,SearchSuggest,History){
+          var sug = new SearchSuggest({
+              plugins:[
+                  new History()
+              ],
+              "sugConfig": {
+                  sourceUrl: "//suggest.taobao.com/sug?k=1&area=ssrch",
+                  node: "#q",
+                  focused: true,
+                  "resultFormat":""
+              },
+              "mods":{
+                  "sort": sort
+              }
+           });
+        });
+        
+                 
+  })()
+</script>
+
+
+  
+<!-- �����˵�END --><!-- POWERED BY DPL -->
+<div id="page">
+<div id="content">
+<div class="J_Layout layout grid-m">
+	<div class="col-main">
+		<div class="main-wrap J_Region"><div class="J_Module skin-default" data-name="oversea-tb-header" data-skin="default" data-guid="14326114830230" id="guid-14326114830230" data-version="40" data-type="3"><div class="module"  data-spm="1998537135"><style>
+.oversea-tb-header 	#J_Main_Wrap #J_Head_Tag ul li a[data-hover="#ff3533"]:hover {color:#ff3533;}
+.oversea-tb-header 	#J_Main_Wrap #J_Head_Tag ul li a[data-hover="#561ba5"]:hover {color:#561ba5;}
+.oversea-tb-header 	#J_Main_Wrap #J_Head_Tag ul li a[data-hover="#0c97b3"]:hover {color:#0c97b3;}
+.oversea-tb-header 	#J_Main_Wrap #J_Head_Tag ul li a[data-hover="#ff8401"]:hover {color:#ff8401;}
+.oversea-tb-header 	#J_Main_Wrap #J_Head_Tag ul li a[data-hover="#00cc66"]:hover {color:#00cc66;}
+.oversea-tb-header 	#J_Main_Wrap #J_Head_Tag ul li a[data-hover="#ff1a6a"]:hover {color:#ff1a6a;}
+</style>
+<div class="tb-module oversea-tb-header tb-lazyload" id="J_oversea_header" data-widgetId="296"   >
+	<!-- �Զ���ģ������: start -->
+	<div id="J_Main_Wrap">
+		<div id="J_Head_Tag" data-spm="2015071601" class="main">
+			<ul>
+								<li data-nick="women" class=""><a href="//www.taobao.com/market/global/women.php" target="_self" data-hover="#ff3533" >�Ա�Ů��</a></li>
+								<li data-nick="men" class=""><a href="//www.taobao.com/market/global/men.php" target="_self" data-hover="#561ba5" >�Ա�����</a></li>
+								<li data-nick="3c" class=""><a href="//www.taobao.com/market/global/3c.php" target="_self" data-hover="#0c97b3" >��λ�ҵ�</a></li>
+								<li data-nick="home" class="selected"><a href="//www.taobao.com/market/global/home.php" target="_self" data-hover="#ff8401" >�Ӽ�����</a> <span class="triangle" style="border-bottom: 6px solid #ffcc06"></span></li>
+								<li data-nick="sports" class=""><a href="//www.taobao.com/market/global/sports.php" target="_self" data-hover="#00cc66" >�����˶�</a></li>
+								<li data-nick="kids" class=""><a href="//www.taobao.com/market/global/kids.php" target="_self" data-hover="#ff1a6a" >ĸӤ��Ʒ</a></li>
+							</ul>
+		</div>
+		<div class="ad-wrap" id="J_Ad_Wrap" data-spm="2015071602" data-widgetId="267" data-nodeId="" style="background-color: #ffcc06">
+			<div id="J_Ad" class="main">
+
+			</div>
+		</div>
+	</div>
+    <script type="text/javascript">
+var cateIdMap={50024409:1,50024423:1,50024417:1,50024418:1,50024419:1,50011774:1,50024422:1,50005067:1,50015708:1,50022646:1,50022647:1,50021055:1,50024261:1,50022575:1,50024307:1,50024275:1,50024291:1,50024292:1,50024402:1,50022584:1,50024293:1,50024294:1,50024288:1,50024287:1,50024295:1,50024296:1,50024297:1,50024286:1,50024285:1,50024298:1,50022583:1,50022582:1,50024299:1,50024284:1,50024283:1,50024282:1,50024281:1,50024280:1,50024279:1,50024278:1,50024277:1,50024276:1,50024290:1,50024404:1,50022581:1,50022580:1,50024403:1,50022579:1,50022578:1,50022577:1,50022590:1,50022589:1,50022588:1,50022587:1,50022586:1,50022585:1,50024263:1,50024270:1,50024271:1,50024272:1,50018844:1,50024260:1,50024273:1,50024274:1,50024405:1,50024401:1,50024301:1,50024363:1,50024365:1,50024364:1,50024360:1,50024302:1,50024303:1,50024304:1,50024353:1,50024354:1,50024305:1,50024361:1,50024355:1,50024362:1,50024356:1,50024357:1,50024358:1,50024367:1,50024366:1,50024359:1,50024262:1,50024267:1,50024289:1,50024306:1,50024370:1,50024371:1,50024372:1,50024373:1,50024374:1,50024375:1,50024376:1,50024377:1,50024259:1,50018847:1,50018848:1,50024378:1,50024379:1,50024380:1,50024381:1,50024382:1,50024383:1,50024384:1,50024385:1,50024386:1,50024387:1,50018851:1,50018852:1,50018856:1,50024395:1,50024396:1,121422009:1,50018857:1,50018860:1,50024252:1,50024249:1,50024250:1,50024251:1,121404008:1,50018863:1,50018864:1,50024352:1,50022573:1,50024393:1,50024391:1,50024390:1,50024392:1,50024254:1,50024255:1,50024256:1,50024257:1,50024328:1,50024329:1,50024330:1,50024331:1,50024308:1,50024309:1,50024310:1,50024311:1,50024312:1,50024313:1,50024314:1,50024315:1,50024316:1,50024317:1,50024318:1,50024319:1,50024333:1,50024320:1,50024321:1,50024332:1,50024322:1,50024323:1,50024324:1,50024325:1,50024326:1,50024327:1,50008357:1,50022576:1,50024345:1,50024264:1,50024265:1,50024269:1,50024268:1,50024266:1,50024412:1,50024415:1,50024411:1,50021134:1,50021137:1,50024414:1,50024410:1,50024416:1,50024413:1,50024349:1,50024351:1,50024347:1,50024350:1,50024348:1,50024406:1,50024407:1,50019019:1,50024337:1,50024344:1,50024341:1,50024340:1,50024335:1,50024334:1,50024342:1,50024338:1,50024339:1,50024336:1,50022608:1,50022638:1,50022631:1,50022600:1,50022601:1,50022629:1,50022628:1,50022632:1,50022602:1,50022603:1,50022604:1,50022605:1,50022599:1,50022598:1,50022597:1,50022596:1,50022595:1,50022594:1,50022593:1,50022592:1,50022591:1,50022639:1,50022645:1,50022644:1,50022637:1,50022630:1,50022636:1,50022635:1,50022634:1,50022643:1,50022642:1,50022641:1,50022640:1,50022633:1,50022620:1,50022621:1,50022622:1,50022623:1,50022616:1,50022624:1,50022625:1,50022626:1,50022627:1,50022617:1,50022618:1,50022619:1,50022607:1,50022615:1,50022614:1,50022613:1,50022612:1,50022611:1,50022610:1,50022606:1,50024343:1,111407:1,121398007:1,50018845:1,140117:1,50012637:1,150804:1,2812:1,121414007:1,121368007:1,111405:1,50021292:1,50008333:1,50012622:1,50021061:1,50012641:1,50021289:1,111220:1,50012624:1,50009187:1,111202:1,281201:1,50012620:1,111211:1,150805:1,50018948:1,50019241:1,50014827:1,111201:1,50018684:1,50018858:1,50021291:1,111404:1,50008353:1,121418007:1,50019018:1,121472005:1,50012628:1,50005226:1,50009190:1,50021063:1,50008334:1,50007222:1,50008335:1,110514:1,50010586:1,111214:1,50018938:1,50012631:1,50006267:1,50005231:1,50018944:1,111204:1,50012634:1,111403:1,50012635:1,150802:1,50012640:1,50019232:1,211710:1,50012633:1,50021238:1,50021296:1,50019252:1,50021299:1,50021297:1,50021295:1,121422008:1,50009078:1,150807:1,121460004:1,50019471:1,50012643:1,50008355:1,50010687:1,50018855:1,50012627:1,50009185:1,50021168:1,50021177:1,50021173:1,50021174:1,50021175:1,50021176:1,50021169:1,50021171:1,50021170:1,50021172:1,50010848:1,50018849:1,50012632:1,50018846:1,50012619:1,50021290:1,50021294:1,50021293:1,50018850:1,50008332:1,50012600:1,50012644:1,50012614:1,50012612:1,50012602:1,50012621:1,50012604:1,50012607:1,50012603:1,50012616:1,50012611:1,50012610:1,50012608:1,50012615:1,50012605:1,50008356:1,50008358:1,50012613:1,50012606:1,50012609:1,50021237:1,50021236:1,50021205:1,50021235:1,50021203:1,50021204:1,121418006:1,121450011:1,50012704:1,50012703:1,50012700:1,50012699:1,50012698:1,50021239:1,50012697:1,50012696:1,50021202:1,50021201:1,50021200:1,50021206:1,50021199:1,50024368:1,50021242:1,50021241:1,50021240:1,50021244:1,50021249:1,50021248:1,50021247:1,50021246:1,50021258:1,50021257:1,50021245:1,50021243:1,50021256:1,50021255:1,50021263:1,50021262:1,50021261:1,50021260:1,50021259:1,50021254:1,50021253:1,50021252:1,50021250:1,50021251:1,111406:1,50012618:1,50019240:1,50008869:1,50008350:1,50012630:1,50003366:1,50009189:1,50018947:1,50009188:1,50009186:1,50019282:1,50022574:1,50010847:1,50019464:1,111217:1,50021298:1,50012623:1,50018859:1,50018853:1,50021058:1,50012636:1,111219:1,50018939:1,50012626:1,50012629:1,121452005:1,110501:1,50021059:1,50007094:1,50021062:1,50021056:1,50008331:1,50012639:1,50008354:1,150809:1,50012642:1,121380008:1,121468007:1,50018946:1,124222019:1,50001718:1,50021288:1,50012638:1,50012625:1,50010849:1,50018943:1,50021054:1,111215:1,50016196:1,50019311:1,50019350:1,50016449:1,50019334:1,50016215:1,50019514:1,50019814:1,50016200:1,50016219:1,50016216:1,50019813:1,50019497:1,50016193:1,50019339:1,50019357:1,50019354:1,50019322:1,50019360:1,50016210:1,50019320:1,50016213:1,50019356:1,50019355:1,50019364:1,50016205:1,50019498:1,50019495:1,50019321:1,50019328:1,50016191:1,50016446:1,50016214:1,50019330:1,50019333:1,50019496:1,50016204:1,50016190:1,110805:1,50019319:1,50019331:1,50016192:1,122884004:1,110209:1,50019329:1,124250003:1,122898003:1,50022650:1,110808:1,50019359:1,50016207:1,50019353:1,50019312:1,50019313:1,50019351:1,50019512:1,50016194:1,50016202:1,50019499:1,50019326:1,50019332:1,50019337:1,50019340:1,110809:1,50016448:1,50019365:1,50016447:1,50019362:1,50019363:1,50019310:1,124212008:1,50019513:1,50018265:1,50019348:1,50019358:1,50016201:1,50019323:1,50016197:1,124242005:1,50016198:1,50019327:1,50020174:1,50019352:1,50019338:1,50019345:1,50019347:1,50016220:1,50019349:1,50019346:1,50019344:1,50016208:1,50019325:1,50019368:1,50016206:1,50019367:1,50019314:1,50019315:1,50019316:1,50019317:1,50016212:1,50019343:1,50019366:1,50016218:1,50016217:1,50020173:1,50019781:1,50019335:1,50016211:1,50016199:1,50019815:1,50016209:1,50019324:1,50118013:1,50019515:1,50019511:1,50019336:1,50020262:1,350307:1,350409:1,124252007:1,50008555:1,121434057:1,50008554:1,50012816:1,50011868:1,50011869:1,50011872:1,50012955:1,50004394:1,150806:1,50011871:1,50011870:1,50002889:1,50022648:1,50008563:1,350404:1,50006278:1,50017589:1,50018327:1,50008557:1,50008542:1,350402:1,121422021:1,50012101:1,350408:1,350407:1,122088002:1,121474016:1,50006508:1,50008566:1,350310:1,50000360:1,50008552:1,50002901:1,121468015:1,50002890:1,50005926:1,121422058:1,50008553:1,350406:1,121482013:1,50002624:1,151501:1,151503:1,151504:1,50013195:1,121468016:1,121476012:1,121484045:1,121402011:1,121418014:1,121484019:1,121402010:1,121420020:1,121380047:1,121450020:1,121384018:1,50024420:1,1508:1,1515:1,50012954:1,50008372:1,50008383:1,50017072:1,50002899:1,1201:1,50013009:1,50013008:1,50012960:1,50013011:1,50003987:1,50015138:1,50003369:1,50011875:1,50011874:1,50011876:1,50011873:1,121466016:1,121422020:1,121426017:1,121474015:1,121470016:1,121472015:1,121396018:1,121450018:1,121482011:1,50013038:1,50013023:1,50004204:1,50002896:1,124212007:1,50018218:1,50013024:1,50013609:1,50018103:1,50002894:1,50013047:1,50008368:1,50011733:1,50013025:1,50002532:1,350502:1,50015397:1,50013049:1,50008330:1,50013040:1,50005270:1,50008369:1,50008361:1,50002898:1,50003695:1,50005929:1,50002893:1,50013044:1,350504:1,50594005:1,50600006:1,50600007:1,50604003:1,50598004:1,50604004:1,50594004:1,50013051:1,350709:1,50013026:1,50002900:1,50013042:1,50013037:1,50003465:1,50013036:1,50013030:1,50002809:1,50002535:1,50008556:1,50013050:1,50008363:1,50013041:1,50013039:1,124226013:1,121392018:1,50013033:1,50002895:1,50012961:1,50009259:1,50013029:1,50013048:1,50004363:1,50008366:1,50004402:1,50013035:1,50013031:1,50008362:1,50006845:1,50000013:1,50003464:1,350507:1,50013046:1,50013032:1,121366023:1,50013022:1,50006844:1,50016465:1,50012097:1,50013007:1,50008365:1,50013043:1,121412014:1,50002533:1,50013034:1,50013028:1,50013045:1,50004399:1,121534003:1,121534002:1,50013027:1,50013010:1,50019780:1,50003777:1,50003778:1,50018042:1,50011825:1,50011765:1,50023760:1,140901:1,50009122:1,50016872:1,50023305:1,50008559:1,50008734:1,50016871:1,50023306:1,50016466:1,50010585:1,50002431:1,50023345:1,50023346:1,50023347:1,50023348:1,50023349:1,50023350:1,50004361:1,50003776:1,50012594:1,50005728:1,50005726:1,50003780:1,50003782:1,50023276:1,50018819:1,121456046:1,50020219:1,50003783:1,50018933:1,121448043:1,50003775:1,1409:1,50019516:1,121408061:1,50018611:1,50018625:1,50024105:1,50024108:1,50018913:1,141201:1,50015939:1,50050587:1,50050589:1,50050638:1,50003482:1,50018893:1,50012585:1,50050619:1,50050609:1,50018934:1,50006256:1,50018617:1,50018923:1,50006511:1,50018622:1,50012847:1,50018929:1,50008482:1,50011828:1,50018814:1,50018918:1,50018922:1,123532001:1,50006827:1,50050637:1,50050627:1,50050616:1,50018931:1,50006265:1,50018891:1,123534001:1,50003479:1,50018605:1,50024119:1,50024120:1,50005265:1,50005722:1,150708:1,123528002:1,50003600:1,50050593:1,50003789:1,50003311:1,50003289:1,50018825:1,50018612:1,50025835:1,50005262:1,50006526:1,50018603:1,121420009:1,50018927:1,50024100:1,50015940:1,50006522:1,50018925:1,50018871:1,50018882:1,50018880:1,50025381:1,50018824:1,50018823:1,50024117:1,50025701:1,50005729:1,50018621:1,50018821:1,50008648:1,124258002:1,123224007:1,50024103:1,50024121:1,50024112:1,50024147:1,50012617:1,120802:1,121482006:1,121474049:1,50022561:1,50020182:1,50018917:1,50006254:1,50050610:1,50018894:1,50024111:1,50018881:1,121464039:1,50050639:1,50010614:1,50024110:1,50005268:1,50018926:1,50018915:1,50050369:1,50010608:1,50018623:1,140908:1,50050595:1,50050597:1,50018620:1,50006525:1,50050607:1,50006252:1,50050590:1,50050611:1,50008683:1,50024142:1,50024141:1,50024146:1,50018892:1,50050631:1,50024143:1,50024140:1,50018914:1,50018930:1,50024139:1,50050618:1,50023278:1,50020186:1,50020183:1,50023277:1,121370014:1,50009079:1,50008183:1,123504001:1,50006527:1,50002922:1,50018874:1,50018872:1,50006510:1,50010607:1,50005192:1,150706:1,50050634:1,50003483:1,121426008:1,50018919:1,50003477:1,50018816:1,50006524:1,50006250:1,50050601:1,50025361:1,50018601:1,50006263:1,50018606:1,50018607:1,50025807:1,50001817:1,150705:1,50002928:1,50020185:1,50012587:1,50006247:1,50018619:1,50009211:1,50050615:1,50012580:1,50005723:1,50050621:1,50018910:1,50018935:1,50050367:1,50003481:1,50012589:1,50050613:1,50009798:1,50050614:1,50012588:1,350116:1,50006251:1,50050603:1,50050435:1,50003324:1,50018817:1,50006253:1,140909:1,50018613:1,50006262:1,50009183:1,50006261:1,50019165:1,50018932:1,50005718:1,50023275:1,50006259:1,50018889:1,50018888:1,50018887:1,50018890:1,50002920:1,50018679:1,50018921:1,50050635:1,50018609:1,50003781:1,50020181:1,50018928:1,50050628:1,140916:1,50002926:1,50018886:1,50018884:1,50018820:1,50018883:1,50018885:1,111703:1,50018912:1,50006523:1,1104:1,50024145:1,50024144:1,50050599:1,50003484:1,50011767:1,50008184:1,50023279:1,50018873:1,50012579:1,50012581:1,50025380:1,50050636:1,50018044:1,50018045:1,50018043:1,50018046:1,50008192:1,50008188:1,50008191:1,110509:1,50008203:1,50008200:1,50008201:1,50008202:1,50008187:1,50008186:1,50008190:1,50018047:1,50018048:1,50005264:1,50050605:1,50011095:1,121398009:1,121478005:1,50016445:1,50018610:1,50018618:1,50003802:1,50003327:1,50020187:1,50050366:1,50010259:1,50050368:1,50018936:1,50018608:1,50008181:1,50002925:1,50009121:1,50050620:1,50008182:1,50050630:1,150704:1,50018599:1,50024116:1,121462012:1,50050617:1,50008682:1,50018615:1,50025269:1,50024107:1,50024106:1,50018626:1,50018911:1,50025360:1,50005720:1,50003409:1,50002775:1,50018818:1,50006264:1,50023335:1,50023274:1,50019616:1,50006255:1,150701:1,50018602:1,50020184:1,50005263:1,50012584:1,123224008:1,123126001:1,50003774:1,50024118:1,50012586:1,50024114:1,50018604:1,50025382:1,50018822:1,50003326:1,50006249:1,50050604:1,121406010:1,50023761:1,50008681:1,50050594:1,50050592:1,50050588:1,50050629:1,50050633:1,50008661:1,50024124:1,50002924:1,50012582:1,50012583:1,50018600:1,140915:1,50021704:1,50023351:1,50018937:1,50018815:1,121398008:1,50050625:1,50050624:1,50024113:1,121384011:1,50018924:1,50006257:1,50006260:1,50018868:1,50014101:1,50002927:1,50023426:1,50018906:1,50011772:1,50006521:1,50050606:1,50009302:1,50016868:1,50023360:1,110219:1,50008193:1,50008178:1,50018826:1,50008150:1,50018916:1,121412009:1,110424:1,50011771:1,50003617:1,50010367:1,50011770:1,50019615:1,50024167:1,50024102:1,1502:1,50003680:1,50023281:1,50025220:1,140912:1,50018920:1,50050602:1,50008197:1,50005725:1,50005724:1,110217:1,1111:1,110218:1,110811:1,50003779:1,50003852:1,50008185:1,50005721:1,50008189:1,50008199:1,50023308:1,50023297:1,111705:1,111702:1,111701:1,50023298:1,50023299:1,50023300:1,50023301:1,50023302:1,50011766:1,50023303:1,50016870:1,50002887:1,50002849:1,50008169:1,50005787:1,50003446:1,50003285:1,50016873:1,50016874:1,50016875:1,50016876:1,50016877:1,50016878:1,50016879:1,50016880:1,50016881:1,50016882:1,50015520:1,50016869:1,50023307:1,50008195:1,50008194:1,50023304:1,50008196:1,140913:1,50012321:1,50011317:1,50009978:1,141202:1,50008198:1,140702:1,1101:1,50017583:1,50022562:1,50005771:1,50017585:1,50012693:1,50015814:1,50012680:1,50012678:1,50012666:1,50012686:1,50012690:1,121470022:1,50012694:1,50012848:1,50013476:1,50074003:1,50012752:1,50012728:1,50012729:1,50012736:1,50012740:1,50012653:1,50013482:1,50013489:1,50013488:1,50013487:1,50017587:1,50008336:1,50012647:1,50005911:1,50017584:1,50005744:1,50013486:1,50004419:1,50012920:1,211705:1,50011913:1,50017586:1,111401:1,50011916:1,50005913:1,50011056:1,50009120:1,50009196:1,50013485:1,50006834:1,50003461:1,50005733:1,50013490:1,50013484:1,50013481:1,50013495:1,50013493:1,50012737:1,50012745:1,50012744:1,50012738:1,50005746:1,50012739:1,50012743:1,50012747:1,50012741:1,50012748:1,50012746:1,50012742:1,124222008:1,50012692:1,50005117:1,121646001:1,50012683:1,50012783:1,50018685:1,121476015:1,121386016:1,121404014:1,121384020:1,121398015:1,121450022:1,121448013:1,50005120:1,50004418:1,50011905:1,50022398:1,50018243:1,50013491:1,50014225:1,50012751:1,50003934:1,50013496:1,50005734:1,211704:1,50005758:1,50005751:1,50005755:1,50012671:1,50016358:1,50016359:1,50013216:1,211711:1,211707:1,121396020:1,50011917:1,121472017:1,50024638:1,50013478:1,121456015:1,50024650:1,50012650:1,121480019:1,121384019:1,50024652:1,50012649:1,50012660:1,50024643:1,50010956:1,50005754:1,121380018:1,121422022:1,50016357:1,50005748:1,121470058:1,121400046:1,121390011:1,50011937:1,121416015:1,50005759:1,50009438:1,50005227:1,121468018:1,121386014:1,121410018:1,50022538:1,50013492:1,50016354:1,121478013:1,50024644:1,50005750:1,121406019:1,50005742:1,50012725:1,50024639:1,50024640:1,50012722:1,50024657:1,50012724:1,50012730:1,50012731:1,50012726:1,50012732:1,50024658:1,50012721:1,50012717:1,50012767:1,50012723:1,50012734:1,50012727:1,50012720:1,50012719:1,50012733:1,50012718:1,50005918:1,50068009:1,50011755:1,50014808:1,121646002:1,50024635:1,50005753:1,50013494:1,50012689:1,50024637:1,50024653:1,211703:1,50005739:1,50005114:1,121366026:1,50024651:1,50005749:1,50005119:1,121466019:1,50010731:1,50005738:1,121388022:1,50012667:1,50012706:1,50012701:1,50100001:1,50012705:1,50024636:1,50012708:1,50012707:1,50009184:1,50012695:1,50013851:1,121386019:1,50012702:1,50102001:1,50012688:1,50098001:1,50005118:1,211708:1,50012750:1,50012682:1,50012668:1,50011403:1,50005123:1,50013483:1,50013479:1,50016061:1,50013480:1,121458020:1,50012687:1,121484020:1,50006839:1,50012684:1,50016356:1,50005122:1,121410019:1,50008870:1,50016239:1,121418015:1,50012909:1,50005914:1,50012669:1,121476014:1,50012670:1,50012646:1,121464014:1,50005731:1,50005737:1,50009378:1,50009418:1,50009398:1,50024648:1,50024649:1,50005823:1,50005743:1,50024647:1,50012681:1,50012679:1,50012677:1,124182005:1,121470021:1,121388021:1,50005912:1,121412015:1,50005741:1,50005090:1,50005113:1,121466020:1,50001879:1,211702:1,121458019:1,50012665:1,50012655:1,121462023:1,121464015:1,50012648:1,121480020:1,121470023:1,50022537:1,124214004:1,50024642:1,121402014:1,50016355:1,50014809:1,50005735:1,50074004:1,50088005:1,50082006:1,50082007:1,50080005:1,50024646:1,50012691:1,121386015:1,50012685:1,50020200:1,50008224:1,124478013:1,50022268:1,50018263:1,50003881:1,350301:1,50023116:1,350401:1,121384025:1,124406004:1,50015562:1,350511:1,124472005:1,50013499:1,50015382:1,50013498:1,350503:1,50025615:1,50026078:1,50025836:1,50026077:1,50498004:1,50013497:1,50013475:1,50025819:1,121412020:1,121414030:1,121408026:1,50022738:1,124480015:1,50022739:1,121474026:1,121368021:1,50026084:1,50022736:1,50022737:1,50023117:1,50015563:1,50012137:1,50019790:1,50005928:1,50015560:1,121986001:1,50009808:1,50025837:1,50016745:1,1512:1,110201:1,110204:1,50003848:1,50003849:1,110520:1,110508:1,124252004:1,124254004:1,110216:1,50011377:1,110510:1,124208009:1,110511:1,50019041:1,110202:1,50013014:1,110502:1,50008759:1,50008209:1,50003328:1,110212:1,50003336:1,110210:1,50003850:1,50023706:1,110205:1,50023709:1,50023707:1,50023708:1,110206:1,50002415:1,110203:1,50003325:1,110207:1,50013151:1,50016573:1,124200007:1,121468001:1,121394004:1,50012320:1,50012307:1,110211:1,110214:1,110803:1,110215:1,50003213:1,121410004:1,121410003:1,50003329:1,50016444:1,50003333:1,124246007:1,120608:1,50012158:1,121388020:1,50005053:1,350123:1,50006489:1,121410014:1,50006481:1,50005137:1,350121:1,120611:1,50005174:1,121454054:1,50008316:1,350122:1,50020193:1,121370017:1,50006486:1,121480016:1,50012147:1,50006534:1,121988001:1,121476009:1,50012148:1,50006488:1,50001810:1,50012159:1,50012145:1,121702:1,50003408:1,50012144:1,50012934:1,50003406:1,50006484:1,50008740:1,121616:1,50012146:1,50011827:1,50008317:1,50006485:1,50008109:1,50006494:1,50006480:1,121366018:1,50016226:1,50012150:1,50018614:1,50228001:1,50005887:1,50019650:1,121908003:1,50008739:1,50019649:1,121704:1,121474013:1,50006490:1,121416010:1,50003405:1,121472014:1,50006493:1,50016484:1,50016483:1,50006478:1,50010568:1,50023280:1,1205:1,50024944:1,50001818:1,121703:1,50005050:1,120612:1,50008110:1,50005266:1,50006487:1,50022735:1,50005267:1,50012143:1,50011867:1,50008652:1,50016489:1,50006495:1,50005009:1,50011973:1,50008741:1,121890003:1,50006491:1,50003318:1,50016488:1,50001813:1,50011904:1,121450046:1,50003320:1,50012157:1,124244006:1,50008106:1,50006479:1,50006492:1,50006482:1,121450047:1,50016107:1,50006483:1,121472013:1,50003367:1,110507:1,50012165:1,50012168:1,50012166:1,50012167:1,50020196:1,50010613:1,50018323:1,50010605:1,50008351:1,50021423:1,50004195:1,140115:1,1402:1,50021422:1,1403:1,50003793:1,50003773:1,50003792:1,50004196:1,50003790:1,140114:1,50001948:1,140116:1,50003791:1,50000118:1,50005000:1,50008385:1,50015979:1,50014749:1,50010610:1,50012084:1,50003819:1,50005001:1,50004997:1,50005124:1,121384009:1,50014744:1,50010397:1,50023376:1,50005011:1,50010401:1,50005002:1,50004396:1,50004999:1,350712:1,50014747:1,50014746:1,50014745:1,50014748:1,350213:1,50005466:1,350212:1,350203:1,121454010:1,121406008:1,121364005:1,50009106:1,50010612:1,121456007:1,121452003:1,121396009:1,50011883:1,50003469:1,50023374:1,50009104:1,350215:1,50005019:1,50024629:1,50005003:1,50010409:1,50024627:1,350210:1,50018411:1,50002916:1,50010611:1,50022662:1,50003468:1,50023375:1,50023391:1,50024630:1,50011881:1,150803:1,50011882:1,50011878:1,50011885:1,50011879:1,50024631:1,50024632:1,50011880:1,50011938:1,50012826:1,50022661:1,50011884:1,50011941:1,50011887:1,50008376:1,50005218:1,50009107:1,50005183:1,50023392:1,50024628:1,50005180:1,50008389:1,50014743:1,50023393:1,350208:1,350201:1,50008392:1,350202:1,50005219:1,50004998:1,50003470:1,50005017:1,50005015:1,50018412:1,50005217:1,50002910:1,50018405:1,50005018:1,50018406:1,50018407:1,50005016:1,50018399:1,50018409:1,124178011:1,50018401:1,50018402:1,50018400:1,50018403:1,50018408:1,50018404:1,50018410:1,50018232:1,50018091:1,50018085:1,50018075:1,121470001:1,50025713:1,50018240:1,50018093:1,50018238:1,50018084:1,50018081:1,50018088:1,50018068:1,50025712:1,50018076:1,50012068:1,50018073:1,50017905:1,50017906:1,50025715:1,50018235:1,50018080:1,50018077:1,50018089:1,121454002:1,50012839:1,50025716:1,50003436:1,50018242:1,50018239:1,50018056:1,50018065:1,50018087:1,50018079:1,50018090:1,50018055:1,50012836:1,50018086:1,50018024:1,50008156:1,50018234:1,50018071:1,50018226:1,50018233:1,50012837:1,50012838:1,50020220:1,50018078:1,50018095:1,50018236:1,50018241:1,50018060:1,50018067:1,50018062:1,50018063:1,50018229:1,50018237:1,50012080:1,50018070:1,50018231:1,50018059:1,50018066:1,50018050:1,50025714:1,50018094:1,50018051:1,50018052:1,50018057:1,50018061:1,50018069:1,50012079:1,50010981:1,50018227:1,50008409:1,50018054:1,50018074:1,50012835:1,50018072:1,50025711:1,50003437:1,50018058:1,50018064:1,50012840:1,50018083:1,50018228:1,50018092:1};
+    </script>
+
+	<script type = "text/html" id="J_Tmpl">
+		<div id="J_tab"  class="slide-style">
+
+			<ul class="tab-nav clearfix"><!--ѡ����������ݿ����ǿ�-->
+				<!--������Ϊ�գ���Slide�ᴴ��<li></li>-->
+			</ul>
+			<a class="arr next"></a>
+			<a class="arr pre"></a>
+			<div class="tab-content"><!--ѡ����ݵĸ�����-->
+				{{#each(data)}}
+				<div class="tab-pannel {{#if(xindex > 0)}}{{hidden}}{{/if}}"><!--ѡ���ÿ�������-->
+					<!--��1��ѡ��е�����-->
+					<ul>
+						{{#each(this)}}
+						<li data-nodeId="{{this.id}}" style="border-color:#00f895">
+							<a target="_blank" href={{# if (this.type==='1') }}
+							
+									"//taiwan.tmall.com/item/{{this.id}}.htm"
+									{{else}}
+									"//tw.taobao.com/item/{{this.id}}.htm"
+									{{/ if }}							>
+							<img src="{{this.mainPic}}_300x300.jpg" alt="{{this.title}}"/>
+							<div class="deal"><span class="deal_num">�ɽ�{{this.uvsumSuc}}</span></div>
+							<div class="price">
+								<span class="zk-price"><em class="symbol">&yen;</em><em class="digit">{{this.zkPrice}}</em></span>
+								<del class="old-price"><em class="symbol">&yen;</em><em class="digit">{{this.price}}</em></del>
+							</div>
+							</a>
+						</li>
+						{{/each}}
+					</ul>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</script>
+	<script type = "text/javascript">
+		TB.Global.use('fn-totop', function(G, ToTop) {
+	        ToTop.init({
+	            fb_url: 'https://zh.surveymonkey.com/s/TWPC201408Home'
+	        });
+	    }); 
+	    TB.Global.use('fn-totop', function(G, ToTop) {
+	        ToTop.init({
+	            fb_url: 'https://zh.surveymonkey.com/s/TWPC201408Home'
+	        });
+	    }); 
+		var bgImgs = [{"img":"\/\/img.alicdn.com\/tps\/i3\/TB1n39xGXXXXXcMXVXXIfyaNFXX-1500-250.png","text":"\u6587\u5b57"},{"img":"\/\/img.alicdn.com\/tps\/i1\/TB1QD2wHVXXXXcxXFXXIfyaNFXX-1500-250.png","text":"\u6587\u5b57"}];
+		var bgImg = undefined;
+		var img = new Image();
+		var img1 = new Image();
+		//��ǰ������������ͼ����ֹ��Ӧʽ��ʱ����ֱ���ͼ�л��յ��ڡ�
+		img.src = bgImgs[0].img;
+		img1.src = bgImgs[1].img;
+
+		function resize(){
+			var winWidth = window.innerWidth;
+			winWidth < 1200 ? bgImg = bgImgs[1].img : bgImg = bgImgs[0].img;
+			document.getElementById("J_Ad_Wrap").style.backgroundImage = "url("+bgImg+")";//��base64����ô��
+		}
+		resize();
+		window.onresize = resize;
+	</script>
+	<!-- �Զ���ģ������: end -->
+</div>
+		</div></div><div class="J_Module skin-default" data-name="oversea-tb-category" data-skin="default" data-guid="14326115516480" id="guid-14326115516480" data-version="28" data-type="3"><div class="module"  data-spm="1998537136"><div class="tb-module oversea-tb-category tb-lazyload">
+<!-- �Զ���ģ������: start -->
+			<div class="my-layout">
+		<div id="J_Left">
+
+		</div>
+		<div id="J_Left_Fix" style="background-color: #ffcc06;">
+			<div class="wrap"></div>
+		</div>
+		<div id="J_Right">
+			<div class="wrap">
+
+			</div>
+		</div>
+	</div>
+	<script type="text/html" id="J_LeftTmpl">
+		<ul>
+			{{#each (data)}}
+			<li data-index="{{xindex}}" data-count="{{xcount}}">{{this.name}}<i>&#xe606;</i></li>
+			{{/each}}
+		</ul>
+	</script>
+	<script type="text/html" id="J_Left_FixTmpl">
+		<span class="selected-word"></span>
+		<ul>
+			{{#each (data)}}
+			<li data-index="{{xindex}}" data-count="{{xcount}}">{{this.name}}<i>&#xe601;</i></li>
+			{{/each}}
+		</ul>
+	</script>
+	<script type="text/html" id="J_RightTmpl">
+		{{set(column_2=0)}}
+		{{#if (data.length===2)}}{{set(column_2=1)}}{{/if}}
+		{{#each (data)}}
+		<div class="item {{#if (column_2===1)}}column-2{{/if}}" >
+			<h3>{{this.name}}<span class="hot-tag">HOT</span></h3>
+			<ul>
+				{{#each(this.children)}}
+				<li ><a href="#J_Left" class="{{# if (this.extraProps&&this.extraProps.isHotNew===true)}}hot{{/if}}" target="_self" data-id="{{this.id}}">{{this.name}}</a></li>
+				{{/each}}
+			</ul>
+		</div>
+		{{/each}}
+		{{#if (data.length<4)}}
+		<div class="r-image">
+					<a href="����">
+				<img src="//img.alicdn.com/tps/i4/TB1FJDEHVXXXXakXpXX289R_VXX-240-240.png" alt="����"/>
+			</a>
+				</div>
+		{{/if}}
+
+	</script>
+
+<!-- �Զ���ģ������: end -->
+</div>
+</div></div><div class="J_Module skin-default" data-name="oversea-tb-nz-list" data-skin="default" data-guid="14326115155870" id="guid-14326115155870" data-version="47" data-type="3"><div class="module"  data-spm="1998537137">    <script src="//g.alicdn.com/cm/log/log.js"></script>
+    <script>
+    window.__WPO.setConfig({
+        sample: 1
+    });
+    </script>
+    <div class="tb-module oversea-tb-nz-list">
+                        <!-- �Զ���ģ������: start -->
+        <div class="main-wrap">
+            <div id="J_Left_List">
+                <div class="filtrate">
+                    <div class="list-title"></div>
+                    <div class="sel-btn" id="sel-btn">
+                        <a data-sortDir="" data-sortField="" class="col sort active" href="javascript:void(0);"><span class="text">�C��</span></a>
+                        <a data-sortDir="1" data-sortField="orderCost" class=" col sort" href="javascript:void(0);"><span class="text">�˚�</span></a>
+                        <a data-sortDir="1" data-sortField="uvsumSuc" class="col sort" href="javascript:void(0);"><span class="text">�N��</span></a>
+                        <a data-sortDir="1" data-sortField="zkPrice" class="col sort asc-desc" href="javascript:void(0);"><span class="text">�r��</span><i class="arrow dou"></i></a>
+                    </div>
+                </div>
+
+                <ul class="item-list-content" id="J_Item_List_Content">
+
+                </ul>
+            </div>
+
+            <div id="J_Slide_Favor" data-industry="6">
+
+            </div>
+        </div>
+        <div id="J_Pager" class="clearfix"></div>
+
+
+
+    <script type="text/html" id="listTpml">
+        <%
+         var data =obj.dataList||[],
+             pageNo = obj.pageNo || 1;
+
+         for(var i=0;i<data.length;++i){
+              var item= data[i];
+              var pic = item.goodPic;
+        %>
+            <li class="ks-waterfall">
+                <a href=<%if(item.type==1){%>
+
+                    "//detail.tmall.com/item.htm?id=<%=item.id%>"<%}else{%>"//item.taobao.com/item.htm?id=<%=item.id%>"<%}%>                    >
+
+                    <img <%if((pageNo%4)==1 && i<8){%> src="<%=pic%>_300x300.jpg" <%}else{%> src="<%=pic%>_300x300.jpg"<%}%> alt="" width="224" height="224">
+                    <span class="title"><%=item.title%></span>
+                <span class="sale">
+                  <span class="price"><em class="symbol">&yen;</em><em class="digit"><%=item.zkPrice%></em></span>
+                    <%if(item.zkPrice!=item.price){%>
+                        <del class="old-price"><em class="symbol">&yen;</em><em class="digit"><%=item.price%></em></del>
+                    <%}%>
+
+                  <span class="deal-num">�ɽ� <%=item.uvsumSuc%></span>
+                </span>
+                </a>
+            </li>
+        <%}%>
+       </script>
+    <script type="text/html" id="favorTpml">
+        <h3>����ϲ�g</h3>
+        <div class="favorIcon"  ><i class="bottom-shadow" >&#xe605;</i><i class="top-arrow" style="color:#ffcc06" >&#xe604;</i></div>
+        <ul>
+            <%
+                var data = obj;
+                var length = Math.min(data.length,23);
+            %>
+            <%
+                for(var i = 0 ; i < length ; i++){
+                    var item = data[i];
+            %>
+                    <li>
+                        <a href = "<%=item.url%>">
+                            <img src="<%=item.pic%>_300x300.jpg" alt="" width="184" height="184"/>
+                            <span class="title"><%=item.itemName%></span>
+                            <span class="sale">
+                              <span class="price"><em class="symbol">&yen;</em><em class="digit"><%=item.price%></em></span>
+                                <del class="old-price"><em class="symbol">&yen;</em><em class="digit"><%=item.price%></em></del>
+                              <span class="deal-num">�ɽ� <%=item.monthSellCount%></span>
+                            </span>
+                        </a>
+                    </li>
+            <% } %>
+        </ul>
+    </script>
+
+
+    <!-- �Զ���ģ������: end -->
+    </div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div>
+<script src="//atp.alicdn.com/tmse/1/dpl/??oversea-tb-header/v40/oversea-tb-header.js,oversea-tb-category/v28/oversea-tb-category.js,oversea-tb-nz-list/v47/oversea-tb-nz-list.js"></script>
+
+<script>KISSY.use("node",function(a){window.renderCallback=function(b,d){var c=a.one(b),e=c.attr("data-name");c.one(".tb-module").hasClass("tb-finish")||a.use(e,function(a,c){new c(b,d)})};a.each(a.all(".J_Module"),function(b){renderCallback(b,a.one(b).one(".tb-module")[0])})});</script> <!-- 20141212��ٶ�������ͷ -->
+<style>
+  .footer_2014{
+    width: 1190px;
+    margin: 0 auto;
+  }
+  .w990 .footer_2014{
+    width: 990px;
+  }
+
+</style>
+<div class="footer_2014">
+<style>
+.footer{position:relative;margin:0 auto;padding:7px 0 9px;border-top:1px solid #ddd}.footer .footer-bd p,.footer .footer-hd p{padding-bottom:8px;overflow:hidden;*zoom:1}.footer .footer-bd a,.footer .footer-hd a{display:inline;float:left;margin:0 4px;white-space:nowrap;color:#6c6c6c}.footer .footer-bd a:hover,.footer .footer-hd a:hover{color:#f40;text-decoration:none}.footer .footer-bd b,.footer .footer-hd b{display:inline;float:left;margin:0 3px;font-weight:400;color:#ddd}.footer .footer-bd em,.footer .footer-bd span,.footer .footer-hd em,.footer .footer-hd span{display:inline;float:left;white-space:nowrap;color:#9c9c9c}.footer .footer-bd em,.footer .footer-hd em{margin-left:30px}.footer .footer-bd span,.footer .footer-hd span{margin:0 4px}.footer .footer-bd span a,.footer .footer-hd span a{float:none}.footer .footer-hd p{margin-bottom:8px;line-height:27px;border-bottom:1px solid #ddd}.footer .foot-ft{display:none}
+</style><div class="footer" data-spm="1997523009">
+  <div class="footer-hd">
+    <p>
+      <a href="http://www.alibabagroup.com/cn/global/home">����Ͱͼ���</a>
+      <b>|</b>
+      <a href="//www.taobao.com">�Ա���</a>
+      <b>|</b>
+      <a href="//www.tmall.com">��è</a>
+      <b>|</b>
+      <a href="//ju.taobao.com">�ۻ���</a>
+      <b>|</b>
+      <a href="http://www.aliexpress.com">ȫ������ͨ</a>
+      <b>|</b>
+      <a href="http://www.alibaba.com/">����Ͱ͹��ʽ����г�</a>
+      <b>|</b>
+      <a href="http://www.1688.com">1688</a>
+      <b>|</b>
+      <a href="http://www.alimama.com">��������</a>
+      <b>|</b>
+      <a href="//www.alitrip.com">�������� �� ȥ��</a>
+      <b>|</b>
+      <a href="http://www.aliyun.com">�����Ƽ���</a>
+      <b>|</b>
+      <a href="http://www.yunos.com">YunOS</a>
+      <b>|</b>
+      <a href="http://www.aliqin.cn/">����ͨ��</a>
+      <b>|</b>
+      <a href="http://www.etao.com/">һ��</a>
+      <b>|</b>
+      <a href="http://www.net.cn">����</a>
+      <b>|</b>
+      <a href="http://www.autonavi.com/">�ߵ�</a>
+      <b>|</b>
+      <a href="http://www.uc.cn/">UC</a>
+      <b>|</b>
+      <a href="http://www.umeng.com/">����</a>
+      <br>
+      <a href="http://www.xiami.com">Ϻ��</a>
+      <b>|</b>
+      <a href="http://www.ttpod.com/">���춯��</a>
+      <b>|</b>
+      <a href="http://www.laiwang.com/">����</a>
+      <b>|</b>
+      <a href="http://www.dingtalk.com/?lwfrom=20150130160830727">����</a>
+      <b>|</b>
+      <a href="https://www.alipay.com">֧����</a>
+    </p>
+  </div>
+  <div class="footer-bd">
+    <p>
+      <a href="//www.taobao.com/about">�����Ա�</a>
+      <a href="//www.taobao.com/about/partners.php">�������</a>
+      <a href="//pro.taobao.com">Ӫ������</a>
+      <a href="http://jubao.alibaba.com" >�����ٱ�</a>
+      <a href="//service.taobao.com/support/main/service_route.htm">��ϵ�ͷ�</a>
+      <a href="//open.taobao.com">����ƽ̨</a>
+      <a href="//www.taobao.com/about/join.php">����Ӣ��</a>
+      <a href="//www.taobao.com/about/contact.php">��ϵ����</a>
+      <a href="//www.taobao.com/sitemap.php">��վ��ͼ</a>
+      <a href="//www.taobao.com/go/chn/tb-fp/2014/law.php">��������</a>
+      <em>&copy; 2003-2016 Taobao.com ��Ȩ����</em>
+    </p>
+    <p>
+      <span>�����Ļ���Ӫ���֤��<a href="//img.alicdn.com/tps/i2/TB1YFcPLpXXXXaiXFXXcaDpFFXX-803-473.png">������[2013]0268-027��</a></span>
+      <b>|</b>
+      <span data-spm-protocol="i">��ֵ����ҵ��Ӫ���֤��<a href="http://zcainfo.miitbeian.gov.cn/state/outPortal/loginPortal.action">��B2-20080224-1</a></span>
+      <b>|</b>
+      <span>��Ϣ���紫��������Ŀ���֤��1109364��</span>
+      <b>|</b>
+      <span> ������Υ���Ͳ�����Ϣ�ٱ��绰:0571-81683755 blxx@list.alibaba-inc.com </span>
+    </p>
+  </div>
+  <div class="footer-ft">
+    
+            <a href="http://www.pingpinganan.gov.cn/" class="mod " >
+                <img width="36" alt="��������" height="36" src="//img.alicdn.com/tps/i1/T1FeW3XXNfXXXXXXXX-36-36.gif">
+              </a>
+            <a href="http://idinfo.zjaic.gov.cn/bscx.do?spm=1.7274553.1997523009.28.alN7ce&method=hddoc&id=33018400000067" class="mod mod-a" >
+              </a>
+            <a href="http://idinfo.zjaic.gov.cn/bscx.do?spm=1.7274553.1997523009.29.alN7ce&method=hddoc&id=33018400000067" class="mod mod-b" >
+              </a>
+            <a href="http://www.theclimategroup.org.cn/about/friend?spm=1.7274553.1997523009.30.alN7ce" class="mod mod-c" >
+              </a>
+            <a href="https://ss.knet.cn/verifyseal.dll?spm=1.7274553.1997523009.31.alN7ce&&sn=2010062300100001357&pa=20100701" class="mod mod-d" >
+              </a>
+            <a href="http://www.ppaaol.com/verifySite.do?spm=1.7274553.1997523009.32.alN7ce&id=1051" class="mod mod-e" >
+              </a>
+            <a href="http://www.12377.cn/" class="mod mod-f" >
+              </a>
+            <a href="http://www.12377.cn/node_548446.htm" class="mod mod-h" >
+              </a>
+            <a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/2E7819FC84674D5980464916C24B7E3E" class="mod mod-g" >
+              </a>
+          
+  </div>
+</div></div>
+</html>

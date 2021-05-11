@@ -1,0 +1,161 @@
+﻿
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="gbk">
+    <title>������������</title>
+     <!--[if lt IE 7]>
+    <script>
+        window.location = 'ie6.html';
+    </script>
+    <![endif]-->
+    <style>
+    /*! normalize.css v1.1.2 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.67em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}blockquote{margin:1em 40px}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}p,pre{margin:1em 0}code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;*overflow:visible}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}html{overflow:hidden}a{text-decoration:none}img{display:block}ul,li{list-style:none;margin:0;padding:0}.page{position:fixed;right:3%;bottom:8%;z-index:999}.page li{width:15px;height:15px;margin-bottom:3px}.page img{position:absolute}.page .b{display:none}.next{position:fixed;bottom:120px;right:10%;opacity:0;filter:alpha(opacity=0)\9;z-index:999}.go{position:fixed;top:5%;right:5%;z-index:999;background:url()}.next:hover,.go:hover,.shirt01:hover,.share:hover,.again:hover{cursor:pointer}.item{width:100%;height:1000px;min-height:600px;min-width:1000px;position:relative}.item-1{background:#fadd67 url(http://img02.taobaocdn.com/tps/i2/T1FPyqFltdXXaiulHh-990-600.png) no-repeat center bottom;position:relative}.item-1 .fly{position:absolute;bottom:580px;right:60%}.item-1 .goods{position:absolute;left:50%;margin-left:-412px;bottom:150px;opacity:0;filter:alpha(opacity=0)\9}.shirt01{position:absolute;bottom:329px;left:50%;margin-left:-200px;opacity:0;filter:alpha(opacity=0)\9}.item-1 .to-bottom{position:absolute;left:50%;margin-left:-94px;bottom:40px;text-align:center}.to-bottom .arrow{position:absolute;left:50%;top:-50px;margin-left:-16px}.item-2{background:#84a2d4 url(http://img02.taobaocdn.com/tps/i2/T1zDGpFi8eXXca6rfn-2000-600.png) no-repeat center bottom;*z-index:20}.item-2 .word-02-1,.item-2 .word-02-2{position:absolute;bottom:500px;left:50%;margin-bottom:50px;margin-left:-180px}.item-2 .word-02-2{opacity:0;filter:alpha(opacity=0)\9}.item-2 .computer{width:990px;height:500px;position:absolute;bottom:-3px;left:50%;margin-left:-495px}.computer .search{background:url(http://img02.taobaocdn.com/tps/i2/T1KSarFopbXXc8xhzm-222-45.png);position:absolute;bottom:300px;right:-30px;width:222px;height:45px;display:none}.search-02-1{position:absolute;right:370px;bottom:300px;display:none}.search-words{position:relative;left:70px;font-size:1.6em;letter-spacing:10px;opacity:0;filter:alpha(opacity=0)\9}.item-2 .goods-02{position:absolute;bottom:217px;right:270px;height:100px;display:none}.cover{position:absolute;bottom:334px;right:496px;width:101px;height:90px;z-index:5;background:#fff;display:none}.item-2 .shirt-02{position:absolute;left:395px;bottom:335px;width:100px;z-index:10;display:none}.item-3{background:#ef674d;*z-index:10}.item-3 .main{width:700px;height:500px;position:absolute;bottom:50px;left:50%;margin-left:-350px;background:#ef674d url(http://img02.taobaocdn.com/tps/i2/T1x0WsFetaXXaiulHh-990-600.png) no-repeat center}.item-3 .select{width:300px;height:250px;position:absolute;right:8px;bottom:0}.select .btn{position:absolute;bottom:10px}.btn-03-a{display:none}.select .img{position:absolute}.select .img-03-a{display:none}.item-3 .shirt-03{width:204px;position:absolute;bottom:200px;left:120px;z-index:5;display:none}.shirt-03-1{position:absolute;bottom:202px;left:115px;display:none}.item-4{background:#fed url(http://img03.taobaocdn.com/tps/i3/T1iResFnXaXXca6rfn-2000-600.png) no-repeat center bottom;*z-index:5;overflow:hidden}.item-4 .cart{width:500px;position:absolute;bottom:40px;left:50%;margin-left:-250px;z-index:200}.shirt-04{position:relative;bottom:-135px;left:160px;z-index:-1;display:none}.item-4 .note{position:absolute;bottom:180px;left:50%;margin-left:-141px;opacity:0;filter:alpha(opacity=0)\9}.word-04{position:relative;top:104px;left:60px;opacity:0;filter:alpha(opacity=0)\9}.item-4 .cloud{position:absolute;bottom:550px;left:50%}.item-4 .word{position:absolute;bottom:500px;left:50%;margin-left:-215px}.word-04-2{display:none}.item-5{background:#d04759 url(http://img03.taobaocdn.com/tps/i3/T1yiSqFa4eXXa3GMkG-2000-1500.png);*z-index:10;overflow:hidden}.item-5 img{position:absolute}.shirt-05{left:25%;bottom:800px;display:none}.shirt-05-1{left:25%;bottom:204px;display:none}.shirt-05-2{left:25%;bottom:70px;display:none;z-index:5}.word-05{left:20%;bottom:570px}.card-05{bottom:200px;left:20%;z-index:1}.order-05{bottom:270px;left:27%;z-index:0}.item-5 .mouse{right:20%;bottom:200px}.item-5 .mouse-05-a{display:none}.item-5 .hand-05{right:24%;bottom:-375px;z-index:30;display:none}.item-6{background:#84d9ed url(http://img01.taobaocdn.com/tps/i1/T1DvJ.Fn0gXXb0_fUA-2500-600.png) no-repeat 25% 100%;*z-index:1;overflow:hidden}.box-06{position:absolute;bottom:500px;left:-123px;z-index:1}.words-06-1,.words-06-2{position:absolute;bottom:479px;left:30%}.words-06-2{left:32%;opacity:0;filter:alpha(opacity=0)\9}.cloud-06{position:absolute;left:50%;bottom:550px;width:1500px;z-index:10}.cloud-06-1,.cloud-06-2{display:inline;position:relative;left:100px}.cloud-06-2{left:500px}.bus-06{position:absolute;bottom:0;right:50%;z-index:1}.pop-06-1,.pop-06-2{position:absolute;bottom:119px;right:48%;display:none}.pop-06-3{position:absolute;right:445px;bottom:400px;display:none;z-index:20}.boy-06{position:absolute;right:50%;bottom:0;height:100px;display:none}.girl-06{position:absolute;right:315px;bottom:116px;height:123px;z-index:1;display:none}.door-06{position:absolute;right:285px;bottom:116px;display:none}.item-7{background:#8ac060 url(http://img01.taobaocdn.com/tps/i1/T1wF1tFctaXXa3GMkG-2000-1500.png) no-repeat 50% 100%}.star{position:absolute;left:50%;bottom:445px;margin-left:-293px;display:none}.star-07-2{margin-left:-273px}.star-07-3{margin-left:-253px}.star-07-4{margin-left:-233px}.star-07-5{margin-left:-212px}.good-07{position:absolute;bottom:382px;left:50%;margin-left:-289px;display:none}.item-8{background:#e85c36;overflow:hidden}.btn-08{position:absolute;bottom:365px;left:50%;margin-left:-195px;width:389px}.btn-08 img{position:absolute;bottom:0}.btn-08-2,.btn-08-3{display:none}.btn-08:hover{cursor:pointer}.hand-08{position:absolute;bottom:0;left:50%;margin-left:-85px;z-index:1}.share,.again{position:absolute;bottom:403px;left:50%;margin-left:378px}.again{margin-left:240px}.updown{-webkit-animation:fly 3s infinite linear;animation:fly 3s infinite linear}@-webkit-keyframes fly{0%{bottom:580px}50%{bottom:520px}100%{bottom:580px}}@keyframes fly{0%{bottom:580px}50%{bottom:520px}100%{bottom:580px}}.shirt_updown{-webkit-animation:goods 1.5s infinite linear;animation:goods 1.5s infinite linear}@-webkit-keyframes goods{50%{bottom:350px}100%{bottom:330px}}@keyframes goods{50%{bottom:350px}100%{bottom:330px}}.next_updown{-webkit-animation:next .6s infinite linear;animation:next .6s infinite linear}@-webkit-keyframes next{50%{bottom:100px}100%{bottom:120px}}@keyframes next{50%{bottom:100px}100%{bottom:120px}}.item-4 .cloud,.cloud_anim{-webkit-animation:cloud 70s infinite linear;animation:cloud 70s infinite linear}@-webkit-keyframes cloud{50%{left:-10%}100%{left:60%}}@keyframes cloud{50%{left:-10%}100%{left:60%}}.cloud_back_1{-webkit-animation:cloudBack 30s infinite linear;animation:cloudBack 30s infinite linear}.cloud_back_2{-webkit-animation:cloudBack 50s infinite linear;animation:cloudBack 50s infinite linear}@-webkit-keyframes cloudBack{100%{left:-10%}}@keyframes cloudBack{100%{left:-10%}}.sns-newshare-panel .sns-new-share-comment{height:85px!important}iframe{display:none}#ext_overlay,.sogoutip{display:none!important}
+    </style>
+    <script src="http://a.tbcdn.cn/s/kissy/1.3.0/kissy-min.js"></script>
+    <script src="http://a.tbcdn.cn/p/snsdk/core.js"></script>
+</head>
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&udpid=&&yunid=&&trid=3da8641a16207391103002881e&asid=AQAAAAAmhJpgznv1KAAAAABh8R6RBiJZdA==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&asid=AQAAAAAmhJpgF2b4AgAAAAA55fTEWerMww==&sidx=JsHjJhIDS/gbZ1AAB8TGL/T3/c8LEn16jwzk6Vmi022PF0Bza0ycyi3/MkktTdmWKVhLNq7rRmVQ17Gu/I3NzCbDjdnDTAWsgpenSbRdt219KAKrV+LPAiyDGIZx4bc0BBRX5Vy3iDf5Yr1XljozS4NwYUdTsDHuLOhlgApIbnY=",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+    <div class="item item-1">
+        <img src="http://img02.taobaocdn.com/tps/i2/T1WSqsFgNaXXXmjxP6-470-50.png" class="fly updown">
+        <img src="http://gtms02.alicdn.com/tps/i2/T1iAKuFbxXXXcTz4TL-824-274.png" class="goods">
+        <img src="http://gtms04.alicdn.com/tps/i4/T1XcCqFflgXXXild._-134-147.png" class="shirt01">
+    </div>
+    <div class="item item-2">
+        <div class="word-02-1">
+            <img src="http://img02.taobaocdn.com/tps/i2/T1XROsFotaXXXLb6bM-361-25.png" alt="">
+        </div>
+        <div class="word-02-2">
+            <img src="http://img01.taobaocdn.com/tps/i1/T1c7OrFeVbXXc2D1bN-363-27.png" alt="">
+        </div>
+
+        <div class="computer">
+            <div class="cover"></div>
+            <div class="search">
+                <img src="http://img03.taobaocdn.com/tps/i3/T1jPGqFnXeXXcx6fHm-68-32.png" class="search-words">
+            </div>
+            <img src="http://img02.taobaocdn.com/tps/i2/T1ssOrFbhbXXc8xhzm-222-45.png" class="search-02-1">
+            <img src="http://img04.taobaocdn.com/tps/i4/T1PqqsFnNaXXXCQ_kh-207-166.png" class="shirt-02">
+            <img src="http://img03.taobaocdn.com/tps/i3/T1dzSrFd8cXXcuBNIO-441-218.png" class="goods-02">
+        </div>
+    </div>
+    <div class="item item-3">
+        <div class="main">
+            <img src="http://img04.taobaocdn.com/tps/i4/T1F.mqFf8cXXaiu7ga-204-198.png" class="shirt-03">
+            <img src="http://img04.taobaocdn.com/tps/i4/T1PqqsFnNaXXXCQ_kh-207-166.png" class="shirt-03-1">
+            <div class="select">
+                <img src="http://img01.taobaocdn.com/tps/i1/T1QFmnFk8gXXanrUZC-296-131.gif" class="img img-03">
+                <img src="http://img01.taobaocdn.com/tps/i1/T1e9moFbRgXXanrUZC-296-131.gif" class="img img-03-a">
+                <img src="http://img01.taobaocdn.com/tps/i1/T1e3CoFntgXXb27sbm-218-58.gif" class="btn btn-03">
+                <img src="http://img02.taobaocdn.com/tps/i2/T1WkCsFipaXXb27sbm-218-58.gif" class="btn btn-03-a">
+            </div>
+        </div>
+        
+    </div>
+    <div class="item item-4">
+        <img src="http://img04.taobaocdn.com/tps/i4/T16J5pFl8fXXc4V5DW-429-31.png" class="word word-04-1">
+        <img src="http://img02.taobaocdn.com/tps/i2/T1VD5sFkFaXXbEayHW-429-32.png" class="word word-04-2">
+        <div class="cloud">
+            <img src="http://img04.taobaocdn.com/tps/i4/T1UbStFc4XXXbDUzPf-882-120.png" class='img2'>
+        </div>
+        <div class="cart">
+            <img src="http://img04.taobaocdn.com/tps/i4/T1F.mqFf8cXXaiu7ga-204-198.png" class="shirt-04">
+            <img src="http://img01.taobaocdn.com/tps/i1/T1o6eqFfxeXXXwB6_0-407-346.png" class="cart-04">
+        </div>
+        <div class="note">
+            <img src=" http://img04.taobaocdn.com/tps/i4/T1SqOsFX8bXXa9wX_i-173-47.png" class="word-04">
+            <img src="http://img02.taobaocdn.com/tps/i2/T1.witFbhXXXXMwXkf-283-270.png" class="note-04-02">
+        </div>
+    </div>
+    <div class="item item-5">
+        <img src="http://img04.taobaocdn.com/tps/i4/T1F.mqFf8cXXaiu7ga-204-198.png" class="shirt-05">
+        <img src="http://img04.taobaocdn.com/tps/i4/T1F.mqFf8cXXaiu7ga-204-198.png" class="shirt-05-1">
+        <img src="http://img04.taobaocdn.com/tps/i4/T1F.mqFf8cXXaiu7ga-204-198.png" class="shirt-05-2">
+        <img src="http://img04.taobaocdn.com/tps/i4/T1H1atFbtXXXaUW33d-541-28.png" class="word-05">
+        <img src="http://img03.taobaocdn.com/tps/i3/T1b2mrFo8cXXXFseLu-358-221.png" class="card-05">
+        <img src="http://img03.taobaocdn.com/tps/i3/T1pUypFateXXajuujj-139-130.png" class="order-05">
+        <img src="http://img04.taobaocdn.com/tps/i4/T10ZesFg4aXXXdhbD4-170-375.png" class="hand-05">
+        <img src="http://img01.taobaocdn.com/tps/i1/T1c8GpFeNeXXaV8Lkd-205-819.png" class="mouse mouse-05">
+        <img src="http://img04.taobaocdn.com/tps/i4/T1WbKtFddaXXaV8Lkd-205-819.png" class="mouse mouse-05-a">
+    </div>
+    <div class="item item-6">
+        <div class="cloud-06">
+            <img src="http://img02.taobaocdn.com/tps/i2/T1ImSpFaNeXXck7YsJ-543-107.png" class="cloud-06-1">
+            <img src="http://img04.taobaocdn.com/tps/i4/T1nrGqFalfXXbHN6zX-878-71.png" class="cloud-06-2">
+        </div>
+        <img src="http://img01.taobaocdn.com/tps/i1/T1lg0.FcBiXXXrTi_A-308-59.png" class="words-06-1">
+        <img src="http://img04.taobaocdn.com/tps/i4/T1aiqpFlBgXXXrTi_A-308-59.png" class="words-06-2">
+        <img src=" http://img03.taobaocdn.com/tps/i3/T1kAesFXBbXXXprV.9-123-85.png" class="box-06">
+        <img src="http://img01.taobaocdn.com/tps/i1/T1AISsFfJbXXa1CaIB-221-122.png" class="bus-06">
+        <img src="http://img02.taobaocdn.com/tps/i2/T1WfOrFkxcXXbL8TYr-93-56.png" class="pop-06-1">
+        <img src="http://img01.taobaocdn.com/tps/i1/T1FaqsFdXbXXbL8TYr-93-56.png" class="pop-06-2">
+        <img src="http://img04.taobaocdn.com/tps/i4/T1kzyqFfNeXXbcrePj-139-173.png" class="pop-06-3">
+        <img src="http://img03.taobaocdn.com/tps/i3/T1uT1pFnNeXXXb5eMY-126-305.png" class="boy-06">
+        <img src="http://img03.taobaocdn.com/tps/i3/T14nyrFlXbXXaanHk9-87-294.png" class="girl-06">
+        <img src="http://img01.taobaocdn.com/tps/i1/T1jFaaFf4gXXcd.yUp-106-150.png" class="door-06">
+    </div>
+    <div class="item item-7">
+        <img src="http://img03.taobaocdn.com/tps/i3/T10.qsFXRaXXc2_.7.-14-13.png" class="star star-07-1">
+        <img src="http://img03.taobaocdn.com/tps/i3/T10.qsFXRaXXc2_.7.-14-13.png" class="star star-07-2">
+        <img src="http://img03.taobaocdn.com/tps/i3/T10.qsFXRaXXc2_.7.-14-13.png" class="star star-07-3">
+        <img src="http://img03.taobaocdn.com/tps/i3/T10.qsFXRaXXc2_.7.-14-13.png" class="star star-07-4">
+        <img src="http://img03.taobaocdn.com/tps/i3/T10.qsFXRaXXc2_.7.-14-13.png" class="star star-07-5">
+        <img src="http://img01.taobaocdn.com/tps/i1/T1WRqqFbddXXcBi8jm-72-40.png" class="good-07">
+    </div>
+    <div class="item item-8">
+        <img src="http://img04.taobaocdn.com/tps/i4/T1IvGtFbVXXXcJub_4-170-449.png" class="hand-08">
+        <a class="btn-08">
+            <img src="http://img02.taobaocdn.com/tps/i2/T1mSWrFXRcXXcFeZ7j-389-160.png" class="btn-08-1">
+            <img src="http://img01.taobaocdn.com/tps/i1/T1ZNypFhXdXXcubI7j-389-160.gif" class="btn-08-2">
+            <img src="http://img03.taobaocdn.com/tps/i3/T12pKsFedaXXX51I3j-389-156.png" class="btn-08-3">
+        </a>
+        <img src="http://gtms03.alicdn.com/tps/i3/T1UBqsFbhcXXaWaIfq-85-34.png" class="share">
+        <img src="http://gtms01.alicdn.com/tps/i1/T1uLasFmldXXbhETA4-105-34.png" class="again">
+    </div>
+
+    <ul class="page">
+        <li id="1">
+            <img src="http://gtms01.alicdn.com/tps/i1/T1hKqrFa8fXXc9v57_-10-10.png" >
+            <img src="http://gtms04.alicdn.com/tps/i4/T1iTqrFaReXXc9v57_-10-10.png" class="b" >
+        </li>
+        <li id="2">
+            <img src="http://gtms01.alicdn.com/tps/i1/T1hKqrFa8fXXc9v57_-10-10.png">
+            <img src="http://gtms04.alicdn.com/tps/i4/T1iTqrFaReXXc9v57_-10-10.png" class="b" >
+        </li>
+        <li id="3">
+            <img src="http://gtms01.alicdn.com/tps/i1/T1hKqrFa8fXXc9v57_-10-10.png"  >
+            <img src="http://gtms04.alicdn.com/tps/i4/T1iTqrFaReXXc9v57_-10-10.png" class="b" >
+        </li>
+        <li id="4">
+            <img src="http://gtms01.alicdn.com/tps/i1/T1hKqrFa8fXXc9v57_-10-10.png" >
+            <img src="http://gtms04.alicdn.com/tps/i4/T1iTqrFaReXXc9v57_-10-10.png" class="b" >
+        </li>
+        <li id="5">
+            <img src="http://gtms01.alicdn.com/tps/i1/T1hKqrFa8fXXc9v57_-10-10.png" >
+            <img src="http://gtms04.alicdn.com/tps/i4/T1iTqrFaReXXc9v57_-10-10.png" class="b" >
+        </li>
+        <li id="6">
+            <img src="http://gtms01.alicdn.com/tps/i1/T1hKqrFa8fXXc9v57_-10-10.png" >
+            <img src="http://gtms04.alicdn.com/tps/i4/T1iTqrFaReXXc9v57_-10-10.png" class="b">
+        </li>
+        <li id="7">
+            <img src="http://gtms01.alicdn.com/tps/i1/T1hKqrFa8fXXc9v57_-10-10.png" >
+            <img src="http://gtms04.alicdn.com/tps/i4/T1iTqrFaReXXc9v57_-10-10.png" class="b" >
+        </li>
+        <li id="8">
+            <img src="http://gtms01.alicdn.com/tps/i1/T1hKqrFa8fXXc9v57_-10-10.png" >
+            <img src="http://gtms04.alicdn.com/tps/i4/T1iTqrFaReXXc9v57_-10-10.png" class="b" >
+        </li>
+    </ul>
+    <a href="http://new.taobao.com"><img src="http://gtms02.alicdn.com/tps/i2/T1ldifFkJfXXXZHxZd-101-101.png" class="go"></a>
+    <img src="http://gtms02.alicdn.com/tps/i2/T13FCsFklcXXa2xfLi-174-61.png" class="next">
+
+    <script>
+    KISSY.use("node, ua, ajax",function(a){a.ready(function(a){function b(a){return k*a}function c(a){return l*a}function d(){switch(m){case 1:h.f_f&&n&&!h.s_f?g.cut(2,g[2]):n&&h.s_f&&g.cut(2);break;case 2:h.s_f&&n&&!h.t_f?(e(".cover").show(),f.shirt_s.show().animate({bottom:255-k,left:260,width:"auto"},1,"easeNone",function(){f.shirt_s.hide(),f.shirt_t_f.show()}),g.cut(3,g[3])):n?n&&h.t_f&&g.cut(3):(h.s_f=!0,g.cut(1));break;case 3:h.t_f&&n&&!h.fo_f?(f.shirt_t_f.hide(),f.shirt_t.show().animate({bottom:200-b(1),left:260},1,"easeNone",function(){f.shirt_t.hide(),f.shirt_f.show()}),g.cut(4,g[4])):n?n&&h.fo_f&&g.cut(4):(h.t_f=!0,g.cut(2));break;case 4:h.fo_f&&n&&!h.fi_f?g.cut(5,g[5]):n?n&&h.fi_f&&g.cut(5):(h.fo_f=!0,g.cut(3));break;case 5:h.fi_f&&n&&!h.si_f?(f.item_fi.css("overflow","visible"),f.shirt_fi_s.hide(),f.shirt_fi_t.show().animate({bottom:506-b(1),width:65,left:"40%"},1,"easeNone",function(){f.item_fi.css("overflow","hidden"),f.shirt_fi_t.hide()}),f.box_si.animate({left:"38%"},1,"easeNone",function(){f.box_si.animate({bottom:40},.6,"easeIn",function(){f.box_si.hide()})}),g.cut(6,g[6])):n?n&&h.si_f&&g.cut(6):(h.fi_f=!0,g.cut(4));break;case 6:h.si_f&&n&&!h.se_f?g.cut(7,g[7]):n?n&&h.se_f&&g.cut(7):(h.si_f=!0,g.cut(5));break;case 7:h.se_f&&n?g.cut(8):n||(h.se_f=!0,g.cut(6));break;case 8:n||g.cut(7)}}var e=a.all,f={},g={},h={},i=!1,j=!1,k=parseInt(e(window).height(),10),l=parseInt(e(window).width(),10),m=Math.ceil(e(window).scrollTop()/k)+1,n=!0;f={fly:e(".fly"),goods:e(".goods"),word_s_f:e(".word-02-1"),word_s_s:e(".word-02-2"),search_s:e(".search"),search_w:e(".search-words"),search_s_s:e(".search-02-1"),goods_s:e(".goods-02"),shirt_s:e(".shirt-02"),box:e("#box"),img_t_a:e(".img-03-a"),btn_t_a:e(".btn-03-a"),shirt_t:e(".shirt-03"),shirt_t_f:e(".shirt-03-1"),shirt_f:e(".shirt-04"),item_fo:e(".item-4"),cart_f:e(".cart"),word_f_f:e(".word-04-1"),word_f_s:e(".word-04-2"),note_f:e(".note"),word_f:e(".word-04"),cloud_f:e(".cloud"),item_fi:e(".item-5"),hand_fi:e(".hand-05"),mouse_fi:e(".mouse-05-a"),shirt_fi:e(".shirt-05"),shirt_fi_s:e(".shirt-05-1"),shirt_fi_t:e(".shirt-05-2"),order_fi:e(".order-05"),box_si:e(".box-06"),words_si_f:e(".words-06-1"),words_si_s:e(".words-06-2"),cloud_si:e(".cloud-06"),cloud_si_f:e(".cloud-06-1"),cloud_si_s:e(".cloud-06-2"),item_si:e(".item-6"),bus_si:e(".bus-05"),pop_si_f:e(".pop-06-1"),pop_si_s:e(".pop-06-2"),pop_si_t:e(".pop-06-3"),boy:e(".boy-06"),girl:e(".girl-06"),open:e(".door-06"),star_1:e(".star-07-1"),star_2:e(".star-07-2"),star_3:e(".star-07-3"),star_4:e(".star-07-4"),star_5:e(".star-07-5"),good_se:e(".good-07"),hand_e:e(".hand-08"),next:e(".next")},h={f_f:!1,s_f:!1,t_f:!1,fo_f:!1,fi_f:!1,si_f:!1,si_isMod:!1,se_f:!1},g={init:function(){e(window).animate({scrollTop:0},1),600>k&&(k=600),e(".item").css("height",k),e("#"+m+" .b").show(),a.UA.ie&&a.UA.ie<8&&(f.item_si.css("background-position-x",c(.25)-625+"px"),j=c(1)-2500+"px",e(".item-4").css("background-position-x",c(.5)-1e3+"px")),e(".btn-08").css("height",b(1)-365)},delay:function(a,b){setTimeout(a,1e3*b)},showNext:function(){f.next.animate({opacity:1},.3,"backBoth").addClass("next_updown")},hideNext:function(){f.next.animate({opacity:0},.3,"easeNone",function(){f.next.removeClass("next_updown")})},cut:function(a,b){g.hideNext(),i=!0,e(window).animate({scrollTop:k*(a-1)},1,"easeNone",function(){i=!1,b?b():b||8==a||g.showNext()})},1:function(){f.fly.animate({right:"20%"},2,"easeIn",function(){f.goods.animate({opacity:"1"},.6,"easeIn",function(){g.showNext(),h.f_f=!0}),e(".shirt01").animate({opacity:"1"},.6).addClass("shirt_updown")})},2:function(){g.delay(function(){f.search_s.show().animate({right:370},1,"easeIn",function(){f.search_w.animate({opacity:"1"},.7,"easeNone",function(){f.word_s_f.hide(),f.search_s.hide(),f.search_s_s.show().animate({bottom:452,right:250,height:30},.7),f.word_s_f.hide(),f.word_s_s.animate({opacity:1},.5),f.goods_s.show().animate({height:218},.7,"easeIn",function(){g.showNext(),h.s_f=!0},.2)})})},.2)},3:function(){g.delay(function(){f.img_t_a.show()},.4),g.delay(function(){f.btn_t_a.show(),g.showNext(),h.t_f=!0},1.1)},4:function(){f.cart_f.css("left",f.cart_f.offset().left+250+"px"),g.delay(function(){f.cart_f.animate({left:c(1.2)},1.5,"easeIn",function(){f.cart_f.hide()})},.2),g.delay(function(){f.word_f_f.hide(),f.word_f_s.show(),f.note_f.animate({opacity:1},1,"easeNone",function(){f.word_f.animate({opacity:1},.5,"easeNone",function(){g.showNext(),h.fo_f=!0})})},1.6)},5:function(){g.delay(function(){f.hand_fi.show().animate({bottom:0},.8,"easeIn",function(){f.mouse_fi.show(),f.shirt_fi.show().animate({bottom:204},1,"easeNone",function(){f.shirt_fi.hide(),f.shirt_fi_s.show().animate({bottom:70},.5),f.order_fi.show().animate({bottom:390},.8,"easeNone",function(){g.showNext(),h.fi_f=!0})})})},.2)},6:function(){g.delay(function(){f.item_si.animate({"background-position":(j||"100%")+" 100%"},3,"easeBoth",function(){f.boy.show().animate({bottom:116,height:305},1.5),f.words_si_s.animate({opacity:1},.5),f.boy.css("right",c(1)-f.boy.offset().left+"px"),f.boy.animate({right:500},1,"easeNone",function(){f.pop_si_t.show(),g.showNext(),h.si_f=!0}),g.delay(function(){f.open.show(),g.delay(function(){f.girl.show().animate({height:305,right:350},1)},.2)},1)}),f.words_si_f.animate({left:"-5%",opacity:"0"},3,"easeBoth"),f.cloud_si.animate({left:"10%"},3,"easeBoth"),g.delay(function(){f.pop_si_f.show()},.2),g.delay(function(){f.pop_si_f.hide()},1),g.delay(function(){f.pop_si_s.show()},1.5),g.delay(function(){f.cloud_si_f.addClass("cloud_back_1"),f.cloud_si_s.addClass("cloud_back_2")},1.8)},.8)},7:function(){g.delay(function(){f.star_1.show(),g.delay(function(){f.star_2.show()},.2),g.delay(function(){f.star_3.show()},.4),g.delay(function(){f.star_4.show()},.6),g.delay(function(){f.star_5.show()},.8),g.delay(function(){f.good_se.show().animate({width:90},.2).animate({width:72},.2,"easeNone",function(){g.showNext(),h.se_f=!0})},.9)},.2)},8:function(){}},g.init(),g[1](),e(document).on("mousewheel",function(a){a.preventDefault(),n=a.deltaY<0,i||d()}),f.next.on("click",function(){n=!0,d()}),e(window).on("scroll",function(){m=Math.ceil(e(window).scrollTop()/k)+1,tag=Math.round(e(window).scrollTop()/k)+1,e(".b").hide(),e("#"+tag+" .b").show(),(e(window).scrollTop()>b(1)||e(window).scrollTop()<b(7))&&(e(".ms").hide(),e(".mouse"+tag).show())}),e(document).on("keydown",function(a){40==a.which?(a.halt(),n=!0,d()):38==a.which?(a.halt(),n=!1,d()):32==a.which?(a.halt(),n=!0,d()):13==a.which&&8==m&&(window.location="http://new.taobao.com")}),e(".item-8").on("mousemove",function(a){var c=a.pageX-10,d=a.pageY-b(7)+10;f.hand_e.css("left",c),d>b(1)-449?f.hand_e.css("bottom",b(1)-(d+449)):f.hand_e.css("bottom",0)}),e(".btn-08").on("mouseenter",function(){e(".btn-08-1").hide(),e(".btn-08-2").show()}),e(".btn-08").on("mouseleave",function(){e(".btn-08-2").hide(),e(".btn-08-1").show()}),e(".btn-08").on("mousedown",function(){e(".btn-08-2").hide(),e(".btn-08-1").hide(),e(".btn-08-3").show(),window.location="http://new.taobao.com"}),e(".btn-08").on("mouseup",function(){e(".btn-08-3").hide(),e(".btn-08-1").show()}),e(".again").on("click",function(){h={f_f:!1,s_f:!1,t_f:!1,fo_f:!1,fi_f:!1,si_f:!1,si_isMod:!1,se_f:!1},e("*").attr("style",""),g.init(),g[1]()}),e(".share").on("click",function(a){a.halt(),SNS.ui("share-v2",{title:"�Ա��»�Ա",type:"webpage",key:"http://www.taobao.com/go/act/vip/newer/guidepage.php",comment:"#�Ա��»�Ա#��������ǣ���ӭ���Ա���ע�ᡢ��ѡ���µ�������ջ����������ţ�ֻ��5����9�ڼ���Ʒ���Ծ���ϲ�����Ա�Ϊ���ܴ��ԣ�",pic:"http://gtms02.alicdn.com/tps/i2/T1DeOFFiFXXXbfd8v9-990-6605.jpg",client_id:"178679"})}),e(".shirt01").on("click",function(){h.s_f?g.cut(2):g.cut(2,g[2])})})});
+    </script>
+</body>
+</html>
