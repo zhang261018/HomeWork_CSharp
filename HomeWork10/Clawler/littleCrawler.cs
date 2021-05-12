@@ -18,6 +18,7 @@ namespace Clawler
     {
         private static int WMA_InterPro = 0x004A;
         string validUrl = @"(http://)?([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?";
+        List<Task> tasks;
 
         public struct COPYDATASTRUCT
         {
@@ -34,7 +35,7 @@ namespace Clawler
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            tasks = new List<Task>();
         }
 
         protected override void DefWndProc(ref Message message)
@@ -61,7 +62,8 @@ namespace Clawler
             {
                 crawler.StartUrl = url;
             }
-            Thread crawlerTh = new Thread(crawler.Crawl);
+            var crawlerTh = new Task(crawler.Crawl);
+            tasks.Add(crawlerTh);
             crawlerTh.Start();
         }
 
