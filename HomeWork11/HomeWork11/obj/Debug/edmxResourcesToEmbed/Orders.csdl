@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Orders" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="OrdersContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="OrderSet" EntityType="Orders.Order" />
+    <EntitySet Name="OrderDetailSet" EntityType="Orders.OrderDetail" />
+    <AssociationSet Name="OrderDetails" Association="Orders.OrderDetails">
+      <End Role="Order" EntitySet="OrderSet" />
+      <End Role="OrderDetail" EntitySet="OrderDetailSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderNumber" />
+    </Key>
+    <Property Name="OrderNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Client" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OrderAddress" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OrderAmount" Type="Int32" Nullable="false" />
+    <Property Name="OrderTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="OrderDetails" Relationship="Orders.OrderDetails" FromRole="Order" ToRole="OrderDetail" />
+  </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="TradeId" />
+    </Key>
+    <Property Name="TradeId" Type="Int32" Nullable="false" />
+    <Property Name="TradeName" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" Unicode="true" FixedLength="false" MaxLength="450" />
+    <Property Name="TradeAmount" Type="Int32" Nullable="false" />
+    <Property Name="TradePrice" Type="Int32" Nullable="false" />
+    <Property Name="OrderNumber" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="OrderDetails">
+    <End Type="Orders.Order" Role="Order" Multiplicity="1" />
+    <End Type="Orders.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderNumber" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="OrderNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

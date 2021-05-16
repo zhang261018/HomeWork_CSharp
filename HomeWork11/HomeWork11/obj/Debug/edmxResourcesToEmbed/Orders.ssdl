@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Orders.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="OrdersStoreContainer">
+    <EntitySet Name="OrderSet" EntityType="Orders.Store.OrderSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderDetailSet" EntityType="Orders.Store.OrderDetailSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="OrderDetails" Association="Orders.Store.OrderDetails">
+      <End Role="Order" EntitySet="OrderSet" />
+      <End Role="OrderDetail" EntitySet="OrderDetailSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="OrderSet">
+    <Key>
+      <PropertyRef Name="OrderNumber" />
+    </Key>
+    <Property Name="OrderNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Client" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OrderAddress" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OrderAmount" Type="int" Nullable="false" />
+    <Property Name="OrderTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderDetailSet">
+    <Key>
+      <PropertyRef Name="TradeId" />
+    </Key>
+    <Property Name="TradeId" Type="int" Nullable="false" />
+    <Property Name="TradeName" Type="nvarchar" Nullable="false" MaxLength="450" />
+    <Property Name="TradeAmount" Type="int" Nullable="false" />
+    <Property Name="TradePrice" Type="int" Nullable="false" />
+    <Property Name="OrderNumber" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="OrderDetails">
+    <End Role="Order" Type="Orders.Store.OrderSet" Multiplicity="1" />
+    <End Role="OrderDetail" Type="Orders.Store.OrderDetailSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderNumber" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="OrderNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
