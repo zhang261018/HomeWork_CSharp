@@ -12,6 +12,7 @@ namespace HomeWork8
     using System;
     using System.Collections.Generic;
     
+    [Serializable]
     public partial class OrderDetail
     {
         public int TradeId { get; set; }

@@ -11,8 +11,12 @@ namespace HomeWork8
 {
     using System;
     using System.Collections.Generic;
-    
-    public partial class Order
+    using System.Xml;
+    using System.Xml.Schema;
+    using System.Xml.Serialization;
+
+    [Serializable]
+    public partial class Order: IXmlSerializable
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Order()
@@ -28,5 +32,59 @@ namespace HomeWork8
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+
+        public XmlSchema GetSchema()
+        {
+            return null;
+        }
+
+        public void WriteXml(XmlWriter writer)
+        {
+            writer.WriteStartElement("Order");
+            writer.WriteElementString("OrderNumber", OrderNumber.ToString());
+            writer.WriteElementString("Client",Client);
+            writer.WriteElementString("OrderAddress",OrderAddress);
+            writer.WriteElementString("OrderAmount", OrderAmount.ToString());
+            writer.WriteElementString("OrderTime", OrderTime.ToString("yy-MM-dd"));
+
+            writer.WriteStartElement("OrderDetails");
+            foreach(OrderDetail o in OrderDetails)
+            {
+                writer.WriteStartElement("Trade");
+                writer.WriteElementString("TradeId", o.TradeId.ToString());
+                writer.WriteElementString("TradeName", o.TradeName);
+                writer.WriteElementString("TradeAmount", o.TradeAmount.ToString());
+                writer.WriteElementString("TradePrice",o.TradePrice.ToString());
+                writer.WriteEndElement();
+            }
+            writer.WriteEndElement();
+            writer.WriteEndElement();
+        }
+
+        public void ReadXml(XmlReader reader)
+        {
+            if (reader.IsEmptyElement || !reader.Read()) return;
+
+            reader.ReadStartElement();
+            OrderNumber = reader.ReadElementContentAsInt();
+            Client = reader.ReadElementContentAsString();
+            OrderAddress = reader.ReadElementContentAsString();
+            OrderAmount = reader.ReadElementContentAsInt();
+            OrderTime = Convert.ToDateTime(reader.ReadElementContentAsString());
+
+            reader.ReadStartElement();
+            while(reader.NodeType != XmlNodeType.EndElement)
+            {
+                OrderDetail tmp = new OrderDetail();
+                reader.ReadStartElement();
+                tmp.TradeId = reader.ReadElementContentAsInt();
+                tmp.TradeName = reader.ReadElementContentAsString();
+                tmp.TradeAmount = reader.ReadElementContentAsInt();
+                tmp.TradePrice = reader.ReadElementContentAsInt();
+                reader.ReadEndElement();
+                this.OrderDetails.Add(tmp);
+            }
+            reader.ReadEndElement();
+        }
     }
 }
